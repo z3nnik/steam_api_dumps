@@ -1,0 +1,2178 @@
+{
+  "id": 58,
+  "name": "npc_dota_hero_enchantress",
+  "order_id": 37,
+  "name_loc": "Enchantress",
+  "bio_loc": "Аюшта кажется невинным и беззаботным лесным существом, и пусть это первое впечатление не обманчиво, оно едва ли раскрывает её натуру. Аюшта прекрасно понимает, отчего страдает природа. Она прошла многими тропами, приветливыми и угрюмыми лесами, бывала во всех краях в любое время года — и всюду искала дружбы, несла вести, смех и исцеление. Иначе никак: где разразилась война, там лес идёт на суда и осадные орудия, а в мирных местах деревья вырубают, чтобы строить дома и топить бесчисленные очаги.\r\n\t\t\t\t<br><br>Аюшта внимает мольбам беззащитных существ, которые так нуждаются в лиственной тени и зелёном крове. Она прислушивается к тем, до кого никому нет дела, и несёт их истории по всему миру, уверенная в том, что её доброе слово — словно чары, от которых наш мир расцветёт.",
+  "hype_loc": "Опасная вблизи и смертоносная на расстоянии, Enchantress <b>пронзает врагов</b> атаками, которые становятся тем сильнее, чем больше расстояние до цели. Благодаря способности <b>замедлять своих врагов</b> и <b>зачаровать лесных существ</b> она всегда найдёт способ одержать победу в схватке.",
+  "npe_desc_loc": "Переманивает нейтральных крипов на свою сторону",
+  "facets": [
+    {
+      "color": 2,
+      "title_loc": "Overprotective Wisps",
+      "description_loc": "При получении урона призывает исцеляющих светлячков.",
+      "name": "enchantress_overprotective_wisps",
+      "icon": "healing",
+      "gradient_id": 0,
+      "index": 0
+    },
+    {
+      "color": 1,
+      "title_loc": "Spellbound",
+      "description_loc": "Увеличивает дальность применения Enchant и дальность атак по цели этой способности.",
+      "name": "enchantress_spellbound",
+      "icon": "range",
+      "gradient_id": 2,
+      "index": 1
+    }
+  ],
+  "str_base": 17,
+  "str_gain": 2,
+  "agi_base": 19,
+  "agi_gain": 2.1,
+  "int_base": 22,
+  "int_gain": 4,
+  "primary_attr": 2,
+  "complexity": 2,
+  "attack_capability": 2,
+  "role_levels": [
+    0,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0,
+    2,
+    0
+  ],
+  "damage_min": 43,
+  "damage_max": 53,
+  "attack_rate": 1.7,
+  "attack_range": 575,
+  "projectile_speed": 900,
+  "armor": 4.166667,
+  "magic_resistance": 25,
+  "movement_speed": 320,
+  "turn_rate": 0.6,
+  "sight_range_day": 1800,
+  "sight_range_night": 800,
+  "max_health": 494,
+  "health_regen": 1.95,
+  "max_mana": 339,
+  "mana_regen": 1.6,
+  "abilities": [
+    {
+      "id": 5270,
+      "name": "enchantress_impetus",
+      "name_loc": "Impetus",
+      "desc_loc": "Усиливает атаки героя, добавляя к ним урон, зависящий от расстояния до цели: чем она дальше, тем урон больше. Наносит иллюзиям двойной урон.",
+      "lore_loc": "Несмотря на то что Аюшта преследует мирные цели, она вполне способна нанести магический удар издалека: её копья черпают энергию из окружающей природы.",
+      "notes_loc": [
+        "Максимальный урон достигается на расстоянии в %distance_cap%.",
+        "Расстояние измеряется в момент, когда снаряд достигнет цели."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "135176",
+      "target_team": 2,
+      "target_type": 19,
+      "flags": 0,
+      "damage": 4,
+      "immunity": 4,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        575
+      ],
+      "cast_points": [
+        0,
+        0,
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        6,
+        4,
+        2,
+        0
+      ],
+      "durations": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        40,
+        45,
+        50,
+        55
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "distance_damage_pct",
+          "values_float": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "is_percentage": true,
+          "heading_loc": "УРОН ОТ РАССТОЯНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_enchantress_4",
+              "value": 6.5,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "distance_cap",
+          "values_float": [
+            1750
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "illusion_damage_multiplier",
+          "values_float": [
+            2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            575
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityDuration",
+          "values_float": [
+            1.5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            40,
+            45,
+            50,
+            55
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            6,
+            4,
+            2,
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5268,
+      "name": "enchantress_enchant",
+      "name_loc": "Enchant",
+      "desc_loc": "Герой очаровывает выбранного врага. Если это крип, то он на %dominate_duration% сек. переходит под контроль героя, получая бонус к урону от атак и максимальному здоровью. Применение на крипа даёт %xp_gain_pct%%% от опыта за его убийство.\n\nЕсли целью является вражеский герой, способность замедляет его на %slow_duration% сек. и применяет на него развеивание.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
+      "lore_loc": "Как истинная хранительница леса, Аюшта дружна со всеми в нём — от низших троллей до могучих кентавров.",
+      "notes_loc": [
+        "Иллюзии тоже можно переманить на свою сторону."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "Позволяет взять под контроль нескольких крипов одновременно.",
+      "facets_loc": [
+        "",
+        "Увеличивает дальность применения. Владелец этой способности и подконтрольные ему существа атакуют её жертву с большего расстояния."
+      ],
+      "type": 0,
+      "behavior": "8",
+      "target_team": 2,
+      "target_type": 19,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 4,
+      "dispellable": 2,
+      "max_level": 4,
+      "cast_ranges": [
+        500,
+        550,
+        600,
+        650
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        30,
+        24,
+        18,
+        12
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        70
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "slow_movement_speed",
+          "values_float": [
+            -30,
+            -40,
+            -50,
+            -60
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗАМЕДЛЕНИЕ ГЕРОЕВ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "slow_duration",
+          "values_float": [
+            3.5,
+            4,
+            4.5,
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attack_range_bonus",
+          "values_float": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "enchantress_spellbound",
+            "values": [
+              100,
+              150,
+              200,
+              250
+            ],
+            "operation": 0
+          },
+          "required_facet": "enchantress_spellbound"
+        },
+        {
+          "name": "dominate_duration",
+          "values_float": [
+            30,
+            60,
+            90,
+            120
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "enchant_health",
+          "values_float": [
+            150,
+            250,
+            350,
+            450
+          ],
+          "is_percentage": false,
+          "heading_loc": "УВЕЛИЧЕНИЕ ЗДОРОВЬЯ КРИПУ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "enchant_armor",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_enchantress_enchant_armor",
+              "value": 10,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "enchant_damage",
+          "values_float": [
+            0,
+            25,
+            50,
+            75
+          ],
+          "is_percentage": false,
+          "heading_loc": "УВЕЛИЧЕНИЕ УРОНА КРИПУ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "xp_gain_pct",
+          "values_float": [
+            40
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "level_req",
+          "values_float": [
+            4,
+            5,
+            6,
+            6
+          ],
+          "is_percentage": false,
+          "heading_loc": "МАКС. УРОВЕНЬ КРИПА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_creeps",
+          "values_float": [
+            1
+          ],
+          "is_percentage": false,
+          "heading_loc": "МАКС. ОЧАРОВАННЫХ КРИПОВ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            1
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "bonus_health",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_enchantress_enchant_health_damage",
+              "value": 150,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "bonus_damage",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_enchantress_enchant_health_damage",
+              "value": 25,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "bonus_attackspeed",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_enchantress_enchant_attackspeed",
+              "value": 30,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            500,
+            550,
+            600,
+            650
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "enchantress_spellbound",
+            "values": [
+              50,
+              100,
+              150,
+              200
+            ],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.3
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            70
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            30,
+            24,
+            18,
+            12
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": true,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5269,
+      "name": "enchantress_natures_attendants",
+      "name_loc": "Nature's Attendants",
+      "desc_loc": "Призывает рой светлячков, которые лечат героя и всех ближайших союзников.",
+      "lore_loc": "Капризные духи леса очень слабы поодиночке, но стоит им собраться в рой, как их исцеляющая сила многократно возрастает.",
+      "notes_loc": [
+        "Светлячки не следуют за союзниками с полным запасом здоровья.",
+        "Призыв светлячков при получении урона отключается истощением."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "Когда владелец этой способности получает больше %overprotective_damage_threshold% урона от вражеских героев, его в течение %overprotective_wisp_duration% сек. излечивает %overprotective_wisp_count% светлячок. Одновременно может существовать до %overprotective_max_wisps% светлячков, полученных таким образом.",
+        ""
+      ],
+      "type": 0,
+      "behavior": "4",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 1,
+      "dispellable": 3,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        35
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        140
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "heal_duration",
+          "values_float": [
+            7,
+            9,
+            11,
+            13
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "heal_interval",
+          "values_float": [
+            0.5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "heal",
+          "values_float": [
+            4,
+            8,
+            12,
+            16
+          ],
+          "is_percentage": false,
+          "heading_loc": "ЛЕЧЕНИЕ В СЕКУНДУ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_enchantress_5",
+              "value": 8,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "radius",
+          "values_float": [
+            275
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "wisp_count",
+          "values_float": [
+            9
+          ],
+          "is_percentage": false,
+          "heading_loc": "ЧИСЛО СВЕТЛЯЧКОВ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_enchantress_2",
+              "value": 12,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "movespeed",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_enchantress_6",
+              "value": 30,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "overprotective_damage_threshold",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "enchantress_overprotective_wisps",
+            "values": [
+              275
+            ],
+            "operation": 5
+          },
+          "required_facet": "enchantress_overprotective_wisps"
+        },
+        {
+          "name": "overprotective_damage_reset_interval",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "enchantress_overprotective_wisps",
+            "values": [
+              7
+            ],
+            "operation": 5
+          },
+          "required_facet": "enchantress_overprotective_wisps"
+        },
+        {
+          "name": "overprotective_wisp_duration",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "enchantress_overprotective_wisps",
+            "values": [
+              4
+            ],
+            "operation": 5
+          },
+          "required_facet": "enchantress_overprotective_wisps"
+        },
+        {
+          "name": "overprotective_wisp_count",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "enchantress_overprotective_wisps",
+            "values": [
+              1
+            ],
+            "operation": 5
+          },
+          "required_facet": "enchantress_overprotective_wisps"
+        },
+        {
+          "name": "overprotective_max_wisps",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "enchantress_overprotective_wisps",
+            "values": [
+              4
+            ],
+            "operation": 5
+          },
+          "required_facet": "enchantress_overprotective_wisps"
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.3
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            140
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            35
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 320,
+      "name": "enchantress_bunny_hop",
+      "name_loc": "Sproink",
+      "desc_loc": "Герой отскакивает назад, уворачиваясь от летящих в него снарядов, и запускает копья с эффектом Impetus в самых отдалённых врагов в радиусе своей атаки + %bonus_attack_range%. Число целей: %attack_targets%.",
+      "lore_loc": "Вот так прыг да скок.",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "8589936645",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 4,
+      "dispellable": 0,
+      "max_level": 1,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        10
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        60
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "hop_distance",
+          "values_float": [
+            500
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДАЛЬНОСТЬ СКАЧКА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hop_duration",
+          "values_float": [
+            0.4
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hop_height",
+          "values_float": [
+            150
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attack_targets",
+          "values_float": [
+            2
+          ],
+          "is_percentage": false,
+          "heading_loc": "ЧИСЛО ЦЕЛЕЙ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "bonus_attack_range",
+          "values_float": [
+            100
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            60
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            10
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": true,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 981,
+      "name": "enchantress_little_friends",
+      "name_loc": "Little Friends",
+      "desc_loc": "Накладывает оцепенение на выбранное вражеское существо. Все союзные, вражеские и нейтральные крипы в радиусе действия атакуют цель способности, имея увеличенную скорость передвижения и атаки. Действует %duration% сек.",
+      "lore_loc": "Законы леса полны неясностей, но за их нарушение тебя накажут быстро и с лучистой улыбкой.",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "8724152361",
+      "target_team": 2,
+      "target_type": 19,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 4,
+      "dispellable": 3,
+      "max_level": 1,
+      "cast_ranges": [
+        750
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        20
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        75
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "duration",
+          "values_float": [
+            6
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "bonus_attack_speed",
+          "values_float": [
+            100
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "bonus_move_speed",
+          "values_float": [
+            100
+          ],
+          "is_percentage": true,
+          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "radius",
+          "values_float": [
+            1200
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "root_base_duration",
+          "values_float": [
+            2
+          ],
+          "is_percentage": false,
+          "heading_loc": "МИН. ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "root_per_target",
+          "values_float": [
+            0.5
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ ЗА СУЩЕСТВО:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_root",
+          "values_float": [
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            750
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            75
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            20
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": true,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5267,
+      "name": "enchantress_untouchable",
+      "name_loc": "Untouchable",
+      "desc_loc": "Пленённые красотой героя, противники атакуют его с уменьшенной скоростью.",
+      "lore_loc": "После нападения на Аюшту большинство соперников испытывают чувство вины за то, что осмелились поднять руку на такую прекрасную деву.",
+      "notes_loc": [
+        "Замедляются все существа, которые собираются совершить атаку по герою.",
+        "Замедление срабатывает при начале атаки, а не после её завершения."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 1,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 3,
+      "dispellable": 2,
+      "max_level": 3,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "slow_attack_speed",
+          "values_float": [
+            -110,
+            -160,
+            -210
+          ],
+          "is_percentage": false,
+          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_enchantress_3",
+              "value": 60,
+              "operation": 2
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "slow_duration",
+          "values_float": [
+            4
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1464,
+      "name": "enchantress_rabblerouser",
+      "name_loc": "Rabble-Rouser",
+      "desc_loc": "Все нейтральные крипы из лагерей наносят больше урона вражеским героям. Бонус к урону составляет %base_damage_amp%%% + %damage_amp_per_level%%% за каждый уровень владельца способности.",
+      "lore_loc": "",
+      "notes_loc": [
+        "Не действует на подчинённых нейтральных крипов, Терзателей и Рошана."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "4398046576643",
+      "target_team": 2,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 3,
+      "dispellable": 0,
+      "max_level": 1,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "base_damage_amp",
+          "values_float": [
+            10
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "damage_amp_per_level",
+          "values_float": [
+            4
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "damage_increase_tooltip",
+          "values_float": [
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "УВЕЛИЧЕНИЕ УРОНА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": true,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "talents": [
+    {
+      "id": 1174,
+      "name": "special_bonus_unique_enchantress_enchant_armor",
+      "name_loc": "+{s:bonus_enchant_armor} к броне очарованных крипов",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 8432,
+      "name": "special_bonus_unique_enchantress_6",
+      "name_loc": "Nature's Attendants ускоряет передв. на {s:bonus_movespeed}",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1541,
+      "name": "special_bonus_unique_enchantress_enchant_attackspeed",
+      "name_loc": "+{s:bonus_bonus_attackspeed} к скорости атаки героя и его существ",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6648,
+      "name": "special_bonus_unique_enchantress_5",
+      "name_loc": "+{s:bonus_heal} к лечению от Nature's Attendants",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6379,
+      "name": "special_bonus_unique_enchantress_3",
+      "name_loc": "+{s:bonus_slow_attack_speed} к замедлению атаки от Untouchable",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1130,
+      "name": "special_bonus_unique_enchantress_enchant_health_damage",
+      "name_loc": "+{s:bonus_bonus_health}/{s:bonus_bonus_damage} к здоровью/урону героя и его существ",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6515,
+      "name": "special_bonus_unique_enchantress_4",
+      "name_loc": "+{s:bonus_distance_damage_pct}% к урону от Impetus",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6086,
+      "name": "special_bonus_unique_enchantress_2",
+      "name_loc": "+{s:bonus_wisp_count} к числу светлячков от Nature's Attendants",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "facet_abilities": [
+    {
+      "abilities": []
+    },
+    {
+      "abilities": []
+    }
+  ]
+}

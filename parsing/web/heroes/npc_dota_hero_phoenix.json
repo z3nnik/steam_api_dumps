@@ -1,0 +1,2099 @@
+{
+  "id": 110,
+  "name": "npc_dota_hero_phoenix",
+  "order_id": 106,
+  "name_loc": "Phoenix",
+  "bio_loc": "Первому солнцу Хранителя, единственной точке разумного света в изначальной тьме, было предначертано принести тепло в холодную пустоту. В течение тысячелетий этот ослепительный луч концентрировал свою неизмеримую энергию, что привело к разрушительному взрыву сверхновой звезды. Из этого огня появились новые лучи, звёздные копии своего родителя, которые также устремились в океан тьмы и стали созвездиями. Со временем и они стали сверхновыми, порождая новый свет. Так продолжался цикл рождения и перерождения, пока всё небо, созданное Титанами, не стало мерцать и сиять.\r\n\t\t\t\t<br><br>В результате такого беспощадного и древнего процесса сформировалась звезда, известная смертным как Phoenix. Как и её предки, она была выброшена в безграничный космос, чтобы найти своё место среди небесных братьев и сестёр. Но любопытство к тому, что согревают гаснущие предки, захватило молодую птицу, и в течение долгих лет она познавала мир. Она узнала, что среди целых и разрушенных миров скоро образуется замкнутый центр, в котором всевозможные силы сойдутся в конфликте, несущим вселенское значение. И этому миру потребуется нечто большее, чем просто далёкие лучи умирающего солнца. Итак, звёздное дитя приняло свою земную форму, чтобы нести свет всем нуждающимся и, возможно, исполнить свою звёздную судьбу.",
+  "hype_loc": "Влетев в битву, Phoenix <b>поражает врагов</b> и <b>излечивает союзников</b> солнечным лучом, а в нужный момент может превратиться в звезду, обжигающую всех противников вокруг, чтобы после её <b>оглушающего взрыва</b> возродиться с полным запасом сил.",
+  "npe_desc_loc": "Лечит и наносит урон ценой собственного здоровья",
+  "facets": [
+    {
+      "color": 0,
+      "title_loc": "Dying Light",
+      "description_loc": "Герой каждую секунду наносит врагам в радиусе %radius% магический урон в размере %damage_pct%%% от недостающего у него здоровья.",
+      "name": "phoenix_facet_immolate",
+      "icon": "barrier",
+      "gradient_id": 2,
+      "index": 0
+    },
+    {
+      "color": 0,
+      "title_loc": "Hotspot",
+      "description_loc": "Урон и лечение от способности Sun Ray увеличиваются по мере отдаления от её владельца, а на врагов, находящихся ближе к концу луча, накладывается больше эффектов Blinding Sun.",
+      "name": "phoenix_hotspot",
+      "icon": "nuke",
+      "gradient_id": 1,
+      "index": 1
+    }
+  ],
+  "str_base": 23,
+  "str_gain": 3.3,
+  "agi_base": 12,
+  "agi_gain": 1.5,
+  "int_base": 16,
+  "int_gain": 1.8,
+  "primary_attr": 0,
+  "complexity": 2,
+  "attack_capability": 2,
+  "role_levels": [
+    0,
+    2,
+    3,
+    1,
+    0,
+    0,
+    2,
+    0,
+    2
+  ],
+  "damage_min": 44,
+  "damage_max": 54,
+  "attack_rate": 1.7,
+  "attack_range": 525,
+  "projectile_speed": 1100,
+  "armor": 1,
+  "magic_resistance": 25,
+  "movement_speed": 280,
+  "turn_rate": 0.9,
+  "sight_range_day": 1800,
+  "sight_range_night": 800,
+  "max_health": 626,
+  "health_regen": 4.3,
+  "max_mana": 267,
+  "mana_regen": 0.8,
+  "abilities": [
+    {
+      "id": 5623,
+      "name": "phoenix_icarus_dive",
+      "name_loc": "Icarus Dive",
+      "desc_loc": "Герой летит вперёд по дуге, замедляя всех врагов на своём пути и нанося им периодический урон, а затем возвращается в исходную точку. Если применить способность Supernova, полёт прервётся.",
+      "lore_loc": "Хоть путешествия в космосе этому существу не чужды, полёт под куполом атмосферы приносит ему несравнимое удовольствие.",
+      "notes_loc": [
+        "Полёт длится %dive_duration% сек. Его можно прервать, применив эту способность повторно."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "134742032",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 2,
+      "immunity": 4,
+      "dispellable": 2,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        40,
+        35,
+        30,
+        25
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "hp_cost_perc",
+          "values_float": [
+            15
+          ],
+          "is_percentage": true,
+          "heading_loc": "РАСХОД ЗДОРОВЬЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "dash_length",
+          "values_float": [
+            1100,
+            1200,
+            1300,
+            1400
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДАЛЬНОСТЬ ПОЛЁТА:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_phoenix_4",
+              "value": 1000,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "dash_width",
+          "values_float": [
+            500
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hit_radius",
+          "values_float": [
+            200
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "burn_duration",
+          "values_float": [
+            4
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ГОРЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "damage_per_second",
+          "values_float": [
+            20,
+            40,
+            60,
+            80
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН В СЕКУНДУ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "burn_tick_interval",
+          "values_float": [
+            0.2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "slow_movement_speed_pct",
+          "values_float": [
+            10,
+            15,
+            20,
+            25
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_phoenix_6",
+              "value": 25,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "dive_duration",
+          "values_float": [
+            2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            40,
+            35,
+            30,
+            25
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5625,
+      "name": "phoenix_fire_spirits",
+      "name_loc": "Fire Spirits",
+      "desc_loc": "Призывает 4 огненных духа, которые кружатся вокруг героя. Каждого из них по отдельности можно выпустить в указанную точку. Долетев до неё, дух подожжёт всех противников вокруг себя, нанося им периодический урон и уменьшая их скорость атаки.",
+      "lore_loc": "Непрерывно сокращающееся звёздное ядро часто испускает скоротечные всплески разумного света.",
+      "notes_loc": [
+        "Духи дают обзор по месту попадания на 1 секунду."
+      ],
+      "shard_loc": "Делает способность пассивной. Каждый дух восстанавливается 7 секунд.",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "2052",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 2,
+      "immunity": 4,
+      "dispellable": 2,
+      "max_level": 4,
+      "cast_ranges": [
+        1400
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        50,
+        40,
+        30,
+        20
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        100
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "hp_cost_perc",
+          "values_float": [
+            20
+          ],
+          "is_percentage": true,
+          "heading_loc": "РАСХОД ЗДОРОВЬЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "spirit_duration",
+          "values_float": [
+            20
+          ],
+          "is_percentage": false,
+          "heading_loc": "ВРЕМЯ ЖИЗНИ ДУХОВ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "spirit_speed",
+          "values_float": [
+            1000
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "radius",
+          "values_float": [
+            200
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС ДЕЙСТВИЯ ДУХА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "duration",
+          "values_float": [
+            4
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ГОРЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attackspeed_slow",
+          "values_float": [
+            -50,
+            -80,
+            -110,
+            -140
+          ],
+          "is_percentage": false,
+          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "damage_per_second",
+          "values_float": [
+            20,
+            40,
+            60,
+            80
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН В СЕКУНДУ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_phoenix_3",
+              "value": 20,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "spirit_count",
+          "values_float": [
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "tick_interval",
+          "values_float": [
+            0.2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            1400
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            100
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            50,
+            40,
+            30,
+            20
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5626,
+      "name": "phoenix_sun_ray",
+      "name_loc": "Sun Ray",
+      "desc_loc": "Герой выпускает из себя луч света ценой собственного здоровья. Луч наносит урон врагам и исцеляет союзников на определенное число плюс процент от общего запаса здоровья. Этот процент тем выше, чем дольше применяется луч.",
+      "lore_loc": "Потоки, что несут энергию звезды, не шире нескольких атомов.",
+      "notes_loc": [
+        "Ширина луча — %radius%, длина — %abilitycastrange%.",
+        "Действие заканчивается при оглушении, безмолвии, проклятье, сне или поднятии в воздух.",
+        "Активация предметов и других способностей не отменяет применение этой способности."
+      ],
+      "shard_loc": "Способность замедляет врагов на %shard_move_slow_pct%%%. Позволяет применять её под действием Supernova.",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "Урон и лечение от этой способности увеличиваются по мере отдаления от её владельца, а враги, находящиеся ближе к концу луча, получают в %focal_point_blind_stack_multiplier% раза больше эффектов Blinding Sun. Сила луча начинает усиливаться в его середине и достигает %focal_point_max_multiplier%%% от базовых показателей на расстоянии %focal_point_full_length_tooltip_only%. Если длина луча превышает %focal_point_full_length_tooltip_only%, урон с лечением увеличиваются в соответствующем размере."
+      ],
+      "type": 0,
+      "behavior": "16",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 2,
+      "immunity": 4,
+      "dispellable": 3,
+      "max_level": 4,
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0.01
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        30
+      ],
+      "durations": [
+        6
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "hp_cost_perc_per_second",
+          "values_float": [
+            6
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗАТРАТЫ ЗДОРОВЬЯ В СЕКУНДУ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "base_damage",
+          "values_float": [
+            14,
+            20,
+            26,
+            32
+          ],
+          "is_percentage": false,
+          "heading_loc": "БАЗОВЫЙ УРОН В СЕКУНДУ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hp_perc_damage",
+          "values_float": [
+            1,
+            2.75,
+            4.5,
+            6.25
+          ],
+          "is_percentage": true,
+          "heading_loc": "МАКС. УРОН ОТ ЗДОРОВЬЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_phoenix_5",
+              "value": 1.5,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "base_heal",
+          "values_float": [
+            7,
+            10,
+            13,
+            16
+          ],
+          "is_percentage": false,
+          "heading_loc": "БАЗОВОЕ ЛЕЧЕНИЕ В СЕКУНДУ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hp_perc_heal",
+          "values_float": [
+            0.5,
+            1,
+            1.5,
+            2
+          ],
+          "is_percentage": true,
+          "heading_loc": "МАКС. ЛЕЧЕНИЕ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "radius",
+          "values_float": [
+            130
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "tick_interval",
+          "values_float": [
+            0.2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "forward_move_speed",
+          "values_float": [
+            250
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "turn_rate_initial",
+          "values_float": [
+            250
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "turn_rate",
+          "values_float": [
+            25
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "shard_move_slow_pct",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            10
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "focal_point_max_multiplier",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "phoenix_hotspot",
+            "values": [
+              160
+            ],
+            "operation": 0
+          },
+          "required_facet": "phoenix_hotspot"
+        },
+        {
+          "name": "focal_point_start_length_pct",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "phoenix_hotspot",
+            "values": [
+              50
+            ],
+            "operation": 0
+          },
+          "required_facet": "phoenix_hotspot"
+        },
+        {
+          "name": "focal_point_full_length_tooltip_only",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "phoenix_hotspot",
+            "values": [
+              1200
+            ],
+            "operation": 0
+          },
+          "required_facet": "phoenix_hotspot"
+        },
+        {
+          "name": "focal_point_blind_stack_multiplier",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "phoenix_hotspot",
+            "values": [
+              2
+            ],
+            "operation": 0
+          },
+          "required_facet": "phoenix_hotspot"
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            1200
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityDuration",
+          "values_float": [
+            6
+          ],
+          "is_percentage": false,
+          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.01
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            100,
+            110,
+            120,
+            130
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            30
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": true,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1398,
+      "name": "phoenix_blinding_sun",
+      "name_loc": "Blinding Sun",
+      "desc_loc": "Отрицательные эффекты способностей этого героя каждую секунду накладывают складывающийся эффект, увеличивающий вероятность промаха атакой на %blind_per_second%%% и длящийся %blind_duration% сек.",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "13194139533314",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 1,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "blind_per_second",
+          "values_float": [
+            2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_phoenix_blinding_sun_misschance",
+              "value": 0.5,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "blind_duration",
+          "values_float": [
+            4
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": true,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5630,
+      "name": "phoenix_supernova",
+      "name_loc": "Supernova",
+      "desc_loc": "Герой прекращает свою жизнь ради шанса переродиться. Он превращается в горящее солнце, которое могут уничтожить атаками вражеские герои. Солнце обжигает врагов в большом радиусе, а спустя %abilityduration% сек. взрывается, оглушая всех врагов вокруг. Герой появляется на месте взрыва с полным запасом здоровья, маны и без перезарядки на других способностях.\n\nТИП РАЗВЕИВАНИЯ: сильное",
+      "lore_loc": "Солнечный жар сверхновой звезды может быть смертелен, но из его пламени в бесконечность устремляются всё новые лучи.",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "Увеличивает число атак для уничтожения солнца, а также позволяет применять эту способность на союзного героя, чтобы переродиться вместе с ним.",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 1,
+      "behavior": "33554436",
+      "target_team": 1,
+      "target_type": 1,
+      "flags": 131072,
+      "damage": 2,
+      "immunity": 3,
+      "dispellable": 3,
+      "max_level": 3,
+      "cast_ranges": [
+        450
+      ],
+      "cast_points": [
+        0.01
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        120
+      ],
+      "durations": [
+        6
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        150,
+        200,
+        250
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "aura_radius",
+          "values_float": [
+            1200
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "damage_per_sec",
+          "values_float": [
+            60,
+            90,
+            120
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН В СЕКУНДУ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "tick_interval",
+          "values_float": [
+            0.2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "stun_duration",
+          "values_float": [
+            1.6,
+            2,
+            2.4
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_phoenix_2",
+              "value": 0.6,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_hero_attacks",
+          "values_float": [
+            6,
+            8,
+            10
+          ],
+          "is_percentage": false,
+          "heading_loc": "АТАК ДЛЯ УНИЧТОЖЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_phoenix_1",
+              "value": 2,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_hero_attacks_scepter",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "АТАК ДЛЯ УНИЧТОЖЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_phoenix_1",
+              "value": 2,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [
+            7,
+            10,
+            13
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "cast_range_tooltip_scepter",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            500
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            450
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityDuration",
+          "values_float": [
+            6
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.01
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            150,
+            200,
+            250
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            120
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": true,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "talents": [
+    {
+      "id": 406,
+      "name": "special_bonus_unique_phoenix_6",
+      "name_loc": "+{s:bonus_slow_movement_speed_pct}% к замедлению от Icarus Dive",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1566,
+      "name": "special_bonus_unique_phoenix_blinding_sun_misschance",
+      "name_loc": "+{s:bonus_blind_per_second}% к шансу промаха от Blinding Sun",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6401,
+      "name": "special_bonus_unique_phoenix_3",
+      "name_loc": "+{s:bonus_damage_per_second} к урону в секунду от Fire Spirits",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6079,
+      "name": "special_bonus_hp_regen_20",
+      "name_loc": "+{s:value} здоровья в секунду",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "value",
+          "values_float": [
+            20
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6915,
+      "name": "special_bonus_unique_phoenix_5",
+      "name_loc": "+{s:bonus_hp_perc_damage}% к макс. урону от здоровья у Sun Ray",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6085,
+      "name": "special_bonus_unique_phoenix_2",
+      "name_loc": "+{s:bonus_stun_duration} сек. оглушения от Supernova",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6227,
+      "name": "special_bonus_unique_phoenix_1",
+      "name_loc": "+{s:bonus_max_hero_attacks} к атакам для уничтожения у Supernova",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6852,
+      "name": "special_bonus_unique_phoenix_4",
+      "name_loc": "+{s:bonus_dash_length} к дальности Icarus Dive",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "facet_abilities": [
+    {
+      "abilities": [
+        {
+          "id": 1397,
+          "name": "phoenix_dying_light",
+          "name_loc": "Dying Light",
+          "desc_loc": "Герой каждую секунду наносит врагам в радиусе %radius% магический урон в размере %damage_pct%%% от недостающего у него здоровья.",
+          "lore_loc": "",
+          "notes_loc": [],
+          "shard_loc": "",
+          "scepter_loc": "",
+          "facets_loc": [
+            "",
+            ""
+          ],
+          "type": 0,
+          "behavior": "3",
+          "target_team": 0,
+          "target_type": 0,
+          "flags": 0,
+          "damage": 0,
+          "immunity": 0,
+          "dispellable": 3,
+          "max_level": 1,
+          "cast_ranges": [
+            0
+          ],
+          "cast_points": [
+            0
+          ],
+          "channel_times": [
+            0
+          ],
+          "cooldowns": [
+            0
+          ],
+          "durations": [
+            0
+          ],
+          "damages": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mana_costs": [
+            0
+          ],
+          "gold_costs": [],
+          "health_costs": [],
+          "special_values": [
+            {
+              "name": "radius",
+              "values_float": [
+                400
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "damage_pct",
+              "values_float": [
+                4.5
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            }
+          ],
+          "is_item": false,
+          "ability_has_scepter": false,
+          "ability_has_shard": false,
+          "ability_is_granted_by_scepter": false,
+          "ability_is_granted_by_shard": false,
+          "ability_is_innate": false,
+          "item_cost": 0,
+          "item_initial_charges": 0,
+          "item_neutral_tier": 4294967295,
+          "item_stock_max": 0,
+          "item_stock_time": 0,
+          "item_quality": 0
+        }
+      ]
+    },
+    {
+      "abilities": []
+    }
+  ]
+}

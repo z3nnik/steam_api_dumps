@@ -1,0 +1,2048 @@
+{
+  "id": 95,
+  "name": "npc_dota_hero_troll_warlord",
+  "order_id": 97,
+  "name_loc": "Troll Warlord",
+  "bio_loc": "Обидеть тролля проще простого. Взбалмошных и сварливых, их хлебом не корми, а дай поспорить и попрепираться по любому поводу. До совершеннолетия самцы обитают в подземных пещерах под домищем матриарха, не принося никакого толку, лишь откармливаясь да озорничая. Зачастую уже даже взрослые тролли сидят на шее матриарха годами. Когда же их, наконец, вышвыривают с насиженных мест, тролли сбиваются в бродячие стаи, скандалят и недовольствуют по любому поводу.     \r\n\t\t\t\t<br><br>Так вот, представьте себе, какой невыносимой занозой нужно быть, чтобы тебя отвергли собственные соплеменники, при их-то любви позадирать друг друга. Такова была судьба Джа'ракала, тролля-барышника из глубин Ховена. Был он настолько склочен и злобен, что не терпели его даже тролли из собственной стаи. Однажды, после острого приступа жадности, в котором он присвоил себе львиную долю скарба с последнего налёта, терпение соплеменников лопнуло. Его скрутили, поколотили дубинами и выволокли из лагеря. Обезумев от ярости, Джа'ракал вернулся на следующий день с оружием в руках и убил всех обидчиков, одного за другим. Отдышавшись, он дал кровавую клятву: отныне он будет сражаться только сам за себя. По сей день скитается Джа'ракал по миру, озлобленный и беспощадный. И прозвали его повелителем троллей, Troll Warlord, вот только повелевает он лишь собой.",
+  "hype_loc": "Грозный боец Troll Warlord способен сражаться <b>как в ближнем, так и в дальнем бою</b>. Он машет своими топорами и <b>крутит ими вокруг себя</b>, нанося удары всё быстрее, и <b>увеличивает скорость атаки всех союзников</b>, где бы они ни были.",
+  "npe_desc_loc": "Сражается в ближнем или в дальнем бою по своему усмотрению",
+  "facets": [
+    {
+      "color": 3,
+      "title_loc": "Insensitive",
+      "description_loc": "В ближнем бою каждый эффект Fervor увеличивает броню.",
+      "name": "troll_warlord_insensitive",
+      "icon": "armor",
+      "gradient_id": 2,
+      "index": 0
+    },
+    {
+      "color": 0,
+      "title_loc": "Bad Influence",
+      "description_loc": "Применение Battle Trance увеличивает максимальное число эффектов Fervor, снимает ограничение на скорость атаки и даёт союзным героям {s:bonus_attack_speed_share_percent}% от дополнительной скорости атаки. ",
+      "name": "troll_warlord_bad_influence",
+      "icon": "damage",
+      "gradient_id": 1,
+      "index": 1
+    }
+  ],
+  "str_base": 21,
+  "str_gain": 2.5,
+  "agi_base": 23,
+  "agi_gain": 3.3,
+  "int_base": 13,
+  "int_gain": 1,
+  "primary_attr": 1,
+  "complexity": 2,
+  "attack_capability": 2,
+  "role_levels": [
+    3,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    2,
+    0
+  ],
+  "damage_min": 50,
+  "damage_max": 58,
+  "attack_rate": 1.7,
+  "attack_range": 500,
+  "projectile_speed": 1200,
+  "armor": 2.8333335,
+  "magic_resistance": 25,
+  "movement_speed": 290,
+  "turn_rate": 0.6,
+  "sight_range_day": 1800,
+  "sight_range_night": 800,
+  "max_health": 582,
+  "health_regen": 2.3500001,
+  "max_mana": 231,
+  "mana_regen": 0.65000004,
+  "abilities": [
+    {
+      "id": 1478,
+      "name": "troll_warlord_switch_stance",
+      "name_loc": "Battle Stance",
+      "desc_loc": "Герой переходит из дальнего боя в ближний, отчего снижается его базовый интервал атак.",
+      "lore_loc": "Въедливость Джа'ракала многогранна.",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "2564",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 3,
+      "dispellable": 0,
+      "max_level": 1,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "bonus_range",
+          "values_float": [
+            350
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "base_attack_time",
+          "values_float": [
+            1.4
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": true,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5509,
+      "name": "troll_warlord_whirling_axes_ranged",
+      "name_loc": "Whirling Axes (дальний бой)",
+      "desc_loc": "Герой бросает пять топоров веером на расстояние в %axe_range%, замедляя врагов и нанося им урон.",
+      "lore_loc": "Лишь сила ненависти вращает топоры настолько смертоносно.",
+      "notes_loc": [
+        "Не действует на Рошана.",
+        "Эту способность нельзя заблокировать или отразить."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "Способность развеивает положительные эффекты с врагов. Уменьшает перезарядку и расход маны.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "134217752",
+      "target_team": 2,
+      "target_type": 19,
+      "flags": 0,
+      "damage": 2,
+      "immunity": 4,
+      "dispellable": 2,
+      "max_level": 4,
+      "cast_ranges": [
+        950
+      ],
+      "cast_points": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        9
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        60
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "axe_width",
+          "values_float": [
+            100
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "axe_speed",
+          "values_float": [
+            1500
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "axe_range",
+          "values_float": [
+            950
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "axe_damage",
+          "values_float": [
+            60,
+            80,
+            100,
+            120
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord_3",
+              "value": 100,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "axe_slow_duration",
+          "values_float": [
+            2.5,
+            3,
+            3.5,
+            4
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord_whirling_axes_debuff_duration",
+              "value": 2.5,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "movement_speed",
+          "values_float": [
+            40
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "axe_spread",
+          "values_float": [
+            25
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "axe_count",
+          "values_float": [
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "pierces_magic_immunity",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord_6",
+              "value": 1,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            950
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            60
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАСХОД МАНЫ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            30
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            9
+          ],
+          "is_percentage": false,
+          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            5
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": true,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5510,
+      "name": "troll_warlord_whirling_axes_melee",
+      "name_loc": "Whirling Axes (ближний бой)",
+      "desc_loc": "Герой вращает два топора в небольшой области вокруг себя, нанося врагам урон и вынуждая их промахиваться атаками.",
+      "lore_loc": "Держи врагов близко.",
+      "notes_loc": [
+        "Не действует на Рошана."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "Способность развеивает отрицательные эффекты с владельца. Уменьшает перезарядку и расход маны.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "2052",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 2,
+      "immunity": 4,
+      "dispellable": 2,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        9
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        50
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "damage",
+          "values_float": [
+            50,
+            100,
+            150,
+            200
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord_3",
+              "value": 100,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hit_radius",
+          "values_float": [
+            100
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_range",
+          "values_float": [
+            450
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "axe_movement_speed",
+          "values_float": [
+            1250
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "blind_duration",
+          "values_float": [
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРОМАХОВ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord_whirling_axes_debuff_duration",
+              "value": 2.5,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "blind_pct",
+          "values_float": [
+            60
+          ],
+          "is_percentage": true,
+          "heading_loc": "ШАНС ПРОМАХА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "whirl_duration",
+          "values_float": [
+            3
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ВРАЩЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "pierces_magic_immunity",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord_6",
+              "value": 1,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            50
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАСХОД МАНЫ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            25
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            9
+          ],
+          "is_percentage": false,
+          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            5
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": true,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5511,
+      "name": "troll_warlord_fervor",
+      "name_loc": "Fervor",
+      "desc_loc": "Каждая последующая атака по одной и той же цели увеличивает скорость атаки героя. Если сменить цель, скорость станет обычной.",
+      "lore_loc": "Если не удалось в первый раз — бей ещё и ещё.",
+      "notes_loc": [
+        "Получение эффектов отключается истощением.",
+        "Шанс срабатывания от Aghanim’s Shard отключается истощением."
+      ],
+      "shard_loc": "Даёт владельцу шанс совершить дополнительную атаку дальнего боя по случайному врагу в радиусе атаки + %range_buffer%. Шанс дополнительной атаки: %base_chance%%% + %extra_attack_chance_per_stack%%% за эффект. Срабатывает только при атаках по вражеским существам.",
+      "scepter_loc": "",
+      "facets_loc": [
+        "В ближнем бою каждый эффект Fervor увеличивает броню.",
+        ""
+      ],
+      "type": 0,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 3,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "attack_speed",
+          "values_float": [
+            15,
+            20,
+            25,
+            30
+          ],
+          "is_percentage": false,
+          "heading_loc": "СКОРОСТЬ АТАКИ ЗА ЭФФЕКТ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord_5",
+              "value": 4,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_stacks",
+          "values_float": [
+            10
+          ],
+          "is_percentage": false,
+          "heading_loc": "МАКС. ЧИСЛО ЭФФЕКТОВ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "stack_limit_during_battle_trance",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "troll_warlord_bad_influence",
+            "values": [
+              12
+            ],
+            "operation": 0
+          },
+          "required_facet": "troll_warlord_bad_influence"
+        },
+        {
+          "name": "extra_attack_chance_per_stack",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            3
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "base_chance",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            16
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "armor_per_stack",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "БРОНЯ ЗА ЭФФЕКТ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "troll_warlord_insensitive",
+            "values": [
+              1
+            ],
+            "operation": 0
+          },
+          "required_facet": "troll_warlord_insensitive"
+        },
+        {
+          "name": "range_buffer",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            175
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": true,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5508,
+      "name": "troll_warlord_berserkers_rage",
+      "name_loc": "Berserker's Rage",
+      "desc_loc": "Сражаясь в ближнем бою, герой получает бонус к броне и скорости передвижения, а также может наложить на цель атаки оцепенение, не давая ей передвигаться или применять способности для перемещения.<br><br>Сражаясь в дальнем бою, герой может травмировать цель атаки, нанеся ей дополнительный урон и замедлив её передвижение и атаку.",
+      "lore_loc": "Злоба Джа'ракала нескончаема, как запас его топоров.",
+      "notes_loc": [
+        "Перезарядка некоторых предметов зависит от того, какой тип атаки герой имел при их использовании."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 1,
+      "immunity": 3,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "bonus_move_speed",
+          "values_float": [
+            15,
+            25,
+            35,
+            45
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord_2",
+              "value": 20,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "bonus_armor",
+          "values_float": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. БРОНЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord",
+              "value": 9,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "bonus_range",
+          "values_float": [
+            350
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "base_attack_time",
+          "values_float": [
+            1.4
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "ensnare_chance",
+          "values_float": [
+            20
+          ],
+          "is_percentage": true,
+          "heading_loc": "ШАНС ОЦЕПЕНЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "ensnare_duration",
+          "values_float": [
+            0.8,
+            1.2,
+            1.6,
+            2
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "maim_chance",
+          "values_float": [
+            20
+          ],
+          "is_percentage": true,
+          "heading_loc": "ШАНС ТРАВМЫ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "maim_duration",
+          "values_float": [
+            0.8,
+            1.2,
+            1.6,
+            2
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ТРАВМЫ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "maim_slow",
+          "values_float": [
+            8,
+            16,
+            24,
+            32
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ ОТ ТРАВМЫ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "maim_attack_slow",
+          "values_float": [
+            8,
+            16,
+            24,
+            32
+          ],
+          "is_percentage": false,
+          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ ОТ ТРАВМЫ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "maim_damage",
+          "values_float": [
+            10,
+            15,
+            20,
+            25
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН ОТ ТРАВМЫ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5512,
+      "name": "troll_warlord_battle_trance",
+      "name_loc": "Battle Trance",
+      "desc_loc": "Герой входит в боевой транс, вынуждающий его атаковать ближайшее вражеское существо в радиусе %range% (в первую очередь героев). Под действием этой способности героя нельзя убить. Даёт дополнительные вампиризм, скорость атаки и передвижения. Применяет на владельца нормальное развеивание.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
+      "lore_loc": "Всплеск адреналина, вызванный чистой злобой, ускорит твои лезвия.",
+      "notes_loc": [
+        "Не запрещает применять способности и предметы, но не позволяет отдавать другие команды.",
+        "Не защищает от убийства способностью Culling Blade у Axe.",
+        "Цель видно в тумане войны."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "Применение этой способности увеличивает максимальное число эффектов Fervor, снимает ограничение на скорость атаки и даёт союзным героям %attack_speed_share_percent%%% от дополнительной скорости атаки."
+      ],
+      "type": 1,
+      "behavior": "0",
+      "target_team": 3,
+      "target_type": 1,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 3,
+      "max_level": 3,
+      "cast_ranges": [
+        525
+      ],
+      "cast_points": [
+        0,
+        0,
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        90,
+        80,
+        70
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        150
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "trance_duration",
+          "values_float": [
+            6.5
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord_battle_trance_movespeed",
+              "value": 1.5,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "lifesteal",
+          "values_float": [
+            40,
+            60,
+            80
+          ],
+          "is_percentage": true,
+          "heading_loc": "ВАМПИРИЗМ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attack_speed",
+          "values_float": [
+            140,
+            170,
+            200
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attack_speed_share_percent",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "troll_warlord_bad_influence",
+            "values": [
+              50
+            ],
+            "operation": 0
+          },
+          "required_facet": "troll_warlord_bad_influence"
+        },
+        {
+          "name": "movement_speed",
+          "values_float": [
+            25,
+            30,
+            35
+          ],
+          "is_percentage": true,
+          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "range",
+          "values_float": [
+            900
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "stack_limit_tooltip",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "МАКСИМУМ ЭФФЕКТОВ FERVOR:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "troll_warlord_bad_influence",
+            "values": [
+              12
+            ],
+            "operation": 0
+          },
+          "required_facet": "troll_warlord_bad_influence"
+        },
+        {
+          "name": "ignore_attack_speed_limit",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "troll_warlord_bad_influence",
+            "values": [
+              1
+            ],
+            "operation": 0
+          },
+          "required_facet": "troll_warlord_bad_influence"
+        },
+        {
+          "name": "strong_dispel",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_troll_warlord_4",
+              "value": 1,
+              "operation": 5
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            525
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            150
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            90,
+            80,
+            70
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "talents": [
+    {
+      "id": 1010,
+      "name": "special_bonus_unique_troll_warlord_whirling_axes_debuff_duration",
+      "name_loc": "+{s:bonus_axe_slow_duration} сек. к длительности эффекта у Whirling Axes",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6958,
+      "name": "special_bonus_unique_troll_warlord_2",
+      "name_loc": "+{s:bonus_bonus_move_speed} к скорости передв. от Berserker's Rage",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 492,
+      "name": "special_bonus_unique_troll_warlord_5",
+      "name_loc": "+{s:bonus_attack_speed} к скорости атаки за эффект от Fervor",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6959,
+      "name": "special_bonus_unique_troll_warlord_3",
+      "name_loc": "+{s:bonus_axe_damage} к урону от Whirling Axes",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1011,
+      "name": "special_bonus_unique_troll_warlord_battle_trance_movespeed",
+      "name_loc": "+{s:bonus_trance_duration} сек. действия Battle Trance",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6154,
+      "name": "special_bonus_unique_troll_warlord",
+      "name_loc": "+{s:bonus_bonus_armor} к броне от Berserker's Rage",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 988,
+      "name": "special_bonus_unique_troll_warlord_6",
+      "name_loc": "Whirling Axes сквозь невоспр. к магии",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6960,
+      "name": "special_bonus_unique_troll_warlord_4",
+      "name_loc": "Battle Trance применяет сильное развеивание",
+      "desc_loc": "Можно применить в оглушении. Применяет на владельца сильное развеивание.",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "facet_abilities": [
+    {
+      "abilities": []
+    },
+    {
+      "abilities": []
+    }
+  ]
+}

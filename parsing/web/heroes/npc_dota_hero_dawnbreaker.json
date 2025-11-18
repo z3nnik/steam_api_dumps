@@ -1,0 +1,2347 @@
+{
+  "id": 135,
+  "name": "npc_dota_hero_dawnbreaker",
+  "order_id": 121,
+  "name_loc": "Dawnbreaker",
+  "bio_loc": "Спустя века после того, как исход Хранителя ознаменовал эпоху света, некоторые из наследников первого солнца начали объединяться в борьбе с хаосом, что преследовал создателя их предка. Назвавшись Детьми Сияния, они сочли себя достойными взять дело Хранителя в свои руки и стали сдерживать натиск тьмы, избавляя космос от порождений первородной ночи в блистательных походах своих армий.<br><br>Валора, самая почтенная воительница среди древних творений Детей, была вестницей великих порядка и сияния. Созданная из сердца молодой металлической звезды и одарённая золотым дыханием новой жизни, Валора разносила зарево мудрости Детей в темнейшие уголки вселенной — распаляя небосвод каждым взмахом своего молота в бесконечной битве с хаосом.<br><br>Со временем Дети открыли Валоре и другое её предназначение. Они узнали, как могут пронзить своим внутренним сиянием весь космос — дабы навеки изничтожить все проявления тьмы, — и отправили Валору за источником великой силы, последней части их великого плана. Но впервые Валора и её молот познали неудачу, и вместе со своими повелителями она заплатила сполна. Искра Детей Сияния совершенно затухла, и Валора осталась парить в чёрной глади, потерянная на бессчётные тысячелетия, пока не обрушилась на незнакомую ей планету.<br><br>Там она погрузилась в сон и покоилась до тех пор, пока присутствие блуждающей молодой звезды не разожгло древнюю кузницу энергии — реликвию Детей, которая, как и сама Валора, долгие годы была погребена под жгучей красной массой. Вернув лишь малую долю своих сил, она пробудилась в землях, охваченных войной и неумолимым хаосом. Пусть её богов уже нет, но с крепостью её молота сравнится лишь её воля нести его в справедливый бой во имя добра и сияния.",
+  "hype_loc": "Dawnbreaker проявляет себя в гуще боя, с радостью <b>круша врагов своим небесным молотом</b> и <b>излечивая союзников вокруг</b>. Она охотно швырнёт свой молот в противников, чтобы воссоединиться с ним в пламенном полёте, и всегда готова обратиться к своей истинной космической мощи, чтобы <b>прилететь на помощь союзникам,</b> где бы они ни были, и разгромить неприятеля.",
+  "npe_desc_loc": "Прилетает на помощь союзникам, где бы они ни были",
+  "facets": [
+    {
+      "color": 5,
+      "title_loc": "Solar Charged",
+      "description_loc": "Совершая атаку с эффектом Luminosity, герой уменьшает перезарядки всех своих способностей.",
+      "name": "dawnbreaker_solar_charged",
+      "icon": "cooldown",
+      "gradient_id": 3,
+      "index": 0
+    },
+    {
+      "color": 0,
+      "title_loc": "Starsurge",
+      "description_loc": "С завершающим ударом способности Starbreaker её владелец и союзники неподалёку получают дополнительную скорость атаки за каждый взмах молота, задевший врага.",
+      "name": "dawnbreaker_blaze",
+      "icon": "fist",
+      "gradient_id": 1,
+      "index": 2
+    },
+    {
+      "color": 1,
+      "title_loc": "Trailblazer",
+      "description_loc": "Союзники на огненном следе от способности Celestial Hammer передвигаются быстрее.",
+      "name": "dawnbreaker_hearthfire",
+      "icon": "speed",
+      "gradient_id": 1,
+      "index": 3
+    }
+  ],
+  "str_base": 25,
+  "str_gain": 3.4,
+  "agi_base": 14,
+  "agi_gain": 1.7,
+  "int_base": 20,
+  "int_gain": 2,
+  "primary_attr": 0,
+  "complexity": 1,
+  "attack_capability": 1,
+  "role_levels": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0
+  ],
+  "damage_min": 49,
+  "damage_max": 53,
+  "attack_rate": 1.7,
+  "attack_range": 150,
+  "projectile_speed": 900,
+  "armor": 4.3333335,
+  "magic_resistance": 25,
+  "movement_speed": 300,
+  "turn_rate": 0.6,
+  "sight_range_day": 1800,
+  "sight_range_night": 800,
+  "max_health": 670,
+  "health_regen": 3,
+  "max_mana": 315,
+  "mana_regen": 1,
+  "abilities": [
+    {
+      "id": 7902,
+      "name": "dawnbreaker_fire_wreath",
+      "name_loc": "Starbreaker",
+      "desc_loc": "Герой 3 раза вращает молотом вокруг себя, нанося врагам увеличенный урон от своей атаки. С последним взмахом герой бьёт молотом по земле, оглушая врагов перед собой и нанося им урон.",
+      "lore_loc": "Средь несчётных звёздных наследников многие не желали выполнять волю Детей Сияния. К тем, кто осмеливался противиться, Дети отправляли молотоносную Валору, дабы показать свою силу — и отступники либо терпели крах, либо возвращались на путь истинный.",
+      "notes_loc": [
+        "Под действием этой способности герой передвигается со скоростью %movement_speed%, а на восстановление после последнего взмаха ему требуется %self_stun_duration% сек.",
+        "Под действием этой способности нельзя применять Celestial Hammer или Solar Guardian.",
+        "На атаки этой способностью не действует прорубание.",
+        "Можно применить на себя, чтобы передвигаться вперёд.",
+        "Два первых взмаха на %sweep_stun_duration%s сек. замедляют передвижение врагов на %swipe_slow%%%."
+      ],
+      "shard_loc": "Даёт невосприимчивость к эффектам и +50%% к сопротивлению магии на время применения. Позволяет передвигаться во время применения этой способности, но замедляет владельца на %shard_movement_penalty%%%. Скорость не может упасть ниже %movement_speed%.",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "С завершающим ударом этой способности её владелец и союзники в радиусе %movespeed_bonus_radius% на %movespeed_bonus_duration% сек. получают дополнительную скорость атаки за каждый взмах молота, задевший врага.",
+        ""
+      ],
+      "type": 0,
+      "behavior": "4295229456",
+      "target_team": 2,
+      "target_type": 19,
+      "flags": 0,
+      "damage": 1,
+      "immunity": 3,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        17,
+        15,
+        13,
+        11
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        100
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "duration",
+          "values_float": [
+            1.1
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "swipe_radius",
+          "values_float": [
+            300
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС ВЗМАХОВ И УДАРА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "swipe_damage",
+          "values_float": [
+            25,
+            40,
+            55,
+            70
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. УРОН ОТ ВЗМАХОВ И УДАРА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "smash_radius",
+          "values_float": [
+            300
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "smash_damage",
+          "values_float": [
+            25,
+            40,
+            55,
+            70
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "movement_speed",
+          "values_float": [
+            215
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "total_attacks",
+          "values_float": [
+            3
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "smash_stun_duration",
+          "values_float": [
+            0.6,
+            0.8,
+            1,
+            1.2
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "sweep_stun_duration",
+          "values_float": [
+            0.12
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "self_stun_duration",
+          "values_float": [
+            0.2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "swipe_slow",
+          "values_float": [
+            -100
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "smash_distance_from_hero",
+          "values_float": [
+            120
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "turn_rate",
+          "values_float": [
+            90
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "shard_cast_point",
+          "values_float": [
+            0.1
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "shard_movement_penalty",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            35
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "movespeed_bonus_radius",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "dawnbreaker_blaze",
+            "values": [
+              700
+            ],
+            "operation": 0
+          },
+          "required_facet": "dawnbreaker_blaze"
+        },
+        {
+          "name": "movespeed_bonus_self_max",
+          "values_float": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ ЗА ВЗМАХ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "dawnbreaker_blaze",
+            "values": [
+              15,
+              21,
+              27,
+              33
+            ],
+            "operation": 0
+          },
+          "required_facet": "dawnbreaker_blaze"
+        },
+        {
+          "name": "movespeed_bonus_ally_max",
+          "values_float": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ СОЮЗНИКОВ ЗА ВЗМАХ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "dawnbreaker_blaze",
+            "values": [
+              9,
+              12,
+              15,
+              18
+            ],
+            "operation": 0
+          },
+          "required_facet": "dawnbreaker_blaze"
+        },
+        {
+          "name": "movespeed_bonus_duration",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "dawnbreaker_blaze",
+            "values": [
+              4
+            ],
+            "operation": 0
+          },
+          "required_facet": "dawnbreaker_blaze"
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.1
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            100
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            17,
+            15,
+            13,
+            11
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
+              "value": 4,
+              "operation": 2
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": true,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7914,
+      "name": "dawnbreaker_celestial_hammer",
+      "name_loc": "Celestial Hammer",
+      "desc_loc": "Герой бросает свой молот в цель, нанося урон всем врагам на пути. Молот застывает на месте на %pause_duration% сек., а затем возвращается, оставляя за собой замедляющий огненный след. Герой может воззвать к своему молоту и раньше, чтобы полететь ему навстречу и встретиться посередине.",
+      "lore_loc": "Лишь молот Лучезар — старейший спутник Валоры — связывает её с сиянием создателей.",
+      "notes_loc": [
+        "Молот наносит урон врагам как при броске, так и при полёте обратно.",
+        "Дальность полёта героя не может превысить дальность применения этой способности.",
+        "Способность Starbreaker нельзя применить, если молот не у героя в руках."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "Когда молот от Celestial Hammer лежит на земле, в радиусе %hammer_solar_guardian_radius% вокруг него действует эффект ульта, лечение и урон которого меньше на %hammer_solar_guardian_effectiveness_pct%%%. Увеличивает время, на которое молот может застыть на месте, до %pause_duration% сек.",
+        "",
+        "Союзники на огненном следе передвигаются быстрее."
+      ],
+      "type": 0,
+      "behavior": "16",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 2,
+      "immunity": 4,
+      "dispellable": 2,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        18,
+        16,
+        14,
+        12
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "hammer_damage",
+          "values_float": [
+            50,
+            80,
+            110,
+            140
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН МОЛОТА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "projectile_radius",
+          "values_float": [
+            200
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "projectile_speed",
+          "values_float": [
+            1600
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
+              "value": 80,
+              "operation": 3
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "flare_debuff_duration",
+          "values_float": [
+            2.5,
+            3,
+            3.5,
+            4
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГНЕННОГО СЛЕДА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "flare_radius",
+          "values_float": [
+            200
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС ОГНЕННОГО СЛЕДА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "move_slow",
+          "values_float": [
+            24,
+            28,
+            32,
+            36
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ ОТ ОГНЕННОГО СЛЕДА:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_celestial_hammer_slow",
+              "value": 15,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "burn_damage",
+          "values_float": [
+            20,
+            30,
+            40,
+            50
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН В СЕКУНДУ ОТ ОГНЕННОГО СЛЕДА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "burn_interval",
+          "values_float": [
+            0.5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "pause_duration",
+          "values_float": [
+            2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_gleaming_hammer",
+              "value": 2,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hammer_aoe_radius",
+          "values_float": [
+            200
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "travel_speed_pct",
+          "values_float": [
+            100
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "return_anim_distance_threshold",
+          "values_float": [
+            300
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "range",
+          "values_float": [
+            700,
+            900,
+            1100,
+            1300
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
+              "value": 80,
+              "operation": 3
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hammer_solar_guardian_radius",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_gleaming_hammer",
+              "value": 200,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hammer_solar_guardian_effectiveness_pct",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_gleaming_hammer",
+              "value": 40,
+              "operation": 5
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "fire_trail_health_regen",
+          "values_float": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "ДОП. СКОРОСТЬ ОТ ОГНЕННОГО СЛЕДА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "dawnbreaker_hearthfire",
+            "values": [
+              10,
+              15,
+              20,
+              25
+            ],
+            "operation": 5
+          },
+          "required_facet": "dawnbreaker_hearthfire"
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            100,
+            110,
+            120,
+            130
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            18,
+            16,
+            14,
+            12
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7918,
+      "name": "dawnbreaker_luminosity",
+      "name_loc": "Luminosity",
+      "desc_loc": "После нескольких атак герой преисполняется мощью, отчего его следующая атака наносит критический урон и излечивает всех союзных героев в радиусе %heal_radius% на %allied_healing_pct%%% от урона. Лечение от атаки по крипу или нейтральному существу будет слабее.",
+      "lore_loc": "Валора ослабла без укрепляющего света Детей Сияния, но всё же способна подпитывать союзную мощь, создавая порядок из хаоса, присущего каждой битве.",
+      "notes_loc": [
+        "Лечение от этой способности увеличивается усилением вампиризма.",
+        "Получение эффектов отключается истощением."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "Совершая атаку с эффектом Luminosity, герой уменьшает перезарядки всех своих способностей.",
+        "",
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "2",
+      "target_team": 1,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 1,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "attack_count",
+          "values_float": [
+            3
+          ],
+          "is_percentage": false,
+          "heading_loc": "АТАК ДЛЯ СРАБАТЫВАНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_luminosity_attack_count",
+              "value": 1,
+              "operation": 2
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "heal_radius",
+          "values_float": [
+            650
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "heal_pct",
+          "values_float": [
+            35,
+            40,
+            45,
+            50
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЛЕЧЕНИЕ ОТ АТАКИ ПО ГЕРОЮ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "heal_from_creeps",
+          "values_float": [
+            40
+          ],
+          "is_percentage": true,
+          "heading_loc": "УМЕНЬШЕНИЕ ЛЕЧЕНИЯ ПРИ АТАКЕ ПО КРИПУ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "bonus_damage",
+          "values_float": [
+            125,
+            150,
+            175,
+            200
+          ],
+          "is_percentage": true,
+          "heading_loc": "КРИТИЧЕСКИЙ УРОН:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_luminosity_crit",
+              "value": 40,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "allied_healing_pct",
+          "values_float": [
+            50
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "cooldown_reduction",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДОК:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "dawnbreaker_solar_charged",
+            "values": [
+              0.8
+            ],
+            "operation": 0
+          },
+          "required_facet": "dawnbreaker_solar_charged"
+        },
+        {
+          "name": "triggered_by_celestial_hammer",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [
+              1
+            ],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1424,
+      "name": "dawnbreaker_break_of_dawn",
+      "name_loc": "Break of Dawn",
+      "desc_loc": "С восходом солнца герой получает бонус к урону и обзору, который постепенно уменьшается с приближением ночи.",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "8589934658",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 1,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "day_threshold",
+          "values_float": [
+            0.006
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_dmg_pct",
+          "values_float": [
+            25
+          ],
+          "is_percentage": true,
+          "heading_loc": "МАКС. УВЕЛИЧЕНИЕ УРОНА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_vision_pct",
+          "values_float": [
+            20
+          ],
+          "is_percentage": true,
+          "heading_loc": "МАКС. УВЕЛИЧЕНИЕ ОБЗОРА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "current_dmg_tooltip",
+          "values_float": [
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "ТЕКУЩЕЕ УВЕЛИЧЕНИЕ УРОНА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "current_vision_tooltip",
+          "values_float": [
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "ТЕКУЩЕЕ УВЕЛИЧЕНИЕ ОБЗОРА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": true,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7906,
+      "name": "dawnbreaker_solar_guardian",
+      "name_loc": "Solar Guardian",
+      "desc_loc": "ПРЕРЫВАЕМАЯ — герой создаёт пульсирующий эффект в радиусе %max_offset_distance% от любого союзного героя. Каждая пульсация наносит урон врагам и излечивает союзников. После небольшой подготовки герой летит в указанную область, при приземлении нанося врагам дополнительный урон и оглушая их. Начав применение этой способности, её нельзя прервать.",
+      "lore_loc": "Лишь ради защиты союзников Валора готова воззвать к последним остаткам своих прежних сил, дабы взмыть на крыльях космоса.",
+      "notes_loc": [
+        "Интервал пульсаций: %pulse_interval% сек.",
+        "Всего на перемещение уходит %abilitychanneltime% сек. применения способности и %airtime_duration% сек. полёта.",
+        "Нельзя применить без молота."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "Аура способности действует ещё %scepter_aura_duration% сек. после приземления и следует за владельцем. Увеличивает лечение за пульсацию. Уменьшает длительность подготовки и время в полёте.",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 1,
+      "behavior": "144",
+      "target_team": 1,
+      "target_type": 1,
+      "flags": 0,
+      "damage": 2,
+      "immunity": 3,
+      "dispellable": 0,
+      "max_level": 3,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "channel_times": [
+        1.7
+      ],
+      "cooldowns": [
+        120,
+        105,
+        90
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        150,
+        200,
+        250
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "scepter_aura_duration",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            2
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "miss_rate",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            0
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "base_heal",
+          "values_float": [
+            45,
+            70,
+            95
+          ],
+          "is_percentage": false,
+          "heading_loc": "ЛЕЧЕНИЕ ЗА ПУЛЬСАЦИЮ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            10,
+            15,
+            20
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "radius",
+          "values_float": [
+            500
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС ПРИЗЕМЛЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_solar_guardian_radius",
+              "value": 150,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "base_damage",
+          "values_float": [
+            30,
+            50,
+            70
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН ЗА ПУЛЬСАЦИЮ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "pulse_interval",
+          "values_float": [
+            0.5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "land_damage",
+          "values_float": [
+            130,
+            160,
+            190
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН ОТ ПРИЗЕМЛЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "land_stun_duration",
+          "values_float": [
+            1.4,
+            1.6,
+            1.8
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_offset_distance",
+          "values_float": [
+            350
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "scepter_channel_time",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПОДГОТОВКИ СО СКИПЕТРОМ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            1
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "airtime_scepter_bonus",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            3.5
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "airtime_scepter_movement_speed",
+          "values_float": [
+            200
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "airtime_duration",
+          "values_float": [
+            0.8
+          ],
+          "is_percentage": false,
+          "heading_loc": "ВРЕМЯ В ПОЛЁТЕ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            0.5
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityChannelTime",
+          "values_float": [
+            1.7
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.1
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            150,
+            200,
+            250
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            120,
+            105,
+            90
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
+              "value": 15,
+              "operation": 2
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": true,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "talents": [
+    {
+      "id": 6159,
+      "name": "special_bonus_attack_damage_12",
+      "name_loc": "+{s:value} к урону",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "value",
+          "values_float": [
+            12
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7942,
+      "name": "special_bonus_unique_dawnbreaker_celestial_hammer_slow",
+      "name_loc": "+{s:bonus_move_slow}% к замедлению от Celestial Hammer",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7937,
+      "name": "special_bonus_unique_dawnbreaker_luminosity_crit",
+      "name_loc": "+{s:bonus_bonus_damage}% к критическому урону от Luminosity",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7938,
+      "name": "special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
+      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Solar Guardian",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7930,
+      "name": "special_bonus_unique_dawnbreaker_solar_guardian_radius",
+      "name_loc": "+{s:bonus_radius} к радиусу Solar Guardian",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7940,
+      "name": "special_bonus_unique_dawnbreaker_luminosity_attack_count",
+      "name_loc": "–{s:bonus_attack_count} атака для срабатывания Luminosity",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7931,
+      "name": "special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
+      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Starbreaker",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7934,
+      "name": "special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
+      "name_loc": "+{s:bonus_range}% к дальности/скорости полёта у Celestial Hammer",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "facet_abilities": [
+    {
+      "abilities": []
+    },
+    {
+      "abilities": []
+    },
+    {
+      "abilities": []
+    }
+  ]
+}

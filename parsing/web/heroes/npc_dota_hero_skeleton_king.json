@@ -1,0 +1,1967 @@
+{
+  "id": 42,
+  "name": "npc_dota_hero_skeleton_king",
+  "order_id": 52,
+  "name_loc": "Wraith King",
+  "bio_loc": "В течение долгих лет король Остарион создавал империю из останков своих врагов. Вечная деспотическая власть стала его навязчивой идеей, полностью охватившей рассудок. Он считал, что башни, построенные рядом с его дворцом, смогут сохранить его жизнь навсегда. Позднее он осознал, что это было глубокое заблуждение... Ведь даже кости однажды обратятся в прах. Глубоко разочарованный недолговечностью плоти, он начал искать более надежный способ, чтобы продлить свое правление и, в конце концов, нашел его. Это была спектральная энергия, форма чистого духа, которую некоторые чудовища выделяют в момент смерти. Вселив в себя их призрачное естество, он надеялся обрести столь же мощное и бессмертное тело, каким было его эго. Во время тысячелетнего солнцестояния, также известного как ночь призраков, он подготовил обряд превращения и приказал своим подданным собрать достаточное количество душ, которое поможет приблизить его к бессмертию. Никто не знает, сколько отчаянных героев пало в ту ночь. Единственным уцелевшим в этой бойне оказался сам король, переродившийся во Wraith King на следующее утро с восходом солнца. Отныне он не восседает на своем престоле, а идет на поле боя с мечом в руке и требует верности, не только до самой смерти, но и за ее пределами.",
+  "hype_loc": "Wraith King бесстрашно рвётся в бой, <b>оглушая и разрубая</b> врагов, пока те не покорятся его воле. Если противники справятся с ним один раз, <b>возрождающий ульт</b> даст Остариону ещё один шанс сразить своих неприятелей.",
+  "npe_desc_loc": "Мгновенно воскресает после смерти",
+  "facets": [
+    {
+      "color": 1,
+      "title_loc": "Bone Guard",
+      "description_loc": "Герой может призывать скелетов.",
+      "name": "skeleton_king_facet_bone_guard",
+      "icon": "summons",
+      "gradient_id": 0,
+      "index": 0
+    },
+    {
+      "color": 0,
+      "title_loc": "Spectral Blade",
+      "description_loc": "Атаки героя накладывают сглаз, который после задержки наносит дополнительный урон.",
+      "name": "skeleton_king_facet_cursed_blade",
+      "icon": "damage",
+      "gradient_id": 0,
+      "index": 1
+    }
+  ],
+  "str_base": 22,
+  "str_gain": 2.8,
+  "agi_base": 16,
+  "agi_gain": 1.7,
+  "int_base": 16,
+  "int_gain": 1.6,
+  "primary_attr": 0,
+  "complexity": 1,
+  "attack_capability": 1,
+  "role_levels": [
+    2,
+    1,
+    0,
+    2,
+    0,
+    3,
+    0,
+    0,
+    1
+  ],
+  "damage_min": 60,
+  "damage_max": 62,
+  "attack_rate": 1.7,
+  "attack_range": 150,
+  "projectile_speed": 0,
+  "armor": 3.6666667,
+  "magic_resistance": 25,
+  "movement_speed": 310,
+  "turn_rate": 0.6,
+  "sight_range_day": 1800,
+  "sight_range_night": 800,
+  "max_health": 604,
+  "health_regen": 2.7,
+  "max_mana": 267,
+  "mana_regen": 0.8,
+  "abilities": [
+    {
+      "id": 5086,
+      "name": "skeleton_king_hellfire_blast",
+      "name_loc": "Wraithfire Blast",
+      "desc_loc": "Герой опаляет цель призрачным огнём, оглушая её и нанося ей урон. После оглушения цель будет получать периодический урон и замедлится.",
+      "lore_loc": "Остарион призывает своих проклятых предков, уничтожая противников.",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "8",
+      "target_team": 2,
+      "target_type": 19,
+      "flags": 0,
+      "damage": 2,
+      "immunity": 4,
+      "dispellable": 1,
+      "max_level": 4,
+      "cast_ranges": [
+        525
+      ],
+      "cast_points": [
+        0.35,
+        0.35,
+        0.35,
+        0.35
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        14,
+        12,
+        10,
+        8
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        95,
+        110,
+        125,
+        140
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "blast_speed",
+          "values_float": [
+            1200
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "blast_stun_duration",
+          "values_float": [
+            1,
+            1.2,
+            1.4,
+            1.6
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_wraith_king_11",
+              "value": 1,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "blast_dot_duration",
+          "values_float": [
+            2
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "skeleton_king_facet_bone_guard",
+            "values": [
+              0
+            ],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "blast_slow",
+          "values_float": [
+            -20
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "damage",
+          "values_float": [
+            75,
+            90,
+            105,
+            120
+          ],
+          "is_percentage": false,
+          "heading_loc": "ПЕРВИЧНЫЙ УРОН:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "blast_dot_damage",
+          "values_float": [
+            20,
+            40,
+            60,
+            80
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН В СЕКУНДУ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            525
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.35
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            95,
+            110,
+            125,
+            140
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            14,
+            12,
+            10,
+            8
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5088,
+      "name": "skeleton_king_mortal_strike",
+      "name_loc": "Mortal Strike",
+      "desc_loc": "Герой пассивно наносит атакой дополнительный урон. Способность имеет перезарядку.",
+      "lore_loc": "Один удар, дабы сокрушить врага.",
+      "notes_loc": [],
+      "shard_loc": "Способность наносит на %wraith_crit_bonus%%% больше урона, когда её владелец находится в призрачной форме.",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "2",
+      "target_team": 2,
+      "target_type": 1,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        6,
+        5.5,
+        5,
+        4.5
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "crit_mult",
+          "values_float": [
+            160,
+            200,
+            240,
+            280
+          ],
+          "is_percentage": true,
+          "heading_loc": "КРИТИЧЕСКИЙ УРОН:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "wraith_cd_mult",
+          "values_float": [
+            1
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "wraith_crit_bonus",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            50
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            6,
+            5.5,
+            5,
+            4.5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_wraith_king_10",
+              "value": 2,
+              "operation": 2
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": true,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1283,
+      "name": "skeleton_king_vampiric_spirit",
+      "name_loc": "Vampiric Spirit",
+      "desc_loc": "Дарует герою вампиризм. Когда герой получает смертельный урон, он ненадолго становится призраком со свободным перемещением и увеличенной скоростью передвижения и атаки, и только затем погибает. Способность Reincarnation не может сработать во время этого эффекта.",
+      "lore_loc": "",
+      "notes_loc": [
+        "Награду за убийство героя, смерть которого была отложена, получит тот, кто нанёс смертельный удар.",
+        "Не срабатывает перед перерождением.",
+        "Истощением отключается только пассивный вампиризм.",
+        "В призрачной форме отсчитывается время до возрождения."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "Делает способность аурой, превращающей погибших союзных героев в призраков. Увеличивает длительность призрачной формы.",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "66",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "vampiric_aura",
+          "values_float": [
+            10,
+            20,
+            30,
+            40
+          ],
+          "is_percentage": true,
+          "heading_loc": "ВАМПИРИЗМ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_wraith_king_2",
+              "value": 10,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "duration",
+          "values_float": [
+            3.5,
+            4,
+            4.5,
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "ВРЕМЯ ЖИЗНИ ПРИЗРАКА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            1
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "scepter_attack_speed",
+          "values_float": [
+            30,
+            45,
+            60,
+            75
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "scepter_move_speed_pct",
+          "values_float": [
+            10,
+            15,
+            20,
+            25
+          ],
+          "is_percentage": true,
+          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "scepter_aura_radius",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС АУРЫ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            1200
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": true,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": true,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5089,
+      "name": "skeleton_king_reincarnation",
+      "name_loc": "Reincarnation",
+      "desc_loc": "При смерти тело героя собирается воедино, воскрешая его и замедляя всех врагов в радиусе %slow_radius%. Владелец способности может применить её на себя, чтобы умереть моментально.",
+      "lore_loc": "Заговорщики не перестают удивляться тому, что король всё никак не умрёт.",
+      "notes_loc": [
+        "Герой не возродится, если у него недостаточно маны.",
+        "Если герой одновременно имеет Aegis of the Immortal и эту способность, то способность сработает первой.",
+        "Возвращает к жизни с полным запасом здоровья и маны."
+      ],
+      "shard_loc": "Убирает расход маны.",
+      "scepter_loc": "Уменьшает перезарядку.",
+      "facets_loc": [
+        "При перерождении призывается по %shard_skeleton_count% скелета за каждого вражеского героя неподалёку.",
+        "Перерождение отменяет перерыв сглаза у вражеских геров неподалёку."
+      ],
+      "type": 1,
+      "behavior": "4294967304",
+      "target_team": 1,
+      "target_type": 1,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 4,
+      "dispellable": 2,
+      "max_level": 3,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        180,
+        150,
+        120
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        225
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "reincarnate_time",
+          "values_float": [
+            3
+          ],
+          "is_percentage": false,
+          "heading_loc": "ВРЕМЯ ПЕРЕРОЖДЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "slow_radius",
+          "values_float": [
+            600
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "movespeed",
+          "values_float": [
+            -75
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attackslow",
+          "values_float": [
+            -75
+          ],
+          "is_percentage": false,
+          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "slow_duration",
+          "values_float": [
+            4
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "clear_curse",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "skeleton_king_facet_cursed_blade",
+            "values": [
+              1
+            ],
+            "operation": 5
+          },
+          "required_facet": "skeleton_king_facet_cursed_blade"
+        },
+        {
+          "name": "shard_skeleton_count",
+          "values_float": [
+            0,
+            0,
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "skeleton_king_facet_bone_guard",
+            "values": [
+              2,
+              3,
+              4
+            ],
+            "operation": 0
+          },
+          "required_facet": "skeleton_king_facet_bone_guard"
+        },
+        {
+          "name": "trigger_wraithfire_blast",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_wraith_king_4",
+              "value": 1,
+              "operation": 5
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            225
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            0
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            180,
+            150,
+            120
+          ],
+          "is_percentage": false,
+          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            15
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": true,
+      "ability_has_shard": true,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "talents": [
+    {
+      "id": 6088,
+      "name": "special_bonus_unique_wraith_king_2",
+      "name_loc": "+{s:bonus_vampiric_aura}% к вампиризму от Vampiric Spirit",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1545,
+      "name": "special_bonus_unique_wraith_king_facet_1",
+      "name_loc": "",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "+{s:bonus_blast_dot_duration} сек. замедления от Wraithfire Blast",
+        "+{s:bonus_cursed_damage_pct}% к урону от атаки у Spectral Blade"
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 809,
+      "name": "special_bonus_unique_wraith_king_11",
+      "name_loc": "+{s:bonus_blast_stun_duration} сек. оглушения от Wraithfire Blast",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5976,
+      "name": "special_bonus_hp_400",
+      "name_loc": "+{s:value} к здоровью",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "value",
+          "values_float": [
+            400
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5908,
+      "name": "special_bonus_attack_speed_60",
+      "name_loc": "+{s:value} к скорости атаки",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "value",
+          "values_float": [
+            60
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1547,
+      "name": "special_bonus_unique_wraith_king_facet_3",
+      "name_loc": "",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "+{s:bonus_min_skeleton_spawn} к числу скелетов от Bone Guard",
+        "–{s:bonus_curse_cooldown}% перерыва у Spectral Blade"
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 741,
+      "name": "special_bonus_unique_wraith_king_10",
+      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Mortal Strike",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6566,
+      "name": "special_bonus_unique_wraith_king_4",
+      "name_loc": "Применение Wraithfire Blast на жертв Reincarnation",
+      "desc_loc": "Вместо замедления на всех врагов в радиусе 900 применяется способность Wraithfire Blast текущего уровня.",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "facet_abilities": [
+    {
+      "abilities": [
+        {
+          "id": 5087,
+          "name": "skeleton_king_bone_guard",
+          "name_loc": "Bone Guard",
+          "desc_loc": "Способность получает один заряд, когда её владелец убивает двух крипов, и два заряда, когда он убивает героя. Её применение расходует все заряды и призывает скелетов, которые возрождаются один раз. На скелетов действует вампиризм от способности Vampiric Spirit.",
+          "lore_loc": "Королевский клинок питает ауру хозяина, вытягивая из врагов жизненные силы.",
+          "notes_loc": [
+            "Получение зарядов отключается истощением.",
+            "Если у героя есть призванные скелеты, они станут атаковать цель способности Wraithfire Blast."
+          ],
+          "shard_loc": "",
+          "scepter_loc": "",
+          "facets_loc": [
+            "",
+            ""
+          ],
+          "type": 0,
+          "behavior": "8589934596",
+          "target_team": 1,
+          "target_type": 0,
+          "flags": 0,
+          "damage": 1,
+          "immunity": 3,
+          "dispellable": 0,
+          "max_level": 4,
+          "cast_ranges": [
+            0
+          ],
+          "cast_points": [
+            0.1
+          ],
+          "channel_times": [
+            0
+          ],
+          "cooldowns": [
+            42
+          ],
+          "durations": [
+            0
+          ],
+          "damages": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mana_costs": [
+            70,
+            80,
+            90,
+            100
+          ],
+          "gold_costs": [],
+          "health_costs": [],
+          "special_values": [
+            {
+              "name": "skeleton_duration",
+              "values_float": [
+                46
+              ],
+              "is_percentage": false,
+              "heading_loc": "ДЛИТЕЛЬНОСТЬ ЖИЗНИ СКЕЛЕТОВ:",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "max_skeleton_charges",
+              "values_float": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "is_percentage": false,
+              "heading_loc": "МАКС. ЗАРЯДОВ:",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "min_skeleton_spawn",
+              "values_float": [],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [
+                {
+                  "name": "special_bonus_unique_wraith_king_facet_3",
+                  "value": 5,
+                  "operation": 0
+                }
+              ],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "spawn_interval",
+              "values_float": [
+                0.25
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "reincarnate_time",
+              "values_float": [
+                3
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "gold_bounty",
+              "values_float": [
+                5
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "xp_bounty",
+              "values_float": [
+                5
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "skeleton_damage_tooltip",
+              "values_float": [
+                34,
+                39,
+                43,
+                49
+              ],
+              "is_percentage": false,
+              "heading_loc": "УРОН СКЕЛЕТОВ:",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "talent_skeleton_damage",
+              "values_float": [
+                0,
+                5,
+                10,
+                15
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "skeleton_building_damage_reduction",
+              "values_float": [
+                35
+              ],
+              "is_percentage": true,
+              "heading_loc": "УМЕНЬШЕНИЕ УРОНА ПО ПОСТРОЙКАМ:",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "skeleton_bonus_hero_damage",
+              "values_float": [
+                25
+              ],
+              "is_percentage": true,
+              "heading_loc": "УВЕЛИЧЕНИЕ УРОНА ПО ГЕРОЯМ:",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "skeleton_charges_per_hero_multiplier",
+              "values_float": [
+                4
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "AbilityCastPoint",
+              "values_float": [
+                0.1
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "AbilityManaCost",
+              "values_float": [
+                70,
+                80,
+                90,
+                100
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "AbilityCooldown",
+              "values_float": [
+                42
+              ],
+              "is_percentage": false,
+              "heading_loc": "",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            }
+          ],
+          "is_item": false,
+          "ability_has_scepter": false,
+          "ability_has_shard": false,
+          "ability_is_granted_by_scepter": false,
+          "ability_is_granted_by_shard": false,
+          "ability_is_innate": false,
+          "item_cost": 0,
+          "item_initial_charges": 0,
+          "item_neutral_tier": 4294967295,
+          "item_stock_max": 0,
+          "item_stock_time": 0,
+          "item_quality": 0
+        }
+      ]
+    },
+    {
+      "abilities": [
+        {
+          "id": 1282,
+          "name": "skeleton_king_spectral_blade",
+          "name_loc": "Spectral Blade",
+          "desc_loc": "Накладывает на цель атаки сглаз, который после небольшой задержки наносит базовый урон и часть урона от сглазившей атаки. Этот эффект можно накладывать на одно и то же существо только с определённым перерывом. Вампиризм от Vampiric Spirit даётся и за урон от сглаза.",
+          "lore_loc": "Вечная злоба украденных Остарионом душ просачивается в реальность с каждым ударом его кровожадного меча.",
+          "notes_loc": [],
+          "shard_loc": "",
+          "scepter_loc": "",
+          "facets_loc": [
+            "",
+            ""
+          ],
+          "type": 0,
+          "behavior": "8589934594",
+          "target_team": 0,
+          "target_type": 0,
+          "flags": 0,
+          "damage": 4,
+          "immunity": 0,
+          "dispellable": 0,
+          "max_level": 4,
+          "cast_ranges": [
+            0
+          ],
+          "cast_points": [
+            0
+          ],
+          "channel_times": [
+            0
+          ],
+          "cooldowns": [
+            0
+          ],
+          "durations": [
+            0
+          ],
+          "damages": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mana_costs": [
+            0
+          ],
+          "gold_costs": [],
+          "health_costs": [],
+          "special_values": [
+            {
+              "name": "cursed_damage_pct",
+              "values_float": [
+                50
+              ],
+              "is_percentage": true,
+              "heading_loc": "УРОН ОТ АТАКИ:",
+              "bonuses": [
+                {
+                  "name": "special_bonus_unique_wraith_king_facet_1",
+                  "value": 15,
+                  "operation": 0
+                }
+              ],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "cursed_damage",
+              "values_float": [
+                10,
+                25,
+                40,
+                55
+              ],
+              "is_percentage": false,
+              "heading_loc": "БАЗОВЫЙ УРОН:",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "curse_cooldown",
+              "values_float": [
+                18,
+                16,
+                14,
+                12
+              ],
+              "is_percentage": false,
+              "heading_loc": "ПЕРЕРЫВ (ГЕРОИ):",
+              "bonuses": [
+                {
+                  "name": "special_bonus_unique_wraith_king_facet_3",
+                  "value": 25,
+                  "operation": 4
+                }
+              ],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "curse_cooldown_creep",
+              "values_float": [
+                6
+              ],
+              "is_percentage": false,
+              "heading_loc": "ПЕРЕРЫВ (КРИПЫ):",
+              "bonuses": [
+                {
+                  "name": "special_bonus_unique_wraith_king_facet_3",
+                  "value": 25,
+                  "operation": 4
+                }
+              ],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            },
+            {
+              "name": "curse_delay",
+              "values_float": [
+                3
+              ],
+              "is_percentage": false,
+              "heading_loc": "ЗАДЕРЖКА:",
+              "bonuses": [],
+              "values_shard": [],
+              "values_scepter": [],
+              "facet_bonus": {
+                "name": "",
+                "values": [],
+                "operation": 0
+              },
+              "required_facet": ""
+            }
+          ],
+          "is_item": false,
+          "ability_has_scepter": false,
+          "ability_has_shard": false,
+          "ability_is_granted_by_scepter": false,
+          "ability_is_granted_by_shard": false,
+          "ability_is_innate": false,
+          "item_cost": 0,
+          "item_initial_charges": 0,
+          "item_neutral_tier": 4294967295,
+          "item_stock_max": 0,
+          "item_stock_time": 0,
+          "item_quality": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1823 @@
+{
+  "id": 59,
+  "name": "npc_dota_hero_huskar",
+  "order_id": 54,
+  "name_loc": "Huskar",
+  "bio_loc": "Очнувшись от агонии священного мира Нотл, воин открыл глаза и узрел, как одарённый жрец теней накладывает на него глубокое заклятие. Вопреки древним обрядам ордена Дезун душа воина была спасена от вечности, но, как и все побывавшие в мире Нотл, он необратимо изменился. Более неподвластная смертной плоти, его кровь обратилась источником невообразимой силы; каждая пролитая капля с лихвой возвращалась лютой, горящей мощью. Однако новообретённый дар разъярил спасённого, ведь жрец теней лишил его места среди богов, отказал в собственном священном жертвоприношении.\r\n\t\t\t\t<br><br>Со временем старкейшины ордена собрались расширить своё влияние и согласились между собой, что такой внушительный боец пригодится в грядущих кампаниях. Однако воин не желал быть жалким оружием ордена, что отказал ему в родовых правах. Когда на горизонте воспылали первые огни восходящей войны, он покинул отчий дом, чтобы найти новых союзников и достойный повод выпустить силу, что придёт с его безраздельным самопожертвованием.",
+  "hype_loc": "Чем меньше у Huskar здоровья, тем опаснее он становится. Своим ультом он <b>мгновенно лишает себя и противника части здоровья</b>, а на грани смерти может обрушить на своих врагов <b>шквал горящих копий</b>.",
+  "npe_desc_loc": "Жертвует своим здоровьем, чтобы наносить больше урона",
+  "facets": [
+    {
+      "color": 0,
+      "title_loc": "Cauterize",
+      "description_loc": "Позволяет активировать способность Berserker's Blood, чтобы пожертвовать частью здоровья и применить на себя развеивание, а после задержки излечиться, вернув потраченное здоровье плюс бонус за каждый развеянный отрицательный эффект.",
+      "name": "huskar_cauterize",
+      "icon": "broken_chain",
+      "gradient_id": 0,
+      "index": 2
+    },
+    {
+      "color": 1,
+      "title_loc": "Incendiary",
+      "description_loc": "Добавляет способности Burning Spear периодический урон в процентах от максимального здоровья. Вместо текущего здоровья способность расходует максимальное.",
+      "name": "huskar_nothl_conflagration",
+      "icon": "damage",
+      "gradient_id": 0,
+      "index": 3
+    }
+  ],
+  "str_base": 23,
+  "str_gain": 3.3,
+  "agi_base": 10,
+  "agi_gain": 1.5,
+  "int_base": 18,
+  "int_gain": 1.5,
+  "primary_attr": 0,
+  "complexity": 1,
+  "attack_capability": 2,
+  "role_levels": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1
+  ],
+  "damage_min": 44,
+  "damage_max": 49,
+  "attack_rate": 1.6,
+  "attack_range": 400,
+  "projectile_speed": 1400,
+  "armor": 2.6666667,
+  "magic_resistance": 25,
+  "movement_speed": 295,
+  "turn_rate": 0.6,
+  "sight_range_day": 1800,
+  "sight_range_night": 800,
+  "max_health": 626,
+  "health_regen": 2.55,
+  "max_mana": 216,
+  "mana_regen": 0.90000004,
+  "abilities": [
+    {
+      "id": 7300,
+      "name": "huskar_inner_fire",
+      "name_loc": "Inner Fire",
+      "desc_loc": "Огненная ярость героя отталкивает всех врагов неподалёку на определённое расстояние от себя, наносит им урон и накладывает на них безмолвие.",
+      "lore_loc": "Даже плоть самого Хускара не способна сдержать переполняющую его жизненную силу.",
+      "notes_loc": [],
+      "shard_loc": "Способность замедляет передвижение жертв и излечивает владельца на долю от нанесённого урона. Уменьшает перезарядку.",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "4",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 2,
+      "immunity": 4,
+      "dispellable": 2,
+      "max_level": 4,
+      "cast_ranges": [
+        500
+      ],
+      "cast_points": [
+        0.35
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        17,
+        15,
+        13,
+        11
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "health_cost",
+          "values_float": [
+            75,
+            100,
+            125,
+            150
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАСХОД ЗДОРОВЬЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "damage",
+          "values_float": [
+            105,
+            170,
+            235,
+            300
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "radius",
+          "values_float": [
+            500
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "disarm_duration",
+          "values_float": [
+            1.5,
+            2,
+            2.5,
+            3
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_huskar_3",
+              "value": 0.75,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "knockback_distance",
+          "values_float": [
+            400
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДАЛЬНОСТЬ ОТТАЛКИВАНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "knockback_duration",
+          "values_float": [
+            1
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "movement_slow_pct",
+          "values_float": [
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [
+            50
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hero_damage_heal_pct",
+          "values_float": [
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЛЕЧЕНИЕ ОТ УРОНА ПО ГЕРОЯМ:",
+          "bonuses": [],
+          "values_shard": [
+            50
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "creep_damage_heal_pct",
+          "values_float": [
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЛЕЧЕНИЕ ОТ УРОНА ПО КРИПАМ:",
+          "bonuses": [],
+          "values_shard": [
+            10
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            500
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.35
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            17,
+            15,
+            13,
+            11
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            3
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": true,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5272,
+      "name": "huskar_burning_spear",
+      "name_loc": "Burning Spear",
+      "desc_loc": "Герой жертвует частью здоровья, чтобы поджечь своё копьё и добавить к обычной атаке складывающийся периодический урон.",
+      "lore_loc": "Священный воин орошает оружие собственной кровью и поджигает его, чтобы боль врагов затмила его собственную.",
+      "notes_loc": [
+        "Эффекты этой способности складываются, их число не ограничено.",
+        "Этой способностью нельзя совершить самоубийство.",
+        "С аспектом Incendiary не наносит Рошану урон, зависящий от его максимального здоровья."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "Burning Spears launches an additional %multishot_targets% spears onto random enemies within Huskar's attack range.",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        "Добавляет способности периодический урон в процентах от максимального здоровья. Вместо текущего здоровья способность расходует максимальное."
+      ],
+      "type": 0,
+      "behavior": "135176",
+      "target_team": 2,
+      "target_type": 19,
+      "flags": 0,
+      "damage": 2,
+      "immunity": 4,
+      "dispellable": 3,
+      "max_level": 4,
+      "cast_ranges": [
+        450
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "health_cost",
+          "values_float": [
+            4
+          ],
+          "is_percentage": true,
+          "heading_loc": "РАСХОД ТЕКУЩЕГО ЗДОРОВЬЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "huskar_nothl_conflagration",
+            "values": [
+              0
+            ],
+            "operation": 5
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_health_cost",
+          "values_float": [
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "РАСХОД МАКС. ЗДОРОВЬЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "huskar_nothl_conflagration",
+            "values": [
+              4
+            ],
+            "operation": 5
+          },
+          "required_facet": "huskar_nothl_conflagration"
+        },
+        {
+          "name": "burn_damage",
+          "values_float": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "is_percentage": false,
+          "heading_loc": "УРОН ОТ ГОРЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_huskar_2",
+              "value": 5,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "burn_damage_max_pct",
+          "values_float": [
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "ГОРЕНИЕ ОТ МАКС. ЗДОРОВЬЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "huskar_nothl_conflagration",
+            "values": [
+              0.75
+            ],
+            "operation": 0
+          },
+          "required_facet": "huskar_nothl_conflagration"
+        },
+        {
+          "name": "duration",
+          "values_float": [
+            9
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_huskar_5",
+              "value": 6,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            450
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5273,
+      "name": "huskar_berserkers_blood",
+      "name_loc": "Berserker's Blood",
+      "desc_loc": "Раны делают героя сильнее, увеличивая его скорость атаки, сопротивление магии и восстановление здоровья в зависимости от доли недостающего здоровья. Восстановление равно доле от силы героя.",
+      "lore_loc": "Лишившись своего божественного предназначения, священный воин приобрел смертоносность в приземлённом бою — тем более значительную, чем больше пролито его собственной крови.",
+      "notes_loc": [
+        "Бонусы даются линейно: они отсутствуют при полном здоровье, а в полную силу действуют при менее чем %hp_threshold_max%%% здоровья."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "Позволяет активировать эту способность, чтобы пожертвовать частью здоровья и применить на себя развеивание, а после задержки излечиться, вернув потраченное здоровье плюс бонус за каждый развеянный отрицательный эффект.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
+        ""
+      ],
+      "type": 0,
+      "behavior": "2",
+      "target_team": 1,
+      "target_type": 1,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "maximum_attack_speed",
+          "values_float": [
+            170,
+            220,
+            270,
+            320
+          ],
+          "is_percentage": false,
+          "heading_loc": "МАКС. СКОРОСТЬ АТАКИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "maximum_health_regen",
+          "values_float": [
+            25,
+            40,
+            55,
+            70
+          ],
+          "is_percentage": true,
+          "heading_loc": "МАКС. ВОССТАНОВЛЕНИЕ ОТ СИЛЫ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_huskar_6",
+              "value": 30,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "maximum_magic_resist",
+          "values_float": [
+            15,
+            20,
+            25,
+            30
+          ],
+          "is_percentage": true,
+          "heading_loc": "МАКС. СОПРОТИВЛЕНИЕ МАГИИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hp_threshold_max",
+          "values_float": [
+            12
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗДОРОВЬЯ ДЛЯ МАКС. ЭФФЕКТА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "activatable",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "huskar_cauterize",
+            "values": [
+              1
+            ],
+            "operation": 0
+          },
+          "required_facet": "huskar_cauterize"
+        },
+        {
+          "name": "activation_healthcost_pct",
+          "values_float": [
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "РАСХОД ТЕКУЩЕГО ЗДОРОВЬЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "huskar_cauterize",
+            "values": [
+              30
+            ],
+            "operation": 0
+          },
+          "required_facet": "huskar_cauterize"
+        },
+        {
+          "name": "activation_cooldown",
+          "values_float": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "huskar_cauterize",
+            "values": [
+              50,
+              40,
+              30,
+              20
+            ],
+            "operation": 0
+          },
+          "required_facet": "huskar_cauterize"
+        },
+        {
+          "name": "activation_delay",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "ЗАДЕРЖКА ЛЕЧЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "huskar_cauterize",
+            "values": [
+              3
+            ],
+            "operation": 0
+          },
+          "required_facet": "huskar_cauterize"
+        },
+        {
+          "name": "activation_heal_pct_per_debuff",
+          "values_float": [
+            0
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЛЕЧЕНИЕ ОТ МАКС. ЗДОРОВЬЯ ЗА ОТРИЦ. ЭФФЕКТ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "huskar_cauterize",
+            "values": [
+              5
+            ],
+            "operation": 0
+          },
+          "required_facet": "huskar_cauterize"
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1309,
+      "name": "huskar_blood_magic",
+      "name_loc": "Blood Magic",
+      "desc_loc": "У героя нет маны. Вместо неё все заклинания расходуют здоровье, нанося владельцу магический урон, который можно уменьшить сопротивлением магии.",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "4406636445698",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 1,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": true,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 5274,
+      "name": "huskar_life_break",
+      "name_loc": "Life Break",
+      "desc_loc": "Герой наносит огромный урон ценой собственного здоровья. Он прыгает на жертву, отнимая часть её текущего здоровья и замедляя её атаку и передвижение. Во время прыжка герой невосприимчив к эффектам и получает +60%% к сопротивлению магии.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
+      "lore_loc": "Какой бы ни была опасность, священный воин бросается в битву, пережить которую сможет только он.",
+      "notes_loc": [
+        "Прыжок остановится, если в полёте вывести из строя владельца способности или если цель передвинется на расстояние более 1400 за 0,015 секунды.",
+        "Замедляет врагов, невосприимчивых к магии.",
+        "Эту способность нельзя сбить с цели."
+      ],
+      "shard_loc": "",
+      "scepter_loc": "Увеличивает дальность применения способности и провоцирует её цель.",
+      "facets_loc": [
+        "Life Break замедляет врагов вокруг основной цели.",
+        "Life Break излечивает союзников вокруг основной цели.",
+        "",
+        ""
+      ],
+      "type": 1,
+      "behavior": "8",
+      "target_team": 2,
+      "target_type": 3,
+      "flags": 16,
+      "damage": 2,
+      "immunity": 3,
+      "dispellable": 2,
+      "max_level": 3,
+      "cast_ranges": [
+        550
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        16,
+        14,
+        12
+      ],
+      "durations": [
+        3,
+        4,
+        5
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0,
+        0,
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "health_cost_percent",
+          "values_float": [
+            0.32,
+            0.38,
+            0.44
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "health_damage",
+          "values_float": [
+            0.32,
+            0.38,
+            0.44
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_huskar",
+              "value": 0.25,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "charge_speed",
+          "values_float": [
+            1200
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "tooltip_health_damage",
+          "values_float": [
+            32,
+            38,
+            44
+          ],
+          "is_percentage": true,
+          "heading_loc": "УРОН ЦЕЛИ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_huskar",
+              "value": 25,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "tooltip_health_cost_percent",
+          "values_float": [
+            32,
+            38,
+            44
+          ],
+          "is_percentage": true,
+          "heading_loc": "УРОН СЕБЕ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "movespeed",
+          "values_float": [
+            -60
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attack_speed",
+          "values_float": [
+            60,
+            100,
+            140
+          ],
+          "is_percentage": false,
+          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "slow_duration_tooltip",
+          "values_float": [
+            3,
+            4,
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_huskar_4",
+              "value": 2,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "taunt_duration",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРОВОКАЦИИ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            3
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "cast_range_bonus",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "ДОП. ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            250
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "splash_radius",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС ЭФФЕКТА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "huskar_bloodbath",
+            "values": [
+              500
+            ],
+            "operation": 5
+          },
+          "required_facet": "huskar_bloodbath"
+        },
+        {
+          "name": "life_break_heal_radius",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "РАДИУС ЛЕЧЕНИЯ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "huskar_nothl_transfusion",
+            "values": [
+              550
+            ],
+            "operation": 5
+          },
+          "required_facet": "huskar_nothl_transfusion"
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            550
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityDuration",
+          "values_float": [
+            3,
+            4,
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_huskar_4",
+              "value": 2,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0.3
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            16,
+            14,
+            12
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_huskar_7",
+              "value": 5,
+              "operation": 2
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": true,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "talents": [
+    {
+      "id": 6655,
+      "name": "special_bonus_unique_huskar_3",
+      "name_loc": "+{s:bonus_disarm_duration} сек. действия Inner Fire",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7140,
+      "name": "special_bonus_unique_huskar_4",
+      "name_loc": "+{s:bonus_slow_duration_tooltip} сек. замедления от Life Break",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6380,
+      "name": "special_bonus_unique_huskar_2",
+      "name_loc": "+{s:bonus_burn_damage} к периодическому урону от Burning Spear",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6289,
+      "name": "special_bonus_lifesteal_15",
+      "name_loc": "+{s:value}% к вампиризму",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "value",
+          "values_float": [
+            15
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 462,
+      "name": "special_bonus_unique_huskar_6",
+      "name_loc": "+{s:bonus_maximum_health_regen}% к восстановлению от Berserker's Blood",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 688,
+      "name": "special_bonus_unique_huskar_7",
+      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Life Break",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6204,
+      "name": "special_bonus_unique_huskar",
+      "name_loc": "+{s:bonus_tooltip_health_damage}% к урону от Life Break",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 7143,
+      "name": "special_bonus_unique_huskar_5",
+      "name_loc": "+{s:bonus_duration} сек. действия Burning Spear",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    }
+  ],
+  "facet_abilities": [
+    {
+      "abilities": []
+    },
+    {
+      "abilities": []
+    }
+  ]
+}
