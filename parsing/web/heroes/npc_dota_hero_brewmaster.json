@@ -8,30 +8,21 @@
   "npe_desc_loc": "Разделяется на четырёх духов-элементалей с уникальными способностями",
   "facets": [
     {
-      "color": 0,
-      "title_loc": "Roll Out the Barrel",
-      "description_loc": "Cinder Brew позволяет швырнуть бочку, которая наносит врагам урон и обливает их алкоголем.",
-      "name": "brewmaster_roll_out_the_barrel",
-      "icon": "nuke",
-      "gradient_id": 1,
-      "index": 0
-    },
-    {
       "color": 1,
-      "title_loc": "Drunken Master",
-      "description_loc": "Под действием способности Cinder Brew её владелец передвигается с переменной скоростью, то замедляясь на {s:bonus_min_movement}%, то ускоряясь на {s:bonus_max_movement}%.",
-      "name": "brewmaster_drunken_master",
-      "icon": "speed",
+      "title_loc": "Hungover",
+      "description_loc": "Этот аспект ничего не делает. Герой всё ещё пытается выйти из пьяного ступора...",
+      "name": "brewmaster_brewmaster",
+      "icon": "bubbles",
       "gradient_id": 1,
-      "index": 1
+      "index": 2
     }
   ],
   "str_base": 23,
-  "str_gain": 3.7,
+  "str_gain": 3.2,
   "agi_base": 19,
   "agi_gain": 2,
   "int_base": 17,
-  "int_gain": 1.6,
+  "int_gain": 1.9,
   "primary_attr": 3,
   "complexity": 3,
   "attack_capability": 1,
@@ -73,6 +64,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 0,
@@ -88,7 +80,7 @@
         0
       ],
       "cast_points": [
-        0.35
+        0.3
       ],
       "channel_times": [
         0
@@ -109,10 +101,7 @@
         0
       ],
       "mana_costs": [
-        90,
-        100,
-        110,
-        120
+        100
       ],
       "gold_costs": [],
       "health_costs": [],
@@ -120,10 +109,7 @@
         {
           "name": "radius",
           "values_float": [
-            325,
-            350,
-            375,
-            400
+            375
           ],
           "is_percentage": false,
           "heading_loc": "РАДИУС:",
@@ -147,7 +133,13 @@
           ],
           "is_percentage": false,
           "heading_loc": "УРОН:",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_thunder_clap_damage",
+              "value": 160,
+              "operation": 0
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -223,7 +215,7 @@
         {
           "name": "AbilityCastPoint",
           "values_float": [
-            0.35
+            0.3
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -240,10 +232,7 @@
         {
           "name": "AbilityManaCost",
           "values_float": [
-            90,
-            100,
-            110,
-            120
+            100
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -267,7 +256,13 @@
           ],
           "is_percentage": false,
           "heading_loc": "",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_thunderclap_cd",
+              "value": 3,
+              "operation": 2
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -295,13 +290,14 @@
       "id": 7310,
       "name": "brewmaster_cinder_brew",
       "name_loc": "Cinder Brew",
-      "desc_loc": "Обливает себя и врагов в указанной области алкоголем, отчего они передвигаются медленнее и загораются, получив магический или чистый урон. Время действия на загоревшихся врагах продлевается на %extra_duration% сек. Под эффектом этой способности усиливаются стойки от способности Drunken Brawler. Действие этой способности на владельца продлевается, когда он наносит или получает магический урон.",
+      "desc_loc": "Герой катит на неприятелей бочку, которая наносит урон задетым врагам и забрызгивает их пламенным варевом, а в конечной точке разливается.<br><br>Облитые враги передвигаются медленнее. Получив магический или чистый урон, они загорятся и начнут получать периодический урон, а действие варева продлится на %extra_duration% сек.",
       "lore_loc": "Орден Ойо знает, как решить любую проблему: ещё по одной!",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "Запускает бочку эля, которая обливает врагов по пути, а в конце взрывается.",
+        "",
         ""
       ],
       "type": 0,
@@ -314,7 +310,7 @@
       "dispellable": 2,
       "max_level": 4,
       "cast_ranges": [
-        700
+        950
       ],
       "cast_points": [
         0.2
@@ -356,7 +352,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_brewmaster_5",
-              "value": 30,
+              "value": 40,
               "operation": 3
             }
           ],
@@ -382,7 +378,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_brewmaster_5",
-              "value": 30,
+              "value": 40,
               "operation": 3
             }
           ],
@@ -452,7 +448,7 @@
         {
           "name": "projectile_speed",
           "values_float": [
-            1600
+            950
           ],
           "is_percentage": false,
           "heading_loc": "СКОРОСТЬ БОЧКИ:",
@@ -460,18 +456,16 @@
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
-            "name": "brewmaster_roll_out_the_barrel",
-            "values": [
-              950
-            ],
-            "operation": 5
+            "name": "",
+            "values": [],
+            "operation": 0
           },
           "required_facet": ""
         },
         {
           "name": "projectile_width",
           "values_float": [
-            250
+            350
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -479,10 +473,8 @@
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
-            "name": "brewmaster_roll_out_the_barrel",
-            "values": [
-              100
-            ],
+            "name": "",
+            "values": [],
             "operation": 0
           },
           "required_facet": ""
@@ -490,7 +482,7 @@
         {
           "name": "barrel_width",
           "values_float": [
-            0
+            75
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -498,21 +490,19 @@
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
-            "name": "brewmaster_roll_out_the_barrel",
-            "values": [
-              75
-            ],
-            "operation": 5
+            "name": "",
+            "values": [],
+            "operation": 0
           },
-          "required_facet": "brewmaster_roll_out_the_barrel"
+          "required_facet": ""
         },
         {
           "name": "barrel_impact_damage",
           "values_float": [
-            0,
-            0,
-            0,
-            0
+            40,
+            70,
+            100,
+            130
           ],
           "is_percentage": false,
           "heading_loc": "УРОН ОТ ПОПАДАНИЯ БОЧКИ:",
@@ -520,21 +510,16 @@
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
-            "name": "brewmaster_roll_out_the_barrel",
-            "values": [
-              40,
-              70,
-              100,
-              130
-            ],
+            "name": "",
+            "values": [],
             "operation": 0
           },
-          "required_facet": "brewmaster_roll_out_the_barrel"
+          "required_facet": ""
         },
         {
           "name": "min_movement",
           "values_float": [
-            0
+            -15
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -542,18 +527,16 @@
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
-            "name": "brewmaster_drunken_master",
-            "values": [
-              15
-            ],
-            "operation": 2
+            "name": "",
+            "values": [],
+            "operation": 0
           },
-          "required_facet": "brewmaster_drunken_master"
+          "required_facet": ""
         },
         {
           "name": "max_movement",
           "values_float": [
-            0
+            50
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -561,13 +544,11 @@
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
-            "name": "brewmaster_drunken_master",
-            "values": [
-              50
-            ],
+            "name": "",
+            "values": [],
             "operation": 0
           },
-          "required_facet": "brewmaster_drunken_master"
+          "required_facet": ""
         },
         {
           "name": "fear_duration",
@@ -593,7 +574,7 @@
         {
           "name": "AbilityCastRange",
           "values_float": [
-            700
+            950
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -601,11 +582,9 @@
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
-            "name": "brewmaster_roll_out_the_barrel",
-            "values": [
-              950
-            ],
-            "operation": 5
+            "name": "",
+            "values": [],
+            "operation": 0
           },
           "required_facet": ""
         },
@@ -684,7 +663,7 @@
       "id": 5402,
       "name": "brewmaster_drunken_brawler",
       "name_loc": "Drunken Brawler",
-      "desc_loc": "Герой может менять стойку в зависимости от элементов, которыми он управляет, и получать за это пассивные бонусы, усиливающиеся под действием способности Cinder Brew.\n<font color=\"#9acd32\">Боец земли</font> — даёт +%armor% к броне и +%magic_resist%%% к сопротивлению магии. Под эффектом Cinder Brew бонусы умножаются на %active_multiplier%.\n<font color=\"#87ceeb\">Боец шторма</font> — даёт +%dodge_chance%%% к уклонению и +%bonus_move_speed%%% к скорости передвижения. Под эффектом Cinder Brew бонусы умножаются на %active_multiplier%.\n<font color=\"#FF0000\">Боец огня</font> — даёт +%attack_speed% к скорости атаки и шанс в %crit_chance%%% нанести критической атакой %crit_multiplier%%% урона. Под эффектом Cinder Brew бонусы умножаются на %active_multiplier%.\n<font color=\"#662375\">Боец пустоты</font> — даёт +%bonus_status_resist%%% к сопротивлению эффектам, а атаки замедляют жертв на %movespeed%%% на %slow_duration% сек. Под эффектом Cinder Brew сопротивление и замедление умножаются на %active_multiplier%.",
+      "desc_loc": "Герой может переключаться между стойками подвластных ему элементов.<br><br>Применив любую способность, герой на %brewed_up_duration% сек. становится подпитым, отчего бонусы стоек увеличиваются на %brewed_up_bonus%%%. Если герой уже подпит, эффект продлится на %brewed_up_duration_extend% сек. По окончании эффекта у героя начинается похмелье, которое не даёт стать подпитым следующие %hangover_time% сек.<br><br><font color=\"#9acd32\">Стойка земли</font> увеличивает сопротивление магии и броню.<br><font color=\"#87ceeb\">Стойка шторма</font> повышает уклонение и скорость передвижения.<br><font color=\"#FF0000\">Стойка огня</font> даёт шанс нанести критический урон и ускоряет атаку.",
       "lore_loc": "Получив титул Хмелевара ордена Ойо, Мангикс также доказал всем, что он мастер опьянения.",
       "notes_loc": [
         "Складывается по закону убывающей полезности с другими источниками уклонения."
@@ -693,10 +672,11 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 0,
-      "behavior": "2052",
+      "behavior": "70368748374020",
       "target_team": 0,
       "target_type": 0,
       "flags": 0,
@@ -732,54 +712,20 @@
       "health_costs": [],
       "special_values": [
         {
-          "name": "dodge_chance",
+          "name": "magic_resist",
           "values_float": [
-            15,
-            20,
-            25,
-            30
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "crit_chance",
-          "values_float": [
+            8,
+            12,
+            16,
             20
           ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "active_multiplier",
-          "values_float": [
-            2.5
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
+          "is_percentage": true,
+          "heading_loc": "<font color=\"#9acd32\">ДОП. СОПРОТИВЛЕНИЕ МАГИИ</font>:",
           "bonuses": [
             {
-              "name": "special_bonus_unique_brewmaster_8",
-              "value": 1,
-              "operation": 0
+              "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+              "value": 50,
+              "operation": 3
             }
           ],
           "values_shard": [],
@@ -792,67 +738,7 @@
           "required_facet": ""
         },
         {
-          "name": "crit_multiplier",
-          "values_float": [
-            120,
-            140,
-            160,
-            180
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "attack_speed",
-          "values_float": [
-            10,
-            15,
-            20,
-            25
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "magic_resist",
-          "values_float": [
-            5,
-            10,
-            15,
-            20
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "armor",
+          "name": "bonus_armor",
           "values_float": [
             2,
             4,
@@ -860,8 +746,14 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
+          "heading_loc": "<font color=\"#9acd32\">ДОП. БРОНЯ</font>:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+              "value": 50,
+              "operation": 3
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -872,33 +764,22 @@
           "required_facet": ""
         },
         {
-          "name": "movespeed",
+          "name": "dodge_chance",
           "values_float": [
-            10,
             15,
             20,
-            25
+            25,
+            30
           ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "slow_duration",
-          "values_float": [
-            2
+          "is_percentage": true,
+          "heading_loc": "<font color=\"#87ceeb\">ДОП. УКЛОНЕНИЕ</font>:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+              "value": 50,
+              "operation": 3
+            }
           ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -916,6 +797,165 @@
             8,
             10
           ],
+          "is_percentage": true,
+          "heading_loc": "<font color=\"#87ceeb\">ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ</font>:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+              "value": 50,
+              "operation": 3
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "crit_chance",
+          "values_float": [
+            20
+          ],
+          "is_percentage": true,
+          "heading_loc": "<font color=\"#FF0000\">ШАНС КРИТИЧЕСКОЙ АТАКИ</font>:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "crit_multiplier",
+          "values_float": [
+            120,
+            140,
+            160,
+            180
+          ],
+          "is_percentage": true,
+          "heading_loc": "<font color=\"#FF0000\">КРИТИЧЕСКИЙ УРОН</font>:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+              "value": 50,
+              "operation": 3
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attack_speed",
+          "values_float": [
+            10,
+            20,
+            30,
+            40
+          ],
+          "is_percentage": false,
+          "heading_loc": "<font color=\"#FF0000\">ДОП. СКОРОСТЬ АТАКИ</font>:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+              "value": 50,
+              "operation": 3
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "stance_multiplier_tooltip",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+              "value": 1.5,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "brewed_up_duration",
+          "values_float": [
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_brewed_up_duration",
+              "value": 1,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "brewed_up_duration_extend",
+          "values_float": [
+            1
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_brewed_up_duration",
+              "value": 1,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "brewed_up_bonus",
+          "values_float": [
+            150
+          ],
           "is_percentage": false,
           "heading_loc": "",
           "bonuses": [],
@@ -929,12 +969,9 @@
           "required_facet": ""
         },
         {
-          "name": "bonus_status_resist",
+          "name": "hangover_time",
           "values_float": [
-            5,
-            10,
-            15,
-            20
+            9
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -963,38 +1000,39 @@
       "item_quality": 0
     },
     {
-      "id": 942,
-      "name": "brewmaster_primal_companion",
-      "name_loc": "Primal Companion",
-      "desc_loc": "Создаёт одного из воинов в зависимости от текущей стойки Drunken Brawler.<br><br>Нового воина нельзя призвать, если существующий получал урон от врагов в последние %cooldown_on_take_damage% сек. Если воин умрёт, способность уйдёт на перезарядку в %cooldown_on_death% сек.<br><br>Одновременно может существовать только один воин. Он исчезнет, если применить способность Primal Split.",
-      "lore_loc": "Мангикс смутно припоминает размышления старого учителя о том, что раздобыть товарища всяко лучше, чем пить в одиночку. Но не то чтобы Хмелевар строго придерживается этого принципа.",
+      "id": 1681,
+      "name": "brewmaster_liquid_courage",
+      "name_loc": "Liquid Courage",
+      "desc_loc": "Когда здоровье героя падает ниже %min_health_threshold%%%, его сопротивление эффектам увеличивается, а скорость передвижения попеременно становится то выше, то ниже с интервалом в %speed_toggle_time% сек. Сила этих эффектов начинается с нуля и постепенно увеличивается с падением здоровья, достигая максимума при %max_health_threshold%%% здоровья.",
+      "lore_loc": "",
       "notes_loc": [],
-      "shard_loc": "",
+      "shard_loc": "Герой угощает союзника или себя крепким напитком, который на %drink_duration% сек. дарует максимальный эффект этой способности и восстановление в размере %max_hp_regen%%% от максимального здоровья в секунду.",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
       "type": 0,
-      "behavior": "8589934597",
+      "behavior": "2",
       "target_team": 0,
       "target_type": 0,
       "flags": 0,
       "damage": 0,
       "immunity": 0,
-      "dispellable": 3,
+      "dispellable": 0,
       "max_level": 1,
       "cast_ranges": [
         0
       ],
       "cast_points": [
-        0.3
+        0
       ],
       "channel_times": [
         0
       ],
       "cooldowns": [
-        20
+        0
       ],
       "durations": [
         0
@@ -1006,64 +1044,13 @@
         0
       ],
       "mana_costs": [
-        50
+        0
       ],
       "gold_costs": [],
       "health_costs": [],
       "special_values": [
         {
-          "name": "cooldown_on_death",
-          "values_float": [
-            70
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "cooldown_on_take_damage",
-          "values_float": [
-            3
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "AbilityCastPoint",
-          "values_float": [
-            0.3
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "AbilityManaCost",
+          "name": "min_health_threshold",
           "values_float": [
             50
           ],
@@ -1080,7 +1067,7 @@
           "required_facet": ""
         },
         {
-          "name": "AbilityCooldown",
+          "name": "max_health_threshold",
           "values_float": [
             20
           ],
@@ -1095,14 +1082,215 @@
             "operation": 0
           },
           "required_facet": ""
+        },
+        {
+          "name": "status_resist",
+          "values_float": [
+            10.5
+          ],
+          "is_percentage": true,
+          "heading_loc": "МАКС. СОПРОТИВЛЕНИЕ ЭФФЕКТАМ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "min_speed",
+          "values_float": [
+            10
+          ],
+          "is_percentage": true,
+          "heading_loc": "МАКС. ЗАМЕДЛЕНИЕ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_speed",
+          "values_float": [
+            25
+          ],
+          "is_percentage": true,
+          "heading_loc": "МАКС. УСКОРЕНИЕ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "speed_toggle_time",
+          "values_float": [
+            1
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "drink_duration",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            5
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "projectile_speed",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            1000
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_hp_regen",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            2
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastRange",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            800
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCastPoint",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            0.3
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            50
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            20
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
         }
       ],
       "is_item": false,
       "ability_has_scepter": false,
-      "ability_has_shard": false,
-      "ability_is_granted_by_scepter": true,
+      "ability_has_shard": true,
+      "ability_is_granted_by_scepter": false,
       "ability_is_granted_by_shard": false,
-      "ability_is_innate": false,
+      "ability_is_innate": true,
       "item_cost": 0,
       "item_initial_charges": 0,
       "item_neutral_tier": 4294967295,
@@ -1114,16 +1302,17 @@
       "id": 5403,
       "name": "brewmaster_primal_split",
       "name_loc": "Primal Split",
-      "desc_loc": "Герой разделяется на четырёх выносливых воинов-элементалей. Если хотя бы один из них доживёт до окончания действия способности, герою вернётся его прежний облик.",
+      "desc_loc": "Герой разделяется на трёх выносливых воинов-элементалей. Если хотя бы один из них доживёт до окончания действия способности, герою вернётся его прежний облик. Каждый воин имеет соответствующую стойку от Drunken Brawler.",
       "lore_loc": "Не ясно, осознает ли Мангикс свою могучую связь с природой, ибо она чаще всего проявляется во время пьянки.",
       "notes_loc": [
         "Все ауры от предметов героя действуют вокруг воина земли.",
         "Воин огня может проходить сквозь других существ.",
         "По окончании действия герой появится на месте одного из ещё живых воинов в следующем порядке: земля, шторм, огонь."
       ],
-      "shard_loc": "Увеличивает длительность этой способности и позволяет прервать её в любой момент.",
-      "scepter_loc": "",
+      "shard_loc": "",
+      "scepter_loc": "Позволяет прервать способность досрочно. Увеличивает её максимальный и текущий уровень на %scepter_bonus_levels%, что усиливает воинов и их заклинания.<br><br>Все три воина появляются с эффектом подпития.",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1162,6 +1351,7 @@
       "mana_costs": [
         150,
         200,
+        250,
         250
       ],
       "gold_costs": [],
@@ -1171,15 +1361,13 @@
           "name": "duration",
           "values_float": [
             16,
-            18,
-            20
+            20,
+            24
           ],
           "is_percentage": false,
           "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
           "bonuses": [],
-          "values_shard": [
-            8
-          ],
+          "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
             "name": "",
@@ -1210,14 +1398,41 @@
           "values_float": [
             1400,
             2300,
-            3200
+            3200,
+            4100
           ],
           "is_percentage": false,
           "heading_loc": "<font color=\"#9acd32\">ЗДОРОВЬЕ ВОИНА ЗЕМЛИ</font>:",
           "bonuses": [
             {
               "name": "special_bonus_unique_brewmaster",
-              "value": 1200,
+              "value": 600,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "tooltip_earth_brewling_damage",
+          "values_float": [
+            35,
+            70,
+            105,
+            140
+          ],
+          "is_percentage": false,
+          "heading_loc": "<font color=\"#9acd32\">УРОН ВОИНА ЗЕМЛИ</font>:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_2",
+              "value": 14,
               "operation": 0
             }
           ],
@@ -1235,14 +1450,41 @@
           "values_float": [
             1000,
             1500,
-            2000
+            2000,
+            2500
           ],
           "is_percentage": false,
           "heading_loc": "<font color=\"#87ceeb\">ЗДОРОВЬЕ ВОИНА ШТОРМА</font>:",
           "bonuses": [
             {
               "name": "special_bonus_unique_brewmaster",
-              "value": 1200,
+              "value": 600,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "tooltip_storm_brewling_damage",
+          "values_float": [
+            30,
+            50,
+            70,
+            90
+          ],
+          "is_percentage": false,
+          "heading_loc": "<font color=\"#87ceeb\">УРОН ВОИНА ШТОРМА</font>:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_2",
+              "value": 14,
               "operation": 0
             }
           ],
@@ -1260,14 +1502,15 @@
           "values_float": [
             1300,
             1450,
-            1600
+            1600,
+            1750
           ],
           "is_percentage": false,
           "heading_loc": "<font color=\"#FF0000\">ЗДОРОВЬЕ ВОИНА ОГНЯ</font>:",
           "bonuses": [
             {
               "name": "special_bonus_unique_brewmaster",
-              "value": 1200,
+              "value": 600,
               "operation": 0
             }
           ],
@@ -1281,18 +1524,19 @@
           "required_facet": ""
         },
         {
-          "name": "tooltip_void_brewling_hp",
+          "name": "tooltip_fire_brewling_damage",
           "values_float": [
-            1200,
-            1500,
-            1800
+            70,
+            120,
+            170,
+            220
           ],
           "is_percentage": false,
-          "heading_loc": "<font color=\"#662375\">ЗДОРОВЬЕ ВОИНА ПУСТОТЫ</font>:",
+          "heading_loc": "<font color=\"#FF0000\">УРОН ВОИНА ОГНЯ</font>:",
           "bonuses": [
             {
-              "name": "special_bonus_unique_brewmaster",
-              "value": 1200,
+              "name": "special_bonus_unique_brewmaster_2",
+              "value": 14,
               "operation": 0
             }
           ],
@@ -1313,7 +1557,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_brewmaster",
-              "value": 1200,
+              "value": 600,
               "operation": 0
             }
           ],
@@ -1334,7 +1578,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_brewmaster_2",
-              "value": 10,
+              "value": 14,
               "operation": 0
             }
           ],
@@ -1348,17 +1592,106 @@
           "required_facet": ""
         },
         {
-          "name": "give_brawler_passive",
-          "values_float": [],
+          "name": "primal_split_cancel",
+          "values_float": [
+            0
+          ],
           "is_percentage": false,
           "heading_loc": "",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_brewmaster_6",
-              "value": 1,
-              "operation": 5
-            }
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            1
           ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hp_per_attribute",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            0
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "dmg_per_attribute",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            0
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attribute_share_pct",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            0
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "give_brawler_passive",
+          "values_float": [
+            1
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "scepter_bonus_levels",
+          "values_float": [
+            1
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -1390,6 +1723,7 @@
           "values_float": [
             150,
             200,
+            250,
             250
           ],
           "is_percentage": false,
@@ -1413,7 +1747,13 @@
           ],
           "is_percentage": false,
           "heading_loc": "",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_brewmaster_primal_split_cooldown",
+              "value": 15,
+              "operation": 2
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -1425,125 +1765,11 @@
         }
       ],
       "is_item": false,
-      "ability_has_scepter": false,
-      "ability_has_shard": true,
-      "ability_is_granted_by_scepter": false,
-      "ability_is_granted_by_shard": false,
-      "ability_is_innate": false,
-      "item_cost": 0,
-      "item_initial_charges": 0,
-      "item_neutral_tier": 4294967295,
-      "item_stock_max": 0,
-      "item_stock_time": 0,
-      "item_quality": 0
-    },
-    {
-      "id": 1471,
-      "name": "brewmaster_belligerent",
-      "name_loc": "Belligerent",
-      "desc_loc": "Герой получает +%damage_pct%%% к урону от атак на %damage_duration_split% сек. после окончания Primal Split и на %damage_duration_respawn% сек. после возрождения.",
-      "lore_loc": "",
-      "notes_loc": [],
-      "shard_loc": "",
-      "scepter_loc": "",
-      "facets_loc": [
-        "",
-        ""
-      ],
-      "type": 0,
-      "behavior": "8796093022210",
-      "target_team": 0,
-      "target_type": 0,
-      "flags": 0,
-      "damage": 0,
-      "immunity": 0,
-      "dispellable": 0,
-      "max_level": 1,
-      "cast_ranges": [
-        0
-      ],
-      "cast_points": [
-        0
-      ],
-      "channel_times": [
-        0
-      ],
-      "cooldowns": [
-        0
-      ],
-      "durations": [
-        0
-      ],
-      "damages": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "mana_costs": [
-        0
-      ],
-      "gold_costs": [],
-      "health_costs": [],
-      "special_values": [
-        {
-          "name": "damage_pct",
-          "values_float": [
-            25
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "damage_duration_split",
-          "values_float": [
-            15
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "damage_duration_respawn",
-          "values_float": [
-            45
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        }
-      ],
-      "is_item": false,
-      "ability_has_scepter": false,
+      "ability_has_scepter": true,
       "ability_has_shard": false,
       "ability_is_granted_by_scepter": false,
       "ability_is_granted_by_shard": false,
-      "ability_is_innate": true,
+      "ability_is_innate": false,
       "item_cost": 0,
       "item_initial_charges": 0,
       "item_neutral_tier": 4294967295,
@@ -1556,13 +1782,14 @@
     {
       "id": 6359,
       "name": "special_bonus_unique_brewmaster_2",
-      "name_loc": "+{s:bonus_bonus_damage} к урону воинов от Primal Split",
+      "name_loc": "+{s:bonus_bonus_damage} к базовому урону воинов от Primal Split",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1616,15 +1843,16 @@
       "item_quality": 0
     },
     {
-      "id": 732,
-      "name": "special_bonus_unique_brewmaster_7",
-      "name_loc": "+{s:bonus_duration} сек. действия Thunder Clap",
+      "id": 1707,
+      "name": "special_bonus_unique_brewmaster_brewed_up_duration",
+      "name_loc": "+{s:bonus_brewed_up_duration} сек. к длительности и продлению подпития от Drunken Brawler",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1688,67 +1916,6 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        ""
-      ],
-      "type": 2,
-      "behavior": "2",
-      "target_team": 0,
-      "target_type": 0,
-      "flags": 0,
-      "damage": 0,
-      "immunity": 0,
-      "dispellable": 0,
-      "max_level": 4,
-      "cast_ranges": [
-        0
-      ],
-      "cast_points": [
-        0
-      ],
-      "channel_times": [
-        0
-      ],
-      "cooldowns": [
-        0
-      ],
-      "durations": [
-        0
-      ],
-      "damages": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "mana_costs": [
-        0
-      ],
-      "gold_costs": [],
-      "health_costs": [],
-      "special_values": [],
-      "is_item": false,
-      "ability_has_scepter": false,
-      "ability_has_shard": false,
-      "ability_is_granted_by_scepter": false,
-      "ability_is_granted_by_shard": false,
-      "ability_is_innate": false,
-      "item_cost": 0,
-      "item_initial_charges": 0,
-      "item_neutral_tier": 4294967295,
-      "item_stock_max": 0,
-      "item_stock_time": 0,
-      "item_quality": 0
-    },
-    {
-      "id": 960,
-      "name": "special_bonus_unique_brewmaster_8",
-      "name_loc": "+{s:bonus_active_multiplier} к множителю бонусов у Drunken Brawler",
-      "desc_loc": "",
-      "lore_loc": "",
-      "notes_loc": [],
-      "shard_loc": "",
-      "scepter_loc": "",
-      "facets_loc": [
         "",
         ""
       ],
@@ -1812,6 +1979,70 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1708,
+      "name": "special_bonus_unique_brewmaster_primal_split_cooldown",
+      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Primal Split",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
         ""
       ],
       "type": 2,
@@ -1873,6 +2104,7 @@
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1944,15 +2176,16 @@
       "item_quality": 0
     },
     {
-      "id": 646,
-      "name": "special_bonus_unique_brewmaster_6",
-      "name_loc": "Воины получают эффекты Drunken Brawler",
+      "id": 1709,
+      "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+      "name_loc": "Бонусы стоек от Drunken Brawler умножаются на {s:bonus_stance_multiplier_tooltip}",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -2016,6 +2249,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 2,
@@ -2069,9 +2303,6 @@
     }
   ],
   "facet_abilities": [
-    {
-      "abilities": []
-    },
     {
       "abilities": []
     }

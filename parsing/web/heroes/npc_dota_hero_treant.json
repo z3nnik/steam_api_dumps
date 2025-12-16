@@ -8,22 +8,13 @@
   "npe_desc_loc": "Опутывает врагов корнями, воззвав к силам леса",
   "facets": [
     {
-      "color": 1,
-      "title_loc": "Primeval Power",
-      "description_loc": "Базовый урон от атак этого героя увеличивается на {s:attack_damage_per_level} за каждый его уровень.",
-      "name": "treant_primeval_power",
-      "icon": "damage",
-      "gradient_id": 2,
-      "index": 0
-    },
-    {
       "color": 2,
-      "title_loc": "Sapling",
-      "description_loc": "Leech Seed можно применить на точку, чтобы посадить в ней дерево.",
-      "name": "treant_sapling",
+      "title_loc": "Uprooted",
+      "description_loc": "Этот аспект ничего не делает. Герой всё ещё теряет корни...",
+      "name": "treant_treant",
       "icon": "tree",
       "gradient_id": 2,
-      "index": 1
+      "index": 2
     }
   ],
   "str_base": 25,
@@ -66,12 +57,13 @@
       "id": 338,
       "name": "treant_natures_grasp",
       "name_loc": "Nature's Grasp",
-      "desc_loc": "Протягивает лозы до указанной области. Они замедляют проходящих по ним врагов и наносят им урон (крипам — вдвое меньше). Лозы наносят на 50% больше урона, если касаются дерева.",
+      "desc_loc": "Протягивает лозы до указанной точки. Они замедляют проходящих по ним врагов и наносят им урон (крипам — на %creep_penalty%%% меньше).",
       "lore_loc": "Ростки влияния Руфтреллена простираются даже до самых отдалённых уголков леса.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -117,10 +109,10 @@
         {
           "name": "damage_per_second",
           "values_float": [
-            30,
-            40,
+            35,
             50,
-            60
+            65,
+            80
           ],
           "is_percentage": false,
           "heading_loc": "УРОН В СЕКУНДУ:",
@@ -141,12 +133,29 @@
           "required_facet": ""
         },
         {
+          "name": "creep_penalty",
+          "values_float": [
+            35
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
           "name": "movement_slow",
           "values_float": [
-            20,
             25,
             30,
-            35
+            35,
+            40
           ],
           "is_percentage": true,
           "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
@@ -354,17 +363,18 @@
       "id": 5435,
       "name": "treant_leech_seed",
       "name_loc": "Leech Seed",
-      "desc_loc": "Герой сажает в тело жертвы истощающее семя, которое замедляет цель и отнимает её здоровье. Также семя излечивает всех союзников вокруг цели. Крипы получают на %creep_heal_reduction_pct%%% меньше лечения.",
+      "desc_loc": "Атака героя наносит дополнительный магический урон и сажает в цель истощающее семя, отчего её ненадолго опутывают оковы и она %healing_pulse_count% раза испускает до %max_heal_units% целебных сгустков, летящих во владельца способности и его союзников поблизости. Лечение от одного сгустка складывается из базового значения и доли урона от атаки, посадившей семя.",
       "lore_loc": "Руфтреллен укрепляет союзных существ, черпая жизненные силы из нарушителей, ступивших на его священные земли.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Способность можно применить на точку, чтобы ненадолго посадить в ней дерево, излечивающее союзников и наносящее урон врагам в области действия. Наносит крипам на %creep_damage_reduction_pct%%% меньше урона. Если срубить это дерево, оно мгновенно вырастет заново."
+        "Способность можно применить на точку, чтобы ненадолго посадить в ней дерево, излечивающее союзников и наносящее урон врагам в области действия. Наносит крипам на %creep_damage_reduction_pct%%% меньше урона. Если срубить это дерево, оно мгновенно вырастет заново.",
+        ""
       ],
       "type": 0,
-      "behavior": "40",
+      "behavior": "135176",
       "target_team": 2,
       "target_type": 19,
       "flags": 0,
@@ -373,22 +383,19 @@
       "dispellable": 2,
       "max_level": 4,
       "cast_ranges": [
-        400,
-        450,
-        500,
-        550
+        150
       ],
       "cast_points": [
-        0.3
+        0
       ],
       "channel_times": [
         0
       ],
       "cooldowns": [
-        24,
-        20,
-        16,
-        12
+        15,
+        12,
+        9,
+        6
       ],
       "durations": [
         0
@@ -400,21 +407,21 @@
         0
       ],
       "mana_costs": [
-        80,
-        90,
-        100,
-        110
+        0
       ],
       "gold_costs": [],
       "health_costs": [],
       "special_values": [
         {
-          "name": "damage_interval",
+          "name": "duration",
           "values_float": [
-            1
+            0.9,
+            1.1,
+            1.3,
+            1.5
           ],
           "is_percentage": false,
-          "heading_loc": "",
+          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -426,19 +433,36 @@
           "required_facet": ""
         },
         {
-          "name": "leech_damage",
+          "name": "flat_heal",
           "values_float": [
             15,
-            30,
-            45,
-            60
+            25,
+            35,
+            45
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН/ЛЕЧЕНИЕ В СЕКУНДУ:",
+          "heading_loc": "БАЗОВОЕ ЛЕЧЕНИЕ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "leech_heal",
+          "values_float": [
+            20
+          ],
+          "is_percentage": true,
+          "heading_loc": "ЛЕЧЕНИЕ ОТ УРОНА:",
           "bonuses": [
             {
-              "name": "special_bonus_unique_treant_2",
-              "value": 45,
+              "name": "special_bonus_unique_treant_3",
+              "value": 10,
               "operation": 0
             }
           ],
@@ -452,22 +476,39 @@
           "required_facet": ""
         },
         {
-          "name": "movement_slow",
+          "name": "leech_damage",
           "values_float": [
-            -8,
-            -14,
-            -20,
-            -26
+            20,
+            40,
+            60,
+            80
           ],
-          "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "is_percentage": false,
+          "heading_loc": "ДОП. УРОН:",
           "bonuses": [
             {
-              "name": "special_bonus_unique_treant_3",
-              "value": 18,
-              "operation": 2
+              "name": "special_bonus_unique_treant_2",
+              "value": 80,
+              "operation": 0
             }
           ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_heal_units",
+          "values_float": [
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -483,7 +524,7 @@
             650
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "РАДИУС ЛЕЧЕНИЯ:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -495,12 +536,12 @@
           "required_facet": ""
         },
         {
-          "name": "duration",
+          "name": "healing_pulse_count",
           "values_float": [
-            5
+            2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -529,104 +570,9 @@
           "required_facet": ""
         },
         {
-          "name": "can_target_ground",
-          "values_float": [
-            0
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "treant_sapling",
-            "values": [
-              1
-            ],
-            "operation": 5
-          },
-          "required_facet": "treant_sapling"
-        },
-        {
-          "name": "creep_damage_reduction_pct",
-          "values_float": [
-            0
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "treant_sapling",
-            "values": [
-              50
-            ],
-            "operation": 5
-          },
-          "required_facet": "treant_sapling"
-        },
-        {
-          "name": "creep_heal_reduction_pct",
-          "values_float": [
-            50
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
           "name": "AbilityCastRange",
           "values_float": [
-            400,
-            450,
-            500,
-            550
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "AbilityCastPoint",
-          "values_float": [
-            0.3
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "AbilityManaCost",
-          "values_float": [
-            80,
-            90,
-            100,
-            110
+            150
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -643,14 +589,20 @@
         {
           "name": "AbilityCooldown",
           "values_float": [
-            24,
-            20,
-            16,
-            12
+            15,
+            12,
+            9,
+            6
           ],
           "is_percentage": false,
           "heading_loc": "",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_treant_14",
+              "value": 3,
+              "operation": 2
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -678,12 +630,15 @@
       "id": 5436,
       "name": "treant_living_armor",
       "name_loc": "Living Armor",
-      "desc_loc": "Накладывает на выбранного героя или постройку защитный покров, увеличивающий регенерацию здоровья и броню.",
+      "desc_loc": "Накладывает на выбранного героя или постройку защитный покров, который восстанавливает здоровье и блокирует урон от существ, подконтрольных игрокам противника. С каждым срабатыванием блок урона снижается. Если он достигнет нуля, покров пропадёт полностью.",
       "lore_loc": "Корни и усики Руфтреллена расстилаются повсюду, стимулируя рост и омоложение всего живого.",
-      "notes_loc": [],
-      "shard_loc": "",
+      "notes_loc": [
+        "Урон ниже %damage_block_threshold% игнорируется."
+      ],
+      "shard_loc": "Increases the Damage Blocked by Living Armor. Treant now also passively benefits from Living Armor, with the damage block resetting after not taking damage for %passive_reset_cd% seconds.",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -732,43 +687,17 @@
         {
           "name": "heal_per_second",
           "values_float": [
-            3,
-            4,
-            5,
-            6
-          ],
-          "is_percentage": false,
-          "heading_loc": "ЛЕЧЕНИЕ В СЕКУНДУ:",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_treant_8",
-              "value": 2,
-              "operation": 0
-            }
-          ],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "bonus_armor",
-          "values_float": [
             4,
             7,
             10,
             13
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. БРОНЯ:",
+          "heading_loc": "ЛЕЧЕНИЕ В СЕКУНДУ:",
           "bonuses": [
             {
-              "name": "special_bonus_unique_treant_13",
-              "value": 8,
+              "name": "special_bonus_unique_treant_8",
+              "value": 4,
               "operation": 0
             }
           ],
@@ -784,13 +713,10 @@
         {
           "name": "duration",
           "values_float": [
-            18,
-            22,
-            26,
-            30
+            12
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -813,6 +739,85 @@
               "operation": 0
             }
           ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "damage_block_base",
+          "values_float": [
+            100
+          ],
+          "is_percentage": false,
+          "heading_loc": "БЛОКИРУЕМЫЙ УРОН:",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_treant_13",
+              "value": 20,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "passive_reset_cd",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [
+            0
+          ],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "damage_block_loss",
+          "values_float": [
+            35,
+            30,
+            25,
+            20
+          ],
+          "is_percentage": false,
+          "heading_loc": "СНИЖЕНИЕ БЛОКА УРОНА:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "damage_block_threshold",
+          "values_float": [
+            20
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -897,7 +902,7 @@
       "id": 5649,
       "name": "treant_eyes_in_the_forest",
       "name_loc": "Eyes In The Forest",
-      "desc_loc": "Герой зачаровывает дерево, получая беспрепятственный обзор вокруг него. Применение способности Overgrowth действует и на существ вокруг зачарованных деревьев. Помимо этого заставляет все деревья вырастать гораздо быстрее.",
+      "desc_loc": "Герой сажает в дерево зачарованный росток и получает вокруг него беспрепятственный обзор. Росток существует %duration% сек. и невидим для противников, но пропадёт, если уничтожить само дерево или раскрыть невидимость ростка и атаковать его.",
       "lore_loc": "Нельзя знать наверняка, кому или чему понадобится защита.",
       "notes_loc": [
         "Враги получат урон, попав под действие Overgrowth рядом с деревьями, зачарованными способностью Eyes in the Forest.",
@@ -906,6 +911,7 @@
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -919,7 +925,7 @@
       "dispellable": 0,
       "max_level": 1,
       "cast_ranges": [
-        160
+        350
       ],
       "cast_points": [
         0.2
@@ -940,7 +946,7 @@
         0
       ],
       "mana_costs": [
-        100
+        30
       ],
       "gold_costs": [],
       "health_costs": [],
@@ -948,15 +954,13 @@
         {
           "name": "vision_aoe",
           "values_float": [
-            0
+            800
           ],
           "is_percentage": false,
           "heading_loc": "",
           "bonuses": [],
           "values_shard": [],
-          "values_scepter": [
-            800
-          ],
+          "values_scepter": [],
           "facet_bonus": {
             "name": "",
             "values": [],
@@ -965,17 +969,15 @@
           "required_facet": ""
         },
         {
-          "name": "overgrowth_aoe",
+          "name": "hits_to_kill",
           "values_float": [
-            0
+            2
           ],
           "is_percentage": false,
           "heading_loc": "",
           "bonuses": [],
           "values_shard": [],
-          "values_scepter": [
-            800
-          ],
+          "values_scepter": [],
           "facet_bonus": {
             "name": "",
             "values": [],
@@ -984,17 +986,15 @@
           "required_facet": ""
         },
         {
-          "name": "tree_respawn_seconds",
+          "name": "duration",
           "values_float": [
-            0
+            300
           ],
           "is_percentage": false,
           "heading_loc": "",
           "bonuses": [],
           "values_shard": [],
-          "values_scepter": [
-            10
-          ],
+          "values_scepter": [],
           "facet_bonus": {
             "name": "",
             "values": [],
@@ -1005,7 +1005,7 @@
         {
           "name": "AbilityCastRange",
           "values_float": [
-            160
+            350
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -1056,7 +1056,7 @@
         {
           "name": "AbilityChargeRestoreTime",
           "values_float": [
-            40
+            55
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -1073,7 +1073,7 @@
         {
           "name": "AbilityManaCost",
           "values_float": [
-            100
+            30
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -1089,10 +1089,10 @@
         }
       ],
       "is_item": false,
-      "ability_has_scepter": true,
-      "ability_has_shard": false,
-      "ability_is_granted_by_scepter": true,
-      "ability_is_granted_by_shard": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": true,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": true,
       "ability_is_innate": false,
       "item_cost": 0,
       "item_initial_charges": 0,
@@ -1105,15 +1105,17 @@
       "id": 5434,
       "name": "treant_natures_guise",
       "name_loc": "Nature's Guise",
-      "desc_loc": "Позволяет проходить сквозь деревья, если владелец способности не получал урон в последние %cooldown_time% сек. Увеличивает скорость передвижения владельца рядом с деревьями, а также с лозами от способности Nature's Grasp.",
+      "desc_loc": "Увеличивает скорость передвижения владельца рядом с деревьями. Если в последние %cooldown_time% сек. он не получал урона, то может проходить сквозь деревья и активировать эту способность, чтобы стать невидимым до тех пор, пока не окажется вдали от деревьев или не совершит атаку.",
       "lore_loc": "Стражи обычно не появляются в поле зрения. Чаще всего они скрываются среди своих кудрявых собратьев.",
       "notes_loc": [
         "Под действием этой способности можно проходить сквозь деревья.",
-        "Невидимость от Aghanim's Shard сбрасывается только при атаке. Использование предметов и способностей не сбрасывает невидимость."
+        "Эта способность также считает деревьями лозы от Nature's Grasp.",
+        "Если получить урон, проходя сквозь деревья, то эффект способности и возможность её активировать не отключатся."
       ],
-      "shard_loc": "Действие этой способности делает владельца невидимым. Его атака наложит на жертву оцепенение, которое постепенно нанесёт урон в размере %shard_damage% + %attack_damage_pct%%% от базового урона атаки. Оцепенение длится дольше, если жертва находится возле дерева.",
+      "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1136,7 +1138,7 @@
         0
       ],
       "cooldowns": [
-        0
+        50
       ],
       "durations": [
         0
@@ -1173,7 +1175,7 @@
         {
           "name": "grace_time",
           "values_float": [
-            0.75
+            2
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -1196,82 +1198,6 @@
           "heading_loc": "",
           "bonuses": [],
           "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "shard_root_time",
-          "values_float": [
-            0
-          ],
-          "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ:",
-          "bonuses": [],
-          "values_shard": [
-            1
-          ],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "shard_by_tree_root_time",
-          "values_float": [
-            0
-          ],
-          "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ ВОЗЛЕ ДЕРЕВА:",
-          "bonuses": [],
-          "values_shard": [
-            2
-          ],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "shard_damage",
-          "values_float": [
-            0
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [
-            100
-          ],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "attack_damage_pct",
-          "values_float": [
-            0
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [
-            75
-          ],
           "values_scepter": [],
           "facet_bonus": {
             "name": "",
@@ -1304,16 +1230,14 @@
           "required_facet": ""
         },
         {
-          "name": "shard_cooldown",
+          "name": "AbilityCooldown",
           "values_float": [
-            0
+            50
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА ОЦЕПЕНЕНИЯ:",
+          "heading_loc": "ПЕРЕЗАРЯДКА:",
           "bonuses": [],
-          "values_shard": [
-            10
-          ],
+          "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
             "name": "",
@@ -1325,7 +1249,7 @@
       ],
       "is_item": false,
       "ability_has_scepter": false,
-      "ability_has_shard": true,
+      "ability_has_shard": false,
       "ability_is_granted_by_scepter": false,
       "ability_is_granted_by_shard": false,
       "ability_is_innate": true,
@@ -1346,8 +1270,9 @@
         "Действует на невосприимчивых к эффектам врагов, однако оцепенение спадёт, если получить невосприимчивость к эффектам."
       ],
       "shard_loc": "",
-      "scepter_loc": "",
+      "scepter_loc": "Уменьшает перезарядку до %AbilityCooldown% сек. Применение наполняет владельца силой земли, отчего он значительно увеличивается в размерах, а также получает +%strength_bonus%%% к силе, фиксированную скорость в %movement_speed% и возможность проходить сквозь существ. Атаки героя становятся массовыми и наносят %splash_pct%%% урона врагам в радиусе %splash_radius% от цели. Эти эффекты длятся %bloom_duration% сек., и их нельзя развеять.",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1431,12 +1356,12 @@
           "required_facet": ""
         },
         {
-          "name": "eyes_radius",
+          "name": "damage",
           "values_float": [
-            800
+            95
           ],
           "is_percentage": false,
-          "heading_loc": "",
+          "heading_loc": "УРОН В СЕКУНДУ:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1448,15 +1373,93 @@
           "required_facet": ""
         },
         {
-          "name": "damage",
+          "name": "bloom_duration",
           "values_float": [
-            95
+            0
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "",
           "bonuses": [],
           "values_shard": [],
-          "values_scepter": [],
+          "values_scepter": [
+            16
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "strength_bonus",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            100
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "splash_pct",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            60
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "splash_radius",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            300
+          ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "movement_speed",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [
+            345
+          ],
           "facet_bonus": {
             "name": "",
             "values": [],
@@ -1509,15 +1512,11 @@
           ],
           "is_percentage": false,
           "heading_loc": "",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_treant_14",
-              "value": 35,
-              "operation": 2
-            }
-          ],
+          "bonuses": [],
           "values_shard": [],
-          "values_scepter": [],
+          "values_scepter": [
+            30
+          ],
           "facet_bonus": {
             "name": "",
             "values": [],
@@ -1527,7 +1526,7 @@
         }
       ],
       "is_item": false,
-      "ability_has_scepter": false,
+      "ability_has_scepter": true,
       "ability_has_shard": false,
       "ability_is_granted_by_scepter": false,
       "ability_is_granted_by_shard": false,
@@ -1552,67 +1551,6 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        ""
-      ],
-      "type": 2,
-      "behavior": "2",
-      "target_team": 0,
-      "target_type": 0,
-      "flags": 0,
-      "damage": 0,
-      "immunity": 0,
-      "dispellable": 0,
-      "max_level": 4,
-      "cast_ranges": [
-        0
-      ],
-      "cast_points": [
-        0
-      ],
-      "channel_times": [
-        0
-      ],
-      "cooldowns": [
-        0
-      ],
-      "durations": [
-        0
-      ],
-      "damages": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "mana_costs": [
-        0
-      ],
-      "gold_costs": [],
-      "health_costs": [],
-      "special_values": [],
-      "is_item": false,
-      "ability_has_scepter": false,
-      "ability_has_shard": false,
-      "ability_is_granted_by_scepter": false,
-      "ability_is_granted_by_shard": false,
-      "ability_is_innate": false,
-      "item_cost": 0,
-      "item_initial_charges": 0,
-      "item_neutral_tier": 4294967295,
-      "item_stock_max": 0,
-      "item_stock_time": 0,
-      "item_quality": 0
-    },
-    {
-      "id": 755,
-      "name": "special_bonus_unique_treant_12",
-      "name_loc": "+{s:bonus_movement_bonus}% к доп. скорости передв. от Nature's Guise",
-      "desc_loc": "",
-      "lore_loc": "",
-      "notes_loc": [],
-      "shard_loc": "",
-      "scepter_loc": "",
-      "facets_loc": [
         "",
         ""
       ],
@@ -1666,15 +1604,97 @@
       "item_quality": 0
     },
     {
-      "id": 6955,
-      "name": "special_bonus_unique_treant_3",
-      "name_loc": "+{s:bonus_movement_slow}% к замедлению передв. от Leech Seed",
+      "id": 548,
+      "name": "special_bonus_attack_base_damage_50",
+      "name_loc": "+{s:value} к базовому урону",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
+        "",
+        ""
+      ],
+      "type": 2,
+      "behavior": "2",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 0,
+      "max_level": 4,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "value",
+          "values_float": [
+            50
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 6955,
+      "name": "special_bonus_unique_treant_3",
+      "name_loc": "+{s:bonus_leech_heal}% к лечению от урона у Leech Seed",
+      "desc_loc": "",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1738,6 +1758,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 2,
@@ -1792,13 +1813,14 @@
     {
       "id": 756,
       "name": "special_bonus_unique_treant_13",
-      "name_loc": "+{s:bonus_bonus_armor} к броне от Living Armor",
+      "name_loc": "+{s:bonus_damage_block_base} к блокируемому урону у Living Armor",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1854,13 +1876,14 @@
     {
       "id": 6531,
       "name": "special_bonus_unique_treant_2",
-      "name_loc": "+{s:bonus_leech_damage} к урону/лечению от Leech Seed",
+      "name_loc": "+{s:bonus_leech_damage} к дополнительному урону от Leech Seed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1916,13 +1939,14 @@
     {
       "id": 1131,
       "name": "special_bonus_unique_treant_14",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Overgrowth",
+      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Leech Seed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1986,6 +2010,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 2,
@@ -2039,90 +2064,6 @@
     }
   ],
   "facet_abilities": [
-    {
-      "abilities": [
-        {
-          "id": 1358,
-          "name": "treant_innate_attack_damage",
-          "name_loc": "",
-          "desc_loc": "",
-          "lore_loc": "",
-          "notes_loc": [],
-          "shard_loc": "",
-          "scepter_loc": "",
-          "facets_loc": [
-            "",
-            ""
-          ],
-          "type": 0,
-          "behavior": "4398046511107",
-          "target_team": 0,
-          "target_type": 0,
-          "flags": 0,
-          "damage": 0,
-          "immunity": 0,
-          "dispellable": 0,
-          "max_level": 1,
-          "cast_ranges": [
-            0
-          ],
-          "cast_points": [
-            0
-          ],
-          "channel_times": [
-            0
-          ],
-          "cooldowns": [
-            0
-          ],
-          "durations": [
-            0
-          ],
-          "damages": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "mana_costs": [
-            0
-          ],
-          "gold_costs": [],
-          "health_costs": [],
-          "special_values": [
-            {
-              "name": "attack_damage_per_level",
-              "values_float": [
-                6
-              ],
-              "is_percentage": false,
-              "heading_loc": "",
-              "bonuses": [],
-              "values_shard": [],
-              "values_scepter": [],
-              "facet_bonus": {
-                "name": "",
-                "values": [],
-                "operation": 0
-              },
-              "required_facet": ""
-            }
-          ],
-          "is_item": false,
-          "ability_has_scepter": false,
-          "ability_has_shard": false,
-          "ability_is_granted_by_scepter": false,
-          "ability_is_granted_by_shard": false,
-          "ability_is_innate": false,
-          "item_cost": 0,
-          "item_initial_charges": 0,
-          "item_neutral_tier": 4294967295,
-          "item_stock_max": 0,
-          "item_stock_time": 0,
-          "item_quality": 0
-        }
-      ]
-    },
     {
       "abilities": []
     }

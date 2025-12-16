@@ -69,7 +69,7 @@
       "desc_loc": "Герой прыгает вперёд на расстояние в %hop_distance% и бьёт по земле, нанося урон всем врагам вокруг и замедляя их на %abilityduration% сек.",
       "lore_loc": "Как земля содрогается под весом могучих медвежьих шагов, так и противники начинают дрожать при его виде.",
       "notes_loc": [],
-      "shard_loc": "Применение накладывает на владельца эффект способности Enrage на %shard_enrage_duration% сек.",
+      "shard_loc": "Накладывает на задетых врагов %fury_swipe_stacks_on_hit% эффекта Fury Swipes.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -209,7 +209,7 @@
           "required_facet": ""
         },
         {
-          "name": "shard_enrage_duration",
+          "name": "fury_swipe_stacks_on_hit",
           "values_float": [
             0
           ],
@@ -217,29 +217,8 @@
           "heading_loc": "",
           "bonuses": [],
           "values_shard": [
-            1.2
+            3
           ],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "fury_swipe_stacks_on_hit",
-          "values_float": [],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_ursa_earthshock_furyswipes",
-              "value": 2,
-              "operation": 0
-            }
-          ],
-          "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
             "name": "",
@@ -824,7 +803,13 @@
           ],
           "is_percentage": true,
           "heading_loc": "УРОН ОТ ЗДОРОВЬЯ:",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_ursa_maul_health",
+              "value": 0.5,
+              "operation": 0
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -880,8 +865,8 @@
         0
       ],
       "cooldowns": [
-        70,
-        50,
+        60,
+        45,
         30
       ],
       "durations": [
@@ -1001,8 +986,8 @@
         {
           "name": "AbilityCooldown",
           "values_float": [
-            70,
-            50,
+            60,
+            45,
             30
           ],
           "is_percentage": false,
@@ -1366,9 +1351,9 @@
       "item_quality": 0
     },
     {
-      "id": 1062,
-      "name": "special_bonus_unique_ursa_earthshock_furyswipes",
-      "name_loc": "Earthshock накладывает {s:bonus_fury_swipe_stacks_on_hit} эффекта Fury Swipes",
+      "id": 1706,
+      "name": "special_bonus_unique_ursa_maul_health",
+      "name_loc": "+{s:bonus_health_as_damage_pct}% к урону от здоровья у Maul",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
