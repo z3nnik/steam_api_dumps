@@ -2,7 +2,7 @@
   "id": 1598,
   "name": "item_unrelenting_eye",
   "name_loc": "Unrelenting Eye",
-  "desc_loc": "<h1>Пассивное: Relentless</h1>Увеличивает сопротивление замедлениям на %max_slow_res%%%. Каждый вражеский герой в радиусе %hero_check_radius% уменьшает этот бонус на %hero_reduction%%%, но увеличивает сопротивление эффектам на %status_res_pct_increase_per_hero%%%.",
+  "desc_loc": "<h1>Пассивное: Relentless</h1>Увеличивает сопротивление замедлениям на %max_slow_res%%%. Этот бонус уменьшается на %hero_reduction%%% за каждого вражеского героя в радиусе атаки владельца.",
   "lore_loc": "Змеиный глаз, размерами (и сочностью) напоминающий дыню.",
   "notes_loc": [],
   "shard_loc": "",
@@ -47,7 +47,7 @@
     {
       "name": "max_slow_res",
       "values_float": [
-        100
+        50
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -64,41 +64,7 @@
     {
       "name": "hero_reduction",
       "values_float": [
-        20
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "status_res_pct_increase_per_hero",
-      "values_float": [
         10
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "hero_check_radius",
-      "values_float": [
-        600
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -121,7 +87,7 @@
   "ability_is_innate": false,
   "item_cost": 0,
   "item_initial_charges": 0,
-  "item_neutral_tier": 4,
+  "item_neutral_tier": 2,
   "item_stock_max": 0,
   "item_stock_time": 0,
   "item_quality": 1
