@@ -2,13 +2,11 @@
   "id": 176,
   "name": "item_ethereal_blade",
   "name_loc": "Ethereal Blade",
-  "desc_loc": "<h1>Активное: Ether Blast</h1> Придаёт цели бесплотный облик, который полностью защищает от физического урона, но не позволяет атаковать и увеличивает получаемый магический урон на %ethereal_damage_bonus%%%.<br><br>Если целью выбран противник, он также замедляется на %blast_movement_slow%%% и получает магический урон в размере %blast_agility_multiplier% * его основной атрибут + %blast_damage_base%.<br>Длительность: %duration% сек.",
+  "desc_loc": "<h1>Активное: Ether Blast</h1> Придаёт цели бесплотный облик, который полностью защищает от физического урона, но не позволяет атаковать и увеличивает получаемый магический урон на %ethereal_damage_bonus%%%.<br><br>Если целью выбран противник, он также замедляется на %blast_movement_slow%%% и получает магический урон в размере %blast_stat_multiplier% * сумма ваших атрибутов + %blast_damage_base%.<br>Длительность: %duration% сек.",
   "lore_loc": "Этот мерцающий призрачный меч бьёт и и по физическому, и по магическому слою реальности.",
   "notes_loc": [
-    "Имеет общее время перезарядки с Ghost Scepter.",
-    "Существа в бесплотном облике получают на %ethereal_damage_bonus%%% больше магического урона.",
-    "У универсальных героев за основной атрибут считаются %universal_multiplier_tooltip%%% от суммы всех трёх атрибутов.",
-    "Использование Town Portal Scroll или Boots of Travel не развеивает бесплотный облик."
+    "Имеет общее время перезарядки с Ghost Scepter и его улучшениями.",
+    "Существа в бесплотном облике получают на %ethereal_damage_bonus%%% больше магического урона."
   ],
   "shard_loc": "",
   "scepter_loc": "",
@@ -52,7 +50,7 @@
     {
       "name": "bonus_agility",
       "values_float": [
-        8
+        24
       ],
       "is_percentage": false,
       "heading_loc": "+$all",
@@ -69,7 +67,7 @@
     {
       "name": "bonus_strength",
       "values_float": [
-        8
+        24
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -86,61 +84,10 @@
     {
       "name": "bonus_intellect",
       "values_float": [
-        8
+        24
       ],
       "is_percentage": false,
       "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "bonus_mana",
-      "values_float": [
-        300
-      ],
-      "is_percentage": false,
-      "heading_loc": "+$mana",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "bonus_cast_range",
-      "values_float": [
-        250
-      ],
-      "is_percentage": false,
-      "heading_loc": "+$cast_range",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "bonus_mana_regen",
-      "values_float": [
-        3
-      ],
-      "is_percentage": false,
-      "heading_loc": "+$mana_regen",
       "bonuses": [],
       "values_shard": [],
       "values_scepter": [],
@@ -186,9 +133,9 @@
       "required_facet": ""
     },
     {
-      "name": "blast_agility_multiplier",
+      "name": "blast_stat_multiplier",
       "values_float": [
-        1.5
+        1
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -239,7 +186,7 @@
     {
       "name": "ethereal_damage_bonus",
       "values_float": [
-        -40
+        -30
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -257,23 +204,6 @@
       "name": "projectile_speed",
       "values_float": [
         1400
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "universal_multiplier_tooltip",
-      "values_float": [
-        45
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -345,7 +275,7 @@
   "ability_is_granted_by_scepter": false,
   "ability_is_granted_by_shard": false,
   "ability_is_innate": false,
-  "item_cost": 5375,
+  "item_cost": 5200,
   "item_initial_charges": 0,
   "item_neutral_tier": 4294967295,
   "item_stock_max": 0,

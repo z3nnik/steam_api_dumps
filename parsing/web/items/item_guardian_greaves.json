@@ -2,11 +2,10 @@
   "id": 231,
   "name": "item_guardian_greaves",
   "name_loc": "Guardian Greaves",
-  "desc_loc": "<h1>Активное: Mend</h1>Восстанавливает %replenish_health% здоровья и %replenish_mana% маны всем союзникам вокруг, а также снимает с владельца большинство отрицательных эффектов.<br><br>Радиус: %replenish_radius%<br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нормальное</span>\n\n<h1>Пассивное: Guardian Aura</h1> Увеличивает союзникам восстановление здоровья на %aura_health_regen%, восстановление маны — на %aura_mana_regen% и броню — на %aura_armor%. Союзным героям с уровнем здоровья ниже %aura_bonus_threshold%%% аура восстанавливает %aura_health_regen_bonus% здоровья в секунду, %aura_mana_regen_bonus% маны в секунду и увеличивает броню на %aura_armor_bonus%.<br><br>Радиус: %aura_radius%\nБонусы к скорости передвижения от нескольких пар ботинок не складываются.",
+  "desc_loc": "<h1>Активное: Mend</h1>Восстанавливает %replenish_health% здоровья и %replenish_mana% маны всем союзникам вокруг, а также снимает с владельца большинство отрицательных эффектов.<br><br>Радиус: %replenish_radius%<br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нормальное</span>\n\n<h1>Пассивное: Guardian Aura</h1> Увеличивает союзникам восстановление здоровья на %aura_health_regen%, а восстановление маны — на %aura_mana_regen%. Когда у владельца остаётся меньше %aura_bonus_threshold%%% здоровья, бонус к его восстановлению увеличивается до %aura_health_regen_bonus%.<br><br>Радиус: %aura_radius%\nБонусы к скорости передвижения от нескольких пар ботинок не складываются.",
   "lore_loc": "Один из множества священных инструментов, созданных во славу Всезнания.",
   "notes_loc": [
-    "Аура усиливается только на героях.",
-    "Mend (и Restore предмета Mekansm) действует на одно и то же существо не чаще, чем один раз за время перезарядки заклинания."
+    "Mend (и Restore у предмета Mekansm) действует на одно и то же существо не чаще, чем один раз за время перезарядки заклинания."
   ],
   "shard_loc": "",
   "scepter_loc": "",
@@ -67,7 +66,7 @@
     {
       "name": "bonus_armor",
       "values_float": [
-        4
+        5
       ],
       "is_percentage": false,
       "heading_loc": "+$armor",
@@ -102,23 +101,6 @@
       "name": "aura_health_regen",
       "values_float": [
         2.5
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "aura_armor",
-      "values_float": [
-        3
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -170,40 +152,6 @@
       "name": "aura_health_regen_bonus",
       "values_float": [
         14.5
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "aura_mana_regen_bonus",
-      "values_float": [
-        5
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "aura_armor_bonus",
-      "values_float": [
-        8
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -309,7 +257,7 @@
   "ability_is_granted_by_scepter": false,
   "ability_is_granted_by_shard": false,
   "ability_is_innate": false,
-  "item_cost": 5050,
+  "item_cost": 4300,
   "item_initial_charges": 0,
   "item_neutral_tier": 4294967295,
   "item_stock_max": 0,
