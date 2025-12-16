@@ -2,7 +2,7 @@
   "id": 269,
   "name": "item_holy_locket",
   "name_loc": "Holy Locket",
-  "desc_loc": "<h1>Активное: Energy Charge</h1>Мгновенно восстанавливает выбранному союзному существу %restore_per_charge% здоровья и маны за каждый имеющийся заряд.<br><br> Получает один заряд каждые %AbilityChargeRestoreTime% сек. и каждый раз, когда видимый враг в радиусе %charge_radius% использует способность.\n\n<h1>Пассивное: Holy Blessing</h1>Все лечащие заклинания владельца восстанавливают на %heal_increase%%% больше здоровья.",
+  "desc_loc": "<h1>Активное: Energy Charge</h1>Применяет на союзника эффект, который на %active_buff_duration% сек. увеличивает получаемое им лечение на %incoming_heal_increase_active%%% и мгновенно восстанавливает ему %health_restore_per_charge% здоровья и %mana_restore_per_charge% маны за каждый заряд.<br><br>Получает один заряд каждые %AbilityChargeRestoreTime% сек. и каждый раз, когда видимый враг в радиусе %charge_radius% использует способность.\n\n<h1>Пассивное: Holy Blessing</h1>Все лечащие заклинания владельца восстанавливают на %heal_increase_passive%%% больше здоровья.",
   "lore_loc": "Заветная реликвия, которая долгое время считалась утерянной в неудавшемся походе.",
   "notes_loc": [],
   "shard_loc": "",
@@ -18,7 +18,7 @@
   "dispellable": 0,
   "max_level": 0,
   "cast_ranges": [
-    500
+    600
   ],
   "cast_points": [
     0
@@ -45,7 +45,7 @@
   "health_costs": [],
   "special_values": [
     {
-      "name": "heal_increase",
+      "name": "heal_increase_passive",
       "values_float": [
         15
       ],
@@ -64,7 +64,7 @@
     {
       "name": "max_charges",
       "values_float": [
-        20
+        25
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -98,7 +98,7 @@
     {
       "name": "bonus_all_stats",
       "values_float": [
-        9
+        7
       ],
       "is_percentage": false,
       "heading_loc": "+$all",
@@ -113,9 +113,60 @@
       "required_facet": ""
     },
     {
-      "name": "restore_per_charge",
+      "name": "health_restore_per_charge",
       "values_float": [
         17
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "mana_restore_per_charge",
+      "values_float": [
+        15
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "incoming_heal_increase_active",
+      "values_float": [
+        10
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "active_buff_duration",
+      "values_float": [
+        4
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -166,7 +217,7 @@
     {
       "name": "AbilityCastRange",
       "values_float": [
-        500
+        600
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -183,7 +234,7 @@
     {
       "name": "AbilityCharges",
       "values_float": [
-        20
+        25
       ],
       "is_percentage": false,
       "heading_loc": "",
@@ -200,7 +251,7 @@
     {
       "name": "AbilityChargeRestoreTime",
       "values_float": [
-        8
+        10
       ],
       "is_percentage": false,
       "heading_loc": "",
