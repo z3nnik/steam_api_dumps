@@ -10,7 +10,7 @@
     {
       "color": 3,
       "title_loc": "Shield of the Scion",
-      "description_loc": "Владелец аспекта получает барьер, когда наносит магический урон вражеским героям.",
+      "description_loc": "Владелец аспекта получает барьер, когда его способности наносят урон вражеским героям.",
       "name": "skywrath_mage_shield",
       "icon": "armor",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 1,
       "title_loc": "Staff of the Scion",
-      "description_loc": "Текущие перезарядки способностей уменьшаются каждый раз, когда владелец аспекта наносит магический урон вражеским героям.",
+      "description_loc": "Когда способности владельца наносят магический урон вражескому герою, все их текущие перезарядки уменьшаются.",
       "name": "skywrath_mage_staff",
       "icon": "cooldown",
       "gradient_id": 2,
@@ -543,7 +543,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_skywrath_concussive_shot_slow",
-              "value": 15,
+              "value": 20,
               "operation": 0
             }
           ],
@@ -872,7 +872,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_skywrath",
-              "value": 7,
+              "value": 6,
               "operation": 2
             }
           ],
@@ -1754,7 +1754,7 @@
           "id": 833,
           "name": "skywrath_mage_shield_of_the_scion",
           "name_loc": "Shield of the Scion",
-          "desc_loc": "Нанеся вражескому герою магический урон своей способностью, владелец аспекта получает барьер от магического урона в размере %damage_barrier_base% + %damage_barrier_per_level% за уровень владельца. Эффекты складываются, но их время действия не зависит друг от друга.",
+          "desc_loc": "Каждый раз, когда владелец аспекта наносит своей способностью магический урон вражеским героям, он получает барьер от магического урона. Здоровье барьеров складывается, но каждый из них действует фиксированное время.",
           "lore_loc": "Придворные маги Скайраса могут использовать свои силы только для защиты королевства и трона.",
           "notes_loc": [],
           "shard_loc": "",
@@ -1817,29 +1817,12 @@
               "required_facet": ""
             },
             {
-              "name": "damage_barrier_base",
+              "name": "damage_barrier",
               "values_float": [
-                10
+                11
               ],
               "is_percentage": false,
-              "heading_loc": "",
-              "bonuses": [],
-              "values_shard": [],
-              "values_scepter": [],
-              "facet_bonus": {
-                "name": "",
-                "values": [],
-                "operation": 0
-              },
-              "required_facet": ""
-            },
-            {
-              "name": "damage_barrier_per_level",
-              "values_float": [
-                1
-              ],
-              "is_percentage": false,
-              "heading_loc": "",
+              "heading_loc": "ЗДОРОВЬЕ МАГИЧЕСКОГО БАРЬЕРА:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1889,7 +1872,7 @@
           "id": 1387,
           "name": "skywrath_mage_staff_of_the_scion",
           "name_loc": "Staff of the Scion",
-          "desc_loc": "Когда владелец аспекта наносит своей способностью магический урон вражескому герою, оставшееся время перезарядки всех способностей уменьшается на %cooldown_reduction% сек.",
+          "desc_loc": "Каждый раз, когда владелец аспекта наносит своей способностью магический урон вражеским героям, оставшееся время перезарядки всех его способностей уменьшается на %cooldown_reduction% сек.",
           "lore_loc": "Тех, кто прогневал Скайрас, неизбежно настигает возмездие, подобное буре.",
           "notes_loc": [],
           "shard_loc": "",
