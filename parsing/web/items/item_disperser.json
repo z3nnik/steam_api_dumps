@@ -2,7 +2,7 @@
   "id": 1097,
   "name": "item_disperser",
   "name_loc": "Disperser",
-  "desc_loc": "<h1>Активное: Suppress</h1> Действует на выбранную цель и владельца одновременно. Врагу замедляет передвижение на %enemy_effect_duration% сек. На союзника и владельца накладывает развеивание, а также на %ally_effect_duration% сек. ускоряет их и даёт +%slow_resist%%% к сопротивлению замедлениям.<br><br>И замедление врага, и ускорение союзника равны %phase_movement_speed%%% в момент применения и постепенно снижаются до нуля.<br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нормальное</span>\n\n<h1>Пассивное: Manabreak</h1> Каждая атака сжигает %feedback_mana_burn% маны врага и наносит ему %damage_per_burn% физического урона за единицу сожжённой маны.<br><br>Иллюзии героев ближнего боя сжигают по %feedback_mana_burn_illusion_melee% маны за атаку, а дальнего боя — %feedback_mana_burn_illusion_ranged%.",
+  "desc_loc": "<h1>Активное: Suppress</h1> Применяет на цель и на владельца развеивание. Если целью был враг, также замедляет его передвижение на %enemy_effect_duration% сек., а если союзник — ускоряет на %ally_effect_duration% сек. и даёт +%slow_resist%%% к сопротивлению замедлениям. Бонусы для союзника накладываются и на самого владельца.<br><br>И замедление, и ускорение равны %phase_movement_speed%%% в момент применения и постепенно снижаются до нуля.<br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нормальное</span>\n\n<h1>Пассивное: Manabreak</h1> Каждая атака сжигает %feedback_mana_burn% маны врага и наносит ему %damage_per_burn% физического урона за единицу сожжённой маны.<br><br>Иллюзии не могут сжигать ману.",
   "lore_loc": "Когда-то его доверили генерал-апостолу экспедиционных войск на службе у Приверженцев Рамаска.",
   "notes_loc": [],
   "shard_loc": "",
@@ -82,40 +82,6 @@
       "name": "feedback_mana_burn",
       "values_float": [
         40
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "feedback_mana_burn_illusion_melee",
-      "values_float": [
-        8
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "feedback_mana_burn_illusion_ranged",
-      "values_float": [
-        8
       ],
       "is_percentage": false,
       "heading_loc": "",

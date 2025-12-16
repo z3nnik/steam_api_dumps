@@ -2,7 +2,7 @@
   "id": 249,
   "name": "item_silver_edge",
   "name_loc": "Silver Edge",
-  "desc_loc": "<h1>Активное: Shadow Walk</h1>Делает героя невидимым на %windwalk_duration% сек. или до момента, когда он совершит атаку или применит способность. Также увеличивает скорость передвижения на %windwalk_movement_speed%%% и позволяет проходить сквозь существ. <br><br>Атака, прерывающая невидимость, нанесёт %windwalk_bonus_damage% дополнительного урона и отключит пассивные способности жертвы на %backstab_duration% сек.",
+  "desc_loc": "<h1>Активное: Shadow Walk</h1>Делает героя невидимым на %windwalk_duration% сек. или до момента, когда он совершит атаку или применит способность. Также увеличивает скорость передвижения на %windwalk_movement_speed%%% и позволяет проходить сквозь существ. <br><br>Атака, прервавшая невидимость, нанесёт %windwalk_bonus_damage% дополнительного урона, отключит пассивные способности жертвы и снизит её максимальную скорость передвижения до %max_movement_speed%. Длительность: %backstab_duration% сек.",
   "lore_loc": "Повергнув несправедливого правителя, этот клинок лишь развязал гражданскую войну.",
   "notes_loc": [],
   "shard_loc": "",
@@ -164,6 +164,23 @@
       "required_facet": ""
     },
     {
+      "name": "max_movement_speed",
+      "values_float": [
+        200
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
       "name": "visibility_radius",
       "values_float": [
         1025
@@ -221,7 +238,7 @@
   "ability_is_granted_by_scepter": false,
   "ability_is_granted_by_shard": false,
   "ability_is_innate": false,
-  "item_cost": 5800,
+  "item_cost": 5700,
   "item_initial_charges": 0,
   "item_neutral_tier": 4294967295,
   "item_stock_max": 0,

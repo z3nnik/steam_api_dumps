@@ -2,9 +2,11 @@
   "id": 114,
   "name": "item_heart",
   "name_loc": "Heart of Tarrasque",
-  "desc_loc": "",
+  "desc_loc": "<h1>Пассивное: Behemoth's Blood</h1>Восстановление здоровья увеличивается на %missing_health_regen%%% от недостающего здоровья.",
   "lore_loc": "Сохранившееся сердце вымершего монстра, которое укрепляет стойкость владельца.",
-  "notes_loc": [],
+  "notes_loc": [
+    "Эффекты от нескольких заклинаний Behemoth's Blood не складываются."
+  ],
   "shard_loc": "",
   "scepter_loc": "",
   "facets_loc": [],
@@ -62,12 +64,29 @@
       "required_facet": ""
     },
     {
-      "name": "health_regen_pct",
+      "name": "hp_regen",
       "values_float": [
-        1.4
+        1
       ],
       "is_percentage": true,
       "heading_loc": "+макс. здоровья в секунду",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "missing_health_regen",
+      "values_float": [
+        1.5
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
       "bonuses": [],
       "values_shard": [],
       "values_scepter": [],
@@ -85,7 +104,7 @@
   "ability_is_granted_by_scepter": false,
   "ability_is_granted_by_shard": false,
   "ability_is_innate": false,
-  "item_cost": 5200,
+  "item_cost": 5100,
   "item_initial_charges": 0,
   "item_neutral_tier": 4294967295,
   "item_stock_max": 0,
