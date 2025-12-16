@@ -68,9 +68,11 @@
       "name_loc": "Storm Hammer",
       "desc_loc": "Герой высвобождает всю мощь своей магической рукавицы, нанося жертве и её союзникам в небольшой области урон и оглушая их.",
       "lore_loc": "Железная рукавица мятежного рыцаря, позаимствованная в отцовской школе, выбивает дух из любого врага.",
-      "notes_loc": [],
+      "notes_loc": [
+        "Улучшение от Aghanim's Scepter не позволяет выбирать целью неуязвимых существ."
+      ],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает дальность применения и применяет на цель нормальное развеивание. Позволяет применять способность на неуязвимые цели. Если включено альтернативное применение, герой полетит за снарядом, а способность нанесёт на %scepter_bonus_damage% урона больше.",
+      "scepter_loc": "Увеличивает дальность применения и скорость снаряда. Он действует на неуязвимых существ и применяет на жертв нормальное развеивание. Если включено альтернативное применение, снаряд нанесёт на %scepter_bonus_damage% урона больше, а герой полетит вместе с ним.",
       "facets_loc": [
         "",
         ""
@@ -126,10 +128,12 @@
             1000
           ],
           "is_percentage": false,
-          "heading_loc": "",
+          "heading_loc": "СКОРОСТЬ СНАРЯДА:",
           "bonuses": [],
           "values_shard": [],
-          "values_scepter": [],
+          "values_scepter": [
+            25
+          ],
           "facet_bonus": {
             "name": "",
             "values": [],
@@ -201,25 +205,6 @@
           "required_facet": ""
         },
         {
-          "name": "cast_range_bonus_scepter",
-          "values_float": [
-            0
-          ],
-          "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [
-            350
-          ],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
           "name": "scepter_bonus_damage",
           "values_float": [
             180
@@ -262,10 +247,12 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "",
+          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
           "bonuses": [],
           "values_shard": [],
-          "values_scepter": [],
+          "values_scepter": [
+            25
+          ],
           "facet_bonus": {
             "name": "",
             "values": [],
@@ -453,10 +440,10 @@
         {
           "name": "great_cleave_damage",
           "values_float": [
-            50,
-            65,
+            60,
+            70,
             80,
-            95
+            90
           ],
           "is_percentage": true,
           "heading_loc": "ПРОРУБАЮЩИЙ УРОН:",
@@ -525,10 +512,10 @@
         0
       ],
       "cooldowns": [
-        40,
-        35,
-        30,
-        25
+        36,
+        32,
+        28,
+        24
       ],
       "durations": [
         0
@@ -760,10 +747,10 @@
         {
           "name": "AbilityCooldown",
           "values_float": [
-            40,
-            35,
-            30,
-            25
+            36,
+            32,
+            28,
+            24
           ],
           "is_percentage": false,
           "heading_loc": "",

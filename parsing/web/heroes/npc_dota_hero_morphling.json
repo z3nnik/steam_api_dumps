@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Flow",
-      "description_loc": "Основной атрибут героя — <font color='#ff0000'>сила</font>. Способность Adaptive Strike оглушает жертву на время, зависящее от силы владельца. Увеличивает урон от заклинаний на %one_percent_tooltip%%% за каждые %agi_per_one_spell_amp% ед. ловкости.",
+      "description_loc": "Основной атрибут героя — <font color='#ff0000'>сила</font>. Увеличивает урон от заклинаний на %one_percent_tooltip%%% за каждые %agi_per_one_spell_amp% ед. ловкости.",
       "name": "morphling_str",
       "icon": "strength",
       "gradient_id": 0,
@@ -321,7 +321,7 @@
       "id": 5053,
       "name": "morphling_adaptive_strike_agi",
       "name_loc": "Adaptive Strike",
-      "desc_loc": "Герой запускает во вражеское существо поток воды, наносящий как базовый урон, так и урон, зависящий от ловкости владельца. Множитель ловкости будет максимальным, если ловкость героя на 50% выше его силы.\n\nТакже поток отталкивает жертву на расстояние, зависящее от силы владельца. Дальность толчка будет максимальной, если сила героя на 50% выше его ловкости.",
+      "desc_loc": "Герой запускает во вражеское существо поток воды, который помимо базового урона также наносит урон, зависящий от ловкости владельца. Множитель ловкости будет максимальным, если ловкость героя на 50% выше его силы.\n\nТакже поток отталкивает и оглушает жертву. Дальность толчка и длительность оглушения увеличиваются с силой героя и достигают максимума, когда его сила на 50% выше ловкости.",
       "lore_loc": "Герой взывает к своей стихии, дабы врагов сокрушили волны.",
       "notes_loc": [
         "Снаряд движется со скоростью %projectile_speed%."
@@ -330,7 +330,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Способность также оглушает жертву на время, зависящее от силы владельца."
+        ""
       ],
       "type": 0,
       "behavior": "8",
@@ -343,9 +343,9 @@
       "max_level": 4,
       "cast_ranges": [
         600,
-        700,
-        800,
-        900
+        675,
+        750,
+        825
       ],
       "cast_points": [
         0.25
@@ -437,7 +437,7 @@
         {
           "name": "stun_min",
           "values_float": [
-            0
+            0.5
           ],
           "is_percentage": false,
           "heading_loc": "МИН. ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
@@ -445,18 +445,16 @@
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
-            "name": "morphling_str",
-            "values": [
-              0.5
-            ],
+            "name": "",
+            "values": [],
             "operation": 0
           },
-          "required_facet": "morphling_str"
+          "required_facet": ""
         },
         {
           "name": "stun_max",
           "values_float": [
-            0
+            2.4
           ],
           "is_percentage": false,
           "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
@@ -464,13 +462,11 @@
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
-            "name": "morphling_str",
-            "values": [
-              2.4
-            ],
+            "name": "",
+            "values": [],
             "operation": 0
           },
-          "required_facet": "morphling_str"
+          "required_facet": ""
         },
         {
           "name": "knockback_min",
@@ -544,9 +540,9 @@
           "name": "AbilityCastRange",
           "values_float": [
             600,
-            700,
-            800,
-            900
+            675,
+            750,
+            825
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -2018,7 +2014,7 @@
           "id": 1219,
           "name": "morphling_flow",
           "name_loc": "Flow",
-          "desc_loc": "Основной атрибут героя — <font color='#ff0000'>сила</font>. Способность Adaptive Strike оглушает жертву на время, зависящее от силы владельца. Увеличивает урон от заклинаний на %one_percent_tooltip%%% за каждые %agi_per_one_spell_amp% ед. ловкости.",
+          "desc_loc": "Основной атрибут героя — <font color='#ff0000'>сила</font>. Увеличивает урон от заклинаний на %one_percent_tooltip%%% за каждые %agi_per_one_spell_amp% ед. ловкости.",
           "lore_loc": "",
           "notes_loc": [
             "Бонус к урону от заклинаний за ловкость отключается истощением."
