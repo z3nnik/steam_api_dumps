@@ -69,7 +69,7 @@
       "desc_loc": "Неистовая жажда питательных соков увеличивает урон от атак героя и наделяет его вампиризмом.",
       "lore_loc": "Большинство своих жертв паучиха заплетает в шёлковые коконы и оставляет на пропитание выводку, но и сама она тоже любит полакомиться заплутавшими героями.",
       "notes_loc": [],
-      "shard_loc": "Увеличивает длительность. Пока эта способность действует, бонусный урон увеличивается на %shard_damage_per_tick%%% каждые %shard_damage_tick_interval% сек.",
+      "shard_loc": "Пока эта способность действует, бонусный урон увеличивается на %shard_damage_per_tick%%% каждые %shard_damage_tick_interval% сек.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -146,7 +146,13 @@
           ],
           "is_percentage": true,
           "heading_loc": "ВАМПИРИЗМ:",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_broodmother_6",
+              "value": 20,
+              "operation": 0
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -167,9 +173,7 @@
           "is_percentage": false,
           "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
           "bonuses": [],
-          "values_shard": [
-            2
-          ],
+          "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
             "name": "",
@@ -422,7 +426,13 @@
           ],
           "is_percentage": true,
           "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_broodmother_web_speed",
+              "value": 14,
+              "operation": 0
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -473,6 +483,27 @@
             "operation": 5
           },
           "required_facet": "broodmother_necrotic_webs"
+        },
+        {
+          "name": "break_move_cap",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_broodmother_web_speed",
+              "value": 1,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
         },
         {
           "name": "AbilityCastRange",
@@ -646,7 +677,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_4",
-              "value": 30,
+              "value": 25,
               "operation": 0
             }
           ],
@@ -672,7 +703,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_4",
-              "value": 30,
+              "value": 25,
               "operation": 2
             }
           ],
@@ -705,17 +736,17 @@
         {
           "name": "attack_damage",
           "values_float": [
-            2,
-            4,
+            3,
             6,
-            8
+            9,
+            12
           ],
           "is_percentage": false,
           "heading_loc": "ДОП. УРОН ОТ АТАК:",
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_2",
-              "value": 12,
+              "value": 10,
               "operation": 0
             }
           ],
@@ -1031,13 +1062,7 @@
           ],
           "is_percentage": true,
           "heading_loc": "ЛЕЧЕНИЕ ОТ ЗДОРОВЬЯ ГЕРОЯ:",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_broodmother_6",
-              "value": 1.5,
-              "operation": 0
-            }
-          ],
+          "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -1272,7 +1297,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_7",
-              "value": 125,
+              "value": 150,
               "operation": 0
             }
           ],
@@ -1331,7 +1356,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_7",
-              "value": 125,
+              "value": 150,
               "operation": 0
             }
           ],
@@ -1531,7 +1556,7 @@
     {
       "id": 900,
       "name": "special_bonus_unique_broodmother_6",
-      "name_loc": "+{s:bonus_kill_heal_heroes}% здоровья героя к лечению от Spider's Milk",
+      "name_loc": "+{s:bonus_lifesteal_pct}% к вампиризму от Insatiable Hunger",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1777,9 +1802,9 @@
       "item_quality": 0
     },
     {
-      "id": 6196,
-      "name": "special_bonus_attack_speed_35",
-      "name_loc": "+{s:value} к скорости атаки",
+      "id": 6362,
+      "name": "special_bonus_unique_broodmother_4",
+      "name_loc": "+{s:bonus_miss_chance}% к замедл. и промахам от Incapacitating Bite",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1824,25 +1849,7 @@
       ],
       "gold_costs": [],
       "health_costs": [],
-      "special_values": [
-        {
-          "name": "value",
-          "values_float": [
-            35
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        }
-      ],
+      "special_values": [],
       "is_item": false,
       "ability_has_scepter": false,
       "ability_has_shard": false,
@@ -1919,9 +1926,9 @@
       "item_quality": 0
     },
     {
-      "id": 6362,
-      "name": "special_bonus_unique_broodmother_4",
-      "name_loc": "+{s:bonus_miss_chance}% к замедл. и промахам от Incapacitating Bite",
+      "id": 1704,
+      "name": "special_bonus_unique_broodmother_web_speed",
+      "name_loc": "+{s:bonus_bonus_movespeed}% к доп. скорости от Spin Web и снятие лимита на скорость",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

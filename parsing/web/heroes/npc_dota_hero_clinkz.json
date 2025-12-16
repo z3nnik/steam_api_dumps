@@ -8,22 +8,13 @@
   "npe_desc_loc": "Нападает на одиноких врагов из невидимости",
   "facets": [
     {
-      "color": 5,
-      "title_loc": "Suppressive Fire",
-      "description_loc": "Атаки с эффектом Strafe вынуждают врагов промахиваться.",
-      "name": "clinkz_suppressive_fire",
-      "icon": "no_vision",
-      "gradient_id": 3,
-      "index": 0
-    },
-    {
       "color": 1,
-      "title_loc": "Engulfing Step",
-      "description_loc": "Death Pact перезаряжается быстрее и перемещает героя на место поглощённого существа.",
-      "name": "clinkz_engulfing_step",
-      "icon": "teleport",
+      "title_loc": "Trial By Pyre",
+      "description_loc": "Этот аспект ничего не делает. Герой всё ещё пылает жаждой мести...",
+      "name": "clinkz_clinkz",
+      "icon": "nuke",
       "gradient_id": 0,
-      "index": 1
+      "index": 2
     }
   ],
   "str_base": 17,
@@ -73,6 +64,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "Применение этой способности добавляет к атакам героя и его скелетов-лучников эффект, из-за которого %bonus_blind_pct%%% атак жертвы становятся промахами следующие %debuff_duration% сек. Эффекты складываются только от разных источников: от героя и от каждого лучника. Действует на постройки.",
+        "",
         ""
       ],
       "type": 0,
@@ -85,7 +77,7 @@
       "dispellable": 2,
       "max_level": 4,
       "cast_ranges": [
-        800
+        1200
       ],
       "cast_points": [
         0
@@ -203,7 +195,7 @@
         {
           "name": "archer_attack_speed_pct",
           "values_float": [
-            60
+            50
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -258,7 +250,7 @@
         {
           "name": "AbilityCastRange",
           "values_float": [
-            800
+            1200
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -333,44 +325,48 @@
       "item_quality": 0
     },
     {
-      "id": 1119,
-      "name": "clinkz_tar_bomb",
-      "name_loc": "Tar Bomb",
-      "desc_loc": "Герой бросает в указанного врага снаряд со смолой, который при попадании наносит магический урон и на %ground_duration% сек. разливает по земле смоляную лужу. Наступившие в неё противники замедляются и получают больше физического урона от атак владельца способности и скелетов-лучников.<br><br>Скелеты-лучники автоматически начинают атаковать врага, по которому попал снаряд этой способности. Если включено автоприменение, герой будет пытаться применить эту способность при атаке.",
-      "lore_loc": "После битвы с Мараксиформом костяной лучник обнаружил на месте своего сердца подручный источник ихора.",
-      "notes_loc": [],
+      "id": 5260,
+      "name": "clinkz_searing_arrows",
+      "name_loc": "Searing Arrows",
+      "desc_loc": "Наполняет стрелы героя огнём, увеличивая их урон.<br><br>Скелеты-лучники пускают такие стрелы по тем же целям, что и герой, нанося %skeleton_damage_pct%%% от урона способности.",
+      "lore_loc": "Лучник поджигает стрелы своей огненной сущностью, что придаёт им поистине разрушительную мощь.",
+      "notes_loc": [
+        "Наносит урон постройкам.",
+        "Дополнительный урон напрямую прибавляется к физическому урону."
+      ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 0,
-      "behavior": "4136",
+      "behavior": "135176",
       "target_team": 2,
       "target_type": 23,
-      "flags": 0,
+      "flags": 16,
       "damage": 1,
-      "immunity": 0,
-      "dispellable": 2,
+      "immunity": 3,
+      "dispellable": 0,
       "max_level": 4,
       "cast_ranges": [
-        1000
+        600
       ],
       "cast_points": [
-        0.2,
-        0.2,
-        0.2,
-        0.2
+        0,
+        0,
+        0,
+        0
       ],
       "channel_times": [
         0
       ],
       "cooldowns": [
-        7,
-        6,
-        5,
-        4
+        0,
+        0,
+        0,
+        0
       ],
       "durations": [
         0
@@ -382,112 +378,21 @@
         0
       ],
       "mana_costs": [
-        45,
-        50,
-        55,
-        60
+        10
       ],
       "gold_costs": [],
       "health_costs": [],
       "special_values": [
         {
-          "name": "radius",
-          "values_float": [
-            325
-          ],
-          "is_percentage": false,
-          "heading_loc": "РАДИУС:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "projectile_speed",
-          "values_float": [
-            2000
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
           "name": "damage_bonus",
           "values_float": [
-            15,
-            25,
-            35,
-            45
+            18,
+            32,
+            46,
+            60
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "ground_duration",
-          "values_float": [
-            5
-          ],
-          "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЛУЖИ:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "slow_movement_speed",
-          "values_float": [
-            -16,
-            -19,
-            -22,
-            -25
-          ],
-          "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "slow_duration",
-          "values_float": [
-            2.5
-          ],
-          "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -520,29 +425,9 @@
           "required_facet": ""
         },
         {
-          "name": "impact_damage",
+          "name": "skeleton_damage_pct",
           "values_float": [
-            40,
-            60,
-            80,
-            100
-          ],
-          "is_percentage": false,
-          "heading_loc": "УРОН ОТ ПОПАДАНИЯ:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "AbilityCastRange",
-          "values_float": [
-            1000
+            50
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -557,9 +442,9 @@
           "required_facet": ""
         },
         {
-          "name": "AbilityCastPoint",
+          "name": "AbilityCastRange",
           "values_float": [
-            0.2
+            600
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -576,30 +461,7 @@
         {
           "name": "AbilityManaCost",
           "values_float": [
-            45,
-            50,
-            55,
-            60
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "AbilityCooldown",
-          "values_float": [
-            7,
-            6,
-            5,
-            4
+            10
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -631,7 +493,7 @@
       "id": 5262,
       "name": "clinkz_death_pact",
       "name_loc": "Death Pact",
-      "desc_loc": "Герой поглощает выбранного вражеского крипа или союзного скелета-лучника, излечиваясь и получая бонус к максимальному здоровью. На месте поглощённого существа создаётся скелет-лучник. Не снимает невидимость от способности Skeleton Walk.<br><br>Одновременно может существовать только один скелет от этой способности.",
+      "desc_loc": "Герой поглощает выбранного вражеского крипа или союзного скелета-лучника, излечиваясь и получая бонус к максимальному здоровью. Не снимает невидимость от способности Skeleton Walk.",
       "lore_loc": "Связь жизни и смерти стала частью лучника, и теперь его старые кости наполняет жизнь каждого принесённого в жертву низшего существа.",
       "notes_loc": [
         "При применении на врага вы получите опыт и золото, как за его убийство.",
@@ -642,7 +504,8 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Death Pact перезаряжается быстрее и перемещает героя на место поглощённого существа. Перемещение не произойдёт, если включено альтернативное применение или если на героя действует оцепенение или привязка."
+        "Death Pact перезаряжается быстрее и перемещает героя на место поглощённого существа. Перемещение не произойдёт, если включено альтернативное применение или если на героя действует оцепенение или привязка.",
+        ""
       ],
       "type": 0,
       "behavior": "33554440",
@@ -714,23 +577,6 @@
               "operation": 0
             }
           ],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "skeletons_spawned",
-          "values_float": [
-            1
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -893,7 +739,7 @@
       "id": 5259,
       "name": "clinkz_burning_barrage",
       "name_loc": "Burning Barrage",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — герой выпускает залп стрел в выбранном направлении. Они пролетают сквозь всех врагов на пути, нанося им долю от обычного урона, а также накладывая эффекты атаки и замедление от способности Tar Bomb.",
+      "desc_loc": "ПРЕРЫВАЕМАЯ — герой выпускает залп стрел в выбранном направлении. Они пролетают сквозь всех врагов на пути, нанося им долю от обычного урона и накладывая эффекты атаки.",
       "lore_loc": "Трудно сказать, вызвано ли дрожание воздуха вокруг костяного лучника жаром его раскалённого сердца или скоростью, с которой он достаёт стрелы из колчана.",
       "notes_loc": [
         "Дальность применения способности увеличивается с дальностью атаки."
@@ -901,6 +747,7 @@
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1101,6 +948,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 0,
@@ -1159,7 +1007,7 @@
         {
           "name": "count",
           "values_float": [
-            5
+            6
           ],
           "is_percentage": false,
           "heading_loc": "ЧИСЛО СКЕЛЕТОВ:",
@@ -1176,7 +1024,7 @@
         {
           "name": "spawn_interval",
           "values_float": [
-            0.15
+            0.1
           ],
           "is_percentage": false,
           "heading_loc": "ИНТЕРВАЛ ПОЯВЛЕНИЯ:",
@@ -1259,14 +1107,15 @@
       "id": 5261,
       "name": "clinkz_wind_walk",
       "name_loc": "Skeleton Walk",
-      "desc_loc": "Герой становится невидимым и передвигается сквозь других существ, пока не атакует или не применит предмет. При выходе из невидимости создаются скелеты-лучники.",
+      "desc_loc": "Герой становится невидимым и передвигается сквозь других существ, пока не атакует или не применит предмет. При выходе из невидимости создаются скелеты-лучники.<br><br>Скелеты-лучники стоят на месте и погибают от нескольких атак героя или башни. Они наносят часть урона владельца и имеют его полную дальность атаки. Постройки получают от скелетов-лучников на %skeleton_building_damage_reduction%%% меньше урона.",
       "lore_loc": "Вспышка огня, клубы дыма — и костяного лучника не видать.",
       "notes_loc": [
         "Задержка перед невидимостью — %fade_time% сек."
       ],
       "shard_loc": "",
-      "scepter_loc": "",
+      "scepter_loc": "Увеличивает здоровье скелетов-лучников.",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1422,116 +1271,8 @@
           "required_facet": ""
         },
         {
-          "name": "AbilityManaCost",
-          "values_float": [
-            80,
-            105,
-            130
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "AbilityCooldown",
-          "values_float": [
-            24,
-            21,
-            18
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_clinkz_10",
-              "value": 4,
-              "operation": 2
-            }
-          ],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        }
-      ],
-      "is_item": false,
-      "ability_has_scepter": false,
-      "ability_has_shard": false,
-      "ability_is_granted_by_scepter": false,
-      "ability_is_granted_by_shard": false,
-      "ability_is_innate": false,
-      "item_cost": 0,
-      "item_initial_charges": 0,
-      "item_neutral_tier": 4294967295,
-      "item_stock_max": 0,
-      "item_stock_time": 0,
-      "item_quality": 0
-    },
-    {
-      "id": 1306,
-      "name": "clinkz_bone_and_arrow",
-      "name_loc": "Bone and Arrow",
-      "desc_loc": "После смерти героя на его месте появляется скелет-лучник. Он неподвижен, умирает от нескольких атак героев или башен, имеет часть урона владельца и его полную дальность атаки, а также наносит меньше урона постройкам.<br><br>Некоторые способности героя также могут призывать скелетов-лучников.",
-      "lore_loc": "",
-      "notes_loc": [],
-      "shard_loc": "",
-      "scepter_loc": "Увеличивает здоровье скелетов-лучников.",
-      "facets_loc": [
-        "",
-        ""
-      ],
-      "type": 0,
-      "behavior": "4398046511170",
-      "target_team": 0,
-      "target_type": 0,
-      "flags": 0,
-      "damage": 0,
-      "immunity": 0,
-      "dispellable": 3,
-      "max_level": 4,
-      "cast_ranges": [
-        0
-      ],
-      "cast_points": [
-        0
-      ],
-      "channel_times": [
-        0
-      ],
-      "cooldowns": [
-        0
-      ],
-      "durations": [
-        0
-      ],
-      "damages": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "mana_costs": [
-        0
-      ],
-      "gold_costs": [],
-      "health_costs": [],
-      "special_values": [
-        {
           "name": "skeleton_duration",
           "values_float": [
-            15,
             20,
             25,
             30
@@ -1591,8 +1332,8 @@
           "values_float": [
             25
           ],
-          "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ УРОНА ПО ПОСТРОЙКАМ:",
+          "is_percentage": false,
+          "heading_loc": "",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1636,10 +1377,186 @@
             "operation": 0
           },
           "required_facet": ""
+        },
+        {
+          "name": "AbilityManaCost",
+          "values_float": [
+            80,
+            105,
+            130
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "AbilityCooldown",
+          "values_float": [
+            24,
+            21,
+            18
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_clinkz_10",
+              "value": 4,
+              "operation": 2
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
         }
       ],
       "is_item": false,
       "ability_has_scepter": true,
+      "ability_has_shard": false,
+      "ability_is_granted_by_scepter": false,
+      "ability_is_granted_by_shard": false,
+      "ability_is_innate": false,
+      "item_cost": 0,
+      "item_initial_charges": 0,
+      "item_neutral_tier": 4294967295,
+      "item_stock_max": 0,
+      "item_stock_time": 0,
+      "item_quality": 0
+    },
+    {
+      "id": 1678,
+      "name": "clinkz_infernal_shred",
+      "name_loc": "Infernal Shred",
+      "desc_loc": "Атаки героя и его скелетов накладывают на жертву складывающийся отрицательный эффект, с которым пронзают до %max_armor_piercing_pct%%% от суммарной физической брони (но не снижают её). Каждая атака владельца способности увеличивает этот эффект на %hero_stacks%%%, а каждая атака скелетов — на %skeleton_stacks%%%.<br><br>Длительность: %duration% сек.",
+      "lore_loc": "",
+      "notes_loc": [],
+      "shard_loc": "",
+      "scepter_loc": "",
+      "facets_loc": [
+        "",
+        "",
+        ""
+      ],
+      "type": 0,
+      "behavior": "4398046511170",
+      "target_team": 0,
+      "target_type": 0,
+      "flags": 0,
+      "damage": 0,
+      "immunity": 0,
+      "dispellable": 3,
+      "max_level": 1,
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "channel_times": [
+        0
+      ],
+      "cooldowns": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "gold_costs": [],
+      "health_costs": [],
+      "special_values": [
+        {
+          "name": "duration",
+          "values_float": [
+            5
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "hero_stacks",
+          "values_float": [
+            2
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "skeleton_stacks",
+          "values_float": [
+            1
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "max_armor_piercing_pct",
+          "values_float": [
+            20
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
+      "is_item": false,
+      "ability_has_scepter": false,
       "ability_has_shard": false,
       "ability_is_granted_by_scepter": false,
       "ability_is_granted_by_shard": false,
@@ -1663,6 +1580,7 @@
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1726,6 +1644,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 2,
@@ -1787,6 +1706,7 @@
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1868,6 +1788,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 2,
@@ -1929,6 +1850,7 @@
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -1992,6 +1914,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 2,
@@ -2054,6 +1977,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
+        "",
         ""
       ],
       "type": 2,
@@ -2108,13 +2032,14 @@
     {
       "id": 6620,
       "name": "special_bonus_unique_clinkz_3",
-      "name_loc": "Дополнительная атака от Tar Bomb",
-      "desc_loc": "Атакуя покрытого смолой врага, герой выпускает вторую стрелу в случайного врага в радиусе атаки. Также срабатывает при атаках с автоприменением Tar Bomb.",
+      "name_loc": "Две цели Searing Arrows",
+      "desc_loc": "Атакуя со способностью Searing Arrows, герой выпускает вторую стрелу в случайного врага в радиусе атаки.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
+        "",
         "",
         ""
       ],
@@ -2169,9 +2094,6 @@
     }
   ],
   "facet_abilities": [
-    {
-      "abilities": []
-    },
     {
       "abilities": []
     }

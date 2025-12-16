@@ -131,7 +131,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_luna_1",
-              "value": 110,
+              "value": 80,
               "operation": 0
             }
           ],
@@ -489,7 +489,7 @@
         {
           "name": "rotating_glaives_movement_radius",
           "values_float": [
-            250
+            225
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -506,7 +506,7 @@
         {
           "name": "rotating_glaives_movement_radius_expand_speed_scale",
           "values_float": [
-            3
+            4
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -523,7 +523,7 @@
         {
           "name": "rotating_glaives_hit_radius",
           "values_float": [
-            175
+            200
           ],
           "is_percentage": false,
           "heading_loc": "РАДИУС ВРАЩЕНИЯ:",
@@ -540,9 +540,9 @@
         {
           "name": "rotating_glaives_collision_damage",
           "values_float": [
-            22,
             28,
-            34,
+            32,
+            36,
             40
           ],
           "is_percentage": true,
@@ -809,7 +809,7 @@
       "id": 5224,
       "name": "luna_lunar_blessing",
       "name_loc": "Lunar Blessing",
-      "desc_loc": "Повышает урон от атак союзников неподалёку на %bonus_damage_per_level% за каждый уровень владельца, а на него действует вдвое сильнее. Ночью работает по всей карте и увеличивает обзор владельца на %bonus_night_vision_self% + %bonus_night_vision_per_level% за его уровень.",
+      "desc_loc": "Повышает союзникам неподалёку урон от атак. На владельца действует вдвое сильнее. Ночью работает по всей карте и дарует владельцу дополнительную дальность обзора.",
       "lore_loc": "Богиня луны благоволит своим последователям.",
       "notes_loc": [],
       "shard_loc": "",
@@ -820,7 +820,7 @@
         ""
       ],
       "type": 0,
-      "behavior": "4398046576643",
+      "behavior": "567347999997955",
       "target_team": 1,
       "target_type": 0,
       "flags": 0,
@@ -873,50 +873,16 @@
           "required_facet": ""
         },
         {
-          "name": "bonus_night_vision_self",
-          "values_float": [
-            250
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "bonus_night_vision_per_level",
-          "values_float": [
-            25
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "bonus_damage_per_level",
+          "name": "bonus_damage",
           "values_float": [
             1
           ],
           "is_percentage": false,
-          "heading_loc": "",
+          "heading_loc": "ДОП. УРОН:",
           "bonuses": [
             {
               "name": "special_bonus_unique_luna_3",
-              "value": 1,
+              "value": 30,
               "operation": 0
             }
           ],
@@ -930,24 +896,7 @@
           "required_facet": ""
         },
         {
-          "name": "allied_bonus_damage_tooltip",
-          "values_float": [
-            0
-          ],
-          "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ОТ АТАК У СОЮЗНИКОВ:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "self_bonus_damage_per_level",
+          "name": "self_bonus_damage",
           "values_float": [
             2
           ],
@@ -956,7 +905,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_luna_3",
-              "value": 2,
+              "value": 60,
               "operation": 0
             }
           ],
@@ -970,26 +919,9 @@
           "required_facet": ""
         },
         {
-          "name": "self_bonus_damage_tooltip",
+          "name": "bonus_night_vision",
           "values_float": [
-            0
-          ],
-          "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ОТ АТАК У ВЛАДЕЛЬЦА:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "self_bonus_night_vision_tooltip",
-          "values_float": [
-            0
+            250
           ],
           "is_percentage": false,
           "heading_loc": "ДОП. НОЧНОЙ ОБЗОР:",
@@ -1495,9 +1427,9 @@
       "item_quality": 0
     },
     {
-      "id": 770,
-      "name": "special_bonus_unique_luna_6",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Eclipse",
+      "id": 6180,
+      "name": "special_bonus_unique_luna_1",
+      "name_loc": "+{s:bonus_beam_damage} к урону от Lucent Beam",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1558,9 +1490,9 @@
       "item_quality": 0
     },
     {
-      "id": 6180,
-      "name": "special_bonus_unique_luna_1",
-      "name_loc": "+{s:bonus_beam_damage} к урону от Lucent Beam",
+      "id": 770,
+      "name": "special_bonus_unique_luna_6",
+      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Eclipse",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1686,7 +1618,7 @@
     {
       "id": 6682,
       "name": "special_bonus_unique_luna_3",
-      "name_loc": "+{s:bonus_bonus_damage_per_level} к урону от Lunar Blessing за уровень",
+      "name_loc": "+{s:bonus_bonus_damage} к урону от Lunar Blessing",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

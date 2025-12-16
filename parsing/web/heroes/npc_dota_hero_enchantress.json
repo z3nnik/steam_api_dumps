@@ -438,33 +438,12 @@
           "required_facet": ""
         },
         {
-          "name": "enchant_armor",
-          "values_float": [],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_enchantress_enchant_armor",
-              "value": 10,
-              "operation": 0
-            }
-          ],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
           "name": "enchant_damage",
           "values_float": [
             0,
-            25,
-            50,
-            75
+            20,
+            40,
+            60
           ],
           "is_percentage": false,
           "heading_loc": "УВЕЛИЧЕНИЕ УРОНА КРИПУ:",
@@ -527,6 +506,27 @@
           "values_scepter": [
             1
           ],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "bonus_armor",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_enchantress_enchant_armor",
+              "value": 5,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
           "facet_bonus": {
             "name": "",
             "values": [],
@@ -835,7 +835,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_enchantress_2",
-              "value": 12,
+              "value": 9,
               "operation": 0
             }
           ],
@@ -958,11 +958,28 @@
           "facet_bonus": {
             "name": "enchantress_overprotective_wisps",
             "values": [
-              4
+              3
             ],
             "operation": 5
           },
           "required_facet": "enchantress_overprotective_wisps"
+        },
+        {
+          "name": "total_max_heal",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "МАКС. СУММАРНОЕ ЛЕЧЕНИЕ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
         },
         {
           "name": "AbilityCastPoint",
@@ -1280,7 +1297,7 @@
         {
           "name": "bonus_attack_speed",
           "values_float": [
-            100
+            70
           ],
           "is_percentage": false,
           "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
@@ -1508,7 +1525,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_enchantress_3",
-              "value": 60,
+              "value": 70,
               "operation": 2
             }
           ],
@@ -1556,7 +1573,7 @@
       "id": 1464,
       "name": "enchantress_rabblerouser",
       "name_loc": "Rabble-Rouser",
-      "desc_loc": "Все нейтральные крипы из лагерей наносят больше урона вражеским героям. Бонус к урону составляет %base_damage_amp%%% + %damage_amp_per_level%%% за каждый уровень владельца способности.",
+      "desc_loc": "Все крипы в нейтральных лагерях и под контролем владельца этой способности наносят больше урона вражеским героям.",
       "lore_loc": "",
       "notes_loc": [
         "Не действует на подчинённых нейтральных крипов, Терзателей и Рошана."
@@ -1604,43 +1621,9 @@
       "health_costs": [],
       "special_values": [
         {
-          "name": "base_damage_amp",
-          "values_float": [
-            10
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "damage_amp_per_level",
+          "name": "damage_amp",
           "values_float": [
             4
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "damage_increase_tooltip",
-          "values_float": [
-            0
           ],
           "is_percentage": true,
           "heading_loc": "УВЕЛИЧЕНИЕ УРОНА:",
@@ -1673,8 +1656,8 @@
     {
       "id": 1174,
       "name": "special_bonus_unique_enchantress_enchant_armor",
-      "name_loc": "+{s:bonus_enchant_armor} к броне очарованных крипов",
-      "desc_loc": "",
+      "name_loc": "+{s:bonus_bonus_armor} к броне героя и его существ",
+      "desc_loc": "Действует, только если изучена способность Enchant",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1798,7 +1781,7 @@
       "id": 1541,
       "name": "special_bonus_unique_enchantress_enchant_attackspeed",
       "name_loc": "+{s:bonus_bonus_attackspeed} к скорости атаки героя и его существ",
-      "desc_loc": "",
+      "desc_loc": "Действует, только если изучена способность Enchant",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1919,9 +1902,9 @@
       "item_quality": 0
     },
     {
-      "id": 6379,
-      "name": "special_bonus_unique_enchantress_3",
-      "name_loc": "+{s:bonus_slow_attack_speed} к замедлению атаки от Untouchable",
+      "id": 6086,
+      "name": "special_bonus_unique_enchantress_2",
+      "name_loc": "+{s:bonus_wisp_count} к числу светлячков от Nature's Attendants",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1984,7 +1967,7 @@
       "id": 1130,
       "name": "special_bonus_unique_enchantress_enchant_health_damage",
       "name_loc": "+{s:bonus_bonus_health}/{s:bonus_bonus_damage} к здоровью/урону героя и его существ",
-      "desc_loc": "",
+      "desc_loc": "Действует, только если изучена способность Enchant",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2105,9 +2088,9 @@
       "item_quality": 0
     },
     {
-      "id": 6086,
-      "name": "special_bonus_unique_enchantress_2",
-      "name_loc": "+{s:bonus_wisp_count} к числу светлячков от Nature's Attendants",
+      "id": 6379,
+      "name": "special_bonus_unique_enchantress_3",
+      "name_loc": "+{s:bonus_slow_attack_speed} к замедлению атаки от Untouchable",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

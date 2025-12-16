@@ -37,7 +37,7 @@
   ],
   "str_base": 21,
   "str_gain": 3.6,
-  "agi_base": 16,
+  "agi_base": 14,
   "agi_gain": 2,
   "int_base": 18,
   "int_gain": 1.7,
@@ -60,7 +60,7 @@
   "attack_rate": 1.6,
   "attack_range": 150,
   "projectile_speed": 900,
-  "armor": 2.6666667,
+  "armor": 2.3333335,
   "magic_resistance": 25,
   "movement_speed": 315,
   "turn_rate": 0.6,
@@ -208,7 +208,13 @@
           ],
           "is_percentage": false,
           "heading_loc": "УРОН:",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dragon_knight_9",
+              "value": 60,
+              "operation": 3
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -225,34 +231,7 @@
           ],
           "is_percentage": true,
           "heading_loc": "СНИЖЕНИЕ УРОНА:",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_dragon_knight_3",
-              "value": 30,
-              "operation": 2
-            }
-          ],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "dragon_form_bonus_pct",
-          "values_float": [],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_dragon_knight_9",
-              "value": 85,
-              "operation": 0
-            }
-          ],
+          "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -305,7 +284,13 @@
           ],
           "is_percentage": false,
           "heading_loc": "",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dragon_knight_9",
+              "value": 60,
+              "operation": 3
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -362,7 +347,13 @@
           ],
           "is_percentage": false,
           "heading_loc": "",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dragon_knight_3",
+              "value": 2,
+              "operation": 2
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -1336,9 +1327,9 @@
           "name": "bonus_attack_damage",
           "values_float": [
             20,
-            60,
-            100,
-            140
+            50,
+            80,
+            110
           ],
           "is_percentage": false,
           "heading_loc": "ДОП. УРОН ОТ АТАК:",
@@ -1863,7 +1854,7 @@
     {
       "id": 7113,
       "name": "special_bonus_unique_dragon_knight_3",
-      "name_loc": "+{s:bonus_reduction}% к снижению урона у Breathe Fire",
+      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Breathe Fire",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2133,7 +2124,7 @@
     {
       "id": 1043,
       "name": "special_bonus_unique_dragon_knight_9",
-      "name_loc": "+{s:bonus_dragon_form_bonus_pct}% к урону и дальности Breathe Fire в облике дракона",
+      "name_loc": "+{s:bonus_damage}% к урону и дальности Breathe Fire",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
