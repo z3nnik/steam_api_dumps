@@ -2,7 +2,7 @@
   "id": 950,
   "name": "item_defiant_shell",
   "name_loc": "Defiant Shell",
-  "desc_loc": "<h1>Пассивное: Reciprocity </h1> Когда владельца атакуют, он в ответ атакует цель в радиусе атаки. Перезарядка: %counter_cooldown% сек.",
+  "desc_loc": "<h1>Пассивное: Reciprocity</h1> Когда владельца атакуют, он атакует нападающего в ответ, если тот находится в радиусе атаки. Ответная атака наносит %counter_damage%%% урона.",
   "lore_loc": "",
   "notes_loc": [],
   "shard_loc": "",
@@ -27,7 +27,7 @@
     0
   ],
   "cooldowns": [
-    0
+    5
   ],
   "durations": [
     0
@@ -45,7 +45,24 @@
   "health_costs": [],
   "special_values": [
     {
-      "name": "counter_cooldown",
+      "name": "counter_damage",
+      "values_float": [
+        80
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
       "values_float": [
         5
       ],
@@ -70,7 +87,7 @@
   "ability_is_innate": false,
   "item_cost": 0,
   "item_initial_charges": 0,
-  "item_neutral_tier": 4294967295,
+  "item_neutral_tier": 1,
   "item_stock_max": 0,
   "item_stock_time": 0,
   "item_quality": 1
