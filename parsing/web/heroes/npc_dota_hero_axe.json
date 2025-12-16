@@ -94,10 +94,10 @@
         0
       ],
       "cooldowns": [
-        17,
-        15,
-        13,
-        11
+        18,
+        16,
+        14,
+        12
       ],
       "durations": [
         0
@@ -171,9 +171,9 @@
         {
           "name": "duration",
           "values_float": [
-            1.8,
-            2.2,
-            2.6,
+            2.1,
+            2.4,
+            2.7,
             3
           ],
           "is_percentage": false,
@@ -266,10 +266,10 @@
         {
           "name": "AbilityCooldown",
           "values_float": [
-            17,
-            15,
-            13,
-            11
+            18,
+            16,
+            14,
+            12
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -301,7 +301,7 @@
       "id": 5008,
       "name": "axe_battle_hunger",
       "name_loc": "Battle Hunger",
-      "desc_loc": "Приводит врага в бешенство, нанося ему урон, пока он кого-нибудь не убьёт или действие способности не закончится. Урон от способности увеличивается в зависимости от брони владельца способности. Скорость передвижения жертвы уменьшается, когда она не смотрит в сторону владельца способности.",
+      "desc_loc": "Приводит врага в бешенство, отчего он получает периодический урон, пока кого-нибудь не убьёт или действие способности не закончится. Жертва передвигается медленнее, когда не смотрит в сторону владельца способности.",
       "lore_loc": "Обычные герои не могут сопротивляться ярости Могул-хана, и она калечит их, пока они не выместят ее на ком-нибудь.",
       "notes_loc": [
         "Эффект этой способности также снимется, если разрушить постройку."
@@ -317,7 +317,7 @@
       "target_team": 2,
       "target_type": 19,
       "flags": 0,
-      "damage": 1,
+      "damage": 4,
       "immunity": 4,
       "dispellable": 2,
       "max_level": 4,
@@ -380,20 +380,14 @@
         {
           "name": "slow",
           "values_float": [
-            -18,
-            -22,
-            -26,
-            -30
+            18,
+            22,
+            26,
+            30
           ],
           "is_percentage": true,
           "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_axe_6",
-              "value": 10,
-              "operation": 2
-            }
-          ],
+          "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -413,28 +407,11 @@
           ],
           "is_percentage": false,
           "heading_loc": "УРОН В СЕКУНДУ:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "armor_multiplier",
-          "values_float": [
-            1
-          ],
-          "is_percentage": false,
-          "heading_loc": "МНОЖИТЕЛЬ БРОНИ:",
           "bonuses": [
             {
               "name": "special_bonus_unique_axe",
-              "value": 2,
-              "operation": 1
+              "value": 12,
+              "operation": 0
             }
           ],
           "values_shard": [],
@@ -642,7 +619,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_axe_4",
-              "value": 30,
+              "value": 40,
               "operation": 0
             }
           ],
@@ -769,6 +746,27 @@
           "required_facet": ""
         },
         {
+          "name": "helix_lifesteal",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_axe_helix_lifesteal",
+              "value": 30,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
           "name": "AbilityCooldown",
           "values_float": [
             0.3
@@ -868,7 +866,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_axe_5",
-              "value": 100,
+              "value": 150,
               "operation": 0
             }
           ],
@@ -1289,9 +1287,9 @@
       "item_quality": 0
     },
     {
-      "id": 670,
-      "name": "special_bonus_unique_axe_6",
-      "name_loc": "+{s:bonus_slow}% к замедлению от Battle Hunger",
+      "id": 6102,
+      "name": "special_bonus_unique_axe",
+      "name_loc": "+{s:bonus_damage_per_second} к урону в секунду от Battle Hunger",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1413,9 +1411,9 @@
       "item_quality": 0
     },
     {
-      "id": 562,
-      "name": "special_bonus_unique_axe_5",
-      "name_loc": "+{s:bonus_damage} к урону от Culling Blade",
+      "id": 6145,
+      "name": "special_bonus_strength_15",
+      "name_loc": "+{s:value} к силе",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1460,7 +1458,25 @@
       ],
       "gold_costs": [],
       "health_costs": [],
-      "special_values": [],
+      "special_values": [
+        {
+          "name": "value",
+          "values_float": [
+            15
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        }
+      ],
       "is_item": false,
       "ability_has_scepter": false,
       "ability_has_shard": false,
@@ -1599,9 +1615,9 @@
       "item_quality": 0
     },
     {
-      "id": 6102,
-      "name": "special_bonus_unique_axe",
-      "name_loc": "Множитель брони у Battle Hunger умножается на {s:bonus_armor_multiplier}",
+      "id": 562,
+      "name": "special_bonus_unique_axe_5",
+      "name_loc": "+{s:bonus_damage} к урону от Culling Blade",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
