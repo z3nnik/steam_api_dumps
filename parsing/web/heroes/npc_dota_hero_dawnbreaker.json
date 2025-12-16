@@ -55,8 +55,8 @@
     0,
     0
   ],
-  "damage_min": 49,
-  "damage_max": 53,
+  "damage_min": 50,
+  "damage_max": 54,
   "attack_rate": 1.7,
   "attack_range": 150,
   "projectile_speed": 900,
@@ -1322,7 +1322,13 @@
           ],
           "is_percentage": true,
           "heading_loc": "МАКС. УВЕЛИЧЕНИЕ УРОНА:",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_dawnbreaker_break_of_dawn_damage",
+              "value": 15,
+              "operation": 0
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -1409,7 +1415,7 @@
         "Нельзя применить без молота."
       ],
       "shard_loc": "",
-      "scepter_loc": "Аура способности действует ещё %scepter_aura_duration% сек. после приземления и следует за владельцем. Увеличивает лечение за пульсацию. Уменьшает длительность подготовки и время в полёте.",
+      "scepter_loc": "Увеличивает лечение за пульсацию. Аура способности действует ещё %scepter_aura_duration% сек. после приземления и следует за владельцем.",
       "facets_loc": [
         "",
         "",
@@ -1509,9 +1515,9 @@
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
-            10,
             15,
-            20
+            20,
+            25
           ],
           "facet_bonus": {
             "name": "",
@@ -1640,11 +1646,11 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПОДГОТОВКИ СО СКИПЕТРОМ:",
+          "heading_loc": "",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
-            1
+            1.7
           ],
           "facet_bonus": {
             "name": "",
@@ -1698,9 +1704,7 @@
           "heading_loc": "ВРЕМЯ В ПОЛЁТЕ:",
           "bonuses": [],
           "values_shard": [],
-          "values_scepter": [
-            0.5
-          ],
+          "values_scepter": [],
           "facet_bonus": {
             "name": "",
             "values": [],
@@ -1803,9 +1807,9 @@
   ],
   "talents": [
     {
-      "id": 6159,
-      "name": "special_bonus_attack_damage_12",
-      "name_loc": "+{s:value} к урону",
+      "id": 1570,
+      "name": "special_bonus_unique_dawnbreaker_break_of_dawn_damage",
+      "name_loc": "+{s:bonus_max_dmg_pct}% к макс. увеличению урона от Break of Dawn",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1852,25 +1856,7 @@
       ],
       "gold_costs": [],
       "health_costs": [],
-      "special_values": [
-        {
-          "name": "value",
-          "values_float": [
-            12
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        }
-      ],
+      "special_values": [],
       "is_item": false,
       "ability_has_scepter": false,
       "ability_has_shard": false,
