@@ -192,7 +192,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_enigma_5",
-              "value": 50,
+              "value": 60,
               "operation": 0
             }
           ],
@@ -899,7 +899,7 @@
       "id": 5148,
       "name": "enigma_midnight_pulse",
       "name_loc": "Midnight Pulse",
-      "desc_loc": "Наполняет местность тёмным резонансом, который наносит врагам урон в размере %base_damage% + доли от их текущего здоровья.",
+      "desc_loc": "Наполняет местность тёмным резонансом, который наносит врагам урон каждые %tick_rate% сек.",
       "lore_loc": "Часть бытия медленно погружается в пустоту.",
       "notes_loc": [
         "Разрушает деревья в области действия.",
@@ -977,6 +977,26 @@
           "required_facet": ""
         },
         {
+          "name": "base_damage",
+          "values_float": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "is_percentage": false,
+          "heading_loc": "БАЗОВЫЙ УРОН В СЕКУНДУ:",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
           "name": "damage_percent",
           "values_float": [
             4,
@@ -985,7 +1005,7 @@
             10
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ ТЕКУЩЕГО ЗДОРОВЬЯ:",
+          "heading_loc": "УРОН В СЕКУНДУ ОТ ТЕКУЩЕГО ЗДОРОВЬЯ:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1006,26 +1026,6 @@
           ],
           "is_percentage": false,
           "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "base_damage",
-          "values_float": [
-            5,
-            10,
-            15,
-            20
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],

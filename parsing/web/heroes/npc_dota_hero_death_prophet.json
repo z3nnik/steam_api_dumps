@@ -824,7 +824,7 @@
       "id": 5092,
       "name": "death_prophet_witchcraft",
       "name_loc": "Witchcraft",
-      "desc_loc": "Оккультные знания героя расширяются по мере получения опыта. Каждый уровень увеличивает скорость передвижения героя на %movement_speed_pct_per_level%%% и уменьшает перезарядки его заклинаний на %cooldown_reduction_pct_per_level%%%.",
+      "desc_loc": "Полученный опыт расширяет оккультные знания героя: с каждым уровнем его скорость передвижения увеличивается, а перезарядки заклинаний уменьшаются.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -873,41 +873,7 @@
         {
           "name": "movement_speed_pct_per_level",
           "values_float": [
-            0.5
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "cooldown_reduction_pct_per_level",
-          "values_float": [
             0.75
-          ],
-          "is_percentage": false,
-          "heading_loc": "",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "movement_speed_tooltip",
-          "values_float": [
-            0
           ],
           "is_percentage": true,
           "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
@@ -922,9 +888,9 @@
           "required_facet": ""
         },
         {
-          "name": "cooldown_reduction_tooltip",
+          "name": "cooldown_reduction_pct_per_level",
           "values_float": [
-            0
+            0.75
           ],
           "is_percentage": true,
           "heading_loc": "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДОК:",
@@ -956,7 +922,7 @@
       "id": 5093,
       "name": "death_prophet_exorcism",
       "name_loc": "Exorcism",
-      "desc_loc": "Герой выпускает злых духов, наносящих вражеским существам и постройкам поблизости. Нанеся урон, духи должны вернуться к владельцу, прежде чем атаковать снова. Через %abilityduration% сек. они окончательно возвращаются к владельцу, исцеляя его на долю от нанесённого урона. Постройки получают только 50%% урона.<br/>Во время действия скорость передвижения владельца увеличена.",
+      "desc_loc": "Герой выпускает злых духов, вытягивающих здоровье из вражеских существ и построек поблизости. После каждой атаки дух должен вернуться к владельцу, прежде чем атаковать вновь. Через %abilityduration% сек. духи возвращаются окончательно, исцеляя владельца на долю от нанесённого урона. Постройки получают 50% урона.",
       "lore_loc": "Осколки неисчислимых прошлых жизней банши материализуются, чтобы сеять ужас в настоящем.",
       "notes_loc": [
         "Радиус указывает область вокруг героя, в которой духи выбирают цель.",
@@ -1262,27 +1228,8 @@
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
-            50
+            60
           ],
-          "facet_bonus": {
-            "name": "",
-            "values": [],
-            "operation": 0
-          },
-          "required_facet": ""
-        },
-        {
-          "name": "movement_bonus",
-          "values_float": [
-            4,
-            8,
-            12
-          ],
-          "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ПРИ АКТИВАЦИИ:",
-          "bonuses": [],
-          "values_shard": [],
-          "values_scepter": [],
           "facet_bonus": {
             "name": "",
             "values": [],

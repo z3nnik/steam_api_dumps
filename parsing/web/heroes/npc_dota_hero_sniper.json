@@ -1161,7 +1161,7 @@
       "id": 5157,
       "name": "sniper_assassinate",
       "name_loc": "Assassinate",
-      "desc_loc": "Герой с огромного расстояния целится во вражеское существо и после небольшой задержки совершает сокрушительный выстрел, ненадолго оглушающий цель и наносящий как базовый урон, так и урон от атаки героя. Когда владелец этой способности убивает героя, её перезарядка сбрасывается.",
+      "desc_loc": "Герой с огромного расстояния целится во вражеское существо и после небольшой задержки совершает сокрушительный выстрел, ненадолго оглушающий цель и наносящий как базовый урон, так и усиленный урон от атаки. Если убить этой способностью вражеского героя, её перезарядка сбросится.",
       "lore_loc": "Чтобы осуществить пророчество и вернуться в родной город, Кардел должен быть уверен, что следующий выстрел будет столь же метким, как и тот, что он совершил в далёкий день своего испытания.",
       "notes_loc": [
         "Значок прицела виден только союзникам.",
@@ -1177,7 +1177,7 @@
       "behavior": "67108872",
       "target_team": 2,
       "target_type": 19,
-      "flags": 64,
+      "flags": 0,
       "damage": 2,
       "immunity": 4,
       "dispellable": 3,
@@ -1219,7 +1219,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "БАЗОВЫЙ УРОН:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sniper_1",
@@ -1378,6 +1378,44 @@
           ],
           "is_percentage": false,
           "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attack_factor",
+          "values_float": [
+            0,
+            10,
+            20
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
+          "name": "attack_factor_tooltip",
+          "values_float": [
+            100,
+            110,
+            120
+          ],
+          "is_percentage": true,
+          "heading_loc": "УРОН ОТ АТАКИ:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],

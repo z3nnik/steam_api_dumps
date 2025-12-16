@@ -117,10 +117,10 @@
         {
           "name": "gush_damage",
           "values_float": [
-            110,
+            100,
             160,
-            210,
-            260
+            220,
+            280
           ],
           "is_percentage": false,
           "heading_loc": "УРОН:",
@@ -167,7 +167,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_tidehunter_5",
-              "value": 15,
+              "value": 20,
               "operation": 2
             }
           ],
@@ -658,20 +658,14 @@
         {
           "name": "attack_damage",
           "values_float": [
-            45,
-            90,
-            135,
-            180
+            50,
+            100,
+            150,
+            200
           ],
           "is_percentage": false,
           "heading_loc": "ДОП. УРОН:",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_tidehunter_9",
-              "value": 40,
-              "operation": 0
-            }
-          ],
+          "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -694,7 +688,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_tidehunter_3",
-              "value": 30,
+              "value": 20,
               "operation": 2
             }
           ],
@@ -1187,7 +1181,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_tidehunter_7",
-              "value": 0.8,
+              "value": 1,
               "operation": 0
             }
           ],
@@ -1264,7 +1258,13 @@
           ],
           "is_percentage": false,
           "heading_loc": "",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_tidehunter_ravage_cooldown",
+              "value": 15,
+              "operation": 2
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -1358,6 +1358,27 @@
           "required_facet": ""
         },
         {
+          "name": "smash_on_purge",
+          "values_float": [],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_tidehunter_smash_on_blubber",
+              "value": 1,
+              "operation": 0
+            }
+          ],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "",
+            "values": [],
+            "operation": 0
+          },
+          "required_facet": ""
+        },
+        {
           "name": "damage_reset_interval",
           "values_float": [
             7
@@ -1391,9 +1412,9 @@
   ],
   "talents": [
     {
-      "id": 963,
-      "name": "special_bonus_unique_tidehunter_9",
-      "name_loc": "+{s:bonus_attack_damage} к урону от Anchor Smash",
+      "id": 6946,
+      "name": "special_bonus_unique_tidehunter_3",
+      "name_loc": "+{s:bonus_damage_reduction}% к снижению урона у Anchor Smash",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1577,9 +1598,9 @@
       "item_quality": 0
     },
     {
-      "id": 6946,
-      "name": "special_bonus_unique_tidehunter_3",
-      "name_loc": "+{s:bonus_damage_reduction}% к снижению урона у Anchor Smash",
+      "id": 1700,
+      "name": "special_bonus_unique_tidehunter_ravage_cooldown",
+      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Ravage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1639,9 +1660,9 @@
       "item_quality": 0
     },
     {
-      "id": 964,
-      "name": "special_bonus_unique_tidehunter_10",
-      "name_loc": "Anchor Smash действует на постройки",
+      "id": 1701,
+      "name": "special_bonus_unique_tidehunter_smash_on_blubber",
+      "name_loc": "Срабатывание Blubber активирует Anchor Smash",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1825,9 +1846,9 @@
       "item_quality": 0
     },
     {
-      "id": 7979,
-      "name": "special_bonus_unique_tidehunter_8",
-      "name_loc": "Шанс в 50% применить Anchor Smash при атаке",
+      "id": 964,
+      "name": "special_bonus_unique_tidehunter_10",
+      "name_loc": "Anchor Smash действует на постройки",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

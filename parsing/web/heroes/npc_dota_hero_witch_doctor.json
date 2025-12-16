@@ -350,7 +350,13 @@
           ],
           "is_percentage": false,
           "heading_loc": "",
-          "bonuses": [],
+          "bonuses": [
+            {
+              "name": "special_bonus_unique_witch_doctor_6",
+              "value": 6,
+              "operation": 2
+            }
+          ],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -426,10 +432,7 @@
         0
       ],
       "mana_costs": [
-        35,
-        40,
-        45,
-        50
+        25
       ],
       "gold_costs": [],
       "health_costs": [],
@@ -437,10 +440,10 @@
         {
           "name": "mana_per_second",
           "values_float": [
-            8,
+            9,
             12,
-            16,
-            20
+            15,
+            18
           ],
           "is_percentage": false,
           "heading_loc": "МАНЫ В СЕКУНДУ:",
@@ -629,10 +632,7 @@
         {
           "name": "AbilityManaCost",
           "values_float": [
-            35,
-            40,
-            45,
-            50
+            25
           ],
           "is_percentage": false,
           "heading_loc": "",
@@ -664,7 +664,7 @@
       "id": 5140,
       "name": "witch_doctor_maledict",
       "name_loc": "Maledict",
-      "desc_loc": "Накладывает сглаз на всех вражеских героев в небольшой области, после чего они получают урон каждую секунду. Помимо этого, каждые 4 секунды им наносится периодический урон, зависящий от количества здоровья, потерянного с наложения сглаза.",
+      "desc_loc": "Накладывает сглаз на всех вражеских героев и подконтрольных им существ в небольшой области, отчего они каждую секунду получают фиксированный урон. Помимо этого, каждые 4 секунды им наносится периодический урон, зависящий от количества здоровья, которое было потеряно с наложения сглаза.",
       "lore_loc": "Некоторые заклятия вуду способны заставить врага жалеть о том, что он повстречался с Жарвакко.",
       "notes_loc": [
         "Если у жертвы больше здоровья, чем на момент произнесения этого заклинания, периодического урона не будет."
@@ -729,13 +729,7 @@
           ],
           "is_percentage": false,
           "heading_loc": "РАДИУС:",
-          "bonuses": [
-            {
-              "name": "special_bonus_unique_witch_doctor_6",
-              "value": 125,
-              "operation": 0
-            }
-          ],
+          "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
           "facet_bonus": {
@@ -792,7 +786,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_witch_doctor_7",
-              "value": 2,
+              "value": 1,
               "operation": 0
             }
           ],
@@ -907,7 +901,7 @@
           "bonuses": [
             {
               "name": "special_bonus_unique_witch_doctor_7",
-              "value": 8,
+              "value": 4,
               "operation": 0
             }
           ],
@@ -1384,9 +1378,7 @@
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
-            650,
-            650,
-            650
+            575
           ],
           "facet_bonus": {
             "name": "",
@@ -1783,9 +1775,9 @@
       "item_quality": 0
     },
     {
-      "id": 417,
-      "name": "special_bonus_unique_witch_doctor_6",
-      "name_loc": "+{s:bonus_radius} к радиусу Maledict",
+      "id": 555,
+      "name": "special_bonus_unique_witch_doctor_7",
+      "name_loc": "+{s:bonus_AbilityDuration} сек. действия Maledict",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1975,9 +1967,9 @@
       "item_quality": 0
     },
     {
-      "id": 555,
-      "name": "special_bonus_unique_witch_doctor_7",
-      "name_loc": "+{s:bonus_AbilityDuration} сек. действия Maledict",
+      "id": 417,
+      "name": "special_bonus_unique_witch_doctor_6",
+      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Paralyzing Cask",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

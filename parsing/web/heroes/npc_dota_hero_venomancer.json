@@ -77,7 +77,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Создаёт %num_created_wards_tooltip% чумных тотема от способности Plague Ward вокруг задетых снарядом вражеских героев."
+        "Снаряд создаёт вокруг задетых вражеских героев %num_created_wards_tooltip% чумных тотема от способности Plague Ward текущего уровня, имеющих %ward_hp_dmg_pct%%% здоровья и урона."
       ],
       "type": 0,
       "behavior": "48",
@@ -287,6 +287,25 @@
               2
             ],
             "operation": 0
+          },
+          "required_facet": "venomancer_plague_carrier"
+        },
+        {
+          "name": "ward_hp_dmg_pct",
+          "values_float": [
+            0
+          ],
+          "is_percentage": false,
+          "heading_loc": "",
+          "bonuses": [],
+          "values_shard": [],
+          "values_scepter": [],
+          "facet_bonus": {
+            "name": "venomancer_plague_carrier",
+            "values": [
+              75
+            ],
+            "operation": 5
           },
           "required_facet": "venomancer_plague_carrier"
         },
@@ -873,7 +892,7 @@
         {
           "name": "bonus_dmg_per_debuff_pct",
           "values_float": [
-            10
+            8
           ],
           "is_percentage": true,
           "heading_loc": "ДОП. БАЗОВЫЙ УРОН ЗА ЭФФЕКТ:",
