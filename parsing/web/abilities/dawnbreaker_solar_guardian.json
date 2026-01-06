@@ -1,0 +1,398 @@
+[
+  {
+    "id": 7906,
+    "name": "dawnbreaker_solar_guardian",
+    "name_loc": "Solar Guardian",
+    "desc_loc": "ПРЕРЫВАЕМАЯ — герой создаёт пульсирующий эффект в радиусе %max_offset_distance% от любого союзного героя. Каждая пульсация наносит урон врагам и излечивает союзников. После небольшой подготовки герой летит в указанную область, при приземлении нанося врагам дополнительный урон и оглушая их. Начав применение этой способности, её нельзя прервать.",
+    "lore_loc": "Лишь ради защиты союзников Валора готова воззвать к последним остаткам своих прежних сил, дабы взмыть на крыльях космоса.",
+    "notes_loc": [
+      "Интервал пульсаций: %pulse_interval% сек.",
+      "Всего на перемещение уходит %abilitychanneltime% сек. применения способности и %airtime_duration% сек. полёта.",
+      "Нельзя применить без молота."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Увеличивает лечение за пульсацию. Аура способности действует ещё %scepter_aura_duration% сек. после приземления и следует за владельцем.",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "144",
+    "target_team": 1,
+    "target_type": 1,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 3,
+    "dispellable": 0,
+    "max_level": 3,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "channel_times": [
+      1.7
+    ],
+    "cooldowns": [
+      120,
+      105,
+      90
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      150,
+      200,
+      250
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "scepter_aura_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          2
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "miss_rate",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          0
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "base_heal",
+        "values_float": [
+          45,
+          70,
+          95
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЛЕЧЕНИЕ ЗА ПУЛЬСАЦИЮ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          15,
+          20,
+          25
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "radius",
+        "values_float": [
+          500
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС ПРИЗЕМЛЕНИЯ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_dawnbreaker_solar_guardian_radius",
+            "value": 150,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "base_damage",
+        "values_float": [
+          30,
+          50,
+          70
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН ЗА ПУЛЬСАЦИЮ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pulse_interval",
+        "values_float": [
+          0.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "land_damage",
+        "values_float": [
+          130,
+          160,
+          190
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН ОТ ПРИЗЕМЛЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "land_stun_duration",
+        "values_float": [
+          1.4,
+          1.6,
+          1.8
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "max_offset_distance",
+        "values_float": [
+          350
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_channel_time",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1.7
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "airtime_scepter_bonus",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          3.5
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "airtime_scepter_movement_speed",
+        "values_float": [
+          200
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "airtime_duration",
+        "values_float": [
+          0.8
+        ],
+        "is_percentage": false,
+        "heading_loc": "ВРЕМЯ В ПОЛЁТЕ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityChannelTime",
+        "values_float": [
+          1.7
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.1
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          150,
+          200,
+          250
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          120,
+          105,
+          90
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
+            "value": 15,
+            "operation": 2
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

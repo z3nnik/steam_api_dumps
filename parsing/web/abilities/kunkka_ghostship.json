@@ -1,0 +1,558 @@
+[
+  {
+    "id": 5035,
+    "name": "kunkka_ghostship",
+    "name_loc": "Ghostship",
+    "desc_loc": "Вызывает призрачный корабль, который прорывается сквозь битву и разбивается, оглушая врагов и нанося им урон. Корабль окатывает всех задетых союзников усиленным ромом, отчего они передвигаются быстрее и получают урон с задержкой.",
+    "lore_loc": "Последний корабль кладдского флота — не более чем фантом. Однако для врагов адмирала он весьма реален.",
+    "notes_loc": [
+      "Отложенный урон не может быть смертельным для героя и его союзников.",
+      "Зона поражения от крушения корабля больше самого корабля.",
+      "Корабль передвигается со скоростью %ghostship_speed%."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Призывает флот из %fleet_count% призрачных кораблей, которые разбиваются в указанной точке с интервалом в %fleet_interval% сек. Каждый корабль даёт %num_cannon_volleys% залпа из пушек с каждого борта, нанося %cannon_ball_damage_pct%%% урона от способности врагам, сквозь которых пролетели ядра.",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "134218768",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 4,
+    "dispellable": 3,
+    "max_level": 3,
+    "cast_ranges": [
+      1000
+    ],
+    "cast_points": [
+      0.3
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      90,
+      80,
+      70
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      350,
+      475,
+      600
+    ],
+    "mana_costs": [
+      125,
+      175,
+      225
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "tooltip_delay",
+        "values_float": [
+          3.1
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЗАДЕРЖКА КРУШЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "ghostship_distance",
+        "values_float": [
+          2000
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "ghostship_width",
+        "values_float": [
+          450
+        ],
+        "is_percentage": false,
+        "heading_loc": "ШИРИНА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "movespeed_bonus",
+        "values_float": [
+          15
+        ],
+        "is_percentage": true,
+        "heading_loc": "УСКОРЕНИЕ ОТ РОМА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "buff_duration",
+        "values_float": [
+          10
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "stun_duration",
+        "values_float": [
+          1.2
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "ghostship_speed",
+        "values_float": [
+          650
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "ghostship_absorb",
+        "values_float": [
+          35
+        ],
+        "is_percentage": true,
+        "heading_loc": "ОТЛОЖЕННЫЙ УРОН:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_kunkka_rum",
+            "value": 15,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "fleet_interval",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          2.5
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "fleet_count",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          2
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "fire_cannons",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "cannon_ball_damage_pct",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          40
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "cannon_ball_distance",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1200
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "cannon_ball_speed",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1400
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "cannon_count",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          4
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "cannon_ball_radius",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          100
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "num_cannon_volleys",
+        "values_float": [
+          3
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "cannon_fire_interval",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          0.78
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "base_cannon_rotation",
+        "values_float": [
+          20
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "rotation_per_cannon",
+        "values_float": [
+          12
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "initial_cannon_offset",
+        "values_float": [
+          -150
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "distance_between_cannons",
+        "values_float": [
+          75
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "#AbilityDamage",
+        "values_float": [
+          350,
+          475,
+          600
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          1000
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.3
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          125,
+          175,
+          225
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          90,
+          80,
+          70
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

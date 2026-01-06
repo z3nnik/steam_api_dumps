@@ -1,0 +1,435 @@
+[
+  {
+    "id": 8198,
+    "name": "marci_unleash",
+    "name_loc": "Unleash",
+    "desc_loc": "Герой обращается к своей скрытой силе и получает заряды ярости, позволяющие стремительно наносить удары, которые замедляют передвижение и атаку жертвы на %pulse_debuff_duration% сек. Последний удар в каждой комбинации ярости создаёт вокруг цели наносящую урон пульсацию. Совершив комбинацию ярости, герой не может атаковать в течение %time_between_flurries% сек.\n\nПрименение этой способности даёт +%bonus_movespeed%%% к скорости передвижения.",
+    "lore_loc": "Марси даёт отпор каждому, кто пытается выяснить источник её силы.",
+    "notes_loc": [
+      "Между атаками в комбинации ярости должно пойти не более 1 секунды, иначе комбинация прервётся.",
+      "Снимает ограничение на скорость атаки."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Уменьшает перезарядку на %scepter_cooldown_reduction% сек. Активация этой способности применяет на владельца нормальное развеивание. Пока эта способность действует, применение других способностей создаёт пульсацию. Пульсации накладывают на врагов %pulse_silence_duration% сек. безмолвия.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "4",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 0,
+    "dispellable": 3,
+    "max_level": 3,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      0.2
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      80,
+      70,
+      60
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      100,
+      125,
+      150
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "duration",
+        "values_float": [
+          16
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "charges_per_flurry",
+        "values_float": [
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "УДАРОВ В КОМБИНАЦИИ ЯРОСТИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "flurry_bonus_attack_speed",
+        "values_float": [
+          700,
+          925,
+          1150
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "time_between_flurries",
+        "values_float": [
+          1.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pulse_radius",
+        "values_float": [
+          800
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС ПУЛЬСАЦИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pulse_debuff_duration",
+        "values_float": [
+          2
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pulse_damage",
+        "values_float": [
+          50,
+          100,
+          150
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН ОТ ПУЛЬСАЦИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pulse_move_slow_pct",
+        "values_float": [
+          30
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pulse_attack_slow_pct",
+        "values_float": [
+          60,
+          80,
+          100
+        ],
+        "is_percentage": false,
+        "heading_loc": "СНИЖЕНИЕ БАЗОВОЙ СКОРОСТИ АТАКИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "max_time_window_per_hit",
+        "values_float": [
+          1
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_movespeed",
+        "values_float": [
+          15
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_marci_unleash_speed",
+            "value": 10,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "recovery_fixed_attack_rate",
+        "values_float": [
+          2
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_push_length",
+        "values_float": [
+          300
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_cooldown_reduction",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          10
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "dispel",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pulse_silence_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "extend_duration",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_marci_unleash_extend_duration",
+            "value": 6,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.2
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          100,
+          125,
+          150
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          80,
+          70,
+          60
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

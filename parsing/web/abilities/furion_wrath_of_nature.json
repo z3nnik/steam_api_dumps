@@ -1,0 +1,242 @@
+[
+  {
+    "id": 5248,
+    "name": "furion_wrath_of_nature",
+    "name_loc": "Wrath of Nature",
+    "desc_loc": "Вызывает сгусток энергии, скачущий по видимым врагам на всей карте, начиная с самых близких к точке применения. Он наносит урон, увеличивающийся с каждым задетым врагом. Максимальный урон достигается после %max_targets% скачков.",
+    "lore_loc": "Герой взывает к Веродиции, обращая её гнев против осмелившихся разорять природу.",
+    "notes_loc": [
+      "Не действует на врагов, которых не видно.",
+      "Можно применять через мини-карту; при этом выбирается ближайшая возможная цель."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Накладывает на задетых врагов оцепенение, длительность которого увеличивается с каждым скачком и составляет от %scepter_min_entangle_duration% до %scepter_max_entangle_duration% сек.",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "24",
+    "target_team": 2,
+    "target_type": 3,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 4,
+    "dispellable": 2,
+    "max_level": 3,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      85
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      130,
+      160,
+      190
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "max_targets",
+        "values_float": [
+          16
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "damage",
+        "values_float": [
+          90,
+          130,
+          170
+        ],
+        "is_percentage": false,
+        "heading_loc": "БАЗОВЫЙ УРОН:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_furion_5",
+            "value": 25,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "damage_percent_add",
+        "values_float": [
+          10
+        ],
+        "is_percentage": true,
+        "heading_loc": "ДОП. УРОН ЗА СКАЧОК:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "jump_delay",
+        "values_float": [
+          0.15
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_min_entangle_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1.5
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_max_entangle_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          3
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          130,
+          160,
+          190
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          85
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_furion_7",
+            "value": 15,
+            "operation": 2
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

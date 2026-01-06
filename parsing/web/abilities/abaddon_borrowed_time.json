@@ -1,0 +1,224 @@
+[
+  {
+    "id": 5588,
+    "name": "abaddon_borrowed_time",
+    "name_loc": "Borrowed Time",
+    "desc_loc": "Применяет на владельца развеивание и следующие несколько секунд обращает весь получаемый им урон в лечение. Если способность готова, то она сработает автоматически, как только здоровье владельца упадёт ниже %hp_threshold%.\n\nТИП РАЗВЕИВАНИЯ: сильное",
+    "lore_loc": "Эта сила, самая противоестественная из всех даров купели Аверно, бросает вызов пониманию смертных. Что должно ранить — лечит, а что должно убить — даёт свежие силы.",
+    "notes_loc": [
+      "Эту способность можно применить, если ваш герой выведен из строя, но не когда он обезмолвлен. Автоматическое применение срабатывает даже под безмолвием.",
+      "Щит не блокирует урон при действии способности Borrowed Time.",
+      "Автоматическое срабатывание способности отключается истощением."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Увеличивает длительность. Во время действия способность Mist Coil автоматически срабатывает на союзников в радиусе её применения, когда они получают более %ally_threshold_scepter% урона.",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "2099204",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 0,
+    "immunity": 0,
+    "dispellable": 3,
+    "max_level": 3,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      0
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      90,
+      85,
+      80
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      0,
+      0,
+      0
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "hp_threshold",
+        "values_float": [
+          400
+        ],
+        "is_percentage": false,
+        "heading_loc": "ПОРОГ ЗДОРОВЬЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "duration",
+        "values_float": [
+          4,
+          5,
+          6
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          3
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "ally_threshold_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН ДЛЯ ЛЕЧЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          550
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "redirect_range_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          900
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "immolate_damage",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_abaddon_immolation",
+            "value": 100,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "immolate_aoe",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_abaddon_immolation",
+            "value": 400,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "immolate_tick",
+        "values_float": [
+          0.25
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          90,
+          85,
+          80
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

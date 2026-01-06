@@ -1,0 +1,396 @@
+[
+  {
+    "id": 5274,
+    "name": "huskar_life_break",
+    "name_loc": "Life Break",
+    "desc_loc": "Герой наносит огромный урон ценой собственного здоровья. Он прыгает на жертву, отнимая часть её текущего здоровья и замедляя её атаку и передвижение. Во время прыжка герой невосприимчив к эффектам и получает +60%% к сопротивлению магии.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
+    "lore_loc": "Какой бы ни была опасность, священный воин бросается в битву, пережить которую сможет только он.",
+    "notes_loc": [
+      "Прыжок остановится, если в полёте вывести из строя владельца способности или если цель передвинется на расстояние более 1400 за 0,015 секунды.",
+      "Замедляет врагов, невосприимчивых к магии.",
+      "Эту способность нельзя сбить с цели."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Увеличивает дальность применения способности и провоцирует её цель.",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "8",
+    "target_team": 2,
+    "target_type": 3,
+    "flags": 16,
+    "damage": 2,
+    "immunity": 3,
+    "dispellable": 2,
+    "max_level": 3,
+    "cast_ranges": [
+      550
+    ],
+    "cast_points": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      16,
+      14,
+      12
+    ],
+    "durations": [
+      3,
+      4,
+      5
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      0,
+      0,
+      0
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "health_cost_percent",
+        "values_float": [
+          0.32,
+          0.38,
+          0.44
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "health_damage",
+        "values_float": [
+          0.32,
+          0.38,
+          0.44
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_huskar",
+            "value": 0.22,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "charge_speed",
+        "values_float": [
+          1200
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "tooltip_health_damage",
+        "values_float": [
+          32,
+          38,
+          44
+        ],
+        "is_percentage": true,
+        "heading_loc": "УРОН ЦЕЛИ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_huskar",
+            "value": 22,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "tooltip_health_cost_percent",
+        "values_float": [
+          32,
+          38,
+          44
+        ],
+        "is_percentage": true,
+        "heading_loc": "УРОН СЕБЕ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "movespeed",
+        "values_float": [
+          -60
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "attack_speed",
+        "values_float": [
+          60,
+          100,
+          140
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "slow_duration_tooltip",
+        "values_float": [
+          3,
+          4,
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_huskar_4",
+            "value": 2,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "taunt_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРОВОКАЦИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          3
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "cast_range_bonus",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДОП. ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          250
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "splash_radius",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС ЭФФЕКТА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "life_break_heal_radius",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС ЛЕЧЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          550
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityDuration",
+        "values_float": [
+          3,
+          4,
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_huskar_4",
+            "value": 2,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.3
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          16,
+          14,
+          12
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_huskar_7",
+            "value": 5,
+            "operation": 2
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

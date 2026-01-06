@@ -1,0 +1,310 @@
+[
+  {
+    "id": 5218,
+    "name": "viper_poison_attack",
+    "name_loc": "Poison Attack",
+    "desc_loc": "Добавляет к обычной атаке героя яд, уменьшающий скорость передвижения и сопротивление магии, а также наносящий периодический урон. Эффект яда складывается до %max_stacks% раз.",
+    "lore_loc": "Врождённое ядовитое дыхание низших драконов быстро высасывает жизненные силы жертвы.",
+    "notes_loc": [],
+    "shard_loc": "Увеличивает максимум эффектов. Каждый эффект уменьшает броню жертвы. Способность действует на постройки с уменьшенным уроном.",
+    "scepter_loc": "",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "135176",
+    "target_team": 2,
+    "target_type": 19,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 4,
+    "dispellable": 2,
+    "max_level": 4,
+    "cast_ranges": [
+      600
+    ],
+    "cast_points": [
+      0
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      0
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      20
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "duration",
+        "values_float": [
+          4
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "damage",
+        "values_float": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН В СЕКУНДУ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_viper_7",
+            "value": 10,
+            "operation": 3
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "movement_speed",
+        "values_float": [
+          3,
+          6,
+          9,
+          12
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_viper_7",
+            "value": 10,
+            "operation": 3
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "magic_resistance",
+        "values_float": [
+          4,
+          6,
+          8,
+          10
+        ],
+        "is_percentage": true,
+        "heading_loc": "СОПРОТИВЛЕНИЕ МАГИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "max_stacks",
+        "values_float": [
+          6
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКСИМУМ ЭФФЕКТОВ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_range",
+        "values_float": [
+          25
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_armor_reduction",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "СНИЖЕНИЕ БРОНИ:",
+        "bonuses": [],
+        "values_shard": [
+          1
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_building_dmg_pct",
+        "values_float": [
+          0
+        ],
+        "is_percentage": true,
+        "heading_loc": "УРОН ПОСТРОЙКАМ:",
+        "bonuses": [],
+        "values_shard": [
+          40
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_bonus_max_stacks",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "БОНУС К МАКСИМУМУ ЭФФЕКТОВ:",
+        "bonuses": [],
+        "values_shard": [
+          2
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "expiration_damage_radius",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "accumulated_damage_explosion_pct",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          600
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          20
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": true,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

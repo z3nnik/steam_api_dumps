@@ -1,0 +1,422 @@
+[
+  {
+    "id": 5065,
+    "name": "phantom_lancer_spirit_lance",
+    "name_loc": "Spirit Lance",
+    "desc_loc": "Запускает в указанного врага магическое копьё, которое наносит цели урон и замедляет её, а также создаёт атакующую её союзную иллюзию.",
+    "lore_loc": "Когда-то Азраф мастерски рыбачил копьями, чтобы накормить семью. Этот навык очень пригодился ему на поле боя.",
+    "notes_loc": [
+      "Иллюзии в радиусе %fake_lance_distance% повторяют анимацию применения."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Копьё единожды отскакивает во врага поблизости (в первую очередь в героев). Увеличивает урон иллюзии от этой способности.",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "8",
+    "target_team": 2,
+    "target_type": 19,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 4,
+    "dispellable": 2,
+    "max_level": 4,
+    "cast_ranges": [
+      600,
+      650,
+      700,
+      750
+    ],
+    "cast_points": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      10,
+      9,
+      8,
+      7
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      120
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "lance_damage",
+        "values_float": [
+          100,
+          160,
+          220,
+          280
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН ПРИ ПОПАДАНИИ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_phantom_lancer_lance_damage",
+            "value": 100,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "lance_speed",
+        "values_float": [
+          1000
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "duration",
+        "values_float": [
+          3.75
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_phantom_lancer_lance_slow_duration",
+            "value": 1.25,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "movement_speed_pct",
+        "values_float": [
+          -14,
+          -21,
+          -28,
+          -35
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "illusion_duration",
+        "values_float": [
+          3.5,
+          5,
+          6.5,
+          8
+        ],
+        "is_percentage": false,
+        "heading_loc": "ВРЕМЯ ЖИЗНИ ИЛЛЮЗИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "illusion_damage_out_pct",
+        "values_float": [
+          -85
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "tooltip_illusion_damage",
+        "values_float": [
+          15
+        ],
+        "is_percentage": true,
+        "heading_loc": "УРОН ИЛЛЮЗИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "illusion_damage_in_pct",
+        "values_float": [
+          300
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "tooltip_illusion_total_damage_in_pct",
+        "values_float": [
+          400
+        ],
+        "is_percentage": true,
+        "heading_loc": "УРОН ПО ИЛЛЮЗИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "fake_lance_distance",
+        "values_float": [
+          675
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_bounce_radius",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС ОТСКОКА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          0
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_bonus_illusion_damage",
+        "values_float": [
+          0
+        ],
+        "is_percentage": true,
+        "heading_loc": "ДОП. УРОН ИЛЛЮЗИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          0
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_total_hits",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          0
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "illusion_lance_damage_pct",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_phantom_lancer_illusion_lances",
+            "value": 50,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          600,
+          650,
+          700,
+          750
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.3
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          120
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          10,
+          9,
+          8,
+          7
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_phantom_lancer_5",
+            "value": 1,
+            "operation": 2
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

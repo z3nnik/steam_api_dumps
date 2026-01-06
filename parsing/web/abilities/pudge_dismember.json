@@ -1,0 +1,384 @@
+[
+  {
+    "id": 5077,
+    "name": "pudge_dismember",
+    "name_loc": "Dismember",
+    "desc_loc": "ПРЕРЫВАЕМАЯ — герой заживо пожирает врага, оглушая его и нанося периодический урон, который зависит от силы владельца способности и излечивает его на столько же, сколько наносит урона. Жертва притягивается со скоростью %pull_units_per_second% единиц в секунду, пока расстояние не сократится до %pull_distance_limit% единиц.",
+    "lore_loc": "«Есть с падалью одна загвоздка: час как поел - и опять голодный!»",
+    "notes_loc": [
+      "Способность не прервётся, если её цель станет невидимой."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "134217864",
+    "target_team": 2,
+    "target_type": 19,
+    "flags": 16,
+    "damage": 2,
+    "immunity": 3,
+    "dispellable": 1,
+    "max_level": 3,
+    "cast_ranges": [
+      200
+    ],
+    "cast_points": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "channel_times": [
+      2.75,
+      2.75,
+      2.75
+    ],
+    "cooldowns": [
+      30,
+      25,
+      20
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      100,
+      130,
+      170
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "dismember_damage",
+        "values_float": [
+          80,
+          100,
+          120
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН В СЕКУНДУ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_pudge_3",
+            "value": 1.5,
+            "operation": 1
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "strength_damage",
+        "values_float": [
+          0.3,
+          0.6,
+          0.9
+        ],
+        "is_percentage": false,
+        "heading_loc": "МНОЖИТЕЛЬ СИЛЫ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_pudge_3",
+            "value": 1.8,
+            "operation": 1
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "ticks",
+        "values_float": [
+          6
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_pudge_6",
+            "value": 2,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pull_units_per_second",
+        "values_float": [
+          75
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pull_distance_limit",
+        "values_float": [
+          125
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "animation_rate",
+        "values_float": [
+          1.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_regen_pct",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [
+          5
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "order_lock_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [
+          2.75
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_cast_range",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [
+          300
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "gluttony_strength_bonus",
+        "values_float": [
+          0,
+          0,
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "УВЕЛИЧЕНИЕ СИЛЫ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "glutton_strength_stack_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ БОНУСА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          200
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityChannelTime",
+        "values_float": [
+          2.75
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_pudge_6",
+            "value": 0.75,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.3
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          100,
+          130,
+          170
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          30,
+          25,
+          20
+        ],
+        "is_percentage": false,
+        "heading_loc": "ПЕРЕЗАРЯДКА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

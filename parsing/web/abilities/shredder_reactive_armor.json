@@ -1,0 +1,370 @@
+[
+  {
+    "id": 5526,
+    "name": "shredder_reactive_armor",
+    "name_loc": "Reactive Armor",
+    "desc_loc": "Каждый раз, когда кто-то атакует этого героя, он получает эффект, увеличивающий его броню и восстановление здоровья. Атаки героев дают по %stacks_per_hero_attack% эффекта.",
+    "lore_loc": "Пил-костюм сконструирован так, что он реагирует на малейшее прикосновение, укрепляя защиту.",
+    "notes_loc": [
+      "Получение эффектов отключается истощением.",
+      "Существующие эффекты не отключаются истощением."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Позволяет применить эту способность, чтобы получить максимум её эффектов и барьер на %initial_shield% урона. Каждую секунду здоровье барьера увеличивается на %shield_per_sec% + %shield_per_sec_per_enemy% за каждого вражеского героя в радиусе %radius% вокруг владельца, но не может превысить %max_shield%. Спустя %duration% сек. барьер взрывается, нанося всем вражеским героям в радиусе %explosion_radius% урон в размере текущего здоровья барьера + %base_explosion%.",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "2",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 0,
+    "dispellable": 3,
+    "max_level": 4,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      0
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      0
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      0
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "bonus_armor",
+        "values_float": [
+          0.4,
+          0.5,
+          0.6,
+          0.7
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДОПОЛНИТЕЛЬНАЯ БРОНЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_hp_regen",
+        "values_float": [
+          0.4,
+          0.5,
+          0.6,
+          0.7
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_timbersaw_reactive_armor_regen_per_stack",
+            "value": 0.25,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "stack_limit",
+        "values_float": [
+          10,
+          20,
+          30,
+          40
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКСИМУМ ЭФФЕКТОВ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_timbersaw_2",
+            "value": 6,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "stack_duration",
+        "values_float": [
+          10,
+          12,
+          14,
+          16
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ОДНОГО ЭФФЕКТА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "stacks_per_hero_attack",
+        "values_float": [
+          4
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_timbersaw_2",
+            "value": 1,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "initial_shield",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          150
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shield_per_sec",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          100
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shield_per_sec_per_enemy",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          75
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "max_shield",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          800
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          8
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "radius",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          450
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "explosion_radius",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          450
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "base_explosion",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          200
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          200
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          45
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

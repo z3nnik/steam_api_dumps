@@ -1,0 +1,407 @@
+[
+  {
+    "id": 5268,
+    "name": "enchantress_enchant",
+    "name_loc": "Enchant",
+    "desc_loc": "Герой очаровывает выбранного врага. Если это крип, то он на %dominate_duration% сек. переходит под контроль героя, получая бонус к урону от атак и максимальному здоровью. Применение на крипа даёт %xp_gain_pct%%% от опыта за его убийство.\n\nЕсли целью является вражеский герой, способность замедляет его на %slow_duration% сек. и применяет на него развеивание.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
+    "lore_loc": "Как истинная хранительница леса, Аюшта дружна со всеми в нём — от низших троллей до могучих кентавров.",
+    "notes_loc": [
+      "Иллюзии тоже можно переманить на свою сторону."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Позволяет взять под контроль нескольких крипов одновременно.",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "8",
+    "target_team": 2,
+    "target_type": 19,
+    "flags": 0,
+    "damage": 0,
+    "immunity": 4,
+    "dispellable": 2,
+    "max_level": 4,
+    "cast_ranges": [
+      500,
+      550,
+      600,
+      650
+    ],
+    "cast_points": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      30,
+      24,
+      18,
+      12
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      70
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "slow_movement_speed",
+        "values_float": [
+          -30,
+          -40,
+          -50,
+          -60
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЗАМЕДЛЕНИЕ ГЕРОЕВ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "slow_duration",
+        "values_float": [
+          3.5,
+          4,
+          4.5,
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "attack_range_bonus",
+        "values_float": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "dominate_duration",
+        "values_float": [
+          30,
+          60,
+          90,
+          120
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "enchant_health",
+        "values_float": [
+          150,
+          250,
+          350,
+          450
+        ],
+        "is_percentage": false,
+        "heading_loc": "УВЕЛИЧЕНИЕ ЗДОРОВЬЯ КРИПУ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "enchant_damage",
+        "values_float": [
+          0,
+          20,
+          40,
+          60
+        ],
+        "is_percentage": false,
+        "heading_loc": "УВЕЛИЧЕНИЕ УРОНА КРИПУ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "xp_gain_pct",
+        "values_float": [
+          40
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "level_req",
+        "values_float": [
+          4,
+          5,
+          6,
+          6
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКС. УРОВЕНЬ КРИПА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "max_creeps",
+        "values_float": [
+          1
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКС. ОЧАРОВАННЫХ КРИПОВ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_armor",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_enchantress_enchant_armor",
+            "value": 5,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_health",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_enchantress_enchant_health_damage",
+            "value": 150,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_damage",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_enchantress_enchant_health_damage",
+            "value": 25,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_attackspeed",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_enchantress_enchant_attackspeed",
+            "value": 30,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          500,
+          550,
+          600,
+          650
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.3
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          70
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          30,
+          24,
+          18,
+          12
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

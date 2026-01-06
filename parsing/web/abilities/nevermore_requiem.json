@@ -1,0 +1,368 @@
+[
+  {
+    "id": 5064,
+    "name": "nevermore_requiem",
+    "name_loc": "Requiem of Souls",
+    "desc_loc": "Герой выпускает собранные души в волнах демонической энергии. Существа возле него могут получить урон от нескольких волн. За каждую задетую волну на жертву накладывается %requiem_slow_duration% сек. замедления, снижения сопротивления магии и страха (но не более %requiem_slow_duration_max% сек.). Создаёт одну волну энергии за каждую душу, захваченную с помощью Necromastery.<br><br>Если герой погибнет, то эта способность сработает автоматически вне зависимости от её готовности.",
+    "lore_loc": "Заточённые души тех, кто пал в былых сражениях, обретают свободу, дабы мстительно преследовать своих бывших союзников.",
+    "notes_loc": [
+      "За каждую душу создаётся одна волна.",
+      "Способность не накладывает страх и замедление, если сработала при смерти."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Уменьшает перезарядку. Заставляет ослабленные волны этой способности возвращаться к герою, излечивая его на количество нанесённого на обратном пути урона.",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "67108868",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 4,
+    "dispellable": 2,
+    "max_level": 3,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      1.67,
+      1.67,
+      1.67
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      120,
+      110,
+      100
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      80,
+      120,
+      160
+    ],
+    "mana_costs": [
+      150,
+      175,
+      200
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "requiem_radius",
+        "values_float": [
+          1000
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "requiem_reduction_ms",
+        "values_float": [
+          -20,
+          -25,
+          -30
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "requiem_reduction_mres",
+        "values_float": [
+          -10
+        ],
+        "is_percentage": true,
+        "heading_loc": "УМЕНЬШЕНИЕ СОПРОТИВЛЕНИЯ МАГИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "requiem_slow_duration",
+        "values_float": [
+          0.6
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ СТРАХА ЗА ВОЛНУ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_nevermore_6",
+            "value": 0.2,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "requiem_slow_duration_max",
+        "values_float": [
+          2.15
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ СТРАХА:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_nevermore_6",
+            "value": 0.45,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "requiem_soul_conversion",
+        "values_float": [
+          1
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "requiem_line_width_start",
+        "values_float": [
+          125
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "requiem_line_width_end",
+        "values_float": [
+          300
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "requiem_line_speed",
+        "values_float": [
+          700
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "soul_death_release",
+        "values_float": [
+          0.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "requiem_heal_pct_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЛЕЧЕНИЕ ПРИ ВОЗВРАЩЕНИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          100
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "requiem_damage_pct_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": true,
+        "heading_loc": "УРОН ПРИ ВОЗВРАЩЕНИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          60
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "#AbilityDamage",
+        "values_float": [
+          80,
+          120,
+          160
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          1.67
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЗАДЕРЖКА ПРИМЕНЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          150,
+          175,
+          200
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          120,
+          110,
+          100
+        ],
+        "is_percentage": false,
+        "heading_loc": "ПЕРЕЗАРЯДКА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          30
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

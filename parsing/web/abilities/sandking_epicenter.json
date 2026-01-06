@@ -1,0 +1,445 @@
+[
+  {
+    "id": 5105,
+    "name": "sandking_epicenter",
+    "name_loc": "Epicenter",
+    "desc_loc": "После подготовки в %abilitycastpoint% сек. герой неистово сотрясает землю вокруг себя. Землетрясение наносит урон противникам, замедляет их и увеличивается в радиусе с каждым последующим толчком.",
+    "lore_loc": "Многие путешественники пропали в зыбучих песках Искрящейся пустыни.",
+    "notes_loc": [
+      "Толчки исходят не от места прочтения способности, а от её владельца."
+    ],
+    "shard_loc": "Увеличивает урон за толчок и создаёт один маленький толчок от этой способности каждые %shard_interval% сек.",
+    "scepter_loc": "Когда начинаются толчки, каждые %spine_tick_rate% сек. в %scepter_explosions_per_pulse% случайных областях размером в %scepter_explosion_radius_pct%%% от текущего радиуса Epicenter применяется эффект способности Stinger, наносящий %spine_damage_pct%%% от её урона. Толчки от Aghanim's Shard создают по %shard_explosions_per_pulse% области.",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "134217732",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 4,
+    "dispellable": 3,
+    "max_level": 3,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      2
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      120,
+      110,
+      100
+    ],
+    "durations": [
+      6
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      150,
+      225,
+      300
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "epicenter_pulses",
+        "values_float": [
+          12,
+          16,
+          20
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЧИСЛО ТОЛЧКОВ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_sand_king",
+            "value": 8,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "epicenter_damage",
+        "values_float": [
+          60,
+          70,
+          80
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН ЗА ТОЛЧОК:",
+        "bonuses": [],
+        "values_shard": [
+          5
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "epicenter_radius_base",
+        "values_float": [
+          500
+        ],
+        "is_percentage": false,
+        "heading_loc": "БАЗОВЫЙ РАДИУС:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_sand_king_5",
+            "value": 75,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "epicenter_radius_increment",
+        "values_float": [
+          13
+        ],
+        "is_percentage": false,
+        "heading_loc": "УВЕЛИЧЕНИЕ РАДИУСА:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_sand_king_5",
+            "value": 7,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "epicenter_slow",
+        "values_float": [
+          -30,
+          -40,
+          -50
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "epicenter_slow_as",
+        "values_float": [
+          -50,
+          -55,
+          -60
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_radius",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_sand_king_5",
+            "value": 100,
+            "operation": 0
+          }
+        ],
+        "values_shard": [
+          425
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_interval",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [
+          3
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "linger_duration",
+        "values_float": [
+          3
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_explosion_radius_pct",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          35
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_explosion_min_dist",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          120
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_explosions_per_pulse",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          3
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "spine_tick_rate",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          0.5
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "spine_damage_pct",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          50
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_explosions_per_pulse",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityDuration",
+        "values_float": [
+          6
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗЕМЛЕТРЯСЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          2
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          150,
+          225,
+          300
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          120,
+          110,
+          100
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": true,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

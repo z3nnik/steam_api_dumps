@@ -1,0 +1,404 @@
+[
+  {
+    "id": 5252,
+    "name": "life_stealer_infest",
+    "name_loc": "Infest",
+    "desc_loc": "Герой забирается в тело выбранного существа, становясь незаметным для противников и ежесекундно восстанавливая долю от своего максимального здоровья. После этого он может вырваться из носителя, нанеся урон окружающим врагам. Находясь внутри вражеского или нейтрального крипа, герой управляет его атаками и передвижением, а также наносит ему периодический урон, зависящий от его максимального здоровья. Не действует на вражеских героев.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
+    "lore_loc": "Вгрызаясь в плоть врага, Н'эйкс питается его кровью, восстанавливая свою нечистую силу.",
+    "notes_loc": [
+      "Герой продолжает получать опыт, пока находится в теле другого существа.",
+      "Бонус к скорости передвижения даётся и крипам под управлением этой способности.",
+      "Эту способность нельзя отразить.",
+      "При применении с Aghanim's Scepter на вражеского героя урон аспекта Gorestorm зависит от суммарного урона, нанесённого жертве владельцем этой способности за время её действия."
+    ],
+    "shard_loc": "Вырвавшись из жертвы Infest, герой накладывает на всех врагов в радиусе урона эффект Open Wounds, действующий %bonus_open_wounds_duration_pct%%% от обычной длительности.",
+    "scepter_loc": "Увеличивает дальность применения и уменьшает перезарядку до %bonus_AbilityCooldown% сек. Позволяет ненадолго забраться в тело вражеского героя, чтобы некоторое время атаковать его изнутри, имея увеличенное восстановление здоровья.",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "33554440",
+    "target_team": 4,
+    "target_type": 128,
+    "flags": 16,
+    "damage": 2,
+    "immunity": 1,
+    "dispellable": 3,
+    "max_level": 3,
+    "cast_ranges": [
+      150
+    ],
+    "cast_points": [
+      0.2
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      80,
+      65,
+      50
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      100,
+      125,
+      150
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "radius",
+        "values_float": [
+          700
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС УРОНА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "damage",
+        "values_float": [
+          150,
+          275,
+          400
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_lifestealer_infest_damage",
+            "value": 150,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_movement_speed",
+        "values_float": [
+          15,
+          20,
+          25
+        ],
+        "is_percentage": true,
+        "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_lifestealer_infest_target_bonus",
+            "value": 15,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_health",
+        "values_float": [
+          400,
+          800,
+          1200
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДОП. ЗДОРОВЬЕ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_lifestealer_infest_target_bonus",
+            "value": 15,
+            "operation": 3
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "self_regen",
+        "values_float": [
+          3,
+          4,
+          5
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЛЕЧЕНИЕ ОТ МАКС. ЗДОРОВЬЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          100
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "infest_duration_enemy",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ НА ВРАГАХ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          5
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "attack_rate_enemy",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ИНТЕРВАЛ АТАК:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "open_wounds_duration_pct",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [
+          50
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "creep_max_hp_drain_pct_per_second",
+        "values_float": [
+          1.5,
+          0.75,
+          0
+        ],
+        "is_percentage": true,
+        "heading_loc": "ПОТЕРЯ МАКС. ЗДОРОВЬЯ КРИПА В СЕК.:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "can_target_ancients",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "dot_damage_as_pct_of_damage_dealt",
+        "values_float": [
+          0
+        ],
+        "is_percentage": true,
+        "heading_loc": "УРОН ОТ ОСТАВШЕГОСЯ ЗДОРОВЬЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "dot_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ПЕРИОДИЧЕСКОГО УРОНА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "dot_tick_interval",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          150
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          250
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.2
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          100,
+          125,
+          150
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          80,
+          65,
+          50
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          20
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": true,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

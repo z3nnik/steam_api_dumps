@@ -1,0 +1,411 @@
+[
+  {
+    "id": 5233,
+    "name": "dazzle_poison_touch",
+    "name_loc": "Poison Touch",
+    "desc_loc": "Выпускает конус яда, поражающий нескольких врагов. Наносит жертвам периодический урон и замедляет их, а атаки владельца способности обновляют время действия эффекта и усиливают замедление.",
+    "lore_loc": "Этот весьма полезный паралитический яд — один из немногих обрядов культа Дезун, направленных во вред врагу.",
+    "notes_loc": [
+      "Урон не уменьшается способностями, блокирующими урон."
+    ],
+    "shard_loc": "Способность превращает жертв в зверушек на %hex_duration% сек.",
+    "scepter_loc": "",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "8",
+    "target_team": 2,
+    "target_type": 19,
+    "flags": 0,
+    "damage": 1,
+    "immunity": 4,
+    "dispellable": 2,
+    "max_level": 4,
+    "cast_ranges": [
+      500,
+      600,
+      700,
+      800
+    ],
+    "cast_points": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      24,
+      21,
+      18,
+      15
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      125,
+      130,
+      135,
+      140
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "start_radius",
+        "values_float": [
+          200
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "end_radius",
+        "values_float": [
+          300
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "end_distance",
+        "values_float": [
+          600,
+          700,
+          800,
+          900
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "targets",
+        "values_float": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЦЕЛЕЙ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "damage",
+        "values_float": [
+          16,
+          28,
+          40,
+          52
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН В СЕКУНДУ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_dazzle_3",
+            "value": 75,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "slow",
+        "values_float": [
+          -13,
+          -16,
+          -19,
+          -22
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЗАМЕДЛЕНИЕ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_dazzle_1",
+            "value": 40,
+            "operation": 2
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "projectile_speed",
+        "values_float": [
+          1300
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "duration",
+        "values_float": [
+          3.5,
+          5,
+          6.5,
+          8
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_slow",
+        "values_float": [
+          -2,
+          -2.5,
+          -3,
+          -3.5
+        ],
+        "is_percentage": true,
+        "heading_loc": "ДОП. ЗАМЕДЛЕНИЕ ЗА АТАКУ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "attack_range_bonus",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_dazzle_poison_touch_attack_range_bonus",
+            "value": 200,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "split_radius",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "split_damage",
+        "values_float": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН ПРИ РАСПРОСТРАНЕНИИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "attacks_to_split",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          500,
+          600,
+          700,
+          800
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.3
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          125,
+          130,
+          135,
+          140
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          24,
+          21,
+          18,
+          15
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

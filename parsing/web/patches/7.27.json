@@ -1,0 +1,1956 @@
+{
+  "patch_number": "7.27",
+  "patch_name": "7.27",
+  "patch_timestamp": 1593327600,
+  "general_notes": [
+    {
+      "generic": [
+        {
+          "indent_level": 1,
+          "note": "Базовый опыт за убийство героя увеличен с 40 до 100"
+        },
+        {
+          "indent_level": 1,
+          "note": "Базовое золото за добивание героя увеличено с (99 + 7,2 * уровень) до (120 + 8 * уровень)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Золото за помощь увеличено с (45 + 0,033 * ценность) до (30 + 0,038 * ценность)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Пассивный прирост золота увеличен с 85 до 95 в минуту"
+        },
+        {
+          "indent_level": 1,
+          "note": "Золото за руны богатства теперь считается надёжным"
+        },
+        {
+          "indent_level": 1,
+          "note": "Золото за добивание первой/второй/третьей/четвёртой башни изменено со 180 на 120/140/160/180"
+        },
+        {
+          "indent_level": 1,
+          "note": "Награда за стак нейтральных крипов увеличена с 35% до 40%"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Лагеря нейтральных крипов рядом с центральной линией изменены со средних на маленькие"
+        },
+        {
+          "indent_level": 1,
+          "note": "Убран лагерь с древними мародёрами"
+        },
+        {
+          "indent_level": 1,
+          "note": "Изменено расположение деревьев в низинах рядом с аванпостами, чтобы их нельзя было захватывать, не срубив деревья"
+        },
+        {
+          "indent_level": 1,
+          "note": "Убрано одно из деревьев, чтобы сделать проход справа от первой центральной башни сил Света"
+        },
+        {
+          "indent_level": 1,
+          "note": "Средний лагерь справа от потайной лавки сил Света стал сложным"
+        },
+        {
+          "indent_level": 1,
+          "note": "Поменяны местами два лагеря крипов: сложный справа от второй верхней башни сил Света и древний в основном лесу"
+        },
+        {
+          "indent_level": 1,
+          "note": "Уменьшена зона появления крипов в сложном лагере рядом с лёгкой линией сил Света"
+        },
+        {
+          "indent_level": 1,
+          "note": "Увеличена зона появления нейтральных крипов у маленького лагеря со стороны лёгкой линии сил Света"
+        },
+        {
+          "indent_level": 1,
+          "note": "Уменьшена зона появления нейтральных крипов у маленького лагеря со стороны лёгкой линии сил Тьмы"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь вражеская команда не может захватить ваш аванпост, пока не разрушит хотя бы одну вторую башню"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь всегда видно врагов, захватывающих аванпост"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь зажатая клавиша Alt показывает радиус обзора аванпостов"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь все крипы на линиях не атакуют вражеских героев, если не находятся рядом с вражескими/нейтральными крипами или в радиусе 1550 от своей первой башни. Это правило действует до волны с катапультой, которая появляется на 05:00."
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Золото за убийство курьера уменьшено с (30 + 7 * уровень) до (25 + 5 * уровень)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь курьеры становятся летающими при получении не 5, а 4 уровня"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь скорость передвижения курьера уменьшается на 15%, если он несёт расходные предметы"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Формула брони изменилась: (броня * 0,06) / (1 + броня * 0,06)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Броня за очко ловкости слегка увеличена с 0,16 до 1/6"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Увеличена скорость атак первых башен (интервал между атаками уменьшен с 1 до 0,9 секунды, а базовая скорость атаки увеличена со 100 до 110)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Урон первых башен уменьшен со 110 до 90 (урон в секунду остался прежним)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Увеличена скорость атак вторых, третьих и четвёртых башен (интервал между атаками уменьшен с 0,95 до 0,9 секунды, а базовая скорость атаки увеличена со 100 до 110)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Урон вторых, третьих и четвёртых башен уменьшен с 200 до 172 (урон в секунду остался прежним)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Здоровье катапульты увеличено на 60"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Изменён выбор героев в режиме All Pick. Теперь каждая команда одновременно выбирает двух героев, а не одного. В конце по-прежнему выбирается по одному герою (было 1/1/1/1/1, стало 2/2/1)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Число запрещаемых героев в режиме All Pick увеличено с 10 до 12"
+        },
+        {
+          "indent_level": 1,
+          "note": "На двойной выбор героев в режиме All Pick даётся на 5 секунд больше"
+        },
+        {
+          "indent_level": 1,
+          "note": "Число запретов в режиме Captains Mode изменено с 4/1/1 на 2/3/2"
+        },
+        {
+          "indent_level": 1,
+          "note": "Время выбора и запрета героев в режиме Captains Mode уменьшено с 35 секунд до 30"
+        },
+        {
+          "indent_level": 1,
+          "note": "Изменена первая стадия выбора в режиме Captains Mode: было Свет/Тьма/Тьма/Свет, стало Свет/Тьма/Свет/Тьма (если силы Света выбирают первыми)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Изменена третья стадия запрета в режиме Captains Mode: было Тьма/Свет, стало Свет/Тьма/Свет/Тьма"
+        },
+        {
+          "indent_level": 1,
+          "note": "Число доступных героев в режиме Random Draft уменьшено с 40 до 33"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь урон от каждой последующей атаки фонтана увеличивается на 3, как от способности Fury Swipes"
+        },
+        {
+          "indent_level": 1,
+          "note": "Расстояние до врагов, при котором не могут выпадать нейтральные предметы, увеличено с 900 до 1200"
+        },
+        {
+          "indent_level": 1,
+          "note": "Нейтральные предметы больше не выпадают, если ближайший убивающий их герой телепортируется"
+        },
+        {
+          "indent_level": 1,
+          "note": "Нейтральные предметы больше не выпадают клонам Meepo, если он сам не находится рядом"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь усиление вампиризма сочетается по закону убывающей полезности, а не складывается"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь усиление восстановления здоровья сочетается по закону убывающей полезности, а не складывается"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь усиление лечения сочетается по закону убывающей полезности, а не складывается"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь усиление вампиризма заклинаниями сочетается по закону убывающей полезности, а не складывается"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "ability_id": 106,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Воин-лучник больше не имеет ауру (скорость передвижения и атаки воина и лучника увеличены на столько же, сколько давала аура)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Тип атаки воинов изменён с проникающего на геройский, а урон изменён так, что в результате они наносят на 57% меньше урона крипам, на 10% меньше урона зданиям и на 26% больше урона героям"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к восстановлению маны уменьшен с 3/3,5/4 до 2/3/4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Способность Last Will больше не наносит урон сквозь невосприимчивость к магии"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 164,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт ауру, увеличивающую урон и восстановление здоровья"
+        },
+        {
+          "indent_level": 1,
+          "note": "Dominate: теперь подчинённый крип получает +40 к базовому урону, +12 к восстановлению здоровья и +4 к восстановлению маны"
+        },
+        {
+          "indent_level": 1,
+          "note": "Dominate: перезарядка уменьшена с 60 до 45 секунд"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуются Helm of Iron Will, Crown и рецепт за 725 золота"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +6 к броне, +6 к восстановлению здоровья и +6 ко всем атрибутам"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 81,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуются Morbid Mask, Blades of Attack, Ring of Basilius и рецепт за 600 золота (общая стоимость увеличилась с 2300 до 2375)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Vladmir's Aura: больше не увеличивает броню на 3"
+        },
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +5 ко всем атрибутам"
+        },
+        {
+          "indent_level": 1,
+          "note": "Vladmir's Aura: вампиризм уменьшен с 20% до 15%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Vladmir's Aura: теперь даёт +18% к урону"
+        },
+        {
+          "indent_level": 1,
+          "note": "Vladmir's Aura: дополнительное восстановление маны увеличено с 1,5 до 2"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 185,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуются Crown, Sage's Mask, Wind Lace и рецепт за 600 золота"
+        },
+        {
+          "indent_level": 1,
+          "note": "Speed Aura: больше не даёт +20 к скорости атаки"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +6 ко всем атрибутам, +1,5 к восстановлению маны и +20 к скорости передвижения"
+        },
+        {
+          "indent_level": 1,
+          "note": "Endurance: бонус к скорости атаки увеличен с 35 до 45"
+        },
+        {
+          "indent_level": 1,
+          "note": "Endurance: бонус к скорости передвижения увеличен с 12% до 13%"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 86,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Buckler Aura: бонусная броня уменьшена с 2,5 до 2"
+        }
+      ]
+    },
+    {
+      "ability_id": 79,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуется не Chainmail, а Buckler (общая стоимость осталась прежней)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Mekansm Aura: теперь даёт +3 к броне"
+        },
+        {
+          "indent_level": 1,
+          "note": "Дополнительная броня владельцу уменьшена с 6 до 4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +4 ко всем атрибутам"
+        }
+      ]
+    },
+    {
+      "ability_id": 231,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Guardian Aura: теперь даёт +3 к броне"
+        },
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +5 ко всем атрибутам"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к броне уменьшен с 6 до 4"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 242,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +3 ко всем атрибутам"
+        },
+        {
+          "indent_level": 1,
+          "note": "Guard: перезарядка уменьшена с 46 до 40 секунд"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 127,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуется не Robe of the Magi, а рецепт за 500 золота"
+        },
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +8 к интеллекту"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к броне увеличен с 6 до 7"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь имеет пассивную способность, которая наносит 20 + 20% урона в ответ на каждую атаку"
+        },
+        {
+          "indent_level": 1,
+          "note": "Damage Return: отражаемый урон уменьшен со 100% до 80%"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 485,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Новый основной предмет. Стоит 1000 золота и даёт +35 к скорости атаки."
+        }
+      ]
+    },
+    {
+      "ability_id": 135,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуется не Quarterstaff, а Blitz Knuckles"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к урону уменьшен с 52 до 42"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к скорости атаки увеличен с 10 до 35"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 67,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к урону увеличен с 10 до 15"
+        }
+      ]
+    },
+    {
+      "ability_id": 98,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к восстановлению маны уменьшен с 5,5 до 4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к интеллекту уменьшен с 25 до 20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта уменьшена с 775 до 475 (общая стоимость уменьшилась с 3875 до 3475)"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 215,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость уменьшена с 1400 до 1000"
+        },
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +20 к скорости атаки"
+        }
+      ]
+    },
+    {
+      "ability_id": 254,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуются Shadow Amulet, Cloak и Gloves of Haste"
+        }
+      ]
+    },
+    {
+      "ability_id": 152,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуются Shadow Amulet, Blitz Knuckles и Broadsword"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к скорости атаки увеличен с 30 до 35"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к урону уменьшен с 27 до 25"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 252,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Echo Strike: теперь срабатывает только у настоящего героя"
+        }
+      ]
+    },
+    {
+      "ability_id": 249,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуется не Ultimate Orb, а Echo Sabre"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +40 к урону, +45 к скорости атаки, +12 к силе, +10 к интеллекту и +1,5 к восстановлению маны (помимо других бонусов от компонентов для сборки)"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 73,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к силе/интеллекту/ловкости уменьшен с 6/3/3 до 5/2/2"
+        },
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +4% к сопротивлению магии"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +3 к урону и +0,75 к восстановлению здоровья"
+        }
+      ]
+    },
+    {
+      "ability_id": 75,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к силе/интеллекту/ловкости уменьшен с 3/3/6 до 2/2/5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +1,5 к броне и +5 к скорости атаки"
+        }
+      ]
+    },
+    {
+      "ability_id": 77,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к силе/интеллекту/ловкости уменьшен с 3/6/3 до 2/5/2"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +0,6 к восстановлению маны и +3% к урону от заклинаний"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 27,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к восстановлению здоровья уменьшен с 1,75 до 1,5"
+        },
+        {
+          "indent_level": 1,
+          "note": "Стоимость уменьшена с 225 до 175 золота"
+        }
+      ]
+    },
+    {
+      "ability_id": 28,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к восстановлению маны уменьшен с 1 до 0,6"
+        },
+        {
+          "indent_level": 1,
+          "note": "Стоимость уменьшена с 225 до 175 золота"
+        }
+      ]
+    },
+    {
+      "ability_id": 12,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость увеличена со 150 до 175"
+        }
+      ]
+    },
+    {
+      "ability_id": 88,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта увеличена с 200 до 250 (общая стоимость прежняя: 425)"
+        }
+      ]
+    },
+    {
+      "ability_id": 94,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта увеличена с 200 до 250 (общая стоимость прежняя: 425)"
+        }
+      ]
+    },
+    {
+      "ability_id": 86,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта уменьшена с 225 до 200 (общая стоимость прежняя: 375)"
+        }
+      ]
+    },
+    {
+      "ability_id": 92,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта увеличена с 310 до 345 (общая стоимость прежняя: 840)"
+        }
+      ]
+    },
+    {
+      "ability_id": 90,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта увеличена с 1200 до 1250 (общая стоимость прежняя: 3425)"
+        }
+      ]
+    },
+    {
+      "ability_id": 214,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Дополнительная скорость передвижения во включённом состоянии уменьшена с 75 до 70 (общая стоимость уменьшилась с 975 до 925)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Дополнительная скорость передвижения в выключенном состоянии уменьшена с 50 до 45 (общая стоимость уменьшилась с 975 до 925)"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 259,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +12% к уменьшению расхода и потери маны"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +24% к усилению восстановления маны"
+        }
+      ]
+    },
+    {
+      "ability_id": 277,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +18% к уменьшению расхода и потери маны"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +30% к усилению восстановления маны"
+        }
+      ]
+    },
+    {
+      "ability_id": 273,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +18% к уменьшению расхода и потери маны"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +30% к усилению восстановления маны"
+        }
+      ]
+    },
+    {
+      "ability_id": 121,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +12% к уменьшению расхода и потери маны"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 277,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Дополнительный урон от заклинаний увеличен с 14% до 16%"
+        }
+      ]
+    },
+    {
+      "ability_id": 273,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Дополнительный урон от заклинаний увеличен с 14% до 16%"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 162,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не усиливает вампиризм от заклинаний (как и улучшения)"
+        }
+      ]
+    },
+    {
+      "ability_id": 259,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +24% к усилению вампиризма заклинаниями"
+        }
+      ]
+    },
+    {
+      "ability_id": 273,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +30% к усилению вампиризма заклинаниями"
+        }
+      ]
+    },
+    {
+      "ability_id": 277,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +30% к усилению вампиризма заклинаниями"
+        }
+      ]
+    },
+    {
+      "ability_id": 121,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +30% к усилению вампиризма заклинаниями"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 129,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +10% к сопротивлению магии"
+        }
+      ]
+    },
+    {
+      "ability_id": 121,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +10% к сопротивлению магии"
+        }
+      ]
+    },
+    {
+      "ability_id": 235,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +10% к сопротивлению магии"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 121,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Bloodpact: перезарядка уменьшена с 250 до 85 секунд"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 473,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Новый основной предмет. Даёт +12% к вампиризму заклинаниями (2,5% по крипам). Стоит 900 золота"
+        }
+      ]
+    },
+    {
+      "ability_id": 235,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуются Soul Booster, Voodoo Mask и рецепт за 900 золота (общая стоимость уменьшилась с 5900 до 5000)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт дополнительный интеллект"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 190,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус ко всем атрибутам уменьшен с 9 до 4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта уменьшена с 1150 до 650"
+        },
+        {
+          "indent_level": 1,
+          "note": "Magic Weakness: перезарядка увеличена с 20 до 25 секунд"
+        },
+        {
+          "indent_level": 1,
+          "note": "Magic Weakness: дополнительный урон от заклинаний уменьшен с 20% до 18%"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 269,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Energy Charge: теперь можно применять на союзников. Дальность применения: 500"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 178,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуются 2 Gaunlets of Strength, Ring of Protection и рецепт за 350 золота (общая стоимость прежняя)"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +6 к силе и +2 к броне"
+        },
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +2,25 к восстановлению здоровья"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 55,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Дополнительная скорость атаки увеличена с 55 до 60"
+        }
+      ]
+    },
+    {
+      "ability_id": 112,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Assault Aura: дополнительная скорость атаки увеличена с 25 до 30"
+        },
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +5 ко всем атрибутам"
+        }
+      ]
+    },
+    {
+      "ability_id": 250,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к скорости атаки увеличен с 85 до 90"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 145,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуется не Mithril Hammer, а Claymore"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к урону уменьшен с 60 до 55"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к восстановлению маны уменьшен с 3,75 до 3,25"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 3,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к урону уменьшен с 16 до 15"
+        }
+      ]
+    },
+    {
+      "ability_id": 149,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к урону уменьшен с 34 до 32"
+        },
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта уменьшена с 700 до 500"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 31,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость уменьшена с 550 до 450"
+        }
+      ]
+    },
+    {
+      "ability_id": 131,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта увеличена с 200 до 300 (общая стоимость прежняя)"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 156,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуется рецепт за 500 золота"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 223,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Meteor Hammer: перезарядка уменьшена с 28 до 24 секунд"
+        },
+        {
+          "indent_level": 1,
+          "note": "Meteor Hammer: длительность оглушения уменьшена с 2 до 1,75 секунды"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуются Perseverance, Crown и рецепт за 250 золота"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +8 ко всем атрибутам, +6,5 к восстановлению здоровья и +2,5 к восстановлению маны"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 267,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт ауру, уменьшающую лечение"
+        },
+        {
+          "indent_level": 1,
+          "note": "Soul Release: восстановление здоровья в секунду увеличено с 30 до 40"
+        },
+        {
+          "indent_level": 1,
+          "note": "Soul Release: урон в секунду увеличен с 25 до 35"
+        },
+        {
+          "indent_level": 1,
+          "note": "Soul Release: уменьшение здоровья врага усилено с 35% до 45%"
+        }
+      ]
+    },
+    {
+      "ability_id": 119,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Freezing Aura: теперь уменьшает лечение на 25%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта увеличена с 650 до 750"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 104,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь для сборки требуются Belt of Strength, Band of Elvenskin, Robe of the Magi и рецепт за 1300 золота"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь даёт +6/8/10/12/14 ко всем атрибутам"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 114,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не даёт +10 к восстановлению здоровья и не усиливает лечение и восстановление здоровья"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь каждую секунду пассивно восстанавливает 1% от макс. здоровья"
+        },
+        {
+          "indent_level": 1,
+          "note": "Health Regeneration: теперь усиливает восстановление здоровья на 50%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к силе уменьшен с 45 до 40"
+        },
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта увеличена с 400 до 650"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 160,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Cold Attack: уменьшение лечения усилено с 35% до 40%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Cold Attack: замедление увеличено с 20/45 до 25/50"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 11,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость уменьшена со 150 до 130 золота"
+        },
+        {
+          "indent_level": 1,
+          "note": "Quell: доп. урон по крипам в ближнем бою уменьшен с 18 до 15"
+        },
+        {
+          "indent_level": 1,
+          "note": "Quell: доп. урон по крипам в дальнем бою увеличен с 5 до 6"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 123,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта уменьшена с 1200 до 900 золота"
+        }
+      ]
+    },
+    {
+      "ability_id": 208,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Overwhelm: дальность применения уменьшена с 600 до 550"
+        }
+      ]
+    },
+    {
+      "ability_id": 210,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к уклонению уменьшен с 25% до 20%"
+        }
+      ]
+    },
+    {
+      "ability_id": 236,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к ловкости увеличен с 12 до 14"
+        }
+      ]
+    },
+    {
+      "ability_id": 65,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Transmute: множитель опыта увеличен с 1,85 до 2,1"
+        }
+      ]
+    },
+    {
+      "ability_id": 110,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Reset: перезарядка уменьшена со 195 до 180 секунд"
+        }
+      ]
+    },
+    {
+      "ability_id": 24,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость уменьшена с 2150 до 2050 золота"
+        }
+      ]
+    },
+    {
+      "ability_id": 265,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к восстановлению маны уменьшен с 0,9 до 0,8"
+        }
+      ]
+    },
+    {
+      "ability_id": 225,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Nullify: скорость снаряда увеличена с 750 до 1000"
+        }
+      ]
+    },
+    {
+      "ability_id": 108,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта для поглощения скипетра уменьшена с 1800 до 1600"
+        }
+      ]
+    },
+    {
+      "ability_id": 232,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость рецепта уменьшена с 600 до 550"
+        }
+      ]
+    },
+    {
+      "ability_id": 220,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Теперь уменьшает перезарядку телепортации не на 40, а на 30 секунд"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 188,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость уменьшена с 80 до 50 золота"
+        }
+      ]
+    },
+    {
+      "ability_id": 43,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Время появления в лавке уменьшено с 90 до 85 секунд"
+        }
+      ]
+    },
+    {
+      "ability_id": 257,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Стоимость уменьшена со 150 до 75 золота"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 25,
+      "postfix_lines": 2,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Предмет перемещён из раздела «Разное» в раздел «Снаряжение», к другим предметам, увеличивающим скорость атаки"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 328,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Дальность подбора манго увеличена со стандартных 150 до 300"
+        },
+        {
+          "indent_level": 1,
+          "note": "Теперь имеет иконку на мини-карте"
+        },
+        {
+          "indent_level": 1,
+          "note": "Больше не может выпасть, если выпал другой расходуемый предмет этого же разряда"
+        }
+      ]
+    },
+    {
+      "ability_id": 239,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Chop: урон уменьшен с 50% до 40%"
+        }
+      ]
+    },
+    {
+      "ability_id": 305,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не может выпасть, если выпал другой расходуемый предмет этого же разряда"
+        }
+      ]
+    },
+    {
+      "ability_id": 355,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к дальности атаки увеличен с 35 до 50"
+        }
+      ]
+    },
+    {
+      "ability_id": 375,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к скорости передвижения уменьшен с 25 до 20"
+        }
+      ]
+    },
+    {
+      "ability_id": 349,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Дополнительная броня уменьшена с 3 до 2"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    }
+  ],
+  "neutral_items": [
+    {
+      "ability_id": 297,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Дополнительный обзор ночью увеличен с 250 до 300"
+        }
+      ]
+    },
+    {
+      "ability_id": 290,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Снижение урона ослаблено с 35 до 30"
+        }
+      ]
+    },
+    {
+      "ability_id": 359,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Life Essense: перезарядка увеличена с 20 до 25 секунд"
+        }
+      ]
+    },
+    {
+      "ability_id": 360,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Ensnare: дальность применения уменьшена с 650 до 600"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус ко всем атрибутам уменьшен с 6 до 5"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 299,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не может выпасть, если выпал другой расходуемый предмет этого же разряда"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к урону увеличен с 35 до 40"
+        }
+      ]
+    },
+    {
+      "ability_id": 308,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не может выпасть, если выпал другой расходуемый предмет этого же разряда"
+        },
+        {
+          "indent_level": 1,
+          "note": "Building Repair: теперь перезаряжается 60 секунд"
+        },
+        {
+          "indent_level": 1,
+          "note": "Дополнительное восстановление здоровья увеличено с 20 до 25"
+        }
+      ]
+    },
+    {
+      "ability_id": 326,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Scurry: перезарядка увеличена с 10 до 12 секунд"
+        }
+      ]
+    },
+    {
+      "ability_id": 361,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Certain Strike: больше не даёт постоянные +400 к дальности атаки копии от способности Tempest Double"
+        },
+        {
+          "indent_level": 1,
+          "note": "Certain Strike: перезарядка уменьшена с 6 до 5 секунд"
+        }
+      ]
+    },
+    {
+      "ability_id": 378,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Impeding Corruption: уменьшение брони ослаблено с 5 до 4"
+        },
+        {
+          "indent_level": 1,
+          "note": "Impeding Corruption: замедление увеличено с 20/10% до 25/15%"
+        }
+      ]
+    },
+    {
+      "ability_id": 309,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Silence Strike: перезарядка уменьшена с 20 до 15 секунд"
+        }
+      ]
+    },
+    {
+      "ability_id": 381,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к базовому урону увеличен с 16% до 20%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к сопротивлению эффектам уменьшен с 16% до 12%"
+        }
+      ]
+    },
+    {
+      "ability_id": 376,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Бонус к урону увеличен с 17 до 20"
+        },
+        {
+          "indent_level": 1,
+          "note": "Бонус к вампиризму уменьшен с 17% до 16%"
+        },
+        {
+          "indent_level": 1,
+          "note": "Greater Healing: увеличение восстановления здоровья, лечения и вампиризма ослаблено с 17% до 14%"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 325,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Hex Strike: перезарядка уменьшена с 12 до 10 секунд"
+        }
+      ]
+    },
+    {
+      "ability_id": 335,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Flicker: теперь перемещает минимум на 200 единиц"
+        },
+        {
+          "indent_level": 1,
+          "note": "Flicker: максимальная дальность перемещения уменьшена с 450 до 400"
+        }
+      ]
+    },
+    {
+      "ability_id": 363,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Create Illusion: урон по иллюзии увеличен со 150% до 200%"
+        }
+      ]
+    },
+    {
+      "ability_id": 364,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Havoc: радиус действия увеличен с 350 до 400"
+        },
+        {
+          "indent_level": 1,
+          "note": "Havoc: базовый урон увеличен с 225 до 275"
+        }
+      ]
+    },
+    {
+      "ability_id": 365,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Rejuvenate: лечение увеличено с 300 до 400"
+        },
+        {
+          "indent_level": 1,
+          "hide_dot": true,
+          "note": "<br>"
+        }
+      ]
+    },
+    {
+      "ability_id": 372,
+      "postfix_lines": 1,
+      "ability_notes": [
+        {
+          "indent_level": 1,
+          "note": "Больше не крадёт золото при убийствах"
+        },
+        {
+          "indent_level": 1,
+          "note": "Можно применить, чтобы выкопать руну богатства. Перезарядка: 40 секунд."
+        }
+      ]
+    }
+  ],
+  "success": true
+}

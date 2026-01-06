@@ -1,0 +1,321 @@
+[
+  {
+    "id": 5100,
+    "name": "storm_spirit_overload",
+    "name_loc": "Overload",
+    "desc_loc": "Применение способностей создаёт заряд электричества, который наполняет следующую атаку героя. Она нанесёт урон всем врагам вокруг цели и замедлит их.",
+    "lore_loc": "Пуф! Бах! Вжих!",
+    "notes_loc": [
+      "Не срабатывает от использования предметов.",
+      "Эффекты этой способности не складываются."
+    ],
+    "shard_loc": "Позволяет активировать эту способность, чтобы наделить %shard_activation_charges% её зарядами владельца и союзных героев неподалёку. Заряды увеличивают скорость атаки и действуют %shard_activation_duration% сек. или пока не закончатся.",
+    "scepter_loc": "",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "2",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 4,
+    "dispellable": 2,
+    "max_level": 4,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      0
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      0
+    ],
+    "durations": [
+      0.8
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      0
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "overload_aoe",
+        "values_float": [
+          300
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "overload_move_slow",
+        "values_float": [
+          -80
+        ],
+        "is_percentage": true,
+        "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_storm_spirit_overload_aspd",
+            "value": 20,
+            "operation": 2
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "overload_attack_slow",
+        "values_float": [
+          -90
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_storm_spirit_overload_aspd",
+            "value": 20,
+            "operation": 2
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "overload_damage",
+        "values_float": [
+          25,
+          50,
+          75,
+          100
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_activation_radius",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС ДЕЙСТВИЯ:",
+        "bonuses": [],
+        "values_shard": [
+          750
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_activation_charges",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [
+          3
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_activation_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [
+          12
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_manacost",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАСХОД МАНЫ:",
+        "bonuses": [],
+        "values_shard": [
+          100
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_cooldown",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ПЕРЕЗАРЯДКА:",
+        "bonuses": [],
+        "values_shard": [
+          30
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_attack_speed_bonus",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "БОНУС К СКОРОСТИ АТАКИ:",
+        "bonuses": [],
+        "values_shard": [
+          40
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "overload_bounces",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_storm_spirit_7",
+            "value": 2,
+            "operation": 5
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "overload_damage_pct",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_storm_spirit_7",
+            "value": 65,
+            "operation": 5
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityDuration",
+        "values_float": [
+          0.8
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": true,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

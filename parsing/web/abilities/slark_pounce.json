@@ -1,0 +1,294 @@
+[
+  {
+    "id": 5495,
+    "name": "slark_pounce",
+    "name_loc": "Pounce",
+    "desc_loc": "Герой прыгает вперёд, привязывая к месту первого попавшегося на пути героя и не давая ему уйти дальше определённого расстояния. ",
+    "lore_loc": "За время, проведённое в Тёмном рифе, узник стал опасным убийцей: агрессивным и бесстрашным.",
+    "notes_loc": [
+      "Герой летит в прыжке со скоростью в %pounce_speed% либо на расстояние в %pounce_distance%, либо до соприкосновения со вражеским героем.",
+      "Не привязывает врагов, невосприимчивых к эффектам.",
+      "Разрушает деревья в месте приземления."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Даёт способности заряды и увеличивает дальность прыжка.",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "524292",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 4,
+    "dispellable": 3,
+    "max_level": 4,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      0
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      24,
+      20,
+      16,
+      12
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      75
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "pounce_distance",
+        "values_float": [
+          700
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДАЛЬНОСТЬ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pounce_speed",
+        "values_float": [
+          933.33
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pounce_acceleration",
+        "values_float": [
+          7000
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pounce_radius",
+        "values_float": [
+          120
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "leash_duration",
+        "values_float": [
+          2.5,
+          2.75,
+          3,
+          3.25
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРИВЯЗКИ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_slark",
+            "value": 0.5,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "leash_radius",
+        "values_float": [
+          400
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС ПРИВЯЗКИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "max_charges",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЗАРЯДОВ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          2
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "charge_restore_time",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "БАЗОВОЕ ВРЕМЯ ВОССТАНОВЛЕНИЯ ЗАРЯДА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          12
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "pounce_distance_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДАЛЬНОСТЬ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          900
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "essence_stacks",
+        "values_float": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЭФФЕКТЫ ESSENCE SHIFT:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          75
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          24,
+          20,
+          16,
+          12
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

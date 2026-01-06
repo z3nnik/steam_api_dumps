@@ -1,0 +1,338 @@
+[
+  {
+    "id": 5402,
+    "name": "brewmaster_drunken_brawler",
+    "name_loc": "Drunken Brawler",
+    "desc_loc": "Герой может переключаться между стойками подвластных ему элементов.<br><br>Применив любую способность, герой на %brewed_up_duration% сек. становится подпитым, отчего бонусы стоек увеличиваются на %brewed_up_bonus%%%. Если герой уже подпит, эффект продлится на %brewed_up_duration_extend% сек. По окончании эффекта у героя начинается похмелье, которое не даёт стать подпитым следующие %hangover_time% сек.<br><br><font color=\"#9acd32\">Стойка земли</font> увеличивает сопротивление магии и броню.<br><font color=\"#87ceeb\">Стойка шторма</font> повышает уклонение и скорость передвижения.<br><font color=\"#FF0000\">Стойка огня</font> даёт шанс нанести критический урон и ускоряет атаку.",
+    "lore_loc": "Получив титул Хмелевара ордена Ойо, Мангикс также доказал всем, что он мастер опьянения.",
+    "notes_loc": [
+      "Складывается по закону убывающей полезности с другими источниками уклонения."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "70506187327492",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 0,
+    "immunity": 0,
+    "dispellable": 3,
+    "max_level": 4,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      0
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      0
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      0
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "magic_resist",
+        "values_float": [
+          8,
+          12,
+          16,
+          20
+        ],
+        "is_percentage": true,
+        "heading_loc": "<font color=\"#9acd32\">ДОП. СОПРОТИВЛЕНИЕ МАГИИ</font>:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+            "value": 50,
+            "operation": 3
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_armor",
+        "values_float": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "is_percentage": false,
+        "heading_loc": "<font color=\"#9acd32\">ДОП. БРОНЯ</font>:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+            "value": 50,
+            "operation": 3
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "dodge_chance",
+        "values_float": [
+          15,
+          20,
+          25,
+          30
+        ],
+        "is_percentage": true,
+        "heading_loc": "<font color=\"#87ceeb\">ДОП. УКЛОНЕНИЕ</font>:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+            "value": 50,
+            "operation": 3
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_move_speed",
+        "values_float": [
+          4,
+          6,
+          8,
+          10
+        ],
+        "is_percentage": true,
+        "heading_loc": "<font color=\"#87ceeb\">ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ</font>:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+            "value": 50,
+            "operation": 3
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "crit_chance",
+        "values_float": [
+          20
+        ],
+        "is_percentage": true,
+        "heading_loc": "<font color=\"#FF0000\">ШАНС КРИТИЧЕСКОЙ АТАКИ</font>:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "crit_multiplier",
+        "values_float": [
+          120,
+          140,
+          160,
+          180
+        ],
+        "is_percentage": true,
+        "heading_loc": "<font color=\"#FF0000\">КРИТИЧЕСКИЙ УРОН</font>:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+            "value": 50,
+            "operation": 3
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "attack_speed",
+        "values_float": [
+          10,
+          20,
+          30,
+          40
+        ],
+        "is_percentage": false,
+        "heading_loc": "<font color=\"#FF0000\">ДОП. СКОРОСТЬ АТАКИ</font>:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+            "value": 50,
+            "operation": 3
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "stance_multiplier_tooltip",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+            "value": 1.5,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "brewed_up_duration",
+        "values_float": [
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_brewmaster_brewed_up_duration",
+            "value": 1,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "brewed_up_duration_extend",
+        "values_float": [
+          2
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_brewmaster_brewed_up_duration",
+            "value": 1,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "brewed_up_bonus",
+        "values_float": [
+          150
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "hangover_time",
+        "values_float": [
+          9
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

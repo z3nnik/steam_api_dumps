@@ -1,0 +1,524 @@
+[
+  {
+    "id": 5165,
+    "name": "warlock_rain_of_chaos",
+    "name_loc": "Chaotic Offering",
+    "desc_loc": "Вызывает из недр земли голема, оглушая врагов на %stun_duration% сек. Голем живёт %golem_duration% сек., получает меньше урона от заклинаний, а также имеет повышенное сопротивление замедлениям и две способности: одна обжигает врагов вокруг, а другая добавляет к атакам урон по области.",
+    "lore_loc": "Демнок выпускает из своего дредвудского посоха плененного духа, который разрушает вражеские ряды.",
+    "notes_loc": [
+      "Уничтожает деревья в области действия."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Призывает %number_of_golems_scepter% големов.",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "48",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 0,
+    "immunity": 3,
+    "dispellable": 1,
+    "max_level": 3,
+    "cast_ranges": [
+      900
+    ],
+    "cast_points": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      165
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      200,
+      400,
+      600
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "golem_duration",
+        "values_float": [
+          60
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "stun_duration",
+        "values_float": [
+          0.8
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "aoe",
+        "values_float": [
+          600
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС ОГЛУШЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "golem_hp",
+        "values_float": [
+          1500,
+          2250,
+          3000
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЗДОРОВЬЕ ГОЛЕМА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "golem_dmg",
+        "values_float": [
+          100,
+          150,
+          200
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН ГОЛЕМА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "golem_armor",
+        "values_float": [
+          8,
+          12,
+          14
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "golem_movement_speed",
+        "values_float": [
+          320,
+          340,
+          360
+        ],
+        "is_percentage": false,
+        "heading_loc": "СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ГОЛЕМА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "golem_health_regen",
+        "values_float": [
+          25,
+          50,
+          75
+        ],
+        "is_percentage": false,
+        "heading_loc": "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ ГОЛЕМА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "golem_gold_bounty",
+        "values_float": [
+          100,
+          150,
+          200
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЗОЛОТО ЗА УБИЙСТВО ГОЛЕМА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "stun_delay",
+        "values_float": [
+          0.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "number_of_golems_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          2
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "golem_hp_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1500,
+          2250,
+          3000
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "golem_dmg_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          80,
+          120,
+          160
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "golem_gold_bounty_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          100,
+          150,
+          200
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_armor",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_warlock_2",
+            "value": 20,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_damage_resist",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_warlock_1",
+            "value": 25,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "tooltip_golem_armor",
+        "values_float": [
+          8,
+          12,
+          14
+        ],
+        "is_percentage": false,
+        "heading_loc": "БРОНЯ ГОЛЕМА:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_warlock_2",
+            "value": 20,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_slow_resistance",
+        "values_float": [
+          60
+        ],
+        "is_percentage": true,
+        "heading_loc": "СОПРОТИВЛЕНИЕ ЗАМЕДЛЕНИЯМ ГОЛЕМА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "tooltip_manahealthboost",
+        "values_float": [
+          0
+        ],
+        "is_percentage": true,
+        "heading_loc": "ОБЖИГ. УРОН ОТ ВОССТАНОВЛЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "golem_on_death",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_warlock_4",
+            "value": 1,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          900
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          200,
+          400,
+          600
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          165
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

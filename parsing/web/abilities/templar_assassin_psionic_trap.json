@@ -1,0 +1,388 @@
+[
+  {
+    "id": 5197,
+    "name": "templar_assassin_psionic_trap",
+    "name_loc": "Psionic Trap",
+    "desc_loc": "Герой ставит невидимую ловушку, которая отслеживает передвижение врагов и постепенно накапливает энергию. По команде ловушка срабатывает, нанося немного урона противникам в радиусе %trap_radius% и замедляя их как минимум на %movement_speed_min%%%. Через %trap_max_charge_duration% сек. ловушка наберёт максимальную мощь, и её активация замедлит жертв на %movement_speed_max%%% и нанесёт им урон.",
+    "lore_loc": "Сокрытый храм не даст никому скрыться от ока его стража.",
+    "notes_loc": [
+      "Время существования ловушек не ограничено.",
+      "Ловушки становятся невидимыми через %trap_fade_time% сек. после создания и невосприимчивы к заклинаниям. Для их уничтожения нужна 1 атака героя ближнего боя, 2 атаки героя дальнего боя или 4 атаки крипа.",
+      "Ловушка даёт обзор в пределах 250 единиц и не препятствует появлению нейтральных крипов."
+    ],
+    "shard_loc": "Увеличивает максимум ловушек и их радиус обзора. Активация ловушки накладывает на жертв безмолвие.",
+    "scepter_loc": "",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "134217744",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 4,
+    "dispellable": 2,
+    "max_level": 3,
+    "cast_ranges": [
+      1800
+    ],
+    "cast_points": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      11,
+      8,
+      5
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      15,
+      15,
+      15
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "trap_radius",
+        "values_float": [
+          400
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "trap_duration",
+        "values_float": [
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "max_traps",
+        "values_float": [
+          5,
+          8,
+          11
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКС. ЛОВУШЕК:",
+        "bonuses": [],
+        "values_shard": [
+          4
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "trap_fade_time",
+        "values_float": [
+          2
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "movement_speed_min",
+        "values_float": [
+          20
+        ],
+        "is_percentage": true,
+        "heading_loc": "МИН. ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_templar_assassin_3",
+            "value": 10,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "movement_speed_max",
+        "values_float": [
+          50
+        ],
+        "is_percentage": true,
+        "heading_loc": "МАКС. ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_templar_assassin_3",
+            "value": 10,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "trap_bonus_damage",
+        "values_float": [
+          200,
+          300,
+          400
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН ОТ ЛОВУШЕК:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "extra_damage",
+        "values_float": [
+          400
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "damage_tick_rate",
+        "values_float": [
+          0.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "trap_max_charge_duration",
+        "values_float": [
+          3.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "min_silence_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "МИН. ДЛИТЕЛЬНОСТЬ БЕЗМОЛВИЯ:",
+        "bonuses": [],
+        "values_shard": [
+          0.25
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "max_silence_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ БЕЗМОЛВИЯ:",
+        "bonuses": [],
+        "values_shard": [
+          3
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "bonus_vision",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДОП. ОБЗОР ЛОВУШЕК:",
+        "bonuses": [],
+        "values_shard": [
+          125
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          1800
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.3
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          15
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          11,
+          8,
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": true,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

@@ -1,0 +1,276 @@
+[
+  {
+    "id": 5366,
+    "name": "alchemist_unstable_concoction",
+    "name_loc": "Unstable Concoction",
+    "desc_loc": "Герой начинает встряхивать колбу с гремучей смесью, которую можно бросить во вражеского героя. При попадании колба взорвётся, оглушив всех противников в радиусе взрыва и нанеся им урон. Чем дольше смесь встряхивать, тем больше урона она нанесёт и тем дольше будет оглушение. Пока герой не бросит колбу, он передвигается быстрее. Максимальный эффект достигается после %brew_time% сек., однако если не выбросить колбу через %brew_explosion% секунды, она взорвётся в руках героя, подействовав и на него самого.",
+    "lore_loc": "Хоть превращение горы в золото и потерпело провал, благодаря ему была получена летучая микстура с разрушительным потенциалом.",
+    "notes_loc": [
+      "Во время действия способность заменяется на бросок колбы. Встряхивая смесь, герой может передвигаться и действовать как обычно.",
+      "Таймер над головой героя показывает время, оставшееся до взрыва. Противники видят этот таймер.",
+      "Этой способностью можно совершить самоубийство.",
+      "Колбу нельзя сбить с цели. Её эффект перестаёт увеличиваться после броска.",
+      "Взрыв наносит урон как героям, так и крипам."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "2052",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 1,
+    "immunity": 4,
+    "dispellable": 1,
+    "max_level": 4,
+    "cast_ranges": [
+      775
+    ],
+    "cast_points": [
+      0
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      17
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      100
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "brew_time",
+        "values_float": [
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "brew_explosion",
+        "values_float": [
+          5.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "min_stun",
+        "values_float": [
+          0.25
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "max_stun",
+        "values_float": [
+          1.7,
+          2.2,
+          2.7,
+          3.2
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКС. ОГЛУШЕНИЕ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "max_damage",
+        "values_float": [
+          150,
+          220,
+          290,
+          360
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКС. УРОН:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_alchemist_2",
+            "value": 400,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "radius",
+        "values_float": [
+          250
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС ВЗРЫВА:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_alchemist",
+            "value": 125,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "move_speed",
+        "values_float": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "is_percentage": true,
+        "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "chemical_rage_cooldown_reduction_pct",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          775
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          100
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          17
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]
