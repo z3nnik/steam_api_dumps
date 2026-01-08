@@ -1,335 +1,337 @@
-{
-  "id": 6488,
-  "name": "snapfire_lil_shredder",
-  "name_loc": "Lil' Shredder",
-  "desc_loc": "Snapfire heats up her mounted turret to rapidly fire %buffed_attacks% attacks dealing fixed damage plus a percentage of her attack damage. Each attack reduces the enemy's armor. Provides bonus attack range for the duration.",
-  "lore_loc": "Beadie constantly tinkers with a design she first dreamed up plotting an exodus from her old gang.",
-  "notes_loc": [
-    "Sets base attack time to %base_attack_time%s for the duration.",
-    "Attack modifiers have a chance to proc on Lil' Shredder attacks."
-  ],
-  "shard_loc": "",
-  "scepter_loc": "",
-  "facets_loc": [],
-  "type": 0,
-  "behavior": "134217732",
-  "target_team": 0,
-  "target_type": 0,
-  "flags": 0,
-  "damage": 1,
-  "immunity": 0,
-  "dispellable": 0,
-  "max_level": 4,
-  "cast_ranges": [
-    800
-  ],
-  "cast_points": [
-    0
-  ],
-  "channel_times": [
-    0
-  ],
-  "cooldowns": [
-    24,
-    20,
-    16,
-    12
-  ],
-  "durations": [
-    6
-  ],
-  "damages": [
-    0,
-    0,
-    0,
-    0
-  ],
-  "mana_costs": [
-    70,
-    80,
-    90,
-    100
-  ],
-  "gold_costs": [],
-  "health_costs": [],
-  "special_values": [
-    {
-      "name": "damage",
-      "values_float": [
-        20,
-        35,
-        50,
-        65
-      ],
-      "is_percentage": false,
-      "heading_loc": "BASE DAMAGE PER SHOT:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "buffed_attacks",
-      "values_float": [
-        5
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_snapfire_2",
-          "value": 1,
+[
+  {
+    "id": 6488,
+    "name": "snapfire_lil_shredder",
+    "name_loc": "Lil' Shredder",
+    "desc_loc": "Герой разогревает свою турель и совершает %buffed_attacks% атак-выстрелов, наносящих базовый урон и долю урона от атаки. Каждый выстрел уменьшает броню жертвы. Во время действия дальность атаки увеличивается.",
+    "lore_loc": "Беатриша то и дело модифицирует устройство, которое она придумала, замышляя побег от своей бывшей банды.",
+    "notes_loc": [
+      "Базовый интервал атак во время действия: %base_attack_time% сек.",
+      "При каждом выстреле могут сработать эффекты атаки."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "134217732",
+    "target_team": 0,
+    "target_type": 0,
+    "flags": 0,
+    "damage": 1,
+    "immunity": 0,
+    "dispellable": 0,
+    "max_level": 4,
+    "cast_ranges": [
+      800
+    ],
+    "cast_points": [
+      0
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      24,
+      20,
+      16,
+      12
+    ],
+    "durations": [
+      6
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      70,
+      80,
+      90,
+      100
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "damage",
+        "values_float": [
+          20,
+          35,
+          50,
+          65
+        ],
+        "is_percentage": false,
+        "heading_loc": "БАЗОВЫЙ УРОН:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
           "operation": 0
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "damage_pct",
-      "values_float": [
-        35
-      ],
-      "is_percentage": true,
-      "heading_loc": "ATTACK DAMAGE:",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_snapfire_6",
-          "value": 60,
+      {
+        "name": "buffed_attacks",
+        "values_float": [
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_snapfire_2",
+            "value": 1,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
           "operation": 0
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "attack_speed_bonus",
-      "values_float": [
-        300
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "damage_pct",
+        "values_float": [
+          35
+        ],
+        "is_percentage": true,
+        "heading_loc": "УРОН ОТ АТАКИ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_snapfire_6",
+            "value": 60,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "attack_range_bonus",
-      "values_float": [
-        160,
-        240,
-        320,
-        400
-      ],
-      "is_percentage": false,
-      "heading_loc": "BONUS RANGE:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "attack_speed_bonus",
+        "values_float": [
+          300
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "buff_duration_tooltip",
-      "values_float": [
-        6
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "attack_range_bonus",
+        "values_float": [
+          160,
+          240,
+          320,
+          400
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "base_attack_time",
-      "values_float": [
-        1
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "buff_duration_tooltip",
+        "values_float": [
+          6
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "armor_reduction_per_attack",
-      "values_float": [
-        0.5
-      ],
-      "is_percentage": false,
-      "heading_loc": "ARMOR LOSS PER STACK:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "base_attack_time",
+        "values_float": [
+          1
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "armor_duration",
-      "values_float": [
-        5
-      ],
-      "is_percentage": false,
-      "heading_loc": "ARMOR LOSS DURATION:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "armor_reduction_per_attack",
+        "values_float": [
+          0.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "СНИЖЕНИЕ БРОНИ ЗА ЭФФЕКТ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "extra_targets",
-      "values_float": [],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_snapfire_8",
-          "value": 2,
-          "operation": 5
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "armor_duration",
+        "values_float": [
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ СНИЖЕНИЯ БРОНИ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCastRange",
-      "values_float": [
-        800
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "extra_targets",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_snapfire_8",
+            "value": 2,
+            "operation": 5
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityDuration",
-      "values_float": [
-        6
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          800
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityManaCost",
-      "values_float": [
-        70,
-        80,
-        90,
-        100
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "AbilityDuration",
+        "values_float": [
+          6
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCooldown",
-      "values_float": [
-        24,
-        20,
-        16,
-        12
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          70,
+          80,
+          90,
+          100
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    }
-  ],
-  "is_item": false,
-  "ability_has_scepter": false,
-  "ability_has_shard": false,
-  "ability_is_granted_by_scepter": false,
-  "ability_is_granted_by_shard": false,
-  "ability_is_innate": false,
-  "item_cost": 0,
-  "item_initial_charges": 0,
-  "item_neutral_tier": 4294967295,
-  "item_stock_max": 0,
-  "item_stock_time": 0,
-  "item_quality": 0
-}
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          24,
+          20,
+          16,
+          12
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

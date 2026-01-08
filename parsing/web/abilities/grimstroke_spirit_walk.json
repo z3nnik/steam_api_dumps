@@ -1,403 +1,405 @@
-{
-  "id": 8007,
-  "name": "grimstroke_spirit_walk",
-  "name_loc": "Ink Swell",
-  "desc_loc": "Grimstroke shrouds an allied unit in ink, increasing its movement speed. Enemies in range of the allied unit are damaged with inky tendrils over time. After %buff_duration% seconds it applies damage and stun in an area around the unit in proportion to how long ink tendril was near any hero.",
-  "lore_loc": "Now that the rise of the ink tide no longer threatens to overwhelm Grimstroke, its tendrils of power are never far from his hand.",
-  "notes_loc": [],
-  "shard_loc": "Ink Swell dispels the allied unit when cast. Causes Ink Swell to deal %shard_bonus_damage_pct%%% more damage and heal the target for %shard_heal_pct%%% of the damage Ink Swell deals.<br><br>DISPEL TYPE: Basic Dispel",
-  "scepter_loc": "",
-  "facets_loc": [],
-  "type": 0,
-  "behavior": "33554440",
-  "target_team": 1,
-  "target_type": 19,
-  "flags": 0,
-  "damage": 2,
-  "immunity": 5,
-  "dispellable": 2,
-  "max_level": 4,
-  "cast_ranges": [
-    500,
-    600,
-    700,
-    800
-  ],
-  "cast_points": [
-    0.15
-  ],
-  "channel_times": [
-    0
-  ],
-  "cooldowns": [
-    27,
-    24,
-    21,
-    18
-  ],
-  "durations": [
-    0
-  ],
-  "damages": [
-    0,
-    0,
-    0,
-    0
-  ],
-  "mana_costs": [
-    120,
-    130,
-    140,
-    150
-  ],
-  "gold_costs": [],
-  "health_costs": [],
-  "special_values": [
-    {
-      "name": "buff_duration",
-      "values_float": [
-        3
-      ],
-      "is_percentage": false,
-      "heading_loc": "BUFF DURATION:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "movespeed_bonus_pct",
-      "values_float": [
-        20
-      ],
-      "is_percentage": true,
-      "heading_loc": "MOVEMENT SPEED BONUS:",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_grimstroke_6",
-          "value": 12,
+[
+  {
+    "id": 8007,
+    "name": "grimstroke_spirit_walk",
+    "name_loc": "Ink Swell",
+    "desc_loc": "Герой покрывает себя или союзника чернилами, которые повышают скорость передвижения и наносят урон противникам вокруг. Через %buff_duration% сек. чернила оглушают противников и наносят им урон. Длительность оглушения и урон от всплеска зависят от того, как долго чернила действовали на вражеских героев.",
+    "lore_loc": "Теперь, когда поглощение чернилами больше не угрожает вознесённому, их мощь всегда у него под рукой.",
+    "notes_loc": [],
+    "shard_loc": "Способность наносит на %shard_bonus_damage_pct%%% больше урона и в момент применения развеивает с цели отрицательные эффекты. %shard_heal_pct%%% наносимого способностью урона исцеляют цель.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное",
+    "scepter_loc": "",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "33554440",
+    "target_team": 1,
+    "target_type": 19,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 5,
+    "dispellable": 2,
+    "max_level": 4,
+    "cast_ranges": [
+      500,
+      600,
+      700,
+      800
+    ],
+    "cast_points": [
+      0.15
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      27,
+      24,
+      21,
+      18
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      120,
+      130,
+      140,
+      150
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "buff_duration",
+        "values_float": [
+          3
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЗАДЕРЖКА ПЕРЕД СРАБАТЫВАНИЕМ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
           "operation": 0
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "radius",
-      "values_float": [
-        375
-      ],
-      "is_percentage": false,
-      "heading_loc": "RADIUS:",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_grimstroke_1",
-          "value": 150,
+      {
+        "name": "movespeed_bonus_pct",
+        "values_float": [
+          20
+        ],
+        "is_percentage": true,
+        "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_grimstroke_6",
+            "value": 12,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
           "operation": 0
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "max_damage",
-      "values_float": [
-        90,
-        180,
-        270,
-        360
-      ],
-      "is_percentage": false,
-      "heading_loc": "MAX DAMAGE:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "radius",
+        "values_float": [
+          375
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС:",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_grimstroke_1",
+            "value": 150,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "max_stun",
-      "values_float": [
-        1.6,
-        2,
-        2.4,
-        2.8
-      ],
-      "is_percentage": false,
-      "heading_loc": "MAX STUN DURATION:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "max_damage",
+        "values_float": [
+          90,
+          180,
+          270,
+          360
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКС. УРОН:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "damage_per_tick",
-      "values_float": [
-        6,
-        9,
-        12,
-        15
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "max_stun",
+        "values_float": [
+          1.6,
+          2,
+          2.4,
+          2.8
+        ],
+        "is_percentage": false,
+        "heading_loc": "МАКС. ОГЛУШЕНИЕ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "tick_rate",
-      "values_float": [
-        0.2
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "damage_per_tick",
+        "values_float": [
+          6,
+          9,
+          12,
+          15
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "tick_dps_tooltip",
-      "values_float": [
-        30,
-        45,
-        60,
-        75
-      ],
-      "is_percentage": false,
-      "heading_loc": "INK TENDRILS DPS:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "tick_rate",
+        "values_float": [
+          0.2
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "max_threshold_duration",
-      "values_float": [
-        2.5
-      ],
-      "is_percentage": false,
-      "heading_loc": "MAX THRESHOLD DURATION:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "tick_dps_tooltip",
+        "values_float": [
+          30,
+          45,
+          60,
+          75
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН В СЕКУНДУ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "can_end_early",
-      "values_float": [
-        0
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "max_threshold_duration",
+        "values_float": [
+          2.5
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ДЛЯ МАКС. ЭФФЕКТА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "shard_bonus_damage_pct",
-      "values_float": [
-        0
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [
-        40
-      ],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "can_end_early",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "shard_heal_pct",
-      "values_float": [
-        0
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [
-        40
-      ],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "shard_bonus_damage_pct",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [
+          40
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "shard_creep_penalty",
-      "values_float": [
-        0
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [
-        0.2
-      ],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "shard_heal_pct",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [
+          40
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCastRange",
-      "values_float": [
-        500,
-        600,
-        700,
-        800
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "shard_creep_penalty",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [
+          0.2
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCastPoint",
-      "values_float": [
-        0.15
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          500,
+          600,
+          700,
+          800
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityManaCost",
-      "values_float": [
-        120,
-        130,
-        140,
-        150
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.15
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCooldown",
-      "values_float": [
-        27,
-        24,
-        21,
-        18
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_grimstroke_7",
-          "value": 4,
-          "operation": 2
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          120,
+          130,
+          140,
+          150
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    }
-  ],
-  "is_item": false,
-  "ability_has_scepter": false,
-  "ability_has_shard": true,
-  "ability_is_granted_by_scepter": false,
-  "ability_is_granted_by_shard": false,
-  "ability_is_innate": false,
-  "item_cost": 0,
-  "item_initial_charges": 0,
-  "item_neutral_tier": 4294967295,
-  "item_stock_max": 0,
-  "item_stock_time": 0,
-  "item_quality": 0
-}
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          27,
+          24,
+          21,
+          18
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_grimstroke_7",
+            "value": 4,
+            "operation": 2
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": true,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

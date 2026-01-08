@@ -1,416 +1,418 @@
-{
-  "id": 5725,
-  "name": "monkey_king_wukongs_command",
-  "name_loc": "Wukong's Command",
-  "desc_loc": "Monkey King creates a circular formation of soldiers that spread out from his position. If Monkey King leaves the area his soldiers disperse. The soldiers have Monkey King's attack and only target heroes. Monkey King is granted bonus armor for the spell's duration.",
-  "lore_loc": "Monkey King rips out a tuft of fur to blow at his enemies, charging each strand to transform into a copy of himself.",
-  "notes_loc": [
-    "Soldiers do not receive Jingu Mastery bonuses.",
-    "Soldiers do not copy Basher or Abyssal."
-  ],
-  "shard_loc": "",
-  "scepter_loc": "Spawns a monkey soldier near Monkey King at regular intervals. Soldiers do not spawn while invisible or on trees. Soldiers only attack buildings when Monkey King himself is nearby. Soldiers can now gain Jingu Mastery charges independently.",
-  "facets_loc": [],
-  "type": 1,
-  "behavior": "67108912",
-  "target_team": 0,
-  "target_type": 1,
-  "flags": 0,
-  "damage": 1,
-  "immunity": 0,
-  "dispellable": 0,
-  "max_level": 3,
-  "cast_ranges": [
-    0
-  ],
-  "cast_points": [
-    1
-  ],
-  "channel_times": [
-    0
-  ],
-  "cooldowns": [
-    100,
-    90,
-    80
-  ],
-  "durations": [
-    0
-  ],
-  "damages": [
-    0,
-    0,
-    0,
-    0
-  ],
-  "mana_costs": [
-    100
-  ],
-  "gold_costs": [],
-  "health_costs": [],
-  "special_values": [
-    {
-      "name": "first_radius",
-      "values_float": [
-        300
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "second_radius",
-      "values_float": [
-        750
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "third_radius",
-      "values_float": [],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_monkey_king_6",
-          "value": 1100,
-          "operation": 5
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "num_first_soldiers",
-      "values_float": [
-        5
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "num_second_soldiers",
-      "values_float": [
-        9
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "num_third_soldiers",
-      "values_float": [],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_monkey_king_6",
-          "value": 7,
-          "operation": 5
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "move_speed",
-      "values_float": [
-        700
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "bonus_armor",
-      "values_float": [
-        15,
-        20,
-        25
-      ],
-      "is_percentage": false,
-      "heading_loc": "BONUS ARMOR:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "attack_speed",
-      "values_float": [
-        1.1
-      ],
-      "is_percentage": false,
-      "heading_loc": "SOLDIER ATTACK INTERVAL:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "duration",
-      "values_float": [
-        14
-      ],
-      "is_percentage": false,
-      "heading_loc": "DURATION:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "leadership_time_buffer",
-      "values_float": [
-        0
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "cast_range",
-      "values_float": [
-        625
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_monkey_king_6",
-          "value": 350,
+[
+  {
+    "id": 5725,
+    "name": "monkey_king_wukongs_command",
+    "name_loc": "Wukong's Command",
+    "desc_loc": "Герой создаёт круговую формацию солдат, которые расходятся из его местоположения. Если герой покинет область действия способности, его солдаты исчезнут. Их атака идентична атаке владельца способности, а своей целью они выбирают только вражеских героев. На время действия способности герой получает дополнительную броню.",
+    "lore_loc": "Сунь Укун выдирает клок шерсти и дует им на противников, превращая каждый волосок в копию себя самого.",
+    "notes_loc": [
+      "Солдаты не получают бонусы от способности Jingu Mastery.",
+      "При атаках солдат не срабатывают эффекты Skull Basher или Abyssal Blade."
+    ],
+    "shard_loc": "",
+    "scepter_loc": "Раз в несколько секунд создаёт неподалёку солдата, если герой не на дереве и не невидим. Солдаты атакуют постройки, только если сам герой находится неподалёку. Каждый солдат имеет свой счётчик зарядов способности Jingu Mastery.",
+    "facets_loc": [],
+    "type": 1,
+    "behavior": "67108912",
+    "target_team": 0,
+    "target_type": 1,
+    "flags": 0,
+    "damage": 1,
+    "immunity": 0,
+    "dispellable": 0,
+    "max_level": 3,
+    "cast_ranges": [
+      0
+    ],
+    "cast_points": [
+      1
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      100,
+      90,
+      80
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      100
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "first_radius",
+        "values_float": [
+          300
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
           "operation": 0
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "cast_range_scepter",
-      "values_float": [
-        0
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [
-        1550
-      ],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "second_radius",
+        "values_float": [
+          750
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "cooldown_scepter",
-      "values_float": [
-        0
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [
-        90,
-        70,
-        50
-      ],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "third_radius",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_monkey_king_6",
+            "value": 1100,
+            "operation": 5
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "scepter_spawn_interval",
-      "values_float": [
-        0
-      ],
-      "is_percentage": false,
-      "heading_loc": "SOLDIER SPAWN INTERVAL:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [
-        4
-      ],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "num_first_soldiers",
+        "values_float": [
+          5
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "scepter_spawn_duration",
-      "values_float": [
-        0
-      ],
-      "is_percentage": false,
-      "heading_loc": "SOLDIER DURATION:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [
-        15
-      ],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "num_second_soldiers",
+        "values_float": [
+          9
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCastPoint",
-      "values_float": [
-        1
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "num_third_soldiers",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_monkey_king_6",
+            "value": 7,
+            "operation": 5
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityManaCost",
-      "values_float": [
-        100
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "move_speed",
+        "values_float": [
+          700
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCooldown",
-      "values_float": [
-        100,
-        90,
-        80
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "bonus_armor",
+        "values_float": [
+          15,
+          20,
+          25
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДОПОЛНИТЕЛЬНАЯ БРОНЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    }
-  ],
-  "is_item": false,
-  "ability_has_scepter": true,
-  "ability_has_shard": false,
-  "ability_is_granted_by_scepter": false,
-  "ability_is_granted_by_shard": false,
-  "ability_is_innate": false,
-  "item_cost": 0,
-  "item_initial_charges": 0,
-  "item_neutral_tier": 4294967295,
-  "item_stock_max": 0,
-  "item_stock_time": 0,
-  "item_quality": 0
-}
+      {
+        "name": "attack_speed",
+        "values_float": [
+          1.1
+        ],
+        "is_percentage": false,
+        "heading_loc": "ИНТЕРВАЛ АТАКИ СОЛДАТ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "duration",
+        "values_float": [
+          14
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "leadership_time_buffer",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "cast_range",
+        "values_float": [
+          625
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_monkey_king_6",
+            "value": 350,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "cast_range_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          1550
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "cooldown_scepter",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          90,
+          70,
+          50
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_spawn_interval",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ИНТЕРВАЛ ПОЯВЛЕНИЯ СОЛДАТ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          4
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "scepter_spawn_duration",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ВРЕМЯ ЖИЗНИ СОЛДАТА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [
+          15
+        ],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          1
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          100
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          100,
+          90,
+          80
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": true,
+    "ability_has_shard": false,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]

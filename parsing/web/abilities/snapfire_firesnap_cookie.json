@@ -1,401 +1,403 @@
-{
-  "id": 6483,
-  "name": "snapfire_firesnap_cookie",
-  "name_loc": "Firesnap Cookie",
-  "desc_loc": "Snapfire feeds a potent cookie to Mortimer or an ally, causing them to hop a short distance. The hopping unit stuns and damages enemies in the landing zone.",
-  "lore_loc": "With the help of a secret mixture that pairs Beadie's baking skills with her passion for black powder, these battle biscuits pack a punch.",
-  "notes_loc": [
-    "The cookie projectile has a speed of %projectile_speed%."
-  ],
-  "shard_loc": "Firesnap cookies become even more potent, healing the target and launching a Mortimer Kiss that does %shard_damage_multiplier_tooltip%%% impact damage to the landing destination.",
-  "scepter_loc": "",
-  "facets_loc": [],
-  "type": 0,
-  "behavior": "8",
-  "target_team": 1,
-  "target_type": 3,
-  "flags": 0,
-  "damage": 2,
-  "immunity": 0,
-  "dispellable": 1,
-  "max_level": 4,
-  "cast_ranges": [
-    650
-  ],
-  "cast_points": [
-    0.2
-  ],
-  "channel_times": [
-    0
-  ],
-  "cooldowns": [
-    18,
-    17,
-    16,
-    15
-  ],
-  "durations": [
-    0
-  ],
-  "damages": [
-    0,
-    0,
-    0,
-    0
-  ],
-  "mana_costs": [
-    105
-  ],
-  "gold_costs": [],
-  "health_costs": [],
-  "special_values": [
-    {
-      "name": "projectile_speed",
-      "values_float": [
-        1200
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "jump_duration",
-      "values_float": [
-        0.484
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "jump_height",
-      "values_float": [
-        257
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "jump_horizontal_distance",
-      "values_float": [
-        425
-      ],
-      "is_percentage": false,
-      "heading_loc": "HOP DISTANCE:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "pre_land_anim_time",
-      "values_float": [
-        0.14
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "landing_gesture_duration",
-      "values_float": [
-        0.6
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "impact_radius",
-      "values_float": [
-        300
-      ],
-      "is_percentage": false,
-      "heading_loc": "IMPACT RADIUS:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "impact_damage",
-      "values_float": [
-        75,
-        150,
-        225,
-        300
-      ],
-      "is_percentage": false,
-      "heading_loc": "IMPACT DAMAGE:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "impact_stun_duration",
-      "values_float": [
-        1,
-        1.4,
-        1.8,
-        2.2
-      ],
-      "is_percentage": false,
-      "heading_loc": "IMPACT STUN DURATION:",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "self_cast_delay",
-      "values_float": [
-        0.3
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "target_heal",
-      "values_float": [
-        0
-      ],
-      "is_percentage": false,
-      "heading_loc": "HEAL AMOUNT:",
-      "bonuses": [],
-      "values_shard": [
-        200
-      ],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "shard_damage_multiplier_tooltip",
-      "values_float": [
-        40
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCastRange",
-      "values_float": [
-        650
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCastPoint",
-      "values_float": [
-        0.2
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
-      },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCharges",
-      "values_float": [],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_snapfire_firesnap_cookie_additional_charge",
-          "value": 2,
+[
+  {
+    "id": 6483,
+    "name": "snapfire_firesnap_cookie",
+    "name_loc": "Firesnap Cookie",
+    "desc_loc": "Герой скармливает бодрящую печеньку Мортимеру или союзнику, отчего тот совершает прыжок на небольшое расстояние, оглушая врагов в области приземления и нанося им урон.",
+    "lore_loc": "Благодаря секретному рецепту, сочетающему умелую выпечку Беатриши с её любовью к чёрному пороху, эти боевые крекеры невероятно бодрят.",
+    "notes_loc": [
+      "Печенье летит со скоростью %projectile_speed%."
+    ],
+    "shard_loc": "Печенька становится ещё мощнее, отчего цель излечивается, а в точку приземления выплёвывается шар от Mortimer's Kisses, попадание которого наносит %shard_damage_multiplier_tooltip%%% обычного урона.",
+    "scepter_loc": "",
+    "facets_loc": [],
+    "type": 0,
+    "behavior": "8",
+    "target_team": 1,
+    "target_type": 3,
+    "flags": 0,
+    "damage": 2,
+    "immunity": 0,
+    "dispellable": 1,
+    "max_level": 4,
+    "cast_ranges": [
+      650
+    ],
+    "cast_points": [
+      0.2
+    ],
+    "channel_times": [
+      0
+    ],
+    "cooldowns": [
+      18,
+      17,
+      16,
+      15
+    ],
+    "durations": [
+      0
+    ],
+    "damages": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mana_costs": [
+      105
+    ],
+    "gold_costs": [],
+    "health_costs": [],
+    "special_values": [
+      {
+        "name": "projectile_speed",
+        "values_float": [
+          1200
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
           "operation": 0
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityChargeRestoreTime",
-      "values_float": [
-        21,
-        19,
-        17,
-        15
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_snapfire_3",
-          "value": 4,
-          "operation": 2
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "jump_duration",
+        "values_float": [
+          0.484
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityManaCost",
-      "values_float": [
-        105
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "jump_height",
+        "values_float": [
+          257
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    },
-    {
-      "name": "AbilityCooldown",
-      "values_float": [
-        18,
-        17,
-        16,
-        15
-      ],
-      "is_percentage": false,
-      "heading_loc": "",
-      "bonuses": [
-        {
-          "name": "special_bonus_unique_snapfire_3",
-          "value": 4,
-          "operation": 2
-        }
-      ],
-      "values_shard": [],
-      "values_scepter": [],
-      "facet_bonus": {
-        "name": "",
-        "values": [],
-        "operation": 0
+      {
+        "name": "jump_horizontal_distance",
+        "values_float": [
+          425
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДАЛЬНОСТЬ ПРЫЖКА:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
       },
-      "required_facet": ""
-    }
-  ],
-  "is_item": false,
-  "ability_has_scepter": false,
-  "ability_has_shard": true,
-  "ability_is_granted_by_scepter": false,
-  "ability_is_granted_by_shard": false,
-  "ability_is_innate": false,
-  "item_cost": 0,
-  "item_initial_charges": 0,
-  "item_neutral_tier": 4294967295,
-  "item_stock_max": 0,
-  "item_stock_time": 0,
-  "item_quality": 0
-}
+      {
+        "name": "pre_land_anim_time",
+        "values_float": [
+          0.14
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "landing_gesture_duration",
+        "values_float": [
+          0.6
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "impact_radius",
+        "values_float": [
+          300
+        ],
+        "is_percentage": false,
+        "heading_loc": "РАДИУС ПРИЗЕМЛЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "impact_damage",
+        "values_float": [
+          75,
+          150,
+          225,
+          300
+        ],
+        "is_percentage": false,
+        "heading_loc": "УРОН ОТ ПРИЗЕМЛЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "impact_stun_duration",
+        "values_float": [
+          1,
+          1.4,
+          1.8,
+          2.2
+        ],
+        "is_percentage": false,
+        "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "self_cast_delay",
+        "values_float": [
+          0.3
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "target_heal",
+        "values_float": [
+          0
+        ],
+        "is_percentage": false,
+        "heading_loc": "ЛЕЧЕНИЕ:",
+        "bonuses": [],
+        "values_shard": [
+          200
+        ],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "shard_damage_multiplier_tooltip",
+        "values_float": [
+          40
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastRange",
+        "values_float": [
+          650
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCastPoint",
+        "values_float": [
+          0.2
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCharges",
+        "values_float": [],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_snapfire_firesnap_cookie_additional_charge",
+            "value": 2,
+            "operation": 0
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityChargeRestoreTime",
+        "values_float": [
+          21,
+          19,
+          17,
+          15
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_snapfire_3",
+            "value": 4,
+            "operation": 2
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityManaCost",
+        "values_float": [
+          105
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      },
+      {
+        "name": "AbilityCooldown",
+        "values_float": [
+          18,
+          17,
+          16,
+          15
+        ],
+        "is_percentage": false,
+        "heading_loc": "",
+        "bonuses": [
+          {
+            "name": "special_bonus_unique_snapfire_3",
+            "value": 4,
+            "operation": 2
+          }
+        ],
+        "values_shard": [],
+        "values_scepter": [],
+        "facet_bonus": {
+          "name": "",
+          "values": [],
+          "operation": 0
+        },
+        "required_facet": ""
+      }
+    ],
+    "is_item": false,
+    "ability_has_scepter": false,
+    "ability_has_shard": true,
+    "ability_is_granted_by_scepter": false,
+    "ability_is_granted_by_shard": false,
+    "ability_is_innate": false,
+    "item_cost": 0,
+    "item_initial_charges": 0,
+    "item_neutral_tier": 4294967295,
+    "item_stock_max": 0,
+    "item_stock_time": 0,
+    "item_quality": 0
+  }
+]
