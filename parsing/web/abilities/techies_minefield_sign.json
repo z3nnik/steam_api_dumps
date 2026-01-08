@@ -1,240 +1,238 @@
-[
-  {
-    "id": 5644,
-    "name": "techies_minefield_sign",
-    "name_loc": "Minefield Sign",
-    "desc_loc": "На %lifetime% сек. устанавливает предостерегающую табличку, бомбы и мины в области действия которой неуязвимы и наносят на %bonus_mine_damage_pct%%% больше урона. Нельзя поставить больше одной таблички одновременно. ",
-    "lore_loc": "Смотри под ноги!",
-    "notes_loc": [],
-    "shard_loc": "",
-    "scepter_loc": "Увеличивает радиус действия и длительность способности. Когда в радиусе %trigger_radius% от таблички проходит вражеский герой, область радиусом %aura_radius% вокруг неё на %minefield_duration% сек. становится минным полем, которое наносит урон движущимся врагам. По окончании эффекта табличка пропадает.",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "8589934704",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 0,
-    "immunity": 0,
-    "dispellable": 0,
-    "max_level": 1,
-    "cast_ranges": [
-      10
-    ],
-    "cast_points": [
-      1.25
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      60
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      0
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "aura_radius",
-        "values_float": [
-          500
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС ДЕЙСТВИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          500
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5644,
+  "name": "techies_minefield_sign",
+  "name_loc": "Minefield Sign",
+  "desc_loc": "Plant a warning sign, causing Sticky Bombs and Proximity Mines within its radius to be invulnerable and deal %bonus_mine_damage_pct%%% more damage. Only one sign can exist at a time. Lasts %lifetime% seconds. ",
+  "lore_loc": "Watch your step!",
+  "notes_loc": [],
+  "shard_loc": "",
+  "scepter_loc": "Increases radius and duration of Minefield Sign. When an enemy hero walks within %trigger_radius% units of a minefield sign, the %aura_radius% units area around the sign will become a minefield for %minefield_duration% seconds, dealing damage to enemy units any time they move within its area. Minefield Sign is destroyed after this effect ends.",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "8589934704",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 0,
+  "immunity": 0,
+  "dispellable": 0,
+  "max_level": 1,
+  "cast_ranges": [
+    10
+  ],
+  "cast_points": [
+    1.25
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    60
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "aura_radius",
+      "values_float": [
+        500
+      ],
+      "is_percentage": false,
+      "heading_loc": "EFFECT RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        500
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "lifetime",
-        "values_float": [
-          60
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ ТАБЛИЧКИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          180
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "lifetime",
+      "values_float": [
+        60
+      ],
+      "is_percentage": false,
+      "heading_loc": "SIGN DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        180
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "minefield_duration",
-        "values_float": [
-          10
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "minefield_duration",
+      "values_float": [
+        10
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "trigger_radius",
-        "values_float": [
-          200
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "trigger_radius",
+      "values_float": [
+        200
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_move_damage",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          300
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_move_damage",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        300
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_move_amt",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДАЛЬНОСТЬ ПЕРЕДВИЖЕНИЯ ДЛЯ СРАБАТЫВАНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          200
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_move_amt",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "MOVEMENT TRIGGER AMOUNT:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        200
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bonus_mine_damage_pct",
-        "values_float": [
-          15
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_mine_damage_pct",
+      "values_float": [
+        15
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          10
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        10
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          1.25
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        1.25
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          60
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": true,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        60
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": true,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

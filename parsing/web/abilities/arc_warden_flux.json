@@ -1,265 +1,263 @@
-[
-  {
-    "id": 5677,
-    "name": "arc_warden_flux",
-    "name_loc": "Flux",
-    "desc_loc": "Охватывает одинокого врага нестабильной энергией, замедляя его передвижение и нанося урон. Урон блокируется, если рядом с целью есть её союзники.",
-    "lore_loc": "Лишь крохотная частица мощи, закованной в Древних.",
-    "notes_loc": [],
-    "shard_loc": "",
-    "scepter_loc": "Увеличивает урон и длительность способности. Она накладывает безмолвие, если рядом с целью никого нет.",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "8",
-    "target_team": 2,
-    "target_type": 19,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 2,
-    "max_level": 4,
-    "cast_ranges": [
-      500,
-      600,
-      700,
-      800
-    ],
-    "cast_points": [
-      0.3,
-      0.3,
-      0.3,
-      0.3
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      16
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      75
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "duration",
-        "values_float": [
-          6
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          2
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5677,
+  "name": "arc_warden_flux",
+  "name_loc": "Flux",
+  "desc_loc": "Infuses a lone enemy unit with swirling, volatile energy, dealing damage over time and slowing the target. The damage is not applied if another enemy unit is near the target.",
+  "lore_loc": "An infinitesimal fraction of the power which imprisoned the Ancients.",
+  "notes_loc": [],
+  "shard_loc": "",
+  "scepter_loc": "Flux silences when the target is alone, deals more damage, and lasts longer.",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "8",
+  "target_team": 2,
+  "target_type": 19,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 2,
+  "max_level": 4,
+  "cast_ranges": [
+    500,
+    600,
+    700,
+    800
+  ],
+  "cast_points": [
+    0.3,
+    0.3,
+    0.3,
+    0.3
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    16
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    75
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "duration",
+      "values_float": [
+        6
+      ],
+      "is_percentage": false,
+      "heading_loc": "DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        2
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "search_radius",
-        "values_float": [
-          225
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС ПОИСКА СОЮЗНИКОВ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "search_radius",
+      "values_float": [
+        225
+      ],
+      "is_percentage": false,
+      "heading_loc": "ALLY SEARCH RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "think_interval",
-        "values_float": [
-          0.5
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "think_interval",
+      "values_float": [
+        0.5
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage_per_second",
-        "values_float": [
-          15,
-          30,
-          45,
-          60
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН В СЕКУНДУ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          50
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "damage_per_second",
+      "values_float": [
+        15,
+        30,
+        45,
+        60
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE PER SECOND:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        50
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "move_speed_slow_pct",
-        "values_float": [
-          14,
-          21,
-          28,
-          35
-        ],
-        "is_percentage": true,
-        "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_arc_warden_4",
-            "value": 20,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "move_speed_slow_pct",
+      "values_float": [
+        14,
+        21,
+        28,
+        35
+      ],
+      "is_percentage": true,
+      "heading_loc": "MOVEMENT SPEED SLOW:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_arc_warden_4",
+          "value": 20,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "applies_silence",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          1
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "applies_silence",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        1
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          500,
-          600,
-          700,
-          800
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_arc_warden_5",
-            "value": 200,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        500,
+        600,
+        700,
+        800
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_arc_warden_5",
+          "value": 200,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          75
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        75
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          16
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        16
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

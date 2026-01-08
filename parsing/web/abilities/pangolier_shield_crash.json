@@ -1,361 +1,359 @@
-[
-  {
-    "id": 6461,
-    "name": "pangolier_shield_crash",
-    "name_loc": "Shield Crash",
-    "desc_loc": "Герой прыгает вперёд и бьётся спиной о землю, нанося урон всем противникам неподалёку. Если попасть хотя бы по одному вражескому герою, владелец ненадолго получит барьер, поглощающий урон всех типов.\n\nЕсли применить эту способность во время действия Rolling Thunder, движение не прекратится, а герой перепрыгнет через препятствия перед собой.",
-    "lore_loc": "Донтé воистину хорош именно в окружении врагов.",
-    "notes_loc": [],
-    "shard_loc": "",
-    "scepter_loc": "Добавляет к прыжку по 2 атаки от способности Swashbuckle в четырёх направлениях, наносящие %scepter_damage_outgoing_tooltip%%% от обычного урона.",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "2052",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 1,
-    "immunity": 4,
-    "dispellable": 2,
-    "max_level": 4,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      15,
-      12,
-      9,
-      6
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      75
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "damage",
-        "values_float": [
-          50,
-          100,
-          150,
-          200
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 6461,
+  "name": "pangolier_shield_crash",
+  "name_loc": "Shield Crash",
+  "desc_loc": "Pangolier jumps in the air and slams back to the ground in front of his current position damaging all enemies in a radius. Pangolier gains an all damage barrier for a short time if Shield Crash hits an enemy hero.\n\nForward movement is maintained if Shield Crash is used while Rolling Thunder is active, and allows Rolling Thunder to clear walls or cliffs.",
+  "lore_loc": "Only in the midst of his enemies does the Pangolier truly thrive.",
+  "notes_loc": [],
+  "shard_loc": "",
+  "scepter_loc": "Causes Shield Crash to cast a 2-attack Swashbuckle every 90 degrees around your hero that deals %scepter_damage_outgoing_tooltip%%% damage.",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "2052",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 1,
+  "immunity": 4,
+  "dispellable": 2,
+  "max_level": 4,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    15,
+    12,
+    9,
+    6
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    75
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "damage",
+      "values_float": [
+        50,
+        100,
+        150,
+        200
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "hero_shield",
-        "values_float": [
-          60,
-          120,
-          180,
-          240
-        ],
-        "is_percentage": false,
-        "heading_loc": "ЗДОРОВЬЕ БАРЬЕРА:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_pangolier_shield_crash_herostacks",
-            "value": 125,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "hero_shield",
+      "values_float": [
+        60,
+        120,
+        180,
+        240
+      ],
+      "is_percentage": false,
+      "heading_loc": "BARRIER:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_pangolier_shield_crash_herostacks",
+          "value": 125,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "duration",
-        "values_float": [
-          6
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ БАРЬЕРА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "duration",
+      "values_float": [
+        6
+      ],
+      "is_percentage": false,
+      "heading_loc": "BARRIER DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "radius",
-        "values_float": [
-          500
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "radius",
+      "values_float": [
+        500
+      ],
+      "is_percentage": false,
+      "heading_loc": "RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "can_double_jump",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "can_double_jump",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "min_damage_increase_pct",
-        "values_float": [
-          0
-        ],
-        "is_percentage": true,
-        "heading_loc": "МИН. УВЕЛИЧЕНИЕ УРОНА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "min_damage_increase_pct",
+      "values_float": [
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "MIN DAMAGE INCREASE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "max_damage_increase_pct",
-        "values_float": [
-          0
-        ],
-        "is_percentage": true,
-        "heading_loc": "МАКС. УВЕЛИЧЕНИЕ УРОНА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "max_damage_increase_pct",
+      "values_float": [
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAX DAMAGE INCREASE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "min_barrier_increase_pct_tooltip",
-        "values_float": [
-          0
-        ],
-        "is_percentage": true,
-        "heading_loc": "МИН. УВЕЛИЧЕНИЕ БАРЬЕРА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "min_barrier_increase_pct_tooltip",
+      "values_float": [
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "MIN BARRIER INCREASE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "jump_duration",
-        "values_float": [
-          0.4
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "jump_duration",
+      "values_float": [
+        0.4
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "jump_duration_gyroshell",
-        "values_float": [
-          0.75
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "jump_duration_gyroshell",
+      "values_float": [
+        0.75
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "jump_height",
-        "values_float": [
-          250
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "jump_height",
+      "values_float": [
+        250
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "jump_height_gyroshell",
-        "values_float": [
-          350
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "jump_height_gyroshell",
+      "values_float": [
+        350
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "jump_horizontal_distance",
-        "values_float": [
-          225
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "jump_horizontal_distance",
+      "values_float": [
+        225
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_damage_outgoing_tooltip",
-        "values_float": [
-          75
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_damage_outgoing_tooltip",
+      "values_float": [
+        75
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          75
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        75
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          15,
-          12,
-          9,
-          6
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_pangolier_shield_crash_cooldown",
-            "value": 1.5,
-            "operation": 2
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        15,
+        12,
+        9,
+        6
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_pangolier_shield_crash_cooldown",
+          "value": 1.5,
+          "operation": 2
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

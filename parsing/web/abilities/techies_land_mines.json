@@ -1,345 +1,343 @@
-[
-  {
-    "id": 5599,
-    "name": "techies_land_mines",
-    "name_loc": "Proximity Mines",
-    "desc_loc": "Устанавливает невидимую мину. Её невидимость невозможно раскрыть, но она станет видна, если противник зайдёт в область действия. Мина взорвётся, если противник будет %proximity_threshold% сек. находиться на расстоянии в %radius% от неё. Взрыв уменьшает сопротивление магии врагов и наносит им урон, зависящий от близости к мине: на расстоянии в %min_distance% достигается полный урон, а на краю области действия он составит %outer_damage%%%. Наносит постройкам %building_damage_pct%%% урона.",
-    "lore_loc": "Ночной кошмар Тотерина!",
-    "notes_loc": [
-      "Невозможно поместить в радиусе %placement_radius% от другой мины.",
-      "Мины не блокируют появление нейтральных крипов.",
-      "Мины остаются на земле, пока не взорвутся или не будут уничтожены.",
-      "Мины срабатывают от невидимых существ.",
-      "Вражеский герой получит 30 золота за уничтожение."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 1,
-    "behavior": "48",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 2,
-    "max_level": 3,
-    "cast_ranges": [
-      450
-    ],
-    "cast_points": [
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      0
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      110,
-      140,
-      170
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "radius",
-        "values_float": [
-          500
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС ВЗРЫВА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5599,
+  "name": "techies_land_mines",
+  "name_loc": "Proximity Mines",
+  "desc_loc": "Plant an invisible mine that cannot be detected by True Sight, but is visible if an enemy is within the active %radius% AoE of the mine. Mines detonate if an enemy is standing within the active AoE for %proximity_threshold% seconds dealing damage and temporarily reducing the enemy's Magic Resistance. The explosion deals full damage if the target is within %min_distance% radius and decreases up to %outer_damage%%% on the edge. Deals %building_damage_pct%%% damage to buildings.",
+  "lore_loc": "The bane of Toterin!",
+  "notes_loc": [
+    "Cannot be placed within %placement_radius% AoE of another Proximity Mine.",
+    "Proximity Mines do not block neutral creep camps from spawning.",
+    "Mines last until they explode or are destroyed.",
+    "Mines are triggered by invisible units.",
+    "Grants 30 gold if destroyed by an enemy hero."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 1,
+  "behavior": "48",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 2,
+  "max_level": 3,
+  "cast_ranges": [
+    450
+  ],
+  "cast_points": [
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    0
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    110,
+    140,
+    170
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "radius",
+      "values_float": [
+        500
+      ],
+      "is_percentage": false,
+      "heading_loc": "EXPLOSION RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "proximity_threshold",
-        "values_float": [
-          1
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "proximity_threshold",
+      "values_float": [
+        1
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage",
-        "values_float": [
-          400,
-          575,
-          750
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "damage",
+      "values_float": [
+        400,
+        575,
+        750
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "building_damage_pct",
-        "values_float": [
-          30
-        ],
-        "is_percentage": true,
-        "heading_loc": "УРОН ПОСТРОЙКАМ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "building_damage_pct",
+      "values_float": [
+        30
+      ],
+      "is_percentage": true,
+      "heading_loc": "BUILDING DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "activation_delay",
-        "values_float": [
-          1
-        ],
-        "is_percentage": false,
-        "heading_loc": "ВРЕМЯ ДО АКТИВАЦИИ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_techies_4",
-            "value": 0.8,
-            "operation": 2
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "activation_delay",
+      "values_float": [
+        1
+      ],
+      "is_percentage": false,
+      "heading_loc": "ACTIVATION DELAY:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_techies_4",
+          "value": 0.8,
+          "operation": 2
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "cast_range_scepter_bonus",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          300
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "cast_range_scepter_bonus",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        300
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "outer_damage",
-        "values_float": [
-          60
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "outer_damage",
+      "values_float": [
+        60
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "min_distance",
-        "values_float": [
-          150
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "min_distance",
+      "values_float": [
+        150
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "placement_radius",
-        "values_float": [
-          350
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "placement_radius",
+      "values_float": [
+        350
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "mres_reduction",
-        "values_float": [
-          15,
-          20,
-          25
-        ],
-        "is_percentage": true,
-        "heading_loc": "УМЕНЬШЕНИЕ СОПРОТИВЛЕНИЯ МАГИИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "mres_reduction",
+      "values_float": [
+        15,
+        20,
+        25
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAGIC RESISTANCE REDUCTION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "burn_duration",
-        "values_float": [
-          5
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "burn_duration",
+      "values_float": [
+        5
+      ],
+      "is_percentage": false,
+      "heading_loc": "DEBUFF DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          450
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        450
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCharges",
-        "values_float": [
-          3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCharges",
+      "values_float": [
+        3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityChargeRestoreTime",
-        "values_float": [
-          15
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_techies_3",
-            "value": 3,
-            "operation": 2
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityChargeRestoreTime",
+      "values_float": [
+        15
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_techies_3",
+          "value": 3,
+          "operation": 2
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          110,
-          140,
-          170
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        110,
+        140,
+        170
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

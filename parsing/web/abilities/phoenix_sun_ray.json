@@ -1,432 +1,430 @@
-[
-  {
-    "id": 5626,
-    "name": "phoenix_sun_ray",
-    "name_loc": "Sun Ray",
-    "desc_loc": "Герой выпускает из себя луч света ценой собственного здоровья. Луч наносит урон врагам и исцеляет союзников на определенное число плюс процент от общего запаса здоровья. Этот процент тем выше, чем дольше применяется луч.",
-    "lore_loc": "Потоки, что несут энергию звезды, не шире нескольких атомов.",
-    "notes_loc": [
-      "Ширина луча — %radius%, длина — %abilitycastrange%.",
-      "Действие заканчивается при оглушении, безмолвии, проклятье, сне или поднятии в воздух.",
-      "Активация предметов и других способностей не отменяет применение этой способности."
-    ],
-    "shard_loc": "Способность замедляет врагов на %shard_move_slow_pct%%%. Позволяет применять её под действием Supernova.",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "16",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 3,
-    "max_level": 4,
-    "cast_ranges": [
-      1200
-    ],
-    "cast_points": [
-      0.01
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      30
-    ],
-    "durations": [
-      6
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      100,
-      110,
-      120,
-      130
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "hp_cost_perc_per_second",
-        "values_float": [
-          5
-        ],
-        "is_percentage": true,
-        "heading_loc": "ЗАТРАТЫ ЗДОРОВЬЯ В СЕКУНДУ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5626,
+  "name": "phoenix_sun_ray",
+  "name_loc": "Sun Ray",
+  "desc_loc": "Phoenix expels a beam of light at the cost of its own health. The beam damages enemies and heals allies for a base amount plus a percentage of their health. The percentage increases as the beam continues to fire.",
+  "lore_loc": "The vent through which such stellar energy flows is mere atoms wide.",
+  "notes_loc": [
+    "Sun Ray has a width of %radius% units, and a length of %abilitycastrange% units.",
+    "Sun Ray is canceled if Phoenix gets stunned, silenced, cycloned, hexed or slept.",
+    "Phoenix can use items and abilities without canceling Sun Ray."
+  ],
+  "shard_loc": "Allows Sun Ray to be cast during Supernova, and slows affected enemies by %shard_move_slow_pct%%%.",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "16",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 3,
+  "max_level": 4,
+  "cast_ranges": [
+    1200
+  ],
+  "cast_points": [
+    0.01
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    30
+  ],
+  "durations": [
+    6
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    100,
+    110,
+    120,
+    130
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "hp_cost_perc_per_second",
+      "values_float": [
+        5
+      ],
+      "is_percentage": true,
+      "heading_loc": "HEALTH COST PER SECOND:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "base_damage",
-        "values_float": [
-          15,
-          20,
-          25,
-          30
-        ],
-        "is_percentage": false,
-        "heading_loc": "БАЗОВЫЙ УРОН В СЕКУНДУ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "base_damage",
+      "values_float": [
+        15,
+        20,
+        25,
+        30
+      ],
+      "is_percentage": false,
+      "heading_loc": "BASE DAMAGE PER SECOND:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "hp_perc_damage",
-        "values_float": [
-          1.5,
-          3,
-          4.5,
-          6
-        ],
-        "is_percentage": true,
-        "heading_loc": "МАКС. УРОН ОТ ЗДОРОВЬЯ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_phoenix_5",
-            "value": 1.5,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "hp_perc_damage",
+      "values_float": [
+        1.5,
+        3,
+        4.5,
+        6
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAX DAMAGE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_phoenix_5",
+          "value": 1.5,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "base_heal",
-        "values_float": [
-          7,
-          10,
-          13,
-          16
-        ],
-        "is_percentage": false,
-        "heading_loc": "БАЗОВОЕ ЛЕЧЕНИЕ В СЕКУНДУ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "base_heal",
+      "values_float": [
+        7,
+        10,
+        13,
+        16
+      ],
+      "is_percentage": false,
+      "heading_loc": "BASE HEAL PER SECOND:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "hp_perc_heal",
-        "values_float": [
-          0.5,
-          1,
-          1.5,
-          2
-        ],
-        "is_percentage": true,
-        "heading_loc": "МАКС. ЛЕЧЕНИЕ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "hp_perc_heal",
+      "values_float": [
+        0.5,
+        1,
+        1.5,
+        2
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAX HEAL:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "radius",
-        "values_float": [
-          130
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "radius",
+      "values_float": [
+        130
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "tick_interval",
-        "values_float": [
-          0.2
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "tick_interval",
+      "values_float": [
+        0.2
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "forward_move_speed",
-        "values_float": [
-          250
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "forward_move_speed",
+      "values_float": [
+        250
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "turn_rate_initial",
-        "values_float": [
-          250
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "turn_rate_initial",
+      "values_float": [
+        250
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "turn_rate",
-        "values_float": [
-          25
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "turn_rate",
+      "values_float": [
+        25
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "shard_move_slow_pct",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [
-          10
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "shard_move_slow_pct",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [
+        10
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "focal_point_max_multiplier",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "focal_point_max_multiplier",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "focal_point_start_length_pct",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "focal_point_start_length_pct",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "focal_point_full_length_tooltip_only",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "focal_point_full_length_tooltip_only",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "focal_point_blind_stack_multiplier",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "focal_point_blind_stack_multiplier",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          1200
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        1200
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityDuration",
-        "values_float": [
-          6
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityDuration",
+      "values_float": [
+        6
+      ],
+      "is_percentage": false,
+      "heading_loc": "MAX DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.01
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.01
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          100,
-          110,
-          120,
-          130
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          30
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": true,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        30
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": true,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

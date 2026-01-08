@@ -1,305 +1,303 @@
-[
-  {
-    "id": 5654,
-    "name": "winter_wyvern_winters_curse",
-    "name_loc": "Winter's Curse",
-    "desc_loc": "Развеивает с противника эффекты и примораживает его к земле, повергая окружающих его союзников в безумие и заставляя их атаковать цель способности с повышенной скоростью. Противники под этим эффектом получают урон только от своих союзников, владельца способности и его подконтрольных существ.",
-    "lore_loc": "Старейшее из заклинаний, почитаемых драконами-писателями, открывает глаза на истину: иногда враг моего врага — мой враг.",
-    "notes_loc": [
-      "Если цель умрёт от рук союзников, убийство засчитается владельцу способности.",
-      "Проходит сквозь невосприимчивость к магии у цели способности, но не у её союзников."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 1,
-    "behavior": "35184372088872",
-    "target_team": 2,
-    "target_type": 3,
-    "flags": 16,
-    "damage": 0,
-    "immunity": 3,
-    "dispellable": 0,
-    "max_level": 3,
-    "cast_ranges": [
-      800
-    ],
-    "cast_points": [
-      0.3,
-      0.3,
-      0.3,
-      0.3
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      100,
-      90,
-      80
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      150,
-      200,
-      250
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "radius",
-        "values_float": [
-          525
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5654,
+  "name": "winter_wyvern_winters_curse",
+  "name_loc": "Winter's Curse",
+  "desc_loc": "Winter Wyvern dispells then freezes an enemy in place while striking those nearby with a maddening curse which causes them to attack their frozen ally with increased attack speed. The frozen ally and those cursed to attack their ally are immune to all damage from their enemies with the exception of damage from Winter Wyvern or her controlled units.",
+  "lore_loc": "The oldest of the bookwurm's spells, this curse lends truth to the old saw: sometimes the enemy of my enemy is my enemy still.",
+  "notes_loc": [
+    "If the target dies to its allies, Winter Wyvern will receive credit for the kill.",
+    "Will only pierce the spell immunity of the primary target, not the target's surrounding allies."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 1,
+  "behavior": "35184372088872",
+  "target_team": 2,
+  "target_type": 3,
+  "flags": 16,
+  "damage": 0,
+  "immunity": 3,
+  "dispellable": 0,
+  "max_level": 3,
+  "cast_ranges": [
+    800
+  ],
+  "cast_points": [
+    0.3,
+    0.3,
+    0.3,
+    0.3
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    100,
+    90,
+    80
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    150,
+    200,
+    250
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "radius",
+      "values_float": [
+        525
+      ],
+      "is_percentage": false,
+      "heading_loc": "CURSE RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage_reduction",
-        "values_float": [
-          100
-        ],
-        "is_percentage": true,
-        "heading_loc": "УМЕНЬШЕНИЕ УРОНА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "damage_reduction",
+      "values_float": [
+        100
+      ],
+      "is_percentage": true,
+      "heading_loc": "CURSE DAMAGE REDUCTION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bonus_attack_speed",
-        "values_float": [
-          65
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_winter_wyvern_3",
-            "value": 60,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_attack_speed",
+      "values_float": [
+        65
+      ],
+      "is_percentage": false,
+      "heading_loc": "CURSE ATTACK SPEED:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_winter_wyvern_3",
+          "value": 60,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "duration",
-        "values_float": [
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "МИН. ДЛИТЕЛЬНОСТЬ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "duration",
+      "values_float": [
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "CURSE MINIMUM DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "max_duration",
-        "values_float": [
-          4,
-          5.5,
-          7
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "max_duration",
+      "values_float": [
+        4,
+        5.5,
+        7
+      ],
+      "is_percentage": false,
+      "heading_loc": "CURSE MAXIMUM DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bonus_duration_per_hero",
-        "values_float": [
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДОП. ДЛИТЕЛЬНОСТЬ ЗА ГЕРОЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_duration_per_hero",
+      "values_float": [
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "CURSE BONUS DURATION PER HERO:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bonus_duration_per_creep",
-        "values_float": [
-          0.5
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДОП. ДЛИТЕЛЬНОСТЬ ЗА КРИПА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_duration_per_creep",
+      "values_float": [
+        0.5
+      ],
+      "is_percentage": false,
+      "heading_loc": "CURSE BONUS DURATION PER CREEP:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "transfer_on_death",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "transfer_on_death",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "transfer_duration_pct",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "transfer_duration_pct",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          800
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        800
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          150,
-          200,
-          250
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        150,
+        200,
+        250
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          100,
-          90,
-          80
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        100,
+        90,
+        80
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}
