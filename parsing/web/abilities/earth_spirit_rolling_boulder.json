@@ -1,337 +1,335 @@
-[
-  {
-    "id": 5609,
-    "name": "earth_spirit_rolling_boulder",
-    "name_loc": "Rolling Boulder",
-    "desc_loc": "Герой сворачивается в валун, который после задержки в %delay% сек. катится в выбранном направлении, оглушает врагов и наносит им урон в размере %damage% + %damage_str%%% от силы. Он остановится, если попадёт во вражеского героя или будет оглушён. Валун станет сильнее, если попадёт на каменную копию: он покатится быстрее и дальше, а оглушение от него будет дольше.",
-    "lore_loc": "Используя связь с землёй, Каолин притягивает к себе камни, образуя защитный шар, в котором он может перекатываться на небольшие расстояния.",
-    "notes_loc": [
-      "Если валун попадёт на каменную копию, она будет уничтожена.",
-      "Радиус валуна — %radius%.",
-      "В валуне герой неуязвим, и его нельзя выбрать целью."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "134742032",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 1,
-    "max_level": 4,
-    "cast_ranges": [
-      3000
-    ],
-    "cast_points": [
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      16,
-      12,
-      8,
-      4
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      50
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "radius",
-        "values_float": [
-          160
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5609,
+  "name": "earth_spirit_rolling_boulder",
+  "name_loc": "Rolling Boulder",
+  "desc_loc": "Earth Spirit gathers himself into a boulder and, after a %delay%s delay, rolls toward the target location, dealing %damage% + %damage_str%%% STR damage and stunning enemy units. He will stop if he collides with an enemy hero or is stunned. If he rolls over a Stone Remnant, he will travel further and faster, and stun enemies for longer.",
+  "lore_loc": "Calling upon his connection to the land, the Earth Spirit draws loose stone to him, which forms a protective ball that he can use to roll short distances.",
+  "notes_loc": [
+    "Rolling over a Stone Remnant will destroy the Remnant.",
+    "The boulder has a radius of %radius%.",
+    "Earth Spirit is untargetable and invulnerable while rolling."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "134742032",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 1,
+  "max_level": 4,
+  "cast_ranges": [
+    3000
+  ],
+  "cast_points": [
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    16,
+    12,
+    8,
+    4
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    50
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "radius",
+      "values_float": [
+        160
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "speed",
-        "values_float": [
-          1000
-        ],
-        "is_percentage": false,
-        "heading_loc": "СКОРОСТЬ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "speed",
+      "values_float": [
+        1000
+      ],
+      "is_percentage": false,
+      "heading_loc": "SPEED:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "rock_speed",
-        "values_float": [
-          1600
-        ],
-        "is_percentage": false,
-        "heading_loc": "СКОРОСТЬ С КОПИЕЙ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "rock_speed",
+      "values_float": [
+        1600
+      ],
+      "is_percentage": false,
+      "heading_loc": "SPEED (REMNANT):",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "distance",
-        "values_float": [
-          800
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДАЛЬНОСТЬ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_earth_spirit_4",
-            "value": 150,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "distance",
+      "values_float": [
+        800
+      ],
+      "is_percentage": false,
+      "heading_loc": "DISTANCE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_earth_spirit_4",
+          "value": 150,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "rock_distance_multiplier",
-        "values_float": [
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "МНОЖИТЕЛЬ ДАЛЬНОСТИ С КОПИЕЙ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "rock_distance_multiplier",
+      "values_float": [
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "DISTANCE MULTIPLIER (REMNANT):",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "delay",
-        "values_float": [
-          0.6
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "delay",
+      "values_float": [
+        0.6
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage",
-        "values_float": [
-          60,
-          70,
-          80,
-          90
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "damage",
+      "values_float": [
+        60,
+        70,
+        80,
+        90
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "stun_duration",
-        "values_float": [
-          0.3,
-          0.5,
-          0.7,
-          0.9
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_earth_spirit_rolling_boulder_stun",
-            "value": 0.3,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "stun_duration",
+      "values_float": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "is_percentage": false,
+      "heading_loc": "STUN DURATION:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_earth_spirit_rolling_boulder_stun",
+          "value": 0.3,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "rock_bonus_duration",
-        "values_float": [
-          0.3,
-          0.5,
-          0.7,
-          0.9
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДОП. ОГЛУШЕНИЕ С КОПИЕЙ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "rock_bonus_duration",
+      "values_float": [
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "is_percentage": false,
+      "heading_loc": "ROCK BONUS STUN DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage_str",
-        "values_float": [
-          100
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_earth_spirit",
-            "value": 175,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "damage_str",
+      "values_float": [
+        100
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_earth_spirit",
+          "value": 175,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "destroy_stone",
-        "values_float": [
-          1
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "destroy_stone",
+      "values_float": [
+        1
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          3000
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        3000
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          50
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        50
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          16,
-          12,
-          8,
-          4
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        16,
+        12,
+        8,
+        4
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

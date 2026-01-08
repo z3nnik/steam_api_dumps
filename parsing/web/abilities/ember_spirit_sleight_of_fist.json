@@ -1,274 +1,272 @@
-[
-  {
-    "id": 5604,
-    "name": "ember_spirit_sleight_of_fist",
-    "name_loc": "Sleight of Fist",
-    "desc_loc": "Герой стремительно атакует всех врагов в указанной области, а затем возвращается к своему исходному местонахождению. Наносит больше урона героям.",
-    "lore_loc": "Опытный воин должен маневрировать и пробиваться сквозь врагов, сжигая всех на своём пути.",
-    "notes_loc": [
-      "Цели выбираются в момент применения способности.",
-      "Герой наносит обычную атаку по каждой цели с интервалом в %attack_interval% сек.",
-      "Любые эффекты атаки (например, критический удар, оглушение или прорубание) будут срабатывать как обычно.",
-      "Во время действия можно применять способности и использовать предметы."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "524336",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 1,
-    "immunity": 3,
-    "dispellable": 0,
-    "max_level": 4,
-    "cast_ranges": [
-      650
-    ],
-    "cast_points": [
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      13,
-      11,
-      9,
-      7
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      60,
-      65,
-      70,
-      75
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "radius",
-        "values_float": [
-          250,
-          350,
-          450,
-          550
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5604,
+  "name": "ember_spirit_sleight_of_fist",
+  "name_loc": "Sleight of Fist",
+  "desc_loc": "Ember Spirit dashes around with blazing speed, attacking all enemies in the targeted area of effect, then returning to his start location.  Deals bonus damage to heroes.",
+  "lore_loc": "The studied warrior must whip and weave through its enemies, burning each without pause.",
+  "notes_loc": [
+    "Targets are determined when the spell is cast.",
+    "A regular attack is done to each target every %attack_interval% seconds.",
+    "Any attack modifier that Xin has (such as Critical Strike, Bash, Cleave, or Orb effects) will be applied normally on these attacks.",
+    "Abilities and items can be used while Sleight of Fist is active."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "524336",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 1,
+  "immunity": 3,
+  "dispellable": 0,
+  "max_level": 4,
+  "cast_ranges": [
+    650
+  ],
+  "cast_points": [
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    13,
+    11,
+    9,
+    7
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    60,
+    65,
+    70,
+    75
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "radius",
+      "values_float": [
+        250,
+        350,
+        450,
+        550
+      ],
+      "is_percentage": false,
+      "heading_loc": "RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bonus_hero_damage",
-        "values_float": [
-          25,
-          70,
-          115,
-          160
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДОП. УРОН ГЕРОЯМ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_ember_spirit_6",
-            "value": 50,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_hero_damage",
+      "values_float": [
+        25,
+        70,
+        115,
+        160
+      ],
+      "is_percentage": false,
+      "heading_loc": "BONUS HERO DAMAGE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_ember_spirit_6",
+          "value": 50,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "attack_interval",
-        "values_float": [
-          0.25
-        ],
-        "is_percentage": false,
-        "heading_loc": "ИНТЕРВАЛ МЕЖДУ АТАКАМИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "attack_interval",
+      "values_float": [
+        0.25
+      ],
+      "is_percentage": false,
+      "heading_loc": "ATTACK INTERVAL:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "min_enemies_for_double_sleight",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "min_enemies_for_double_sleight",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "second_attack_damage_penalty",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "second_attack_damage_penalty",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          650
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        650
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCharges",
-        "values_float": [],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_ember_spirit_4",
-            "value": 2,
-            "operation": 5
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCharges",
+      "values_float": [],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_ember_spirit_4",
+          "value": 2,
+          "operation": 5
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityChargeRestoreTime",
-        "values_float": [
-          13,
-          11,
-          9,
-          7
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityChargeRestoreTime",
+      "values_float": [
+        13,
+        11,
+        9,
+        7
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          60,
-          65,
-          70,
-          75
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        60,
+        65,
+        70,
+        75
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          13,
-          11,
-          9,
-          7
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_ember_spirit_4",
-            "value": 0,
-            "operation": 5
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        13,
+        11,
+        9,
+        7
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_ember_spirit_4",
+          "value": 0,
+          "operation": 5
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

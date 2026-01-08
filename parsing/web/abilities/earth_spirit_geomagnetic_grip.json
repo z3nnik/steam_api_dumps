@@ -1,296 +1,294 @@
-[
-  {
-    "id": 5610,
-    "name": "earth_spirit_geomagnetic_grip",
-    "name_loc": "Geomagnetic Grip",
-    "desc_loc": "Герой притягивает к себе выбранную каменную копию или союзника. Враги, которых заденет цель, будут обезмолвлены.<br><br>Если притянуть копию, задетые враги также получат урон.<br><br>Дальность применения на союзников меньше, чем на копию.",
-    "lore_loc": "Подобное притягивается подобным. Ничто не устоит перед зовом Каолина — даже минералы в крови и костях живых существ.",
-    "notes_loc": [
-      "Не работает на существ под воздействием способностей Chronosphere, Duel или Black Hole.",
-      "Можно применять на союзных крипов."
-    ],
-    "shard_loc": "Уменьшает перезарядку до %AbilityCooldown% сек. Увеличивает дальность и скорость притягивания при применении на союзника.",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "134217752",
-    "target_team": 1,
-    "target_type": 3,
-    "flags": 64,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 2,
-    "max_level": 4,
-    "cast_ranges": [
-      1000,
-      1100,
-      1200,
-      1300
-    ],
-    "cast_points": [
-      0.1
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      13
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      75
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "radius",
-        "values_float": [
-          180
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5610,
+  "name": "earth_spirit_geomagnetic_grip",
+  "name_loc": "Geomagnetic Grip",
+  "desc_loc": "Earth Spirit pulls the target Stone Remnant or Allied Unit. Enemies struck by the gripped target will be silenced.<br><br>Pulled Remnants also deal damage to struck enemies.<br><br>Cast range is reduced when targeting an ally.",
+  "lore_loc": "Like calls to like. Even the minerals found in the blood and bones of living beings are not immune to the call of the Earth Spirit.",
+  "notes_loc": [
+    "Will not work on a unit inside Chronosphere, Duel, or Black Hole.",
+    "Geomagnetic Grip can also target allied creeps."
+  ],
+  "shard_loc": "Decreases cooldown to %AbilityCooldown%s and increases allied unit cast range and pull speed.",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "134217752",
+  "target_team": 1,
+  "target_type": 3,
+  "flags": 64,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 2,
+  "max_level": 4,
+  "cast_ranges": [
+    1000,
+    1100,
+    1200,
+    1300
+  ],
+  "cast_points": [
+    0.1
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    13
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    75
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "radius",
+      "values_float": [
+        180
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "rock_damage",
-        "values_float": [
-          75,
-          150,
-          225,
-          300
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН ОТ КОПИИ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_earth_spirit_5",
-            "value": 175,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "rock_damage",
+      "values_float": [
+        75,
+        150,
+        225,
+        300
+      ],
+      "is_percentage": false,
+      "heading_loc": "REMNANT DAMAGE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_earth_spirit_5",
+          "value": 175,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "pull_units_per_second",
-        "values_float": [
-          900
-        ],
-        "is_percentage": false,
-        "heading_loc": "СКОРОСТЬ ПРИТЯГИВАНИЯ КОПИИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "pull_units_per_second",
+      "values_float": [
+        900
+      ],
+      "is_percentage": false,
+      "heading_loc": "REMNANT PULL SPEED:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "duration",
-        "values_float": [
-          2,
-          2.5,
-          3,
-          3.5
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ БЕЗМОЛВИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "duration",
+      "values_float": [
+        2,
+        2.5,
+        3,
+        3.5
+      ],
+      "is_percentage": false,
+      "heading_loc": "SILENCE DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "pull_units_per_second_heroes",
-        "values_float": [
-          600
-        ],
-        "is_percentage": false,
-        "heading_loc": "СКОРОСТЬ ПРИТЯГИВАНИЯ СОЮЗНИКА:",
-        "bonuses": [],
-        "values_shard": [
-          50
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "pull_units_per_second_heroes",
+      "values_float": [
+        600
+      ],
+      "is_percentage": false,
+      "heading_loc": "ALLIED UNIT PULL SPEED:",
+      "bonuses": [],
+      "values_shard": [
+        50
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "cast_range_heroes",
-        "values_float": [
-          550,
-          600,
-          650,
-          700
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ НА СОЮЗНИКОВ:",
-        "bonuses": [],
-        "values_shard": [
-          50
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "cast_range_heroes",
+      "values_float": [
+        550,
+        600,
+        650,
+        700
+      ],
+      "is_percentage": false,
+      "heading_loc": "ALLIED UNIT CAST RANGE:",
+      "bonuses": [],
+      "values_shard": [
+        50
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "speed",
-        "values_float": [
-          800
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "speed",
+      "values_float": [
+        800
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "total_pull_distance",
-        "values_float": [
-          1400
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "total_pull_distance",
+      "values_float": [
+        1400
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          1000,
-          1100,
-          1200,
-          1300
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        1000,
+        1100,
+        1200,
+        1300
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.1
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.1
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          75
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        75
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          13
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [
-          3
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": true,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        13
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [
+        3
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": true,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}
