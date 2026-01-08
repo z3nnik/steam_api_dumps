@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_undying",
   "order_id": 84,
   "name_loc": "Undying",
-  "bio_loc": "Как давно он потерял своё имя? Запустелые руины его разума больше не знают.\r\n\t\t\t\t<br><br>Он смутно припоминает доспехи, знамёна и угрюмых собратьев, скачущих бок о бок. Он помнит битву: боль и страх мёртвой хваткой вырвали его из седла. Он помнит ужас, когда вместе с другими воинами пал в бездонный зев Мёртвого бога в угоду его голоду и погребальной песни. В глубокой тьме их покинуло время. Их покинули мысли. Их покинул разум. Но не голод. Брат поднял на брата ломаные зубы и ногти. И началось: сначала далёкая, едва слышимая нота, за ней другая, затем ещё одна, неизбежно и нескончаемо. Этот хор постепенно вырос в сплошную стену звука, пожирающую все прочие мысли, пока не осталось оных. Песнь панихиды поглотила воина, и он простёр свои руки к Мёртвому богу, принявший свою участь. Но ей была отнюдь не смерть. Мёртвый бог требовал войны. В чреве великой бездны он узнал своё новое предназначение: нести погребальную песнь, поднимая мертвецов против ещё живых существ. Его новое имя — Undying, глашатай Мёртвого бога. Его новая цель — восстать, пасть и восстать вновь, лишь бы песнь смерти не прекращала литься ни на миг.",
-  "hype_loc": "Волочась к битве, Undying даёт врагам выбор: они либо бегут от его ярости, либо погибают от неё же. Он <b>забирает себе жизненные силы</b> противников и <b>призывает толпы цепких мертвецов</b>. К моменту, когда он наконец превратится в <b>массивного трупного голема</b>, врагов может уже не стать.",
-  "npe_desc_loc": "Призывает полчища зомби, атакующих врага",
+  "bio_loc": "How long has it been since he lost his name? The torn ruin of his mind no longer knows.\r\n\t\t\t\t<br><br>Dimly he recalls armor and banners and grim-faced kin riding at his side. He remembers a battle: pain and fear as pale hands ripped him from his saddle. He remembers terror as they threw him into the yawning pit of the Dead God alongside his brothers, to hear the Dirge and be consumed into nothingness. In the darkness below, time left them. Thought left them. Sanity left them. Hunger, however, did not. They turned on each other with split fingernails and shattered teeth. Then it came: distant at first, a fragile note at the edge of perception, joined by another, then another, inescapable and unending. The chorus grew into a living wall of sound pulsing in his mind until no other thought survived. With the Dirge consuming him, he opened his arms to the Dead God and welcomed his obliteration. Yet destruction was not what he'd been chosen for. The Dead God demanded war. In the belly of the great nothing, he was granted a new purpose: to spread the Dirge across the land, to rally the sleepless dead against the living. He was to become the Undying, the herald of the Dead God, to rise and fall and rise again whenever his body failed him. To trudge on through death unending, that the Dirge might never end.",
+  "hype_loc": "Shambling into battle, Undying forces enemies to decide whether to flee his wrath or be torn apart by it. He <b>drains strength</b> from his foes, and <b>summons a horde of clawing undead</b>. When he finally becomes a <b>hulking flesh golem</b>, his enemies may already be overwhelmed.",
+  "npe_desc_loc": "Summons hordes of zombies to attack his foes",
   "facets": [
     {
       "color": 2,
       "title_loc": "Rotting Mitts",
-      "description_loc": "Герой призывает зомби, атакуя под действием Flesh Golem.",
+      "description_loc": "While transformed into a Flesh Golem, attacks spawn a zombie.",
       "name": "undying_rotting_mitts",
       "icon": "summons",
       "gradient_id": 4,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Ripped",
-      "description_loc": "Применение Soul Rip на союзника увеличит его силу на долю от силы владельца этой способности.",
+      "description_loc": "Casting Soul Rip on allies increases their Strength by a percentage of Undying's Strength.",
       "name": "undying_ripped",
       "icon": "strength",
       "gradient_id": 1,
@@ -66,15 +66,15 @@
       "id": 5442,
       "name": "undying_decay",
       "name_loc": "Decay",
-      "desc_loc": "Наносит урон вражеским героям в указанной области и передаёт часть их силы владельцу способности. Урон крипам умножается на %creep_damage_multiplier%.",
-      "lore_loc": "Живые просто заимствуют силу у мертвецов.",
+      "desc_loc": "Undying steals strength from all enemy heroes in an area, dealing base damage as he claims the enemy's strength for himself. Deals %creep_damage_multiplier%x damage to creeps.",
+      "lore_loc": "The strength of the living is simply borrowed from the strength of the dead.",
       "notes_loc": [
-        "Украденная сила складывается, но сила цели не может опуститься ниже 1.",
-        "Кража силы происходит до нанесения урона.",
-        "Действует на невидимых существ."
+        "The strength stolen stacks, but can't cause a hero to have strength below 1.",
+        "The strength steal takes effect before the damage is dealt.",
+        "Affects invisible units."
       ],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает число отнимаемой силы.",
+      "scepter_loc": "Increases strength steal.",
       "facets_loc": [
         "",
         ""
@@ -130,7 +130,7 @@
             140
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_undying_8",
@@ -153,7 +153,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ПОХИЩЕНИЕ СИЛЫ:",
+          "heading_loc": "STRENGTH STEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -172,7 +172,7 @@
             35
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ КРАЖИ:",
+          "heading_loc": "STEAL DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -189,7 +189,7 @@
             325
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -366,18 +366,18 @@
       "id": 5443,
       "name": "undying_soul_rip",
       "name_loc": "Soul Rip",
-      "desc_loc": "Герой вырывает жизненные силы из всех существ рядом с целью, излечивая союзника или нанося урон противнику. Также этой способностью можно лечить надгробие от способности Tombstone.",
-      "lore_loc": "Если рядом глашатай смерти, даже союзники чувствуют отчаяние.",
+      "desc_loc": "Undying rips health away from all nearby units and uses it to heal an ally, or damage an enemy. Soul Rip can also be used to heal Tombstone.",
+      "lore_loc": "Even allies feel despair in Undying's presence.",
       "notes_loc": [
-        "Может лечить надгробие от способности Tombstone, но не действует на другие постройки.",
-        "При подсчёте существ не учитываются невидимые и неуязвимые существа, а также существа в тумане войны и невосприимчивые к магии враги.",
-        "При подсчёте существ учитываются невосприимчивые к магии союзники, в том числе зомби."
+        "Can heal Tombstone, but can't heal or damage other buildings.",
+        "Does not rip from invisible units, invulnerable units, units in the fog of war, or spell immune enemies.",
+        "Does rip from spell immune allies, including zombies."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Применение Soul Rip на союзника увеличит его силу на долю от силы владельца этой способности."
+        "Casting Soul Rip on allies increases their Strength by a percentage of Undying's Strength."
       ],
       "type": 0,
       "behavior": "134217736",
@@ -430,7 +430,7 @@
             50
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН/ЛЕЧЕНИЕ ЗА СУЩЕСТВО:",
+          "heading_loc": "DAMAGE/HEAL PER UNIT:",
           "bonuses": [
             {
               "name": "special_bonus_unique_undying_6",
@@ -453,7 +453,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМУМ ЦЕЛЕЙ:",
+          "heading_loc": "MAX UNITS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -470,7 +470,7 @@
             1300
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЕЙСТВИЯ:",
+          "heading_loc": "RIP RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -490,7 +490,7 @@
             16
           ],
           "is_percentage": false,
-          "heading_loc": "ЛЕЧЕНИЕ НАДГРОБИЯ:",
+          "heading_loc": "TOMBSTONE HEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -507,7 +507,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ПРИРОСТ СИЛЫ:",
+          "heading_loc": "STRENGTH GAIN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -526,7 +526,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -650,14 +650,14 @@
       "id": 5444,
       "name": "undying_tombstone",
       "name_loc": "Tombstone",
-      "desc_loc": "Поднимает в указанной точке надгробный камень, который периодически призывает зомби рядом с каждым врагом в области действия. Зомби замедляют цель своих атак, а если её здоровье падает ниже определённого уровня, то скорость атаки и передвижения зомби увеличивается.",
-      "lore_loc": "Панихида взывает к падшим братьям и направляет их в бой во имя Мёртвого бога.",
+      "desc_loc": "Summons a tombstone at the target point.  Zombies will frequently spawn next to every enemy unit in the area around the Tombstone, and attack them.  Zombies have the Deathlust ability, which causes their attacks to slow the target, and if the target reaches below a certain amount of health, increases the attack and movement speed of the zombie.",
+      "lore_loc": "Dirge calls on his fallen brothers to fight for the Dead God.",
       "notes_loc": [
-        "Надгробие невосприимчиво к магии, но на него действует способность Soul Rip.",
-        "Зомби и надгробие невосприимчивы к магии.",
-        "Если цель зомби погибла или вышла из зоны видимости, зомби умрёт."
+        "Tombstone is Spell Immune, but can be healed by Soul Rip.",
+        "Zombies and Tombstone are Spell Immune.",
+        "If their initial target dies or goes out of vision, the Zombie will die."
       ],
-      "shard_loc": "Позволяет применить эту способность на союзного героя, чтобы спрятать его в надгробии. Кроме того, союзный герой может спрятаться сам, нажав на надгробие правой кнопкой мыши. Оказавшийся в надгробии герой не сможет выйти из него в течение %tombstone_bunker_cd% сек., а затем ещё столько же времени не сможет спрятаться обратно. Если надгробие уничтожат с героем внутри, тот будет оглушён на %tombstone_stun_penalty% сек.",
+      "shard_loc": "Tombstone can be cast on an allied hero to bunker inside of the tombstone. Heroes that enter the Tombstone cannot leave for %tombstone_bunker_cd% seconds nor can they re-enter after leaving. If the tombstone is destroyed with a hero inside, that hero gets stunned for %tombstone_stun_penalty% seconds.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -737,7 +737,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "АТАК ДЛЯ УНИЧТОЖЕНИЯ:",
+          "heading_loc": "ATTACKS TO DESTROY:",
           "bonuses": [
             {
               "name": "special_bonus_unique_undying_5",
@@ -760,7 +760,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДЕЙСТВИЯ НАДГРОБИЯ:",
+          "heading_loc": "TOMBSTONE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -777,7 +777,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПОЯВЛЕНИЯ ЗОМБИ:",
+          "heading_loc": "ZOMBIE SPAWN RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -794,7 +794,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ПОРОГ ЗДОРОВЬЯ ДЛЯ УСИЛЕНИЯ ЗОМБИ:",
+          "heading_loc": "DEATHLUST HEALTH THRESHOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -814,7 +814,7 @@
             2.8
           ],
           "is_percentage": false,
-          "heading_loc": "ИНТЕРВАЛ ПОЯВЛЕНИЯ ЗОМБИ:",
+          "heading_loc": "ZOMBIE SPAWN INTERVAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -831,7 +831,7 @@
             34
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ АТАК ЗОМБИ:",
+          "heading_loc": "ZOMBIE ATTACK DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_undying",
@@ -1049,8 +1049,8 @@
       "id": 1360,
       "name": "undying_ceaseless_dirge",
       "name_loc": "Ceaseless Dirge",
-      "desc_loc": "Погибнув, герой мгновенно возродится у фонтана. В начале игры эта способность перезаряжается. Перезарядку этой способности нельзя сбросить.",
-      "lore_loc": "Неумолимый марш глашатая не закончится, пока звучит панихида Мёртвого бога.",
+      "desc_loc": "When Undying dies he will instantly respawn in the fountain. Begins the game on cooldown. Cannot be refreshed.",
+      "lore_loc": "Only when the Dirge of the Dead God ceases will this soldier's march finally end.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1146,13 +1146,13 @@
       "id": 5447,
       "name": "undying_flesh_golem",
       "name_loc": "Flesh Golem",
-      "desc_loc": "Герой превращается в ужасающего голема из плоти. Голем имеет увеличенную силу, а его атаки замедляют жертв и увеличивают получаемый ими урон.",
-      "lore_loc": "Плоть свежих мертвецов усиливает чуму глашатая смерти.",
+      "desc_loc": "Undying transforms into a horrifying flesh golem. Gains a percentage increase to strength and imbues attacks with a slow and damage amplification.",
+      "lore_loc": "The flesh of the recently dead add to the power of Dirge's plague.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Герой призывает зомби, атакуя под действием Flesh Golem.",
+        "While transformed into a Flesh Golem, attacks spawn a zombie.",
         ""
       ],
       "type": 1,
@@ -1201,7 +1201,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1220,7 +1220,7 @@
             35
           ],
           "is_percentage": true,
-          "heading_loc": "УВЕЛИЧЕНИЕ УРОНА:",
+          "heading_loc": "DAMAGE AMPLIFICATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1237,7 +1237,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1256,7 +1256,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СИЛА:",
+          "heading_loc": "STRENGTH MULTIPLIER:",
           "bonuses": [
             {
               "name": "special_bonus_unique_undying_4",
@@ -1279,7 +1279,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1296,7 +1296,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVESPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1332,7 +1332,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ ЗОМБИ:",
+          "heading_loc": "ZOMBIE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1417,7 +1417,7 @@
     {
       "id": 813,
       "name": "special_bonus_unique_undying_8",
-      "name_loc": "+{s:bonus_decay_damage} к урону от Decay",
+      "name_loc": "+{s:bonus_decay_damage} Decay Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1479,7 +1479,7 @@
     {
       "id": 807,
       "name": "special_bonus_unique_undying_7",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Tombstone",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Tombstone Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1541,7 +1541,7 @@
     {
       "id": 6155,
       "name": "special_bonus_unique_undying",
-      "name_loc": "+{s:bonus_zombie_damage_tooltip} к урону зомби",
+      "name_loc": "+{s:bonus_zombie_damage_tooltip} Zombie Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1603,7 +1603,7 @@
     {
       "id": 616,
       "name": "special_bonus_unique_undying_6",
-      "name_loc": "+{s:bonus_damage_per_unit} к урону/лечению от Soul Rip",
+      "name_loc": "+{s:bonus_damage_per_unit} Soul Rip Damage/Heal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1665,7 +1665,7 @@
     {
       "id": 6972,
       "name": "special_bonus_unique_undying_5",
-      "name_loc": "+{s:bonus_hits_to_destroy_tooltip} к атакам для уничтожения надгробия",
+      "name_loc": "+{s:bonus_hits_to_destroy_tooltip} Tombstone Attacks to Destroy",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1727,7 +1727,7 @@
     {
       "id": 6420,
       "name": "special_bonus_unique_undying_2",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Decay",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Decay Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1789,7 +1789,7 @@
     {
       "id": 6971,
       "name": "special_bonus_unique_undying_4",
-      "name_loc": "+{s:bonus_str_percentage}% к доп. силе от Flesh Golem",
+      "name_loc": "+{s:bonus_str_percentage}% Flesh Golem Strength Bonus",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1851,7 +1851,7 @@
     {
       "id": 6546,
       "name": "special_bonus_unique_undying_3",
-      "name_loc": "Призыв надгробия при смерти",
+      "name_loc": "Tombstone On Death",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

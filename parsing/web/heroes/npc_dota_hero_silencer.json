@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_silencer",
   "order_id": 65,
   "name_loc": "Silencer",
-  "bio_loc": "Часть седьмого и последнего поколения тщательно спланированной селекции, Нортром был выведен древним орденом Эол Драйас, дабы стать величайшим из магов, которых видел свет. Он был тем, о ком гласило пророчество: кульминацией двухсот лет осторожного скрещивания, магом-бойцом, который принёс бы славу ордену и погибель заклятым врагам его, рыцарям Покрова.\r\n\t\t\t\t<br><br>Он рос вместе с другими молодыми магами в военном городке, сокрытом среди холмов Хажадальских пустошей, и наставники ждали, когда способности Нортрома проявят себя. Остальные ученики уже оттачивали мастерство обращения с огнём, льдом или чарами, а Нортром оставался молчаливым и бездарным, неспособным даже наложить сглаз. День финальных испытаний близился, но он так и не нашёл своего призвания. С отвращением наставники ругали его, а дети осмеивали. «Ты не маг», — провозгласил глава ордена. И всё же Нортром не отступил. Он явился в день экзамена и дерзко предстал перед молодыми магами, что насмехались над ним. И тогда его наставники получили ценный урок: отсутствие магии может быть лучшим из всех её видов. Юные маги не могли произнести ни слова, а Нортром одерживал победу в одном поединке за другим, покуда не остался на поле сражения один. Пророчество было исполнено. Именно он — величайший маг ордена Эол Драйас.",
-  "hype_loc": "Silencer изменяет ход каждого сражения, <b>запрещая врагам использовать заклинания</b>. Он кромсает противников глефами и <b>крадёт у них интеллект</b>, не давая соперникам получить преимущество.",
-  "npe_desc_loc": "Может обезмолвить всех врагов на карте",
+  "bio_loc": "Part of the seventh and final generation of a carefully designed pedigree, Nortrom was bred by the ancient order of the Aeol Drias to be the greatest magic user the world had ever seen. He was the prophesied one, the culmination of two-hundred years of careful pairings, a war-mage who would bring glory to the order, and destruction to their sworn enemies, The Knights of the Fold. \r\n\t\t\t\t<br><br>Raised with other young mages in a hidden cantonment among the hills of the Hazhadal barrens, the order's preceptors waited for Nortrom's abilities to manifest. While the other students honed their talents with fire, or ice, or incantatory spells, Nortrom sat silent and talentless, unable to cast so much as a hex. As the day of final testing approached, he still hadn't found his magic. In disgust, the preceptors berated him, while the children laughed. \"You are no mage,\" the head of the order declared. Still, Nortrom did not slink away. He entered the day of testing and faced down the young mages who had mocked him. And then his preceptors learned a valuable lesson: a lack of magic can be the greatest magic of all. Nortrom silenced the young mages one by one and defeated them in single combat, until he alone stood as champion of the Aeol Drias, in fulfillment of the prophecy.",
+  "hype_loc": "Silencer changes the dynamic of every battle when he <b>shuts down the enemy's ability to cast their spells</b>. As he cuts his foes to ribbons with his glaive, he <b>steals their intelligence</b> to add to his own, ensuring his foes are always at a disadvantage.",
+  "npe_desc_loc": "Can silence all enemies on the map",
   "facets": [
     {
       "color": 4,
       "title_loc": "Synaptic Split",
-      "description_loc": "Увеличивает максимальный уровень способности Glaives of Wisdom до {s:bonus_max_level_tooltip}-го. На последнем уровне глефы {s:bonus_bounce_count_tooltip} раз отскакивают в случайного врага в радиусе {s:bonus_bounce_range_tooltip}.",
+      "description_loc": "Increases the max level of Glaives of Wisdom. Level {s:bonus_max_level_tooltip} Glaives of Wisdom bounce {s:bonus_bounce_count_tooltip} time to a random target within {s:bonus_bounce_range_tooltip} range.",
       "name": "silencer_spread_the_knowledge",
       "icon": "ricochet",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 5,
       "title_loc": "Suffer In Silence",
-      "description_loc": "Герой наносит больше урона обезмолвленным врагам и получает меньше урона от них.",
+      "description_loc": "Silencer takes less damage from and deals more damage to silenced targets.",
       "name": "silencer_oppressive_silence",
       "icon": "debuff",
       "gradient_id": 3,
@@ -66,10 +66,10 @@
       "id": 5377,
       "name": "silencer_curse_of_the_silent",
       "name_loc": "Arcane Curse",
-      "desc_loc": "Наводит сглаз на вражеских героев в выбранной области, нанося начальный и периодический урон, а также замедляя их передвижение. Когда на жертву действует безмолвие, отсчёт времени действия приостанавливается, а замедление и урон умножаются на %penalty_multiplier%. Каждая применённая жертвой способность увеличивает длительность эффекта.",
-      "lore_loc": "Недостаток заклинаний у Нортрома беспокоит не столько его самого, сколько его врагов.",
+      "desc_loc": "Curses the target area, dealing damage and causing enemy heroes to take damage over time and slowing their movement speed. Silenced enemies take %penalty_multiplier%x slow and damage. Anytime affected enemies cast a spell, the duration is increased. The duration is paused as long as the target is silenced.",
+      "lore_loc": "Nortrom's lack of incantations is less of a problem for him than it is for his adversaries.",
       "notes_loc": [
-        "Действует на крипов."
+        "Affects creeps."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -133,7 +133,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -153,7 +153,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "НАЧАЛЬНЫЙ УРОН:",
+          "heading_loc": "INITIAL DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -170,7 +170,7 @@
             350
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -187,7 +187,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВАЯ ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "BASE DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_silencer_arcane_curse_duration",
@@ -213,7 +213,7 @@
             -25
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -251,7 +251,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДОБАВОЧНАЯ ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "PENALTY DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_silencer_arcane_curse_duration",
@@ -274,7 +274,7 @@
             1.25
           ],
           "is_percentage": false,
-          "heading_loc": "МНОЖИТЕЛЬ ПРИ БЕЗМОЛВИИ:",
+          "heading_loc": "SILENCED MULTIPLIER:",
           "bonuses": [
             {
               "name": "special_bonus_unique_silencer",
@@ -423,15 +423,15 @@
       "id": 5378,
       "name": "silencer_glaives_of_wisdom",
       "name_loc": "Glaives of Wisdom",
-      "desc_loc": "Герой наполняет глефы своей мудростью, отчего они наносят дополнительный урон, зависящий от интеллекта владельца, и крадут интеллект цели с каждой атакой.",
-      "lore_loc": "Пусть Нортром не силён в традиционных заклинаниях, селекция придала ему непостижимую мудрость, которую он и применяет в физическом бою.",
+      "desc_loc": "Silencer enchants his glaives with his wisdom, stealing his target's Intelligence with each hit and dealing additional damage based on his Intelligence.",
+      "lore_loc": "Although lacking in traditional incantations, Nortrom's pedigree of the Aeol Drias gives him uncanny wisdom, which he applies to physical combat.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Увеличивает максимальный уровень способности до %max_level_tooltip%-го. На последнем уровне глефы %bounce_count_tooltip% раз отскакивают в случайного врага в радиусе %bounce_range_tooltip% (в первую очередь в героев). Отскоки тоже расходуют ману.",
+        "Increases the max level of Glaives of Wisdom. Level %max_level_tooltip% Glaives of Wisdom bounce %bounce_count_tooltip% time to a random target within %bounce_range_tooltip% range. The bounce costs mana upon hit and prioritizes heroes.",
         ""
       ],
       "type": 0,
@@ -526,7 +526,7 @@
             80
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ ИНТЕЛЛЕКТА:",
+          "heading_loc": "INT TO DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_silencer_3",
@@ -553,7 +553,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ПОХИЩЕНИЕ ИНТЕЛЛЕКТА:",
+          "heading_loc": "INT STEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -574,7 +574,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "INT STEAL DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_silencer_5",
@@ -777,10 +777,10 @@
       "id": 5379,
       "name": "silencer_last_word",
       "name_loc": "Last Word",
-      "desc_loc": "Зачаровывает цель, отчего она через некоторое время получит урон и будет обезмолвлена. Также даёт обзор по цели. Чары сработают раньше, если жертва применит способность. Наносит дополнительный урон, зависящий от разницы в интеллекте с целью.",
-      "lore_loc": "Нортром гарантирует, что магические слова, произнесённые его врагами, станут последними.",
+      "desc_loc": "Enchants a target, providing vision of them and causing them to be damaged and silenced if they cast a spell or if the enchantment timer expires. Deals extra damage based on the difference in intelligence between Silencer and the target.",
+      "lore_loc": "Nortrom ensures that spells uttered by his opponents will be their last.",
       "notes_loc": [
-        "Срабатывает от прерываемых способностей только в момент их завершения."
+        "Channeling abilities will trigger this effect once the caster finishes its channel."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -841,7 +841,7 @@
             240
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -861,7 +861,7 @@
             2.5
           ],
           "is_percentage": false,
-          "heading_loc": "МНОЖИТЕЛЬ РАЗНИЦЫ В ИНТЕЛЛЕКТЕ:",
+          "heading_loc": "INT DIFF MULTIPLIER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -878,7 +878,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДО СРАБАТЫВАНИЯ:",
+          "heading_loc": "ENEMY CAST TIMER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -898,7 +898,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БЕЗМОЛВИЯ:",
+          "heading_loc": "SILENCE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -913,7 +913,7 @@
           "name": "radius",
           "values_float": [],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "AOE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_silencer_4",
@@ -1022,12 +1022,12 @@
       "id": 1335,
       "name": "silencer_brain_drain",
       "name_loc": "Brain Drain",
-      "desc_loc": "Навсегда крадёт интеллект у каждого убитого вражеского героя.",
+      "desc_loc": "If Silencer kills an enemy hero, he permanently steals Intelligence.",
       "lore_loc": "",
       "notes_loc": [
-        "Чтобы герой украл интеллект навсегда, нужно, чтобы в момент смерти жертва была под действием его отрицательного эффекта или находилась в радиусе %permanent_int_steal_range%."
+        "To permanently steal Intelligence, Silencer doesn't need to land the killing blow, as long as the enemy hero is killed within %permanent_int_steal_range% range of Silencer or was debuffed by Silencer at the time of death."
       ],
-      "shard_loc": "Увеличивает кражу интеллекта при убийстве.",
+      "shard_loc": "Increases the Intelligence stolen per kill.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -1094,7 +1094,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ПОХИЩЕНИЕ ИНТЕЛЛЕКТА:",
+          "heading_loc": "PERMANENT INT STEAL:",
           "bonuses": [],
           "values_shard": [
             2
@@ -1125,17 +1125,17 @@
       "id": 5380,
       "name": "silencer_global_silence",
       "name_loc": "Global Silence",
-      "desc_loc": "Герой заглушает все звуки на поле боя, не давая врагам применять способности.",
-      "lore_loc": "Удар по земле — и звуки магии утихают: Нортром исполняет своё предназначение.",
+      "desc_loc": "Silencer stops all sound, preventing enemy heroes and units on the map from casting spells.",
+      "lore_loc": "With a shock to the ground, all magic and sound pauses, and Nortrom fulfills his prophecy.",
       "notes_loc": [
-        "Действует на невосприимчивых к эффектам и невидимых врагов, однако безмолвие спадёт, если получить невосприимчивость к эффектам.",
-        "Урон и замедление от нескольких эффектов этой способности, наложенных с помощью Aghanim's Scepter, не складываются."
+        "This skill works on invisible and Debuff Immune units, but gaining debuff immunity will remove its effect.",
+        "Multiple Arcane Curses from Aghanim's Scepter Global Silence do not stack."
       ],
       "shard_loc": "",
-      "scepter_loc": "На время действия этой способности на вражеских героев также накладывается эффект Arcane Curse.",
+      "scepter_loc": "Global Silence applies Arcane Curse to heroes for the duration of Global Silence.",
       "facets_loc": [
         "",
-        "Когда эффект Global Silence заканчивается на существе впервые, он накладывается ещё раз.",
+        "The first time Global Silence ends on a unit it is applied again.",
         "",
         ""
       ],
@@ -1208,7 +1208,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРВОНАЧАЛЬНАЯ ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "FIRST DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1231,7 +1231,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВТОРИЧНАЯ ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "SECOND DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1273,7 +1273,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1364,7 +1364,7 @@
     {
       "id": 6184,
       "name": "special_bonus_unique_silencer",
-      "name_loc": "+{s:bonus_penalty_multiplier} к множителю при безмолвии у Arcane Curse",
+      "name_loc": "+{s:bonus_penalty_multiplier} Arcane Curse Silenced Multiplier",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1428,7 +1428,7 @@
     {
       "id": 6016,
       "name": "special_bonus_attack_speed_25",
-      "name_loc": "+{s:value} к скорости атаки",
+      "name_loc": "+{s:value} Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1510,7 +1510,7 @@
     {
       "id": 721,
       "name": "special_bonus_unique_silencer_7",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Global Silence",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Global Silence Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1574,7 +1574,7 @@
     {
       "id": 1467,
       "name": "special_bonus_unique_silencer_arcane_curse_duration",
-      "name_loc": "+{s:bonus_duration}/{s:bonus_penalty_duration} сек. базовой/добав. длительности Arcane Curse",
+      "name_loc": "+{s:bonus_duration}s/+{s:bonus_penalty_duration}s Arcane Curse Base/Penalty Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1638,7 +1638,7 @@
     {
       "id": 7048,
       "name": "special_bonus_unique_silencer_5",
-      "name_loc": "+{s:bonus_int_steal_duration} сек. длительности эффекта Glaives of Wisdom",
+      "name_loc": "+{s:bonus_int_steal_duration}s Glaives of Wisdom Int Steal Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1702,7 +1702,7 @@
     {
       "id": 6880,
       "name": "special_bonus_unique_silencer_4",
-      "name_loc": "Last Word по области радиусом {s:bonus_radius}",
+      "name_loc": "{s:bonus_radius} AoE Last Word",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1766,7 +1766,7 @@
     {
       "id": 6879,
       "name": "special_bonus_unique_silencer_3",
-      "name_loc": "+{s:bonus_intellect_damage_pct}% к урону от Glaives of Wisdom",
+      "name_loc": "+{s:bonus_intellect_damage_pct}% Glaives of Wisdom Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1830,7 +1830,7 @@
     {
       "id": 1337,
       "name": "special_bonus_unique_silencer_arcane_curse_charges",
-      "name_loc": "{s:bonus_AbilityCharges} заряда Arcane Curse",
+      "name_loc": "{s:bonus_AbilityCharges} Arcane Curse charges",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1902,7 +1902,7 @@
           "id": 1624,
           "name": "silencer_oppressive_silence",
           "name_loc": "Suffer In Silence",
-          "desc_loc": "Герой наносит больше урона обезмолвленным врагам и получает меньше урона от них.",
+          "desc_loc": "Silencer takes less damage from and deals more damage to silenced targets.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",
@@ -1958,7 +1958,7 @@
                 20
               ],
               "is_percentage": true,
-              "heading_loc": "ИЗМЕНЕНИЕ УРОНА:",
+              "heading_loc": "DAMAGE:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

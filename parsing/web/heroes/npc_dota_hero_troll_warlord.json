@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_troll_warlord",
   "order_id": 97,
   "name_loc": "Troll Warlord",
-  "bio_loc": "Обидеть тролля проще простого. Взбалмошных и сварливых, их хлебом не корми, а дай поспорить и попрепираться по любому поводу. До совершеннолетия самцы обитают в подземных пещерах под домищем матриарха, не принося никакого толку, лишь откармливаясь да озорничая. Зачастую уже даже взрослые тролли сидят на шее матриарха годами. Когда же их, наконец, вышвыривают с насиженных мест, тролли сбиваются в бродячие стаи, скандалят и недовольствуют по любому поводу.     \r\n\t\t\t\t<br><br>Так вот, представьте себе, какой невыносимой занозой нужно быть, чтобы тебя отвергли собственные соплеменники, при их-то любви позадирать друг друга. Такова была судьба Джа'ракала, тролля-барышника из глубин Ховена. Был он настолько склочен и злобен, что не терпели его даже тролли из собственной стаи. Однажды, после острого приступа жадности, в котором он присвоил себе львиную долю скарба с последнего налёта, терпение соплеменников лопнуло. Его скрутили, поколотили дубинами и выволокли из лагеря. Обезумев от ярости, Джа'ракал вернулся на следующий день с оружием в руках и убил всех обидчиков, одного за другим. Отдышавшись, он дал кровавую клятву: отныне он будет сражаться только сам за себя. По сей день скитается Джа'ракал по миру, озлобленный и беспощадный. И прозвали его повелителем троллей, Troll Warlord, вот только повелевает он лишь собой.",
-  "hype_loc": "Грозный боец Troll Warlord способен сражаться <b>как в ближнем, так и в дальнем бою</b>. Он машет своими топорами и <b>крутит ими вокруг себя</b>, нанося удары всё быстрее, и <b>увеличивает скорость атаки всех союзников</b>, где бы они ни были.",
-  "npe_desc_loc": "Сражается в ближнем или в дальнем бою по своему усмотрению",
+  "bio_loc": "It's an easy thing to offend a troll. A prickly and contentious race, trolls thrive on argument and strife, missing no excuse to raise their voices in dispute. Males grow to maturity in subterranean chambers beneath their matriarch's domicile, feeding and amusing themselves while contributing nothing. Often they stay for years beyond the age of maturity, while the matriarch provides them with sustenance. When young trolls are finally pushed from their sub-chamber, they gather with others of their kind, forming roving gangs of malcontents who complain loudly about all manner of vexation.     \r\n\t\t\t\t<br><br>As much as trolls love to argue, imagine how rare it is for a troll to be driven from his own kind for being too difficult to get along with. Such was Jah'rakal's fate, a monger troll from deep in the Hoven. So deluded was he, so bitter and abrasive, that even other trolls found his company intolerable. After one particularly vitriolic outburst in which he claimed the lion's share of loot from their latest raid, his cohorts finally snapped. They turned on him, beat him with clubs, and drove him from the encampment. Enraged at his banishment, he returned the next day, armed with steel, and slew them all, one by one. He then swore a blood oath: he would ever after be a fighting force unto himself. Now he roams the world as the Troll Warlord, bitter and angry, the Imperial high commander of an army of one.",
+  "hype_loc": "Instantly able to swap between <b>ranged and melee attacks</b>, Troll Warlord is a formidable force at any distance. Axes in hand, he can strike in a storm of <b>spinning blades</b>. He takes down enemies with increasingly swift attacks, and can <b>speed his allies'</b> assaults wherever they are.",
+  "npe_desc_loc": "Swaps between ranged and melee attacks at will",
   "facets": [
     {
       "color": 3,
       "title_loc": "Insensitive",
-      "description_loc": "В ближнем бою каждый эффект Fervor увеличивает броню.",
+      "description_loc": "Fervor grants armor per stack while in melee form.",
       "name": "troll_warlord_insensitive",
       "icon": "armor",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Bad Influence",
-      "description_loc": "Применение Battle Trance увеличивает максимальное число эффектов Fervor, снимает ограничение на скорость атаки и даёт союзным героям {s:bonus_attack_speed_share_percent}% от дополнительной скорости атаки. ",
+      "description_loc": "During Battle Trance, Troll Warlord has increased max Fervor stacks and no attack speed limit. Battle Trance grants allied heroes {s:bonus_attack_speed_share_percent}% of the attack speed bonus. ",
       "name": "troll_warlord_bad_influence",
       "icon": "damage",
       "gradient_id": 1,
@@ -66,8 +66,8 @@
       "id": 1478,
       "name": "troll_warlord_switch_stance",
       "name_loc": "Battle Stance",
-      "desc_loc": "Герой переходит из дальнего боя в ближний, отчего снижается его базовый интервал атак.",
-      "lore_loc": "Въедливость Джа'ракала многогранна.",
+      "desc_loc": "Troll Warlord swaps from using ranged to melee attacks. Melee attacks have decreased base attack time.",
+      "lore_loc": "Jah'rakal has a variety of ways to get under an enemy's skin.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -179,15 +179,15 @@
     {
       "id": 5509,
       "name": "troll_warlord_whirling_axes_ranged",
-      "name_loc": "Whirling Axes (дальний бой)",
-      "desc_loc": "Герой бросает пять топоров веером на расстояние в %axe_range%, замедляя врагов и нанося им урон.",
-      "lore_loc": "Лишь сила ненависти вращает топоры настолько смертоносно.",
+      "name_loc": "Whirling Axes (Ranged)",
+      "desc_loc": "Troll hurls a fistful of five axes in a cone shape over %axe_range% range, slowing and damaging enemy units.",
+      "lore_loc": "Only axes fueled by hate whirl with such a deadly spin.",
       "notes_loc": [
-        "Не действует на Рошана.",
-        "Эту способность нельзя заблокировать или отразить."
+        "Does not affect Roshan.",
+        "Does not trigger spell block or spell reflect."
       ],
       "shard_loc": "",
-      "scepter_loc": "Способность развеивает положительные эффекты с врагов. Уменьшает перезарядку и расход маны.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное",
+      "scepter_loc": "Causes Whirling Axes (Ranged) to dispel enemies. Reduces cooldown and mana cost.<br><br>DISPEL TYPE: Basic Dispel",
       "facets_loc": [
         "",
         ""
@@ -291,7 +291,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "AXE DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_troll_warlord_3",
@@ -317,7 +317,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_troll_warlord_whirling_axes_debuff_duration",
@@ -340,7 +340,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -446,7 +446,7 @@
             60
           ],
           "is_percentage": false,
-          "heading_loc": "РАСХОД МАНЫ:",
+          "heading_loc": "MANA COST:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -465,7 +465,7 @@
             9
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -495,14 +495,14 @@
     {
       "id": 5510,
       "name": "troll_warlord_whirling_axes_melee",
-      "name_loc": "Whirling Axes (ближний бой)",
-      "desc_loc": "Герой вращает два топора в небольшой области вокруг себя, нанося врагам урон и вынуждая их промахиваться атаками.",
-      "lore_loc": "Держи врагов близко.",
+      "name_loc": "Whirling Axes (Melee)",
+      "desc_loc": "Troll hurls two axes around him in a close range area of effect, damaging enemy units and causing them to miss some attacks.",
+      "lore_loc": "Keep your enemies close.",
       "notes_loc": [
-        "Не действует на Рошана."
+        "Does not affect Roshan."
       ],
       "shard_loc": "",
-      "scepter_loc": "Способность развеивает отрицательные эффекты с владельца. Уменьшает перезарядку и расход маны.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное",
+      "scepter_loc": "Causes Whirling Axes (Melee) to dispel Troll Warlord. Reduces cooldown and mana cost.<br><br>DISPEL TYPE: Basic Dispel",
       "facets_loc": [
         "",
         ""
@@ -552,7 +552,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_troll_warlord_3",
@@ -592,7 +592,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -626,7 +626,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРОМАХОВ:",
+          "heading_loc": "BLIND DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_troll_warlord_whirling_axes_debuff_duration",
@@ -649,7 +649,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС ПРОМАХА:",
+          "heading_loc": "MISS CHANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -666,7 +666,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ВРАЩЕНИЯ:",
+          "heading_loc": "WHIRL DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -704,7 +704,7 @@
             50
           ],
           "is_percentage": false,
-          "heading_loc": "РАСХОД МАНЫ:",
+          "heading_loc": "MANA COST:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -723,7 +723,7 @@
             9
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -754,16 +754,16 @@
       "id": 5511,
       "name": "troll_warlord_fervor",
       "name_loc": "Fervor",
-      "desc_loc": "Каждая последующая атака по одной и той же цели увеличивает скорость атаки героя. Если сменить цель, скорость станет обычной.",
-      "lore_loc": "Если не удалось в первый раз — бей ещё и ещё.",
+      "desc_loc": "With each continuous blow on the same target, Troll gains increased attack speed.  If Troll changes targets, the stacks drop to zero.",
+      "lore_loc": "If at first you don't succeed, strike, strike again.",
       "notes_loc": [
-        "Получение эффектов отключается истощением.",
-        "Шанс срабатывания от Aghanim’s Shard отключается истощением."
+        "Break disables the gaining of new stacks.",
+        "Break disables the proc chance granted by Aghanim's Shard."
       ],
-      "shard_loc": "Даёт владельцу шанс совершить дополнительную атаку дальнего боя по случайному врагу в радиусе атаки + %range_buffer%. Шанс дополнительной атаки: %base_chance%%% + %extra_attack_chance_per_stack%%% за эффект. Срабатывает только при атаках по вражеским существам.",
+      "shard_loc": "Grants Troll %base_chance%%% + %extra_attack_chance_per_stack%%% chance per Fervor stack of firing an additional ranged attack to any unit within its ranged attack range plus %range_buffer% when attacking an enemy unit.",
       "scepter_loc": "",
       "facets_loc": [
-        "В ближнем бою каждый эффект Fervor увеличивает броню.",
+        "Fervor grants armor per stack while in melee form.",
         ""
       ],
       "type": 0,
@@ -811,7 +811,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ АТАКИ ЗА ЭФФЕКТ:",
+          "heading_loc": "ATTACK SPEED PER STACK:",
           "bonuses": [
             {
               "name": "special_bonus_unique_troll_warlord_5",
@@ -834,7 +834,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ЧИСЛО ЭФФЕКТОВ:",
+          "heading_loc": "MAX STACKS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -908,7 +908,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "БРОНЯ ЗА ЭФФЕКТ:",
+          "heading_loc": "ARMOR PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -958,10 +958,10 @@
       "id": 5508,
       "name": "troll_warlord_berserkers_rage",
       "name_loc": "Berserker's Rage",
-      "desc_loc": "Сражаясь в ближнем бою, герой получает бонус к броне и скорости передвижения, а также может наложить на цель атаки оцепенение, не давая ей передвигаться или применять способности для перемещения.<br><br>Сражаясь в дальнем бою, герой может травмировать цель атаки, нанеся ей дополнительный урон и замедлив её передвижение и атаку.",
-      "lore_loc": "Злоба Джа'ракала нескончаема, как запас его топоров.",
+      "desc_loc": "While in melee form, Troll Warlord's attacks have a chance to ensnare, preventing the target from moving or using mobility spells and has additional movement speed and armor.<br><br>When in ranged form, Troll Warlord's attacks have a chance to Maim the target, dealing bonus damage, and slowing the target's movement and attack speed.",
+      "lore_loc": "Like his anger, Troll Warlord's supply of axes is infinite.",
       "notes_loc": [
-        "Перезарядка некоторых предметов зависит от того, какой тип атаки герой имел при их использовании."
+        "Cooldowns of items that are different for ranged and melee units will be based on which form Troll Warlord was in when the item was used."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1014,7 +1014,7 @@
             45
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVE SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_troll_warlord_2",
@@ -1040,7 +1040,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. БРОНЯ:",
+          "heading_loc": "BONUS ARMOR:",
           "bonuses": [
             {
               "name": "special_bonus_unique_troll_warlord",
@@ -1097,7 +1097,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС ОЦЕПЕНЕНИЯ:",
+          "heading_loc": "ENSNARE CHANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1117,7 +1117,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ:",
+          "heading_loc": "ENSNARE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1134,7 +1134,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС ТРАВМЫ:",
+          "heading_loc": "MAIM CHANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1154,7 +1154,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ТРАВМЫ:",
+          "heading_loc": "MAIM DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1174,7 +1174,7 @@
             32
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ ОТ ТРАВМЫ:",
+          "heading_loc": "MAIM MOVE SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1194,7 +1194,7 @@
             32
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ ОТ ТРАВМЫ:",
+          "heading_loc": "MAIM ATTACK SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1214,7 +1214,7 @@
             25
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ ТРАВМЫ:",
+          "heading_loc": "MAIM DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1243,18 +1243,18 @@
       "id": 5512,
       "name": "troll_warlord_battle_trance",
       "name_loc": "Battle Trance",
-      "desc_loc": "Герой входит в боевой транс, вынуждающий его атаковать ближайшее вражеское существо в радиусе %range% (в первую очередь героев). Под действием этой способности героя нельзя убить. Даёт дополнительные вампиризм, скорость атаки и передвижения. Применяет на владельца нормальное развеивание.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "Всплеск адреналина, вызванный чистой злобой, ускорит твои лезвия.",
+      "desc_loc": "Troll unleashes a powerful battle trance, that forces you to continuously attack the closest enemy unit within %range% range, prioritizing heroes. Damage does not kill you during this mode. Grants you bonus lifesteal, attack speed and movement speed. Applies a Basic Dispel.\n\nDISPEL TYPE: Basic Dispel",
+      "lore_loc": "An adrenaline rush of pure hatred quickens your blades.",
       "notes_loc": [
-        "Не запрещает применять способности и предметы, но не позволяет отдавать другие команды.",
-        "Не защищает от убийства способностью Culling Blade у Axe.",
-        "Цель видно в тумане войны."
+        "Troll can still use his items and abilities while affected by Battle Trance, but not other commands.",
+        "Troll can still be killed with Axe's Culling Blade.",
+        "Troll is granted vision over the target."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Применение этой способности увеличивает максимальное число эффектов Fervor, снимает ограничение на скорость атаки и даёт союзным героям %attack_speed_share_percent%%% от дополнительной скорости атаки."
+        "During Battle Trance, Troll Warlord has increased max Fervor stacks and no attack speed limit. Battle Trance grants allied heroes %attack_speed_share_percent%%% of the attack speed bonus."
       ],
       "type": 1,
       "behavior": "0",
@@ -1302,7 +1302,7 @@
             6.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "TRANCE DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_troll_warlord_battle_trance_movespeed",
@@ -1327,7 +1327,7 @@
             80
           ],
           "is_percentage": true,
-          "heading_loc": "ВАМПИРИЗМ:",
+          "heading_loc": "LIFESTEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1346,7 +1346,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1384,7 +1384,7 @@
             35
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1418,7 +1418,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМУМ ЭФФЕКТОВ FERVOR:",
+          "heading_loc": "BATTLE TRANCE MAX FERVOR STACKS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1543,7 +1543,7 @@
     {
       "id": 1010,
       "name": "special_bonus_unique_troll_warlord_whirling_axes_debuff_duration",
-      "name_loc": "+{s:bonus_axe_slow_duration} сек. к длительности эффекта у Whirling Axes",
+      "name_loc": "+{s:bonus_axe_slow_duration}s Whirling Axes Debuff Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1605,7 +1605,7 @@
     {
       "id": 6958,
       "name": "special_bonus_unique_troll_warlord_2",
-      "name_loc": "+{s:bonus_bonus_move_speed} к скорости передв. от Berserker's Rage",
+      "name_loc": "+{s:bonus_bonus_move_speed} Berserker's Rage Movement Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1667,7 +1667,7 @@
     {
       "id": 492,
       "name": "special_bonus_unique_troll_warlord_5",
-      "name_loc": "+{s:bonus_attack_speed} к скорости атаки за эффект от Fervor",
+      "name_loc": "+{s:bonus_attack_speed} Fervor Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1729,7 +1729,7 @@
     {
       "id": 6959,
       "name": "special_bonus_unique_troll_warlord_3",
-      "name_loc": "+{s:bonus_axe_damage} к урону от Whirling Axes",
+      "name_loc": "+{s:bonus_axe_damage} Whirling Axes Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1791,7 +1791,7 @@
     {
       "id": 1011,
       "name": "special_bonus_unique_troll_warlord_battle_trance_movespeed",
-      "name_loc": "+{s:bonus_trance_duration} сек. действия Battle Trance",
+      "name_loc": "+{s:bonus_trance_duration}s Battle Trance Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1853,7 +1853,7 @@
     {
       "id": 6154,
       "name": "special_bonus_unique_troll_warlord",
-      "name_loc": "+{s:bonus_bonus_armor} к броне от Berserker's Rage",
+      "name_loc": "+{s:bonus_bonus_armor} Berserker's Rage Armor",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1915,7 +1915,7 @@
     {
       "id": 988,
       "name": "special_bonus_unique_troll_warlord_6",
-      "name_loc": "Whirling Axes сквозь невоспр. к магии",
+      "name_loc": "Whirling Axes Pierce Magic Immunity",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1977,8 +1977,8 @@
     {
       "id": 6960,
       "name": "special_bonus_unique_troll_warlord_4",
-      "name_loc": "Battle Trance применяет сильное развеивание",
-      "desc_loc": "Можно применить в оглушении. Применяет на владельца сильное развеивание.",
+      "name_loc": "Battle Trance Strong Dispels",
+      "desc_loc": "Can be cast while stunned and applies a strong dispel to Troll Warlord.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",

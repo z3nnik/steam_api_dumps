@@ -1,153 +1,151 @@
-[
-  {
-    "id": 5488,
-    "name": "wisp_relocate",
-    "name_loc": "Relocate",
-    "desc_loc": "Телепортирует героя и связанного с ним союзника в любую точку карты. Спустя некоторое время герой вернётся туда, откуда он телепортировался, также перенеся связанного с собой союзника. Двойное нажатие отправит героя к своему фонтану.",
-    "lore_loc": "Ио есть воплощение тайн вселенной.",
-    "notes_loc": [
-      "Враги видят место телепортации как в игре, так и на мини-карте с момента применения способности.",
-      "Если вас оглушат во время подготовки к телепортации, она прервется.",
-      "Если вы связаны с союзным героем, то он телепортируется с вами. Чтобы избежать этого, можно в любой момент разорвать связь.",
-      "Позволяет телепортировать только героев, крипов-героев и иллюзии."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 1,
-    "behavior": "16",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 0,
-    "immunity": 0,
-    "dispellable": 3,
-    "max_level": 3,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      90,
-      80,
-      70
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      175
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "cast_delay",
-        "values_float": [
-          3.5,
-          3.25,
-          3
-        ],
-        "is_percentage": false,
-        "heading_loc": "ВРЕМЯ ПРИМЕНЕНИЯ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_wisp_relocate_delay",
-            "value": 1.5,
-            "operation": 2
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5488,
+  "name": "wisp_relocate",
+  "name_loc": "Relocate",
+  "desc_loc": "Teleports Io and a tethered ally to any location. After the spell expires, Io and the tethered ally will return to their original location. Double-click to teleport to your team's base fountain.",
+  "lore_loc": "Io is the embodiment of the mystery of the universe.",
+  "notes_loc": [
+    "Enemies receive a visual indicator in the world and on the minimap of the target location during the cast delay.",
+    "If Io is disabled during the cast delay, Relocate is cancelled.",
+    "If an allied hero is Tethered, that hero will teleport along with you. You can break the tether at any time to prevent that hero from teleporting with you.",
+    "Only heroes, creep heroes, and illusions can be relocated."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 1,
+  "behavior": "16",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 0,
+  "immunity": 0,
+  "dispellable": 3,
+  "max_level": 3,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    90,
+    80,
+    70
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    175
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "cast_delay",
+      "values_float": [
+        3.5,
+        3.25,
+        3
+      ],
+      "is_percentage": false,
+      "heading_loc": "CAST TIME:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_wisp_relocate_delay",
+          "value": 1.5,
+          "operation": 2
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "return_time",
-        "values_float": [
-          12
-        ],
-        "is_percentage": false,
-        "heading_loc": "ВРЕМЯ ДО ВОЗВРАТА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "return_time",
+      "values_float": [
+        12
+      ],
+      "is_percentage": false,
+      "heading_loc": "RETURN TIME:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          175
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        175
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          90,
-          80,
-          70
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_wisp_6",
-            "value": 30,
-            "operation": 2
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        90,
+        80,
+        70
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_wisp_6",
+          "value": 30,
+          "operation": 2
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

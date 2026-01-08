@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_razor",
   "order_id": 15,
   "name_loc": "Razor",
-  "bio_loc": "Никто из легендарных обитателей загробного мира не внушает такой страх, как призрак молний. Держа наготове свою молниеносную плеть, он охраняет порядок в Узком лабиринте, коварные и cпутанные коридоры которого направляют мёртвые души к судьбе, достойной их ума, способностей и упорства. Надзиратель парит над лабиринтом, выискивает замешкавшихся и стегает их обжигающим электрическим хлыстом. Судьба душ вершится их же руками, а разряды молний лишь подгоняют их либо к свету в конце тоннеля, либо к тёмным пучинам вечности. Беспристрастный и почти безразличный в применении силы призрак молний — извечное воплощение господства. Однако по его высокомерным манерам можно догадаться, что он получает от работы сардоническое удовольствие.",
-  "hype_loc": "Razor, <b>властитель смертоносной бури</b>, всегда готов к сражению. Он поджаривает врагов <b>расширяющимся кольцом</b> энергетической плазмы, а также <b>лишает их мощи</b>, наращивая свою собственную.",
-  "npe_desc_loc": "Крадёт урон врага, чтобы стать сильнее",
+  "bio_loc": "Among the emblematic powers that populate the Underscape, Razor the Lightning Revenant is one of the most feared. With his whip of lightning, he patrols the Narrow Maze, that treacherous webwork of passages by which the souls of the dead are sorted according to their own innate intelligence, cunning and persistence. Drifting above the Maze, Razor looks down on the baffled souls below, and delivers jolts of scalding electricity that both punish and quicken the souls as they decide their own fates, hurrying on toward luminous exits or endlessly dark pits. Razor is the eternal embodiment of a dominating power, abstract and almost clinical in his application of power. Yet he has a lordly air that suggests he takes a sardonic satisfaction in his work.",
+  "hype_loc": "With a deadly <b>lightning storm</b> at his command, Razor charges into battle. Deploying a <b>sweeping ring</b> of electrified plasma to fry his enemies, he links with foes to <b>drain</b> them of their power and use it against them.",
+  "npe_desc_loc": "Steals enemy damage to add to his own",
   "facets": [
     {
       "color": 5,
       "title_loc": "Thunderhead",
-      "description_loc": "Молния от Storm Surge срабатывает чаще и бьёт всех врагов в радиусе действия способности Eye of the Storm, когда та активирована.",
+      "description_loc": "Storm Surge lightning strikes more often and hits all units within Eye of the Storm's area of effect when it is active.",
       "name": "razor_thunderhead",
       "icon": "barrier",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Dynamo",
-      "description_loc": "Герой получает +%spell_amp_mult%%% к урону от заклинаний за каждые %spell_amp_damage_divisor% очков атаки.",
+      "description_loc": "Razor gains %spell_amp_mult%%% spell amplification for every %spell_amp_damage_divisor% points of attack damage.",
       "name": "razor_spellamp",
       "icon": "nuke",
       "gradient_id": 0,
@@ -66,8 +66,8 @@
       "id": 5082,
       "name": "razor_plasma_field",
       "name_loc": "Plasma Field",
-      "desc_loc": "Герой высвобождает волну энергетической плазмы, которая затем возвращается к нему. Волна замедляет врагов и наносит им урон: чем дальше она от владельца, тем замедление и урон сильнее. Волна наносит урон дважды, при движении в обе стороны.",
-      "lore_loc": "Плазменная мощь держит загробный мир во власти призрака молний.",
+      "desc_loc": "Releases a wave of energetic plasma that grows in power as it expands, but also zaps on contraction, slowing and dealing damage to enemy units caught in its path. Damage and slow increases with distance from Razor. The Plasma Field hits each unit twice, once each direction.",
+      "lore_loc": "The Lightning Revenant rules the Underscape with plasmatic power.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -126,7 +126,7 @@
             50
           ],
           "is_percentage": false,
-          "heading_loc": "МИН. УРОН:",
+          "heading_loc": "DAMAGE MIN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -146,7 +146,7 @@
             185
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. УРОН:",
+          "heading_loc": "DAMAGE MAX:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -163,7 +163,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -197,7 +197,7 @@
             5
           ],
           "is_percentage": true,
-          "heading_loc": "МИН. ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW MIN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -217,7 +217,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW MAX:",
           "bonuses": [
             {
               "name": "special_bonus_unique_razor_plasmafield_max_slow",
@@ -240,7 +240,7 @@
             1.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_razor_4",
@@ -354,12 +354,12 @@
       "id": 5083,
       "name": "razor_static_link",
       "name_loc": "Static Link",
-      "desc_loc": "Создаёт электрическую связь с выбранным вражеским героем, передавая его урон от атак владельцу способности. Пока связь действует, атаки не прерывают передвижение.",
-      "lore_loc": "Полярность призрака молний тянет к нему электричество, высасывая силы из противоположностей.",
+      "desc_loc": "Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor. Allows Razor to attack while moving with the link active.",
+      "lore_loc": "Razor's polarity channels electricity into his being, draining the power of his opposition.",
       "notes_loc": [
-        "Связь разорвётся раньше, если цель умрёт или отойдёт на расстояние более %drain_range_buffer% от дальности применения."
+        "The link is broken when either unit dies or the distance between them becomes %drain_range_buffer% units greater than Static Link's cast range."
       ],
-      "shard_loc": "Увеличивает дальность применения. Пока связь активна, на её цель действует замедление передвижения, равное украденному урону, умноженному на %move_speed_factor%.",
+      "shard_loc": "Increases Cast Range. Slows Razor's target by %move_speed_factor%x the amount of damage stolen while the link is active.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -413,7 +413,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ СВЯЗИ:",
+          "heading_loc": "LINK DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -433,7 +433,7 @@
             18
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "BUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -453,7 +453,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ ИЗМЕНЕНИЯ УРОНА:",
+          "heading_loc": "DAMAGE DRAIN RATE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_razor",
@@ -707,13 +707,13 @@
       "id": 1224,
       "name": "razor_storm_surge",
       "name_loc": "Storm Surge",
-      "desc_loc": "Когда владельца способности атакуют, есть шанс, что обидчика и ещё нескольких врагов неподалёку ударит молния, которая наносит урон и замедляет жертв. Этот эффект всегда срабатывает, когда героя выбирают целью заклинания. Из дополнительных жертв в первую очередь выбираются существа того же типа, что и обидчик.",
-      "lore_loc": "Кто приблизится к призраку молний, в ответ получит шоковую терапию.",
+      "desc_loc": "There's a chance when attacked, and always when targeted with a spell, to release a forked lightning that strikes the target and other nearby enemies, prioritizing the unit type of the attacker, dealing damage and slowing movement speed.",
+      "lore_loc": "Merely approaching the Lightning Revenant is rewarded with shock therapy.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Пока действует способность Eye of the Storm, шанс удара молнией увеличивается в %eye_of_the_storm_chance_multiplier% раза, его перезарядка уменьшается на %strike_cd_reduction_during_storm% сек., а сама молния бьёт по всем врагам в радиусе ульта. Не может сработать на одно и то же существо два раза подряд.",
+        "While Eye of the Storm is active, strike chance is %eye_of_the_storm_chance_multiplier%x as high, strike cooldown is reduced by %strike_cd_reduction_during_storm%s, and Lightning strikes all enemies within Eye of the Storm's radius. Does not apply to the same enemy twice from a single instance.",
         ""
       ],
       "type": 0,
@@ -758,7 +758,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС УДАРА:",
+          "heading_loc": "CHANCE TO STRIKE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -775,7 +775,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ЦЕЛЕЙ:",
+          "heading_loc": "TARGETS HIT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -795,7 +795,7 @@
             170
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_razor_storm_surge_damage_and_slow",
@@ -821,7 +821,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_razor_storm_surge_damage_and_slow",
@@ -844,7 +844,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -861,7 +861,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПОИСКА ДОП. ЦЕЛЕЙ:",
+          "heading_loc": "STRIKE SEARCH AREA:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -878,7 +878,7 @@
             2.5
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "STRIKE COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -964,7 +964,7 @@
       "id": 5084,
       "name": "razor_unstable_current",
       "name_loc": "Unstable Current",
-      "desc_loc": "Пассивно увеличивает скорость передвижения героя на %movespeed_per_level_pct%%% за каждый его уровень.",
+      "desc_loc": "Passively increases Razor's movement speed by %movespeed_per_level_pct%%% per hero level.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1032,7 +1032,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1061,15 +1061,15 @@
       "id": 5085,
       "name": "razor_eye_of_the_storm",
       "name_loc": "Eye of the Storm",
-      "desc_loc": "Собирает над героем грозовую тучу, которая бьёт молнией врага с наименьшим здоровьем, нанося ему урон и снижая его броню.",
-      "lore_loc": "Как гром среди ясного неба.",
+      "desc_loc": "A powerful lightning storm strikes out at the enemy unit with the lowest health, dealing damage and reducing armor.",
+      "lore_loc": "Ride the lightning.",
       "notes_loc": [
-        "Каждый удар наносится противнику с наименьшим количеством здоровья в области действия.",
-        "Туча в первую очередь атакует героев под действием способности Static Link.",
-        "Действие нескольких способностей складывается."
+        "Each blast targets the lowest health enemy unit within range.",
+        "Eye of the Storm will prioritize striking static linked heroes.",
+        "Successive casts of Eye of the Storm will stack."
       ],
       "shard_loc": "",
-      "scepter_loc": "Позволяет способности наносить урон башням, казармам и Древним, а также атаковать сразу две цели.",
+      "scepter_loc": "Causes Eye of the Storm to strike two different units instead of one and can damage structures. When striking buildings, it will only target towers, barracks, and the Ancient.",
       "facets_loc": [
         "",
         ""
@@ -1120,7 +1120,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1137,7 +1137,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1156,7 +1156,7 @@
             0.5
           ],
           "is_percentage": false,
-          "heading_loc": "ИНТЕРВАЛ УДАРОВ:",
+          "heading_loc": "STRIKE INTERVAL:",
           "bonuses": [
             {
               "name": "special_bonus_unique_razor_2",
@@ -1179,7 +1179,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ:",
+          "heading_loc": "ARMOR REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1198,7 +1198,7 @@
             90
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1266,7 +1266,7 @@
     {
       "id": 6861,
       "name": "special_bonus_unique_razor_4",
-      "name_loc": "+{s:bonus_slow_duration} сек. замедления от Plasma Field",
+      "name_loc": "+{s:bonus_slow_duration}s Plasma Field Slow Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1328,7 +1328,7 @@
     {
       "id": 6564,
       "name": "special_bonus_spell_lifesteal_10",
-      "name_loc": "+{s:value}% к вампиризму заклинаниями",
+      "name_loc": "+{s:value}% Spell Lifesteal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1408,7 +1408,7 @@
     {
       "id": 6028,
       "name": "special_bonus_unique_razor",
-      "name_loc": "+{s:bonus_drain_rate} к урону в секунду у Static Link",
+      "name_loc": "+{s:bonus_drain_rate} Static Link Damage Steal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1470,7 +1470,7 @@
     {
       "id": 5928,
       "name": "special_bonus_strength_12",
-      "name_loc": "+{s:value} к силе",
+      "name_loc": "+{s:value} Strength",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1550,7 +1550,7 @@
     {
       "id": 1137,
       "name": "special_bonus_unique_razor_storm_surge_damage_and_slow",
-      "name_loc": "+{s:bonus_strike_move_slow_pct}% к замедлению и урону от Storm Surge",
+      "name_loc": "+{s:bonus_strike_move_slow_pct}% Storm Surge Slow and Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1612,7 +1612,7 @@
     {
       "id": 6408,
       "name": "special_bonus_unique_razor_2",
-      "name_loc": "–{s:bonus_strike_interval} сек. интервала разрядов Eye of the Storm",
+      "name_loc": "-{s:bonus_strike_interval}s Eye of the Storm Strike Interval",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1674,8 +1674,8 @@
     {
       "id": 1064,
       "name": "special_bonus_unique_razor_plasmafield_second_ring",
-      "name_loc": "Вторая волна от Plasma Field через {s:bonus_second_ring_delay} сек.",
-      "desc_loc": "Вторая волна наносит на {s:bonus_second_ring_reduction}% меньше урона",
+      "name_loc": "Creates A Second Plasma Field Delayed By {s:bonus_second_ring_delay}s",
+      "desc_loc": "The second plasma field does {s:bonus_second_ring_reduction}% less damage",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1736,7 +1736,7 @@
     {
       "id": 1065,
       "name": "special_bonus_unique_razor_static_link_aspd",
-      "name_loc": "Static Link крадёт скорость атаки",
+      "name_loc": "Static Link Steals Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1806,7 +1806,7 @@
           "id": 1225,
           "name": "razor_dynamo",
           "name_loc": "Dynamo",
-          "desc_loc": "Герой получает +%spell_amp_mult%%% к урону от заклинаний за каждые %spell_amp_damage_divisor% очков атаки.",
+          "desc_loc": "Razor gains %spell_amp_mult%%% spell amplification for every %spell_amp_damage_divisor% points of attack damage.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",
@@ -1891,7 +1891,7 @@
                 0
               ],
               "is_percentage": true,
-              "heading_loc": "ДОП. УРОН ЗАКЛИНАНИЯМИ ЗА ПОКАЗАТЕЛЬ АТАКИ:",
+              "heading_loc": "SPELL AMP PER BONUS ATTACK DAMAGE:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

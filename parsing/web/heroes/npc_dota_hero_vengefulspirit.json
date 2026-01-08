@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_vengefulspirit",
   "order_id": 21,
   "name_loc": "Vengeful Spirit",
-  "bio_loc": "Даже самые сдержанные cкайрасы — это раздражительные от природы создания, готовые отомстить за самое мелкое оскорбление. Но Шенделезара — это месть во плоти. Некогда гордая и свирепая скайраска, Шенделезара должна была унаследовать Жуткое гнездо, но предательство сестры лишило её законного права. Попавшись в расставленные убийцей сети, Шенделезара смогла выбраться, лишь пожертвовав своими крыльями и испытав страшное унижение: ей пришлось ковылять пешком. Она знала, что без крыльев cкайрасы никогда не примут её правление и что на самом высоком насесте Жуткого гнезда, до которого можно лишь долететь, её сестра была в безопасности. Не желая жить бескрылой калекой и жаждя мести больше, чем власти, павшая принцесса заключила сделку с богиней Скри'Ок: она пожертвовала своё истерзанное тело и обрела форму вечного духа, живущего местью и обладающего жуткой мощью в материальном мире. Она добьётся отмщения — даже если крыльев ей уже не вернуть.",
-  "hype_loc": "Vengeful Spirit напоминает о себе даже после смерти. Она постоянно сеет хаос в рядах врагов, <b>обмениваясь местами</b> с другими героями неподалёку, <b>оглушая врагов</b> и ослабляя того, кто её одолеет.",
-  "npe_desc_loc": "Может поменяться местами с любым героем неподалёку",
+  "bio_loc": "Even the most contented Skywrath is an ill-tempered creature, naturally inclined to seek revenge for the slightest insult. But Vengeful Spirit is the essence of vengeance. Once a proud and savage Skywrath scion, Shendelzare was first in succession for the Ghastly Eyrie until a sister's treachery robbed her of her birthright. Snared in an assassin's net, Shendelzare tore free only at the cost of her wings, limping away in the ultimate humiliation: On foot. With her wings broken, she knew the Skywrath would never accept her as ruler; and in the highest roost of the Eyrie, inaccessible except by winged flight, her sister was untouchable. Unwilling to live as a flightless cripple, and desiring revenge far more than earthly power, the fallen princess drove a bargain with the goddess Scree'Auk: She surrendered her broken body for an imperishable form of spirit energy, driven by vengeance, capable of doing great damage in the material plane. She may spend eternity flightless, but she will have her revenge.",
+  "hype_loc": "Vengeful Spirit's presence is felt at all times, whether she is alive or dead. Able to <b>swap positions</b> with any nearby hero, <b>stun enemies</b>, and reduce her killer's effectiveness if she falls, she constantly brings confusion and chaos to her foes.",
+  "npe_desc_loc": "Can swap herself with any nearby hero",
   "facets": [
     {
       "color": 4,
       "title_loc": "Avenging Missile",
-      "description_loc": "Урон способности Magic Missile увеличивается на {s:bonus_damage_per_lasthit} за каждого крипа, добитого целью.",
+      "description_loc": "Magic Missile deals {s:bonus_damage_per_lasthit} bonus damage for every creep the enemy has killed.",
       "name": "vengefulspirit_avenging_missile",
       "icon": "nuke",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Soul Strike",
-      "description_loc": "Атаки героя имеют все преимущества как дальнего, так и ближнего боя.",
+      "description_loc": "Vengeful Spirit's ranged attacks behave as if they were melee attacks.",
       "name": "vvengefulspirit_melee",
       "icon": "fist",
       "gradient_id": 1,
@@ -66,13 +66,13 @@
       "id": 5122,
       "name": "vengefulspirit_magic_missile",
       "name_loc": "Magic Missile",
-      "desc_loc": "Выпускает во врага магический снаряд, который оглушает и наносит урон.",
-      "lore_loc": "Простейший скайрасский приём — магический снаряд — основной инструмент мести Шендел.",
+      "desc_loc": "Fires a magic missile at an enemy unit, stunning and dealing damage.",
+      "lore_loc": "A simple Skywrath technique, the magic missile is Shendel's primary tool for vengeance.",
       "notes_loc": [],
-      "shard_loc": "Снаряд отскакивает в ещё одного врага (в первую очередь в героев) в радиусе, равном %bounce_range_pct%%% от текущей дальности применения способности.",
+      "shard_loc": "Bounces once on an enemy, prioritizing heroes, within %bounce_range_pct%%% of Magic Missile's current cast range from the first target.",
       "scepter_loc": "",
       "facets_loc": [
-        "Урон способности Magic Missile увеличивается на %damage_per_lasthit% за каждого крипа, добитого целью.",
+        "Magic Missile deals %damage_per_lasthit% bonus damage for every creep the enemy has killed.",
         ""
       ],
       "type": 0,
@@ -146,7 +146,7 @@
             1.8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_vengeful_spirit_1",
@@ -172,7 +172,7 @@
             340
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -323,8 +323,8 @@
       "id": 5124,
       "name": "vengefulspirit_wave_of_terror",
       "name_loc": "Wave of Terror",
-      "desc_loc": "Герой издаёт жуткий клич, раскрывая туман войны и ослабляя броню и атаки врагов.",
-      "lore_loc": "Душераздирающий голос Шендел предупреждает о её приближении.",
+      "desc_loc": "Vengeful Spirit lets loose a wicked cry, weakening the total attack damage and armor of enemies, and giving vision of the path ahead.",
+      "lore_loc": "Shendel's haunting voice hints at her approaching vindication.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -383,7 +383,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -437,7 +437,7 @@
             -6
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ:",
+          "heading_loc": "ARMOR REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_vengeful_spirit_4",
@@ -463,7 +463,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА ОТ АТАК:",
+          "heading_loc": "ATTACK DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -497,7 +497,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОБЗОРА:",
+          "heading_loc": "VISION DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -552,7 +552,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "DEBUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -635,13 +635,13 @@
       "id": 5123,
       "name": "vengefulspirit_command_aura",
       "name_loc": "Vengeance Aura",
-      "desc_loc": "Присутствие героя увеличивает урон союзных героев неподалёку.",
-      "lore_loc": "Отнюдь не все разделяют всепоглощающую жажду мести, однако чрезмерный фанатизм воодушевляет на подвиги.",
+      "desc_loc": "Vengeful Spirit's presence increases the damage of nearby friendly heroes.",
+      "lore_loc": "Although they may not share her undying passion for revenge, allies do draw on her fanaticism in combat.",
       "notes_loc": [
-        "Аура, увеличивающая урон, отключается истощением."
+        "Break disables the damage aura."
       ],
       "shard_loc": "",
-      "scepter_loc": "При гибели владельца создаёт на его месте иллюзию, которая является сильной (не умирает от заклинаний, мгновенно убивающих иллюзии) и может применять его способности. Иллюзия наносит полный урон, а получает — увеличенный. Если она жива в момент возрождения владельца, он займёт её место. Опыт, который зарабатывает иллюзия, передаётся владельцу.",
+      "scepter_loc": "Upon death, creates a strong illusion of Vengeful Spirit that deals full damage, takes increased damage, and can cast all of her spells. If the illusion is alive when Vengeful Spirit respawn, she will take its place. XP earned by her illusion is given to her. Strong Illusions are not instantly killed by spells.",
       "facets_loc": [
         "",
         ""
@@ -691,7 +691,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE BONUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_vengeful_spirit_2",
@@ -714,7 +714,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -750,7 +750,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ПО ИЛЛЮЗИИ:",
+          "heading_loc": "ILLUSION DAMAGE TAKEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -817,7 +817,7 @@
       "id": 1238,
       "name": "vengefulspirit_retribution",
       "name_loc": "Retribution",
-      "desc_loc": "Вражеский герой, убивший владельца этой способности, получает от него на %bonus_damage%%% больше урона до своей следующей смерти.",
+      "desc_loc": "Whenever an enemy hero kills Vengeful Spirit, they get a debuff until their next death, causing Vengeful Spirit to deal %bonus_damage%%% bonus damage to them.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -897,12 +897,12 @@
       "id": 5125,
       "name": "vengefulspirit_nether_swap",
       "name_loc": "Nether Swap",
-      "desc_loc": "Мгновенно меняется местами с выбранным героем, останавливая его прерываемые заклинания. Если целью был враг, то способность нанесёт ему урон, а если союзник — даст ему барьер, здоровье которого равно урону способности. Владелец способности получает такой же барьер вне зависимости от цели.",
-      "lore_loc": "Мученичество — совсем не большое воздаяние за месть.",
+      "desc_loc": "Instantaneously swaps positions with a target Hero, friend or enemy. Nether Swap interrupts channeling abilities on the target. Enemy Swapped units take damage. Vengeful Spirit and allied swapped units gain a barrier equal to the damage dealt.",
+      "lore_loc": "Martyrdom is a small price to pay for vengeance.",
       "notes_loc": [
-        "Действует на существ, невосприимчивых к магии.",
-        "Уничтожает деревья рядом с героями, поменявшимися местами.",
-        "Останавливает прерываемые заклинания."
+        "Works on Spell Immune units.",
+        "Trees near Vengeful Spirit and the target will be destroyed when the spell is cast.",
+        "Channeling spells are interrupted by Nether Swap."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -958,7 +958,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БАРЬЕРА:",
+          "heading_loc": "SHIELD DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -977,7 +977,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН/БАРЬЕР:",
+          "heading_loc": "DAMAGE/SHIELD:",
           "bonuses": [
             {
               "name": "special_bonus_unique_vengeful_spirit_swap_damage",
@@ -1093,7 +1093,7 @@
     {
       "id": 1068,
       "name": "special_bonus_unique_vengeful_spirit_swap_damage",
-      "name_loc": "+{s:bonus_damage} к урону врагам от Nether Swap",
+      "name_loc": "+{s:bonus_damage} Nether Swap Enemy Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1155,7 +1155,7 @@
     {
       "id": 1067,
       "name": "special_bonus_unique_vengeful_spirit_missile_castrange",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальности применения Magic Missile",
+      "name_loc": "+{s:bonus_AbilityCastRange} Magic Missile Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1217,7 +1217,7 @@
     {
       "id": 6977,
       "name": "special_bonus_unique_vengeful_spirit_4",
-      "name_loc": "+{s:bonus_armor_reduction} к снижению брони от Wave of Terror",
+      "name_loc": "-{s:bonus_armor_reduction} Wave of Terror Armor",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1279,7 +1279,7 @@
     {
       "id": 6310,
       "name": "special_bonus_unique_vengeful_spirit_1",
-      "name_loc": "+{s:bonus_magic_missile_stun} сек. оглушения от Magic Missile",
+      "name_loc": "+{s:bonus_magic_missile_stun}s Magic Missile Stun Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1341,7 +1341,7 @@
     {
       "id": 6978,
       "name": "special_bonus_unique_vengeful_spirit_5",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Magic Missile",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Magic Missile Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1403,7 +1403,7 @@
     {
       "id": 1197,
       "name": "special_bonus_unique_vengeful_spirit_wave_of_terror_steal",
-      "name_loc": "Wave Of Terror крадёт {s:bonus_steal_pct}% сниженных урона и брони",
+      "name_loc": "Wave Of Terror Steals {s:bonus_steal_pct}% Of Reduced Damage And Armor",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1465,7 +1465,7 @@
     {
       "id": 6237,
       "name": "special_bonus_unique_vengeful_spirit_2",
-      "name_loc": "+{s:bonus_bonus_base_damage}% к базовому урону от Vengeance Aura",
+      "name_loc": "+{s:bonus_bonus_base_damage}% Vengeance Aura Base Damage Bonus",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1527,7 +1527,7 @@
     {
       "id": 790,
       "name": "special_bonus_unique_vengeful_spirit_9",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Nether Swap",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Nether Swap Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1597,7 +1597,7 @@
           "id": 1237,
           "name": "vengefulspirit_soul_strike",
           "name_loc": "Soul Strike",
-          "desc_loc": "Атаки героя имеют все преимущества как дальнего, так и ближнего боя.",
+          "desc_loc": "Vengeful Spirit's ranged attacks behave as if they were melee attacks.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",
@@ -1648,7 +1648,7 @@
                 1.5
               ],
               "is_percentage": false,
-              "heading_loc": "БАЗОВЫЙ ИНТЕРВАЛ АТАК:",
+              "heading_loc": "BASE ATTACK TIME:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

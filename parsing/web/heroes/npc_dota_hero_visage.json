@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_visage",
   "order_id": 90,
   "name_loc": "Visage",
-  "bio_loc": "Над входом в Узкий лабиринт восседают жуткие фигуры насмешливых гаргулий, и путь навеки попавших в этот мир лежит под их пристальным взглядом. Звери и птицы, люди и чудища — все существа, что умирают или проникают в мир иной, обязательно минуют их пост. Отделённый от тела дух, решив однажды пройти сквозь смертную завесу, уже не может вернуться обратно. Но если случается так, что силой или хитростью некая беспокойная душа покидает ад или небеса, то ужасающая гаргулья — воплощённая форма вечного духа по имени Некро'лик — отправляется за беглецом, чтобы вернуть его. Беспощадный и безупречный, неподвластный смерти и усталости, каменный страж без сожаления и остановки преследует добычу, охотно уничтожая любого, кто приютит беглеца. Тот, кто следит за порядком в загробном мире, не знает покоя, и хотя мертвых иногда воскрешают, он найдёт и вернёт каждого на своё место.",
-  "hype_loc": "Разведывая <b>смертоносными гаргульями</b> поле боя, Visage <b>покрывает себя бронёй</b> и ищет битвы. Оказавшись рядом со схваткой, он <b>обращает страдания</b> тех, кто получает урон, в мощные заряды энергии и сокрушает ими врагов.",
-  "npe_desc_loc": "Разведывает территорию и нападает своими гаргульями",
+  "bio_loc": "Perched atop the entrance to the Narrow Maze sit the looming shapes of sneering gargoyles, the paths into the hereafter forever in their gaze.  Beasts and birds, men and monsters, all creatures that die and choose to travel beyond must someday pass beneath their sight.  For an untethered spirit, the decision to journey through the veil of death is irrevocable.  When chance comes, and by craft or cunning some restless soul escapes their hells and heavens, it is the dreaded gargoyle Visage, the bound form of the eternal spirit Necro'lic, who is dispatched to reclaim them.  Ruthless and efficient, unhindered by the principles of death and fatigue, Visage stalks its prey without mercy or end, willingly destroying all which may give shelter to the fugitive essence.  That which flaunts the laws of the afterlife may never rest, for while it is true that the dead may be revived, it is only a matter of time before Visage finds and returns them to their proper place.",
+  "hype_loc": "As his <b>deadly familiars</b> scout the field, Visage <b>cloaks himself in armor</b> and seeks the next battle. Once near a skirmish, he <b>gathers soul energy</b> from damage inflicted upon nearby fighters before releasing it in a devastating attack.",
+  "npe_desc_loc": "Scouts and attacks with his familiars",
   "facets": [
     {
       "color": 5,
       "title_loc": "Sepulchre",
-      "description_loc": "Grave Chill действует и на существ вокруг цели. Герой может вернуть гаргулий к себе.",
+      "description_loc": "Grave Chill also affects units around the target. Visage can also recall his familiars.",
       "name": "visage_sepulchre",
       "icon": "area_of_effect",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Faithful Followers",
-      "description_loc": "Гаргульи автоматически следуют за владельцем и атакуют те же цели, что и он.",
+      "description_loc": "Familiars automatically move with Visage and attack his targets.",
       "name": "visage_faithful_followers",
       "icon": "summons",
       "gradient_id": 2,
@@ -28,7 +28,7 @@
     {
       "color": 1,
       "title_loc": "Death Toll",
-      "description_loc": "Убийства способностью Soul Assumption приносят дополнительное золото. Герой может вернуть гаргулий к себе.",
+      "description_loc": "Soul Assumption kills give bonus gold. Visage can also recall his familiars.",
       "name": "visage_gold_assumption",
       "icon": "gold",
       "gradient_id": 0,
@@ -75,17 +75,17 @@
       "id": 5480,
       "name": "visage_grave_chill",
       "name_loc": "Grave Chill",
-      "desc_loc": "Крадёт скорость передвижения и атаки цели, прибавляя эти показатели себе и гаргульям неподалёку.",
-      "lore_loc": "Тепло солнечного света никогда не просачивалось в тёмные и холодные коридоры Узкого лабиринта.",
+      "desc_loc": "Visage drains the movement and attack speed of the targeted unit, gaining it for itself and nearby familiars.",
+      "lore_loc": "The warmth of the sun is never felt in the dark cold of the Narrow Maze.",
       "notes_loc": [
-        "Эффекты на герое и цели развеиваются отдельно друг друга.",
-        "Количество полученной скорости не зависит от количества потерянной.",
-        "Гаргульи в радиусе %radius% от владельца также получают бонусы от этой способности."
+        "The two buffs can be removed separately by dispels.",
+        "The speed gained is independent of the speed lost on the target.",
+        "Familiars within %radius% range of Visage will also receive bonuses from Grave Chill."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Grave Chill действует и на существ вокруг цели.",
+        "Grave Chill also affects units around the target.",
         "",
         ""
       ],
@@ -137,7 +137,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_visage_grave_chill_duration",
@@ -163,7 +163,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "КРАЖА СКОРОСТИ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SPEED DRAIN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -183,7 +183,7 @@
             70
           ],
           "is_percentage": false,
-          "heading_loc": "КРАЖА СКОРОСТИ АТАКИ:",
+          "heading_loc": "ATTACK SPEED DRAIN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -217,7 +217,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "AOE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -236,7 +236,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ ЭФФЕКТА ПО ВТОРИЧНЫМ ЦЕЛЯМ:",
+          "heading_loc": "SECONDARY TARGET PENALTY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -338,17 +338,17 @@
       "id": 5481,
       "name": "visage_soul_assumption",
       "name_loc": "Soul Assumption",
-      "desc_loc": "Способность получает заряд каждый раз, когда нанесённый героям неподалёку урон превышает %damage_limit%. Наносит выбранной цели урон, зависящий от числа зарядов.",
-      "lore_loc": "Собранные души мертвых вырываются, чтобы забрать к себе в стаю еще одну.",
+      "desc_loc": "Visage gathers charges of soul essence each time nearby heroes take more than %damage_limit% damage. When the essence is released, it deals base damage as well as damage for each gathered soul charge.",
+      "lore_loc": "The collected souls of the dead reach out to bring another into their fold.",
       "notes_loc": [
-        "Вы получаете заряд, когда игрок или Рошан наносит от %damage_min% до %damage_max% урона. Урон самому себе и урон от этой способности не учитываются."
+        "Charges are only gained for damage greater than %damage_min% and less than %damage_max% that is dealt by a player or Roshan.  Self-damage or Soul Assumption damage isn't counted."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Если убить вражеского героя этой способностью или если он умрёт в течение %gold_grace_period_hero% сек. после получения урона от неё, за каждый её заряд даётся %bonus_soul_charge_gold% дополнительного золота (вплоть до %bonus_gold_max_tooltip% золота). Уменьшает награду в золоте за убийство крипов."
+        "Soul Assumption kills give %bonus_soul_charge_gold% gold per soul charge, up to %bonus_gold_max_tooltip% gold. Reduced gold from creeps. Enemy heroes killed within %gold_grace_period_hero%s of being affected by Soul Assumption also give gold."
       ],
       "type": 0,
       "behavior": "8",
@@ -412,7 +412,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -429,7 +429,7 @@
             70
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ЗА ЗАРЯД:",
+          "heading_loc": "DAMAGE PER CHARGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_visage_4",
@@ -452,7 +452,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ЗОЛОТО ЗА ЗАРЯД:",
+          "heading_loc": "BONUS GOLD PER CHARGE PER KILL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -471,7 +471,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ЗОЛОТО ЗА КРИПОВ:",
+          "heading_loc": "CREEP GOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -537,7 +537,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ЗАРЯДОВ:",
+          "heading_loc": "MAX CHARGES:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -554,7 +554,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "СРОК ДЕЙСТВИЯ ЗАРЯДА:",
+          "heading_loc": "CHARGE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -571,7 +571,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ДЛЯ ЗАРЯДА:",
+          "heading_loc": "GATHER DAMAGE THRESHOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -588,7 +588,7 @@
             1800
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС СБОРА ЗАРЯДОВ:",
+          "heading_loc": "GATHER DAMAGE RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -742,15 +742,15 @@
       "id": 5482,
       "name": "visage_gravekeepers_cloak",
       "name_loc": "Gravekeeper's Cloak",
-      "desc_loc": "Герой создаёт на себе слоистый защитный барьер. Если герой получает урон от игрока, один слой исчезает и восстанавливается спустя определённое время.",
-      "lore_loc": "Прочная чешуя гаргульи разделяет свойства камня и призрака, делая её практически невосприимчивой к мечу и магии.",
+      "desc_loc": "Visage generates a layered barrier that protects him from damage.  If he receives damage from a player, one layer is removed, and takes time to recover.",
+      "lore_loc": "Visage's tough scales share equal properties of ghost and stone, making it nearly impervious to blade and magical assault.",
       "notes_loc": [
-        "При получении от другого игрока больше минимального урона исчезает один слой.",
-        "Гаргульи в радиусе %radius% получают такую же защиту от способности Gravekeeper's Cloak, как и их владелец.",
-        "Получение эффектов отключается истощением.",
-        "Существующие эффекты не отключаются истощением."
+        "Each time Visage receives damage greater than the Minimum Damage that was not self-inflicted and was from a player owned source, a layer is removed.",
+        "Familiars within %radius% range of Visage will receive the current damage reduction from Gravekeeper's Cloak.",
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
       ],
-      "shard_loc": "Позволяет применить эту способность, чтобы герой обратился в камень, как гаргулья, и восстановил до %shard_hp_restoration_pct%%% от максимального запаса здоровья.",
+      "shard_loc": "Grants Visage the ability to cast Gravekeeper's Cloak. Restores up to %shard_hp_restoration_pct%%% of your health.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -799,7 +799,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМУМ СЛОЁВ:",
+          "heading_loc": "MAX LAYERS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -819,7 +819,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ УРОНА ЗА СЛОЙ:",
+          "heading_loc": "DAMAGE REDUCTION PER LAYER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -839,7 +839,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ВОССТАНОВЛЕНИЯ СЛОЯ:",
+          "heading_loc": "LAYER RECOVERY TIME:",
           "bonuses": [
             {
               "name": "special_bonus_unique_visage_cloak_recovery_time",
@@ -862,7 +862,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "МИНИМАЛЬНЫЙ УРОН:",
+          "heading_loc": "MINIMUM DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -896,7 +896,7 @@
             80
           ],
           "is_percentage": true,
-          "heading_loc": "МАКСИМАЛЬНОЕ УМЕНЬШЕНИЕ УРОНА:",
+          "heading_loc": "MAX DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -932,7 +932,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [
             65
@@ -951,7 +951,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАСХОД МАНЫ:",
+          "heading_loc": "MANA COST:",
           "bonuses": [],
           "values_shard": [
             125
@@ -1003,8 +1003,8 @@
       "id": 683,
       "name": "visage_silent_as_the_grave",
       "name_loc": "Silent as the Grave",
-      "desc_loc": "Герой и его гаргульи получают полёт, становятся невидимыми и передвигаются быстрее. Когда герой и гаргульи вновь становятся видимыми, они недолго наносят больше урона. Невидимость длится %invis_duration% сек. или пока существо не совершит атаку или не применит заклинание.",
-      "lore_loc": "Обитатели мира смертных слепы к неуловимым устремлениям тех, кто несёт волю загробной жизни.",
+      "desc_loc": "Turns Visage and familiars invisible, granting Visage bonus movement speed and upgrading its movement type to flying. When Visage or its familiars leave invisibility they deal more damage for a short duration. Lasts %invis_duration% seconds. Invisibility ends when attacking or casting.",
+      "lore_loc": "Those on the mortal plane are blind to the stirrings of the agents of the afterlife.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1055,7 +1055,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ДОП. УРОНА:",
+          "heading_loc": "BONUS DAMAGE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1072,7 +1072,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1106,7 +1106,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVESPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1169,18 +1169,18 @@
       "id": 5483,
       "name": "visage_summon_familiars",
       "name_loc": "Summon Familiars",
-      "desc_loc": "Призывает %familiar_count% слепые гаргульи, которые будут сражаться на стороне героя. Гаргульи имеют способность Stone Form, которая позволяет им превратиться в камень, оглушая врагов при приземлении. В каменном облике гаргульи неуязвимы и быстро восстанавливают здоровье. За убийство гаргулий враг получает значительную награду.",
-      "lore_loc": "Стражи Узкого лабиринта, приспешники Некро'лика, неустанно следят за его владениями.",
+      "desc_loc": "Conjures %familiar_count% blind Familiars to fight for Visage.  Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing.  While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health.  Familiars grant high bounty when killed.",
+      "lore_loc": "Guardians of the Narrow Maze, Necro'lic's Familiars stand watch over his domain.",
       "notes_loc": [
-        "Применение способности заменяет существующих гаргулий новыми.",
-        "Гаргульи неподалёку от героя получают такую же защиту от способности Gravekeeper's Cloak, как и их владелец."
+        "Casting Summon Familiars will replace any existing Familiars.",
+        "Familiars within range of Visage will receive bonuses from Gravekeeper's Cloak and Grave Chill."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Применение в альтернативном режиме возвращает гаргулий к владельцу спустя %recall_duration% сек. В это время они не могут действовать.",
-        "Гаргульи автоматически атакуют последнюю цель атаки владельца и возвращаются, если оказываются за пределами его радиуса атаки или если он прикажет отменить текущее действие либо удерживать позицию.<br><br>Если включено автоприменение, гаргульи будут только следовать за владельцем.",
-        "Применение в альтернативном режиме возвращает гаргулий к владельцу спустя %recall_duration% сек. В это время они не могут действовать."
+        "The ability can be cast in the alt-cast state to recall Visages familiars after %recall_duration%s, during which the Familiars cannot attack or act.",
+        "Familiars will automatically attack the target Visage tried to attack last, and will return if that target is out of Visage's attack range, or Visage issues the cancel current action or hold position commands.<br><br>The ability can be toggled to the Auto-Cast state to command the Familiars to return to Visage and not leave his side until the state has been disabled.",
+        "The ability can be cast in the alt-cast state to recall Visages familiars after %recall_duration%s, during which the Familiars cannot attack or act."
       ],
       "type": 1,
       "behavior": "2052",
@@ -1232,7 +1232,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ ГАРГУЛЬИ:",
+          "heading_loc": "FAMILIAR HEALTH:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1251,7 +1251,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "БРОНЯ ГАРГУЛЬИ:",
+          "heading_loc": "FAMILIAR ARMOR:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1268,7 +1268,7 @@
             180
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ АТАКИ ГАРГУЛИЙ:",
+          "heading_loc": "FAMILIAR ATTACK RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1287,7 +1287,7 @@
             430
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ГАРГУЛЬИ:",
+          "heading_loc": "FAMILIAR SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1306,7 +1306,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "ЗОЛОТО ЗА УБИЙСТВО ГАРГУЛЬИ:",
+          "heading_loc": "FAMILIAR GOLD BOUNTY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1327,7 +1327,7 @@
             75
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ГАРГУЛЬИ:",
+          "heading_loc": "FAMILIAR ATTACK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1616,12 +1616,12 @@
       "id": 1474,
       "name": "visage_lurker",
       "name_loc": "Lurker",
-      "desc_loc": "Перезарядка способностей героя ускоряется, когда он не получает урон.<br><br>Если герою не наносят урон, он каждые %stack_gain_time% сек. получает эффект, который ускоряет его перезарядки на %cooldown_speed_per_stack%%%. Эффекты пропадают через %linger_duration% сек. после получения урона. Максимум эффектов: %max_stacks%.",
+      "desc_loc": "Visage's ability cooldown durations are accelerated as long as he's not taking damage.<br><br>Grants a stack every %stack_gain_time%s that Visage does not take damage. Each stack grants %cooldown_speed_per_stack%%% cooldown acceleration with a max of %max_stacks% stacks. Stacks fade after %linger_duration%s upon taking any damage.",
       "lore_loc": "",
       "notes_loc": [
-        "Получение эффектов отключается истощением.",
-        "Существующие эффекты не отключаются истощением.",
-        "Уменьшаются перезарядки даже тех способностей, которые уже перезаряжаются."
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks.",
+        "Affects Visage's ability cooldown durations, including spells already on cooldown."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1759,7 +1759,7 @@
     {
       "id": 776,
       "name": "special_bonus_unique_visage_8",
-      "name_loc": "+{s:bonus_max_stacks} к максимуму эффектов от Lurker",
+      "name_loc": "+{s:bonus_max_stacks} Lurker Max Stacks",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1822,7 +1822,7 @@
     {
       "id": 626,
       "name": "special_bonus_unique_visage_7",
-      "name_loc": "+{s:bonus_bonus_damage} к урону героя и гаргулий",
+      "name_loc": "+{s:bonus_bonus_damage} Visage and Familiars Attack Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1885,7 +1885,7 @@
     {
       "id": 1148,
       "name": "special_bonus_unique_visage_grave_chill_duration",
-      "name_loc": "+{s:bonus_chill_duration} сек. действия Grave Chill",
+      "name_loc": "+{s:bonus_chill_duration}s Grave Chill Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1948,8 +1948,8 @@
     {
       "id": 6522,
       "name": "special_bonus_unique_visage_3",
-      "name_loc": "Soul Assumption по {s:bonus_target_count} целям",
-      "desc_loc": "Запускает второй снаряд способности в случайного противника в радиусе применения. Действует в первую очередь на героев.",
+      "name_loc": "Soul Assumption Hits {s:bonus_target_count} Targets",
+      "desc_loc": "A second Soul Assumption is launched towards a random enemy unit within the cast range, prioritizing Heroes.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2011,7 +2011,7 @@
     {
       "id": 6983,
       "name": "special_bonus_unique_visage_4",
-      "name_loc": "+{s:bonus_soul_charge_damage} к урону за заряд Soul Assumption",
+      "name_loc": "+{s:bonus_soul_charge_damage} Soul Assumption Damage Per Charge",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2074,8 +2074,8 @@
     {
       "id": 6031,
       "name": "special_bonus_unique_visage_1",
-      "name_loc": "Атаки героя и гаргулий снижают броню на {s:bonus_armor_reduction_per_hit}",
-      "desc_loc": "Эффект от разных источников складывается и длится {s:bonus_armor_reduction_duration} сек.",
+      "name_loc": "+{s:bonus_armor_reduction_per_hit} Armor Corruption to Visage and Familiars",
+      "desc_loc": "This effect can stack among multiple sources and lasts {s:bonus_armor_reduction_duration}s.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2137,7 +2137,7 @@
     {
       "id": 1712,
       "name": "special_bonus_unique_visage_cloak_recovery_time",
-      "name_loc": "–{s:bonus_recovery_time} сек. восстановления слоя у Gravekeeper's Cloak",
+      "name_loc": "-{s:bonus_recovery_time}s Gravekeeper's Cloak Recovery Time",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2200,7 +2200,7 @@
     {
       "id": 6985,
       "name": "special_bonus_unique_visage_6",
-      "name_loc": "+{s:bonus_familiar_count} к числу гаргулий",
+      "name_loc": "+{s:bonus_familiar_count} Familiar",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

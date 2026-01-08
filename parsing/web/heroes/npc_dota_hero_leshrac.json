@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_leshrac",
   "order_id": 38,
   "name_loc": "Leshrac",
-  "bio_loc": "Это существо, также известное как Истерзанная душа, вырвано из сердца самой природы; половина его живёт в одном мире, половина — в другом. Его пронзительный разум ни на мгновение не оставляет без внимания предсмертный кошмар всего сущего. Когда-то он был великим философом, искавшим суть бытия, и проник вглубь природы при помощи хроноптических кристаллов, но чудовищная истина навеки изменила его. Теперь самые тёмные глубины его просвещённого разума озаряются лишь порывами собственной гордости. Как и другие первичные существа, он един с природой, но природа его жутка и низменна. Он один видит всю страшную суть реальности, и презирает тех, кто верит, что космос притаил награду для добросердечных глупцов.",
-  "hype_loc": "Своими мощными заклинаниями Leshrac одинаково хорошо справляется и с врагами, и с их постройками. Расчищая путь своими <b>разрушительными способностями</b>, он продвигается вглубь вражеской территории, раскалывает землю под ногами противников, <b>оглушает их</b> и оставляет на растерзание союзникам.",
-  "npe_desc_loc": "Наносит значительный урон в области вокруг себя",
+  "bio_loc": "Leshrac, Tormented Soul, is an entity torn from the heart of nature, a liminal being that exists half in one plane of existence, half in another. His penetrating intelligence is such that he can never ignore for a moment the agonizing horror at the heart of all creation. Once a great philosopher who sought the meaning of existence, he plumbed the depths of nature with the haunted Chronoptic Crystals, and was forever altered by the hideous mysteries thereby revealed to him. Now the darkest depths of his enlightenment are illumined only by the fitful glare of his arrogance. Like other elemental characters, he is completely at one with nature, but in his case it is a nature lurid and vile. He alone sees the evil truth of reality, and has no use for those who believe the cosmos reserves a special reward for those who practice benevolence.",
+  "hype_loc": "Leshrac's powerful spells lay waste to enemies and their defenses alike. Pushing deep into enemy territory with his <b>devastating edict</b>, careful timing of his ability to split the earth will <b>stun foes</b>, allowing his merciless allies to finish them off.",
+  "npe_desc_loc": "Can deal heavy damage in an aura around himself",
   "facets": [
     {
       "color": 3,
       "title_loc": "Chronoptic Nourishment",
-      "description_loc": "Атаки героя восстанавливают ему ману.",
+      "description_loc": "Leshrac's attacks restore mana.",
       "name": "leshrac_attacks_mana",
       "icon": "mana",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 4,
       "title_loc": "Misanthropy",
-      "description_loc": "Увеличивает частоту взрывов у Diabolic Edict, но они не наносят урон постройкам.",
+      "description_loc": "Diabolic Edict explosion rate increased but it no longer damages buildings.",
       "name": "leshrac_misanthropy",
       "icon": "nuke",
       "gradient_id": 0,
@@ -66,13 +66,13 @@
       "id": 5241,
       "name": "leshrac_split_earth",
       "name_loc": "Split Earth",
-      "desc_loc": "Раскалывает землю под врагами. Наносит урон и ненадолго оглушает.",
-      "lore_loc": "Обращая природу нечистой воле мученика, сотрясающаяся земля погребает несчастных, вставших на его пути.",
+      "desc_loc": "Splits the earth under enemies. Deals damage and stuns for a short duration.",
+      "lore_loc": "Twisting nature to his vile will, the shifting earth consumes those unlucky enough to cross Leshrac's path.",
       "notes_loc": [
-        "Уничтожает деревья в зоне действия способности.",
-        "Задержка перед оглушением — %delay% секунды."
+        "Split Earth will destroy trees in its area of effect.",
+        "There is a %delay% second delay before the effect is applied."
       ],
-      "shard_loc": "Способность срабатывает в том же месте ещё %shard_max_count% раза с промежутком в %shard_secondary_delay% сек. При каждом срабатывании радиус увеличивается на %shard_radius_increase%. Область повторного срабатывания видят обе команды.",
+      "shard_loc": "Causes Split Earth to repeat in the same location %shard_max_count% additional times, with a %shard_secondary_delay% second delay between each one. Each time the radius increases by %shard_radius_increase%. Split Earth echo location is visible to both teams.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -126,7 +126,7 @@
             0.35
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАДЕРЖКА:",
+          "heading_loc": "STUN DELAY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -146,7 +146,7 @@
             210
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -163,7 +163,7 @@
             1.7
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -357,16 +357,16 @@
       "id": 5242,
       "name": "leshrac_diabolic_edict",
       "name_loc": "Diabolic Edict",
-      "desc_loc": "Окружает героя магическими взрывами, которые наносят чистый урон врагам и постройкам. Чем меньше рядом врагов, тем больше урона они получат.",
-      "lore_loc": "Энергия хроноптики прорывается из одного измерения в другое, испаряя всё, чего коснется.",
+      "desc_loc": "Saturates the area around Leshrac with magical explosions that deal pure damage to enemy units and buildings.  The fewer units available to attack, the more damage those units will take.",
+      "lore_loc": "Chronoptic energy bursts from one plane to the other, evaporating anything it touches.",
       "notes_loc": [
-        "Способность продолжает действовать, даже если герой умер."
+        "The explosions will continue even if Leshrac is killed."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Частота взрывов у Diabolic Edict увеличена, но они не наносят урон постройкам."
+        "Diabolic Edict hits enemies with an increased explosion rate but it no longer damages buildings."
       ],
       "type": 0,
       "behavior": "4",
@@ -416,7 +416,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ВЗРЫВОВ:",
+          "heading_loc": "EXPLOSIONS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_leshrac_1",
@@ -439,7 +439,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -478,7 +478,7 @@
             34
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ЗА ВЗРЫВ:",
+          "heading_loc": "DAMAGE PER EXPLOSION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -495,7 +495,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ЦЕЛЕЙ ВЗРЫВА:",
+          "heading_loc": "TARGETS PER EXPLOSION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_leshrac_7",
@@ -518,7 +518,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -606,8 +606,8 @@
       "id": 5243,
       "name": "leshrac_lightning_storm",
       "name_loc": "Lightning Storm",
-      "desc_loc": "Призывает шквал молний, которые бьют и замедляют передвижение сначала выбранного противника, а затем и соседних с ним.",
-      "lore_loc": "Мастерство подчинять силы природы позволяет истерзанной душе призывать массивные бури, сокрушающие целые армии.",
+      "desc_loc": "Summons a lightning storm that blasts the target enemy unit, then strikes any nearby enemy units. Struck enemies have their move speed slowed.",
+      "lore_loc": "The Tormented Soul's mastery of the elements is evident in the massive storms that strike down armies before him.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -663,7 +663,7 @@
             240
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_leshrac_6",
@@ -689,7 +689,7 @@
             11
           ],
           "is_percentage": false,
-          "heading_loc": "УДАРОВ МОЛНИИ:",
+          "heading_loc": "LIGHTNING STRIKES:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -706,7 +706,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС СКАЧКА МОЛНИИ:",
+          "heading_loc": "LIGHTNING JUMP RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -740,7 +740,7 @@
             75
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -760,7 +760,7 @@
             1.2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -881,8 +881,8 @@
       "id": 539,
       "name": "leshrac_greater_lightning_storm",
       "name_loc": "Nihilism",
-      "desc_loc": "Придаёт владельцу способности и врагам неподалёку бесплотный облик, в котором они замедлены, не могут атаковать и получают увеличенный магический урон. Владелец способности ускоряется на такое же значение, но не получает дополнительный магический урон.",
-      "lore_loc": "Если потребуется, Лешрак способен ненадолго уменьшить своё присутствие в материальном мире.",
+      "desc_loc": "Causes Leshrac and all nearby enemies to turn ethereal, preventing them from attacking, slowing them, and making them take more magic damage. Increases Leshrac's speed rather than reducing it. Does not cause Leshrac to take amplified damage.",
+      "lore_loc": "When it serves his purpose, Leshrac briefly reduces his presence in the Terrene Plane.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -932,7 +932,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -949,7 +949,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. МАГИЧЕСКИЙ УРОН:",
+          "heading_loc": "INCREASED MAGIC DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -966,7 +966,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -983,7 +983,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1046,7 +1046,7 @@
       "id": 1297,
       "name": "leshrac_defilement",
       "name_loc": "Defilement",
-      "desc_loc": "Радиус способностей героя увеличивается за каждую единицу интеллекта.",
+      "desc_loc": "Leshrac gains AoE per intelligence.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1097,7 +1097,7 @@
             0.7
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ЗА ЕД. ИНТЕЛЛЕКТА:",
+          "heading_loc": "AOE PER INTELLIGENCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1126,8 +1126,8 @@
       "id": 5244,
       "name": "leshrac_pulse_nova",
       "name_loc": "Pulse Nova",
-      "desc_loc": "Создаёт вокруг героя волны энергии, которые раз в секунду наносят урон вражеским существам поблизости. Каждая волна расходует ману владельца.",
-      "lore_loc": "Если понадобится, истерзанная душа может управлять континуумом, уничтожая низших существ.",
+      "desc_loc": "Creates waves of damaging energy around Leshrac, one per second, to damage nearby enemy units. Drains Leshrac's mana with each pulse.",
+      "lore_loc": "If necessary, the Tormented Soul can manipulate space time itself, ravaging lesser beings.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1187,7 +1187,7 @@
             65
           ],
           "is_percentage": false,
-          "heading_loc": "МАНЫ В СЕКУНДУ:",
+          "heading_loc": "MANA/SEC:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1204,7 +1204,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1223,7 +1223,7 @@
             180
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_leshrac_3",
@@ -1316,7 +1316,7 @@
     {
       "id": 7132,
       "name": "special_bonus_mp_regen_150",
-      "name_loc": "+{s:value} маны в секунду",
+      "name_loc": "+{s:value} Mana Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1396,7 +1396,7 @@
     {
       "id": 5931,
       "name": "special_bonus_armor_4",
-      "name_loc": "+{s:value} к броне",
+      "name_loc": "+{s:value} Armor",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1476,7 +1476,7 @@
     {
       "id": 516,
       "name": "special_bonus_unique_leshrac_6",
-      "name_loc": "+{s:bonus_damage} к урону от Lightning Storm",
+      "name_loc": "+{s:bonus_damage} Lightning Storm Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1538,7 +1538,7 @@
     {
       "id": 7101,
       "name": "special_bonus_unique_leshrac_4",
-      "name_loc": "Pulse Nova снижает получаемый урон на {s:bonus_damage_resistance}%",
+      "name_loc": "+{s:bonus_damage_resistance}% Damage Reduction during Pulse Nova",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1600,7 +1600,7 @@
     {
       "id": 9418,
       "name": "special_bonus_unique_leshrac_7",
-      "name_loc": "+1 к числу целей взрыва у Diabolic Edict",
+      "name_loc": "Diabolic Edict Hits An Additional Target",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1662,7 +1662,7 @@
     {
       "id": 6672,
       "name": "special_bonus_unique_leshrac_3",
-      "name_loc": "+{s:bonus_damage} к урону от Pulse Nova",
+      "name_loc": "+{s:bonus_damage} Pulse Nova Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1724,8 +1724,8 @@
     {
       "id": 1145,
       "name": "special_bonus_unique_leshrac_pulse_nova_lightning",
-      "name_loc": "Pulse Nova активирует Lightning Storm",
-      "desc_loc": "Молния от Lightning Storm ударяет случайного врага (в первую очередь героев) в радиусе действия Pulse Nova каждые {s:bonus_pulse_nova_lightning_interval} сек.",
+      "name_loc": "Pulse Nova triggers Lightning Storm",
+      "desc_loc": "Lightning Storm hits a random enemy in Pulse Nova radius every {s:bonus_pulse_nova_lightning_interval}s with a single bolt. Prioritizes heroes.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1786,7 +1786,7 @@
     {
       "id": 6063,
       "name": "special_bonus_unique_leshrac_1",
-      "name_loc": "+{s:bonus_num_explosions} к числу взрывов у Diabolic Edict",
+      "name_loc": "+{s:bonus_num_explosions} Diabolic Edict Explosions",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1853,7 +1853,7 @@
           "id": 1296,
           "name": "leshrac_chronoptic_nourishment",
           "name_loc": "Chronoptic Nourishment",
-          "desc_loc": "Герой восстанавливает себе ману в размере %mana_pct_per_hit%%% от урона, наносимого атаками. Ману восстанавливают только атаки по существам с маной. Атаки по крипам восстанавливают на %creep_penalty_reduction_pct%%% меньше маны.",
+          "desc_loc": "Leshrac restores mana equal to %mana_pct_per_hit%%% of damage dealt by his attacks. Only grants mana when attacking enemies that have mana. %creep_penalty_reduction_pct%%% mana restoration penalty when attacking creeps.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",

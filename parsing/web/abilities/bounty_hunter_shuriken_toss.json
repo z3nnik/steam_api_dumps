@@ -1,320 +1,318 @@
-[
-  {
-    "id": 1314,
-    "name": "bounty_hunter_shuriken_toss",
-    "name_loc": "Shuriken Toss",
-    "desc_loc": "Запускает во врага смертоносный сюрикен, наносящий урон и на %slow_duration% сек. замедляющий передвижение цели на %slow%%%. Сюрикен отскакивает к помеченным способностью Track противникам на расстоянии %bounce_aoe%.",
-    "lore_loc": "Пусть сюрикены и малы, но поразительная точность Гондара делает их невероятно опасными.",
-    "notes_loc": [],
-    "shard_loc": "",
-    "scepter_loc": "Увеличивает дальность применения и добавляет к сюрикену эффект способности Jinada.",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "8",
-    "target_team": 2,
-    "target_type": 19,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 0,
-    "max_level": 4,
-    "cast_ranges": [
-      375,
-      425,
-      475,
-      525
-    ],
-    "cast_points": [
-      0.3,
-      0.3,
-      0.3,
-      0.3
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      5
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      75,
-      80,
-      85,
-      90
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "bonus_damage",
-        "values_float": [
-          100,
-          170,
-          240,
-          310
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_bounty_hunter_2",
-            "value": 250,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+{
+  "id": 1314,
+  "name": "bounty_hunter_shuriken_toss",
+  "name_loc": "Shuriken Toss",
+  "desc_loc": "Hurls a deadly shuriken at an enemy unit, dealing damage and slowing the target's Movement Speed by %slow%%% for %slow_duration%s.  The shuriken will bounce to any Tracked units who are within a %bounce_aoe% radius of each other.",
+  "lore_loc": "While the shuriken may be small, Gondar's precise aim can cause critical damage.",
+  "notes_loc": [],
+  "shard_loc": "",
+  "scepter_loc": "Increases cast range and applies Jinada on hit.",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "8",
+  "target_team": 2,
+  "target_type": 19,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 0,
+  "max_level": 4,
+  "cast_ranges": [
+    375,
+    425,
+    475,
+    525
+  ],
+  "cast_points": [
+    0.3,
+    0.3,
+    0.3,
+    0.3
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    5
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    75,
+    80,
+    85,
+    90
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "bonus_damage",
+      "values_float": [
+        100,
+        170,
+        240,
+        310
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_bounty_hunter_2",
+          "value": 250,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "speed",
-        "values_float": [
-          1000
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "speed",
+      "values_float": [
+        1000
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bounce_aoe",
-        "values_float": [
-          1200
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bounce_aoe",
+      "values_float": [
+        1200
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "slow_duration",
-        "values_float": [
-          0.35
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_bounty_hunter_5",
-            "value": 0.6,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "slow_duration",
+      "values_float": [
+        0.35
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_bounty_hunter_5",
+          "value": 0.6,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_cooldown",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          6
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_cooldown",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        6
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "passthrough_damage",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "passthrough_damage",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "passthrough_width",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "passthrough_width",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "cast_range",
-        "values_float": [
-          375,
-          425,
-          475,
-          525
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "cast_range",
+      "values_float": [
+        375,
+        425,
+        475,
+        525
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "slow",
-        "values_float": [
-          100
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "slow",
+      "values_float": [
+        100
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          375,
-          425,
-          475,
-          525
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          600
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        375,
+        425,
+        475,
+        525
+      ],
+      "is_percentage": false,
+      "heading_loc": "CAST RANGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        600
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          75,
-          80,
-          85,
-          90
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        75,
+        80,
+        85,
+        90
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          5
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        5
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

@@ -1,419 +1,417 @@
-[
-  {
-    "id": 5129,
-    "name": "crystal_maiden_freezing_field",
-    "name_loc": "Freezing Field",
-    "desc_loc": "ПРЕРЫВАЕМАЯ — вокруг героя в течение %abilitychanneltime% сек. происходят 100 случайных ледяных взрывов, замедляющих врагов и наносящих большой урон.",
-    "lore_loc": "Когда-то изгнанная в морозную пустошь, Рилай сделала ледяные бури тех краёв вершиной своей жестокой магии.",
-    "notes_loc": [
-      "В момент применения способности все враги в области действия замедляются на %slow_duration% сек., даже если взрывы их не задели.",
-      "Взрыв происходит каждую %explosion_interval% секунды.",
-      "Пассивные бонусы от Frozen Expanse отключаются истощением."
-    ],
-    "shard_loc": "Позволяет передвигаться, атаковать и применять заклинания во время действия способности. Враги всё ещё могут её прервать. Герой передвигается на %shard_self_movement_speed_slow_pct%%% медленнее.<br><br>Увеличивает число взрывов на %shard_bonus_explosion%%%.",
-    "scepter_loc": "Позволяет передвигаться, атаковать и применять заклинания во время действия способности. Враги всё ещё могут её прервать. Герой передвигается на %shard_self_movement_speed_slow_pct%%% медленнее. Увеличивает число взрывов на %shard_bonus_explosion%%%. На существ, находящихся под действием ульта больше %frostbite_delay% сек., применяется способность Frostbite.",
-    "facets_loc": [],
-    "type": 1,
-    "behavior": "33554564",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 0,
-    "max_level": 3,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0
-    ],
-    "channel_times": [
-      10
-    ],
-    "cooldowns": [
-      100,
-      95,
-      90
-    ],
-    "durations": [
-      10
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      200,
-      400,
-      600
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "radius",
-        "values_float": [
-          810
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5129,
+  "name": "crystal_maiden_freezing_field",
+  "name_loc": "Freezing Field",
+  "desc_loc": "CHANNELED - Surrounds Crystal Maiden with 100 random icy explosions that slow enemies and deal massive damage. Lasts %abilitychanneltime% seconds.",
+  "lore_loc": "Once the place of her exile, Icewrack has become an anchor for Rylai's frigid onslaught.",
+  "notes_loc": [
+    "The slow is applied on all enemies in the radius, even if they aren't hit by an explosion (lasts %slow_duration% second).",
+    "Explosions occur every %explosion_interval% seconds.",
+    "Break disables the passive effects of Frozen Expanse."
+  ],
+  "shard_loc": "Allows you to move, cast and attack during Freezing Field. Can still be interrupted by enemies. You move %shard_self_movement_speed_slow_pct%%% slower during this.<br><br>Increases total number of explosions by %shard_bonus_explosion%%%.",
+  "scepter_loc": "Allows you to move, cast and attack during Freezing Field. Can still be interrupted by enemies. You move %shard_self_movement_speed_slow_pct%%% slower during this. Increases total number of explosions by %shard_bonus_explosion%%%. Applies Frostbite to any unit that has been standing in the Freezing Field for over %frostbite_delay%s.",
+  "facets_loc": [],
+  "type": 1,
+  "behavior": "33554564",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 0,
+  "max_level": 3,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0
+  ],
+  "channel_times": [
+    10
+  ],
+  "cooldowns": [
+    100,
+    95,
+    90
+  ],
+  "durations": [
+    10
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    200,
+    400,
+    600
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "radius",
+      "values_float": [
+        810
+      ],
+      "is_percentage": false,
+      "heading_loc": "RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "explosion_radius",
-        "values_float": [
-          320
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС ВЗРЫВА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "explosion_radius",
+      "values_float": [
+        320
+      ],
+      "is_percentage": false,
+      "heading_loc": "EXPLOSION RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "explosion_interval",
-        "values_float": [
-          0.1
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "explosion_interval",
+      "values_float": [
+        0.1
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "movespeed_slow",
-        "values_float": [
-          -40
-        ],
-        "is_percentage": true,
-        "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "movespeed_slow",
+      "values_float": [
+        -40
+      ],
+      "is_percentage": true,
+      "heading_loc": "MOVEMENT SLOW:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "attack_slow",
-        "values_float": [
-          -80,
-          -120,
-          -160
-        ],
-        "is_percentage": false,
-        "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "attack_slow",
+      "values_float": [
+        -80,
+        -120,
+        -160
+      ],
+      "is_percentage": false,
+      "heading_loc": "ATTACK SLOW:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "slow_duration",
-        "values_float": [
-          1
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "slow_duration",
+      "values_float": [
+        1
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "explosion_min_dist",
-        "values_float": [
-          195
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "explosion_min_dist",
+      "values_float": [
+        195
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "explosion_max_dist",
-        "values_float": [
-          785
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "explosion_max_dist",
+      "values_float": [
+        785
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage",
-        "values_float": [
-          110,
-          180,
-          250
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_crystal_maiden_3",
-            "value": 50,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "damage",
+      "values_float": [
+        110,
+        180,
+        250
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_crystal_maiden_3",
+          "value": 50,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "frostbite_delay",
-        "values_float": [
-          -1
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          3
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "frostbite_delay",
+      "values_float": [
+        -1
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        3
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "shard_bonus_explosion",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          20
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "shard_bonus_explosion",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        20
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "shard_self_movement_speed_slow_pct",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          75
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "shard_self_movement_speed_slow_pct",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        75
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "can_move",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          1
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "can_move",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        1
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "self_cast_range_bonus",
-        "values_float": [
-          0,
-          0,
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "БОНУС К ДАЛЬНОСТИ ЗАКЛИНАНИЙ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "self_cast_range_bonus",
+      "values_float": [
+        0,
+        0,
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "CAST RANGE BONUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "aoe_bonus",
-        "values_float": [
-          0,
-          0,
-          0
-        ],
-        "is_percentage": true,
-        "heading_loc": "ДОП. РАДИУС ЗАКЛИНАНИЙ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "aoe_bonus",
+      "values_float": [
+        0,
+        0,
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "AOE BONUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityChannelTime",
-        "values_float": [
-          10
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityChannelTime",
+      "values_float": [
+        10
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityDuration",
-        "values_float": [
-          10
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityDuration",
+      "values_float": [
+        10
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          200,
-          400,
-          600
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        200,
+        400,
+        600
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          100,
-          95,
-          90
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        100,
+        95,
+        90
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

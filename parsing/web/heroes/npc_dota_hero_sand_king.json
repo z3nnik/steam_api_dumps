@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_sand_king",
   "order_id": 16,
   "name_loc": "Sand King",
-  "bio_loc": "Пески Искрящейся пустыни живы и разумны — эта необозримая пустошь ведёт разговор сама с собой, и думы её необъятны, как и границы. Но когда пустыне нужно обратиться к существам ограниченным, она высвобождает частичку себя и наполняет ею магический панцирь, сотворённый хитроумными калдинскими джиннами. Это создание зовёт себя Криксалис, что означает «душа песка». Вдохновленный маленькими, но вездесущими обитателями Искрящейся пустыни, он принимает форму огромного скорпиона, и это настоящее отражение его беспощадной природы. Страж, воин, вестник — Криксалис неотделим от бескрайней пустыни, давшей ему жизнь.",
-  "hype_loc": "Немногие способны пережить нападение Sand King. Он разрушает <b>смертоносными волнами</b> ульта всё вокруг себя, <b>скрывается от ответных ударов</b> в песчаной буре и <b>оглушает врагов</b>, поддевая их снизу.",
-  "npe_desc_loc": "Оглушает врагов, прорываясь через землю под ними",
+  "bio_loc": "The sands of the Scintillant Waste are alive and sentient--the whole vast desert speaks to itself, thinking thoughts only such a vastness can conceive. But when it needs must find a form to communicate with those of more limited scope, it frees a fragment of itself, and fills a carapace of magic armor formed by the cunning Djinn of Qaldin. This essential identity calls itself Crixalis, meaning 'Soul of the Sand,' but others know it as Sand King.  Sand King takes the form of a huge arachnid, inspired by the Scintillant Waste's small but ubiquitous denizens; and this is a true outward expression of his ferocious nature. Guardian, warrior, ambassador--Sand King is all of these things, inseparable from the endless desert that gave him life.",
+  "hype_loc": "Not many can survive an ambush from Sand King. Demolishing everything around him with waves of <b>deadly vibration</b> from his ultimate, he <b>evades counterattacks</b> by hiding himself in a scouring gust of sand, and <b>stuns foes</b> by striking them from beneath.",
+  "npe_desc_loc": "Burrows to stun and slow enemies",
   "facets": [
     {
       "color": 1,
       "title_loc": "Sandblast",
-      "description_loc": "Атаки героя, совершённые внутри бури от Sand Storm, ослепляют врагов.",
+      "description_loc": "When Sand King attacks enemies in Sand Storm, he applies a blinding debuff to his target.",
       "name": "sand_king_obscurity",
       "icon": "no_vision",
       "gradient_id": 3,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Final Sting",
-      "description_loc": "На месте каждого вражеского героя, находящегося в центральной области способности Stinger, происходит взрыв от Caustic Finale.",
+      "description_loc": "A Caustic Finale explosion is created around every enemy hero hit in Stinger's innermost radius.",
       "name": "sand_king_pinpoint",
       "icon": "area_of_effect",
       "gradient_id": 1,
@@ -66,10 +66,10 @@
       "id": 5102,
       "name": "sandking_burrowstrike",
       "name_loc": "Burrowstrike",
-      "desc_loc": "Герой погружается в землю и прорывается вперёд, оглушая врагов на пути и нанося им урон. Накладывает эффект способности Caustic Finale на задетых героев.<br><br>Если включено альтернативное применение, способность мгновенно применяется в указанную сторону, а не в выбранную точку.",
-      "lore_loc": "Криксалис часто устраивает засады на неприятелей, выжидая их под песком.",
+      "desc_loc": "Sand King burrows into the ground and tunnels forward, damaging and stunning enemy units above him as he resurfaces. Adds Caustic Finale poison to heroes hit<br><br> Can be put on alt-cast to immediately cast in the desired direction, without walking towards the targeted location.",
+      "lore_loc": "Crixalis often lies in wait, burrowing under the surface to ambush his adversaries.",
       "notes_loc": [
-        "Эту способность нельзя заблокировать или отразить."
+        "Does not trigger spell block or spell reflect."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -153,7 +153,7 @@
             1.8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -365,18 +365,18 @@
       "id": 5103,
       "name": "sandking_sand_storm",
       "name_loc": "Sand Storm",
-      "desc_loc": "Герой вызывает ужасающую песчаную бурю, которая делает его невидимым и наносит урон врагам. Эффект прекратится, если владелец способности покинет её область действия.",
-      "lore_loc": "Ходит слух, что Криксалис — это всего лишь мираж; его панцирь то появляется, то исчезает среди песчаных бурь Искрящейся пустыни.",
+      "desc_loc": "Sand King creates a fearsome sandstorm that damages enemy units and grants Sand King Invisibility while he is in it. The effect ends when Sand King leaves the area.",
+      "lore_loc": "Some say Crixalis is a mirage; his carapace appearing then vanishing between the whirling sands of the Scintillant Waste.",
       "notes_loc": [
-        "Позволяет сбить с цели многие направленные в героя снаряды.",
-        "Совершив атаку или применив способность, герой ненадолго станет видимым, но вновь станет невидимым через %fade_delay% сек."
+        "Sand Storm can be used to dodge projectiles.",
+        "Sand King briefly becomes visible upon attacking or using spells while in Sand Storm. Sand King will become invisible again in %fade_delay% seconds."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Увеличивает радиус песчаной бури от Sand Storm. Она делает владельца невидимым.",
-        "Песчаная буря продолжает действовать на расстоянии до %sand_storm_max_distance_from_caster% от владельца и движется за ним со скоростью в %sand_storm_move_speed_pct%%% от его скорости передвижения.",
-        "Атаки героя, совершённые внутри песчаной бури, ослепляют врагов.",
+        "Sand Storm has increased radius and grants Sand King Invisibility while in it.",
+        "Sand Storm follows Sand King at a rate of %sand_storm_move_speed_pct%%% of his movement speed and is still active at a distance of up to %sand_storm_max_distance_from_caster% units away from Sand King.",
+        "When Sand King attacks enemies in Sand Storm, he applies a blinding debuff to the target.",
         ""
       ],
       "type": 0,
@@ -450,7 +450,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -470,7 +470,7 @@
             90
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sand_king_2",
@@ -513,7 +513,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ОСЛЕПЛЕНИЕ:",
+          "heading_loc": "BLIND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -535,7 +535,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОСЛЕПЛЕНИЯ:",
+          "heading_loc": "BLIND DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -578,7 +578,7 @@
             28
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -644,8 +644,8 @@
       "id": 1229,
       "name": "sandking_scorpion_strike",
       "name_loc": "Stinger",
-      "desc_loc": "Герой совершает атаку с дополнительным уроном по всем врагам вокруг указанной точки. Эта атака наносит на %inner_radius_bonus_damage_pct%%% больше урона в центральной области радиусом %inner_radius%. Накладывает на жертв эффект способности Caustic Finale и замедление.",
-      "lore_loc": "Безусловно, Криксалис способен на милосердие, однако в глазах души песков пощады достойны немногие.",
+      "desc_loc": "Sand King strikes an area, performing an attack on all enemies in the area of effect, dealing extra damage. Enemies within an innermost radius of %inner_radius% take %inner_radius_bonus_damage_pct%%% extra damage. Applies Caustic Finale and a slow to all enemies hit.",
+      "lore_loc": "Crixalis is certainly capable of mercy, but the soul of the sand finds few foes worth sparing.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -653,7 +653,7 @@
         "",
         "",
         "",
-        "На месте каждого вражеского героя в центральной области происходит взрыв от способности Caustic Finale, который наносит %caustic_damage_pct%%% обычного урона. Этот эффект не распространяется на удары, вызванные улучшением от Aghanim's Scepter."
+        "A Caustic Finale explosion that deals %caustic_damage_pct%%% damage is created around every enemy hero hit in Stinger's innermost radius. Does not apply to strikes created by Aghanim's Scepter upgrade."
       ],
       "type": 0,
       "behavior": "134217776",
@@ -706,7 +706,7 @@
             290
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -779,7 +779,7 @@
             125
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sand_king_scorpion_strike_damage",
@@ -805,7 +805,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -825,7 +825,7 @@
             16
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sand_king_3",
@@ -953,8 +953,8 @@
       "id": 1226,
       "name": "sandking_caustic_finale",
       "name_loc": "Caustic Finale",
-      "desc_loc": "Атаки героя наполняют тела жертв ядом, который при смерти разрывает их плоть.",
-      "lore_loc": "Атаки Криксалиса иссушают жертву, отчего её плоть разрывается на куски.",
+      "desc_loc": "Sand King's attacks inject a venom that causes enemy units to violently explode when they die.",
+      "lore_loc": "An injection from Crixalis makes one brittle and as dry as the arid wastes, subject to implosive demise.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1006,7 +1006,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ВЗРЫВА:",
+          "heading_loc": "EXPLODE RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sand_king_caustic_finale_radius",
@@ -1032,7 +1032,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1052,7 +1052,7 @@
             15
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ МАКС. ЗДОРОВЬЯ УБИТОГО:",
+          "heading_loc": "DYING UNIT'S MAX HEALTH AS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1072,7 +1072,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1101,13 +1101,13 @@
       "id": 5105,
       "name": "sandking_epicenter",
       "name_loc": "Epicenter",
-      "desc_loc": "После подготовки в %abilitycastpoint% сек. герой неистово сотрясает землю вокруг себя. Землетрясение наносит урон противникам, замедляет их и увеличивается в радиусе с каждым последующим толчком.",
-      "lore_loc": "Многие путешественники пропали в зыбучих песках Искрящейся пустыни.",
+      "desc_loc": "After a cast point of %abilitycastpoint% seconds, Sand King sends a disturbance into the earth, causing it to shudder violently. All enemies caught within range will take damage and become slowed. Each subsequent pulse increases the radius of damage dealt.",
+      "lore_loc": "Many an explorer was lost to the quicksands of the Scintillant Waste.",
       "notes_loc": [
-        "Толчки исходят не от места прочтения способности, а от её владельца."
+        "The pulses are centered on Sand King, not where he first cast the spell."
       ],
-      "shard_loc": "Увеличивает урон за толчок и создаёт один маленький толчок от этой способности каждые %shard_interval% сек.",
-      "scepter_loc": "Когда начинаются толчки, каждые %spine_tick_rate% сек. в %scepter_explosions_per_pulse% случайных областях размером в %scepter_explosion_radius_pct%%% от текущего радиуса Epicenter применяется эффект способности Stinger, наносящий %spine_damage_pct%%% от её урона. Толчки от Aghanim's Shard создают по %shard_explosions_per_pulse% области.",
+      "shard_loc": "Increases Epicenter damage per pulse. Every %shard_interval%s causes a small single Epicenter Pulse around Sand King.",
+      "scepter_loc": "When the pulses start, %scepter_explosions_per_pulse% Stinger attack areas are created every %spine_tick_rate%s at random locations, each measuring %scepter_explosion_radius_pct%%% of the Epicenter's current radius, that apply %spine_damage_pct%%% of Stinger damage to enemies hit. Shard pulses cause %shard_explosions_per_pulse% attack(s).",
       "facets_loc": [
         "",
         "",
@@ -1162,7 +1162,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ТОЛЧКОВ:",
+          "heading_loc": "PULSES:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sand_king",
@@ -1187,7 +1187,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ЗА ТОЛЧОК:",
+          "heading_loc": "DAMAGE PER PULSE:",
           "bonuses": [],
           "values_shard": [
             5
@@ -1206,7 +1206,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ РАДИУС:",
+          "heading_loc": "BASE RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sand_king_5",
@@ -1229,7 +1229,7 @@
             13
           ],
           "is_percentage": false,
-          "heading_loc": "УВЕЛИЧЕНИЕ РАДИУСА:",
+          "heading_loc": "INCREMENTAL RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sand_king_5",
@@ -1254,7 +1254,7 @@
             -50
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1273,7 +1273,7 @@
             -60
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1290,7 +1290,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sand_king_5",
@@ -1334,7 +1334,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "DEBUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1465,7 +1465,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗЕМЛЕТРЯСЕНИЯ:",
+          "heading_loc": "EPICENTER DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1550,7 +1550,7 @@
     {
       "id": 6530,
       "name": "special_bonus_unique_sand_king_3",
-      "name_loc": "+{s:bonus_strike_slow}% к замедлению от Stinger",
+      "name_loc": "+{s:bonus_strike_slow}% Stinger Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1614,7 +1614,7 @@
     {
       "id": 1537,
       "name": "special_bonus_unique_sand_king_caustic_finale_radius",
-      "name_loc": "+{s:bonus_caustic_finale_radius} к радиусу Caustic Finale",
+      "name_loc": "+{s:bonus_caustic_finale_radius} Caustic Finale Radius",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1678,7 +1678,7 @@
     {
       "id": 6409,
       "name": "special_bonus_unique_sand_king_2",
-      "name_loc": "+{s:bonus_sand_storm_damage} к урону в секунду от Sand Storm",
+      "name_loc": "+{s:bonus_sand_storm_damage} Sand Storm Damage Per Second",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1742,7 +1742,7 @@
     {
       "id": 890,
       "name": "special_bonus_unique_sand_king_8",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальности применения Burrowstrike",
+      "name_loc": "+{s:bonus_AbilityCastRange} Burrowstrike Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1806,7 +1806,7 @@
     {
       "id": 498,
       "name": "special_bonus_unique_sand_king_7",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Burrowstrike",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Burrowstrike Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1870,7 +1870,7 @@
     {
       "id": 6872,
       "name": "special_bonus_unique_sand_king_5",
-      "name_loc": "+{s:bonus_epicenter_radius_base}/{s:bonus_epicenter_radius_increment} к базовому радиусу Epicenter и его нарастанию",
+      "name_loc": "+{s:bonus_epicenter_radius_base}/{s:bonus_epicenter_radius_increment} Base/Incremental Radius of Epicenter",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1934,7 +1934,7 @@
     {
       "id": 6207,
       "name": "special_bonus_unique_sand_king",
-      "name_loc": "+{s:bonus_epicenter_pulses} к числу толчков у Epicenter",
+      "name_loc": "+{s:bonus_epicenter_pulses} Epicenter Pulses",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1998,8 +1998,8 @@
     {
       "id": 475,
       "name": "special_bonus_unique_sand_king_4",
-      "name_loc": "Sand Storm замедляет жертв на {s:bonus_sand_storm_slow}%",
-      "desc_loc": "Враги под действием Sand Storm передвигаются на {s:bonus_sand_storm_slow}% медленнее.",
+      "name_loc": "{s:bonus_sand_storm_slow}% Sand Storm Slow",
+      "desc_loc": "Enemy units in range of Sand Storm have their movement speed slowed by {s:bonus_sand_storm_slow}%.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",

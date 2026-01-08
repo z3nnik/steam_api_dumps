@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_dark_willow",
   "order_id": 114,
   "name_loc": "Dark Willow",
-  "bio_loc": "Детишки обожают рассказывать о чудных похождениях феечек... Ах, если бы они знали, что многие феи — просто коварные гадины! А в их коварном мире немногие похвастаются такой дурной славой, как Миреска Ветреная.<br><br>Миреска приходилась дочерью одному важному фейскому купцу, и росла она в беспощадном Ревтеле, где каждый без стыда плутовал и убивал. Но хоть она весьма ловко управлялась с этикетом, негласными правилами и светскими ритуалами, что пронизывали каждый её день, такая жизнь ей наскучила.<br><br>Потому Миреска и поступила как самый обычный ребёнок-бунтарь: сожгла фамильное поместье до основания и вместе с верным светлячком Джексом стала жить жизнью бродячей мошенницы.",
-  "hype_loc": "Неуловимый трепет в тенях — вот всё, что увидит враг Мирески, ведь эта фея <b>избегает врагов</b> и <b>сковывает их движения</b> коварными уловками. Взывая к силам куда более древним, чем знания учёных магов, она <b>держит противников на месте</b>, а затем обрушивает на них весь гнев и ужас мира фей.",
-  "npe_desc_loc": "Всячески выводит врагов из строя",
+  "bio_loc": "Children love telling stories about the whimsical adventures of fairies... That’s because children don’t know that most fairies are spiteful jerks. And in the world of spiteful fairies there are few names spoken of with more contempt than Mireska Sunbreeze.<br><br>Born to a fae merchant king, Mireska grew up in Revtel; a cutthroat nation where manipulation and murder were the norm. But while she was quite adept at navigating the etiquette, unspoken laws, and social rituals that permeated every element of her life, she found the whole thing rather boring.<br><br>So, Mireska did what most rebellious children do: burn down her family estate and set off with her pet wisp Jex to live the life of a wandering grifter.",
+  "hype_loc": "A slight flutter from the shadows may be all an enemy sees of Dark Willow, as she <b>eludes pursuit</b> and <b>controls her foe's movements</b> with cunning fae tricks. Calling upon powers far more ancient than any scholarly magic, she <b>binds enemies in place</b> before unleashing the full wrath and terror of the fae realm upon them.",
+  "npe_desc_loc": "Has an arsenal of disables at her disposal",
   "facets": [
     {
       "color": 4,
       "title_loc": "Throwing Shade",
-      "description_loc": "Способность Shadow Realm увеличивает урон, который её владелец наносит вражеским героям поблизости.",
+      "description_loc": "Dark Willow deals more damage to nearby heroes when she's in the Shadow Realm.",
       "name": "dark_willow_throwing_shade",
       "icon": "damage",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 2,
       "title_loc": "Shattering Crown",
-      "description_loc": "Во время задержки перед оглушением способность Cursed Crown накапливает часть урона, наносимого владельцем способности и атаками его союзников. В момент оглушения накопленный урон становится магическим и наносится по всей области действия способности.",
+      "description_loc": "Cursed Crown accumulates all damage dealt by Dark Willow and attack damage dealt by her allies. A percentage of that damage is dealt again as magical damage to the whole area when the counter expires.",
       "name": "dark_willow_shattering_crown",
       "icon": "barrier",
       "gradient_id": 4,
@@ -66,10 +66,10 @@
       "id": 6339,
       "name": "dark_willow_bramble_maze",
       "name_loc": "Bramble Maze",
-      "desc_loc": "Герой зачаровывает выбранную область радиусом %placement_range%, где через %initial_creation_delay% сек. вырастает лабиринт из %placement_count% терновых кустов. Они накладывают оцепенение на задетых противников, наносят им периодический урон и исчезают спустя %placement_duration% сек.",
-      "lore_loc": "Волшебный мир фей всегда рядом с вами — он лишь ждёт, когда вы придёте...",
+      "desc_loc": "Dark Willow creates a %placement_range% AoE maze of %placement_count% brambles that grow in the target area after %initial_creation_delay% seconds. Enemies that walk into a bramble are rooted and take damage over time. Lasts %placement_duration% seconds.",
+      "lore_loc": "The fae realm exists all around you, merely waiting to draw you in...",
       "notes_loc": [
-        "Оцепенение от этой способности не останавливает прерываемые заклинания."
+        "Does not interrupt channeling spells upon rooting."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -202,7 +202,7 @@
             2.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ:",
+          "heading_loc": "LATCH ROOT DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -219,7 +219,7 @@
             90
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЕЙСТВИЯ КУСТА:",
+          "heading_loc": "BRAMBLE LATCH RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -239,7 +239,7 @@
             65
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРИОДИЧЕСКИЙ УРОН:",
+          "heading_loc": "DAMAGE PER TICK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -418,17 +418,17 @@
       "id": 6341,
       "name": "dark_willow_shadow_realm",
       "name_loc": "Shadow Realm",
-      "desc_loc": "Герой прячется в мир теней, отчего его нельзя выбрать целью. Действие способности прервётся, если совершить атаку. Она имеет увеличенную на %attack_range_bonus% дальность, а также нанесёт дополнительный магический урон, зависящий от того, как долго герой пробыл в мире теней. Максимальный эффект достигается после %max_damage_duration% сек.",
-      "lore_loc": "То, что ты не видишь, наверняка тебе навредит.",
+      "desc_loc": "Dark Willow recedes into the shadows, becoming untargetable.  Her next attack has %attack_range_bonus% bonus attack range and deals bonus magic damage, and will end Shadow Realm. Damage scales based on how long she remains under the effects of Shadow Realm, the maximum being reached after %max_damage_duration% seconds.",
+      "lore_loc": "What you can't see will most definitely hurt you.",
       "notes_loc": [
-        "Сбивает с цели снаряды, направленные во владельца способности.",
-        "Позволяет проходить сквозь других существ.",
-        "Способности, действующие только на видимых врагов, не влияют на героя под эффектом этой способности."
+        "Disjoints projectiles upon cast.",
+        "Grants phased movement.",
+        "Spells which require vision cannot affect Dark Willow in the Shadow Realm."
       ],
       "shard_loc": "",
-      "scepter_loc": "Атака не прерывает действие способности, и до её окончания каждая атака будет наносить дополнительный урон, зависящий от времени пребывания в мире теней.",
+      "scepter_loc": "Attacking no longer takes Dark Willow out of Shadow Realm. Each attack still has bonus damage based on the duration of the buff.",
       "facets_loc": [
-        "Применив эту способность, герой создаёт вокруг себя ауру радиусом %aura_radius%, враги в которой получают от него увеличенный урон. Эффект увеличивается со временем действия способности, пока не достигнет максимума в %aura_damage_pct%%%.",
+        "While in Shadow Realm, Dark Willow emits a %aura_radius% radius aura that increases damage that she deals to enemies in its area of effect by up to %aura_damage_pct%%%. Damage scales based on how long she remains under the effects of Shadow Realm.",
         "",
         ""
       ],
@@ -480,7 +480,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dark_willow_1",
@@ -523,7 +523,7 @@
             360
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМАЛЬНЫЙ УРОН:",
+          "heading_loc": "MAX DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -689,15 +689,15 @@
       "id": 6342,
       "name": "dark_willow_cursed_crown",
       "name_loc": "Cursed Crown",
-      "desc_loc": "Герой насылает на противника древнее заклятие фей. Спустя некоторое время оно оглушает жертву и всех противников вокруг неё.",
-      "lore_loc": "Тебя что, не предупреждали? Не заключай сделок с феями...",
+      "desc_loc": "Dark Willow casts an ancient fae curse on the target. After a delay, the target and nearby enemies are stunned.",
+      "lore_loc": "Didn't anyone ever tell you? Never strike a deal with a fairy...",
       "notes_loc": [],
-      "shard_loc": "Когда отсчёт заканчивается или эффект этой способности развеивают, цель окружается %shard_bramble_amount% терновыми кустами в радиусе %shard_spawn_radius%. Перезарядка способности уменьшена на 1,5 секунды.",
+      "shard_loc": "Cursed Crown creates %shard_bramble_amount% brambles in a %shard_spawn_radius% radius around the target after the counter ends. Triggers even upon dispel. Cursed Crown cooldown reduced by 1.5 seconds.",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Во время задержки перед оглушением способность накапливает %accumulated_damage_pct%%% урона, наносимого владельцем способности, и %accumulated_damage_pct_ally%%% урона от атак его союзников. В момент оглушения накопленный урон становится магическим и наносится по всей области действия способности. С улучшением от Aghanim's Shard этот эффект срабатывает, даже если способность развеяли."
+        "While ticking, Cursed Crown accumulates %accumulated_damage_pct%%% of all damage dealt by Dark Willow and %accumulated_damage_pct_ally%%% of attack damage dealt by allied heroes. When the counter ends, the accumulated damage is dealt again as magical damage to the whole area. This triggers even upon dispel with Aghanim's Shard."
       ],
       "type": 0,
       "behavior": "8",
@@ -750,7 +750,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАДЕРЖКА:",
+          "heading_loc": "DELAY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -770,7 +770,7 @@
             2.4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -787,7 +787,7 @@
             360
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -990,8 +990,8 @@
       "id": 6340,
       "name": "dark_willow_bedlam",
       "name_loc": "Bedlam",
-      "desc_loc": "Герой призывает на помощь ручного светлячка, который начинает вращаться вокруг, быстро атакуя ближайших противников. Невозможно применить во время действия способности Terrorize.",
-      "lore_loc": "Прошу, не обижайся на Джекса. Просто ему очень нравится убивать.",
+      "desc_loc": "Dark Willow sends her pet wisp to roam around herself for the duration, rapidly attacking nearby enemies.  Bedlam cannot be used while Terrorize is active.",
+      "lore_loc": "You'll have to excuse my friend Jex. He's really into murder.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1046,7 +1046,7 @@
             170
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "ATTACK DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dark_willow_4",
@@ -1069,7 +1069,7 @@
             0.25
           ],
           "is_percentage": false,
-          "heading_loc": "ИНТЕРВАЛ МЕЖДУ АТАКАМИ:",
+          "heading_loc": "ATTACK INTERVAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1086,7 +1086,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1154,7 +1154,7 @@
             5.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "ROAMING DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dark_willow_6",
@@ -1282,7 +1282,7 @@
       "id": 1413,
       "name": "dark_willow_pixie_dust",
       "name_loc": "Pixie Dust",
-      "desc_loc": "Если какая-либо способность делает так, что героя невозможно выбрать целью, он получает +%hp_regen%%% к восстановлению здоровья и +%mana_regen_amp%%% к восстановлению маны на это время.",
+      "desc_loc": "Whenever a skill makes Dark Willow become untargetable, she gains +%hp_regen%%% HP Regen and +%mana_regen_amp%%% Mana Regen while in that state.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1380,10 +1380,10 @@
       "id": 8340,
       "name": "dark_willow_terrorize",
       "name_loc": "Terrorize",
-      "desc_loc": "Герой натравливает на врагов своего ручного светлячка. После небольшой задержки он пугает всех противников в выбранной области, отчего они начинают бежать к своей базе. Невозможно применить во время действия способности Bedlam.",
-      "lore_loc": "Думаешь, ты знаешь, что такое настоящий страх? Ты не знаешь страха, если Джекс тебе не знаком...",
+      "desc_loc": "Dark Willow releases her pet wisp to terrorize her enemies. After a short delay, all enemies in the target area become fearful and run toward their home fountain. Terrorize cannot be used while Bedlam is active.",
+      "lore_loc": "You think you know the first thing about fear? Jex'll show you what that word truly means...",
       "notes_loc": [
-        "Даёт обзор по задетым существам."
+        "Terrorize provides vision on affected units."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1455,7 +1455,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1474,7 +1474,7 @@
             3.2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ СТРАХА:",
+          "heading_loc": "FEAR DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1635,7 +1635,7 @@
     {
       "id": 515,
       "name": "special_bonus_unique_dark_willow_6",
-      "name_loc": "+{s:bonus_roaming_duration} сек. действия Bedlam",
+      "name_loc": "+{s:bonus_roaming_duration}s Bedlam Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1698,7 +1698,7 @@
     {
       "id": 5965,
       "name": "special_bonus_intelligence_10",
-      "name_loc": "+{s:value} к интеллекту",
+      "name_loc": "+{s:value} Intelligence",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1779,7 +1779,7 @@
     {
       "id": 7655,
       "name": "special_bonus_unique_dark_willow_4",
-      "name_loc": "+{s:bonus_attack_damage} к урону от Bedlam",
+      "name_loc": "+{s:bonus_attack_damage} Bedlam Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1842,7 +1842,7 @@
     {
       "id": 780,
       "name": "special_bonus_unique_dark_willow_7",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Terrorize",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Terrorize Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1905,7 +1905,7 @@
     {
       "id": 6464,
       "name": "special_bonus_unique_dark_willow_1",
-      "name_loc": "+{s:bonus_duration} сек. действия Shadow Realm",
+      "name_loc": "+{s:bonus_duration}s Shadow Realm Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1968,7 +1968,7 @@
     {
       "id": 7859,
       "name": "special_bonus_unique_dark_willow_3",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Bramble Maze",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Bramble Maze CD",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2031,7 +2031,7 @@
     {
       "id": 6465,
       "name": "special_bonus_unique_dark_willow_2",
-      "name_loc": "Попадание Terrorize наносит {s:bonus_impact_damage} урона",
+      "name_loc": "{s:bonus_impact_damage} Terrorize Impact Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2094,7 +2094,7 @@
     {
       "id": 1133,
       "name": "special_bonus_unique_dark_willow_bedlam_targets",
-      "name_loc": "+{s:bonus_target_count} к числу целей атаки у Bedlam",
+      "name_loc": "+{s:bonus_target_count} Bedlam Attack Targets",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

@@ -1,305 +1,303 @@
-[
-  {
-    "id": 5337,
-    "name": "spectre_haunt",
-    "name_loc": "Haunt",
-    "desc_loc": "Создаёт рядом с каждым вражеским героем спектральную иллюзию, которая его преследует.<br><br>Этими иллюзиями нельзя управлять. Они игнорируют препятствия, получают больше урона и наносят меньше урона, чем сам герой.<br><br>Подспособность Reality позволяет телепортироваться на место выбранной иллюзии, уничтожив её.",
-    "lore_loc": "В разгар сражения Меркуриал расщепляет свою физическую сущность, и отголоски ее теней преследуют тех, кто всё еще цепляется за жизнь.",
-    "notes_loc": [],
-    "shard_loc": "",
-    "scepter_loc": "Первое применение Reality на иллюзию от этой способности наложит страх на врагов в радиусе %fear_aoe% вокруг неё, отчего они побегут прочь от героя с уменьшенной на %fear_movespeed_slow%%% скоростью. Длительность: %fear_duration% сек.<br><br>Уменьшает перезарядку на %scepter_cooldown_reduction_tooltip% сек.",
-    "facets_loc": [],
-    "type": 1,
-    "behavior": "4",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 0,
-    "immunity": 3,
-    "dispellable": 0,
-    "max_level": 3,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0.3
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      180,
-      160,
-      140
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      125,
-      150,
-      175
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "scepter_cooldown_reduction_tooltip",
-        "values_float": [
-          20
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5337,
+  "name": "spectre_haunt",
+  "name_loc": "Haunt",
+  "desc_loc": "Creates a spectral nemesis to haunt all enemy Heroes.<br><br>Haunt illusions are uncontrollable, take extra damage, and deal less damage than Spectre herself.  They ignore terrain.<br><br>The Reality sub-ability may be used to teleport to the illusion, destroying it.",
+  "lore_loc": "At the height of combat, Mercurial's physical manifestation shatters, and the shadowy pieces haunt those who still cling to life.",
+  "notes_loc": [],
+  "shard_loc": "",
+  "scepter_loc": "The first time Spectre uses Reality on a Haunt illusion, enemies in a %fear_aoe% area around the target are Feared away from Spectre for %fear_duration%s and have their movement speed slowed by %fear_movespeed_slow%%%.<br><br>Reduces cooldown by %scepter_cooldown_reduction_tooltip%s.",
+  "facets_loc": [],
+  "type": 1,
+  "behavior": "4",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 0,
+  "immunity": 3,
+  "dispellable": 0,
+  "max_level": 3,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0.3
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    180,
+    160,
+    140
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    125,
+    150,
+    175
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "scepter_cooldown_reduction_tooltip",
+      "values_float": [
+        20
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "duration",
-        "values_float": [
-          5,
-          6,
-          7
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ ИЛЛЮЗИЙ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "duration",
+      "values_float": [
+        5,
+        6,
+        7
+      ],
+      "is_percentage": false,
+      "heading_loc": "HAUNT DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "illusion_damage_outgoing",
-        "values_float": [
-          -70,
-          -45,
-          -20
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "illusion_damage_outgoing",
+      "values_float": [
+        -70,
+        -45,
+        -20
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "tooltip_outgoing",
-        "values_float": [
-          30,
-          55,
-          80
-        ],
-        "is_percentage": true,
-        "heading_loc": "УРОН ИЛЛЮЗИЙ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "tooltip_outgoing",
+      "values_float": [
+        30,
+        55,
+        80
+      ],
+      "is_percentage": true,
+      "heading_loc": "HAUNT DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "illusion_damage_incoming",
-        "values_float": [
-          100
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "illusion_damage_incoming",
+      "values_float": [
+        100
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "tooltip_illusion_total_damage_incoming",
-        "values_float": [
-          200
-        ],
-        "is_percentage": true,
-        "heading_loc": "УРОН ПО ИЛЛЮЗИЯМ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "tooltip_illusion_total_damage_incoming",
+      "values_float": [
+        200
+      ],
+      "is_percentage": true,
+      "heading_loc": "HAUNT DAMAGE TAKEN:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "destroy_if_target_is_dead",
-        "values_float": [
-          1
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "destroy_if_target_is_dead",
+      "values_float": [
+        1
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "fear_duration",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          1.5
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "fear_duration",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        1.5
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "fear_aoe",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          400
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "fear_aoe",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        400
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "fear_movespeed_slow",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          50
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "fear_movespeed_slow",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        50
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          125,
-          150,
-          175
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        125,
+        150,
+        175
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          180,
-          160,
-          140
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          20
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        180,
+        160,
+        140
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        20
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

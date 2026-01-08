@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_doom_bringer",
   "order_id": 45,
   "name_loc": "Doom",
-  "bio_loc": "Он — тот, кто горит, но не сгорает, пожирает, но не насыщается, убивает, но остаётся безнаказанным. Падший ангел несёт погибель всем, кто осмелится противостоять ему, срезая души остриём своего пламенного меча. Когда-то Люцифер был уважаемым генералом из мира за гранью света, но однажды не преклонил колени и был обвинён в грехе — неповиновении.\r\n\t\t\t\t<br><br>Шесть раз пробил его имя великий колокол Вашундола. Шестьдесят и ещё шесть раз его крылья клеймили, покуда от них не остались лишь дымящиеся культи. Бескрылый, он потерял свою связь со светом и со страшным воплем пал оземь, оставив в пустыне кратер. Покинув Рай навеки, теперь он нападает на любого без повода и без пощады. Из всех живых существ лишь он волен ходить по семи тёмным владениям. Движимый непреложными стремлениями, искажённый невообразимыми способностями, он всегда несёт с собой свой собственный ад. Люцифер не покорится никому, и когда-нибудь мир будет принадлежать ему.",
-  "hype_loc": "Doom <b>забирает жизни своих врагов</b> разными способами. Он пожирает существ, чтобы перенять их способности, а также способен наслать на врага <b>адское пламя</b>, не дающее тому <b>использовать способности и предметы</b>.",
-  "npe_desc_loc": "Запрещает одному врагу применять способности и восстанавливать здоровье",
+  "bio_loc": "He that burns and is not consumed, devours and is never sated, kills and is beyond all judgment--Lucifer brings doom to all who would stand against him. Bearing away souls on the tip of a fiery sword, he is the Fallen One, a once-favored general from the realm behind the light, cast out for the sin of defiance: he would not kneel. \r\n\t\t\t\t<br><br>Six times his name was tolled from the great bell of Vashundol. Six and sixty times his wings were branded, until only smoking stumps remained. Without wings, he slipped loose from the tethers that bound him within the light and he fell screaming to earth. A crater in the desert, Paradise lost.  Now he attacks without mercy, without motive, the only living being able to move freely between the seven dark dominions. Lashed by inescapable needs, twisted by unimaginable talents, Doom carries his own hell with him wherever he goes. Defiant to the last. Eventually, the world will belong to Doom.",
+  "hype_loc": "One way or another, Doom <b>shuts down his enemies</b>. Devouring creeps to claim the various skills they had in life, he can place a <b>lingering silence</b> upon a foe's spells and items with his ultimate as he <b>torches his foes</b>.",
+  "npe_desc_loc": "Can prevent a single enemy from casting spells or healing in any way",
   "facets": [
     {
       "color": 0,
       "title_loc": "Gluttony",
-      "description_loc": "Заменяет перезарядку Devour на {s:bonus_AbilityCharges} заряда и улучшает полученные способности на один уровень.",
+      "description_loc": "Devour now has {s:bonus_AbilityCharges} charges and stolen creep abilities are upgraded by one level.",
       "name": "doom_bringer_gluttony",
       "icon": "meat",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 5,
       "title_loc": "Impending Doom",
-      "description_loc": "Длительность способности Doom увеличивается на {s:bonus_upgrade_amount} сек. каждые {s:bonus_upgrade_interval} мин.",
+      "description_loc": "Every {s:bonus_upgrade_interval} minutes, Doom's duration is increased by {s:bonus_upgrade_amount}s.",
       "name": "doom_bringer_impending_doom",
       "icon": "cooldown",
       "gradient_id": 0,
@@ -66,16 +66,16 @@
       "id": 5339,
       "name": "doom_bringer_devour",
       "name_loc": "Devour",
-      "desc_loc": "Пожирает вражеского или нейтрального крипа, перенимая его способности. Если альтернативное применение выключено, способности не перенимаются. Длительность действия равна времени перезарядки способности, а по её окончании герой получит дополнительное золото.",
-      "lore_loc": "Обжорство и жадность Люцифера неистощимы.",
+      "desc_loc": "Consumes an enemy or neutral creep, acquiring any special abilities that it possessed. If alt-cast is deactivated, Doom will not acquire the creep's abilities. Duration is equal to the cooldown.",
+      "lore_loc": "Lucifer's appetite and greed are never sated.",
       "notes_loc": [
-        "За сожранного крипа даётся не только дополнительное золото, но и награда за его убийство.",
-        "Если применить на крипа без способностей, перенятые ранее способности сохранятся."
+        "Gives Doom the original bounty of the creep, along with the bonus gold.",
+        "If you devour a creep without abilities, you'll keep the abilities you had previously."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Заменяет перезарядку Devour на %AbilityCharges% заряда и улучшает полученные способности на один уровень.",
+        "Devour now has %AbilityCharges% charges and stolen creep abilities are upgraded by one level.",
         "",
         ""
       ],
@@ -133,7 +133,7 @@
             140
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ЗОЛОТО:",
+          "heading_loc": "BONUS GOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -153,7 +153,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. УРОВЕНЬ КРИПА:",
+          "heading_loc": "CREEP MAX LEVEL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -301,7 +301,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВОЕ ВРЕМЯ ВОССТАНОВЛЕНИЯ ЗАРЯДА:",
+          "heading_loc": "BASE CHARGE RESTORE TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -371,12 +371,12 @@
       "id": 5340,
       "name": "doom_bringer_scorched_earth",
       "name_loc": "Scorched Earth",
-      "desc_loc": "Устилает пламенем землю вокруг героя, увеличивая его скорость передвижения, а также нанося урон противникам.",
-      "lore_loc": "Падший оставляет за собой страшные разрушения — пламя, питающее его, не щадит никого.",
+      "desc_loc": "Carpets the nearby earth in flames which damage enemies, while also granting him increased movement speed.",
+      "lore_loc": "The Fallen One spreads destruction in his wake, sparing none from the flame which sustains him.",
       "notes_loc": [
-        "Подожжённая область перемещается вместе с героем."
+        "Scorched Earth follows Doom, centered on his location."
       ],
-      "shard_loc": "Излечивает героя и подконтрольных ему существ. Лечение составляет %heal_pct%%% от урона способности.",
+      "shard_loc": "Heals Doom and his controlled units for %heal_pct%%% of the damage value.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -440,7 +440,7 @@
             65
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -457,7 +457,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -477,7 +477,7 @@
             10
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVE SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_doom_6",
@@ -522,7 +522,7 @@
             16
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -614,10 +614,10 @@
       "id": 5341,
       "name": "doom_bringer_infernal_blade",
       "name_loc": "Infernal Blade",
-      "desc_loc": "Пламенная атака поджигает жертву и оглушает её на %ministun_duration% сек. Цель горит %burn_duration% сек. и каждую секунду получает как базовый урон, так и урон, зависящий от её максимального запаса здоровья.",
-      "lore_loc": "Люцифер рад поделиться клеймом, полученным после изгнания.",
+      "desc_loc": "Doom swings his burning sword, igniting the enemy. Stuns for %ministun_duration% seconds and applies a %burn_duration% second burn that deals a base damage plus a percentage of the target's Max HP as damage per second.",
+      "lore_loc": "Lucifer shares the fire branding bestowed upon him at the time of his exile.",
       "notes_loc": [
-        "Останавливает прерываемые заклинания."
+        "Interrupts channeling abilities."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -677,7 +677,7 @@
             60
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE BURN DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -697,7 +697,7 @@
             4
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "MAX HP AS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_doom_1",
@@ -720,7 +720,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ГОРЕНИЯ:",
+          "heading_loc": "BURN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -737,7 +737,7 @@
             0.6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_doom_4",
@@ -883,15 +883,15 @@
       "id": 5342,
       "name": "doom_bringer_doom",
       "name_loc": "Doom",
-      "desc_loc": "Обрушивает на врага злой рок: в момент применения он развеивает положительные эффекты, а затем некоторое время наносит периодический урон, запрещает применять способности и не позволяет как-либо восстанавливать здоровье.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "По ком прозвонил колокол Вашундола, за тем последует неминуемый рок.",
+      "desc_loc": "Inflicts a curse that dispels an enemy and prevents them from casting spells or healing in any way, while taking damage over time.\n\nDISPEL TYPE: Basic Dispel",
+      "lore_loc": "When a name is tolled from the bell of Vashundol, doom is sure to follow.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Способность действует на союзников жертвы в радиусе %scepter_aura_radius% от неё. Позволяет применить эту способность на себя, чтобы она действовала на врагов вокруг владельца. Увеличивает её периодический урон.",
+      "scepter_loc": "Allies in a %scepter_aura_radius% radius around the doomed target also suffer the effects of Doom. Allows Doom to be self-cast to affect enemies around himself with Doom. Increases Doom's damage per second.",
       "facets_loc": [
         "",
         "",
-        "Длительность этой способности увеличивается на %upgrade_amount% сек. каждые %upgrade_interval% мин."
+        "Every %upgrade_interval% minutes, Doom's duration is increased by %upgrade_amount%s."
       ],
       "type": 1,
       "behavior": "8",
@@ -941,7 +941,7 @@
             16
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -962,7 +962,7 @@
             65
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1200,10 +1200,10 @@
       "id": 1324,
       "name": "doom_bringer_lvl_pain",
       "name_loc": "Lvl ? Pain",
-      "desc_loc": "Атаки владельца этой способности наносят на %bonus_damage%%% больше урона героям, чей уровень ниже его.",
+      "desc_loc": "Doom's attacks deal %bonus_damage%%% bonus damage to heroes whose level is lower than Doom's level.",
       "lore_loc": "",
       "notes_loc": [
-        "Срабатывает при каждой атаке, когда владелец достиг максимального уровня."
+        "Also applies to all attacks when Doom is at max level."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1284,7 +1284,7 @@
     {
       "id": 6369,
       "name": "special_bonus_unique_doom_3",
-      "name_loc": "Devour даёт +{s:bonus_magic_resist}% к сопротивлению магии",
+      "name_loc": "Devour grants {s:bonus_magic_resist}% Magic Resistance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1347,7 +1347,7 @@
     {
       "id": 6370,
       "name": "special_bonus_unique_doom_4",
-      "name_loc": "+{s:bonus_ministun_duration} сек. оглушения от Infernal Blade",
+      "name_loc": "+{s:bonus_ministun_duration}s Infernal Blade Stun Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1410,7 +1410,7 @@
     {
       "id": 7123,
       "name": "special_bonus_unique_doom_6",
-      "name_loc": "+{s:bonus_bonus_movement_speed_pct}% к доп. скорости от Scorched Earth",
+      "name_loc": "+{s:bonus_bonus_movement_speed_pct}% Scorched Earth Movement Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1473,7 +1473,7 @@
     {
       "id": 6314,
       "name": "special_bonus_unique_doom_2",
-      "name_loc": "Devour можно применять на древних крипов",
+      "name_loc": "Devour Can Target Ancients",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1536,7 +1536,7 @@
     {
       "id": 733,
       "name": "special_bonus_unique_doom_9",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Scorched Earth",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Scorched Earth Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1599,7 +1599,7 @@
     {
       "id": 6073,
       "name": "special_bonus_unique_doom_1",
-      "name_loc": "+{s:bonus_burn_damage_pct}% к урону от макс. здоровья у Infernal Blade",
+      "name_loc": "+{s:bonus_burn_damage_pct}% Infernal Blade Max HP As Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1662,7 +1662,7 @@
     {
       "id": 970,
       "name": "special_bonus_unique_doom_10",
-      "name_loc": "Doom накладывает заглушение",
+      "name_loc": "Doom applies Mute",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1725,7 +1725,7 @@
     {
       "id": 971,
       "name": "special_bonus_unique_doom_11",
-      "name_loc": "Doom накладывает истощение",
+      "name_loc": "Doom applies Break",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

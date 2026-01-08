@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_monkey_king",
   "order_id": 113,
   "name_loc": "Monkey King",
-  "bio_loc": "500 лет Сунь Укуна сдавливала гора, и лишь его голова не ощущала сокрушительного веса каменной тюрьмы, в которой древние боги заточили бесшабашного бунтаря. Черты его открытого всем ветрам лица покрыл мох, из ушей проросла трава; его взор обрамляли полевые цветы, пустившие корешки в почве вокруг его щёк. Многие думали, что он погиб, сгинул в мучениях за войну с небесами, но легенды о нём не забывались. И гласили они: Сунь Укун не способен умереть.<br><br>И он ждал. Терпеливо ждал шанса искупить свою вину перед богами. И когда они решили назвать ему свою цену, Сунь Укун согласился: он пообещал сопроводить юного пилигрима в его тайном походе, защитить его от демонов и внешних напастей, привести путника домой вместе с желанной реликвией. «Сделай так, — сказали боги, — да покорно слушайся приказов своего господина, что служит нам своей святой миссией, и тогда избавишь себя от нашей немилости».<br><br>Переменившийся Сунь Укун с честью исполнил свою клятву перед богами, искупив свои прошлые грехи. Пилигрим, укрепив свою веру в лишениях, вернулся в обитель вместе с реликвией; Сунь Укун же гордо вошёл в пантеон богов — и первое время пытался побороть старую страсть к приключениям и славе. Но жить он мог лишь хитростью... А что может быть лучше, чем обхитрить богов вновь?",
-  "hype_loc": "В поисках славной битвы Monkey King скачет по кронам деревьев и застаёт врагов врасплох, стремительно нападая с высоты. Готовый переломить ход сражения верной <b>армией солдат-обезьян</b>, этот <b>неуловимый трюкач</b> торжествует в хаосе битвы и останавливает своим легендарным посохом любого беглеца.",
-  "npe_desc_loc": "Прыгает на жертв с верхушек деревьев",
+  "bio_loc": "For 500 years the mountain pressed down upon him, only his head free from the crushing weight of the stonewrought prison the elder gods had summoned to halt his childish rebellion. Moss grew along the lines of his exposed face, tufts of grass sprouted from his ears; his vision was framed in wildflowers reaching from the soil around his cheeks. Most thought him long dead, tormented by the gods for waging war against the heavens until naught but his legend survived. But, as the stories go, the Monkey King cannot die.<br><br>So he waited. Until the gods came to offer a chance at absolution, he endured. And when they did come to name the price, Sun Wukong accepted their charge: he would accompany a young acolyte on a secret pilgrimage, protect him from demons and dangers of the road, and guide the man home in possession of a coveted relic. Do that, and humbly obey the human's commands in service to their holy mission, and Wukong would prove himself reformed.<br><br>For a change, Sun Wukong fulfilled his oath to the gods with honor, and atoned for the sins of past insurrections. The acolyte, much learned in hardships, was returned to his home temple, relic in hand; and Wukong-finding himself for the first time in proper standing with any gods of consequence-was content for a short while to give up his old thirst for adventure and glory. But the Monkey King was born for mischief...and offending the gods never gets old.",
+  "hype_loc": "Always in search of a good fight, Monkey King travels atop the trees aiming to spring from leafy cover and surprise his enemies. Calling upon an <b>army of monkey soldiers</b> to overwhelm opponents, this <b>agile trickster</b> revels in the chaos of battle, ready to slam his legendary staff down on any hopes of escape.",
+  "npe_desc_loc": "Springs from the cover of the tree tops",
   "facets": [
     {
       "color": 2,
       "title_loc": "Simian Stride",
-      "description_loc": "Увеличивает максимальный уровень способности Tree Dance до {s:bonus_max_level_tooltip}-го. При полном изучении она не имеет перезарядки.",
+      "description_loc": "Increases the max level of Tree Dance. Level {s:bonus_max_level_tooltip} Tree Dance reduces the cooldown to zero.",
       "name": "monkey_king_simian_stride",
       "icon": "tree",
       "gradient_id": 4,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Changing of the Guard",
-      "description_loc": "Во время действия Wukong's Command герой может превратиться в одного из своих солдат.",
+      "description_loc": "Monkey King can transform into one of his soldiers during Wukong's command.",
       "name": "monkey_king_transfiguration",
       "icon": "summons",
       "gradient_id": 2,
@@ -66,12 +66,12 @@
       "id": 5716,
       "name": "monkey_king_boundless_strike",
       "name_loc": "Boundless Strike",
-      "desc_loc": "Герой увеличивает свой посох и бьёт им по земле, оглушая всех задетых врагов. Этим ударом нельзя промахнуться, и он наносит как базовый урон, так и критический урон от атаки.",
-      "lore_loc": "Легендарный посох Цзиньгубан растет по воле хозяина, не позволяя врагам избежать его хватки.",
+      "desc_loc": "Monkey King enlarges his staff and slams it against the ground, stunning enemies in a line and damaging them with bonus damage and a critical hit based on his attack. Has True Strike.",
+      "lore_loc": "The legendary Jingu Bang grows to match its master's will, ensuring no enemy can escape the Monkey King's reach.",
       "notes_loc": [
-        "Не проходит сквозь невосприимчивость к магии."
+        "Does not affect spell-immune enemies."
       ],
-      "shard_loc": "Накладывает на врагов, задетых посохом или находящихся вокруг его конца, эффект способности Primal Spring, подготовленной на %spring_channel_pct%%%. Также добавляет альтернативное применение, при котором герой прыгает к концу своего посоха, как только тот ударит землю.",
+      "shard_loc": "Boundless Strike applies Primal Spring with %spring_channel_pct%%% of the max channeling duration power to enemies along the staff and at the end of the staff. When Boundless Strike is set to alt-cast, Monkey King leaps to the end of his staff.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -129,7 +129,7 @@
             1.3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_monkey_king_9",
@@ -155,7 +155,7 @@
             180
           ],
           "is_percentage": true,
-          "heading_loc": "КРИТИЧЕСКИЙ УРОН:",
+          "heading_loc": "CRITICAL DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_monkey_king_10",
@@ -181,7 +181,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -215,7 +215,7 @@
             1100
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ:",
+          "heading_loc": "DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -420,18 +420,18 @@
       "id": 5721,
       "name": "monkey_king_tree_dance",
       "name_loc": "Tree Dance",
-      "desc_loc": "Герой запрыгивает на верхушку выбранного дерева. Там он получает прерываемую способность Primal Spring — направленный наскок. Если уничтожить дерево, герой упадёт и будет оглушён на %unperched_stunned_duration% сек. Если получить урон на земле, способность уйдёт на перезарядку.",
-      "lore_loc": "Сунь Укун проворно скачет по древесной завесе, оставаясь вне досягаемости несмотря ни на что.",
+      "desc_loc": "Monkey King jumps to a tree and perches atop it. While perched, he gains the Primal Spring ability-a channeled leap attack. If Monkey King's tree is destroyed, he falls and is stunned for %unperched_stunned_duration% seconds. Taking damage while on the ground puts Tree Dance on cooldown.",
+      "lore_loc": "Sun Wukong dances nimbly along the treetop canopy, always just out of arm's reach.",
       "notes_loc": [
-        "Перезарядка этой способности начинается при приземлении.",
-        "Слезть с дерева можно, отдав команду передвижения.",
-        "Передвижение прерывается оглушением, проклятием или изгнанием."
+        "Tree Dance cooldown starts upon landing.",
+        "Right-clicking the ground will have Monkey King drop from the tree.",
+        "Movement is interrupted if Monkey King is stunned, hexed or banished."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Увеличивает максимальный уровень этой способности до %max_level%-го. При полном изучении она не имеет перезарядки.",
+        "Increases the max level of Tree Dance. Level %max_level% Tree Dance reduces the cooldown to zero.",
         ""
       ],
       "type": 0,
@@ -554,7 +554,7 @@
             800
           ],
           "is_percentage": false,
-          "heading_loc": "РАССТОЯНИЕ:",
+          "heading_loc": "DISTANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_monkey_king_7",
@@ -577,7 +577,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА ПРИ ПОЛУЧЕНИИ УРОНА:",
+          "heading_loc": "DAMAGE COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -841,15 +841,15 @@
       "id": 5723,
       "name": "monkey_king_jingu_mastery",
       "name_loc": "Jingu Mastery",
-      "desc_loc": "Удары героя пробуждают мощь Цзиньгубана. Каждая четвёртая атака по вражескому герою дарует %charges% усиленные атаки с дополнительным уроном и вампиризмом.",
-      "lore_loc": "Чувствительный к настрою своего повелителя, посох Цзиньгубан сияет от мощи, когда Сунь Укун показывает свой боевой пыл.",
+      "desc_loc": "Monkey King's attacks awaken the Jingu Bang's power. Upon the fourth hit on the same enemy hero, Monkey King earns %charges% charged attacks that have bonus damage and lifesteal.",
+      "lore_loc": "Always sensitive to the moods of its master, the Jingu Bang radiates power when Sun Wukong's combat fervor is on full display.",
       "notes_loc": [
-        "Попадание способностью Boundless Strike также увеличивает счётчик атак.",
-        "Эффект способности на враге обновляется с каждой атакой.",
-        "Счётчик атак по врагу нельзя развеять.",
-        "Эффект, дающий владельцу усиленные атаки, можно развеять.",
-        "Получение эффектов отключается истощением.",
-        "Существующие эффекты не отключаются истощением."
+        "Hitting an enemy with Boundless Strike adds to the hit counter.",
+        "Repeatedly hitting an enemy refreshes the Jingu Mastery debuff duration.",
+        "Hit charges on enemies cannot be dispelled.",
+        "Jingu Mastery buff on self can be dispelled.",
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -900,7 +900,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО АТАК ДЛЯ АКТИВАЦИИ:",
+          "heading_loc": "REQUIRED HITS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_monkey_king_11",
@@ -926,7 +926,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТОВ НА ВРАГАХ:",
+          "heading_loc": "COUNTER DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -963,7 +963,7 @@
             165
           ],
           "is_percentage": false,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_monkey_king_2",
@@ -989,7 +989,7 @@
             80
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. ВАМПИРИЗМ:",
+          "heading_loc": "BONUS LIFESTEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1006,7 +1006,7 @@
             35
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ УСИЛЕНИЯ:",
+          "heading_loc": "BUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1035,10 +1035,10 @@
       "id": 5719,
       "name": "monkey_king_mischief",
       "name_loc": "Mischief",
-      "desc_loc": "Изменяет облик героя, чтобы обхитрить противников. Маскировка зависит от окружения и спадает при получении урона, попытке атаковать и применении предметов или способностей. Защищает героя от урона на %invul_duration% сек.",
-      "lore_loc": "Когда не знаешь, откуда ждать беды.",
+      "desc_loc": "Changes Monkey King's shape to deceive opponents, using the environment nearby as inspiration for the disguise. Taking damage, attacking, or using any item or ability breaks Monkey King's disguise. Grants damage immunity for %invul_duration% seconds upon transforming.",
+      "lore_loc": "Watch out for that tree.",
       "notes_loc": [],
-      "shard_loc": "Способность перезаряжается быстрее и сбивает снаряды с цели, а неуязвимость от неё действует дольше.",
+      "shard_loc": "Mischief has a shorter cooldown, longer invulnerability period, and disjoints projectiles.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -1093,7 +1093,7 @@
             8
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1176,18 +1176,18 @@
       "id": 5725,
       "name": "monkey_king_wukongs_command",
       "name_loc": "Wukong's Command",
-      "desc_loc": "Герой создаёт круговую формацию солдат, которые расходятся из его местоположения. Если герой покинет область действия способности, его солдаты исчезнут. Их атака идентична атаке владельца способности, а своей целью они выбирают только вражеских героев. На время действия способности герой получает дополнительную броню.",
-      "lore_loc": "Сунь Укун выдирает клок шерсти и дует им на противников, превращая каждый волосок в копию себя самого.",
+      "desc_loc": "Monkey King creates a circular formation of soldiers that spread out from his position. If Monkey King leaves the area his soldiers disperse. The soldiers have Monkey King's attack and only target heroes. Monkey King is granted bonus armor for the spell's duration.",
+      "lore_loc": "Monkey King rips out a tuft of fur to blow at his enemies, charging each strand to transform into a copy of himself.",
       "notes_loc": [
-        "Солдаты не получают бонусы от способности Jingu Mastery.",
-        "При атаках солдат не срабатывают эффекты Skull Basher или Abyssal Blade."
+        "Soldiers do not receive Jingu Mastery bonuses.",
+        "Soldiers do not copy Basher or Abyssal."
       ],
       "shard_loc": "",
-      "scepter_loc": "Раз в несколько секунд создаёт неподалёку солдата, если герой не на дереве и не невидим. Солдаты атакуют постройки, только если сам герой находится неподалёку. Каждый солдат имеет свой счётчик зарядов способности Jingu Mastery.",
+      "scepter_loc": "Spawns a monkey soldier near Monkey King at regular intervals. Soldiers do not spawn while invisible or on trees. Soldiers only attack buildings when Monkey King himself is nearby. Soldiers can now gain Jingu Mastery charges independently.",
       "facets_loc": [
-        "Солдаты от Wukong's Command существуют дольше и исчезают только через %leadership_time_buffer% сек. после выхода героя из круга.",
+        "Monkey King's soldiers last longer and do not disperse unless he spends more than %leadership_time_buffer% seconds outside the area.",
         "",
-        "Даёт способность Changing of the Guard на время действия."
+        "Grants the Changing of the Guard ability during Wukong's Command."
       ],
       "type": 1,
       "behavior": "67108912",
@@ -1362,7 +1362,7 @@
             25
           ],
           "is_percentage": false,
-          "heading_loc": "ДОПОЛНИТЕЛЬНАЯ БРОНЯ:",
+          "heading_loc": "BONUS ARMOR:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1379,7 +1379,7 @@
             1.1
           ],
           "is_percentage": false,
-          "heading_loc": "ИНТЕРВАЛ АТАКИ СОЛДАТ:",
+          "heading_loc": "SOLDIER ATTACK INTERVAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1396,7 +1396,7 @@
             14
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1497,7 +1497,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ИНТЕРВАЛ ПОЯВЛЕНИЯ СОЛДАТ:",
+          "heading_loc": "SOLDIER SPAWN INTERVAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1516,7 +1516,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ СОЛДАТА:",
+          "heading_loc": "SOLDIER DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1601,7 +1601,7 @@
     {
       "id": 6696,
       "name": "special_bonus_unique_monkey_king_3",
-      "name_loc": "+{s:bonus_impact_damage} к макс. урону от Primal Spring",
+      "name_loc": "+{s:bonus_impact_damage} Primal Spring Max Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1664,7 +1664,7 @@
     {
       "id": 748,
       "name": "special_bonus_unique_monkey_king_9",
-      "name_loc": "+{s:bonus_stun_duration} сек. оглушения от Boundless Strike",
+      "name_loc": "+{s:bonus_stun_duration}s Boundless Strike Stun Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1727,7 +1727,7 @@
     {
       "id": 7038,
       "name": "special_bonus_unique_monkey_king_7",
-      "name_loc": "+{s:bonus_ground_jump_distance} к дальности применения Tree Dance",
+      "name_loc": "+{s:bonus_ground_jump_distance} Tree Dance Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1790,7 +1790,7 @@
     {
       "id": 6421,
       "name": "special_bonus_unique_monkey_king_2",
-      "name_loc": "+{s:bonus_bonus_damage} к урону от Jingu Mastery",
+      "name_loc": "+{s:bonus_bonus_damage} Jingu Mastery Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1853,7 +1853,7 @@
     {
       "id": 747,
       "name": "special_bonus_unique_monkey_king_8",
-      "name_loc": "Primal Spring без перезарядки",
+      "name_loc": "0 Cooldown Primal Spring",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1916,7 +1916,7 @@
     {
       "id": 802,
       "name": "special_bonus_unique_monkey_king_10",
-      "name_loc": "+{s:bonus_strike_crit_mult}% к критическому урону от Boundless Strike",
+      "name_loc": "+{s:bonus_strike_crit_mult}% Boundless Strike Critical Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1979,7 +1979,7 @@
     {
       "id": 822,
       "name": "special_bonus_unique_monkey_king_11",
-      "name_loc": "–{s:bonus_required_hits} от числа атак для активации Jingu Mastery",
+      "name_loc": "-{s:bonus_required_hits} Jingu Mastery Required Hits",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2042,8 +2042,8 @@
     {
       "id": 7025,
       "name": "special_bonus_unique_monkey_king_6",
-      "name_loc": "+1 круг солдат от Wukong's Command",
-      "desc_loc": "На расстоянии в {s:bonus_third_radius} от центра круга создаётся дополнительное кольцо из {s:bonus_num_third_soldiers} солдат.",
+      "name_loc": "Additional Wukong's Command Ring",
+      "desc_loc": "Creates an additional ring of {s:bonus_num_third_soldiers} soldiers at {s:bonus_third_radius} range from the center.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2113,7 +2113,7 @@
           "id": 1627,
           "name": "monkey_king_transfiguration",
           "name_loc": "Changing of the Guard",
-          "desc_loc": "Во время Wukong's Command герой может поменяться местами с одним из солдат от этой способности и превратиться в его неотличимую копию на %transfiguration_duration% сек. В образе солдата герой неуязвим, но не может атаковать или применять заклинания.",
+          "desc_loc": "Monkey King can transform into any one of his soldiers during Wukong's command, taking its place for a %transfiguration_duration%s, becoming indistinguishable from other soldiers, and leaving another soldier in his stead. While transformed, Monkey King is invulnerable, but cannot attack or cast spells",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",

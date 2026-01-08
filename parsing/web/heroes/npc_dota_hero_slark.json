@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_slark",
   "order_id": 94,
   "name_loc": "Slark",
-  "bio_loc": "Мало кому из жителей суши известно о Темном рифе — подводной темнице для всяческого рода подводного отребья: змееногих-убийц, изменников из глубин, маньяков-мерансов и прочих морских обитателей, совершивших преступления против своих сородичей. Коридоры ее темны и запутанны, стены покрыты острыми как бритва кораллами. Лабиринт неустанно патрулируют юркие угри, а на страже незыблемо стоят гигантские анемоны. Выживают здесь лишь самые злобные и беспощадные. В этом скверном месте Slark провел большую часть жизни, заточенный за никому не известные прегрешения, не ведая любых радостей и не доверяя кому-либо. Выживать помогали скрытность и безжалостность, а также хранение планов и замыслов при себе. Однажды двенадцать заключенных, прозванных впоследствии Дюжиной Темного рифа, объединились для побега, которому было суждено окончиться плачевно. Заговорщики хранили свои планы в строжайшей тайне и расправлялись со всеми, кто мог бы сложить мозаику. Но все же хитрец Slark каким-то образом смог обо всем разузнать и подготовить себе место в затее. В день побега десятеро из Дюжины были убиты при попытке сбежать, а двоих изловили живьем и публично казнили на потеху остальным каторжникам. Однако никто не заметил, что беглецов было тринадцать. Воспользовавшись суматохой, Slark проскользнул незамеченным мимо охраны и тотчас же затерялся в глубинах. Своим новым местом обитания он выбрал опасные мангровые заросли у южной оконечности Тенистого взморья. Таким образом, Slark стал единственным в истории заключенным, которому удалось сбежать из Темного рифа.",
-  "hype_loc": "Slark способен впрыгнуть в гущу сражения и выйти из него живым. Он всегда рад <b>приковать заблудшего врага к месту</b>, украсть его сущность ударами своего кинжала, а в случае чего мгновенно испариться.",
-  "npe_desc_loc": "Ловко выскальзывает из любой передряги",
+  "bio_loc": "Little known to the inhabitants of the dry world, Dark Reef is a sunken prison where the worst of the sea-bred are sent for crimes against their fellows. It is a razor barbed warren full of murderous slithereen, treacherous Deep Ones, sociopathic meranths. In this dim labyrinth, patrolled by eels and guarded by enormous anemones, only the vicious survive. Pitched into Dark Reef for crimes unknown, Slark spent half a lifetime without kin or kindness, trusting no one, surviving through a combination of stealth and ruthlessness, keeping his thoughts and his plans to himself. When the infamous Dark Reef Dozen plotted their ill-fated breakout, they kept their plans a perfect secret, murdering anyone who could have put the pieces together--but somehow Slark discovered their scheme and made a place for himself in it. Ten of the Dozen died in the escape attempt, and two were captured, hauled back to Dark Reef, then executed for the entertainment of their fellow inmates. But Slark, the unsung thirteenth, used the commotion as cover and slipped away, never to be caught. Now a furtive resident of the carnivorous mangrove scrub that grips the southern reach of Shadeshore, Slark remains the only successful escapee from Dark Reef.",
+  "hype_loc": "Pouncing into danger then slipping back out is what Slark does best. He rushes at the chance to <b>pin or corner a lone foe</b>, steals their essence with each cut from his dagger, and is always ready to vanish should the tables turn.",
+  "npe_desc_loc": "Slips in and out of skirmishes",
   "facets": [
     {
       "color": 3,
       "title_loc": "Fugitive",
-      "description_loc": "Этот аспект ничего не делает. Героя всё ещё держат на крючке воспоминания о Тёмном рифе...",
+      "description_loc": "This facet doesn't do anything. Slark is still reeling from nightmares about Dark Reef...",
       "name": "slark_slark",
       "icon": "broken_chain",
       "gradient_id": 2,
@@ -57,13 +57,13 @@
       "id": 5494,
       "name": "slark_dark_pact",
       "name_loc": "Dark Pact",
-      "desc_loc": "После небольшой задержки герой жертвует немного собственной крови, снимая с себя большинство отрицательных эффектов и нанося урон всем врагам поблизости. Сам герой получает %self_damage_pct%%% нанесённого этой способностью урона.\n\nТИП РАЗВЕИВАНИЯ: сильное",
-      "lore_loc": "В смертельной опасности змееногие способны быстро отращивать потерянные конечности.",
+      "desc_loc": "After a short delay, Slark sacrifices some of his life blood, purging most negative debuffs and dealing damage to enemy units around him and to himself.  Slark only takes %self_damage_pct%%% of the damage.\n\nDISPEL TYPE: Strong Dispel",
+      "lore_loc": "Slithereen are capable of quickly regrowing appendages, in case of critical injury, to save their own lives.",
       "notes_loc": [
-        "После подготовки в %delay% сек. вы испустите %total_pulses% волн урона, по одной каждые %pulse_interval% сек.",
-        "Каждая волна снимает с героя отрицательные эффекты.",
-        "Этой способностью невозможно совершить самоубийство.",
-        "Если ваш герой умрет, волны остановятся."
+        "%delay% seconds after cast, a series of %total_pulses% pulses separated by %pulse_interval% seconds deal the damage.",
+        "Each pulse also removes debuffs from Slark.",
+        "You can't kill yourself with this skill.",
+        "The pulses stop if Slark dies."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -120,7 +120,7 @@
             1.5
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАДЕРЖКА:",
+          "heading_loc": "DELAY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -154,7 +154,7 @@
             325
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -174,7 +174,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slark_2",
@@ -320,17 +320,17 @@
       "id": 5495,
       "name": "slark_pounce",
       "name_loc": "Pounce",
-      "desc_loc": "Герой прыгает вперёд, привязывая к месту первого попавшегося на пути героя и не давая ему уйти дальше определённого расстояния. ",
-      "lore_loc": "За время, проведённое в Тёмном рифе, узник стал опасным убийцей: агрессивным и бесстрашным.",
+      "desc_loc": "Slark leaps forward, leashing the first hero he connects.  That unit can only move a limited distance away from Slark's landing position.",
+      "lore_loc": "Time in the Dark Reef made Slark a dangerous assassin; aggressive and fearless.",
       "notes_loc": [
-        "Герой летит в прыжке со скоростью в %pounce_speed% либо на расстояние в %pounce_distance%, либо до соприкосновения со вражеским героем.",
-        "Не привязывает врагов, невосприимчивых к эффектам.",
-        "Разрушает деревья в месте приземления."
+        "On cast, Slark leaps forward at a speed of %pounce_speed%, stopping when he latches onto an enemy hero or has traveled %pounce_distance% distance.",
+        "Debuff Immune units cannot be leashed.",
+        "Trees will be destroyed around Slark's landing location."
       ],
       "shard_loc": "",
-      "scepter_loc": "Даёт способности заряды и увеличивает дальность прыжка.",
+      "scepter_loc": "Provides charges and increases range.",
       "facets_loc": [
-        "Способность Pounce накладывает на жертву эффекты Essence Shift.",
+        "Pounce applies stacks of Essence Shift when striking enemy heroes.",
         "",
         ""
       ],
@@ -379,7 +379,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ:",
+          "heading_loc": "DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -450,7 +450,7 @@
             3.25
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРИВЯЗКИ:",
+          "heading_loc": "LEASH DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slark",
@@ -473,7 +473,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПРИВЯЗКИ:",
+          "heading_loc": "LEASH RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -490,7 +490,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАРЯДОВ:",
+          "heading_loc": "CHARGES:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -509,7 +509,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВОЕ ВРЕМЯ ВОССТАНОВЛЕНИЯ ЗАРЯДА:",
+          "heading_loc": "BASE CHARGE RESTORE TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -528,7 +528,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ:",
+          "heading_loc": "DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -550,7 +550,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ЭФФЕКТЫ ESSENCE SHIFT:",
+          "heading_loc": "ESSENCE SHIFT STACKS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -616,10 +616,10 @@
       "id": 1693,
       "name": "slark_saltwater_shiv",
       "name_loc": "Saltwater Shiv",
-      "desc_loc": "Герой подсекает цель своей просоленной заточкой и крадёт её скорость передвижения, восстановление здоровья и пополнение здоровья. Эффект от нескольких применений складывается.",
+      "desc_loc": "Slark slices the target with his salty shiv, stealing a portion of the target's movement speed, Health Regen and Health Restoration.  This effect stacks.",
       "lore_loc": "",
       "notes_loc": [
-        "Каждое применение этой способности обновляет длительность её эффектов."
+        "Subsequent use of Saltwater Shiv refreshes the duration of all Shiv stacks."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -673,7 +673,7 @@
             12
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -693,7 +693,7 @@
             6
           ],
           "is_percentage": true,
-          "heading_loc": "КРАЖА ПОПОЛНЕНИЯ ЗДОРОВЬЯ:",
+          "heading_loc": "STACK RESTORATION STEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -713,7 +713,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "КРАЖА ВОССТ. ЗДОРОВЬЯ:",
+          "heading_loc": "STACK REGEN STEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -733,7 +733,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "КРАЖА СКОРОСТИ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "STACK SPEED STEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -816,8 +816,8 @@
       "id": 729,
       "name": "slark_depth_shroud",
       "name_loc": "Depth Shroud",
-      "desc_loc": "Создаёт в указанной области облако, которое скрывает союзников и применяет на них эффект способности Shadow Dance.",
-      "lore_loc": "Что может быть хуже, чем запороть дельце из-за топотыги-подельника?",
+      "desc_loc": "Creates a cloud at the target location. All allies inside the radius are hidden and affected by Shadow Dance.",
+      "lore_loc": "Nothing worse than a job going bad thanks to some clompy-footed friend.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -868,7 +868,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -885,7 +885,7 @@
             225
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -982,14 +982,14 @@
       "id": 5496,
       "name": "slark_essence_shift",
       "name_loc": "Essence Shift",
-      "desc_loc": "Каждая атака по вражескому герою крадёт жизненную сущность, снижая все его атрибуты на %stat_loss% и повышая ловкость владельца способности на %agi_gain%. Он навсегда крадёт %stat_loss% ловкости каждый раз, когда под этим эффектом умирает враг.",
-      "lore_loc": "Чем больше бьёшь по врагу, тем больше узнаёшь о его слабостях.",
+      "desc_loc": "Slark steals the life essence of enemy heroes with his attacks, draining %stat_loss% of each of their attributes and converting them to bonus %agi_gain% Agility. If Slark kills an affected enemy hero, he permanently steals %stat_loss% Agility.",
+      "lore_loc": "With each strike at his adversaries, Slark's knowledge of their weaknesses improves.",
       "notes_loc": [
-        "Атрибуты не могут упасть ниже значения в единицу.",
-        "Украденные у жертвы атрибуты возвращаются к ней при её смерти, но они не исчезают у владельца способности.",
-        "Чтобы украсть ловкость навсегда, нужно нанести жертве смертельный удар или чтобы она находилась в радиусе кражи и под действием этой способности.",
-        "Временная кража ловкости отключается истощением, а постоянная — нет.",
-        "Уже украденная ловкость не отключаются истощением."
+        "Attributes cannot be dropped below 1.",
+        "Essence Shifted stats are returned to normal on death. The stat return for Slark and for the affected hero are separate.",
+        "To permanently steal Agility, Slark doesn't need to land the killing blow, as long as the enemy hero is killed within Slark's Steal Radius while having the Essence Shift debuff.",
+        "Break disables the gaining of temporary stacks. Does not disable the gaining of permanent stacks.",
+        "Break does not disable the bonuses of existing stacks."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1080,7 +1080,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slark_4",
@@ -1103,7 +1103,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС КРАЖИ:",
+          "heading_loc": "STEAL RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1132,8 +1132,8 @@
       "id": 5497,
       "name": "slark_shadow_dance",
       "name_loc": "Shadow Dance",
-      "desc_loc": "Пассивно ускоряет передвижение и восстановление здоровья владельца, когда его не видят враги. Этот эффект пропадёт на %neutral_disable% сек., если получить урон от нейтрального существа.<br><br>Можно активировать, чтобы скрыться в облаке теней. Эту невидимость нельзя раскрыть, и она не снимается при совершении атак, использовании предметов и применении способностей, однако враги видят само облако.",
-      "lore_loc": "Неизвестный тринадцатый — очень скользкий враг.",
+      "desc_loc": "When not visible to the enemy team, Slark passively gains bonus movement speed and health regeneration.  If Slark is damaged by a neutral unit, the passive movement and health regeneration bonuses are lost for %neutral_disable% seconds.<br><br>When activated, Slark hides himself in a cloud of shadows, becoming immune to detection. Attacking, casting spells, and using items will not reveal Slark, but enemies can see the cloud itself.",
+      "lore_loc": "The hidden Thirteenth is a slippery foe.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1188,7 +1188,7 @@
             48
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1207,7 +1207,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ В СЕКУНДУ:",
+          "heading_loc": "HEALTH GAINED PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slark_8",
@@ -1266,7 +1266,7 @@
             4.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slark_3",
@@ -1359,7 +1359,7 @@
     {
       "id": 821,
       "name": "special_bonus_unique_slark_6",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Dark Pact",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Dark Pact Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1422,7 +1422,7 @@
     {
       "id": 6147,
       "name": "special_bonus_unique_slark",
-      "name_loc": "+{s:bonus_leash_duration} сек. действия Pounce",
+      "name_loc": "+{s:bonus_leash_duration}s Pounce Leash",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1485,7 +1485,7 @@
     {
       "id": 6892,
       "name": "special_bonus_unique_slark_2",
-      "name_loc": "+{s:bonus_total_damage} к урону от Dark Pact",
+      "name_loc": "+{s:bonus_total_damage} Dark Pact Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1548,7 +1548,7 @@
     {
       "id": 921,
       "name": "special_bonus_unique_slark_8",
-      "name_loc": "+{s:bonus_bonus_regen} здоровья в секунду от Shadow Dance",
+      "name_loc": "+{s:bonus_bonus_regen} Shadow Dance Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1611,7 +1611,7 @@
     {
       "id": 814,
       "name": "special_bonus_unique_slark_5",
-      "name_loc": "+{s:bonus_agi_gain} к краже ловкости за эффект Essence Shift",
+      "name_loc": "+{s:bonus_agi_gain} Agility gain/stolen per Essence Shift Stack",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1674,7 +1674,7 @@
     {
       "id": 892,
       "name": "special_bonus_unique_slark_7",
-      "name_loc": "Shadow Dance даёт +{s:bonus_attack_speed} к скорости атаки",
+      "name_loc": "+{s:bonus_attack_speed} Shadow Dance Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1737,7 +1737,7 @@
     {
       "id": 6893,
       "name": "special_bonus_unique_slark_3",
-      "name_loc": "+{s:bonus_duration} сек. действия Shadow Dance",
+      "name_loc": "+{s:bonus_duration}s Shadow Dance Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1800,7 +1800,7 @@
     {
       "id": 6894,
       "name": "special_bonus_unique_slark_4",
-      "name_loc": "+{s:bonus_duration} сек. действия Essence Shift",
+      "name_loc": "+{s:bonus_duration}s Essence Shift Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

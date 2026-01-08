@@ -1,174 +1,172 @@
-[
-  {
-    "id": 1283,
-    "name": "skeleton_king_vampiric_spirit",
-    "name_loc": "Vampiric Spirit",
-    "desc_loc": "Дарует герою вампиризм. Когда герой получает смертельный урон, он ненадолго становится призраком со свободным перемещением и увеличенной скоростью передвижения и атаки, и только затем погибает. Способность Reincarnation не может сработать во время этого эффекта.",
-    "lore_loc": "",
-    "notes_loc": [
-      "Награду за убийство героя, смерть которого была отложена, получит тот, кто нанёс смертельный удар.",
-      "Не срабатывает перед перерождением.",
-      "Истощением отключается только пассивный вампиризм.",
-      "В призрачной форме отсчитывается время до возрождения."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "Делает способность аурой, превращающей погибших союзных героев в призраков. Увеличивает длительность призрачной формы.",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "66",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 0,
-    "immunity": 0,
-    "dispellable": 0,
-    "max_level": 4,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      0
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      0
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "vampiric_aura",
-        "values_float": [
-          10,
-          20,
-          30,
-          40
-        ],
-        "is_percentage": true,
-        "heading_loc": "ВАМПИРИЗМ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_wraith_king_2",
-            "value": 10,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+{
+  "id": 1283,
+  "name": "skeleton_king_vampiric_spirit",
+  "name_loc": "Vampiric Spirit",
+  "desc_loc": "Grants Wraith King Lifesteal. When slain Wraith King turns into a free pathing Wraith with Bonus Attack and Movement Speed for a short duration, delaying his death. Wraith King cannot reincarnate after being a Wraith.",
+  "lore_loc": "",
+  "notes_loc": [
+    "Credit for allies whose death was delayed will go to whoever struck the original killing blow.",
+    "Does not affect Reincarnate deaths.",
+    "Break only disables the passive lifesteal component.",
+    "Respawn timer is reduced by Wraith duration."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "Turns Vampiric Spirit into an aura, allowing allied heroes to turn into wraiths when slain. Extends wraith duration.",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "66",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 0,
+  "immunity": 0,
+  "dispellable": 0,
+  "max_level": 4,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    0
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "vampiric_aura",
+      "values_float": [
+        10,
+        20,
+        30,
+        40
+      ],
+      "is_percentage": true,
+      "heading_loc": "LIFESTEAL:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_wraith_king_2",
+          "value": 10,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "duration",
-        "values_float": [
-          3.5,
-          4,
-          4.5,
-          5
-        ],
-        "is_percentage": false,
-        "heading_loc": "ВРЕМЯ ЖИЗНИ ПРИЗРАКА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          1
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "duration",
+      "values_float": [
+        3.5,
+        4,
+        4.5,
+        5
+      ],
+      "is_percentage": false,
+      "heading_loc": "WRAITH DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        1
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_attack_speed",
-        "values_float": [
-          30,
-          45,
-          60,
-          75
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_attack_speed",
+      "values_float": [
+        30,
+        45,
+        60,
+        75
+      ],
+      "is_percentage": false,
+      "heading_loc": "BONUS ATTACK SPEED:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_move_speed_pct",
-        "values_float": [
-          10,
-          15,
-          20,
-          25
-        ],
-        "is_percentage": true,
-        "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_move_speed_pct",
+      "values_float": [
+        10,
+        15,
+        20,
+        25
+      ],
+      "is_percentage": true,
+      "heading_loc": "BONUS MOVE SPEED:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_aura_radius",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС АУРЫ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          1200
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": true,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_aura_radius",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "AURA RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        1200
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": true,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

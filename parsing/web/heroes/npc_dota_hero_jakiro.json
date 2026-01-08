@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_jakiro",
   "order_id": 55,
   "name_loc": "Jakiro",
-  "bio_loc": "Даже среди магических существ двуглавый дракон считается уродом. Поровну вмещающий в себя лед и пламя, коварство и ярость, он парит над обугленными и замороженными полями битв и изничтожает любого, кто осмелится бросить ему вызов. Яйца пироксианских драконов вмещают двух детенышей. Знаменитые своим злобным нравом с первых мгновений жизни, едва вылупившиеся детёныши пытаются убить друг друга ещё в гнезде. Выживает сильнейший. Так из поколения в поколение сохраняется сила пироксианского вида. Но по ошибке природы из одного яйца вылупился двуглавый уродец, объединив в одном теле все сильные стороны пироксианского древа. Запрятанные под мощной чешуёй силы льда и огня объединяются, и от них не спастись никому.",
-  "hype_loc": "Jakiro сам себе друг. Не довольствуясь одним только <b>огнём</b>, близнецы <b>примораживают к земле</b> пытающихся спастись противников, а пока те горят, Jakiro <b>разрушает вражеские постройки</b> своим жидким пламенем.",
-  "npe_desc_loc": "Замораживает и обжигает врагов своими заклинаниями",
+  "bio_loc": "Even among magical beasts, a twin-headed dragon is a freak. Equal parts ice and fire, cunning and rage, the creature known as Jakiro glides over charred and ice-bound battlefields, laying waste to any who would bear arms against it. Pyrexae dragon clutches always contain two fledglings. Famous for their viciousness even from the first moments of life, newly hatched dragons of this species will try to kill their sibling while still in the nest. Only the strongest survive. In this way is the strength of the Pyrexae line ensured. By some accident of nature, the freak Jakiro hatched from a single egg, combining in a single individual the full range of abilities found within the diverse Pyrexae species. Trapped within the armature of its monstrous body, the powers of ice and fire combine, and now no enemy is safe.",
+  "hype_loc": "Jakiro is their own best friend. Not content to merely punish enemies with <b>fire</b>, the twins <b>freeze them in place</b> to force them to stand there and burn. With foes aflame, they turn to <b>inflicting massive damage</b> on enemy structures with their liquid fire.",
+  "npe_desc_loc": "Freezes and burns enemies with magic",
   "facets": [
     {
       "color": 0,
       "title_loc": "Twin Terror",
-      "description_loc": "Двойные атаки героя наносят больше урона.",
+      "description_loc": "Jakiro deals more damage with his double attacks.",
       "name": "jakiro_twin_terror",
       "icon": "damage",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Ice Breaker",
-      "description_loc": "Полоса от способности Ice Path существует дольше. В момент исчезновения из неё вырываются шипы, снова оглушающие врагов и наносящие им урон. Владелец способности в любой момент может взорвать полосу сам.",
+      "description_loc": "Ice Path lasts longer and detonates upon expiration, dealing damage and stunning enemies a second time. Ice Path can be manually detonated early.",
       "name": "jakiro_ice_breaker",
       "icon": "snowflake",
       "gradient_id": 1,
@@ -66,12 +66,12 @@
       "id": 5297,
       "name": "jakiro_dual_breath",
       "name_loc": "Dual Breath",
-      "desc_loc": "Поток льда, за которым следует волна огня. Лёд замедляет врагов, а огонь наносит им периодический урон.",
-      "lore_loc": "Драконы-близнецы крайне опасны своим дыханием, воздействующим на цель разными видами магии; представить разрушительную силу некоторых таких комбинаций просто невозможно.",
+      "desc_loc": "An icy blast followed by a wave of fire launches out in a path in front of Jakiro. The ice slows enemies, while the fire delivers damage over time.",
+      "lore_loc": "Pyrexae dragons have tremendously dangerous breath for each branch of the species; combining them is unimaginable.",
       "notes_loc": [
-        "Задевает существ на расстоянии до 1025 единиц.",
-        "Задержка между дыханиями — %fire_delay% сек.",
-        "Эту способность нельзя заблокировать или отразить."
+        "Can hit units up to 1025 range away.",
+        "Has a %fire_delay% second interval between each breath.",
+        "Does not trigger spell block or spell reflect."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -123,7 +123,7 @@
             150
           ],
           "is_percentage": false,
-          "heading_loc": "НАЧАЛЬНЫЙ РАДИУС:",
+          "heading_loc": "START RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -140,7 +140,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "КОНЕЧНЫЙ РАДИУС:",
+          "heading_loc": "END RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -194,7 +194,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "ОГНЕННЫЙ УРОН:",
+          "heading_loc": "BURN DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_jakiro_2",
@@ -220,7 +220,7 @@
             -40
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -240,7 +240,7 @@
             -40
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -297,7 +297,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -386,11 +386,11 @@
       "id": 5298,
       "name": "jakiro_ice_path",
       "name_loc": "Ice Path",
-      "desc_loc": "Создаёт полосу льда, которая оглушает прикоснувшихся к ней врагов и наносит им урон.",
-      "lore_loc": "Мудрая правая голова дракона взывает к своему морозному наследию, покрывая землю пузыристой наледью.",
+      "desc_loc": "Creates a path of ice that stuns and damages enemies that touch it.",
+      "lore_loc": "Jakiro's cunning right head calls upon its frozen heritage, glazing the earth with blistering cold.",
       "notes_loc": [
-        "Задержка до заморозки — %path_delay% сек.",
-        "Оглушение заканчивается, когда полоса льда исчезает."
+        "It takes %path_delay% seconds for the path to reach its full extent.",
+        "The stun is removed once Ice Path is destroyed."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -398,7 +398,7 @@
         "",
         "Jakiro can choose to destroy the Ice Path at any time, stunning and damaging enemies again.",
         "",
-        "Полоса от этой способности существует дольше. В момент исчезновения из неё вырываются шипы, снова оглушающие врагов и наносящие им урон. Владелец способности в любой момент может взорвать полосу сам."
+        "Ice Path lasts longer and detonates upon expiration, dealing damage and stunning enemies a second time. Ice Path can be manually detonated early."
       ],
       "type": 0,
       "behavior": "16",
@@ -442,7 +442,7 @@
             0.2
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАДЕРЖКА:",
+          "heading_loc": "FORMATION DELAY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -462,7 +462,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "MAX STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_jakiro",
@@ -488,7 +488,7 @@
             4.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЛЬДА:",
+          "heading_loc": "PATH DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_jakiro",
@@ -516,7 +516,7 @@
             150
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -533,7 +533,7 @@
             50
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_jakiro_6",
@@ -559,7 +559,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВТОРИЧНЫЙ УРОН:",
+          "heading_loc": "SECONDARY DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -581,7 +581,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ВТОРИЧНОГО ОГЛУШЕНИЯ:",
+          "heading_loc": "SECONDARY STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -702,12 +702,12 @@
       "id": 5299,
       "name": "jakiro_liquid_fire",
       "name_loc": "Liquid Fire",
-      "desc_loc": "Герой наполняет свою атаку жидким пламенем, поджигая цель и всех врагов вокруг неё. Жертвы получают периодический урон и медленнее атакуют. Имеет общую перезарядку со способностью Liquid Frost.",
-      "lore_loc": "Левая пасть дракона открывается, уничтожая любого на своём пути.",
+      "desc_loc": "Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks. Shares a cooldown with Liquid Frost.",
+      "lore_loc": "The left maw of Jakiro opens, laying waste to any in its path.",
       "notes_loc": [
-        "Действует как на существ, так и на строения."
+        "Works on both units and buildings."
       ],
-      "shard_loc": "Делает перезарядку отдельной от способности Liquid Frost.",
+      "shard_loc": "Jakiro's Liquid Fire no longer shares a cooldown with Liquid Frost.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -766,7 +766,7 @@
             -60
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_jakiro_4",
@@ -789,7 +789,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -809,7 +809,7 @@
             45
           ],
           "is_percentage": false,
-          "heading_loc": "ОГНЕННЫЙ УРОН:",
+          "heading_loc": "BURN DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -864,7 +864,7 @@
             75
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ПОСТРОЙКАМ:",
+          "heading_loc": "BUILDING DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -917,7 +917,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -966,10 +966,10 @@
       "id": 1317,
       "name": "jakiro_liquid_ice",
       "name_loc": "Liquid Frost",
-      "desc_loc": "Герой наполняет свою атаку жидким морозом, который замедляет передвижение жертвы на %duration% сек. и увеличивает урон, получаемый ей от атак и других способностей этого героя. Не действует на постройки. Имеет общую перезарядку со способностью Liquid Frost.",
-      "lore_loc": "Правая пасть дракона открывается, карая всё лютым холодом.",
+      "desc_loc": "Jakiro chill his enemies with ice added to his attack, slowing movement for %duration% seconds and increasing damage taken from Jakiro's attacks and abilities. This effect does not apply to buildings. Shares a cooldown with Liquid Fire.",
+      "lore_loc": "The right maw of Jakiro opens, punishing all with bitter frost.",
       "notes_loc": [],
-      "shard_loc": "Делает перезарядку отдельной от способности Liquid Fire.",
+      "shard_loc": "Jakiro's Liquid Frost no longer shares a cooldown with Liquid Fire.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -1028,7 +1028,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1048,7 +1048,7 @@
             32
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРВИЧНЫЙ УРОН:",
+          "heading_loc": "IMPACT DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1068,7 +1068,7 @@
             32
           ],
           "is_percentage": false,
-          "heading_loc": "УВЕЛИЧЕНИЕ УРОНА:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1106,7 +1106,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1208,7 +1208,7 @@
       "id": 1318,
       "name": "jakiro_double_trouble",
       "name_loc": "Double Trouble",
-      "desc_loc": "Герой атакует обеими головами одновременно, но каждая атака наносит меньше урона.",
+      "desc_loc": "Jakiro's attacks launch an attack from each head, but deal less damage each.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1216,7 +1216,7 @@
       "facets_loc": [
         "",
         "",
-        "Двойные атаки героя наносят больше урона.",
+        "Jakiro deals more damage with his double attacks.",
         ""
       ],
       "type": 0,
@@ -1281,7 +1281,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ УРОНА:",
+          "heading_loc": "DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1315,13 +1315,13 @@
       "id": 5300,
       "name": "jakiro_macropyre",
       "name_loc": "Macropyre",
-      "desc_loc": "Герой извергает широкий поток жидкого пламени, который держится некоторое время и ежесекундно наносит урон вражеским существам.",
-      "lore_loc": "Смесь обжигающего холода и леденящего пламени разрывает поле боя в клочья.",
+      "desc_loc": "Jakiro exhales a wide line of lasting flames, which deals damage per second to any enemy units caught in the fire.",
+      "lore_loc": "Ice and fire combine to rip the battlefield to shreds with extreme temperatures.",
       "notes_loc": [
-        "Будет действовать на задетых существ %linger_duration% сек. после того, как они покинут область действия."
+        "Units hit by Macropyre will continue to be affected after they leave the area for %linger_duration% additional seconds."
       ],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает длительность и меняет тип урона на чистый. По бокам от линии огня появляются ледяные стены, которые замедляют зашедших на них врагов на %ice_edge_movement_slow%%%.",
+      "scepter_loc": "Increases Macropyre duration and causes it to deal Pure damage. Jakiro emits two walls of ice along the edges of the Macropyre that slow any enemies trying to cross them by %ice_edge_movement_slow%%%.",
       "facets_loc": [
         "",
         "",
@@ -1376,7 +1376,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_jakiro_7",
@@ -1399,7 +1399,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "ШИРИНА ЛИНИИ ОГНЯ:",
+          "heading_loc": "FLAME WIDTH:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1416,7 +1416,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1668,7 +1668,7 @@
     {
       "id": 6661,
       "name": "special_bonus_unique_jakiro_4",
-      "name_loc": "+{s:bonus_slow_attack_speed_pct} к замедлению атаки от Liquid Fire",
+      "name_loc": "+{s:bonus_slow_attack_speed_pct} Liquid Fire Attack Speed Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1732,7 +1732,7 @@
     {
       "id": 526,
       "name": "special_bonus_unique_jakiro_6",
-      "name_loc": "+{s:bonus_damage} к базовому урону от Ice Path",
+      "name_loc": "+{s:bonus_damage} Ice Path Base Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1796,7 +1796,7 @@
     {
       "id": 6186,
       "name": "special_bonus_attack_range_175",
-      "name_loc": "+{s:value} к дальности атаки",
+      "name_loc": "+{s:value} Attack Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1878,7 +1878,7 @@
     {
       "id": 303,
       "name": "special_bonus_unique_jakiro_dualbreath_cooldown",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Dual Breath",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Dual Breath Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1942,8 +1942,8 @@
     {
       "id": 6064,
       "name": "special_bonus_unique_jakiro",
-      "name_loc": "+{s:bonus_stun_duration} сек. оглушения от Ice Path",
-      "desc_loc": "Увеличивает как длительность оглушения, так и длительность льда.",
+      "name_loc": "+{s:bonus_stun_duration}s Ice Path Stun Duration",
+      "desc_loc": "Increases both stun and path duration.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2006,7 +2006,7 @@
     {
       "id": 542,
       "name": "special_bonus_unique_jakiro_7",
-      "name_loc": "+{s:bonus_damage} к урону от Macropyre",
+      "name_loc": "+{s:bonus_damage} Macropyre Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2070,7 +2070,7 @@
     {
       "id": 6381,
       "name": "special_bonus_unique_jakiro_2",
-      "name_loc": "+{s:bonus_AbilityCastRange}% урона и дальности Dual Breath",
+      "name_loc": "+{s:bonus_AbilityCastRange}% Dual Breath Damage and Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2134,8 +2134,8 @@
     {
       "id": 6538,
       "name": "special_bonus_unique_jakiro_3",
-      "name_loc": "+{s:bonus_pct_health_damage}% к урону от макс. здоровья у Liquid Frost/Fire",
-      "desc_loc": "Помимо обычного урона способности наносят урон в размере {s:bonus_pct_health_damage}% от максимального здоровья жертвы. Этот урон не наносится постройкам.",
+      "name_loc": "+{s:bonus_pct_health_damage}% Liquid Frost and Fire Max Health Damage",
+      "desc_loc": "Deals +{s:bonus_pct_health_damage}% of the target's max health as damage. This damage does not apply to Buildings.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2206,7 +2206,7 @@
           "id": 1554,
           "name": "jakiro_ice_path_detonate",
           "name_loc": "Destroy Ice Path",
-          "desc_loc": "Уничтожает полосу от способности Ice Path, нанося врагам урон и оглушая их.",
+          "desc_loc": "Destroy the Ice Path, dealing damage and stunning enemies.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",

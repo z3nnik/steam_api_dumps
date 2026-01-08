@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_chaos_knight",
   "order_id": 79,
   "name_loc": "Chaos Knight",
-  "bio_loc": "Ветеран бесчисленных сражений Chaos Knight появился в далёком мире, где фундаментальные законы вселенной обрели разумное воплощение. Из древних Предвечных он самый старший и неугомонный, и цель его — найти того, кого сам знает лишь под именем Свет. Давным-давно Свет покинул прародительский мир, нарушив этим первое соглашение. И теперь Chaos Knight путешествует из мира в мир в бесконечной охоте на Свет, пытаясь затушить его везде, где он объявится. Тысячу раз задувался источник, и всякий раз он ускользал в другое измерение, из-за чего Chaos Knight начинал поиск заново.\r\n\t\t\t\t<br><br>Он едет верхом на Армаггедоне, яростно вступает в битвы, получая свою силу из хаоса во вселенной. Он — физическое воплощение самого хаоса. При необходимости он способен призвать иные версии себя из других миров. Вместе тёмные наездники мчатся в битву, непреодолимые, как стихия. Поиск будет окончен, только когда последний Свет во вселенной погаснет. Где скачет Chaos Knight, вскоре будет смерть.",
-  "hype_loc": "Chaos Knight — сам по себе армия. Он способен <b>призывать кавалерию своих двойников</b> и разрушать постройки врага, а когда покажутся защитники, он расколет реальность и <b>перенесёт</b> себя и свои копии на расстояние, достаточное для рокового взмаха булавы.",
-  "npe_desc_loc": "Наносит высокий, но случайный урон",
+  "bio_loc": "The veteran of countless battles on a thousand worlds, Chaos Knight hails from a far upstream plane where the fundamental laws of the universe have found sentient expression.  Of all the ancient Fundamentals, he is the oldest and most tireless, endlessly searching out a being he knows only as \"The Light.\"  Long ago the Light ventured out from the progenitor realm, in defiance of the first covenant.  Now Chaos Knight shifts from plane to plane, always on the hunt to extinguish the Light wherever he finds it.  A thousand times he has snuffed out the source, and always he slides into another plane to continue his search anew.  \r\n\t\t\t\t<br><br>Upon his steed Armageddon he rides, wading into battle with maniacal frenzy, drawing strength from the disorder of the universe.  A physical manifestation of chaos itself, in times of need he calls upon other versions of himself from other planes, and together these dark horsemen ride into battle, as unstoppable as any force of nature.  Only when the last Light of the world is scoured from existence will the search be ended.  Where rides the Chaos Knight, death soon follows.",
+  "hype_loc": "Chaos Knight is an army unto himself. Able to <b>summon a cavalry of clones</b> to demolish enemy defenses, should an enemy present itself, he can rift reality to <b>pull</b> him and his phantasms close enough to rain brutal cudgel blows upon their head.",
+  "npe_desc_loc": "Has strong but random damage output",
   "facets": [
     {
       "color": 5,
       "title_loc": "Irrationality",
-      "description_loc": "Помимо обычных эффектов способность Reality Rift имеет равный шанс наложить истощение, бессилие или безмолвие на {s:bonus_additional_debuff_duration_percent}% от обычной длительности.",
+      "description_loc": "Reality Rift has equal chances of applying Break, Disarm, or Silence for {s:bonus_additional_debuff_duration_percent}% of the base debuff duration in addition to its normal effects.",
       "name": "chaos_knight_irrationality",
       "icon": "rng",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 1,
       "title_loc": "Fundamental Forging",
-      "description_loc": "При создании нейтральных предметов герой может использовать артефакты следующего разряда.",
+      "description_loc": "Chaos Knight can craft artifacts from the next tier when making a Neutral Item.",
       "name": "chaos_knight_facet_fundamental_forging",
       "icon": "item",
       "gradient_id": 1,
@@ -28,7 +28,7 @@
     {
       "color": 0,
       "title_loc": "Cloven Chaos",
-      "description_loc": "При попадании в цель снаряд способности Chaos Bolt разделяется, чтобы дополнительно оглушить ещё одного врага и нанести урон третьему.",
+      "description_loc": "Chaos Bolt splits in half upon striking its target, stunning one additional enemy and damaging another.",
       "name": "chaos_knight_cloven_chaos",
       "icon": "ricochet",
       "gradient_id": 0,
@@ -75,19 +75,19 @@
       "id": 5426,
       "name": "chaos_knight_chaos_bolt",
       "name_loc": "Chaos Bolt",
-      "desc_loc": "Выпускает таинственный заряд энергии в указанного врага, оглушая его на случайное время и нанося случайный урон.",
-      "lore_loc": "Даже всадник раздора неспособен предсказать поведение этого сгустка нечистой энергии.",
+      "desc_loc": "Throws a mysterious bolt of energy at the target unit. It stuns for a random duration and deals random damage.",
+      "lore_loc": "Even Chaos Knight cannot predict this manifest of unholy energy.",
       "notes_loc": [
-        "Длительность оглушения и урон обратно пропорциональны.",
-        "Ближайшие иллюзии повторяют анимацию броска."
+        "The stun duration and damage values dealt are inversely related.",
+        "Nearby illusions will mimic the cast animation."
       ],
-      "shard_loc": "Создаёт рядом с жертвой иллюзию от способности Phantasm, которая атакует цель и наносит на %illusion_damage_reduction_pct%%% меньше урона.",
+      "shard_loc": "Causes Chaos Bolt to create a Phantasm illusion to attack the target. This illusion deals %illusion_damage_reduction_pct%%% less damage.",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
         "",
-        "При попадании в цель снаряд этой способности разделяется, чтобы дополнительно оглушить ещё одного врага и нанести урон третьему. Вторичными целями в первую очередь становятся герои, а радиус их поиска составляет %bounce_range_pct%%% от дальности применения способности. Если вторичная цель одна, то она гарантированно оглушается.<br><br>Попадание по вторичным целям не создаёт иллюзии от Aghanim's Shard."
+        "Chaos Bolt splits in half upon striking its target, stunning one additional enemy and damaging another within %bounce_range_pct%%% of the cast range. Prioritizes heroes. Always stuns when splitting to a single target.<br><br>Additional targets do not create Shard illusions."
       ],
       "type": 0,
       "behavior": "8",
@@ -157,7 +157,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "МИН. ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "MINIMUM STUN:",
           "bonuses": [
             {
               "name": "special_bonus_unique_chaos_knight_3",
@@ -183,7 +183,7 @@
             3.25
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "MAXIMUM STUN:",
           "bonuses": [
             {
               "name": "special_bonus_unique_chaos_knight_3",
@@ -209,7 +209,7 @@
             180
           ],
           "is_percentage": false,
-          "heading_loc": "МИНИМАЛЬНЫЙ УРОН:",
+          "heading_loc": "MINIMUM DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -229,7 +229,7 @@
             410
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМАЛЬНЫЙ УРОН:",
+          "heading_loc": "MAXIMUM DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -263,7 +263,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ ИЛЛЮЗИИ:",
+          "heading_loc": "ILLUSION DURATION:",
           "bonuses": [],
           "values_shard": [
             6
@@ -282,7 +282,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ УРОНА ИЛЛЮЗИИ:",
+          "heading_loc": "ILLUSION DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [
             15
@@ -411,16 +411,16 @@
       "id": 5427,
       "name": "chaos_knight_reality_rift",
       "name_loc": "Reality Rift",
-      "desc_loc": "Переносит героя, все его иллюзии и выбранного врага в точку между владельцем способности и жертвой. Уменьшает броню цели на %duration% сек.",
-      "lore_loc": "Армагеддон перемещается между мирами, доставляя своего наездника к жертве, где бы та ни была.",
+      "desc_loc": "Teleports Chaos Knight, any illusions he has, and the target unit to a point along the line between him and the target. Reduces armor of the enemy unit for %duration% seconds.",
+      "lore_loc": "Armageddon rides between the planes, bringing Chaos Knight to his victim wherever he may hide.",
       "notes_loc": [
-        "Герой и цель оказываются лицом друг к другу, после чего владелец способности и его иллюзии сразу же начинают атаковать цель."
+        "Chaos Knight and the target unit are made to face each other, and Chaos Knight and his phantasms are issued an attack order against the target."
       ],
-      "shard_loc": "Позволяет применить эту способность на любого вражеского героя в радиусе 1200 от вас или ваших иллюзий. Переносит вас и ваши иллюзии к жертве.",
+      "shard_loc": "Allows Reality Rift to be cast on any enemy hero that is within 1200 range of you or one of your illusions. Gathers all of your illusions and your hero and teleports them to the target enemy.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Помимо обычных эффектов способность Reality Rift имеет равный шанс наложить истощение, бессилие или безмолвие на %additional_debuff_duration_percent%%% от обычной длительности.",
+        "Reality Rift has equal chances of applying Break, Disarm, or Silence for %additional_debuff_duration_percent%%% of the base debuff duration in addition to its normal effects.",
         "",
         ""
       ],
@@ -475,7 +475,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИТЯГИВАНИЯ:",
+          "heading_loc": "PULL DISTANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_chaos_knight_2",
@@ -501,7 +501,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ:",
+          "heading_loc": "ARMOR REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -661,8 +661,8 @@
       "id": 5428,
       "name": "chaos_knight_chaos_strike",
       "name_loc": "Chaos Strike",
-      "desc_loc": "Герой и его иллюзии имеют шанс совершить критическую атаку случайной силы и восстановить себе здоровье на часть от нанесённого урона. Вампиризм от крипов меньше.",
-      "lore_loc": "Неудержимая мощь всадника сокрушает даже самые толстые доспехи тех, кто осмелился выступить против него.",
+      "desc_loc": "Chaos Knight and his illusions' attacks have a chance to deal a critical strike of varying strength with bonus lifesteal. Lifesteal from creeps is reduced.",
+      "lore_loc": "Chaos Knight's unwieldy power bludgeons those who stand before him, crushing the thickest of armors.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -714,7 +714,7 @@
             33.33
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС:",
+          "heading_loc": "CHANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_chaos_knight_5",
@@ -737,7 +737,7 @@
             120
           ],
           "is_percentage": true,
-          "heading_loc": "МИН. КРИТИЧЕСКИЙ УРОН:",
+          "heading_loc": "CRITICAL MIN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -757,7 +757,7 @@
             260
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. КРИТИЧЕСКИЙ УРОН:",
+          "heading_loc": "CRITICAL MAX:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -777,7 +777,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "ВАМПИРИЗМ ПРИ СРАБАТЫВАНИИ:",
+          "heading_loc": "CRITICAL LIFESTEAL:",
           "bonuses": [
             {
               "name": "special_bonus_unique_chaos_knight_6",
@@ -829,7 +829,7 @@
       "id": 1353,
       "name": "chaos_knight_reins_of_chaos",
       "name_loc": "Reins of Chaos",
-      "desc_loc": "Каждый раз, когда создаётся иллюзия этого героя, с шансом в %bonus_illusion_chance%%% может создаться ещё %bonus_illusion_count%.",
+      "desc_loc": "Whenever illusions of Chaos Knight are created, there is a %bonus_illusion_chance%%% chance that an additional %bonus_illusion_count% extra illusion will spawn.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -928,14 +928,14 @@
       "id": 5429,
       "name": "chaos_knight_phantasm",
       "name_loc": "Phantasm",
-      "desc_loc": "Призывает несколько копий героя из параллельных измерений. Копии являются иллюзиями, наносят %outgoing_damage_tooltip%%% урона, а получают %incoming_damage_tooltip%%% урона.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "Вестник хаоса участвовал в боях во многих мирах и в разные времена. Фантомы тех боёв присоединяются к герою, чтобы повергнуть его врагов.",
+      "desc_loc": "Summons several phantasmal copies of the Chaos Knight from alternate dimensions. The phantasms are illusions that deal %outgoing_damage_tooltip%%% damage, but take %incoming_damage_tooltip%%% damage.\nDISPEL TYPE: Basic Dispel",
+      "lore_loc": "Drawing on his battles fought across many worlds and many times, phantasms of the Chaos Knight rise up to quell all who oppose him.",
       "notes_loc": [
-        "Снимает с героя большинство отрицательных эффектов.",
-        "Первые %invuln_duration% сек. применения этой способности герой неуязвим, что позволяет избежать оглушений и урона."
+        "Removes most negative buffs from Chaos Knight.",
+        "Chaos Knight is invulnerable for %invuln_duration% seconds when casting, allowing him to dodge stuns and damage."
       ],
       "shard_loc": "",
-      "scepter_loc": "Помимо своих иллюзий создаёт иллюзию каждого героя из своей команды, включая владельца. Эти иллюзии появляются рядом с оригинальными героями, где бы те не находились.",
+      "scepter_loc": "Creates an illusion of allied heroes globally. Creates an additional illusion for Chaos Knight as well.",
       "facets_loc": [
         "",
         "",
@@ -990,7 +990,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ИЛЛЮЗИЙ:",
+          "heading_loc": "NUMBER OF PHANTASMS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1007,7 +1007,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ ИЛЛЮЗИЙ:",
+          "heading_loc": "PHANTASM DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1024,7 +1024,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ИЛЛЮЗИЙ:",
+          "heading_loc": "PHANTASM DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1064,7 +1064,7 @@
             350
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ПО ИЛЛЮЗИЯМ:",
+          "heading_loc": "PHANTASM DAMAGE TAKEN:",
           "bonuses": [
             {
               "name": "special_bonus_unique_chaos_knight_7",
@@ -1187,7 +1187,7 @@
     {
       "id": 871,
       "name": "special_bonus_unique_chaos_knight_6",
-      "name_loc": "+{s:bonus_lifesteal}% к вампиризму от Chaos Strike",
+      "name_loc": "+{s:bonus_lifesteal}% Chaos Strike Lifesteal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1251,7 +1251,7 @@
     {
       "id": 6618,
       "name": "special_bonus_unique_chaos_knight_2",
-      "name_loc": "+{s:bonus_pull_distance} к дальности притягивания у Reality Rift",
+      "name_loc": "+{s:bonus_pull_distance} Reality Rift Pull Distance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1315,7 +1315,7 @@
     {
       "id": 872,
       "name": "special_bonus_unique_chaos_knight_8",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Chaos Bolt",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Chaos Bolt Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1379,7 +1379,7 @@
     {
       "id": 6137,
       "name": "special_bonus_strength_10",
-      "name_loc": "+{s:value} к силе",
+      "name_loc": "+{s:value} Strength",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1461,7 +1461,7 @@
     {
       "id": 6619,
       "name": "special_bonus_unique_chaos_knight_3",
-      "name_loc": "+{s:bonus_stun_max} сек. к мин./макс. оглушению от Chaos Bolt",
+      "name_loc": "+{s:bonus_stun_max} Min/Max Chaos Bolt Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1525,7 +1525,7 @@
     {
       "id": 6133,
       "name": "special_bonus_unique_chaos_knight",
-      "name_loc": "Reality Rift проходит сквозь невоспр. к магии",
+      "name_loc": "Reality Rift Pierces Spell Immunity",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1589,7 +1589,7 @@
     {
       "id": 510,
       "name": "special_bonus_unique_chaos_knight_5",
-      "name_loc": "+{s:bonus_chance}% к шансу срабатывания Chaos Strike",
+      "name_loc": "+{s:bonus_chance}% Chaos Strike Chance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1653,7 +1653,7 @@
     {
       "id": 870,
       "name": "special_bonus_unique_chaos_knight_7",
-      "name_loc": "–{s:bonus_incoming_damage}% урона по иллюзиям от Phantasm",
+      "name_loc": "-{s:bonus_incoming_damage}% Phantasm Damage Taken",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1725,7 +1725,7 @@
           "id": 1556,
           "name": "chaos_knight_fundamental_forging",
           "name_loc": "Fundamental Forging",
-          "desc_loc": "При создании нейтральных предметов %trinket_options_next% из доступных артефактов будут принадлежать следующему разряду, а %trinket_options_current% — текущему. Предложенные артефакты из следующего разряда не обязательно будут доступны в нём. При создании предметов наивысшего разряда эффектов нет.",
+          "desc_loc": "Whenever Chaos Knight crafts a Neutral Item, %trinket_options_next% of his Artifact options will be from the next tier and %trinket_options_current% will be from the current tier. He is not guaranteed to be able to keep an Artifact between tiers. When crafting at the highest tier, all options are for that tier.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",

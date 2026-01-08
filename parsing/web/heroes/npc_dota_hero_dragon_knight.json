@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_dragon_knight",
   "order_id": 58,
   "name_loc": "Dragon Knight",
-  "bio_loc": "Много лет рыцарь Дэвион выслеживал легендарного древнего дракона, но когда наконец предстал перед своим врагом, страшно разочаровался: ужасающий Слайрак состарился и ослаб, его крылья истрепались, поредевшая чешуя прогнила, клыки отупели, а огненное дыхание стало не страшнее коробка отсыревших спичек.\r\n\t\t\t\t<br><br>Не видя чести в его убийстве, Дэвион хотел уйти и позволить старому врагу спокойно умереть. Но в его мысли проник голос: Слайрак прошептал, что рыцарь окажет ему честь, позволив умереть в бою. Рыцарь согласился, и был вознаграждён за проявленное милосердие: как только он вонзил свой меч в грудь дракона, тот пронзил его горло своим когтём. Когда их кровь смешалась, Слайрак передал рыцарю свою стойкость и мудрость веков. Смерть дракона скрепила их узы. Дэвион словно родился вновь: древние силы дремлют в рыцаре, просыпаясь, когда он взывает к их помощи; или, быть может, это дракон взывает к рыцарю...",
-  "hype_loc": "Страх сковывает любого, кто видит Dragon Knight в его ужасающем <b>драконьем облике</b>. <b>Выносливый и готовый к чему угодно</b>, он ведёт своих союзников к победе, <b>оглушая</b> и <b>сжигая</b> всех врагов на пути.",
-  "npe_desc_loc": "Превращается в грозного дракона дальнего боя",
+  "bio_loc": "After years on the trail of a legendary Eldwurm, the Knight Davion found himself facing a disappointing foe: the dreaded Slyrak had grown ancient and frail, its wings tattered, its few remaining scales stricken with scale-rot, its fangs ground to nubs, and its fire-gouts no more threatening than a pack of wet matchsticks.\r\n\t\t\t\t<br><br>Seeing no honor to be gained in dragon-murder, Knight Davion prepared to turn away and leave his old foe to die in peace. But a voice crept into his thoughts, and Slyrak gave a whispered plea that Davion might honor him with death in combat. Davion agreed, and found himself rewarded beyond expectation for his act of mercy: As he sank his blade in Slyrak's breast, the dragon pierced Davion's throat with a talon. As their blood mingled, Slyrak sent his power out along the Blood Route, sending all its strength and centuries of wisdom to the knight.  The dragon's death sealed their bond and Dragon Knight was born. The ancient power slumbers in the Dragon Knight Davion, waking when he calls it. Or perhaps it is the Dragon that calls the Knight...",
+  "hype_loc": "When he takes on his terrifying <b>dragon form</b>, Dragon Knight strikes fear into any who face him. <b>Strong and adaptable</b>, he can <b>stun</b> his enemies and <b>burn</b> all in front of him, often providing his allies the momentum they need to carry them to victory.",
+  "npe_desc_loc": "Transforms into a formidable ranged dragon",
   "facets": [
     {
       "color": 0,
       "title_loc": "Fire Dragon",
-      "description_loc": "Добавляет магический урон к атакам героя, а также увеличивает радиус его способностей и предметов. Оба бонуса сильнее в облике дракона.",
+      "description_loc": "Dragon Knight deals additional Magic Damage with his attacks. Dragon Knight's abilities have increased Area of Effect that get stronger when in Elder Dragon Form.",
       "name": "dragon_knight_fire_dragon",
       "icon": "dragon_fire",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 2,
       "title_loc": "Corrosive Dragon",
-      "description_loc": "Добавляет к атакам героя периодический урон и снижение брони, которые становятся сильнее в облике дракона. Все способности героя наносят физический урон.",
+      "description_loc": "Dragon Knight has Corrosive Powers on his attacks that get stronger when in Elder Dragon Form. All of his abilities deal Physical damage.",
       "name": "dragon_knight_corrosive_dragon",
       "icon": "dragon_poison",
       "gradient_id": 0,
@@ -28,7 +28,7 @@
     {
       "color": 3,
       "title_loc": "Frost Dragon",
-      "description_loc": "Атаки героя замедляют врагов и уменьшают их пополнение здоровья. Эффект становится сильнее в облике дракона.",
+      "description_loc": "Dragon Knight has Slow and Health Restoration Reduction Effects on his attacks that get stronger when in Elder Dragon Form.",
       "name": "dragon_knight_frost_dragon",
       "icon": "dragon_frost",
       "gradient_id": 0,
@@ -75,17 +75,17 @@
       "id": 5226,
       "name": "dragon_knight_breathe_fire",
       "name_loc": "Breathe Fire",
-      "desc_loc": "Герой извергает огненное дыхание, обжигая врагов и уменьшая урон от их атак.",
-      "lore_loc": "Визитная карточка рыцаря Дэвиона — огненное дыхание, жертвам которого не припомнит счета даже сам дракон Слайрак.",
+      "desc_loc": "Unleashes a breath of fire in front of Dragon Knight that burns enemies and reduces the damage their attacks deal.",
+      "lore_loc": "Knight Davion's breath has become that of the mighty Eldwurm Slyrak, remembered for burning numerous other knights to a crisp.",
       "notes_loc": [
-        "Задевает существ на расстоянии до 900.",
-        "Эту способность нельзя заблокировать или отразить."
+        "Hits units up to 900 away.",
+        "Does not trigger spell block or spell reflect."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Меняет тип урона на физический.",
+        "Damage type changed to Physical.",
         ""
       ],
       "type": 0,
@@ -207,7 +207,7 @@
             320
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dragon_knight_9",
@@ -230,7 +230,7 @@
             -30
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА:",
+          "heading_loc": "DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -247,7 +247,7 @@
             11
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ СНИЖЕНИЯ:",
+          "heading_loc": "REDUCTION DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -381,14 +381,14 @@
       "id": 5227,
       "name": "dragon_knight_dragon_tail",
       "name_loc": "Dragon Tail",
-      "desc_loc": "Герой бьёт щитом врага в радиусе своей атаки, оглушая его и нанося урон. В облике дракона эту способность можно применять с расстояния в %dragon_cast_range%.",
-      "lore_loc": "Комбинируя способности дракона и навыки рыцаря, Дэвион становится опасным противником в ближнем бою.",
+      "desc_loc": "Dragon Knight smites an enemy unit in melee range with his shield, stunning it and dealing damage.  When in Elder Dragon Form, the cast range increases to %dragon_cast_range%.",
+      "lore_loc": "Davion's combination of dragon talents and knightly skills makes him a vicious opponent in melee combat.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "В облике дракона действует на всех врагов в радиусе %dragon_aoe% от цели.",
-        "Меняет тип урона на физический.",
+        "When in Dragon Form, Dragon Tail applies to enemies in a %dragon_aoe% radius.",
+        "Damage type changed to Physical.",
         ""
       ],
       "type": 0,
@@ -445,7 +445,7 @@
             2.4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dragon_knight_2",
@@ -471,7 +471,7 @@
             150
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -629,15 +629,15 @@
       "id": 5228,
       "name": "dragon_knight_dragon_blood",
       "name_loc": "Wyrm's Wrath",
-      "desc_loc": "Текущая в жилах героя кровь дракона наделяет его особыми эффектами. В облике дракона они становятся сильнее.",
-      "lore_loc": "Кровь Слайрака всё ещё течёт в венах Дэвиона, делая его намного выносливее других рыцарей.",
+      "desc_loc": "The life blood of the Dragon improves Dragon Knight's attacks. When in Dragon form, these effects are stronger.",
+      "lore_loc": "Slyrak's blood still courses through Davion's veins, giving him twice the vitality of an ordinary knight.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Добавляет магический урон к атакам героя, а также увеличивает радиус его способностей и предметов.",
-        "Атаки наполняются смертельным ядом, который уменьшает броню и наносит периодический физический урон, а также действует на постройки.",
-        "Атаки наполняются морозом, который замедляет атаку и передвижение врагов, а также уменьшает их пополнение здоровья."
+        "Attacks deal additional magic damage to enemy units. Spells and items have increased AoE.",
+        "Attacks are filled with lethal poison that affects enemy units and structures, reducing armor and dealing physical damage over time.",
+        "Attacks are filled with frost that affects enemy units, slowing movement speed, attack speed, and reducing health restoration."
       ],
       "type": 0,
       "behavior": "2",
@@ -703,7 +703,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ ЯДА В СЕКУНДУ:",
+          "heading_loc": "CORROSIVE DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -725,7 +725,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЯДА:",
+          "heading_loc": "CORROSIVE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -747,7 +747,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ ОТ ЯДА:",
+          "heading_loc": "CORROSIVE ARMOR REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -791,7 +791,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "МАГИЧЕСКИЙ УРОН:",
+          "heading_loc": "MAGIC DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -816,7 +816,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. РАДИУС ЗАКЛИНАНИЙ:",
+          "heading_loc": "AOE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -860,7 +860,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "FROST MOVESPEED SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -885,7 +885,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "FROST ATTACK SPEED SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -907,7 +907,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "FROST DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -929,7 +929,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ ПОПОЛНЕНИЯ ЗДОРОВЬЯ:",
+          "heading_loc": "FROST HEALTH RESTORATION REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -963,14 +963,14 @@
       "id": 660,
       "name": "dragon_knight_fireball",
       "name_loc": "Fireball",
-      "desc_loc": "Поджигает выбранную область, отчего враги в ней получают периодический урон и продолжают гореть, даже выйдя из неё. В ближнем бою дальность применения уменьшена.",
-      "lore_loc": "Большинство драконьих рыцарей скажут вам, что не встречали ничего страшнее карающего пламени дракона.",
+      "desc_loc": "Ignites an area, dealing damage over time that lingers on enemies in it. Has reduced cast range when melee.",
+      "lore_loc": "Most Dragon Knights name no greater horror than the scourge of dragon's fire.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Меняет тип урона на физический.",
+        "Damage type changed to Physical.",
         ""
       ],
       "type": 0,
@@ -1015,7 +1015,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1032,7 +1032,7 @@
             75
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1049,7 +1049,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1083,7 +1083,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ГОРЕНИЯ:",
+          "heading_loc": "LINGER DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1100,7 +1100,7 @@
             1400
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ В ДАЛЬНЕМ БОЮ:",
+          "heading_loc": "DRAGON FORM CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1117,7 +1117,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ В БЛИЖНЕМ БОЮ:",
+          "heading_loc": "MELEE CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1216,13 +1216,13 @@
       "id": 5229,
       "name": "dragon_knight_elder_dragon_form",
       "name_loc": "Elder Dragon Form",
-      "desc_loc": "Герой обращается в могучего древнего дракона, отчего увеличивается его скорость передвижения, а также урон от его атак и их дальность. Атаки дракона наносят часть урона врагам вокруг цели и накладывают на них эффекты Wyrm's Wrath. Кроме того, в облике дракона Dragon Tail применяется дальше, а эффекты от Wyrm's Wrath и Dragon Blood усиливаются.",
-      "lore_loc": "Сила древнего дракона, дремлющая внутри Дэвиона, вырывается наружу, совмещая мощь легендарного рыцаря с могуществом легендарного дракона.",
+      "desc_loc": "Dragon Knight takes the form of one of three powerful elder dragons. Increases movement speed, attack damage, and Wyrm's Wrath effects. Attacks apply Wyrm's Wrath on-hit effects and a percentage of the attack damage to all enemies near the target. Increases Dragon Tail range. Increases health regeneration and armor bonuses from Dragon Blood.",
+      "lore_loc": "The dormant dragon power springs forth from within Davion, combining the powers of a legendary knight with a legendary Eldwurm.",
       "notes_loc": [
-        "Перезарядка некоторых предметов зависит от того, какой тип атаки герой имел при их использовании."
+        "Cooldowns of items that are different for ranged and melee units will be based on which form Dragon Knight was in when the item was used."
       ],
       "shard_loc": "",
-      "scepter_loc": "Даёт 4-й уровень способности с чёрным драконом, который имеет беспрепятственное передвижение, усиленные эффекты атаки от Wyrm's Wrath и увеличенный урон.",
+      "scepter_loc": "Increases the level of Dragon Form by adding a Level 4 Black Dragon, that provides free pathing, increases damage, and increases effectiveness of the Wyrm's Wrath attacks.",
       "facets_loc": [
         "",
         "",
@@ -1272,7 +1272,7 @@
             60
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1289,7 +1289,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1306,7 +1306,7 @@
             350
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK RANGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dragon_knight_7",
@@ -1332,7 +1332,7 @@
             110
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ОТ АТАК:",
+          "heading_loc": "BONUS ATTACK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1427,7 +1427,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ЭФФЕКТОВ АТАКИ:",
+          "heading_loc": "EFFECT SPLASH RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1447,7 +1447,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ПО ОБЛАСТИ:",
+          "heading_loc": "ATTACK DAMAGE SPLASH:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1542,7 +1542,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "УСИЛЕНИЕ WYRM'S WRATH:",
+          "heading_loc": "WYRM'S WRATH BONUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dragon_knight_8",
@@ -1628,7 +1628,7 @@
       "id": 1292,
       "name": "dragon_knight_inherited_vigor",
       "name_loc": "Dragon Blood",
-      "desc_loc": "Текущая в жилах героя кровь дракона усиливает его восстановление здоровья и броню. Эти бонусы увеличиваются на %level_mult% за каждый уровень героя и умножаются в облике дракона.",
+      "desc_loc": "The life blood of the Dragon improves Dragon Knight's health regeneration and armor. Amount for both values is increased by %level_mult% per level and is multiplied when in Dragon Form.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1680,7 +1680,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:",
+          "heading_loc": "HEALTH REGEN:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dragon_knight",
@@ -1703,7 +1703,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "БРОНЯ:",
+          "heading_loc": "ARMOR:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dragon_knight",
@@ -1743,7 +1743,7 @@
             1.5
           ],
           "is_percentage": false,
-          "heading_loc": "МНОЖИТЕЛЬ В ОБЛИКЕ ДРАКОНА:",
+          "heading_loc": "DRAGON FORM MULTIPLIER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1773,7 +1773,7 @@
     {
       "id": 5938,
       "name": "special_bonus_attack_damage_15",
-      "name_loc": "+{s:value} к урону",
+      "name_loc": "+{s:value} Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1854,7 +1854,7 @@
     {
       "id": 7113,
       "name": "special_bonus_unique_dragon_knight_3",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Breathe Fire",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Breathe Fire Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1917,7 +1917,7 @@
     {
       "id": 6635,
       "name": "special_bonus_unique_dragon_knight_2",
-      "name_loc": "+{s:bonus_stun_duration} сек. оглушения от Dragon Tail",
+      "name_loc": "+{s:bonus_stun_duration}s Dragon Tail Stun",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1980,7 +1980,7 @@
     {
       "id": 5993,
       "name": "special_bonus_hp_300",
-      "name_loc": "+{s:value} к здоровью",
+      "name_loc": "+{s:value} Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2061,7 +2061,7 @@
     {
       "id": 740,
       "name": "special_bonus_unique_dragon_knight_7",
-      "name_loc": "+{s:bonus_bonus_attack_range} к дальности атаки в облике дракона",
+      "name_loc": "+{s:bonus_bonus_attack_range} Elder Dragon Form Attack Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2124,7 +2124,7 @@
     {
       "id": 1043,
       "name": "special_bonus_unique_dragon_knight_9",
-      "name_loc": "+{s:bonus_damage}% к урону и дальности Breathe Fire",
+      "name_loc": "+{s:bonus_damage}% Breathe Fire Damage/Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2187,7 +2187,7 @@
     {
       "id": 6090,
       "name": "special_bonus_unique_dragon_knight",
-      "name_loc": "+{s:bonus_base_health_regen} к бонусам от Dragon Blood",
+      "name_loc": "+{s:bonus_base_health_regen} Dragon Blood HP Regen/Armor",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2250,7 +2250,7 @@
     {
       "id": 742,
       "name": "special_bonus_unique_dragon_knight_8",
-      "name_loc": "+{s:bonus_frost_breath_effect_bonus}% к усилению Wyrm's Wrath в облике дракона",
+      "name_loc": "+{s:bonus_frost_breath_effect_bonus}% Wyrm's Wrath effect during Elder Dragon Form",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

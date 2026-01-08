@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_bloodseeker",
   "order_id": 47,
   "name_loc": "Bloodseeker",
-  "bio_loc": "Стригвир — прошедший ритуалы охотник; гончая Бескожих близнецов, отправленная с туманных вершин Ксакатокатля на поиски крови. Чтоб насытить близнецов, нужны поистине океаны жизненных соков, и горная империя уж давно бы опустела, не сумей жрецы с верхних плато задобрить богов. Посему Стригвир рыщет по миру в поисках кровавых битв. Жизненная энергия любой пролитой им крови тут же передаётся Бескожим близнецам через священные знаки на его оружии и броне. Прошли многие годы, а Стригвир всё ещё неустанен, как бешеный пёс, и свиреп в бою, как ненасытный шакал. Говорят, что в кровопролитном бою под его маской можно разглядеть черты самих близнецов, лично направляющих свою гончую.",
-  "hype_loc": "Bloodseeker постоянно ставит противников перед непростым выбором. <b>Окропив кровью</b> обширную территорию, он вынуждает врагов отступать, а под его чудовищным ультом жертва <b>либо стоит на месте, либо погибает</b>.",
-  "npe_desc_loc": "Преследует раненых врагов с увеличенной скоростью",
+  "bio_loc": "Strygwyr the Bloodseeker is a ritually sanctioned hunter, Hound of the Flayed Twins, sent down from the mist-shrouded peaks of Xhacatocatl in search of blood. The Flayed Ones require oceanic amounts of blood to keep them sated and placated, and would soon drain their mountain empire of its populace if the priests of the high plateaus did not appease them. Strygwyr therefore goes out in search of carnage. The vital energy of any blood he lets, flows immediately to the Twins through the sacred markings on his weapons and armor. Over the years, he has come to embody the energy of a vicious hound; in battle he is savage as a jackal. Beneath the Mask of the Bloodseeker, in the rush of bloody quenching, it is said that you can sometime see the features of the Flayers taking direct possession of their Hound.",
+  "hype_loc": "Bloodseeker forces difficult decisions on his enemies. Able to drive his foes to a retreat by bathing a large area with a <b>damaging ritual</b>, his gruesome ultimate asks his opponents to <b>hold still, or die.</b>",
+  "npe_desc_loc": "Chases down low health enemies with increased speed",
   "facets": [
     {
       "color": 0,
       "title_loc": "Arterial Spray",
-      "description_loc": "Атаки героя толкают жертву способности Rupture.",
+      "description_loc": "Ruptured units are pushed when attacked by Bloodseeker.",
       "name": "bloodseeker_arterial_spray",
       "icon": "movement",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 5,
       "title_loc": "Old Blood",
-      "description_loc": "Способность Bloodrage можно применять на врагов. Она накладывает на цель безмолвие и вместо урона от заклинаний увеличивает базовый урон от атак.",
+      "description_loc": "Bloodrage silences the target and can be applied to enemies. Bloodrage increases base attack damage instead of spell damage.",
       "name": "bloodseeker_old_blood",
       "icon": "debuff",
       "gradient_id": 1,
@@ -66,17 +66,17 @@
       "id": 5015,
       "name": "bloodseeker_bloodrage",
       "name_loc": "Bloodrage",
-      "desc_loc": "Пробуждает во владельце или союзном герое жажду крови, из-за которой он атакует быстрее и наносит больше урона заклинаниями, но каждую секунду теряет долю от своего здоровья. Союзным героям даётся только половина бонуса к скорости атаки.",
-      "lore_loc": "Стригвир делится с другими своей животной жаждой кровопролития.",
+      "desc_loc": "Drives Bloodseeker or an allied hero into a bloodthirsty rage which causes them to attack faster and deal more spell damage at the cost of a percentage of their health per second. Provides half attack speed to allied heroes.",
+      "lore_loc": "Strygwyr shares his animalistic thirst for bloodshed.",
       "notes_loc": [
-        "Урон от этой способности не может убить владельца или его союзников."
+        "Damage dealt to Bloodseeker or allies is non-lethal and can never kill a hero."
       ],
-      "shard_loc": "При применении на себя добавляет к атакам <font color=\"#d8ae53\">чистый</font> урон в размере %max_health_dmg_pct%%% от максимального здоровья жертвы.",
+      "shard_loc": "Bloodseeker's Bloodrage attacks now deal %max_health_dmg_pct%%% of the target's max health as <font color=\"#d8ae53\">Pure</font> damage.",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Способность можно применять на врагов, но она имеет уменьшенную дальность, накладывает на цель безмолвие и вместо урона от заклинаний увеличивает базовый урон от атак. Задержка перед применением на всех, кроме владельца, составляет %enemy_castpoint% сек."
+        "Bloodrage can be cast on enemies, and increases the target's base attack damage instead of spell damage. Silences the target for the duration of the spell and has decreased cast range. When cast on units other than Bloodseeker himself, the spell has a %enemy_castpoint% cast point."
       ],
       "type": 0,
       "behavior": "8",
@@ -123,7 +123,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -143,7 +143,7 @@
             150
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bloodseeker_5",
@@ -169,7 +169,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ОТ ЗАКЛИНАНИЙ:",
+          "heading_loc": "SPELL AMPLIFICATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -188,7 +188,7 @@
             1.4
           ],
           "is_percentage": true,
-          "heading_loc": "ПОТЕРЯ МАКС. ЗДОРОВЬЯ В СЕКУНДУ:",
+          "heading_loc": "MAX HEALTH DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bloodseeker",
@@ -269,7 +269,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -378,10 +378,10 @@
       "id": 5016,
       "name": "bloodseeker_blood_bath",
       "name_loc": "Blood Rite",
-      "desc_loc": "Герой окропляет выбранную область святой кровью. Через %delay_plus_castpoint_tooltip% сек. ритуал завершается, нанося противникам урон и запрещая им применять способности.",
-      "lore_loc": "Бескожие близнецы всегда готовы помочь тем, кто проливает кровь на поле боя.",
+      "desc_loc": "Bloodseeker baptizes an area in sacred blood. After %delay_plus_castpoint_tooltip% seconds the ritual completes, causing any enemies caught in the area to take damage and become silenced.",
+      "lore_loc": "The Flayed Twins are ever willing to aid those who spill blood upon the field of battle.",
       "notes_loc": [
-        "Задержка перед срабатыванием составляет %delay% сек. + %abilitycastpoint% сек. анимации героя."
+        "Total time is a %delay% second delay plus a %abilitycastpoint% second cast time."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -438,7 +438,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "ОБЛАСТЬ ДЕЙСТВИЯ:",
+          "heading_loc": "RITUAL AREA:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -458,7 +458,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БЕЗМОЛВИЯ:",
+          "heading_loc": "SILENCE DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bloodseeker_7",
@@ -484,7 +484,7 @@
             265
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bloodseeker_2",
@@ -627,18 +627,18 @@
       "id": 5017,
       "name": "bloodseeker_thirst",
       "name_loc": "Thirst",
-      "desc_loc": "Герой упивается ранениями противников, отчего его передвижение ускоряется, когда здоровье любого вражеского героя становится меньше %min_bonus_pct%%%. Чем ниже уровень здоровья, тем сильнее эффект. Если здоровье вражеского героя упадёт ниже %invis_threshold_pct%%%, его станет видно в любой точке карты, даже если он невидим. Бонусы от разных противников складываются и позволяют превысить максимальную скорость передвижения.",
-      "lore_loc": "Когда проливается кровь, Стригвира охватывает неистовство.",
+      "desc_loc": "Bloodseeker is invigorated by the wounds of his enemies, gaining bonus movement speed when an enemy hero's health falls below %min_bonus_pct%%%, with the bonuses increasing as their health falls further. If an enemy hero's health falls below %invis_threshold_pct%%%, he will also gain vision and True Sight of that hero. Bonuses stack per hero. Unlocks max movement speed for Bloodseeker.",
+      "lore_loc": "Strygwyr becomes frenzied when blood is spilled.",
       "notes_loc": [
-        "Не реагирует на иллюзии.",
-        "Максимальный бонус к скорости передвижения достигается, если здоровье противника равно %max_bonus_pct%%% или ниже.",
-        "Эффект пропадает через %linger_duration% сек. после смерти цели."
+        "Not triggered by Illusions.",
+        "Max movement speed bonus occurs when an enemy's health is at or below %max_bonus_pct%%%.",
+        "Effects linger for %linger_duration% seconds if a target dies."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Способность можно применить, чтобы ненадолго получить дополнительную скорость передвижения и умножить лечение от Sanguivore в %sanguivore_multiplier% раза. Во время перезарядки пассивный бонус к скорости уменьшается на %inactive_penalty_pct%%%. Невозможно применить, когда у всех вражеских героев полное здоровье.",
+        "Can be activated to grant bonus movement speed and %sanguivore_multiplier%x Sanguivore heal bonus for a short duration. While on cooldown, passive Thirst move speed is reduced by %inactive_penalty_pct%%% . Cannot be cast when all enemy heroes are at full health.",
         ""
       ],
       "type": 0,
@@ -683,7 +683,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ПОРОГ ЗДОРОВЬЯ:",
+          "heading_loc": "THIRST HEALTH THRESHOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -703,7 +703,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ЗА ГЕРОЯ:",
+          "heading_loc": "MAX THIRST MOVE SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bloodseeker_4",
@@ -729,7 +729,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ПРИ АКТИВАЦИИ:",
+          "heading_loc": "ACTIVE BONUS MOVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -751,7 +751,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРИ АКТИВАЦИИ:",
+          "heading_loc": "ACTIVE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -825,7 +825,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "ПОРОГ ЗДОРОВЬЯ ДЛЯ ВИДИМОСТИ:",
+          "heading_loc": "VISIBILITY HEALTH THRESHOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -941,10 +941,10 @@
       "id": 1203,
       "name": "bloodseeker_sanguivore",
       "name_loc": "Sanguivore",
-      "desc_loc": "Убив любое существо, герой излечивается на %base_heal% здоровья плюс долю от максимального здоровья жертвы.<br><br>Если вражеский герой неподалёку умер от чужой руки, даётся половина лечения.",
+      "desc_loc": "Bloodseeker restores some life when he kills a unit, equal to %base_heal% health plus a percentage of the units max health.<br><br>Restores for half values if an ally kills a nearby enemy hero.",
       "lore_loc": "",
       "notes_loc": [
-        "Вампиризм от крипов уменьшен на %creep_lifesteal_reduction_pct%%%."
+        "Creeps lifesteal is reduced by %creep_lifesteal_reduction_pct%%%."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1012,7 +1012,7 @@
             1.5
           ],
           "is_percentage": true,
-          "heading_loc": "ЛЕЧЕНИЕ ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "MAX HEALTH HEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1046,7 +1046,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПОЛОВИННОГО ЛЕЧЕНИЯ:",
+          "heading_loc": "HALF HEAL RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1155,13 +1155,13 @@
       "id": 5018,
       "name": "bloodseeker_rupture",
       "name_loc": "Rupture",
-      "desc_loc": "Разрывает кожу врага, нанося жертве начальный урон, зависящий от её текущего здоровья. Если цель передвигается, то она получает урон, зависящий от преодолённого расстояния.",
-      "lore_loc": "Когда за тобой охотится Стригвир, любая рана становится смертельной.",
+      "desc_loc": "Causes an enemy unit's skin to rupture, dealing initial damage based on its current health. If the unit moves, it takes damage based on the distance moved.",
+      "lore_loc": "When the Bloodseeker hunts you, injuries become fatalities.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает начальный урон и заменяет перезарядку %AbilityCharges% зарядами.",
+      "scepter_loc": "Increases initial damage and grants %AbilityCharges% Rupture Charges.",
       "facets_loc": [
-        "Атаки героя толкают жертву способности Rupture.",
+        "Ruptured units are pushed when attacked by Bloodseeker.",
         "",
         ""
       ],
@@ -1213,7 +1213,7 @@
             11
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1232,7 +1232,7 @@
             55
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ПРИ ПЕРЕДВИЖЕНИИ:",
+          "heading_loc": "MOVE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1249,7 +1249,7 @@
             10
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ ЗДОРОВЬЯ:",
+          "heading_loc": "HEALTH DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1285,7 +1285,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ТОЛЧКА:",
+          "heading_loc": "PUSH DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1433,7 +1433,7 @@
     {
       "id": 6034,
       "name": "special_bonus_hp_175",
-      "name_loc": "+{s:value} к здоровью",
+      "name_loc": "+{s:value} Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1514,7 +1514,7 @@
     {
       "id": 482,
       "name": "special_bonus_unique_bloodseeker_5",
-      "name_loc": "+{s:bonus_attack_speed} к скорости атаки от Bloodrage",
+      "name_loc": "+{s:bonus_attack_speed} Bloodrage Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1577,7 +1577,7 @@
     {
       "id": 6230,
       "name": "special_bonus_unique_bloodseeker",
-      "name_loc": "–{s:bonus_damage_pct}% потери здоровья союзников у Bloodrage",
+      "name_loc": "-{s:bonus_damage_pct}% Bloodrage Max Health DPS For Allies",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1640,7 +1640,7 @@
     {
       "id": 6356,
       "name": "special_bonus_unique_bloodseeker_2",
-      "name_loc": "+{s:bonus_damage} к урону от Blood Rite",
+      "name_loc": "+{s:bonus_damage} Blood Rite Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1703,7 +1703,7 @@
     {
       "id": 6357,
       "name": "special_bonus_unique_bloodseeker_3",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальности применения Rupture",
+      "name_loc": "+{s:bonus_AbilityCastRange} Rupture Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1766,7 +1766,7 @@
     {
       "id": 5962,
       "name": "special_bonus_agility_20",
-      "name_loc": "+{s:value} к ловкости",
+      "name_loc": "+{s:value} Agility",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1847,7 +1847,7 @@
     {
       "id": 819,
       "name": "special_bonus_unique_bloodseeker_7",
-      "name_loc": "+{s:bonus_silence_duration} сек. безмолвия от Blood Rite",
+      "name_loc": "+{s:bonus_silence_duration}s Blood Rite Silence Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1910,7 +1910,7 @@
     {
       "id": 6809,
       "name": "special_bonus_unique_bloodseeker_4",
-      "name_loc": "+{s:bonus_bonus_movement_speed}% к макс. скорости передвижения от Thirst",
+      "name_loc": "+{s:bonus_bonus_movement_speed}% Max Thirst MS",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

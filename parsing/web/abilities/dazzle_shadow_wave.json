@@ -1,276 +1,274 @@
-[
-  {
-    "id": 5235,
-    "name": "dazzle_shadow_wave",
-    "name_loc": "Shadow Wave",
-    "desc_loc": "Выпускает мощный заряд, который передаётся от союзника к союзнику, излечивая их и нанося урон противникам неподалёку. Способность всегда лечит своего владельца.",
-    "lore_loc": "Одно из самых простых заклинаний, известных жрецу теней. Оно же — одно из самых эффективных.",
-    "notes_loc": [
-      "Лечит сначала героев, и уже потом крипов.",
-      "Противник получит урон несколько раз, если излечить несколько существ вокруг него."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "Даёт возможность применять эту способность на любых существ. Позволяет её заряду отскакивать во врагов, нанося им урон и излечивая союзников неподалёку в размере %scepter_heal_pct%%% от обычных значений. Владелец способности атакует всех врагов, в которых она отскакивает.",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "33554440",
-    "target_team": 1,
-    "target_type": 19,
-    "flags": 0,
-    "damage": 1,
-    "immunity": 3,
-    "dispellable": 0,
-    "max_level": 4,
-    "cast_ranges": [
-      800
-    ],
-    "cast_points": [
-      0.3,
-      0.3,
-      0.3,
-      0.3
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      10,
-      9,
-      8,
-      7
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      90
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "bounce_radius",
-        "values_float": [
-          475
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС ПЕРЕДАЧИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5235,
+  "name": "dazzle_shadow_wave",
+  "name_loc": "Shadow Wave",
+  "desc_loc": "Sends out a bolt of power that arcs between allies, healing them while damaging any enemy units standing nearby.  Dazzle is always healed by Shadow Wave.",
+  "lore_loc": "While it is a simplistic and routine rite among Shadow Priests, the Shadow Wave is also the most critical for success.",
+  "notes_loc": [
+    "Prioritizes allied heroes over creeps.",
+    "If enemies are near multiple allied units affected by Shadow Wave, they will take multiple instances of damage."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "Shadow Wave can now target and bounce between enemies in addition to allies. When bouncing to an enemy, they will take damage and heal nearby allies equal to %scepter_heal_pct%%% of the normal healing and damage values. Dazzle will also perform an attack against any enemy that Shadow Wave bounces to.",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "33554440",
+  "target_team": 1,
+  "target_type": 19,
+  "flags": 0,
+  "damage": 1,
+  "immunity": 3,
+  "dispellable": 0,
+  "max_level": 4,
+  "cast_ranges": [
+    800
+  ],
+  "cast_points": [
+    0.3,
+    0.3,
+    0.3,
+    0.3
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    10,
+    9,
+    8,
+    7
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    90
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "bounce_radius",
+      "values_float": [
+        475
+      ],
+      "is_percentage": false,
+      "heading_loc": "HEAL ARC RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage_radius",
-        "values_float": [
-          185
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС УРОНА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "damage_radius",
+      "values_float": [
+        185
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "max_targets",
-        "values_float": [
-          3,
-          4,
-          5,
-          6
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "max_targets",
+      "values_float": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "tooltip_max_targets_inc_dazzle",
-        "values_float": [
-          4,
-          5,
-          6,
-          7
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКС. ЦЕЛЕЙ ЛЕЧЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "tooltip_max_targets_inc_dazzle",
+      "values_float": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "is_percentage": false,
+      "heading_loc": "MAX HEAL TARGETS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage",
-        "values_float": [
-          85,
-          105,
-          125,
-          145
-        ],
-        "is_percentage": false,
-        "heading_loc": "ЛЕЧЕНИЕ/УРОН:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_dazzle_2",
-            "value": 45,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "damage",
+      "values_float": [
+        85,
+        105,
+        125,
+        145
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_dazzle_2",
+          "value": 45,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_heal_pct",
-        "values_float": [
-          100
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_heal_pct",
+      "values_float": [
+        100
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_cd_increase",
-        "values_float": [
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_cd_increase",
+      "values_float": [
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          800
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        800
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          90
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        90
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          10,
-          9,
-          8,
-          7
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        10,
+        9,
+        8,
+        7
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

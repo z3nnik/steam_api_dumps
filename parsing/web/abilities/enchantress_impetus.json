@@ -1,209 +1,207 @@
-[
-  {
-    "id": 5270,
-    "name": "enchantress_impetus",
-    "name_loc": "Impetus",
-    "desc_loc": "Усиливает атаки героя, добавляя к ним урон, зависящий от расстояния до цели: чем она дальше, тем урон больше. Наносит иллюзиям двойной урон.",
-    "lore_loc": "Несмотря на то что Аюшта преследует мирные цели, она вполне способна нанести магический удар издалека: её копья черпают энергию из окружающей природы.",
-    "notes_loc": [
-      "Максимальный урон достигается на расстоянии в %distance_cap%.",
-      "Расстояние измеряется в момент, когда снаряд достигнет цели."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "135176",
-    "target_team": 2,
-    "target_type": 19,
-    "flags": 0,
-    "damage": 4,
-    "immunity": 4,
-    "dispellable": 0,
-    "max_level": 4,
-    "cast_ranges": [
-      575
-    ],
-    "cast_points": [
-      0,
-      0,
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      6,
-      4,
-      2,
-      0
-    ],
-    "durations": [
-      1.5,
-      1.5,
-      1.5
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      40,
-      45,
-      50,
-      55
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "distance_damage_pct",
-        "values_float": [
-          5,
-          10,
-          15,
-          20
-        ],
-        "is_percentage": true,
-        "heading_loc": "УРОН ОТ РАССТОЯНИЯ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_enchantress_4",
-            "value": 6.5,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+{
+  "id": 5270,
+  "name": "enchantress_impetus",
+  "name_loc": "Impetus",
+  "desc_loc": "Places an enchantment on each attack while activated, causing it to deal additional damage based on how far away the target is.  The farther the target, the greater the damage dealt. Deals double damage to illusions.",
+  "lore_loc": "While Aiushtha favors peaceful means, she is capable of a magical onslaught from a distance, her spears gaining energy from the natural life around her.",
+  "notes_loc": [
+    "The damage is capped at %distance_cap% distance.",
+    "Distance to target is measured when the projectile hits."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "135176",
+  "target_team": 2,
+  "target_type": 19,
+  "flags": 0,
+  "damage": 4,
+  "immunity": 4,
+  "dispellable": 0,
+  "max_level": 4,
+  "cast_ranges": [
+    575
+  ],
+  "cast_points": [
+    0,
+    0,
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    6,
+    4,
+    2,
+    0
+  ],
+  "durations": [
+    1.5,
+    1.5,
+    1.5
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    40,
+    45,
+    50,
+    55
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "distance_damage_pct",
+      "values_float": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "is_percentage": true,
+      "heading_loc": "DISTANCE DAMAGE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_enchantress_4",
+          "value": 6.5,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "distance_cap",
-        "values_float": [
-          1750
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "distance_cap",
+      "values_float": [
+        1750
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "illusion_damage_multiplier",
-        "values_float": [
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "illusion_damage_multiplier",
+      "values_float": [
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          575
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        575
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityDuration",
-        "values_float": [
-          1.5
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityDuration",
+      "values_float": [
+        1.5
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          40,
-          45,
-          50,
-          55
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        40,
+        45,
+        50,
+        55
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          6,
-          4,
-          2,
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        6,
+        4,
+        2,
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

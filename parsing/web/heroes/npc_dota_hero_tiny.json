@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_tiny",
   "order_id": 28,
   "name_loc": "Tiny",
-  "bio_loc": "Он явился на свет куском камня. Происхождение его — загадка, ответ на которую он непрестанно пытается найти. Теперь он — каменный гигант, но кем же он был раньше? Обломком пятки голема? Осколком, сбитым с гаргульи в мастерской скульптора? Частью Пророческого лика Гартоса? Им движет глубокое любопытство, и он без устали путешествует по миру, пытаясь найти свои истоки, свою родословную, свой народ. В скитаниях он прибавляет в массе и размере; силы, что дробят маленькие камни, его делают лишь мощнее и мощнее.",
-  "hype_loc": "Tiny, <b>становящийся больше и сильнее</b> по ходу битвы, устрашает противника. Он <b>швыряет героев и крипов</b> в своих врагов или <b>оглушает</b> их камнепадом. Набрав мощь, он с лёгкостью разрушит вражескую базу.",
-  "npe_desc_loc": "Становится больше и сильнее с течением битвы",
+  "bio_loc": "Coming to life as a chunk of stone, Tiny's origins are a mystery on which he continually speculates.  He is a Stone Giant now, but what did he used to be?  A splinter broken from a Golem's heel?  A shard swept from a gargoyle-sculptor's workshop?  A fragment of the Oracular Visage of Garthos?  A deep curiosity drives him, and he travels the world tirelessly seeking his origins, his parentage, his people.  As he roams, he gathers weight and size; the forces that weather lesser rocks, instead cause Tiny to grow and ever grow.",
+  "hype_loc": "Growing to <b>tremendous size and strength</b> as the battle progresses, Tiny's power can quickly become terrifying. He <b>tosses heroes and creeps</b> at his enemies, or <b>stuns</b> them beneath an avalanche. Should he gather his full strength, he can demolish the enemy's base with ease.",
+  "npe_desc_loc": "Grows in size and strength as battle ensues",
   "facets": [
     {
       "color": 5,
       "title_loc": "Crash Landing",
-      "description_loc": "Существа, подброшенные способностью Toss, наносят больше урона врагам в месте приземления и замедляют их.",
+      "description_loc": "Tossed units slow and deal bonus damage to other targets at the Toss destination.",
       "name": "tiny_crash_landing",
       "icon": "nuke",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 2,
       "title_loc": "Insurmountable",
-      "description_loc": "Каждая единица силы даёт герою бонус к сопротивлению эффектам и замедлениям. Сопротивление замедлениям также снижает замедления атаки.",
+      "description_loc": "Tiny gains Status and Slow Resistance from Strength. Slow Resistance also reduces the impact of Attack Speed slows.",
       "name": "tiny_insurmountable",
       "icon": "armor",
       "gradient_id": 4,
@@ -66,8 +66,8 @@
       "id": 5106,
       "name": "tiny_avalanche",
       "name_loc": "Avalanche",
-      "desc_loc": "Заваливает указанную область камнями, несколько раз с небольшим интервалом оглушая противников и нанося им урон.",
-      "lore_loc": "Безжизненные камни оживают по зову каменного гиганта.",
+      "desc_loc": "Bombards an area with rocks, continously doing small intervals of damage and stun to enemy units.",
+      "lore_loc": "Inanimate rock becomes animate when called by the Stone Giant.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -129,7 +129,7 @@
             370
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -163,7 +163,7 @@
             1.5
           ],
           "is_percentage": false,
-          "heading_loc": "ОБЩАЯ ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "AVALANCHE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -234,7 +234,7 @@
             370
           ],
           "is_percentage": false,
-          "heading_loc": "ОБЩИЙ УРОН:",
+          "heading_loc": "AVALANCHE DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tiny",
@@ -338,18 +338,18 @@
       "id": 5107,
       "name": "tiny_toss",
       "name_loc": "Toss",
-      "desc_loc": "Герой хватает ближайшее существо в радиусе %grab_radius%, а затем бросает его в указанную цель или руну. В месте приземления наносится урон.",
-      "lore_loc": "Колоссальная сила позволяет каменному гиганту подкидывать в воздух даже самых крепких воинов.",
+      "desc_loc": "Grabs the nearest unit in a %grab_radius% radius around Tiny, ally or enemy, and launches it at the target unit or rune to deal damage where they land.",
+      "lore_loc": "Tiny's gargantuan stature allows him to catapult even the sturdiest of warriors.",
       "notes_loc": [
-        "Подброшенный союзник не получит урона.",
-        "Наносит постройкам 33% от обычного урона.",
-        "Невосприимчивые к эффектам враги не могут быть подброшены, но в них можно бросить других существ.",
-        "Время полёта: %duration% сек."
+        "You can toss allies, but they don't take damage.",
+        "Toss deals 33% of its damage to buildings.",
+        "Debuff Immune units can be targeted but cannot be tossed.",
+        "Flight time is %duration%s."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Существа, подброшенные способностью Toss, наносят больше урона врагам в месте приземления и замедляют их.",
+        "Tossed units slow and deal bonus damage to other targets at the Toss destination.",
         ""
       ],
       "type": 0,
@@ -440,7 +440,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -462,7 +462,7 @@
             360
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -482,7 +482,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -507,7 +507,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -529,7 +529,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ОТ ПРИЗЕМЛЕНИЯ:",
+          "heading_loc": "BONUS LANDING DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -548,7 +548,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -660,12 +660,12 @@
       "id": 5108,
       "name": "tiny_tree_grab",
       "name_loc": "Tree Grab",
-      "desc_loc": "Герой вырывает из земли выбранное дерево, чтобы отметелить им врагов. Дерево ломается после определённого числа атак, но увеличивает их дальность и урон. Атаки наносят прорубающий урон, задевая соседних существ. Дерево можно швырнуть, чтобы нанести урон от атаки на расстоянии.",
-      "lore_loc": "Камень бьёт дерево... А камень с деревом бьёт что угодно.",
+      "desc_loc": "Grabs a tree to whack enemies on the head for a limited number of attacks. Grants bonus attack range. Attacks deal more damage and fully splash on units along the way. The tree can be thrown, to deal your attack to a unit at a distance.",
+      "lore_loc": "Sticks and stones break all the bones, with structures sure to follow.",
       "notes_loc": [
-        "Перезарядка начинается в момент броска дерева."
+        "The cooldown begins when the tree is thrown."
       ],
-      "shard_loc": "Убирает ограничение на число атак с деревом.",
+      "shard_loc": "Causes Tree Grab to have no charge limit.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -716,7 +716,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО АТАК:",
+          "heading_loc": "NUMBER OF ATTACKS:",
           "bonuses": [],
           "values_shard": [
             0
@@ -738,7 +738,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "БОНУС К БАЗОВОМУ УРОНУ:",
+          "heading_loc": "BONUS BASE DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tiny_7",
@@ -764,7 +764,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ПОСТРОЙКАМ:",
+          "heading_loc": "BONUS BUILDING DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -781,7 +781,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -835,7 +835,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ПРОРУБАЮЩИЙ УРОН:",
+          "heading_loc": "SPLASH DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -935,8 +935,8 @@
       "id": 7850,
       "name": "tiny_tree_channel",
       "name_loc": "Tree Volley",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — герой вырывает из земли рядом случайные деревья и швыряет их в указанную область. Каждое брошенное дерево наносит противникам урон от атаки героя.",
-      "lore_loc": "Кости все переломал каменный лесоповал.",
+      "desc_loc": "CHANNELED - Tiny channels to throw random trees within range towards the targeted area. Deals Tiny's attack damage to enemies in that area with each tree thrown.",
+      "lore_loc": "Sticks thrown from stones are like to shatter many bones.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1020,7 +1020,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ОБЛАСТИ:",
+          "heading_loc": "TARGET RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1037,7 +1037,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПОИСКА ДЕРЕВЬЕВ:",
+          "heading_loc": "TREE GRAB RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1054,7 +1054,7 @@
             0.5
           ],
           "is_percentage": false,
-          "heading_loc": "ИНТЕРВАЛ БРОСКОВ:",
+          "heading_loc": "THROW INTERVAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1088,7 +1088,7 @@
             2.5
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "MAX CHANNEL TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1168,11 +1168,11 @@
       "id": 296,
       "name": "tiny_craggy_exterior",
       "name_loc": "Craggy Exterior",
-      "desc_loc": "За каждую атаку по владельцу накладывает на обидчиков складывающийся отрицательный эффект, уменьшающий урон от атак.",
+      "desc_loc": "Enemies that attack Tiny receive a stacking debuff that lowers their attack damage with each stack.",
       "lore_loc": "",
       "notes_loc": [
-        "Наложение эффектов отключается истощением.",
-        "Уже наложенные эффекты не отключаются истощением."
+        "Break disables the application of new stacks.",
+        "Break does not disable the effects of existing stacks."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1222,7 +1222,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "DEBUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1239,7 +1239,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ЭФФЕКТОВ:",
+          "heading_loc": "MAX STACKS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1259,7 +1259,7 @@
             5
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА ЗА ЭФФЕКТ:",
+          "heading_loc": "DAMAGE REDUCTION PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1288,8 +1288,8 @@
       "id": 5109,
       "name": "tiny_grow",
       "name_loc": "Grow",
-      "desc_loc": "Герой обрастает камнями, увеличивая свои урон от атак, броню и скорость передвижения, а также усиливая способность Toss, но теряя скорость атаки.",
-      "lore_loc": "Наблюдать превращение холма в гору становится вдвойне интереснее, когда эта гора начинает сокрушать противников.",
+      "desc_loc": "Tiny gains craggy mass, increasing his attack damage, movement speed and armor, and toss power while slowing his attack speed.",
+      "lore_loc": "Watching a hill become a mountain is awe-inspiring - especially if the mountain begins laying waste to adversaries.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1341,7 +1341,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. БРОНЯ:",
+          "heading_loc": "BONUS ARMOR:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1360,7 +1360,7 @@
             165
           ],
           "is_percentage": false,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1377,7 +1377,7 @@
             -35
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SPEED REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tiny_6",
@@ -1402,7 +1402,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ОТ TOSS:",
+          "heading_loc": "TOSS BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1421,7 +1421,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1450,10 +1450,10 @@
       "id": 6937,
       "name": "tiny_toss_tree",
       "name_loc": "Tree Throw",
-      "desc_loc": "Швыряет дерево в указанную цель, совершая атаку по ней и нанося урон по площади вокруг неё.",
-      "lore_loc": "Лес рубят — щепки летят. А тут летят целые деревья.",
+      "desc_loc": "Throws the tree at the target unit, proccing your attack on it and splashing damage around the target.",
+      "lore_loc": "Even enemies can share in Tiny's arbor ardor.",
       "notes_loc": [],
-      "shard_loc": "Увеличивает урон от бросаемых деревьев на %bonus_bonus_damage%.",
+      "shard_loc": "Increases damage dealt by thrown trees by %bonus_bonus_damage%.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -1518,7 +1518,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "heading_loc": "CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1557,7 +1557,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЕЙСТВИЯ:",
+          "heading_loc": "SPLASH RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1574,7 +1574,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1591,7 +1591,7 @@
             2.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1655,7 +1655,7 @@
     {
       "id": 6934,
       "name": "special_bonus_unique_tiny_4",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальности применения Avalanche",
+      "name_loc": "+{s:bonus_AbilityCastRange} Avalanche Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1717,7 +1717,7 @@
     {
       "id": 5982,
       "name": "special_bonus_strength_8",
-      "name_loc": "+{s:value} к силе",
+      "name_loc": "+{s:value} Strength",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1797,7 +1797,7 @@
     {
       "id": 558,
       "name": "special_bonus_unique_tiny_6",
-      "name_loc": "–{s:bonus_attack_speed_reduction}% замедления атаки от Grow",
+      "name_loc": "-{s:bonus_attack_speed_reduction}% Grow Attack Speed Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1859,7 +1859,7 @@
     {
       "id": 6153,
       "name": "special_bonus_unique_tiny",
-      "name_loc": "+{s:bonus_avalanche_damage} к урону от Avalanche",
+      "name_loc": "+{s:bonus_avalanche_damage} Avalanche Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1921,7 +1921,7 @@
     {
       "id": 718,
       "name": "special_bonus_unique_tiny_7",
-      "name_loc": "+{s:bonus_bonus_damage} к доп. базовому урону у Tree Grab",
+      "name_loc": "+{s:bonus_bonus_damage} Tree Grab Base Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1983,8 +1983,8 @@
     {
       "id": 7005,
       "name": "special_bonus_unique_tiny_5",
-      "name_loc": "Для Toss не нужна цель",
-      "desc_loc": "Способность применяется как на врагов, так и на пустую точку.",
+      "name_loc": "Toss Requires No Target",
+      "desc_loc": "Toss can target the ground as well as enemy units.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2045,7 +2045,7 @@
     {
       "id": 6933,
       "name": "special_bonus_unique_tiny_3",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Avalanche",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Avalanche Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2107,7 +2107,7 @@
     {
       "id": 6932,
       "name": "special_bonus_unique_tiny_2",
-      "name_loc": "{s:bonus_AbilityCharges} заряда Toss",
+      "name_loc": "{s:bonus_AbilityCharges} Toss Charges",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2177,10 +2177,10 @@
           "id": 1236,
           "name": "tiny_insurmountable",
           "name_loc": "Insurmountable",
-          "desc_loc": "Каждая единица силы даёт герою бонус к сопротивлению эффектам и замедлениям. Сопротивление замедлениям также снижает замедления атаки.",
+          "desc_loc": "Tiny gains Status and Slow Resistance from Strength. Slow Resistance also reduces the impact of Attack Speed slows.",
           "lore_loc": "",
           "notes_loc": [
-            "Сопротивление замедлениям не влияет на замедление атаки от ульта."
+            "Insurmountable does not reduce the effect of Grow's Attack Speed Reduction."
           ],
           "shard_loc": "",
           "scepter_loc": "",
@@ -2230,7 +2230,7 @@
                 20
               ],
               "is_percentage": true,
-              "heading_loc": "СОПРОТИВЛЕНИЕ ЗАМЕДЛЕНИЯМ ОТ СИЛЫ:",
+              "heading_loc": "STRENGTH TO SLOW RESIST:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -2247,7 +2247,7 @@
                 10
               ],
               "is_percentage": true,
-              "heading_loc": "СОПРОТИВЛЕНИЕ ЭФФЕКТАМ ОТ СИЛЫ:",
+              "heading_loc": "STRENGTH TO STATUS RESIST:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

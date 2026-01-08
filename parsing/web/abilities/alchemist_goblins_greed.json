@@ -1,255 +1,253 @@
-[
-  {
-    "id": 1333,
-    "name": "alchemist_goblins_greed",
-    "name_loc": "Greevil's Greed",
-    "desc_loc": "Позволяет синтезировать больше золота из врагов и рун. Дополнительное золото за убийство существ состоит из начального бонуса и нарастающего, который увеличивается с каждым существом, убитым в течение %duration% сек. после предыдущего. Также способность умножает золото от рун богатства.",
-    "lore_loc": "Пускай эксперимент с горой и не удался, зато структуры поменьше Раззил легко обращает в звонкую монету.",
-    "notes_loc": [],
-    "shard_loc": "",
-    "scepter_loc": "Герой может расплавить Aghanim's Scepter, чтобы передать союзнику все его улучшения и получить +%scepter_bonus_damage% к урону от атак. Бонусы за несколько расплавленных скипетров складываются.",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "8796093022210",
-    "target_team": 1,
-    "target_type": 257,
-    "flags": 0,
-    "damage": 0,
-    "immunity": 0,
-    "dispellable": 0,
-    "max_level": 1,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0.2
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      0
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      0
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "duration",
-        "values_float": [
-          40
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКС. ИНТЕРВАЛ УБИЙСТВ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 1333,
+  "name": "alchemist_goblins_greed",
+  "name_loc": "Greevil's Greed",
+  "desc_loc": "Alchemist synthesizes additional gold from his enemies and bounty runes. With each kill, Alchemist earns base bonus gold and extra bonus gold. If Alchemist kills another unit which yields gold within the next %duration% seconds, an additional instance of Extra Bonus Gold is added to the total. Additionally, causes bounty runes to yield more gold.",
+  "lore_loc": "While it is not a mountain, Razzil has mastered the conversion of smaller compounds to line his pockets.",
+  "notes_loc": [],
+  "shard_loc": "",
+  "scepter_loc": "Alchemist melts down Aghanim's Scepter to grant an allied hero all Aghanim's Scepter upgrades. Alchemist will gain %scepter_bonus_damage% bonus damage for each gifted Scepter.",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "8796093022210",
+  "target_team": 1,
+  "target_type": 257,
+  "flags": 0,
+  "damage": 0,
+  "immunity": 0,
+  "dispellable": 0,
+  "max_level": 1,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0.2
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    0
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "duration",
+      "values_float": [
+        40
+      ],
+      "is_percentage": false,
+      "heading_loc": "RECENT KILL WINDOW:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bonus_gold",
-        "values_float": [
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "НАЧАЛЬНЫЙ БОНУС:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_gold",
+      "values_float": [
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "BASE BONUS GOLD:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bonus_bonus_gold",
-        "values_float": [
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "НАРАСТАЮЩИЙ БОНУС:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_bonus_gold",
+      "values_float": [
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "EXTRA BONUS GOLD:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bounty_multiplier",
-        "values_float": [
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "МНОЖИТЕЛЬ РУН БОГАТСТВА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bounty_multiplier",
+      "values_float": [
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "BOUNTY RUNE MULTIPLIER:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage",
-        "values_float": [],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_alchemist_7",
-            "value": 2.5,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "damage",
+      "values_float": [],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_alchemist_7",
+          "value": 2.5,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bonus_gold_cap",
-        "values_float": [
-          18
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКСИМУМ ДОП. ЗОЛОТА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_gold_cap",
+      "values_float": [
+        18
+      ],
+      "is_percentage": false,
+      "heading_loc": "MAX BONUS GOLD PER KILL:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "starting_gold_bonus",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "starting_gold_bonus",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_bonus_damage",
-        "values_float": [
-          25
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДОП. УРОН ОТ АТАК ЗА СКИПЕТР:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_bonus_damage",
+      "values_float": [
+        25
+      ],
+      "is_percentage": false,
+      "heading_loc": "BONUS DAMAGE PER SCEPTER:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_spell_amp",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          0
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_spell_amp",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        0
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "gpm_increase_per_stack",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "gpm_increase_per_stack",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.2
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": true,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.2
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": true,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_phantom_assassin",
   "order_id": 80,
   "name_loc": "Phantom Assassin",
-  "bio_loc": "Сёстры Вуали, считающие убийство священной частью естественного цикла жизни, находят новых воспитанников в гаданиях. О своих жертвах сёстры узнают в медитации и пророческих изречениях. Они не принимают контрактов, и, похоже, не преследуют жертв из-за политики или корысти. Их убийства не выглядят частью какого-то замысла, и могут показаться не связанными между собой: сегодня жертвой станет человек с великой властью, завтра — крестьянин или копатель колодцев. Какой бы между убийствами ни было связи, её знают лишь сёстры. Они считают убитых жертвенным даром, а смерть от рук ордена — большой честью. Не ведающие своей личности, взращённые лишь на устоях ордена, убийцы легко заменяют друг друга, и число их неведомо. Возможно, их много; возможно, их единицы. Что лежит под вуалью — тайна без ответа. И лишь изредка эта сестра, когда никто не слышит, поднимает свою вуаль, чтобы нарушить запрет, прошептав своё имя: Мортред.",
-  "hype_loc": "Phantom Assassin идёт в наступление, едва завидев свою жертву. Мгновенно сблизившись с ней, Мортред легко <b>уклоняется от атак</b> и обрушивает на врага удар за ударом, любой из которых может оказаться <b>роковым</b>.",
-  "npe_desc_loc": "Прыгает к врагам и наносит им критические удары",
+  "bio_loc": "Through a process of divination, children are selected for upbringing by the Sisters of the Veil, an order that considers assassination a sacred part of the natural order.  The Veiled Sisters identify targets through meditation and oracular utterances.  They accept no contracts, and never seem to pursue targets for political or mercenary reasons. Their killings bear no relation to any recognizable agenda, and can seem to be completely random:  A figure of great power is no more likely to be eliminated than a peasant or a well digger. Whatever pattern the killings may contain, it is known only to them. They treat their victims as sacrifices, and death at their hand is considered an honor. Raised with no identity except that of their order, any Phantom Assassin can take the place of any other; their number is not known. Perhaps there are many, perhaps there are few. Nothing is known of what lies under the Phantom Veil. Except that this one, from time to time, when none are near enough to hear, is known to stir her veils with the forbidden whisper of her own name: Mortred.",
+  "hype_loc": "The moment she finds her prey, Phantom Assassin strikes. Instantly closing in on a target, she effortlessly <b>dodges attacks</b> as she relentlessly cuts away at her foe. Without warning, any one of her attacks could prove suddenly and <b>brutally fatal.</b>",
+  "npe_desc_loc": "Blinks onto her foes with critical strikes",
   "facets": [
     {
       "color": 5,
       "title_loc": "Methodical",
-      "description_loc": "Coup de Grace срабатывает каждые несколько атак по одному и тому же существу. Героям нужно {s:bonus_attacks_to_proc} атак, а прочим существам — {s:bonus_attacks_to_proc_creeps}.",
+      "description_loc": "Coup de Grace procs every {s:bonus_attacks_to_proc} attacks on the same hero or {s:bonus_attacks_to_proc_creeps} attacks on non hero units.",
       "name": "phantom_assassin_methodical",
       "icon": "skull",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Sweet Release",
-      "description_loc": "При смерти врага способность Stifling Dagger применяется повторно.",
+      "description_loc": "Stifling Dagger re-casts when an enemy dies.",
       "name": "phantom_assassin_sweet_release",
       "icon": "phantom_ass_dagger",
       "gradient_id": 0,
@@ -66,19 +66,19 @@
       "id": 5190,
       "name": "phantom_assassin_stifling_dagger",
       "name_loc": "Stifling Dagger",
-      "desc_loc": "Бросает кинжал, который замедляет скорость передвижения врага, наносит ему физический урон в размере %base_damage% + %attack_factor_tooltip%%% от атаки героя, а также накладывает эффекты предметов и способностей.",
-      "lore_loc": "Первый навык, изучаемый Сёстрами вуали, часто предвещает скорый удар.",
+      "desc_loc": "Throws a dagger slowing the enemy unit's movement speed, dealing %base_damage%+%attack_factor_tooltip%%% of Phantom Assassin's attack damage as physical damage and applying attack effects from items and abilities.",
+      "lore_loc": "The first skill learned by the Sisters of the Veil often signals an incoming hit.",
       "notes_loc": [
-        "Эффекты атаки срабатывают с обычной для них вероятностью.",
-        "Не замедляет врагов, невосприимчивых к магии.",
-        "Способность даёт обзор вокруг кинжала во время полёта и после попадания по цели."
+        "If an attack effect is chance-based, the chance of its application will be the same as its chance to occur.",
+        "Spell-immune enemies are not affected by Stifling Dagger's slow.",
+        "Stifling Dagger grants vision around its location while it travels and upon impact."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Если урон от кинжала не смертельный, он также накладывает на жертву складывающийся отрицательный эффект, действующий %dagger_recast_time% сек. Когда жертва погибает, за каждый такой эффект в случайных существ неподалёку (в первую очередь в героев) вылетает по кинжалу, который наносит %dagger_secondary_reduce%%% урона и замедляет на %dagger_secondary_reduce%%% длительности."
+        "Whenever a unit is non-fatally hit by Stifling Dagger, they receive a stacking debuff that lasts for %dagger_recast_time% seconds. When a unit dies, a Stifling Dagger with %dagger_secondary_reduce%%% damage and slow duration values is cast on a random nearby unit for every stack of the debuff, prioritizing heroes."
       ],
       "type": 0,
       "behavior": "8",
@@ -128,7 +128,7 @@
             -50
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -165,7 +165,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -185,7 +185,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -231,7 +231,7 @@
             75
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ АТАКИ:",
+          "heading_loc": "ATTACK DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phantom_assassin_5",
@@ -402,8 +402,8 @@
       "id": 5191,
       "name": "phantom_assassin_phantom_strike",
       "name_loc": "Phantom Strike",
-      "desc_loc": "Герой телепортируется к выбранному существу и, если это противник, получает дополнительную скорость атаки.",
-      "lore_loc": "Шёлковая вуаль Мортред — это последнее, что увидит её несчастная цель.",
+      "desc_loc": "Teleports to a unit, friendly or enemy, and grants bonus attack speed while attacking if it's an enemy unit.",
+      "lore_loc": "Mortred's silken veil is the last thing her unfortunate target sees.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -463,7 +463,7 @@
             190
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phantom_assassin_strike_aspd",
@@ -486,7 +486,7 @@
             2.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phantom_assassin_4",
@@ -655,12 +655,12 @@
       "id": 5192,
       "name": "phantom_assassin_blur",
       "name_loc": "Blur",
-      "desc_loc": "Герой размывает свои очертания, сбивая с цели направленные в него снаряды, становясь невидимым и ускоряя своё передвижение. Невидимость и ускорение пропадут, если герой приблизится к вражескому герою или башне.",
-      "lore_loc": "Медитация позволяет Сёстрам вуали опережать противников в бою.",
+      "desc_loc": "Phantom Assassin blurs her body, disjointing incoming projectiles, increasing her movement speed, causing her to be impossible to see until she comes near enemy heroes or towers.",
+      "lore_loc": "Meditation allows a Veiled Sister to carefully anticipate her opponents in combat.",
       "notes_loc": [
-        "Эффект этой способности спадёт, если атаковать Рошана."
+        "Attacking Roshan with a regular attack will dispel Blur."
       ],
-      "shard_loc": "Уменьшает перезарядку. Когда владелец совершает убийство, текущие перезарядки всех его способностей уменьшаются на %cooldown_refund_pct%%% от максимальных значений.",
+      "shard_loc": "Decreases Cooldown. Any time Phantom Assassin gets a hero kill, her ability cooldowns advance %cooldown_refund_pct%%% of their max cooldown values.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -712,7 +712,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -732,7 +732,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЛЯ НЕВИДИМОСТИ:",
+          "heading_loc": "VANISH RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -752,7 +752,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАДЕРЖКА ПЕРЕД ПОЯВЛЕНИЕМ:",
+          "heading_loc": "VANISH BUFFER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -769,7 +769,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ РАСХОДА МАНЫ ВО ВРЕМЯ BLUR:",
+          "heading_loc": "MANA COST REDUCTION DURING BLUR:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -788,7 +788,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА ПОСЛЕ BLUR:",
+          "heading_loc": "BUFF DURATION AFTER BLUR:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -807,7 +807,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ РАСХОДА МАНЫ ПОСЛЕ BLUR:",
+          "heading_loc": "MANA COST REDUCTION AFTER BLUR:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -829,7 +829,7 @@
             15
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ПРИ АКТИВАЦИИ:",
+          "heading_loc": "ACTIVE MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -988,8 +988,8 @@
       "id": 662,
       "name": "phantom_assassin_fan_of_knives",
       "name_loc": "Fan of Knives",
-      "desc_loc": "Выпускает вокруг героя острые кинжалы, которые наносят врагам урон, зависящий от их максимального здоровья, и накладывают истощение.",
-      "lore_loc": "Обычно сестре даётся лишь одно имя, однако могущественные имена привлекают немало союзников.",
+      "desc_loc": "Phantom Assassin releases sharp blades around her, dealing a percentage of each victim's max health on impact and applying Break.",
+      "lore_loc": "A sister is generally given a single name, but powerful names often have plentiful allies.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1040,7 +1040,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "MAX HEALTH DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1091,7 +1091,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ИСТОЩЕНИЯ:",
+          "heading_loc": "BREAK DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1108,7 +1108,7 @@
             550
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1222,7 +1222,7 @@
       "id": 1287,
       "name": "phantom_assassin_immaterial",
       "name_loc": "Immaterial",
-      "desc_loc": "Герой сосредотачивается на себе, что позволяет ему уклоняться от атак. Шанс уклонения растёт с уровнем владельца.\n\nСочетается с другими источниками уклонения по закону убывающей полезности.",
+      "desc_loc": "Phantom Assassin focuses inward, increasing her ability to evade enemy attacks. Evasion improves with Phantom Assassin's levels. \n\nStacks diminishingly with other sources of Evasion.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1277,7 +1277,7 @@
             55
           ],
           "is_percentage": true,
-          "heading_loc": "ДОПОЛНИТЕЛЬНОЕ УКЛОНЕНИЕ:",
+          "heading_loc": "BONUS EVASION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phantom_assassin_3",
@@ -1312,14 +1312,14 @@
       "id": 5193,
       "name": "phantom_assassin_coup_de_grace",
       "name_loc": "Coup de Grace",
-      "desc_loc": "Герой оттачивает свои боевые навыки, с каждой атакой имея шанс войти в состояние смертельного фокуса. В нём следующая атака гарантированно нанесёт критический урон и снимет фокус. Способность Stifling Dagger даёт фокус с повышенной вероятностью.",
-      "lore_loc": "Погибнуть от судьбоносного удара Мортред — честь для её врагов.",
+      "desc_loc": "Phantom Assassin refines her combat abilities, acquiring a chance of gaining Deadly Focus with each attack. When attacking with Deadly Focus, Phantom Assassin will consume the buff and guarantee a critical hit. Stifling Dagger has a bonus chance to cause Deadly Focus.",
+      "lore_loc": "A divine strike, Mortred honors her opponent by choosing them for death.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Coup de Grace срабатывает каждые несколько атак по одному и тому же существу. Героям нужно %attacks_to_proc% атак, а прочим существам — %attacks_to_proc_creeps%. Кинжал от Stifling Dagger считается за %two_tooltip% атаки.",
+        "Coup de Grace procs every %attacks_to_proc% attacks on the same hero or %attacks_to_proc_creeps% attacks on non hero units. Stifling Dagger counts as %two_tooltip% attacks.",
         ""
       ],
       "type": 1,
@@ -1364,7 +1364,7 @@
             17
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС ФОКУСА ОТ АТАКИ:",
+          "heading_loc": "CHANCE OF DEADLY FOCUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phantom_assassin_2",
@@ -1389,7 +1389,7 @@
             34
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС ФОКУСА ОТ КИНЖАЛА:",
+          "heading_loc": "DAGGER CHANCE OF DEADLY FOCUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phantom_assassin_2",
@@ -1416,7 +1416,7 @@
             400
           ],
           "is_percentage": true,
-          "heading_loc": "КРИТИЧЕСКИЙ УРОН:",
+          "heading_loc": "CRITICAL DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1435,7 +1435,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО АТАК ДЛЯ СРАБАТЫВАНИЯ:",
+          "heading_loc": "ATTACKS TO TRIGGER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1475,7 +1475,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ФОКУСА:",
+          "heading_loc": "DEADLY FOCUS DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1524,7 +1524,7 @@
     {
       "id": 483,
       "name": "special_bonus_unique_phantom_assassin_4",
-      "name_loc": "+{s:bonus_duration} сек. действия Phantom Strike",
+      "name_loc": "+{s:bonus_duration}s Phantom Strike Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1587,7 +1587,7 @@
     {
       "id": 559,
       "name": "special_bonus_unique_phantom_assassin_7",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Stifling Dagger",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Stifling Dagger Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1650,7 +1650,7 @@
     {
       "id": 6848,
       "name": "special_bonus_unique_phantom_assassin_3",
-      "name_loc": "+{s:bonus_evasion}% к уклонению от Immaterial",
+      "name_loc": "+{s:bonus_evasion}% Immaterial Evasion",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1713,7 +1713,7 @@
     {
       "id": 491,
       "name": "special_bonus_unique_phantom_assassin_5",
-      "name_loc": "+{s:bonus_attack_factor}% к урону от атаки у Stifling Dagger",
+      "name_loc": "+{s:bonus_attack_factor}% Stifling Dagger Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1776,7 +1776,7 @@
     {
       "id": 490,
       "name": "special_bonus_unique_phantom_assassin_6",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальности применения Phantom Strike",
+      "name_loc": "+{s:bonus_AbilityCastRange} Phantom Strike Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1839,7 +1839,7 @@
     {
       "id": 1074,
       "name": "special_bonus_unique_phantom_assassin_strike_aspd",
-      "name_loc": "+{s:bonus_bonus_attack_speed} к скорости атаки от Phantom Strike",
+      "name_loc": "+{s:bonus_bonus_attack_speed} Phantom Strike Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1902,7 +1902,7 @@
     {
       "id": 6847,
       "name": "special_bonus_unique_phantom_assassin_2",
-      "name_loc": "+{s:bonus_crit_chance}% к шансу фокуса у Coup de Grace",
+      "name_loc": "+{s:bonus_crit_chance}% Coup de Grace chance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1910,7 +1910,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "–{s:bonus_attacks_to_proc} от числа атак у Coup de Grace",
+        "-{s:bonus_attacks_to_proc} Attacks to Trigger Coup de Grace",
         ""
       ],
       "type": 2,
@@ -1965,8 +1965,8 @@
     {
       "id": 6192,
       "name": "special_bonus_unique_phantom_assassin",
-      "name_loc": "Stifling Dagger по трём целям",
-      "desc_loc": "Запускает ещё два кинжала в случайных видимых врагов в радиусе применения.",
+      "name_loc": "Triple Strike Stifling Dagger",
+      "desc_loc": "Launches two extra Stifling Daggers towards random visible enemies within the cast range.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",

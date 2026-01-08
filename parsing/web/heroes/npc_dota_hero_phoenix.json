@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_phoenix",
   "order_id": 106,
   "name_loc": "Phoenix",
-  "bio_loc": "Первому солнцу Хранителя, единственной точке разумного света в изначальной тьме, было предначертано принести тепло в холодную пустоту. В течение тысячелетий этот ослепительный луч концентрировал свою неизмеримую энергию, что привело к разрушительному взрыву сверхновой звезды. Из этого огня появились новые лучи, звёздные копии своего родителя, которые также устремились в океан тьмы и стали созвездиями. Со временем и они стали сверхновыми, порождая новый свет. Так продолжался цикл рождения и перерождения, пока всё небо, созданное Титанами, не стало мерцать и сиять.\r\n\t\t\t\t<br><br>В результате такого беспощадного и древнего процесса сформировалась звезда, известная смертным как Phoenix. Как и её предки, она была выброшена в безграничный космос, чтобы найти своё место среди небесных братьев и сестёр. Но любопытство к тому, что согревают гаснущие предки, захватило молодую птицу, и в течение долгих лет она познавала мир. Она узнала, что среди целых и разрушенных миров скоро образуется замкнутый центр, в котором всевозможные силы сойдутся в конфликте, несущим вселенское значение. И этому миру потребуется нечто большее, чем просто далёкие лучи умирающего солнца. Итак, звёздное дитя приняло свою земную форму, чтобы нести свет всем нуждающимся и, возможно, исполнить свою звёздную судьбу.",
-  "hype_loc": "Влетев в битву, Phoenix <b>поражает врагов</b> и <b>излечивает союзников</b> солнечным лучом, а в нужный момент может превратиться в звезду, обжигающую всех противников вокруг, чтобы после её <b>оглушающего взрыва</b> возродиться с полным запасом сил.",
-  "npe_desc_loc": "Лечит и наносит урон ценой собственного здоровья",
+  "bio_loc": "Alone across an untouched darkness gleamed the Keeper's first sun, a singular point of conscious light fated to spread warmth into the empty void. Through aeons beyond count, this blinding beacon set to coalescing its incalculable energy before bursting forth the cataclysmic flare of supernova. From this inferno raced new beacons, star progeny identical to its parent, who journeyed an unlit ocean and settled in constellatory array. In time, they too would be made to propagate through supernova flame. So would this dazzling cycle of birth and rebirth repeat until all skies hewn of Titan toil deigned to twinkle and shine.\r\n\t\t\t\t<br><br>By this ageless crucible the star that mortals would come to call Phoenix collapsed into being, and like its ancestors was thrust into an endless cosmos to find a place among its stellar brethren. Yet curiosity toward that which the dimming elders comfort in the darkness consumed the fledgling, and so over long cycles it inquired and studied. It learned that among worlds both whole and broken would soon stir a nexus of remarkable variety locked in an enduring conflict of cosmic consequence, a plane which would find itself in need of more influence than a dying sun's distant rays could provide. Thus this infant son of suns took terrestrial form, eagerly travelling to shine its warmth upon those who may need it most, and perhaps seize upon its solar destiny.",
+  "hype_loc": "Diving into battle, Phoenix <b>blasts enemies</b> and <b>heals allies</b> with rays of solar flame. When the time is right, it can become a burning sun to scorch nearby foes before unleashing a <b>stunning detonation</b> that also restores Phoenix to full strength.",
+  "npe_desc_loc": "Heals and damages at the sacrifice of its own health",
   "facets": [
     {
       "color": 0,
       "title_loc": "Dying Light",
-      "description_loc": "Герой каждую секунду наносит врагам в радиусе %radius% магический урон в размере %damage_pct%%% от недостающего у него здоровья.",
+      "description_loc": "Phoenix deals %damage_pct%%% of his missing health as magic damage to all enemies in a %radius% radius every second.",
       "name": "phoenix_facet_immolate",
       "icon": "barrier",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Hotspot",
-      "description_loc": "Урон и лечение от способности Sun Ray увеличиваются по мере отдаления от её владельца, а на врагов, находящихся ближе к концу луча, накладывается больше эффектов Blinding Sun.",
+      "description_loc": "Sun Ray deals more damage and applies more Blinding Sun stacks towards the tip of the ray.",
       "name": "phoenix_hotspot",
       "icon": "nuke",
       "gradient_id": 1,
@@ -66,10 +66,10 @@
       "id": 5623,
       "name": "phoenix_icarus_dive",
       "name_loc": "Icarus Dive",
-      "desc_loc": "Герой летит вперёд по дуге, замедляя всех врагов на своём пути и нанося им периодический урон, а затем возвращается в исходную точку. Если применить способность Supernova, полёт прервётся.",
-      "lore_loc": "Хоть путешествия в космосе этому существу не чужды, полёт под куполом атмосферы приносит ему несравнимое удовольствие.",
+      "desc_loc": "Phoenix dives forward in an arc with a fixed distance in the targeted direction, dealing damage over time and slowing the movement speed of any units it comes into contact with, and then orbiting back to its original position. If Phoenix casts Supernova, the dive ends.",
+      "lore_loc": "Though no stranger to travelling the cosmic void, soaring within an atmosphere offers unique pleasures.",
       "notes_loc": [
-        "Полёт длится %dive_duration% сек. Его можно прервать, применив эту способность повторно."
+        "Icarus Dive has a %dive_duration% second travel duration, and can be cancelled by casting the ability again while in flight."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -122,7 +122,7 @@
             15
           ],
           "is_percentage": true,
-          "heading_loc": "РАСХОД ЗДОРОВЬЯ:",
+          "heading_loc": "HP COST:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -142,7 +142,7 @@
             1400
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПОЛЁТА:",
+          "heading_loc": "DIVE LENGTH:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phoenix_4",
@@ -199,7 +199,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ГОРЕНИЯ:",
+          "heading_loc": "BURN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -219,7 +219,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -256,7 +256,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phoenix_6",
@@ -345,12 +345,12 @@
       "id": 5625,
       "name": "phoenix_fire_spirits",
       "name_loc": "Fire Spirits",
-      "desc_loc": "Призывает 4 огненных духа, которые кружатся вокруг героя. Каждого из них по отдельности можно выпустить в указанную точку. Долетев до неё, дух подожжёт всех противников вокруг себя, нанося им периодический урон и уменьшая их скорость атаки.",
-      "lore_loc": "Непрерывно сокращающееся звёздное ядро часто испускает скоротечные всплески разумного света.",
+      "desc_loc": "Summons 4 fire spirits that circle around Phoenix. Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced.",
+      "lore_loc": "The ever-collapsing core of Phoenix often emits short-lived bursts of conscious light.",
       "notes_loc": [
-        "Духи дают обзор по месту попадания на 1 секунду."
+        "Fire Spirits reveal the area they strike for 1 second."
       ],
-      "shard_loc": "Делает способность пассивной. Каждый дух восстанавливается 7 секунд.",
+      "shard_loc": "Causes Fire Spirits to become a passive charge-based ability. Has 7 second replenish time.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -401,7 +401,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "РАСХОД ЗДОРОВЬЯ:",
+          "heading_loc": "HP COST:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -418,7 +418,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ ДУХОВ:",
+          "heading_loc": "SPIRIT DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -452,7 +452,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЕЙСТВИЯ ДУХА:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -469,7 +469,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ГОРЕНИЯ:",
+          "heading_loc": "BURN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -489,7 +489,7 @@
             -140
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SPEED SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -509,7 +509,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phoenix_3",
@@ -632,18 +632,18 @@
       "id": 5626,
       "name": "phoenix_sun_ray",
       "name_loc": "Sun Ray",
-      "desc_loc": "Герой выпускает из себя луч света ценой собственного здоровья. Луч наносит урон врагам и исцеляет союзников на определенное число плюс процент от общего запаса здоровья. Этот процент тем выше, чем дольше применяется луч.",
-      "lore_loc": "Потоки, что несут энергию звезды, не шире нескольких атомов.",
+      "desc_loc": "Phoenix expels a beam of light at the cost of its own health. The beam damages enemies and heals allies for a base amount plus a percentage of their health. The percentage increases as the beam continues to fire.",
+      "lore_loc": "The vent through which such stellar energy flows is mere atoms wide.",
       "notes_loc": [
-        "Ширина луча — %radius%, длина — %abilitycastrange%.",
-        "Действие заканчивается при оглушении, безмолвии, проклятье, сне или поднятии в воздух.",
-        "Активация предметов и других способностей не отменяет применение этой способности."
+        "Sun Ray has a width of %radius% units, and a length of %abilitycastrange% units.",
+        "Sun Ray is canceled if Phoenix gets stunned, silenced, cycloned, hexed or slept.",
+        "Phoenix can use items and abilities without canceling Sun Ray."
       ],
-      "shard_loc": "Способность замедляет врагов на %shard_move_slow_pct%%%. Позволяет применять её под действием Supernova.",
+      "shard_loc": "Allows Sun Ray to be cast during Supernova, and slows affected enemies by %shard_move_slow_pct%%%.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Урон и лечение от этой способности увеличиваются по мере отдаления от её владельца, а враги, находящиеся ближе к концу луча, получают в %focal_point_blind_stack_multiplier% раза больше эффектов Blinding Sun. Сила луча начинает усиливаться в его середине и достигает %focal_point_max_multiplier%%% от базовых показателей на расстоянии %focal_point_full_length_tooltip_only%. Если длина луча превышает %focal_point_full_length_tooltip_only%, урон с лечением увеличиваются в соответствующем размере."
+        "Sun Ray does more damage/heal and applies %focal_point_blind_stack_multiplier%x Blinding Sun stacks to targets near the end of the beam. Beam intensity starts increasing at half the beam length, up to %focal_point_max_multiplier%%% of base damage/heal at %focal_point_full_length_tooltip_only% range. Increasing Sun Ray length to beyond %focal_point_full_length_tooltip_only% range will result in more than %focal_point_max_multiplier%%% damage and healing."
       ],
       "type": 0,
       "behavior": "16",
@@ -690,7 +690,7 @@
             5
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАТРАТЫ ЗДОРОВЬЯ В СЕКУНДУ:",
+          "heading_loc": "HEALTH COST PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -710,7 +710,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН В СЕКУНДУ:",
+          "heading_loc": "BASE DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -730,7 +730,7 @@
             6
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. УРОН ОТ ЗДОРОВЬЯ:",
+          "heading_loc": "MAX DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phoenix_5",
@@ -756,7 +756,7 @@
             16
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВОЕ ЛЕЧЕНИЕ В СЕКУНДУ:",
+          "heading_loc": "BASE HEAL PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -776,7 +776,7 @@
             2
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ЛЕЧЕНИЕ:",
+          "heading_loc": "MAX HEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -990,7 +990,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "MAX DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1073,7 +1073,7 @@
       "id": 1398,
       "name": "phoenix_blinding_sun",
       "name_loc": "Blinding Sun",
-      "desc_loc": "Отрицательные эффекты способностей этого героя каждую секунду накладывают складывающийся эффект, увеличивающий вероятность промаха атакой на %blind_per_second%%% и длящийся %blind_duration% сек.",
+      "desc_loc": "Phoenix ability debuffs apply a stackable %blind_per_second%%% Miss chance per second. Lasts %blind_duration% seconds.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1176,11 +1176,11 @@
       "id": 5630,
       "name": "phoenix_supernova",
       "name_loc": "Supernova",
-      "desc_loc": "Герой прекращает свою жизнь ради шанса переродиться. Он превращается в горящее солнце, которое могут уничтожить атаками вражеские герои. Солнце обжигает врагов в большом радиусе, а спустя %abilityduration% сек. взрывается, оглушая всех врагов вокруг. Герой появляется на месте взрыва с полным запасом здоровья, маны и без перезарядки на других способностях.\n\nТИП РАЗВЕИВАНИЯ: сильное",
-      "lore_loc": "Солнечный жар сверхновой звезды может быть смертелен, но из его пламени в бесконечность устремляются всё новые лучи.",
+      "desc_loc": "The Phoenix willingly ends its current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area. The sun can be destroyed by attacks from enemy Heroes. After %abilityduration% seconds the sun explodes, stunning all nearby enemies while restoring Phoenix to full health and mana with refreshed abilities.\n\nDISPEL TYPE: Strong Dispel",
+      "lore_loc": "The solar crucible of a Supernova may be fatal, yet from its flames arise new beacons to wander infinity.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает число атак для уничтожения солнца, а также позволяет применять эту способность на союзного героя, чтобы переродиться вместе с ним.",
+      "scepter_loc": "Increases number of attacks to destroy Supernova and allows Phoenix to cast Supernova on an allied hero, bringing both into the sun to be reborn together.",
       "facets_loc": [
         "",
         ""
@@ -1229,7 +1229,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1248,7 +1248,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1284,7 +1284,7 @@
             2.4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phoenix_2",
@@ -1309,7 +1309,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "АТАК ДЛЯ УНИЧТОЖЕНИЯ:",
+          "heading_loc": "ATTACKS TO DESTROY:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phoenix_1",
@@ -1332,7 +1332,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "АТАК ДЛЯ УНИЧТОЖЕНИЯ:",
+          "heading_loc": "ATTACKS TO DESTROY:",
           "bonuses": [
             {
               "name": "special_bonus_unique_phoenix_1",
@@ -1359,7 +1359,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "heading_loc": "CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1395,7 +1395,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1478,7 +1478,7 @@
     {
       "id": 406,
       "name": "special_bonus_unique_phoenix_6",
-      "name_loc": "+{s:bonus_slow_movement_speed_pct}% к замедлению от Icarus Dive",
+      "name_loc": "+{s:bonus_slow_movement_speed_pct}% Icarus Dive Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1540,7 +1540,7 @@
     {
       "id": 1566,
       "name": "special_bonus_unique_phoenix_blinding_sun_misschance",
-      "name_loc": "+{s:bonus_blind_per_second}% к шансу промаха от Blinding Sun",
+      "name_loc": "+{s:bonus_blind_per_second}% Blinding Sun Miss Chance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1602,7 +1602,7 @@
     {
       "id": 6401,
       "name": "special_bonus_unique_phoenix_3",
-      "name_loc": "+{s:bonus_damage_per_second} к урону в секунду от Fire Spirits",
+      "name_loc": "+{s:bonus_damage_per_second} Fire Spirits Damage Per Second",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1664,7 +1664,7 @@
     {
       "id": 6308,
       "name": "special_bonus_hp_regen_25",
-      "name_loc": "+{s:value} здоровья в секунду",
+      "name_loc": "+{s:value} Health Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1744,7 +1744,7 @@
     {
       "id": 6915,
       "name": "special_bonus_unique_phoenix_5",
-      "name_loc": "+{s:bonus_hp_perc_damage}% к макс. урону от здоровья у Sun Ray",
+      "name_loc": "+{s:bonus_hp_perc_damage}% Max Health Sun Ray Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1806,7 +1806,7 @@
     {
       "id": 6085,
       "name": "special_bonus_unique_phoenix_2",
-      "name_loc": "+{s:bonus_stun_duration} сек. оглушения от Supernova",
+      "name_loc": "+{s:bonus_stun_duration}s Supernova Stun Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1868,7 +1868,7 @@
     {
       "id": 6227,
       "name": "special_bonus_unique_phoenix_1",
-      "name_loc": "+{s:bonus_max_hero_attacks} к атакам для уничтожения у Supernova",
+      "name_loc": "+{s:bonus_max_hero_attacks} Supernova Hit Count",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1930,7 +1930,7 @@
     {
       "id": 6852,
       "name": "special_bonus_unique_phoenix_4",
-      "name_loc": "+{s:bonus_dash_length} к дальности полёта у Icarus Dive",
+      "name_loc": "+{s:bonus_dash_length} Icarus Dive Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1997,7 +1997,7 @@
           "id": 1397,
           "name": "phoenix_dying_light",
           "name_loc": "Dying Light",
-          "desc_loc": "Герой каждую секунду наносит врагам в радиусе %radius% магический урон в размере %damage_pct%%% от недостающего у него здоровья.",
+          "desc_loc": "Phoenix deals %damage_pct%%% of his missing health as magic damage to all enemies in a %radius% radius every second.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",

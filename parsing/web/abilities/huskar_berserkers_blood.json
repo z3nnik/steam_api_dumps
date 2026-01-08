@@ -1,235 +1,233 @@
-[
-  {
-    "id": 5273,
-    "name": "huskar_berserkers_blood",
-    "name_loc": "Berserker's Blood",
-    "desc_loc": "Раны делают героя сильнее, увеличивая его скорость атаки, сопротивление магии и восстановление здоровья в зависимости от доли недостающего здоровья. Восстановление равно доле от силы героя.",
-    "lore_loc": "Лишившись своего божественного предназначения, священный воин приобрел смертоносность в приземлённом бою — тем более значительную, чем больше пролито его собственной крови.",
-    "notes_loc": [
-      "Бонусы даются линейно: они отсутствуют при полном здоровье, а в полную силу действуют при менее чем %hp_threshold_max%%% здоровья."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "2",
-    "target_team": 1,
-    "target_type": 1,
-    "flags": 0,
-    "damage": 0,
-    "immunity": 0,
-    "dispellable": 0,
-    "max_level": 4,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      0
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      0
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "maximum_attack_speed",
-        "values_float": [
-          170,
-          220,
-          270,
-          320
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКС. СКОРОСТЬ АТАКИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5273,
+  "name": "huskar_berserkers_blood",
+  "name_loc": "Berserker's Blood",
+  "desc_loc": "Huskar's injuries feed his power, giving increased attack speed, magic resistance and health regen based on missing health. Health regen is a percentage of your strength.",
+  "lore_loc": "After losing his birthright, Huskar gained a lethality in physical combat that is only heightened as his own blood is spilled.",
+  "notes_loc": [
+    "Bonuses are provided linearly, no bonus at Full HP and full bonus at strictly less than %hp_threshold_max%%% HP."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "2",
+  "target_team": 1,
+  "target_type": 1,
+  "flags": 0,
+  "damage": 0,
+  "immunity": 0,
+  "dispellable": 0,
+  "max_level": 4,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    0
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "maximum_attack_speed",
+      "values_float": [
+        170,
+        220,
+        270,
+        320
+      ],
+      "is_percentage": false,
+      "heading_loc": "MAX ATTACK SPEED:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "maximum_health_regen",
-        "values_float": [
-          25,
-          40,
-          55,
-          70
-        ],
-        "is_percentage": true,
-        "heading_loc": "МАКС. ВОССТАНОВЛЕНИЕ ОТ СИЛЫ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_huskar_6",
-            "value": 30,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "maximum_health_regen",
+      "values_float": [
+        25,
+        40,
+        55,
+        70
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAX STR REGEN:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_huskar_6",
+          "value": 30,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "maximum_magic_resist",
-        "values_float": [
-          15,
-          20,
-          25,
-          30
-        ],
-        "is_percentage": true,
-        "heading_loc": "МАКС. СОПРОТИВЛЕНИЕ МАГИИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "maximum_magic_resist",
+      "values_float": [
+        15,
+        20,
+        25,
+        30
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAX MAGIC RESIST:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "hp_threshold_max",
-        "values_float": [
-          10
-        ],
-        "is_percentage": true,
-        "heading_loc": "ЗДОРОВЬЯ ДЛЯ МАКС. ЭФФЕКТА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "hp_threshold_max",
+      "values_float": [
+        10
+      ],
+      "is_percentage": true,
+      "heading_loc": "HP FOR MAX BONUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "activatable",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "activatable",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "activation_healthcost_pct",
-        "values_float": [
-          0
-        ],
-        "is_percentage": true,
-        "heading_loc": "РАСХОД ТЕКУЩЕГО ЗДОРОВЬЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "activation_healthcost_pct",
+      "values_float": [
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "CURRENT HP COST:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "activation_cooldown",
-        "values_float": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "ПЕРЕЗАРЯДКА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "activation_cooldown",
+      "values_float": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "COOLDOWN:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "activation_delay",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "ЗАДЕРЖКА ЛЕЧЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "activation_delay",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "CAUTERIZE DELAY:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "activation_heal_pct_per_debuff",
-        "values_float": [
-          0
-        ],
-        "is_percentage": true,
-        "heading_loc": "ЛЕЧЕНИЕ ОТ МАКС. ЗДОРОВЬЯ ЗА ОТРИЦ. ЭФФЕКТ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "activation_heal_pct_per_debuff",
+      "values_float": [
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAX HP HEAL PER DEBUFF:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

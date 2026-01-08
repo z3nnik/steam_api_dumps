@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_rattletrap",
   "order_id": 31,
   "name_loc": "Clockwerk",
-  "bio_loc": "Болтозвяк — выходец из того же смышлёного народца, что и Снайпер и Механик, и он также компенсирует свою низкорослость механическими приспособлениями и хитростью ума. Сын часовщика, Болтозвяк много лет учился ремеслу отца — до тех пор, пока война не сошла с гор и не унесла из равнинных поселений мирные профессии. «Теперь твоё ремесло — война», — сказал ему умирающий отец, пока деревня их прадедов дымилась, обугленная и сожжённая.\r\n\t\t\t\t<br><br>Плох тот ремесленник, который винит инструменты, и Болтозвяк был не из тех, что придумывал отговорки. Похоронив отца в руинах деревни, он устремился превратить себя в величайший инструмент войны всех миров и времён. Он поклялся, что его больше никогда не застанут врасплох — и соорудил, используя свои знания, механические доспехи, в сравнении с которыми снаряжение иноземцев было подобно консервным банкам. Теперь Болтозвяк живёт вместе со своими устройствами — некрупный, но смертоносный воин, разрушение и засада для которого стали способностями, работающими почти автоматически и точно, как часовой механизм. Механик смерти, он быстро кончает жизнь неподготовленных противников с помощью своих творений и несёт с собой новый век военной экипировки. Который час? Час Часовщика!",
-  "hype_loc": "Притягиваясь ко врагам <b>своим захватным крюком</b>, Clockwerk изолирует жертву и разрывает её на части <b>дезориентирующей шрапнелью</b>. Разведывая поле битвы своими <b>ракетами</b>, он всегда находит цель, на которую можно налететь.",
-  "npe_desc_loc": "Притягивается к врагам своим захватным крюком",
+  "bio_loc": "Rattletrap descends from the same far-flung kindred as Sniper and Tinker, and like many of the Keen Folk, has offset his diminutive stature through the application of gadgetry and wit.  The son of the son of a clockmaker, Rattletrap was many years apprenticed to that trade before war rode down from the mountains and swept the plains villages free of such innocent vocations.  \"Your new trade is battle,\" his dying father told him as the village of their ancestors lay in charred and smoking ruins.    \r\n\t\t\t\t<br><br>It is a poor tradesman who blames his tools, and Rattletrap was never one to make excuses.  After burying his father among the ruins of their village, he set about to transform himself into the greatest tool of warfare that any world had ever seen. He vowed to never again be caught unprepared, instead using his talents to assemble a suit of powered Clockwerk armor to make the knights of other lands look like tin cans by comparison.  Now Rattletrap is alive with devices, a small but deadly warrior whose skills at ambush and destruction have risen to near-automated levels of efficiency.  An artisan of death, his mechanizations make short work of the unwary, heralding a new dawn in this age of warfare.  What time is it? It's Clockwerk time!",
+  "hype_loc": "Launching himself into enemies with his <b>grappling hookshot</b>, Clockwerk isolates targets and blasts them apart with <b>disorienting shrapnel</b>. As he scouts the battlefield with his <b>handy flares</b>, he never has trouble finding targets to send himself toward.",
+  "npe_desc_loc": "Launches himself into enemies with his hookshot",
   "facets": [
     {
       "color": 5,
       "title_loc": "Hookup",
-      "description_loc": "Если в радиусе {s:bonus_radius_ally} вокруг цели Hookshot есть союзный герой, то владелец способности и все союзники в области действия получают бонус к броне, а сама способность перезаряжается быстрее и расходует меньше маны.",
+      "description_loc": "If there's another allied hero within {s:bonus_radius_ally} of Hookshot's hit target, Clockwerk and all allies in the area receive bonus armor, while refunding a portion of Hookshot's cooldown and manacost.",
       "name": "rattletrap_hookup",
       "icon": "cooldown",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Expanded Armature",
-      "description_loc": "Увеличивает радиус создания шестерней от способности Power Cogs.",
+      "description_loc": "Power Cogs form in a larger radius.",
       "name": "rattletrap_expanded_armature",
       "icon": "area_of_effect",
       "gradient_id": 2,
@@ -28,7 +28,7 @@
     {
       "color": 1,
       "title_loc": "Chainmeal",
-      "description_loc": "Герой может съесть Chainmail, чтобы навсегда получить +{s:bonus_armor_per_chainmail} к броне.",
+      "description_loc": "Clockwerk can consume Chainmails to permanently gain +{s:bonus_armor_per_chainmail} armor.",
       "name": "rattletrap_junk_mail",
       "icon": "armor",
       "gradient_id": 1,
@@ -75,10 +75,10 @@
       "id": 5237,
       "name": "rattletrap_battery_assault",
       "name_loc": "Battery Assault",
-      "desc_loc": "Выпускает высокомощную шрапнель в случайных существ неподалёку, нанося им незначительный магический урон и ненадолго их оглушая.",
-      "lore_loc": "Некоторые устройства Болтозвяка не работают так, как надо, так что в бою их можно просто взрывать.",
+      "desc_loc": "Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun.",
+      "lore_loc": "Some of Rattletrap's contraptions don't quite work correctly, so detonating them proves useful as an offensive maneuver.",
       "notes_loc": [
-        "Продолжает действовать, даже если герой выведен из строя."
+        "Remains active if Clockwerk is disabled."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -132,7 +132,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -149,7 +149,7 @@
             10.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -166,7 +166,7 @@
             0.7
           ],
           "is_percentage": false,
-          "heading_loc": "ИНТЕРВАЛ:",
+          "heading_loc": "INTERVAL:",
           "bonuses": [
             {
               "name": "special_bonus_unique_clockwerk",
@@ -192,7 +192,7 @@
             95
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_clockwerk_3",
@@ -281,16 +281,16 @@
       "id": 5238,
       "name": "rattletrap_power_cogs",
       "name_loc": "Power Cogs",
-      "desc_loc": "Создаёт вокруг героя кольцо заряженных шестерней, захватывая в ловушку всех ближайших существ. Шестерни отталкивают коснувшихся их снаружи врагов, сжигая ману и нанося как базовый урон, так и урон в размере %mana_burn_as_damage_pct%%% от сожжённой маны. Сработавшие шестерни отключаются. <br><br> Несколько вражеских атак уничтожат шестерню, а атака владельца оттолкнёт её на расстояние до %projectile_distance%.",
-      "lore_loc": "Часовщик очень гордится одним из своих изобретений — силовыми шестернями... хотя его соратники не всегда им рады.",
+      "desc_loc": "Forms a ring of energized cogs around Clockwerk, trapping any units that are near. Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down. Damage is increased by %mana_burn_as_damage_pct%%% of the mana burned.<br><br> Cogs can be destroyed by enemy attacks, but Clockwerk can push them up to %projectile_distance% distance away with one hit.",
+      "lore_loc": "One of Clockwerk's inventions of which he is most proud is the power cog - though it is sometimes despised by his allies.",
       "notes_loc": [
-        "Шестерни отталкивают невидимых врагов."
+        "Cogs can shock invisible units."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Увеличивает радиус создания шестерней от способности Power Cogs.",
+        "Power Cogs form in a larger radius.",
         ""
       ],
       "type": 0,
@@ -341,7 +341,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -361,7 +361,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -381,7 +381,7 @@
             140
           ],
           "is_percentage": false,
-          "heading_loc": "СЖИГАЕМАЯ МАНА:",
+          "heading_loc": "MANA BURN:",
           "bonuses": [
             {
               "name": "special_bonus_unique_clockwerk_2",
@@ -421,7 +421,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "АТАК ДЛЯ УНИЧТОЖЕНИЯ:",
+          "heading_loc": "ATTACKS REQUIRED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_clockwerk_5",
@@ -480,7 +480,7 @@
             215
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС СОЗДАНИЯ:",
+          "heading_loc": "FORMATION RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -681,8 +681,8 @@
       "id": 5239,
       "name": "rattletrap_rocket_flare",
       "name_loc": "Rocket Flare",
-      "desc_loc": "Выпускает сигнальную ракету в любую точку карты. Ракета даёт обзор указанной зоны на %duration% сек, наносит урон противникам и ненадолго замедляет их.",
-      "lore_loc": "Со временем праздничное представление превратилось в полезное орудие для разведки и бомбардировки.",
+      "desc_loc": "Fires a global range flare that explodes over a given area. Upon impact, enemies in the area take damage and are briefly slowed. Rocket flare provides vision over the impact area for %duration% seconds.",
+      "lore_loc": "What started as a festive display has become a useful scouting and bombardment tool.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -742,7 +742,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -796,7 +796,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -813,7 +813,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -830,7 +830,7 @@
             0.4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_clockwerk_7",
@@ -994,8 +994,8 @@
       "id": 321,
       "name": "rattletrap_overclocking",
       "name_loc": "Overclocking",
-      "desc_loc": "Перегружает способности героя: Battery Assault срабатывает на всех врагов в радиусе действия, Power Cogs увеличивает скорость атаки владельца внутри шестерней, Rocket Flare перезаряжается быстрее и выпускает по дополнительной ракете по бокам от цели, Hookshot оглушает дольше и в большей области, а Jetpack ускоряет сильнее. По окончании эффекта существенно замедляет передвижение и атаку владельца.",
-      "lore_loc": "Болтозвяк осознаёт предел возможностей своей брони и понимает, как он рискует, выходя за них во времена нужды.",
+      "desc_loc": "Supercharges Clockwerks abilities: Battery Assault affects all enemies in its range; Clockwerk's attack speed in Power Cogs is increased; Rocket Flares have a reduced cooldown and fire additional rockets to either side of the target; Hookshot stun radius and duration is increased; Jetpack moves faster. Clockwerk's movement and attack speed becomes slowed to a crawl after the duration runs out.",
+      "lore_loc": "Rattletrap understands the limitations of his armor. Just as he understands the risks of pushing past them in times of need.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1046,7 +1046,7 @@
             13
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1063,7 +1063,7 @@
             250
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ В ШЕСТЕРНЯХ:",
+          "heading_loc": "COGS BONUS ATTACK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1080,7 +1080,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SELF SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1097,7 +1097,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "БОНУС К РАДИУСУ HOOKSHOT:",
+          "heading_loc": "HOOKSHOT RADIUS BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1114,7 +1114,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "БОНУС К ДЛИТЕЛЬНОСТИ HOOKSHOT:",
+          "heading_loc": "HOOKSHOT DURATION BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1165,7 +1165,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ДОПОЛНИТЕЛЬНЫХ РАКЕТ:",
+          "heading_loc": "BONUS ROCKET FLARES:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1182,7 +1182,7 @@
             3.5
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА ROCKET FLARE:",
+          "heading_loc": "ROCKET FLARE COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1199,7 +1199,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ОТ JETPACK:",
+          "heading_loc": "JETPACK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1279,8 +1279,8 @@
       "id": 630,
       "name": "rattletrap_jetpack",
       "name_loc": "Jetpack",
-      "desc_loc": "Герой активирует свой реактивный ранец. Он увеличивает скорость передвижения владельца, а также дарует беспрепятственные передвижение и обзор, но запрещает атаковать и уменьшает скорость поворота. Во время действия эффект этой способности можно выключить или включить обратно.",
-      "lore_loc": "Хоть все четырнадцать испытательных манекенов и взорвались, но зато они летали!",
+      "desc_loc": "Clockwerk activates a jetpack, gaining flying movement, flying vision, and bonus movement speed. Clockwerk has a severely-limited turn rate during this time and cannot attack. Jetpack can be toggled on and off for the duration of the buff.",
+      "lore_loc": "Sure it's blown up over fourteen testing dummies, but at least they all flew!",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1331,7 +1331,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ДОПОЛНИТЕЛЬНАЯ СКОРОСТЬ:",
+          "heading_loc": "BONUS SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1382,7 +1382,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1445,15 +1445,15 @@
       "id": 5240,
       "name": "rattletrap_hookshot",
       "name_loc": "Hookshot",
-      "desc_loc": "Быстро выпускает захватное устройство в указанном направлении. Если крюк попадает в существо, владелец запускает себя в цель, оглушая всех в радиусе %stun_radius% вокруг неё и нанося им урон. Любые враги, с которыми владелец сталкивается по пути, также получают урон и оглушение.",
-      "lore_loc": "Несмотря на свою громоздкость, крюк способен отправить неуклюжую броню Часовщика в затяжной полёт.",
+      "desc_loc": "Fires a grappling device rapidly at the target location.  If the hook hits a unit, Clockwerk launches himself into the target, stunning and dealing damage to everyone in a %stun_radius% radius around the hit target.  Any enemies Clockwerk collides with along the way are damaged and stunned.",
+      "lore_loc": "A somewhat unwieldy device, the Hookshot sends the otherwise clunky Clockwerk armor flying through the air.",
       "notes_loc": [
-        "С помощью этой способности можно запустить себя в союзника, но он не получит урон и не будет оглушен."
+        "Hookshot will latch and take Clockwerk to allies, but not damage or disable them."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Если в радиусе %radius_ally% вокруг цели есть союзный герой, то владелец способности и все союзники в области действия получают бонус к броне, а сама способность перезаряжается быстрее и расходует меньше маны.",
+        "If there's another allied hero within %radius_ally% of Hookshot's hit target, Clockwerk and all allies in the area receive bonus armor, while refunding a portion of Hookshot's cooldown and manacost.",
         "",
         ""
       ],
@@ -1561,7 +1561,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ РАСХОДА МАНЫ И ПЕРЗАРЯДКИ:",
+          "heading_loc": "COOLDOWN/MANACOST REFUND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1580,7 +1580,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БРОНИ СОЮЗНИКАМ:",
+          "heading_loc": "ALLY ARMOR DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1601,7 +1601,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. БРОНЯ СОЮЗНИКАМ:",
+          "heading_loc": "ALLY ARMOR BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1624,7 +1624,7 @@
             1.6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1662,7 +1662,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_clockwerk_hookshot_damage",
@@ -1771,7 +1771,7 @@
       "id": 1295,
       "name": "rattletrap_armor_power",
       "name_loc": "Armor Power",
-      "desc_loc": "Урон, наносимый героем, увеличивается на %damage_per_armor%%% за каждую единицу его брони.",
+      "desc_loc": "Clockwerk's outgoing damage increases by %damage_per_armor%%% per point of armor.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1779,7 +1779,7 @@
       "facets_loc": [
         "",
         "",
-        "Герой может съесть Chainmail, чтобы навсегда получить +%armor_per_chainmail% к броне. Число таких бонусов не ограничено. Чтобы съесть предмет, примените его на себя."
+        "Clockwerk can consume Chainmails to permanently gain +%armor_per_chainmail% armor per Chainmail consumed. Can stack. Self-cast to consume."
       ],
       "type": 0,
       "behavior": "2",
@@ -1840,7 +1840,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН:",
+          "heading_loc": "OUTGOING DAMAGE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1965,7 +1965,7 @@
     {
       "id": 850,
       "name": "special_bonus_unique_clockwerk_7",
-      "name_loc": "+{s:bonus_slow_duration} сек. замедления от Rocket Flare",
+      "name_loc": "+{s:bonus_slow_duration}s Rocket Flare Slow Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2028,7 +2028,7 @@
     {
       "id": 8290,
       "name": "special_bonus_unique_clockwerk_hookshot_damage",
-      "name_loc": "+{s:bonus_damage} к урону от Hookshot",
+      "name_loc": "+{s:bonus_damage} Hookshot Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2091,7 +2091,7 @@
     {
       "id": 502,
       "name": "special_bonus_unique_clockwerk_5",
-      "name_loc": "+{s:bonus_attacks_to_destroy} к атакам для уничтожения шестерни",
+      "name_loc": "+{s:bonus_attacks_to_destroy} Power Cogs Hits To Kill",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2154,7 +2154,7 @@
     {
       "id": 6512,
       "name": "special_bonus_unique_clockwerk_3",
-      "name_loc": "+{s:bonus_damage} к урону от Battery Assault",
+      "name_loc": "+{s:bonus_damage} Battery Assault Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2217,7 +2217,7 @@
     {
       "id": 7028,
       "name": "special_bonus_unique_clockwerk_4",
-      "name_loc": "Rocket Flare раскрывает невидимость",
+      "name_loc": "Rocket Flare True Sight",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2280,7 +2280,7 @@
     {
       "id": 6364,
       "name": "special_bonus_unique_clockwerk_2",
-      "name_loc": "+{s:bonus_mana_burn} к сжигаемой мане у Power Cogs",
+      "name_loc": "+{s:bonus_mana_burn} Power Cogs Mana Burn",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2343,8 +2343,8 @@
     {
       "id": 614,
       "name": "special_bonus_unique_clockwerk_6",
-      "name_loc": "Невосприимчивость к эффектам внутри шестерней",
-      "desc_loc": "Также даёт +50% к сопротивлению магии.",
+      "name_loc": "Debuff Immunity Inside Power Cogs",
+      "desc_loc": "Also provides 50% magic resistance while Debuff Immune.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2406,7 +2406,7 @@
     {
       "id": 5977,
       "name": "special_bonus_unique_clockwerk",
-      "name_loc": "–{s:bonus_interval} сек. интервала у Battery Assault",
+      "name_loc": "-{s:bonus_interval}s Battery Assault Interval",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

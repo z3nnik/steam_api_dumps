@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_bane",
   "order_id": 70,
   "name_loc": "Bane",
-  "bio_loc": "Когда сами боги видят кошмарные сны, их приносит элементаль ужасов. Имя ему — Атропос, порождение ночных кошмаров богини Никташи. Сны не смогли сдержать страшную силу, и, вырвавшись из дрём матери, Атропос выкормился на её бессмертии и соткал себе туманную форму из её чернильной крови. Он —\r\n средоточие страха, и смертным, что слышат его голос, он нашёптывает их самые мрачные тайны. Атропос взывает к глубочайшим страхам в сердцах героев. Не спасёт жертву и бдение: неиссякаемая чёрная кровь элементаля обволакивает врагов кошмарной дрёмой, словно смола. Завидев на поле боя Атропоса, любой герой помнит: темноты нужно бояться.",
-  "hype_loc": "Bane наводит ужас на врагов своим арсеналом <b>обездвиживающих способностей</b>. Погружая противников в заразительные кошмары или удерживая их на месте, он даёт союзникам достаточно времени, чтобы прикончить неприятеля.",
-  "npe_desc_loc": "Выводит врагов из строя, усыпляя их",
+  "bio_loc": "When the gods have nightmares, it is Bane Elemental who brings them.  Also known as Atropos, Bane was born from the midnight terrors of the goddess Nyctasha.  A force of terror too powerful to be contained by sleep, he surfaced from her slumbers, fed upon her immortality, and stole his vaporous form from her inky blood.  He is the essence of fear.  Mortals who hear his voice hear their darkest secrets whispered in their ear.  He calls to the hidden fear in every Hero's heart.  Wakefulness is no protection, for Bane's black blood, continuously dripping, is a tar that traps his enemies in nightmare.  In the presence of Bane, every Hero remembers to fear the dark.",
+  "hype_loc": "Bane brings terror to his enemies with his arsenal of <b>disabling abilities</b>. Whether trapping a foe within a contagious nightmare, or gripping an enemy in place, he gives allies all the time they need to slay their enemy.",
+  "npe_desc_loc": "Puts his enemies to sleep, incapacitating them",
   "facets": [
     {
       "color": 5,
       "title_loc": "Dream Stalker",
-      "description_loc": "Герой атакует жертв Nightmare с увеличенной скоростью.",
+      "description_loc": "Bane has increased attack speed when attacking Nightmared units.",
       "name": "bane_dream_stalker",
       "icon": "damage",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 4,
       "title_loc": "Sleepwalk",
-      "description_loc": "Существа под действием Nightmare идут в указанном направлении.",
+      "description_loc": "Nightmared units walk in Bane's chosen direction.",
       "name": "bane_sleepwalk",
       "icon": "movement",
       "gradient_id": 1,
@@ -66,8 +66,8 @@
       "id": 5012,
       "name": "bane_enfeeble",
       "name_loc": "Enfeeble",
-      "desc_loc": "Наносит урон каждую секунду, а также снижает урон от атак и дальность применения заклинаний.",
-      "lore_loc": "Каждый отголосок страха, сотканного Атропосом, делает жертв уязвимыми пред магией и неизведанными силами.",
+      "desc_loc": "Deals damage every second and lowers the enemy's total attack damage and cast range.",
+      "lore_loc": "Each tendril of fear that Atropos weaves increases the vulnerability of his victims to arcane and unknown arts.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -129,7 +129,7 @@
             70
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА ОТ АТАК:",
+          "heading_loc": "ATTACK DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -146,7 +146,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ ДАЛЬНОСТИ ПРИМЕНЕНИЯ ЗАКЛИНАНИЙ:",
+          "heading_loc": "CAST RANGE REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bane_11",
@@ -169,7 +169,7 @@
             9
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -189,7 +189,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bane_10",
@@ -318,10 +318,10 @@
       "id": 5011,
       "name": "bane_brain_sap",
       "name_loc": "Brain Sap",
-      "desc_loc": "Высасывает жизненную энергию врага, нанося ему урон и восстанавливая здоровье героя.",
-      "lore_loc": "Атропос не знает большего счастья, чем пожинать плоды устрашения.",
+      "desc_loc": "Feasts on the vital energies of an enemy unit, healing Bane and dealing damage.",
+      "lore_loc": "Atropos finds no greater pleasure than to harvest the fear he creates.",
       "notes_loc": [],
-      "shard_loc": "Уменьшает перезарядку на %bonus_AbilityCooldown% сек. Способность применяется по области радиусом %shard_radius%. Только %shard_secondary_target_heal_pct%%% от урона вторичным целям восстанавливают здоровье владельцу.",
+      "shard_loc": "Reduces cooldown by %bonus_AbilityCooldown%. Causes Brain Sap to become a %shard_radius% AoE spell. Secondary targets only heal for %shard_secondary_target_heal_pct%%%.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -378,7 +378,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "ЛЕЧЕНИЕ/УРОН:",
+          "heading_loc": "HEAL/DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bane_2",
@@ -533,18 +533,18 @@
       "id": 5014,
       "name": "bane_nightmare",
       "name_loc": "Nightmare",
-      "desc_loc": "Погружает вражеского или союзного героя в сон, прерываемый уроном. Если пробудить спящее существо атакой, эффект передаётся атакующему. Владелец способности может беспрепятственно атаковать спящие цели и наносить им урон.",
-      "lore_loc": "Умение, украденное у богини Никташи, погружает жертву в бренный сон.",
+      "desc_loc": "Puts the target enemy or friendly Hero to sleep. Sleeping units are awakened when damaged. If the target was directly attacked, the Nightmare passes to the attacking unit. Bane can attack and damage Nightmared targets freely.",
+      "lore_loc": "A stolen prowess from the goddess Nyctasha is to put his prey into forever sleep.",
       "notes_loc": [
-        "В первую секунду действия цель способности неуязвима.",
-        "Владелец этой способности может пробудить сам себя.",
-        "Применение заменяет способность на Nightmare End, завершающую действие способности на всех жертв."
+        "In the first second of Nightmare, the unit is invulnerable.",
+        "Bane can wake himself from Nightmare.",
+        "On cast, replaced with Nightmare End: Ends all ongoing Nightmares on any affected units."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Герой атакует жертв Nightmare с увеличенной скоростью.",
-        "Существа под действием Nightmare идут в указанном направлении."
+        "Bane has increased attack speed when attacking Nightmared units.",
+        "Nightmared units walk in Bane's chosen direction."
       ],
       "type": 0,
       "behavior": "33554440",
@@ -637,7 +637,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK SPEED BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -712,7 +712,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "WALK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -771,7 +771,7 @@
             6.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -863,11 +863,11 @@
       "id": 5013,
       "name": "bane_fiends_grip",
       "name_loc": "Fiend's Grip",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — захватывает врага, оглушая его и нанося большой периодический урон. Также жертва каждые %fiend_grip_tick_interval% сек. теряет долю от максимального запаса маны, передавая её владельцу способности.",
-      "lore_loc": "Жертвы Атропоса растерзываются на куски созданиями из собственных кошмаров.",
+      "desc_loc": "CHANNELED - Grips an enemy unit, disabling it and causing heavy damage over time, while stealing mana every %fiend_grip_tick_interval% seconds based on the unit's maximum mana.",
+      "lore_loc": "Victims of Atropos are frequently torn apart by vivid conjurations of their own nightmares.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Уменьшает перезарядку на %bonus_AbilityCooldown% сек. Способность создаёт 2 неконтролируемые иллюзии, которые применяют Fiend's Grip на того же врага. Иллюзии получают %scepter_incoming_illusion_damage%%% урона и мгновенно умирают, если перестают применять способность. Урон от нескольких способностей Fiend's Grip не складывается.",
+      "scepter_loc": "Reduces Fiend's Grip cooldown by %bonus_AbilityCooldown%. Fiend's Grip now creates two uncontrollable illusions that are also channeling Fiend's Grip on the target. Illusions take %scepter_incoming_illusion_damage%%% incoming damage and immediately die if they are interrupted. Damage does not stack.",
       "facets_loc": [
         "",
         ""
@@ -937,7 +937,7 @@
             5
           ],
           "is_percentage": true,
-          "heading_loc": "КРАЖА МАНЫ В СЕКУНДУ:",
+          "heading_loc": "MANA DRAIN PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bane_9",
@@ -962,7 +962,7 @@
             150
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1036,7 +1036,7 @@
             5.75
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bane_3",
@@ -1128,7 +1128,7 @@
       "id": 1202,
       "name": "bane_ichor_of_nyctasha",
       "name_loc": "Ichor of Nyctasha",
-      "desc_loc": "Бонусы к атрибутам этого героя всегда распределяются равномерно (например, предмет, дающий 3 очка силы, увеличит силу, ловкость и интеллект на одно очко).",
+      "desc_loc": "Bane's attribute gains are always evenly distributed across all three attributes (items that grant +3 Strength will now grant +1 Str/Agi/Int).",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1191,7 +1191,7 @@
     {
       "id": 720,
       "name": "special_bonus_unique_bane_8",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальности применения Brain Sap",
+      "name_loc": "+{s:bonus_AbilityCastRange} Brain Sap Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1253,7 +1253,7 @@
     {
       "id": 979,
       "name": "special_bonus_unique_bane_11",
-      "name_loc": "+{s:bonus_cast_reduction}% к уменьш. дальности заклинаний от Enfeeble",
+      "name_loc": "+{s:bonus_cast_reduction}% Enfeeble Cast Range Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1315,7 +1315,7 @@
     {
       "id": 978,
       "name": "special_bonus_unique_bane_10",
-      "name_loc": "+{s:bonus_enfeeble_tick_damage} к урону в секунду от Enfeeble",
+      "name_loc": "+{s:bonus_enfeeble_tick_damage} Enfeeble Damage Per Second",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1377,7 +1377,7 @@
     {
       "id": 779,
       "name": "special_bonus_unique_bane_9",
-      "name_loc": "+{s:bonus_fiend_grip_mana_drain}% к краже маны у Fiend's Grip",
+      "name_loc": "+{s:bonus_fiend_grip_mana_drain}% Fiend's Grip Max Mana Drain",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1439,7 +1439,7 @@
     {
       "id": 476,
       "name": "special_bonus_unique_bane_5",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Nightmare",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Nightmare Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1501,7 +1501,7 @@
     {
       "id": 6141,
       "name": "special_bonus_movement_speed_30",
-      "name_loc": "+{s:value} к скорости передвижения",
+      "name_loc": "+{s:value} Movement Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1581,7 +1581,7 @@
     {
       "id": 6069,
       "name": "special_bonus_unique_bane_2",
-      "name_loc": "+{s:bonus_brain_sap_damage} к урону/лечению от Brain Sap",
+      "name_loc": "+{s:bonus_brain_sap_damage} Brain Sap Damage/Heal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1643,7 +1643,7 @@
     {
       "id": 6609,
       "name": "special_bonus_unique_bane_3",
-      "name_loc": "+{s:bonus_AbilityChannelTime} сек. действия Fiend's Grip",
+      "name_loc": "+{s:bonus_AbilityChannelTime}s Fiend's Grip Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

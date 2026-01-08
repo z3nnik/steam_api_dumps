@@ -1,296 +1,294 @@
-[
-  {
-    "id": 1662,
-    "name": "largo_amphibian_rhapsody",
-    "name_loc": "Amphibian Rhapsody",
-    "desc_loc": "Герой начинает выступление: он теряет возможность атаковать, а остальные его способности меняются на три песни, действующие только при попадании в ритм.\n\nПопадание в ритм даёт герою один складывающийся эффект грува, а промах — отнимает. Каждый такой эффект увеличивает броню владельца и снижает расход маны на песни. Если завершить выступление, весь грув пропадёт после небольшой задержки.",
-    "lore_loc": "Первый из Бардов-монахов сыграл песнь, что призвала живой остров и спасла странников, изгнанных из лесов Хмурых корней, от солёной смерти.",
-    "notes_loc": [
-      "Во время действия способности можно использовать предметы."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "Позволяет нажать клавиши двух песен одновременно, чтобы применить их вместе и нанести врагам в радиусе действия урон в размере %burst_damage% + %damage_per_stack% за каждый эффект грува.",
-    "facets_loc": [],
-    "type": 1,
-    "behavior": "70368882592260",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 0,
-    "dispellable": 0,
-    "max_level": 3,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      2
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      0
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "radius",
-        "values_float": [
-          750
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 1662,
+  "name": "largo_amphibian_rhapsody",
+  "name_loc": "Amphibian Rhapsody",
+  "desc_loc": "Largo gets ready to groove. He is disarmed and his ability bar switches to 3 song abilities, each with different effects. Songs are only effective if strummed on the beat.\n\nEvery time he strums successfully, he gains a stack of Groovin'. Each stack gives him bonus armor and reduces the mana cost of every song, but he loses a stack if he misses a beat. Stacks linger for a short duration when Largo's song ends.",
+  "lore_loc": "The very first Bard Monk played a song that summoned a living island and saved the Murkroot exiles from a salt-worn death.",
+  "notes_loc": [
+    "Items can be used while in this mode."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "Largo can play two songs per beat by strumming both at the same time. On beats when he strums two songs, Largo deals %burst_damage% + %damage_per_stack% magic damage per Groovin' stack to nearby enemies.",
+  "facets_loc": [],
+  "type": 1,
+  "behavior": "70368882592260",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 0,
+  "dispellable": 0,
+  "max_level": 3,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    2
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "radius",
+      "values_float": [
+        750
+      ],
+      "is_percentage": false,
+      "heading_loc": "RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "rhythm_interval",
-        "values_float": [
-          1
-        ],
-        "is_percentage": false,
-        "heading_loc": "ИНТЕРВАЛ РИТМА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "rhythm_interval",
+      "values_float": [
+        1
+      ],
+      "is_percentage": false,
+      "heading_loc": "BEAT INTERVAL:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "rhythm_grace_period",
-        "values_float": [
-          0.4
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "rhythm_grace_period",
+      "values_float": [
+        0.4
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "max_stacks",
-        "values_float": [
-          5
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКС. ЭФФЕКТОВ ГРУВА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "max_stacks",
+      "values_float": [
+        5
+      ],
+      "is_percentage": false,
+      "heading_loc": "MAX STACKS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "armor_per_stack",
-        "values_float": [
-          2,
-          3,
-          4
-        ],
-        "is_percentage": false,
-        "heading_loc": "БРОНЯ ЗА ЭФФЕКТ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "armor_per_stack",
+      "values_float": [
+        2,
+        3,
+        4
+      ],
+      "is_percentage": false,
+      "heading_loc": "ARMOR PER STACK:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "song_cost_reduction_per_stack_tooltip",
-        "values_float": [
-          1,
-          1.5,
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "СНИЖЕНИЕ РАСХОДА МАНЫ ЗА ЭФФЕКТ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "song_cost_reduction_per_stack_tooltip",
+      "values_float": [
+        1,
+        1.5,
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "SONG MANA COST REDUCTION PER STACK:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "stack_duration",
-        "values_float": [
-          5
-        ],
-        "is_percentage": false,
-        "heading_loc": "ЗАДЕРЖКА ГРУВА ПОСЛЕ ВЫСТУПЛЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "stack_duration",
+      "values_float": [
+        5
+      ],
+      "is_percentage": false,
+      "heading_loc": "STACK LINGER DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "double_song",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          1
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "double_song",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        1
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "armor_ally_pct",
-        "values_float": [],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_largo_6",
-            "value": 50,
-            "operation": 5
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "armor_ally_pct",
+      "values_float": [],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_largo_6",
+          "value": 50,
+          "operation": 5
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage_per_stack",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_largo_7",
-            "value": 7,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [
-          10,
-          15,
-          20
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "damage_per_stack",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_largo_7",
+          "value": 7,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [
+        10,
+        15,
+        20
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "burst_damage",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_largo_7",
-            "value": 14,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [
-          50
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "burst_damage",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_largo_7",
+          "value": 14,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [
+        50
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

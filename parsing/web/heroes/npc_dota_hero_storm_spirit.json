@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_storm_spirit",
   "order_id": 18,
   "name_loc": "Storm Spirit",
-  "bio_loc": "Райдзин Громокег — сила природы в самом буквальном смысле: это буйная энергия ветра и непогоды, заключённая в человеческом обличье. Как же он неистов, неудержим и задорен! Весёлый, словно любимый дядюшка, Райдзин заряжает всё вокруг своей искрящейся энергией. Но не всегда всё было именно так: начало его жизни положила трагедия. Много поколений назад, на плато за Скулящими горами, добрые люди страдали от голода и засухи. Обычный маг стихий Громокег запретным заклинанием призвал духа бури, умоляя его о дожде. Разгневанный дерзостью смертного, небесный Райдзин обрушил на землю потопы и ураганы. Громокег не мог противостоять духу, пока не произнёс самоубийственное заклятье, сковавшее их судьбы: он запер небесного духа в клетке собственного тела. С тех пор громогласный Райдзин и задорный Громокег навсегда стали жизнерадостным небожителем, ступающим по земле — и имя ему Райдзин Громокег.",
-  "hype_loc": "Storm Spirit не пропускает ни одного сражения. Он <b>молнией</b> проносится по карте, со всех сторон бьёт врагов своими <b>взрывными копиями</b> и <b>заряженными атаками</b> и исчезает с поля битвы, прежде чем шокированные противники успеют среагировать.",
-  "npe_desc_loc": "Проносится молнией по карте в поисках битвы",
+  "bio_loc": "Storm Spirit is literally a force of nature--the wild power of wind and weather, bottled in human form. And a boisterous, jovial, irrepressible form it is! As jolly as a favorite uncle, he injects every scene with crackling energy. But it was not always thus, and there was tragedy in his creation. Generations ago, in the plains beyond the Wailing Mountains, a good people lay starving in drought and famine. A simple elementalist, Thunderkeg by name, used a forbidden spell to summon the spirit of the storm, asking for rain. Enraged at this mortal's presumption, the Storm Celestial known as Raijin lay waste to the land, scouring it bare with winds and flood. Thunderkeg was no match for the Celestial--at least until he cast a suicidal spell that forged their fates into one: he captured the Celestial in the cage of his own body. Trapped together, Thunderkeg's boundless good humor fused with Raijin's crazed energy, creating the jovial Raijin Thunderkeg, a Celestial who walks the world in physical form. ",
+  "hype_loc": "Storm Spirit is never one to miss a fight. <b>Zipping</b> from across the battlefield in a bolt of lightning, he strikes enemies from every direction with <b>exploding remnants</b> and <b>charged attacks</b>, then disappears while his enemies are still scrambling to react.",
+  "npe_desc_loc": "Zips across the map to engage in fights",
   "facets": [
     {
       "color": 3,
       "title_loc": "Shock Collar",
-      "description_loc": "Если жертва Electric Vortex совершит атаку, на неё сработает отрицательный эффект способности Overload.",
+      "description_loc": "Electric Vortex applies a debuff that triggers an Overload Charge if they attack.",
       "name": "storm_spirit_shock_collar",
       "icon": "nuke",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 5,
       "title_loc": "Static Slide",
-      "description_loc": "Копия от Static Remnant идёт от владельца в указанную точку.",
+      "description_loc": "Static Remnants spawn at Storm Spirit and move to the target position.",
       "name": "storm_spirit_static_slide",
       "icon": "movement",
       "gradient_id": 3,
@@ -66,19 +66,19 @@
       "id": 5098,
       "name": "storm_spirit_static_remnant",
       "name_loc": "Static Remnant",
-      "desc_loc": "Создаёт свою энергетическую копию, которая существует %abilityduration% сек. и взрывается, если поблизости окажется враг.",
-      "lore_loc": "Самовлюблённость Райдзина Громокега поражает как его самого, так и всех окружающих.",
+      "desc_loc": "Creates an explosively charged image of Storm Spirit that lasts %abilityduration% seconds and will detonate and deal damage if an enemy unit comes near it.",
+      "lore_loc": "Raijin Thunderkeg's duality allows him to admire himself in shocking fashion.",
       "notes_loc": [
-        "Копия материализуется %static_remnant_delay% сек. после применения способности.",
-        "Пока копия жива, она даёт беспрепятственный обзор вокруг себя.",
-        "Взрыв задевает существ в радиусе %static_remnant_damage_radius%, но происходит только при приближении к копии на расстояние в %static_remnant_radius%.",
-        "Применив эту способность на себя, герой создаст копию на своём месте."
+        "Remnants take %static_remnant_delay% second to materialize after the spell is cast.",
+        "Remnants grant unobstructed vision for their duration.",
+        "The explosion actually hits units in a %static_remnant_damage_radius% radius, but will only be triggered in %static_remnant_radius%.",
+        "Can be self-cast to cast in place."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Копия от Static Remnant идёт от владельца в указанную точку."
+        "Static Remnants spawn at Storm Spirit and move to the target position."
       ],
       "type": 0,
       "behavior": "4",
@@ -145,7 +145,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -182,7 +182,7 @@
             280
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_storm_spirit_5",
@@ -224,7 +224,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ КОПИИ:",
+          "heading_loc": "REMNANT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -243,7 +243,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ОБЗОРА:",
+          "heading_loc": "VISION RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -372,13 +372,13 @@
       "id": 5099,
       "name": "storm_spirit_electric_vortex",
       "name_loc": "Electric Vortex",
-      "desc_loc": "Создаёт вихрь, затягивающий врага в место, где находится герой.",
-      "lore_loc": "Неистовая и неудержимая энергичность Райдзина часто втягивает других в напряжённую ситуацию.",
+      "desc_loc": "A vortex that pulls an enemy unit to Storm Spirit's location.",
+      "lore_loc": "Raijin's thunderous, boisterous energy often draws others into an electrifying situation.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Способность становится ненаправленной и применяется на всех врагов вокруг героя.",
+      "scepter_loc": "Electric Vortex affects all enemies within a radius around Storm Spirit.",
       "facets_loc": [
-        "Если враг совершит атаку в течение %enemy_overload_duration% сек. после того, как стал жертвой Electric Vortex, он ударит себя, и на него сработает отрицательный эффект способности Overload.",
+        "Electric Vortex applies a debuff to the enemy that lasts for %enemy_overload_duration%s making their next attack target themself and trigger an Overload Charge.",
         ""
       ],
       "type": 0,
@@ -438,7 +438,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИТЯГИВАНИЯ:",
+          "heading_loc": "PULL DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -506,7 +506,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -564,7 +564,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_storm_spirit",
@@ -656,13 +656,13 @@
       "id": 5100,
       "name": "storm_spirit_overload",
       "name_loc": "Overload",
-      "desc_loc": "Применение способностей создаёт заряд электричества, который наполняет следующую атаку героя. Она нанесёт урон всем врагам вокруг цели и замедлит их.",
-      "lore_loc": "Пуф! Бах! Вжих!",
+      "desc_loc": "Casting a spell creates an electrical charge, which is released in a burst on Storm's next attack, dealing damage and slowing nearby enemies.",
+      "lore_loc": "Pow!  Zip!  Zap!",
       "notes_loc": [
-        "Не срабатывает от использования предметов.",
-        "Эффекты этой способности не складываются."
+        "Using items doesn't trigger Overload.",
+        "Overload charges do not stack."
       ],
-      "shard_loc": "Позволяет активировать эту способность, чтобы наделить %shard_activation_charges% её зарядами владельца и союзных героев неподалёку. Заряды увеличивают скорость атаки и действуют %shard_activation_duration% сек. или пока не закончатся.",
+      "shard_loc": "Can be activated to grant Storm Spirit and nearby allied heroes %shard_activation_charges% Overload charges. Provides bonus Attack Speed. Lasts up to %shard_activation_duration% seconds or until the charges are depleted.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -710,7 +710,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -727,7 +727,7 @@
             -80
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_storm_spirit_overload_aspd",
@@ -750,7 +750,7 @@
             -90
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_storm_spirit_overload_aspd",
@@ -776,7 +776,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -793,7 +793,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЕЙСТВИЯ:",
+          "heading_loc": "ACTIVATION RADIUS:",
           "bonuses": [],
           "values_shard": [
             750
@@ -850,7 +850,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАСХОД МАНЫ:",
+          "heading_loc": "MANA COST:",
           "bonuses": [],
           "values_shard": [
             100
@@ -869,7 +869,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [
             30
@@ -888,7 +888,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "БОНУС К СКОРОСТИ АТАКИ:",
+          "heading_loc": "ATTACK SPEED BONUS:",
           "bonuses": [],
           "values_shard": [
             40
@@ -949,7 +949,7 @@
             0.8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -978,12 +978,12 @@
       "id": 5101,
       "name": "storm_spirit_ball_lightning",
       "name_loc": "Ball Lightning",
-      "desc_loc": "Герой оборачивается нестабильным электричеством и несётся по полю боя, пока не достигнет своей цели либо не исчерпает запас маны. Заклинание имеет начальную стоимость в %ball_lightning_initial_mana_base%+%ball_lightning_initial_mana_percentage%%% от общего запаса маны. Затем тратится %ball_lightning_travel_cost_base% единиц+0,75%% от общего запаса маны за каждые 100 единиц передвижения. Урон выражен в количестве урона за 100 единиц передвижения.",
-      "lore_loc": "Приближается буря.",
+      "desc_loc": "Storm Spirit becomes volatile electricity, charging across the battlefield until he depletes his mana or reaches his target. The activation mana cost is %ball_lightning_initial_mana_base%+%ball_lightning_initial_mana_percentage%%% of his total mana pool, and the cost per 100 units traveled is %ball_lightning_travel_cost_base%+%ball_lightning_travel_cost_percent%%% of his total mana pool.  Damage is expressed in damage per 100 units traveled.",
+      "lore_loc": "The Storm is coming in.",
       "notes_loc": [
-        "Во время полёта можно применять способности и предметы.",
-        "Уничтожает деревья.",
-        "Герой неуязвим во время действия этой способности."
+        "Abilities and items can be used while traveling.",
+        "This ability will destroy trees.",
+        "Storm Spirit is invulnerable during Ball Lightning."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1070,7 +1070,7 @@
             2300
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ:",
+          "heading_loc": "SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1087,7 +1087,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1121,7 +1121,7 @@
             0.65
           ],
           "is_percentage": true,
-          "heading_loc": "МАНЫ НА 100 ЕДИНИЦ ПЕРЕМЕЩЕНИЯ:",
+          "heading_loc": "MANA DRAIN PER 100 UNITS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1275,10 +1275,10 @@
       "id": 1231,
       "name": "storm_spirit_galvanized",
       "name_loc": "Galvanized",
-      "desc_loc": "За каждое убийство герой получает заряд, дающий +%mp_per_kill% к восстановлению маны, а при смерти теряет %charges_per_death% заряда. Изучение способности Ball Lightning увеличивает число зарядов на %charges_per_ult%. Кроме того, при каждом получении заряда восстановление маны навсегда увеличивается на %perma_mp_per_kill%.",
+      "desc_loc": "Storm Spirit gains a charge of %mp_per_kill% mana regeneration per kill. Loses %charges_per_death% charges per death. Leveling Ball Lightning gives Storm Spirit %charges_per_ult% bonus charges. Additionally every time he gains a charge he also gains %perma_mp_per_kill% Mana Regen permanently.",
       "lore_loc": "",
       "notes_loc": [
-        "Получение зарядов отключается истощением."
+        "Break disables the gaining of new stacks from kills."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1379,7 +1379,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1426,7 +1426,7 @@
     {
       "id": 1187,
       "name": "special_bonus_unique_storm_spirit_overload_aspd",
-      "name_loc": "+{s:bonus_overload_move_slow} к замедлению атаки/передв. от Overload",
+      "name_loc": "-{s:bonus_overload_move_slow} Overload Attack/Movement Speed Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1488,7 +1488,7 @@
     {
       "id": 7132,
       "name": "special_bonus_mp_regen_150",
-      "name_loc": "+{s:value} маны в секунду",
+      "name_loc": "+{s:value} Mana Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1568,7 +1568,7 @@
     {
       "id": 5903,
       "name": "special_bonus_hp_250",
-      "name_loc": "+{s:value} к здоровью",
+      "name_loc": "+{s:value} Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1648,7 +1648,7 @@
     {
       "id": 6916,
       "name": "special_bonus_unique_storm_spirit_5",
-      "name_loc": "+{s:bonus_static_remnant_damage} к урону от Static Remnant",
+      "name_loc": "+{s:bonus_static_remnant_damage} Static Remnant Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1710,7 +1710,7 @@
     {
       "id": 6167,
       "name": "special_bonus_unique_storm_spirit",
-      "name_loc": "+{s:bonus_AbilityDuration} сек. действия Electric Vortex",
+      "name_loc": "+{s:bonus_AbilityDuration}s Electric Vortex Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1772,7 +1772,7 @@
     {
       "id": 762,
       "name": "special_bonus_unique_storm_spirit_8",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Static Remnant",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Static Remnant Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1834,8 +1834,8 @@
     {
       "id": 627,
       "name": "special_bonus_unique_storm_spirit_7",
-      "name_loc": "{s:bonus_overload_bounces} отскока атаки с Overload",
-      "desc_loc": "Отскочившие атаки наносят {s:bonus_overload_damage_pct}% урона.",
+      "name_loc": "{s:bonus_overload_bounces}x Overload Attack Bounce",
+      "desc_loc": "Bouncing attacks deal {s:bonus_overload_damage_pct}% damage.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1896,8 +1896,8 @@
     {
       "id": 6908,
       "name": "special_bonus_unique_storm_spirit_4",
-      "name_loc": "Создание копии каждые {s:bonus_auto_remnant_interval} единиц в Ball Lightning",
-      "desc_loc": "Каждые {s:bonus_auto_remnant_interval} единиц, преодолённых под эффектом Ball Lightning, создаётся копия героя от Static Remnant.",
+      "name_loc": "{s:bonus_auto_remnant_interval} Distance Auto Remnant in Ball Lightning",
+      "desc_loc": "Every {s:bonus_auto_remnant_interval} distance travelled in Ball Lightning creates a Static Remnant.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",

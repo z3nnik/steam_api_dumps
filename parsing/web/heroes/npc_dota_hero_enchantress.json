@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_enchantress",
   "order_id": 37,
   "name_loc": "Enchantress",
-  "bio_loc": "Аюшта кажется невинным и беззаботным лесным существом, и пусть это первое впечатление не обманчиво, оно едва ли раскрывает её натуру. Аюшта прекрасно понимает, отчего страдает природа. Она прошла многими тропами, приветливыми и угрюмыми лесами, бывала во всех краях в любое время года — и всюду искала дружбы, несла вести, смех и исцеление. Иначе никак: где разразилась война, там лес идёт на суда и осадные орудия, а в мирных местах деревья вырубают, чтобы строить дома и топить бесчисленные очаги.\r\n\t\t\t\t<br><br>Аюшта внимает мольбам беззащитных существ, которые так нуждаются в лиственной тени и зелёном крове. Она прислушивается к тем, до кого никому нет дела, и несёт их истории по всему миру, уверенная в том, что её доброе слово — словно чары, от которых наш мир расцветёт.",
-  "hype_loc": "Опасная вблизи и смертоносная на расстоянии, Enchantress <b>пронзает врагов</b> атаками, которые становятся тем сильнее, чем больше расстояние до цели. Благодаря способности <b>замедлять своих врагов</b> и <b>зачаровать лесных существ</b> она всегда найдёт способ одержать победу в схватке.",
-  "npe_desc_loc": "Переманивает нейтральных крипов на свою сторону",
+  "bio_loc": "Aiushtha appears to be an innocent, carefree creature of the woods, and while this is certainly true, it is hardly the sum of her story. She well understands the suffering of the natural world. She has wandered far, and fared through forests bright and drear, in every clime and every season, gathering friends, sharing news, bringing laughter and healing wherever she goes. For in worlds wracked by war, forests are leveled for the building of ships and siege engines; and even in places of peace, the woods are stripped for the building of homes, and as fuel for countless hearths.\r\n\t\t\t\t<br><br>Aiushtha hears the pleas of the small creatures, the furtive folk who need green shade and a leafy canopy to thrive. She lends her ears to those who have no other listeners. She carries their stories from the wood to the world, believing that her own good cheer is a kind of Enchantment, that can itself fulfill the promise of a verdant future.",
+  "hype_loc": "Harmful up close and lethal at a distance, Enchantress <b>skewers foes</b> with attacks imbued to become more damaging the further they fly. Whether inflicting <b>powerful slows</b> on her enemies or <b>charming forest creatures</b> to fight her battles, she is never short of tools to win a fight.",
+  "npe_desc_loc": "Enchants neutral creeps to do her bidding",
   "facets": [
     {
       "color": 2,
       "title_loc": "Overprotective Wisps",
-      "description_loc": "При получении урона призывает исцеляющих светлячков.",
+      "description_loc": "Summon Healing Wisps upon receiving damage.",
       "name": "enchantress_overprotective_wisps",
       "icon": "healing",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 1,
       "title_loc": "Spellbound",
-      "description_loc": "Увеличивает дальность применения Enchant и дальность атак по цели этой способности.",
+      "description_loc": "Enchant and attacks on Enchanted targets have extra range.",
       "name": "enchantress_spellbound",
       "icon": "range",
       "gradient_id": 2,
@@ -66,11 +66,11 @@
       "id": 5270,
       "name": "enchantress_impetus",
       "name_loc": "Impetus",
-      "desc_loc": "Усиливает атаки героя, добавляя к ним урон, зависящий от расстояния до цели: чем она дальше, тем урон больше. Наносит иллюзиям двойной урон.",
-      "lore_loc": "Несмотря на то что Аюшта преследует мирные цели, она вполне способна нанести магический удар издалека: её копья черпают энергию из окружающей природы.",
+      "desc_loc": "Places an enchantment on each attack while activated, causing it to deal additional damage based on how far away the target is.  The farther the target, the greater the damage dealt. Deals double damage to illusions.",
+      "lore_loc": "While Aiushtha favors peaceful means, she is capable of a magical onslaught from a distance, her spears gaining energy from the natural life around her.",
       "notes_loc": [
-        "Максимальный урон достигается на расстоянии в %distance_cap%.",
-        "Расстояние измеряется в момент, когда снаряд достигнет цели."
+        "The damage is capped at %distance_cap% distance.",
+        "Distance to target is measured when the projectile hits."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -133,7 +133,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ РАССТОЯНИЯ:",
+          "heading_loc": "DISTANCE DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_enchantress_4",
@@ -276,16 +276,16 @@
       "id": 5268,
       "name": "enchantress_enchant",
       "name_loc": "Enchant",
-      "desc_loc": "Герой очаровывает выбранного врага. Если это крип, то он на %dominate_duration% сек. переходит под контроль героя, получая бонус к урону от атак и максимальному здоровью. Применение на крипа даёт %xp_gain_pct%%% от опыта за его убийство.\n\nЕсли целью является вражеский герой, способность замедляет его на %slow_duration% сек. и применяет на него развеивание.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "Как истинная хранительница леса, Аюшта дружна со всеми в нём — от низших троллей до могучих кентавров.",
+      "desc_loc": "Enchantress charms an enemy. If the enemy is a hero, they are dispelled and slowed for %slow_duration%s.\n\n If the enemy is a creep, she brings it under her control and receives %xp_gain_pct%%% of their experience bounty.  Enchantress can control creeps for up to %dominate_duration%s. \n\nDISPEL TYPE: Basic Dispel",
+      "lore_loc": "A true steward of the forest, Aiushtha befriends all within it - from lowly trolls to powerful centaurs.",
       "notes_loc": [
-        "Иллюзии тоже можно переманить на свою сторону."
+        "Illusions can be converted."
       ],
       "shard_loc": "",
-      "scepter_loc": "Позволяет взять под контроль нескольких крипов одновременно.",
+      "scepter_loc": "Enchantress can control multiple creeps at a time.",
       "facets_loc": [
         "",
-        "Увеличивает дальность применения. Владелец этой способности и подконтрольные ему существа атакуют её жертву с большего расстояния."
+        "Cast Range of Enchant is increased. If the enemy is a hero, Enchantress and units she controls have increased attack range against the target."
       ],
       "type": 0,
       "behavior": "8",
@@ -341,7 +341,7 @@
             -60
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ГЕРОЕВ:",
+          "heading_loc": "HERO MOVE SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -381,7 +381,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK RANGE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -426,7 +426,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "УВЕЛИЧЕНИЕ ЗДОРОВЬЯ КРИПУ:",
+          "heading_loc": "CREEP MAX HEALTH BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -446,7 +446,7 @@
             60
           ],
           "is_percentage": false,
-          "heading_loc": "УВЕЛИЧЕНИЕ УРОНА КРИПУ:",
+          "heading_loc": "CREEP ATTACK DAMAGE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -483,7 +483,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. УРОВЕНЬ КРИПА:",
+          "heading_loc": "CREEP MAX LEVEL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -500,7 +500,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ОЧАРОВАННЫХ КРИПОВ:",
+          "heading_loc": "MAX ENCHANTED CREEPS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -606,7 +606,7 @@
             650
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "heading_loc": "CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -694,16 +694,16 @@
       "id": 5269,
       "name": "enchantress_natures_attendants",
       "name_loc": "Nature's Attendants",
-      "desc_loc": "Призывает рой светлячков, которые лечат героя и всех ближайших союзников.",
-      "lore_loc": "Капризные духи леса очень слабы поодиночке, но стоит им собраться в рой, как их исцеляющая сила многократно возрастает.",
+      "desc_loc": "A cloud of wisps heals Enchantress and any friendly units nearby.",
+      "lore_loc": "Whimsical spirits of the woods possess a healing power that is quite subtle, but gains strength in numbers.",
       "notes_loc": [
-        "Светлячки не следуют за союзниками с полным запасом здоровья.",
-        "Призыв светлячков при получении урона отключается истощением."
+        "Units with full HP will not be selected for the heal.",
+        "Break disables Overprotective Wisps."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Когда владелец этой способности получает больше %overprotective_damage_threshold% урона от вражеских героев, его в течение %overprotective_wisp_duration% сек. излечивает %overprotective_wisp_count% светлячок. Одновременно может существовать до %overprotective_max_wisps% светлячков, полученных таким образом.",
+        "Whenever Enchantress takes more than %overprotective_damage_threshold% damage from enemy heroes, %overprotective_wisp_count% wisp appears for %overprotective_wisp_duration%s to heal her. A maximum of %overprotective_max_wisps% overprotective wisps can exist at the same time.",
         ""
       ],
       "type": 0,
@@ -754,7 +754,7 @@
             13
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -791,7 +791,7 @@
             16
           ],
           "is_percentage": false,
-          "heading_loc": "ЛЕЧЕНИЕ В СЕКУНДУ:",
+          "heading_loc": "HEAL PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_enchantress_5",
@@ -814,7 +814,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -831,7 +831,7 @@
             9
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО СВЕТЛЯЧКОВ:",
+          "heading_loc": "WISPS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_enchantress_2",
@@ -970,7 +970,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. СУММАРНОЕ ЛЕЧЕНИЕ:",
+          "heading_loc": "TOTAL MAX HEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1050,8 +1050,8 @@
       "id": 320,
       "name": "enchantress_bunny_hop",
       "name_loc": "Sproink",
-      "desc_loc": "Герой отскакивает назад, уворачиваясь от летящих в него снарядов, и запускает копья с эффектом Impetus в самых отдалённых врагов в радиусе своей атаки + %bonus_attack_range%. Число целей: %attack_targets%.",
-      "lore_loc": "Вот так прыг да скок.",
+      "desc_loc": "Leaps backward, dodges incoming projectiles, and launches an Impetus attack on the %attack_targets% furthest enemy units within Enchantress' attack range + %bonus_attack_range%.",
+      "lore_loc": "Sproink is as Sproink does.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1101,7 +1101,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ СКАЧКА:",
+          "heading_loc": "LEAP DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1152,7 +1152,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ЦЕЛЕЙ:",
+          "heading_loc": "TARGETS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1169,7 +1169,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "BONUS RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1232,8 +1232,8 @@
       "id": 981,
       "name": "enchantress_little_friends",
       "name_loc": "Little Friends",
-      "desc_loc": "Накладывает оцепенение на выбранное вражеское существо. Все союзные, вражеские и нейтральные крипы в радиусе действия атакуют цель способности, имея увеличенную скорость передвижения и атаки. Действует %duration% сек.",
-      "lore_loc": "Законы леса полны неясностей, но за их нарушение тебя накажут быстро и с лучистой улыбкой.",
+      "desc_loc": "Enchantress roots an enemy unit. All creeps, ally, enemy and neutral within a radius will gain bonus movement and attack speed and attack the chosen target for %duration% seconds.",
+      "lore_loc": "The laws of the forest may be oblique, but punishment for breaking them is swift and smiling.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1300,7 +1300,7 @@
             70
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1317,7 +1317,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1334,7 +1334,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1351,7 +1351,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "МИН. ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ:",
+          "heading_loc": "MINIMUM ROOT DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1368,7 +1368,7 @@
             0.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ ЗА СУЩЕСТВО:",
+          "heading_loc": "ROOT DURATION PER UNIT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1465,11 +1465,11 @@
       "id": 5267,
       "name": "enchantress_untouchable",
       "name_loc": "Untouchable",
-      "desc_loc": "Пленённые красотой героя, противники атакуют его с уменьшенной скоростью.",
-      "lore_loc": "После нападения на Аюшту большинство соперников испытывают чувство вины за то, что осмелились поднять руку на такую прекрасную деву.",
+      "desc_loc": "Enchantress beguiles her enemies, slowing their attacks when she is attacked.",
+      "lore_loc": "After attacking Aiushtha, most opponents are overwhelmed with guilt having attacked such a natural beauty.",
       "notes_loc": [
-        "Замедляются все существа, которые собираются совершить атаку по герою.",
-        "Замедление срабатывает при начале атаки, а не после её завершения."
+        "All units who directly attack Enchantress will get slowed.",
+        "The slow is applied on the attacking unit when the attack starts, not when damage is applied."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1521,7 +1521,7 @@
             -210
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_enchantress_3",
@@ -1573,10 +1573,10 @@
       "id": 1464,
       "name": "enchantress_rabblerouser",
       "name_loc": "Rabble-Rouser",
-      "desc_loc": "Все крипы в нейтральных лагерях и под контролем владельца этой способности наносят больше урона вражеским героям.",
+      "desc_loc": "All neutral camps and Creeps under Enchantress' control deal more damage to enemy heroes.",
       "lore_loc": "",
       "notes_loc": [
-        "Не действует на подчинённых нейтральных крипов, Терзателей и Рошана."
+        "Does not affect converted neutrals, Tormentor, or Roshan."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1626,7 +1626,7 @@
             4
           ],
           "is_percentage": true,
-          "heading_loc": "УВЕЛИЧЕНИЕ УРОНА:",
+          "heading_loc": "DAMAGE INCREASE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1656,8 +1656,8 @@
     {
       "id": 1174,
       "name": "special_bonus_unique_enchantress_enchant_armor",
-      "name_loc": "+{s:bonus_bonus_armor} к броне героя и его существ",
-      "desc_loc": "Действует, только если изучена способность Enchant",
+      "name_loc": "+{s:bonus_bonus_armor} Armor for Enchantress and her units",
+      "desc_loc": "Requires at least 1 level of Enchant",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1718,7 +1718,7 @@
     {
       "id": 8432,
       "name": "special_bonus_unique_enchantress_6",
-      "name_loc": "Nature's Attendants ускоряет передв. на {s:bonus_movespeed}",
+      "name_loc": "+{s:bonus_movespeed} Movespeed during Nature's Attendants",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1780,8 +1780,8 @@
     {
       "id": 1541,
       "name": "special_bonus_unique_enchantress_enchant_attackspeed",
-      "name_loc": "+{s:bonus_bonus_attackspeed} к скорости атаки героя и его существ",
-      "desc_loc": "Действует, только если изучена способность Enchant",
+      "name_loc": "+{s:bonus_bonus_attackspeed} Attack Speed for Enchantress and her units",
+      "desc_loc": "Requires at least 1 level of Enchant",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1842,7 +1842,7 @@
     {
       "id": 6648,
       "name": "special_bonus_unique_enchantress_5",
-      "name_loc": "+{s:bonus_heal} к лечению от Nature's Attendants",
+      "name_loc": "+{s:bonus_heal} Nature's Attendants Heal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1904,7 +1904,7 @@
     {
       "id": 6086,
       "name": "special_bonus_unique_enchantress_2",
-      "name_loc": "+{s:bonus_wisp_count} к числу светлячков от Nature's Attendants",
+      "name_loc": "+{s:bonus_wisp_count} Nature's Attendants Wisps",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1966,8 +1966,8 @@
     {
       "id": 1130,
       "name": "special_bonus_unique_enchantress_enchant_health_damage",
-      "name_loc": "+{s:bonus_bonus_health}/{s:bonus_bonus_damage} к здоровью/урону героя и его существ",
-      "desc_loc": "Действует, только если изучена способность Enchant",
+      "name_loc": "+{s:bonus_bonus_health} Health / +{s:bonus_bonus_damage} Damage  for Enchantress and her units",
+      "desc_loc": "Requires at least 1 level of Enchant",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2028,7 +2028,7 @@
     {
       "id": 6515,
       "name": "special_bonus_unique_enchantress_4",
-      "name_loc": "+{s:bonus_distance_damage_pct}% к урону от Impetus",
+      "name_loc": "+{s:bonus_distance_damage_pct}% Impetus Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2090,7 +2090,7 @@
     {
       "id": 6379,
       "name": "special_bonus_unique_enchantress_3",
-      "name_loc": "+{s:bonus_slow_attack_speed} к замедлению атаки от Untouchable",
+      "name_loc": "+{s:bonus_slow_attack_speed} Untouchable Attack Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

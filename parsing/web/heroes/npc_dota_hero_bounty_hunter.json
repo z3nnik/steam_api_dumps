@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_bounty_hunter",
   "order_id": 64,
   "name_loc": "Bounty Hunter",
-  "bio_loc": "Жертвы рассказывают многое об охотнике за головами по имени Гондар — и никто не знает, что из этого правда. Кто-то шепчет о том, что его бросили ещё котёнком, и ему пришлось научиться охоте, лишь чтобы выжить. Другие слышали, что война лишила беднягу семьи, и того взял под крыло великий охотник Сорук, который научил сироту обращаться с клинками и вместе с ним прочёсывал тёмные рощи, выходя на большую охоту. А некоторые считают, что Гондар был обычным уличным оборванцем, взращённым в гильдии карманников и воров, где он и научился скрываться и запутывать следы. Его жертвы собираются вокруг костров в диких землях и делятся слухами, всё больше страшась головореза: например, поговаривают, что это он выследил короля Гоффа — безумного тирана, годами скрывавшегося от правосудия, — и в доказательство принёс его голову и скипетр. И что он проник в лагерь повстанцев на Хайсите, схватил там легендарного вора по прозвищу Белый плащ и доставил его до суда. А ещё — что именно он положил конец охотнику Соруку, которого объявили вне закона за убийство лучшего бугая принца. Так и расходятся истории о невероятных способностях Гондара, в которых одна авантюра невероятнее другой, а неуловимых целей будто бы не существует. Жертвы знают: за хорошую цену выследить можно кого угодно. За хорошую цену даже за самыми могущественными явится смерть из тени.",
-  "hype_loc": "Bounty Hunter <b>незримо крадётся</b> по следам своих врагов и не даёт им скрыться из виду. Когда его жертва падает замертво, он и его союзники получают <b>хорошую прибыль</b>.",
-  "npe_desc_loc": "Крадёт у врагов золото и получает дополнительную награду за их убийство",
+  "bio_loc": "When the hunted tell tales of Gondar the Bounty Hunter, none are sure of which are true. In whispered tones they say he was abandoned as a kit, learning his skill in tracking as a matter of simple survival. Others hear he was an orphan of war, taken in by the great Soruq the Hunter to learn the master's skill with a blade as they plumbed the dark forests for big game. Still others believe he was a lowly street urchin raised among a guild of cutpurses and thieves, trained in the arts of stealth and misdirection. Around campfires in the wild countryside his quarry speaks the rumors of Gondar's work, growing ever more fearful: they say it was he who tracked down the tyrant King Goff years after the mad regent went into hiding, delivering his head and scepter as proof. That it was he who infiltrated the rebel camps at Highseat, finally bringing the legendary thief White Cape to be judged for his crimes. And that it was he who ended the career of Soruq the Hunter, condemned as a criminal for killing the Prince's prized hellkite. The tales of Gondar's incredible skill stretch on, with each daring feat more unbelievable than the last, each target more elusive. For the right price, the hunted know, anyone can be found. For the right price, even the mightiest may find fear in the shadows.",
+  "hype_loc": "Sneaking <b>invisibly</b> at the heels of his enemies, Bounty Hunter is always keeping track of his foes. Whenever one of his targets falls in battle, he and his allies stand to <b>make quite a profit</b>.",
+  "npe_desc_loc": "Loots and collects bounties off of his enemies",
   "facets": [
     {
       "color": 0,
       "title_loc": "Through and Through",
-      "description_loc": "Снаряд Shuriken Toss наносит урон всем врагам, через которых проходит, и замедляет их.",
+      "description_loc": "Shuriken Toss applies its damage and slow to all enemies it passes through.",
       "name": "bounty_hunter_shuriken",
       "icon": "nuke",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 1,
       "title_loc": "Cutpurse",
-      "description_loc": "Герой крадёт золото у вражеских героев, ставших целью его способности или предмета.",
+      "description_loc": "Bounty Hunter steals gold when targeting enemy heroes with his abilities or items.",
       "name": "bounty_hunter_mugging",
       "icon": "gold",
       "gradient_id": 0,
@@ -66,13 +66,13 @@
       "id": 1314,
       "name": "bounty_hunter_shuriken_toss",
       "name_loc": "Shuriken Toss",
-      "desc_loc": "Запускает во врага смертоносный сюрикен, наносящий урон и на %slow_duration% сек. замедляющий передвижение цели на %slow%%%. Сюрикен отскакивает к помеченным способностью Track противникам на расстоянии %bounce_aoe%.",
-      "lore_loc": "Пусть сюрикены и малы, но поразительная точность Гондара делает их невероятно опасными.",
+      "desc_loc": "Hurls a deadly shuriken at an enemy unit, dealing damage and slowing the target's Movement Speed by %slow%%% for %slow_duration%s.  The shuriken will bounce to any Tracked units who are within a %bounce_aoe% radius of each other.",
+      "lore_loc": "While the shuriken may be small, Gondar's precise aim can cause critical damage.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает дальность применения и добавляет к сюрикену эффект способности Jinada.",
+      "scepter_loc": "Increases cast range and applies Jinada on hit.",
       "facets_loc": [
-        "Снаряд Shuriken Toss наносит урон всем врагам, через которых проходит, и замедляет их.",
+        "Shuriken Toss applies its damage and slow to all enemies it passes through.",
         ""
       ],
       "type": 0,
@@ -129,7 +129,7 @@
             310
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bounty_hunter_2",
@@ -306,7 +306,7 @@
             525
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "heading_loc": "CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -391,8 +391,8 @@
       "id": 5286,
       "name": "bounty_hunter_jinada",
       "name_loc": "Jinada",
-      "desc_loc": "Герой тщательно продумывает следующую атаку, нанося дополнительный урон и воруя ненадёжное золото жертвы.",
-      "lore_loc": "Огромный опыт Гондара помогает ему никогда не оставаться с пустыми руками после сделки.",
+      "desc_loc": "Bounty Hunter plans his next hit, dealing bonus damage and stealing some unreliable gold.",
+      "lore_loc": "Gondar's vast experience ensures he never walks away from a transaction empty-handed.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -451,7 +451,7 @@
             175
           ],
           "is_percentage": false,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -471,7 +471,7 @@
             36
           ],
           "is_percentage": false,
-          "heading_loc": "ПОХИЩЕНИЕ ЗОЛОТА:",
+          "heading_loc": "GOLD STEAL:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bounty_hunter",
@@ -549,10 +549,10 @@
       "id": 5287,
       "name": "bounty_hunter_wind_walk",
       "name_loc": "Shadow Walk",
-      "desc_loc": "Герой становится невидимым и получает возможность проходить сквозь существ до тех пор, пока не атакует или не применит другую способность. Атака из невидимости ненадолго оглушит жертву.",
-      "lore_loc": "Придворные шуты, узревшие убийство короля Гоффа, смогли разглядеть лишь танцующую тень.",
+      "desc_loc": "Bounty Hunter becomes invisible and gains the ability to move through other units until he attacks or uses an ability.  If he breaks the invisibility with an attack, that attack will stun the target for a short duration.",
+      "lore_loc": "The court jesters present during King Goff's assassination can recount no other image than a dancing shadow.",
       "notes_loc": [
-        "Не останавливает прерываемые заклинания."
+        "Will not break most channeling of spells upon activation."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -611,7 +611,7 @@
             35
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ НЕВИДИМОСТИ:",
+          "heading_loc": "INVISIBILITY DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -631,7 +631,7 @@
             0.25
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДО НЕВИДИМОСТИ:",
+          "heading_loc": "FADE TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -651,7 +651,7 @@
             1.6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -781,8 +781,8 @@
       "id": 1136,
       "name": "bounty_hunter_wind_walk_ally",
       "name_loc": "Friendly Shadow",
-      "desc_loc": "Применяет Shadow Walk и все её бонусы на выбранного союзника с задержкой в %fade_time% сек. Применение этой способности не снимает невидимость с владельца.",
-      "lore_loc": "Полезный трюк для редких случаев, когда награду дадут лишь за живого, а на охоту вышел не ты один.",
+      "desc_loc": "Applies Shadow Walk and all of its bonuses to the target ally. Allied fade time is %fade_time%s. Does not break Bounty Hunter's invisibility when cast.",
+      "lore_loc": "Useful for the rare instances when a contested bounty is actually wanted alive.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -915,7 +915,7 @@
       "id": 1316,
       "name": "bounty_hunter_big_game_hunter",
       "name_loc": "Big Game Hunter",
-      "desc_loc": "Участие в убийстве врага, совершившего серию убийств, приносит этому герою на %bonus_killstreak_bounty%%% больше золота.",
+      "desc_loc": "When getting a kill or assist on an enemy that has a killing streak, Bounty Hunter receives %bonus_killstreak_bounty%%% extra gold.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -995,13 +995,13 @@
       "id": 5288,
       "name": "bounty_hunter_track",
       "name_loc": "Track",
-      "desc_loc": "Помечает вражеского героя, раскрывая его невидимость, увеличивая получаемый им урон и показывая его запас золота. Владелец способности получает дополнительную скорость передвижения около цели. За её смерть союзники неподалёку и сам владелец способности получат дополнительное золото. Применение этой способности не снимает невидимость с владельца.",
-      "lore_loc": "Благодаря развитым зрению и обонянию Гондар способен бить наверняка.",
+      "desc_loc": "Tracks an enemy hero, granting True Sight of the target, increasing the damage they take and providing information on how much gold it is carrying. Bounty Hunter moves fast when near the tracked unit. If the target dies, Bounty Hunter and nearby heroes collect a bonus bounty of gold. Casting Track does not take you out of invisibility.",
+      "lore_loc": "Using his elevated senses of sight and smell, Gondar's hits have quite a good chance of success.",
       "notes_loc": [
-        "Герой получит дополнительное золото вне зависимости от того, как умерла цель этого заклинания.",
-        "Метка этой способности видна только союзникам.",
-        "Чтобы увидеть золото цели, наведите мышь на иконку эффекта этой способности над полосой здоровья.",
-        "Дополнительное золото идёт в надёжный запас."
+        "Bounty Hunter will get the bonus gold if the target dies while Track is active, regardless of how it died.",
+        "Track's effect is only visible to allies.",
+        "You can see the amount of gold the target is carrying by mousing over the debuff icon above the target's ability bar.",
+        "Bonus gold is reliable gold."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1057,7 +1057,7 @@
             16
           ],
           "is_percentage": true,
-          "heading_loc": "УВЕЛИЧЕНИЕ УРОНА:",
+          "heading_loc": "DAMAGE AMPLIFICATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1093,7 +1093,7 @@
             320
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ЗОЛОТО СЕБЕ:",
+          "heading_loc": "SELF BONUS GOLD:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bounty_hunter_3",
@@ -1118,7 +1118,7 @@
             130
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ЗОЛОТО СОЮЗНИКАМ:",
+          "heading_loc": "ALLIES BONUS GOLD:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bounty_hunter_3",
@@ -1141,7 +1141,7 @@
             25
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1179,7 +1179,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ СЕБЕ:",
+          "heading_loc": "SELF BONUS SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1279,7 +1279,7 @@
     {
       "id": 869,
       "name": "special_bonus_unique_bounty_hunter_5",
-      "name_loc": "+{s:bonus_slow_duration} сек. замедления от Shuriken Toss",
+      "name_loc": "+{s:bonus_slow_duration}s Shuriken Toss Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1341,7 +1341,7 @@
     {
       "id": 6009,
       "name": "special_bonus_attack_damage_25",
-      "name_loc": "+{s:value} к урону",
+      "name_loc": "+{s:value} Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1421,7 +1421,7 @@
     {
       "id": 959,
       "name": "special_bonus_unique_bounty_hunter_9",
-      "name_loc": "Shadow Walk снижает получаемый урон на {s:bonus_damage_reduction_pct}%",
+      "name_loc": "-{s:bonus_damage_reduction_pct}% Damage Taken in Shadow Walk",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1483,7 +1483,7 @@
     {
       "id": 7040,
       "name": "special_bonus_unique_bounty_hunter_3",
-      "name_loc": "+{s:bonus_bonus_gold} к золоту от Track",
+      "name_loc": "+{s:bonus_bonus_gold} Track Gold",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1545,7 +1545,7 @@
     {
       "id": 878,
       "name": "special_bonus_unique_bounty_hunter_8",
-      "name_loc": "Жертвы Track делятся своим обзором",
+      "name_loc": "Track Grants Shared Vision",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1607,7 +1607,7 @@
     {
       "id": 6018,
       "name": "special_bonus_unique_bounty_hunter",
-      "name_loc": "+{s:bonus_gold_steal} к похищению золота у Jinada",
+      "name_loc": "+{s:bonus_gold_steal} Jinada Gold Steal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1669,7 +1669,7 @@
     {
       "id": 6358,
       "name": "special_bonus_unique_bounty_hunter_2",
-      "name_loc": "+{s:bonus_bonus_damage} к урону от Shuriken Toss",
+      "name_loc": "+{s:bonus_bonus_damage} Shuriken Toss Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1731,7 +1731,7 @@
     {
       "id": 1172,
       "name": "special_bonus_unique_bounty_hunter_jinada_no_cooldown",
-      "name_loc": "Jinada без перезарядки",
+      "name_loc": "No Cooldown on Jinada",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1801,10 +1801,10 @@
           "id": 1315,
           "name": "bounty_hunter_cutpurse",
           "name_loc": "Cutpurse",
-          "desc_loc": "Герой крадёт золото у вражеских героев, ставших целью его способности или предмета.",
+          "desc_loc": "Bounty Hunter steals gold when targeting enemy heroes with his abilities or items.",
           "lore_loc": "",
           "notes_loc": [
-            "Применение способности Track на существо, которое уже находится под её действием, не активирует кражу золота."
+            "Reapplying Track does not steal gold with Cutpurse."
           ],
           "shard_loc": "",
           "scepter_loc": "",
@@ -1857,7 +1857,7 @@
                 25
               ],
               "is_percentage": false,
-              "heading_loc": "ПОХИЩЕНИЕ ЗОЛОТА:",
+              "heading_loc": "GOLD STEAL:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_ember_spirit",
   "order_id": 103,
   "name_loc": "Ember Spirit",
-  "bio_loc": "Крепость Непослушного пламени затеряна среди Скулящих гор, пусты её учебные залы, листвой и пылью застелены её дворы. На помосте в запечатанном храме стоит топазовый котёл, наполненный древним пеплом погребального костра воина-поэта Сина. Три поколения он обучал своих последователей технике Оков хранящего пламени — набору мантр для тренировки ума и тела, подготавливая их к суровой жизни за крепостной стеной.\r\n\t\t\t\t<br><br>Преподавая путь воина, Син нажил себе воинов-врагов, и когда наступила осень его жизни, противники превзошли и убили его. Верные последователи разлетелись по миру, словно пепел. Года сменялись веками, последователи — потомками, но его учение передавалось тихим шёпотом из уст в уста. Тронутый многолетним наследием учителя, Горящий небожитель — пытливое проявление огня — бросился в крепость, и вновь воспламенил останки. Из раскалённых углей появился образ охваченного пламенем Сина. Он вновь готов невозмутимо обучать своей мудрости, и вновь готов дарить огонь познания всем, кто ищет наставления.",
-  "hype_loc": "<b>Ловкий и неуловимый</b> Ember Spirit <b>стремительно атакует</b> всех врагов вокруг и связывает их <b>горящими цепями</b>. Он быстро перемещается по полю битвы с помощью своих <b>взрывающихся копий</b>, и немногие смогут избежать пламени или обуздать его.",
-  "npe_desc_loc": "Стремительно атакует и связывает врагов",
+  "bio_loc": "Lost within the Wailing Mountains, the Fortress of Flares lay abandoned, its training halls empty, its courtyard covered in leaves and dust. Upon a dais in its sealed temple rests a topaz cauldron filled with ancient ash, remnants of a pyre for the warrior-poet Xin. For three generations, Xin taught his acolytes the Bonds of the Guardian Flame, a series of mantras to train the mind and body for the harsh realities beyond the fortress walls.\r\n\t\t\t\t<br><br>However, in teaching a warrior's way he earned a warrior's rivals, and in his autumn Xin was bested and slain. His followers spread to the wind. Yet as years turned to centuries and followers to descendants, his teachings endured by subtle whisper and deed. Touched by the teacher's lasting legacy, the Burning Celestial, inquisitive aspect of fire, cast himself to the Fortress of Flares and reignited the pyre ash. From these glowing embers emerged an image of Xin, wreathed in flame, his thoughtful countenance prepared to train and to teach, and to spread the fires of knowledge to all who seek guidance.",
+  "hype_loc": "<b>Swift and elusive</b>, Ember Spirit strikes all nearby enemies in <b>rapid succession</b>, and ties them up with <b>burning chains</b>. Quickly rushing across the battlefield to arrive at one of his <b>exploding remnants</b>, few can avoid, or capture, his flame.",
+  "npe_desc_loc": "Rapidly strikes and chains his foes",
   "facets": [
     {
       "color": 0,
       "title_loc": "Double Impact",
-      "description_loc": "Способность Sleight of Fist добавляет вторую атаку по одной из жертв.",
+      "description_loc": "Sleight of Fist hits one of its targets an extra time.",
       "name": "ember_spirit_double_impact",
       "icon": "fist",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 1,
       "title_loc": "Chain Gang",
-      "description_loc": "Способность Searing Chains связывает на двух врагов больше и применяется вокруг огненных копий от Fire Remant.",
+      "description_loc": "Searing Chains can affect two additional enemies. When Searing Chains are cast, they are also cast around each Fire Remnant.",
       "name": "ember_spirit_chain_gang",
       "icon": "debuff",
       "gradient_id": 1,
@@ -66,17 +66,17 @@
       "id": 5603,
       "name": "ember_spirit_searing_chains",
       "name_loc": "Searing Chains",
-      "desc_loc": "Герой выпускает горящие бола, которые удерживают врагов на месте и наносят ежесекундный урон.",
-      "lore_loc": "Самые суровые уроки Сина проходят с использованием раскалённых докрасна цепей.",
+      "desc_loc": "Ember Spirit unleashes fiery bolas that wrap around nearby enemies, anchoring them in place and dealing damage each second.",
+      "lore_loc": "Xin's harshest lessons often employed the use of red-hot chains.",
       "notes_loc": [
-        "Применяется на случайных существ рядом с героем.",
-        "Не действует на невосприимчивых к эффектам или невидимых существ."
+        "Targets are chosen randomly around Xin.",
+        "Does not affect Debuff Immune or invisible units."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Способность связывает на двух врагов больше и применяется вокруг огненных копий от Fire Remant."
+        "Searing Chains can affect two additional enemies. When Searing Chains are cast, they are also cast around each Fire Remnant."
       ],
       "type": 0,
       "behavior": "4",
@@ -129,7 +129,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ember_spirit_2",
@@ -152,7 +152,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -172,7 +172,7 @@
             110
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ember_spirit_chains_dps",
@@ -212,7 +212,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ЖЕРТВ:",
+          "heading_loc": "UNIT COUNT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -319,18 +319,18 @@
       "id": 5604,
       "name": "ember_spirit_sleight_of_fist",
       "name_loc": "Sleight of Fist",
-      "desc_loc": "Герой стремительно атакует всех врагов в указанной области, а затем возвращается к своему исходному местонахождению. Наносит больше урона героям.",
-      "lore_loc": "Опытный воин должен маневрировать и пробиваться сквозь врагов, сжигая всех на своём пути.",
+      "desc_loc": "Ember Spirit dashes around with blazing speed, attacking all enemies in the targeted area of effect, then returning to his start location.  Deals bonus damage to heroes.",
+      "lore_loc": "The studied warrior must whip and weave through its enemies, burning each without pause.",
       "notes_loc": [
-        "Цели выбираются в момент применения способности.",
-        "Герой наносит обычную атаку по каждой цели с интервалом в %attack_interval% сек.",
-        "Любые эффекты атаки (например, критический удар, оглушение или прорубание) будут срабатывать как обычно.",
-        "Во время действия можно применять способности и использовать предметы."
+        "Targets are determined when the spell is cast.",
+        "A regular attack is done to each target every %attack_interval% seconds.",
+        "Any attack modifier that Xin has (such as Critical Strike, Bash, Cleave, or Orb effects) will be applied normally on these attacks.",
+        "Abilities and items can be used while Sleight of Fist is active."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Когда этой способностью попали хотя бы по %min_enemies_for_double_sleight% врагам, герой атакует ближайшего из них ещё раз. Урон от второй атаки меньше на %second_attack_damage_penalty%%%.",
+        "When Sleight of Fist connects with %min_enemies_for_double_sleight% or more enemies, the enemy closest to Ember Spirit will be attacked a second time. Damage for the second attack is reduced by %second_attack_damage_penalty%%%.",
         ""
       ],
       "type": 0,
@@ -384,7 +384,7 @@
             550
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -404,7 +404,7 @@
             160
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ГЕРОЯМ:",
+          "heading_loc": "BONUS HERO DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ember_spirit_6",
@@ -427,7 +427,7 @@
             0.25
           ],
           "is_percentage": false,
-          "heading_loc": "ИНТЕРВАЛ МЕЖДУ АТАКАМИ:",
+          "heading_loc": "ATTACK INTERVAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -598,11 +598,11 @@
       "id": 5605,
       "name": "ember_spirit_flame_guard",
       "name_loc": "Flame Guard",
-      "desc_loc": "Герой окружает себя огненным барьером, который поглощает долю получаемого магического урона и наносит периодический урон всем противникам вокруг. Когда барьер впитает максимум урона, то защита и урон по площади пропадут.",
-      "lore_loc": "Врагу нельзя давать легко приблизиться.",
+      "desc_loc": "Ember Spirit surrounds himself with a ring of fire that consumes incoming magic damage, absorbing a percentage of the damage taken. Flame Guard deals damage per second in an area around Ember Spirit while Flame Guard is active. If the shield is broken, the damage is also lost.",
+      "lore_loc": "An enemy should never be allowed to approach without difficulty.",
       "notes_loc": [
-        "Щит блокирует полный магический урон без учёта сопротивления магии.",
-        "Урон наносится ещё %linger_duration% сек. после выхода из радиуса действия."
+        "Magic damage reduction is calculated before any reductions.",
+        "The damage lingers for an additional %linger_duration% seconds after application."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -658,7 +658,7 @@
             18
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -712,7 +712,7 @@
             50
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ember_spirit_3",
@@ -752,7 +752,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -769,7 +769,7 @@
             70
           ],
           "is_percentage": true,
-          "heading_loc": "ПОГЛОЩАЕМЫЙ УРОН:",
+          "heading_loc": "PERCENTAGE ABSORBED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -789,7 +789,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ БАРЬЕРА:",
+          "heading_loc": "MAGIC BARRIER:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ember_spirit_1",
@@ -878,8 +878,8 @@
       "id": 5607,
       "name": "ember_spirit_activate_fire_remnant",
       "name_loc": "Activate Fire Remnant",
-      "desc_loc": "Выбирает, к какой огненной копии переместиться.",
-      "lore_loc": "Дух летит стремительно, словно голодное пламя пожара!",
+      "desc_loc": "Select the Fire Remnant to arrive at.",
+      "lore_loc": "With blazing speed does a spirit fly!",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1136,12 +1136,12 @@
       "id": 1484,
       "name": "ember_spirit_immolation",
       "name_loc": "Immolation",
-      "desc_loc": "Герой постоянно горит, каждую секунду нанося урон врагам поблизости.",
+      "desc_loc": "Ember Spirit is continuously burning, dealing damage per second to all nearby enemies at all times.",
       "lore_loc": "",
       "notes_loc": [
-        "Горение копий героя от Aghanim's Shard не отключается истощением."
+        "Break does not disable Immolation for Fire Remnants when upgraded with Aghanim's Shard."
       ],
-      "shard_loc": "Увеличивает урон и радиус горения, а также даёт горение копиям героя.",
+      "shard_loc": "Grants Fire Remnants the current level of Immolation, and increases the damage and radius.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -1189,7 +1189,7 @@
             175
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [
             175
@@ -1228,7 +1228,7 @@
             34
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DPS:",
           "bonuses": [],
           "values_shard": [
             10
@@ -1259,13 +1259,13 @@
       "id": 5606,
       "name": "ember_spirit_fire_remnant",
       "name_loc": "Fire Remnant",
-      "desc_loc": "Герой создаёт свою огненную копию, которая бежит к указанному месту со скоростью героя, умноженной на %speed_multiplier%%%. Использовав способность Activate Fire Remnant, герой быстро переместится по всем копиям в порядке близости, отчего они взорвутся и нанесут урон противникам. Выбранная копия будет конечной целью полёта.",
-      "lore_loc": "Сила духа не даёт учению Сина затухнуть.",
+      "desc_loc": "Sends a Fire Remnant that runs to the target location at %speed_multiplier%%% Ember Spirit's speed.  Using Activate Fire Remnant, Ember Spirit will dash out to all active Fire Remnants, destroying them and dealing damage in an area and then moving to the nearest Remnant.  Ember Spirit will end at the Remnant closest to the targeted location.",
+      "lore_loc": "By the spirit's power are Xin's teachings spread anew.",
       "notes_loc": [
-        "Вначале даётся 3 заряда (максимум)."
+        "Starts with 3 charges (maximum)."
       ],
-      "shard_loc": "Если неподалёку от владельца способности умрёт вражеский герой, восстановится один её заряд.",
-      "scepter_loc": "Увеличивает дальность применения, скорость передвижения копии и максимум зарядов.",
+      "shard_loc": "If an enemy hero dies near Ember Spirit, a Fire Remnant charge will be replenished.",
+      "scepter_loc": "Increases cast range, initial remnant speed, and maximum charges.",
       "facets_loc": [
         "",
         ""
@@ -1331,7 +1331,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ ВЗРЫВА:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1348,7 +1348,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ВЗРЫВА:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1365,7 +1365,7 @@
             45
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1382,7 +1382,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ:",
+          "heading_loc": "RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1401,7 +1401,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "МНОЖИТЕЛЬ СКОРОСТИ:",
+          "heading_loc": "SPEED MULTIPLIER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1420,7 +1420,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМУМ ЗАРЯДОВ:",
+          "heading_loc": "MAX CHARGES:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1439,7 +1439,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПОЛУЧЕНИЯ ЗАРЯДА:",
+          "heading_loc": "CHARGE RADIUS:",
           "bonuses": [],
           "values_shard": [
             400
@@ -1545,7 +1545,7 @@
     {
       "id": 6159,
       "name": "special_bonus_attack_damage_12",
-      "name_loc": "+{s:value} к урону",
+      "name_loc": "+{s:value} Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1625,7 +1625,7 @@
     {
       "id": 6172,
       "name": "special_bonus_unique_ember_spirit_1",
-      "name_loc": "+{s:bonus_absorb_amount} к здоровью барьера от Flame Guard",
+      "name_loc": "+{s:bonus_absorb_amount} Flame Guard Barrier Amount",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1687,7 +1687,7 @@
     {
       "id": 6647,
       "name": "special_bonus_unique_ember_spirit_3",
-      "name_loc": "+{s:bonus_damage_per_second}% к урону в секунду от Flame Guard",
+      "name_loc": "+{s:bonus_damage_per_second}% Flame Guard DPS",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1749,7 +1749,7 @@
     {
       "id": 6176,
       "name": "special_bonus_unique_ember_spirit_2",
-      "name_loc": "+{s:bonus_duration} сек. действия Searing Chains",
+      "name_loc": "+{s:bonus_duration}s Searing Chains Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1811,7 +1811,7 @@
     {
       "id": 1394,
       "name": "special_bonus_unique_ember_spirit_chains_dps",
-      "name_loc": "+{s:bonus_damage_per_second} к урону от Searing Chains",
+      "name_loc": "+{s:bonus_damage_per_second} Searing Chains Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1873,7 +1873,7 @@
     {
       "id": 353,
       "name": "special_bonus_unique_ember_spirit_6",
-      "name_loc": "+{s:bonus_bonus_hero_damage} к доп. урону героям от Sleight of Fist",
+      "name_loc": "+{s:bonus_bonus_hero_damage} Sleight of Fist Hero Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1935,7 +1935,7 @@
     {
       "id": 7050,
       "name": "special_bonus_unique_ember_spirit_4",
-      "name_loc": "{s:bonus_AbilityCharges} заряда Sleight of Fist",
+      "name_loc": "{s:bonus_AbilityCharges} Sleight of Fist Charges",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1997,7 +1997,7 @@
     {
       "id": 7051,
       "name": "special_bonus_unique_ember_spirit_5",
-      "name_loc": "–{s:bonus_AbilityChargeRestoreTime} сек. восстановления заряда Fire Remnant",
+      "name_loc": "-{s:bonus_AbilityChargeRestoreTime}s Remnant Charge Restore Time",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

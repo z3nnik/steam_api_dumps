@@ -1,319 +1,317 @@
-[
-  {
-    "id": 5075,
-    "name": "pudge_meat_hook",
-    "name_loc": "Meat Hook",
-    "desc_loc": "Бросает окровавленный крюк в указанную цель или в выбранном направлении. Крюк зацепится за первое существо, в которое попадёт, и притащит его к владельцу способности. Вражеские герои получают от крюка урон, а крипы, не являющиеся древними, сразу погибают.",
-    "lore_loc": "Крюк мясника — это воплощение кошмара: его изогнутое лезвие всем своим видом требует крови.",
-    "notes_loc": [
-      "Останавливает прерываемые заклинания у врагов.",
-      "Действует на невидимых существ.",
-      "Крюк проходит сквозь деревья, возвышенности, постройки, древних крипов и Рошана.",
-      "Притягивает союзников, но не наносит им урон.",
-      "Крюк может притягивать руны. В таком случае мана за его применение сразу вернётся."
-    ],
-    "shard_loc": "Притягивание врага наносит ему дополнительный урон, зависящий от преодолеваемого на крюке расстояния.<br><br>Попадание по союзнику уменьшает перезарядку этой способности на %cooldown_reduction_pct_allied_hook%%%.",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "134217744",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 4,
-    "immunity": 3,
-    "dispellable": 0,
-    "max_level": 4,
-    "cast_ranges": [
-      1300
-    ],
-    "cast_points": [
-      0.3,
-      0.3,
-      0.3,
-      0.3
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      18,
-      16,
-      14,
-      12
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      120
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "damage",
-        "values_float": [
-          150,
-          220,
-          290,
-          360
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_pudge_7",
-            "value": 150,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+{
+  "id": 5075,
+  "name": "pudge_meat_hook",
+  "name_loc": "Meat Hook",
+  "desc_loc": "Launches a bloody hook toward a unit or location. The hook will snag the first unit it encounters, dragging the unit back to Pudge, killing it if it's a non-ancient creep and dealing damage if it is an enemy otherwise.",
+  "lore_loc": "The Butcher's hook is a symbolic nightmare, its curved blade a frightening reminder of his slaughterous intent.",
+  "notes_loc": [
+    "Interrupts channeling spells of the primary target if it's an enemy.",
+    "Meat Hook hits invisible units.",
+    "Meat Hook can go through trees, cliffs, buildings, ancient units and Roshan.",
+    "Meat Hook can drag friendly units, but they won't be damaged.",
+    "Meat Hook can hit and drag runes to Pudge, refunding the Hook's mana cost."
+  ],
+  "shard_loc": "When Meat Hook hits an enemy, it deals bonus damage based on the distance pulled.<br><br>When Meat Hook hits an ally, Meat Hook's cooldown is reduced by %cooldown_reduction_pct_allied_hook%%%.",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "134217744",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 4,
+  "immunity": 3,
+  "dispellable": 0,
+  "max_level": 4,
+  "cast_ranges": [
+    1300
+  ],
+  "cast_points": [
+    0.3,
+    0.3,
+    0.3,
+    0.3
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    18,
+    16,
+    14,
+    12
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    120
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "damage",
+      "values_float": [
+        150,
+        220,
+        290,
+        360
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_pudge_7",
+          "value": 150,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "hook_speed",
-        "values_float": [
-          1600
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "hook_speed",
+      "values_float": [
+        1600
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "hook_width",
-        "values_float": [
-          100
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "hook_width",
+      "values_float": [
+        100
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "vision_radius",
-        "values_float": [
-          500
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "vision_radius",
+      "values_float": [
+        500
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "vision_duration",
-        "values_float": [
-          4
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "vision_duration",
+      "values_float": [
+        4
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "distance_to_damage",
-        "values_float": [
-          0
-        ],
-        "is_percentage": true,
-        "heading_loc": "УРОН ОТ РАССТОЯНИЯ:",
-        "bonuses": [],
-        "values_shard": [
-          20
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "distance_to_damage",
+      "values_float": [
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "DISTANCE AS DAMAGE:",
+      "bonuses": [],
+      "values_shard": [
+        20
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "min_distance_damage",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [
-          10
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "min_distance_damage",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [
+        10
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "cooldown_reduction_pct_allied_hook",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [
-          50
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "cooldown_reduction_pct_allied_hook",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [
+        50
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "self_stun_duration_percent",
-        "values_float": [
-          65
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "self_stun_duration_percent",
+      "values_float": [
+        65
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          1300
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        1300
+      ],
+      "is_percentage": false,
+      "heading_loc": "CAST RANGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          120
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        120
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          18,
-          16,
-          14,
-          12
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_pudge_5",
-            "value": 4,
-            "operation": 2
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": true,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        18,
+        16,
+        14,
+        12
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_pudge_5",
+          "value": 4,
+          "operation": 2
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": true,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

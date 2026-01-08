@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_axe",
   "order_id": 2,
   "name_loc": "Axe",
-  "bio_loc": "Ещё будучи рядовым бугаем в армии Красного тумана, Могул-хан положил глаз на генеральский титул. Битву за битвой он самыми кровавыми способами доказывал собственное превосходство. Облегчало подъём в чинах и то, что без тени сомнения он мог обезглавить старшего по званию. В семилетней кампании на Тысячеболотье Могул-хан отличился в кровопролитных бойнях, и звезда его славы засияла еще ярче, но число соратников неизменно сокращалось. В ночь безоговорочной победы он провозгласил себя генералом Красного тумана, присвоив себе заодно и титул верховного военачальника. Однако теперь в его отряде не значилось ни одного воина. Множество бойцов было повержено врагом, но и от его топора погибло достаточно. Стоит ли говорить, что большинство солдат теперь ни за что не переманить под его знамена? Но Могул-хана это совсем не смущает, ведь он знает: один в поле воин.",
-  "hype_loc": "Axe рубит одного врага за другим, неизменно ступая впереди своей команды. Он <b>вынуждает противников вступить в бой</b>, а затем отвечает на их удары <b>смертоносными взмахами</b> топора. Нещадно <b>круша ослабленных врагов</b>, он всегда несётся вперёд.",
-  "npe_desc_loc": "Провоцирует врагов, заставляя их атаковать его",
+  "bio_loc": "As a grunt in the Army of Red Mist, Mogul Khan set his sights on the rank of Red Mist General. In battle after battle he proved his worth through gory deed. His rise through the ranks was helped by the fact that he never hesitated to decapitate a superior. Through the seven year Campaign of the Thousand Tarns, he distinguished himself in glorious carnage, his star of fame shining ever brighter, while the number of comrades in arms steadily dwindled. On the night of ultimate victory, Axe declared himself the new Red Mist General, and took on the ultimate title of 'Axe.' But his troops now numbered zero. Of course, many had died in battle, but a significant number had also fallen to Axe's blade. Needless to say, most soldiers now shun his leadership. But this matters not a whit to Axe, who knows that a one-man army is by far the best.",
+  "hype_loc": "One after another, Axe cuts down his foes. Marching ahead of his team, he <b>locks his enemies in battle</b> then counters their blows with a <b>deadly spin</b> of his weapon. Slamming his <b>culling blade</b> through a weakened enemy, he is always charging onward.",
+  "npe_desc_loc": "Taunts and forces enemies to attack him",
   "facets": [
     {
       "color": 0,
       "title_loc": "One Man Army",
-      "description_loc": "Когда рядом с героем нет союзников, его сила увеличивается на долю от показателя брони.",
+      "description_loc": "Axe gains Strength based on his armor as long as he's away from his allies.",
       "name": "axe_one_man_army",
       "icon": "strength",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Call Out",
-      "description_loc": "Способность Berserker's Call даёт больше брони и увеличивает скорость атаки жертв.",
+      "description_loc": "Berserker's Call gives attacking enemies more attack speed and Axe more armor for the duration.",
       "name": "axe_call_out",
       "icon": "armor",
       "gradient_id": 2,
@@ -66,14 +66,14 @@
       "id": 5007,
       "name": "axe_berserkers_call",
       "name_loc": "Berserker's Call",
-      "desc_loc": "Герой бросает вызов ближайшим врагам, заставляя их атаковать его, а также получает бонус к броне на время действия способности.",
-      "lore_loc": "Могучий рёв Могул-хана вынуждает врагов вступить в заведомо проигранную схватку.",
+      "desc_loc": "Axe taunts nearby enemy units, forcing them to attack him while he gains bonus armor during the duration.",
+      "lore_loc": "Mogul Khan's warcry taunts opponents into engaging in an unconquerable battle with the Axe.",
       "notes_loc": [],
-      "shard_loc": "Применяет на жертв эффект способности Battle Hunger.",
+      "shard_loc": "Berserker's Call applies Battle Hunger to affected units.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Способность даёт больше брони и увеличивает скорость атаки жертв."
+        "Berserker's Call gives Axe increased bonus armor and increases the attack speed of the affected units."
       ],
       "type": 0,
       "behavior": "262148",
@@ -123,7 +123,7 @@
             315
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_axe_2",
@@ -149,7 +149,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. БРОНЯ:",
+          "heading_loc": "BONUS ARMOR:",
           "bonuses": [
             {
               "name": "special_bonus_unique_axe_7",
@@ -177,7 +177,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -213,7 +213,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ ЖЕРТВ:",
+          "heading_loc": "ENEMY ATTACK SPEED BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -301,12 +301,12 @@
       "id": 5008,
       "name": "axe_battle_hunger",
       "name_loc": "Battle Hunger",
-      "desc_loc": "Приводит врага в бешенство, отчего он получает периодический урон, пока кого-нибудь не убьёт или действие способности не закончится. Жертва передвигается медленнее, когда не смотрит в сторону владельца способности.",
-      "lore_loc": "Обычные герои не могут сопротивляться ярости Могул-хана, и она калечит их, пока они не выместят ее на ком-нибудь.",
+      "desc_loc": "Enrages an enemy unit, causing it to take damage over time until it kills another unit or the duration ends. The enemy is slowed as long as they are facing away from Axe.",
+      "lore_loc": "Ordinary heroes cannot withstand Mogul Khan's rage for battle, such that it injures them until it is satisfied.",
       "notes_loc": [
-        "Эффект этой способности также снимется, если разрушить постройку."
+        "Destroying buildings will also remove the debuff."
       ],
-      "shard_loc": "Эффекты от нескольких применений этой способности на одну и ту же цель складываются.",
+      "shard_loc": "Multiple instances of Battle Hunger can stack on a single target.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -366,7 +366,7 @@
             12
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -386,7 +386,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -406,7 +406,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_axe",
@@ -558,14 +558,14 @@
       "id": 5009,
       "name": "axe_counter_helix",
       "name_loc": "Counter Helix",
-      "desc_loc": "После определённого числа полученных атак герой прокручивает вокруг себя топор, нанося чистый урон всем врагам неподалёку.",
-      "lore_loc": "Могул-хан — сам себе войско.",
+      "desc_loc": "After a set number of attacks, Axe will perform a helix counter attack, dealing pure damage to all nearby enemies.",
+      "lore_loc": "Axe is the only reinforcement this army needs.",
       "notes_loc": [
-        "Срабатывает при завершении атаки по владельцу способности.",
-        "Атаки иллюзий не учитываются при подсчёте атак для срабатывания с Aghanim's Scepter."
+        "Counter Helix triggers when the attack hits.",
+        "Illusions' counters don't increase when they attack when you have a Scepter."
       ],
       "shard_loc": "",
-      "scepter_loc": "Убирает перезарядку способности. Каждое её срабатывание применяет на жертв складывающийся эффект, уменьшающий урон их атак по владельцу способности. При подсчёте атак для срабатывания учитываются и атаки владельца.",
+      "scepter_loc": "Counter Helix now applies a stacking debuff to enemies hit by it that causes them to deal less total attack damage to Axe. Counter Helix no longer has a cooldown and its counter advances when Axe attacks.",
       "facets_loc": [
         "",
         ""
@@ -615,7 +615,7 @@
             160
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_axe_4",
@@ -638,7 +638,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -658,7 +658,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "АТАК ДЛЯ СРАБАТЫВАНИЯ:",
+          "heading_loc": "ATTACKS TO HELIX:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -675,7 +675,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДЕЙСТВИЯ ЭФФЕКТА:",
+          "heading_loc": "DEBUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -694,7 +694,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА ОТ АТАК:",
+          "heading_loc": "ATTACK DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -713,7 +713,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМУМ ЭФФЕКТОВ:",
+          "heading_loc": "MAX STACKS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -803,10 +803,10 @@
       "id": 5010,
       "name": "axe_culling_blade",
       "name_loc": "Culling Blade",
-      "desc_loc": "Герой находит слабую точку врага и наносит ему чистый урон. Если убить этой способностью вражеского героя, её перезарядка сбрасывается, а все союзники поблизости временно получат дополнительную скорость передвижения и броню.",
-      "lore_loc": "Словно воплощение самой яростной битвы, Могул-хан жестоко расправляется с теми, кто осмелился дать ему бой.",
+      "desc_loc": "Axe spots a weakness and strikes, dealing pure damage. When an enemy hero is killed with Culling Blade, its cooldown is reset, and all nearby allied units gain bonus movement speed and armor.",
+      "lore_loc": "Mogul Khan is the embodiment of battle and fury, launching into a gruesome fatality against those who dare engage the Axe in combat.",
       "notes_loc": [
-        "Убийство этой способностью нельзя предотвратить другими способностями наподобие Shallow Grave."
+        "Culling Blade death cannot be prevented with other abilities like Shallow Grave."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -862,7 +862,7 @@
             475
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_axe_5",
@@ -887,7 +887,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "KILL MOVE SPEED BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -906,7 +906,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "БОНУС К БРОНЕ:",
+          "heading_loc": "KILL ARMOR BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -923,7 +923,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БОНУСА:",
+          "heading_loc": "KILL BUFF DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_axe_culling_blade_speed_duration",
@@ -946,7 +946,7 @@
             900
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС БОНУСА СОЮЗНИКАМ:",
+          "heading_loc": "KILL BUFF RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1064,7 +1064,7 @@
       "id": 1201,
       "name": "axe_coat_of_blood",
       "name_loc": "Coat of Blood",
-      "desc_loc": "Герой окропляет своё оружие вражеской кровью, за каждого убитого героя навсегда получая эффект, дающий +%armor_per_kill% к броне. Убийство способностью Culling Blade даёт сразу %culling_blade_multiplier% эффекта.",
+      "desc_loc": "Axe permanently drenches his blade every time he kills an enemy Hero, gaining %armor_per_kill% bonus armor for each stack. Killing with Culling Blade gives %culling_blade_multiplier%x stacks.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1165,7 +1165,7 @@
     {
       "id": 1189,
       "name": "special_bonus_unique_axe_culling_blade_speed_duration",
-      "name_loc": "+{s:bonus_speed_duration} сек. ускорения от Culling Blade",
+      "name_loc": "+{s:bonus_speed_duration}s Culling Blade Kill Buff Bonus Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1227,7 +1227,7 @@
     {
       "id": 9401,
       "name": "special_bonus_unique_axe_8",
-      "name_loc": "+{s:bonus_speed_bonus}% к скорости передв. за эффект Battle Hunger",
+      "name_loc": "+{s:bonus_speed_bonus}% Movement Speed per active Battle Hunger",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1289,7 +1289,7 @@
     {
       "id": 6102,
       "name": "special_bonus_unique_axe",
-      "name_loc": "+{s:bonus_damage_per_second} к урону в секунду от Battle Hunger",
+      "name_loc": "+{s:bonus_damage_per_second} Battle Hunger Damage Per Second",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1351,7 +1351,7 @@
     {
       "id": 974,
       "name": "special_bonus_unique_axe_7",
-      "name_loc": "+{s:bonus_bonus_armor} к броне от Berseker's Call",
+      "name_loc": "+{s:bonus_bonus_armor} Berserker's Call Armor",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1413,7 +1413,7 @@
     {
       "id": 6145,
       "name": "special_bonus_strength_15",
-      "name_loc": "+{s:value} к силе",
+      "name_loc": "+{s:value} Strength",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1493,7 +1493,7 @@
     {
       "id": 6991,
       "name": "special_bonus_unique_axe_4",
-      "name_loc": "+{s:bonus_damage} к урону от Counter Helix",
+      "name_loc": "+{s:bonus_damage} Counter Helix Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1555,7 +1555,7 @@
     {
       "id": 6608,
       "name": "special_bonus_unique_axe_2",
-      "name_loc": "+{s:bonus_radius} к радиусу Berserker's Call",
+      "name_loc": "+{s:bonus_radius} Berserker's Call AoE",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1617,7 +1617,7 @@
     {
       "id": 562,
       "name": "special_bonus_unique_axe_5",
-      "name_loc": "+{s:bonus_damage} к урону от Culling Blade",
+      "name_loc": "+{s:bonus_damage} Culling Blade Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1684,10 +1684,10 @@
           "id": 1166,
           "name": "axe_one_man_army",
           "name_loc": "One Man Army",
-          "desc_loc": "Когда рядом с героем нет союзников, его сила увеличивается на долю от показателя брони.",
+          "desc_loc": "Axe gains Strength based on his armor as long as he's away from his allies.",
           "lore_loc": "",
           "notes_loc": [
-            "Когда рядом с владельцем аспекта нет союзных героев, к его силе добавляется %armor_pct_as_strength%%% от его брони. Бонус перестаёт действовать спустя %bonus_linger_duration% сек. после приближения к союзнику."
+            "%armor_pct_as_strength%%% of Axe's armor is gained as strength as long as there are no allied heroes within %radius% distance from Axe. Lingers for an additional %bonus_linger_duration%s after approaching an ally."
           ],
           "shard_loc": "",
           "scepter_loc": "",

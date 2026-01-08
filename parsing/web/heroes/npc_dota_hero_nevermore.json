@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_nevermore",
   "order_id": 39,
   "name_loc": "Shadow Fiend",
-  "bio_loc": "Говорят, у Невермора душа поэта, но на самом деле у него их тысячи. Веками он поглощал души стихотворцев, священников, императоров, нищих, рабов, философов, преступников и, естественно, героев. Не скрыться от него ни душе. Никто не знает, что он с ними делает. Никто не вглядывался в Бездну, где среди астральных скал Невермор таится, словно змея. Пожирает ли он души одну за другой? Выставляет ли он их трофеями в коридорах зловещего храма? Маринует ли в чернокнижном рассоле? А может, он — лишь марионетка, которой кукловодит зловещий разум извне пространства? Таково его зло, настолько силен его тёмный дух, что разумом его не понять. А если вам всё же очень хочется разузнать, что он делает с душами, то всё просто: присоединяйтесь к его коллекции. Или просто подождите: Невермор уже идёт к вам.",
-  "hype_loc": "Shadow Fiend становится сильнее <b>с каждой полученной душой</b> убитого им существа. Каждое убийство, каждое точное попадание опустошающими чарами приближает смертоносный удар энергии <b>выпущенных на волю душ</b>.",
-  "npe_desc_loc": "Наносит урон, выпуская из себя души павших врагов",
+  "bio_loc": "It is said that Nevermore the Shadow Fiend has the soul of a poet, and in fact he has thousands of them. Over the ages he has claimed the souls of poets, priests, emperors, beggars, slaves, philosophers, criminals and (naturally) heroes; no sort of soul escapes him. What he does with them is unknown. No one has ever peered into the Abysm whence Nevermore reaches out like an eel from among astral rocks. Does he devour them one after another? Does he mount them along the halls of an eldritch temple, or pickle the souls in necromantic brine? Is he merely a puppet, pushed through the dimensional rift by a demonic puppeteer? Such is his evil, so intense his aura of darkness, that no rational mind may penetrate it. Of course, if you really want to know where the stolen souls go, there's one sure way to find out: Add your soul to his collection. Or just wait for Nevermore.",
+  "hype_loc": "<b>Capturing souls</b> from every kill he makes, Shadow Fiend is always gathering his power. Every assault, each carefully aimed raze that kills an enemy, brings him closer to <b>unleashing his gathered souls</b> in a deadly blast of scouring energy.",
+  "npe_desc_loc": "Unleashes the souls of fallen enemies for damage",
   "facets": [
     {
       "color": 5,
       "title_loc": "Lasting Presence",
-      "description_loc": "Снижение брони от Presence of the Dark Lord временно повышается, когда рядом погибает вражеский герой. Максимум душ увеличивается на {s:bonus_max_soul_increase_on_hero_kill} за каждого убитого героя, пока владелец аспекта не умрёт.",
+      "description_loc": "Presence of the Dark Lord temporarily reduces more armor after nearby enemy heroes are killed. Every hero kill increases Necromastery's max souls by {s:bonus_max_soul_increase_on_hero_kill} until Shadow Fiend dies.",
       "name": "nevermore_lasting_presence",
       "icon": "armor_broken",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Shadowmire",
-      "description_loc": "Способность Shadowraze замедляет врагов.",
+      "description_loc": "Shadowraze slows enemies.",
       "name": "nevermore_shadowmire",
       "icon": "slow",
       "gradient_id": 0,
@@ -66,16 +66,16 @@
       "id": 5059,
       "name": "nevermore_shadowraze1",
       "name_loc": "Shadowraze",
-      "desc_loc": "Герой опустошает участок земли прямо перед собой, нанося урон всем врагам в зоне действия. Накладывает на жертв складывающийся эффект, увеличивающий урон от этой способности.",
-      "lore_loc": "Фирменный метод сбора душ.",
+      "desc_loc": "Shadow Fiend razes the ground directly in front of him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack.",
+      "lore_loc": "Nevermore's trademark for harvesting souls.",
       "notes_loc": [
-        "Длительность эффекта обновляется при каждом наложении."
+        "Stack duration refreshes on stack gain."
       ],
-      "shard_loc": "Перезарядка уменьшается на %cooldown_reduction_on_hero_hit% за каждого задетого вражеского героя.",
+      "shard_loc": "Cooldown reduced by %cooldown_reduction_on_hero_hit%s per enemy hero.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Накладывает на жертв складывающийся эффект, замедляющий передвижение на %movement_speed_debuff%%%."
+        "Applies a stacking %movement_speed_debuff%%% movement speed debuff on enemies hit."
       ],
       "type": 0,
       "behavior": "134217732",
@@ -122,7 +122,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nevermore_2",
@@ -162,7 +162,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "heading_loc": "RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -199,7 +199,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ЗА ПОПАДАНИЕ:",
+          "heading_loc": "BONUS PER STACK:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nevermore_7",
@@ -222,7 +222,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "STACK DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -367,10 +367,10 @@
       "id": 1216,
       "name": "nevermore_frenzy",
       "name_loc": "Feast of Souls",
-      "desc_loc": "Герой ускоряет свои передвижение и атаку на %duration% сек. На время этого эффекта максимум душ у способности Necromastery увеличивается на %max_soul_increase%, но по его окончании владелец теряет столько же душ.",
-      "lore_loc": "Невермор с превеликим удовольствием не только пожинает души, но и лакомится ими.",
+      "desc_loc": "Shadow Fiend gains Bonus Attack Speed and Movement Speed for %duration% seconds. For the duration of the effect, Necromastery's Max Soul count is increased by %max_soul_increase%, but he loses that amount of souls after it is done.",
+      "lore_loc": "For Nevermore, there's as much delight in the harvest as there is in the feast.",
       "notes_loc": [
-        "Невозможно применить, если душ недостаточно."
+        "Cannot be cast unless Shadow Fiend has enough souls to pay the cost."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -426,7 +426,7 @@
             85
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nevermore_4",
@@ -452,7 +452,7 @@
             11
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -530,7 +530,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "РАСХОД ДУШ:",
+          "heading_loc": "SOUL COST:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -613,15 +613,15 @@
       "id": 5063,
       "name": "nevermore_dark_lord",
       "name_loc": "Presence of the Dark Lord",
-      "desc_loc": "Присутствие героя снижает броню врагов неподалёку.",
-      "lore_loc": "Даже просто будучи рядом, Невермор разъедает душу.",
+      "desc_loc": "Shadow Fiend's presence reduces the armor of nearby enemies.",
+      "lore_loc": "Even being near Nevermore eats away at one's soul.",
       "notes_loc": [
-        "Эффект складывается с другими способностями и аурами, снижающими броню."
+        "Stacks fully with other armor reduction abilities and aura."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Снижение брони от Presence of the Dark Lord временно повышается, когда рядом погибает вражеский герой.",
+        "Presence of the Dark Lord temporarily reduces more armor after nearby enemy heroes are killed.",
         ""
       ],
       "type": 0,
@@ -669,7 +669,7 @@
             -6
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ:",
+          "heading_loc": "ARMOR REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nevermore_3",
@@ -692,7 +692,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -709,7 +709,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ ЗА ГЕРОЯ:",
+          "heading_loc": "REDUCTION PER HERO:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -728,7 +728,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТ. СНИЖЕНИЯ БРОНИ ЗА ГЕРОЯ:",
+          "heading_loc": "HERO REDUCTION DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -776,14 +776,14 @@
       "id": 5064,
       "name": "nevermore_requiem",
       "name_loc": "Requiem of Souls",
-      "desc_loc": "Герой выпускает собранные души в волнах демонической энергии. Существа возле него могут получить урон от нескольких волн. За каждую задетую волну на жертву накладывается %requiem_slow_duration% сек. замедления, снижения сопротивления магии и страха (но не более %requiem_slow_duration_max% сек.). Создаёт одну волну энергии за каждую душу, захваченную с помощью Necromastery.<br><br>Если герой погибнет, то эта способность сработает автоматически вне зависимости от её готовности.",
-      "lore_loc": "Заточённые души тех, кто пал в былых сражениях, обретают свободу, дабы мстительно преследовать своих бывших союзников.",
+      "desc_loc": "Shadow Fiend gathers his captured souls to release them as lines of demonic energy. Units near Shadow Fiend when the souls are released can be damaged by several lines of energy. Any unit damaged by Requiem of Souls will be feared and have its movement speed and magic resistance reduced for %requiem_slow_duration% seconds for each line hit up to a maximum of %requiem_slow_duration_max%. Lines of energy are created for every soul captured through Necromastery. <br><br> Requiem of Souls is automatically cast whenever Shadow Fiend dies, regardless of its cooldown.",
+      "lore_loc": "The captured souls of those past slain are released to ravage their former allies.",
       "notes_loc": [
-        "За каждую душу создаётся одна волна.",
-        "Способность не накладывает страх и замедление, если сработала при смерти."
+        "One line is generated from Shadow Fiend for every %requiem_soul_conversion% soul in his possession.",
+        "Fear and movement slow do not apply if the Requiem was released on death."
       ],
       "shard_loc": "",
-      "scepter_loc": "Уменьшает перезарядку. Заставляет ослабленные волны этой способности возвращаться к герою, излечивая его на количество нанесённого на обратном пути урона.",
+      "scepter_loc": "Reduces cooldown and causes Requiem of Souls to return back to Shadow Fiend. The wave back to Shadow Fiend deals less damage, but heals Shadow Fiend for all the damage it dealt.",
       "facets_loc": [
         "",
         ""
@@ -854,7 +854,7 @@
             -30
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -871,7 +871,7 @@
             -10
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ СОПРОТИВЛЕНИЯ МАГИИ:",
+          "heading_loc": "MAGIC RESIST REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -888,7 +888,7 @@
             0.6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ СТРАХА ЗА ВОЛНУ:",
+          "heading_loc": "FEAR DURATION PER SOUL HIT:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nevermore_6",
@@ -911,7 +911,7 @@
             2.15
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ СТРАХА:",
+          "heading_loc": "FEAR DURATION MAX:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nevermore_6",
@@ -1019,7 +1019,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ЛЕЧЕНИЕ ПРИ ВОЗВРАЩЕНИИ:",
+          "heading_loc": "HEAL ON RETURN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1038,7 +1038,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ПРИ ВОЗВРАЩЕНИИ:",
+          "heading_loc": "DAMAGE ON RETURN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1076,7 +1076,7 @@
             1.67
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАДЕРЖКА ПРИМЕНЕНИЯ:",
+          "heading_loc": "CAST DELAY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1114,7 +1114,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1145,17 +1145,17 @@
       "id": 5062,
       "name": "nevermore_necromastery",
       "name_loc": "Necromastery",
-      "desc_loc": "Герой крадёт души убитых им существ, чтобы увеличить свой урон от атак. За обычное существо даётся одна душа, а за героя — %souls_per_hero_kill%. При смерти герой выпускает %soul_release_tooltip%%% из украденных душ.",
-      "lore_loc": "Собранные души скользят по грани Бездны, усиливая Невермора и позволяя ему и дальше пополнять свою коллекцию.",
+      "desc_loc": "Shadow Fiend steals the soul from units he kills, gaining bonus damage. Hero kills grant %souls_per_hero_kill% souls. On death, he releases %soul_release_tooltip%%% of them from bondage.",
+      "lore_loc": "Harvested souls swirl in and out of the Abysm, empowering the Shadow Fiend to increase the size of his collection.",
       "notes_loc": [
-        "Добивание союзников и нейтральных крипов также даёт бонус к атаке.",
-        "Кража душ отключается истощением.",
-        "Бонусы от уже украденных душ не отключаются истощением."
+        "Denies and neutral creeps also provide bonus damage through Necromastery.",
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
       ],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает максимальное число душ.",
+      "scepter_loc": "Increases max souls.",
       "facets_loc": [
-        "Максимум душ увеличивается на %max_soul_increase_on_hero_kill% за каждого убитого героя, пока владелец аспекта не умрёт.",
+        "Every hero kill increases max souls by %max_soul_increase_on_hero_kill% until Shadow Fiend dies.",
         ""
       ],
       "type": 0,
@@ -1203,7 +1203,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ЗА ДУШУ:",
+          "heading_loc": "DAMAGE PER SOUL:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nevermore_1",
@@ -1229,7 +1229,7 @@
             26
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ МАКСИМУМ ДУШ:",
+          "heading_loc": "BASE MAX SOULS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1390,7 +1390,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ТЕКУЩИЙ МАКСИМУМ ДУШ:",
+          "heading_loc": "CURRENT MAX SOULS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1420,7 +1420,7 @@
     {
       "id": 999,
       "name": "special_bonus_unique_nevermore_7",
-      "name_loc": "+{s:bonus_stack_bonus_damage} к доп. урону за попадание у Shadowraze",
+      "name_loc": "+{s:bonus_stack_bonus_damage} Shadowraze Stack Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1482,7 +1482,7 @@
     {
       "id": 6876,
       "name": "special_bonus_unique_nevermore_4",
-      "name_loc": "+{s:bonus_bonus_attack_speed} к скорости атаки от Feast of Souls",
+      "name_loc": "+{s:bonus_bonus_attack_speed} Feast of Souls Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1544,7 +1544,7 @@
     {
       "id": 6875,
       "name": "special_bonus_unique_nevermore_3",
-      "name_loc": "+{s:bonus_presence_armor_reduction} к снижению брони от Presence of the Dark Lord",
+      "name_loc": "+{s:bonus_presence_armor_reduction} Presence Armor Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1606,7 +1606,7 @@
     {
       "id": 6070,
       "name": "special_bonus_unique_nevermore_2",
-      "name_loc": "+{s:bonus_shadowraze_damage} к урону от Shadowraze",
+      "name_loc": "+{s:bonus_shadowraze_damage} Shadowraze Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1668,7 +1668,7 @@
     {
       "id": 6670,
       "name": "special_bonus_unique_nevermore_1",
-      "name_loc": "+{s:bonus_necromastery_damage_per_soul} к урону за душу",
+      "name_loc": "+{s:bonus_necromastery_damage_per_soul} Damage Per Soul",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1730,8 +1730,8 @@
     {
       "id": 815,
       "name": "special_bonus_unique_nevermore_6",
-      "name_loc": "+{s:bonus_requiem_slow_duration} сек. страха за волну Requiem of Souls",
-      "desc_loc": "Увеличивает максимальную длительность страха на {s:bonus_requiem_slow_duration_max} сек.",
+      "name_loc": "+{s:bonus_requiem_slow_duration}s Requiem Fear per line",
+      "desc_loc": "Max Fear duration increased by +{s:bonus_requiem_slow_duration_max}s",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1792,7 +1792,7 @@
     {
       "id": 1217,
       "name": "special_bonus_unique_nevermore_frenzy_castspeed",
-      "name_loc": "Feast of Souls ускоряет заклинания на {s:bonus_cast_speed_pct}%",
+      "name_loc": "Feast of Souls Grants +{s:bonus_cast_speed_pct}% Cast Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1854,7 +1854,7 @@
     {
       "id": 1072,
       "name": "special_bonus_unique_nevermore_raze_procsattacks",
-      "name_loc": "Shadowraze наносит урон от атак",
+      "name_loc": "Shadowraze Applies Attack Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

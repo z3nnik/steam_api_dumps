@@ -1,277 +1,275 @@
-[
-  {
-    "id": 5443,
-    "name": "undying_soul_rip",
-    "name_loc": "Soul Rip",
-    "desc_loc": "Герой вырывает жизненные силы из всех существ рядом с целью, излечивая союзника или нанося урон противнику. Также этой способностью можно лечить надгробие от способности Tombstone.",
-    "lore_loc": "Если рядом глашатай смерти, даже союзники чувствуют отчаяние.",
-    "notes_loc": [
-      "Может лечить надгробие от способности Tombstone, но не действует на другие постройки.",
-      "При подсчёте существ не учитываются невидимые и неуязвимые существа, а также существа в тумане войны и невосприимчивые к магии враги.",
-      "При подсчёте существ учитываются невосприимчивые к магии союзники, в том числе зомби."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "134217736",
-    "target_team": 4,
-    "target_type": 128,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 0,
-    "max_level": 4,
-    "cast_ranges": [
-      750
-    ],
-    "cast_points": [
-      0.3
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      15,
-      12,
-      9,
-      6
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      80,
-      90,
-      100,
-      110
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "damage_per_unit",
-        "values_float": [
-          14,
-          26,
-          38,
-          50
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН/ЛЕЧЕНИЕ ЗА СУЩЕСТВО:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_undying_6",
-            "value": 12,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+{
+  "id": 5443,
+  "name": "undying_soul_rip",
+  "name_loc": "Soul Rip",
+  "desc_loc": "Undying rips health away from all nearby units and uses it to heal an ally, or damage an enemy. Soul Rip can also be used to heal Tombstone.",
+  "lore_loc": "Even allies feel despair in Undying's presence.",
+  "notes_loc": [
+    "Can heal Tombstone, but can't heal or damage other buildings.",
+    "Does not rip from invisible units, invulnerable units, units in the fog of war, or spell immune enemies.",
+    "Does rip from spell immune allies, including zombies."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "134217736",
+  "target_team": 4,
+  "target_type": 128,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 0,
+  "max_level": 4,
+  "cast_ranges": [
+    750
+  ],
+  "cast_points": [
+    0.3
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    15,
+    12,
+    9,
+    6
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    80,
+    90,
+    100,
+    110
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "damage_per_unit",
+      "values_float": [
+        14,
+        26,
+        38,
+        50
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE/HEAL PER UNIT:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_undying_6",
+          "value": 12,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "max_units",
-        "values_float": [
-          10
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКСИМУМ ЦЕЛЕЙ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "max_units",
+      "values_float": [
+        10
+      ],
+      "is_percentage": false,
+      "heading_loc": "MAX UNITS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "radius",
-        "values_float": [
-          1300
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС ДЕЙСТВИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "radius",
+      "values_float": [
+        1300
+      ],
+      "is_percentage": false,
+      "heading_loc": "RIP RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "tombstone_heal",
-        "values_float": [
-          4,
-          8,
-          12,
-          16
-        ],
-        "is_percentage": false,
-        "heading_loc": "ЛЕЧЕНИЕ НАДГРОБИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "tombstone_heal",
+      "values_float": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "is_percentage": false,
+      "heading_loc": "TOMBSTONE HEAL:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "strength_share_percent",
-        "values_float": [
-          0
-        ],
-        "is_percentage": true,
-        "heading_loc": "ПРИРОСТ СИЛЫ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "strength_share_percent",
+      "values_float": [
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "STRENGTH GAIN:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "strength_share_duration",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "strength_share_duration",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "strength_share_model_scale",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "strength_share_model_scale",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          750
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        750
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          80,
-          90,
-          100,
-          110
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          15,
-          12,
-          9,
-          6
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        15,
+        12,
+        9,
+        6
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

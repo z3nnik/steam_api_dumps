@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_ursa",
   "order_id": 63,
   "name_loc": "Ursa",
-  "bio_loc": "Воин Ульфсаар — сильнейший член медвежьего племени, стоящий горой за свои земли и свой народ. Долгими зимами, пока матери спали и нянчили своих детёнышей, на страже стояли самцы — ревнители древних обычаев. Едва заслышав о надвигающейся угрозе, Ульфсаар направился за границы родной чащи, дабы выследить и уничтожить источник зла, пока то не навредило его народу. Ульфсаар — гордый зверь с сильным духом, крайне надёжный товарищ и невероятно стойкий защитник.",
-  "hype_loc": "Ursa раздирает плоть своей жертвы, с каждым ударом нанося ей <b>всё больше урона</b>. Он ненадолго <b>увеличивает скорость</b> своих ударов, <b>замедляет</b> противников неподалёку и быстро разрывает их на кусочки.",
-  "npe_desc_loc": "С каждой атакой наносит врагу всё больше урона",
+  "bio_loc": "Ulfsaar the Warrior is the fiercest member of an ursine tribe, protective of his land and his people. During the long winters, while the mothers sleep and nurse their cubs, the males patrol the lands above as tireless, vigilant defenders of their ancient ways. Hearing dim but growing rumors of a spreading evil, Ulfsaar headed out beyond the boundaries of his wild wooded homeland, intending to track down and destroy the threat at its source, before it could endanger his people. He is a proud creature with a bright strong spirit, utterly trustworthy, a staunch ally and defender.",
+  "hype_loc": "<b>With each swipe of his claws</b>, Ursa increases his target's vulnerability to his next attack. Capable of briefly increasing how <b>swiftly</b> he can strike, and able to <b>slow down</b> nearby prey, he quickly tears apart his enemies.",
+  "npe_desc_loc": "Deals more damage with every hit to the same foe",
   "facets": [
     {
       "color": 0,
       "title_loc": "Grudge Bearer",
-      "description_loc": "Урон от атак героя повышается, когда он получает урон под действием Enrage.",
+      "description_loc": "When damaged during Enrage, Ursa gains bonus attack damage.",
       "name": "ursa_grudge_bearer",
       "icon": "damage",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Bear Down",
-      "description_loc": "Отрицательные эффекты, накладываемые героем, действуют дольше.",
+      "description_loc": "Debuffs inflicted by Ursa last longer.",
       "name": "ursa_debuff_reduce",
       "icon": "cooldown",
       "gradient_id": 0,
@@ -66,10 +66,10 @@
       "id": 5357,
       "name": "ursa_earthshock",
       "name_loc": "Earthshock",
-      "desc_loc": "Герой прыгает вперёд на расстояние в %hop_distance% и бьёт по земле, нанося урон всем врагам вокруг и замедляя их на %abilityduration% сек.",
-      "lore_loc": "Как земля содрогается под весом могучих медвежьих шагов, так и противники начинают дрожать при его виде.",
+      "desc_loc": "Ursa leaps forward %hop_distance% units and slams the earth, causing a powerful shock to damage and slow all enemy units in a nearby area for %abilityduration% seconds.",
+      "lore_loc": "The very steps of a male ursine shake the ground as well as the resolve of opposing warriors.",
       "notes_loc": [],
-      "shard_loc": "Накладывает на задетых врагов %fury_swipe_stacks_on_hit% эффекта Fury Swipes.",
+      "shard_loc": "Earthshock applies %fury_swipe_stacks_on_hit% Fury Swipes to enemies hit.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -120,7 +120,7 @@
             385
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ursa_2",
@@ -146,7 +146,7 @@
             -40
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -366,10 +366,10 @@
       "id": 5358,
       "name": "ursa_overpower",
       "name_loc": "Overpower",
-      "desc_loc": "Используя свой боевой опыт, герой увеличивает скорость нескольких следующих атак и получает сопротивление замедлениям.",
-      "lore_loc": "Внушительный размер обманчив — Ульфсаар чрезвычайно ловок.",
+      "desc_loc": "Using his skill in combat, Ursa gains increased attack speed and slow resistance for a number of subsequent attacks.",
+      "lore_loc": "For a behemoth of his size, Ursa is deceptively nimble.",
       "notes_loc": [
-        "Не попавшая по цели атака всё равно расходует заряд этой способности."
+        "Missing an attack still consumes a charge of Overpower."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -431,7 +431,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "АТАК:",
+          "heading_loc": "ATTACKS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ursa_7",
@@ -454,7 +454,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -471,7 +471,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "СОПРОТИВЛЕНИЕ ЗАМЕДЛЕНИЯМ:",
+          "heading_loc": "SLOW RESISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -488,7 +488,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -574,11 +574,11 @@
       "id": 5359,
       "name": "ursa_fury_swipes",
       "name_loc": "Fury Swipes",
-      "desc_loc": "Когти героя всё глубже впиваются в плоть врага, нанося увеличенный урон с каждой последующей атакой. Дополнительный урон будет потерян, если не атаковать цель в течение %bonus_reset_time% сек.",
-      "lore_loc": "В природе раненые редко переживают нападение голодных хищников.",
+      "desc_loc": "Ursa's claws dig deeper wounds in the enemy, causing consecutive attacks to the same enemy to deal more damage.  If the same target is not attacked after %bonus_reset_time% seconds, the bonus damage is lost.",
+      "lore_loc": "In nature, the wounded rarely survive the attacks of hungry predators.",
       "notes_loc": [
-        "Наложение эффектов отключается истощением.",
-        "Уже наложенные эффекты не отключаются истощением."
+        "Break disables the application of new stacks.",
+        "Break does not disable the effects of existing stacks."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -631,7 +631,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "RESET TIME:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ursa_4",
@@ -654,7 +654,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА НА РОШАНЕ:",
+          "heading_loc": "RESET TIME (ROSHAN):",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -674,7 +674,7 @@
             37
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ЗА ЭФФЕКТ:",
+          "heading_loc": "DAMAGE PER ATTACK:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ursa",
@@ -751,7 +751,7 @@
       "id": 1327,
       "name": "ursa_maul",
       "name_loc": "Maul",
-      "desc_loc": "Урон от атак героя увеличивается в зависимости от его текущего здоровья.",
+      "desc_loc": "Ursa gains bonus damage equal to a percentage of his Current HP.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -802,7 +802,7 @@
             1.25
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ ЗДОРОВЬЯ:",
+          "heading_loc": "HEALTH AS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ursa_maul_health",
@@ -837,13 +837,13 @@
       "id": 5360,
       "name": "ursa_enrage",
       "name_loc": "Enrage",
-      "desc_loc": "Приводит героя в бешенство, отчего он получает сопротивление эффектам и урону. Снимает все отрицательные эффекты.\n\nТИП РАЗВЕИВАНИЯ: сильное",
-      "lore_loc": "Ульфсаар отдаётся своему древнему духу, приобретая невиданную свирепость.",
+      "desc_loc": "Ursa goes into a frenzy, providing damage reduction and status resistance. Removes any existing debuffs.\n\nDISPEL TYPE: Strong Dispel",
+      "lore_loc": "Ulfsaar succumbs to his ancient spirit, becoming the most ferocious creature on the battlefield.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Уменьшает перезарядку и позволяет применять эту способность, даже когда герой выведен из строя.",
+      "scepter_loc": "Reduces cooldown and allows Ursa to use Enrage while disabled.",
       "facets_loc": [
-        "Урон от атак героя повышается, когда он получает урон под действием Enrage.",
+        "When damaged during Enrage, Ursa gains bonus attack damage.",
         ""
       ],
       "type": 1,
@@ -892,7 +892,7 @@
             80
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА:",
+          "heading_loc": "DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -909,7 +909,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "СОПРОТИВЛЕНИЕ ЭФФЕКТАМ:",
+          "heading_loc": "STATUS RESISTANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_ursa_8",
@@ -934,7 +934,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -951,7 +951,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "БОНУС К АТАКЕ ОТ ПОЛУЧАЕМОГО УРОНА:",
+          "heading_loc": "DAMAGE ABSORBED TO DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -970,7 +970,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПОВЫШЕНИЯ УРОНА:",
+          "heading_loc": "DAMAGE INCREASE LINGER DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -991,7 +991,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1025,7 +1025,7 @@
     {
       "id": 6975,
       "name": "special_bonus_unique_ursa_4",
-      "name_loc": "+{s:bonus_bonus_reset_time} сек. действия Fury Swipes",
+      "name_loc": "+{s:bonus_bonus_reset_time}s Fury Swipes Reset Time",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1087,7 +1087,7 @@
     {
       "id": 6926,
       "name": "special_bonus_mp_regen_175",
-      "name_loc": "+{s:value} маны в секунду",
+      "name_loc": "+{s:value} Mana Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1167,7 +1167,7 @@
     {
       "id": 1706,
       "name": "special_bonus_unique_ursa_maul_health",
-      "name_loc": "+{s:bonus_health_as_damage_pct}% к урону от здоровья у Maul",
+      "name_loc": "+{s:bonus_health_as_damage_pct}% Maul Health As Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1229,7 +1229,7 @@
     {
       "id": 758,
       "name": "special_bonus_unique_ursa_8",
-      "name_loc": "+{s:bonus_status_resistance}% к сопротивлению эффектам от Enrage",
+      "name_loc": "+{s:bonus_status_resistance}% Enrage Status Resistance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1291,7 +1291,7 @@
     {
       "id": 6973,
       "name": "special_bonus_unique_ursa_2",
-      "name_loc": "+{s:bonus_shock_radius} к радиусу Earthshock",
+      "name_loc": "+{s:bonus_shock_radius} Earthshock Radius",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1353,7 +1353,7 @@
     {
       "id": 6132,
       "name": "special_bonus_unique_ursa",
-      "name_loc": "+{s:bonus_damage_per_stack} к урону за эффект Fury Swipes",
+      "name_loc": "+{s:bonus_damage_per_stack} Fury Swipes Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1415,7 +1415,7 @@
     {
       "id": 6974,
       "name": "special_bonus_unique_ursa_3",
-      "name_loc": "Перезарядка Earthshock заменяется {s:bonus_AbilityCharges} зарядами",
+      "name_loc": "Earthshock has {s:bonus_AbilityCharges} Charges",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1477,7 +1477,7 @@
     {
       "id": 424,
       "name": "special_bonus_unique_ursa_7",
-      "name_loc": "+{s:bonus_max_attacks} к числу атак от Overpower",
+      "name_loc": "+{s:bonus_max_attacks} Overpower Attacks",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1547,7 +1547,7 @@
           "id": 1328,
           "name": "ursa_bear_down",
           "name_loc": "Bear Down",
-          "desc_loc": "Отрицательные эффекты, накладываемые героем, действуют дольше.",
+          "desc_loc": "Debuffs inflicted by Ursa last longer.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",
@@ -1598,7 +1598,7 @@
                 15
               ],
               "is_percentage": true,
-              "heading_loc": "ДОП. ДЛИТЕЛЬНОСТЬ:",
+              "heading_loc": "DURATION BONUS:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

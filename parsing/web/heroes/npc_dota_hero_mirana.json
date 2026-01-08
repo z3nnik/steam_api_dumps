@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_mirana",
   "order_id": 10,
   "name_loc": "Mirana",
-  "bio_loc": "Наследница королевской династии и первая претендентка на Лучезарный трон отреклась от мирских земель и титулов, посвятив свою жизнь богине Луны Селемине. С тех пор зовётся она принцессой Луны. Ревностно охраняет она неприкосновенные Серебристые Леса от любого, кто осмелится сорвать хоть цветок священного лучистого лотоса, растущего в заповедных серебряных запрудах. Разъезжая на огромном звере из рода благородных кошек, с гордостью и отвагой несёт она службу в гармонии с лунными фазами и движением великих созвездий. Укреплённый накладкой из лунной породы лук наделяет её стрелы могуществом ночного светила.",
-  "hype_loc": "Всегда готовая влететь в битву Mirana издалека подыскивает жертву для своей <b>смертоносной стрелы</b>. Она способна <b>скрыть команду</b> от глаз врагов и возглавить охоту на них.",
-  "npe_desc_loc": "Оглушает врагов точными попаданиями стрел",
+  "bio_loc": "Born to a royal family, a blood princess next in line for the Solar Throne, Mirana willingly surrendered any claim to mundane land or titles when she dedicated herself completely to the service of Selemene, Goddess of the Moon. Known ever since as Princess of the Moon, Mirana prowls the sacred Nightsilver Woods searching for any who would dare poach the sacred luminous lotus from the silvery pools of the Goddess's preserve. Riding on her enormous feline familiar, she is poised, proud and fearless, attuned to the phases of the moon and the wheeling of the greater constellations. Her bow, tipped with sharp shards of lunar ore, draws on the moon's power to charge its arrows of light.",
+  "hype_loc": "As she takes aim from a distance with her <b>deadly arrow</b>, Mirana must always be ready to leap into battle. Able to <b>shield her allies</b> from the eyes of her enemies, she ensures that her team is always on the prowl.",
+  "npe_desc_loc": "Stuns enemies with precise arrows from afar",
   "facets": [
     {
       "color": 3,
       "title_loc": "Starstruck",
-      "description_loc": "Второй удар от Starstorm наносит больше урона и ослепляет жертву.",
+      "description_loc": "Starstorm's second meteor deals more damage and blinds the target.",
       "name": "mirana_starstruck",
       "icon": "no_vision",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 5,
       "title_loc": "Leaps and Bounds",
-      "description_loc": "Способность Leap накладывает оцепенение на существ в радиусе {s:bonus_root_radius} вокруг конечной точки прыжка. Действует {s:bonus_root_duration} сек.",
+      "description_loc": "Upon landing, Leap roots targets in a {s:bonus_root_radius} radius for {s:bonus_root_duration}s.",
       "name": "mirana_leaps_and_bounds",
       "icon": "slow",
       "gradient_id": 3,
@@ -66,19 +66,19 @@
       "id": 5051,
       "name": "mirana_starfall",
       "name_loc": "Starstorm",
-      "desc_loc": "Призывает звёздный дождь, наносящий урон стоящим неподалёку противникам. Ближайший враг в радиусе %starfall_secondary_radius% получит второй удар.",
-      "lore_loc": "Богиня разверзает небеса, чтобы в час нужды помочь своей принцессе.",
+      "desc_loc": "Calls down a wave of meteors to damage nearby enemy units. The closest enemy unit to Mirana in a %starfall_secondary_radius% radius will be struck a second time.",
+      "lore_loc": "The Goddess breaks the strata to empower her Princess in the time of need.",
       "notes_loc": [
-        "Не блокируется предметом Linken's Sphere.",
-        "Не наносит урона невидимым врагам.",
-        "Если цель второго удара умрёт до него, будет выбрана новая."
+        "Starstorm is not blocked by Linken's Sphere.",
+        "Starstorm cannot hit invisible units.",
+        "Starstorm will choose a new target for the second meteor if the first died before impact."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Второй удар наносит больше урона и ослепляет жертву.",
+        "Starstorm's second meteor deals more damage and blinds the target.",
         ""
       ],
       "type": 0,
@@ -135,7 +135,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_mirana_7",
@@ -161,7 +161,7 @@
             70
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ВТОРОГО УДАРА:",
+          "heading_loc": "SECOND METEOR DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -183,7 +183,7 @@
             675
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -217,7 +217,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС ПРОМАХА:",
+          "heading_loc": "BLIND MISS RATE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -236,7 +236,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОСЛЕПЛЕНИЯ:",
+          "heading_loc": "BLIND DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -344,15 +344,15 @@
       "id": 5048,
       "name": "mirana_arrow",
       "name_loc": "Sacred Arrow",
-      "desc_loc": "Выпускает невероятно точную стрелу, оглушающую первое существо на своём пути на %arrow_min_stun% сек. и наносящую ему урон. Преодолённое стрелой расстояние увеличивает и урон, который может достичь %arrow_bonus_damage%, и длительность оглушения, которое составит до %arrow_max_stun% сек. Мгновенно убивает любого крипа, если он не древний.",
-      "lore_loc": "Лунная энергия делает стрелы принцессы Луны смертоноснее остальных.",
+      "desc_loc": "Fires a long-range arrow with deadly precision, which stuns and damages the first enemy unit it strikes. The stun duration ranges from %arrow_min_stun% to %arrow_max_stun% seconds, with bonus damage up to %arrow_bonus_damage% added, based on the distance the arrow travels to its target. Instantly kills the first non-ancient creep it hits.",
+      "lore_loc": "Lunar energies make the Princess of the Moon's arrows more deadly than most.",
       "notes_loc": [
-        "Каждые 150 единиц, преодолённые стрелой, прибавляют 0,5 секунды к длительности оглушения и 14 урона к его базовому показателю.",
-        "Может попасть в невидимых врагов.",
-        "Аспект Starstruck не действует на удар способностью Starstorm от Aghanim's Scepter."
+        "For every 150 distance the arrow travels, the stun duration upon impact increases by 0.5 seconds, and the bonus damage added increases by 14.",
+        "Sacred Arrow can hit invisible units.",
+        "Starstruck does not apply to the second Starstorm from Aghanim's Scepter."
       ],
       "shard_loc": "",
-      "scepter_loc": "Во время полёта основной стрелы на врагов неподалёку от неё срабатывает способность Starstorm. При попадании стрела ещё раз применяет на жертву способность Starstorm, наносящую меньше урона.",
+      "scepter_loc": "Causes Sacred Arrow to release a Starstorm on enemies along the travel path of the primary arrow, releasing a second Starstorm that deals less damage to the impacted unit.",
       "facets_loc": [
         "",
         "",
@@ -444,7 +444,7 @@
             3000
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ:",
+          "heading_loc": "RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -478,7 +478,7 @@
             0.01
           ],
           "is_percentage": false,
-          "heading_loc": "МИН. ОГЛУШЕНИЕ:",
+          "heading_loc": "MINIMUM STUN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -498,7 +498,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ОГЛУШЕНИЕ:",
+          "heading_loc": "MAXIMUM STUN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -515,7 +515,7 @@
             180
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "MAXIMUM BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -549,7 +549,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС СРАБАТЫВАНИЯ:",
+          "heading_loc": "SEARCH RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -568,7 +568,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ STARSTORM ПО ЖЕРТВЕ СТРЕЛЫ:",
+          "heading_loc": "PRIMARY HIT STARSTORM DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -749,16 +749,16 @@
       "id": 5050,
       "name": "mirana_leap",
       "name_loc": "Leap",
-      "desc_loc": "Герой совершает прыжок вперёд, воодушевляясь свирепым рыком своего питомца, что даёт ему дополнительную скорость атаки и передвижения на %leap_bonus_duration% сек.",
-      "lore_loc": "Знаменитого белого зверя принцессы в гуще битвы узнает любой.",
+      "desc_loc": "Mirana leaps forward into battle, empowering herself with a ferocious roar that grants bonus attack and movement speed. Speed bonus lasts %leap_bonus_duration% seconds.",
+      "lore_loc": "None can fail to recognize Mirana's iconic white beast in the heat of battle.",
       "notes_loc": [],
-      "shard_loc": "Увеличивает число зарядов на %additional_charges%. Атаки под эффектом этой способности наносят %crit_damage_pct%%% критического урона.",
+      "shard_loc": "Grants +%additional_charges% Leap charge. Attacks during the Leap buff critically strike for %crit_damage_pct%%% damage.",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
         "",
-        "Накладывает оцепенение на существ в радиусе %root_radius% вокруг конечной точки прыжка. Действует %root_duration% сек."
+        "Upon landing, Leap roots targets in a %root_radius% radius for %root_duration%s."
       ],
       "type": 0,
       "behavior": "134742020",
@@ -802,7 +802,7 @@
             650
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРЫЖКА:",
+          "heading_loc": "DISTANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_mirana_6",
@@ -862,7 +862,7 @@
             24
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ:",
+          "heading_loc": "MOVEMENT BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -882,7 +882,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "БОНУС К СКОРОСТИ АТАКИ:",
+          "heading_loc": "ATTACK SPEED BONUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_mirana_1",
@@ -1070,7 +1070,7 @@
       "id": 1215,
       "name": "mirana_selemenes_faithful",
       "name_loc": "Selemene's Faithful",
-      "desc_loc": "Лотосы восстанавливают герою и его союзникам на %bonus_lotus%%% больше здоровья и маны.",
+      "desc_loc": "Healing Lotuses are %bonus_lotus%%% more effective on Mirana and her allies.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1152,10 +1152,10 @@
       "id": 1213,
       "name": "mirana_invis",
       "name_loc": "Moonlight Shadow",
-      "desc_loc": "Делает всех героев в команде невидимыми и ускоряет их передвижение, а также увеличивает урон, наносимый владельцем способности. Раскрытая невидимость восстановится после задержки, если способность ещё действует.",
-      "lore_loc": "Положение принцессы на службе Селемине позволяет ей призвать затмение, закутывающее её союзников в плащи теней.",
+      "desc_loc": "Turns Mirana and all allied heroes invisible and grants bonus movement speed. Mirana gains bonus outgoing damage during the duration. If a hero is revealed, invisibility will restore after the fade delay as long as Moonlight Shadow's duration has not expired.",
+      "lore_loc": "Her tenure with Selemene allows Mirana to eclipse the ground, wrapping her allies in a cloak of shadows.",
       "notes_loc": [
-        "Существа под действием этой способности не атакуют врагов автоматически."
+        "Units affected will not auto attack enemies."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1213,7 +1213,7 @@
             1.5
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАДЕРЖКА ДО НЕВИДИМОСТИ:",
+          "heading_loc": "FADE DELAY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1230,7 +1230,7 @@
             18
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1249,7 +1249,7 @@
             15
           ],
           "is_percentage": true,
-          "heading_loc": "УСКОРЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1289,7 +1289,7 @@
             15
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ВЛАДЕЛЬЦА:",
+          "heading_loc": "SELF OUTGOING DAMAGE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1378,7 +1378,7 @@
     {
       "id": 6397,
       "name": "special_bonus_unique_mirana_3",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Starstorm",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Starstorm Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1442,7 +1442,7 @@
     {
       "id": 817,
       "name": "special_bonus_unique_mirana_6",
-      "name_loc": "+{s:bonus_leap_distance} к дальности прыжка у Leap",
+      "name_loc": "+{s:bonus_leap_distance} Leap Distance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1506,15 +1506,15 @@
     {
       "id": 702,
       "name": "special_bonus_unique_mirana_5",
-      "name_loc": "Moonlight Shadow даёт +{s:bonus_evasion}% к уклонению",
-      "desc_loc": "Уклонение активно на протяжении всего времени действия способности",
+      "name_loc": "Moonlight Shadow gives +{s:bonus_evasion}% Evasion",
+      "desc_loc": "Evasion works at all times during the buff",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Solar Flare даёт +{s:bonus_evasion}% к уклонению",
+        "Solar Flare gives +{s:bonus_evasion}% Evasion",
         "",
         ""
       ],
@@ -1570,7 +1570,7 @@
     {
       "id": 6013,
       "name": "special_bonus_unique_mirana_1",
-      "name_loc": "+{s:bonus_leap_speedbonus_as} к скорости атаки от Leap",
+      "name_loc": "+{s:bonus_leap_speedbonus_as} Leap Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1634,7 +1634,7 @@
     {
       "id": 823,
       "name": "special_bonus_unique_mirana_7",
-      "name_loc": "+{s:bonus_damage} к урону от Starstorm",
+      "name_loc": "+{s:bonus_damage} Starstorm Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1698,7 +1698,7 @@
     {
       "id": 1488,
       "name": "special_bonus_attack_base_damage_35",
-      "name_loc": "+{s:value} к базовому урону",
+      "name_loc": "+{s:value} Base Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1780,8 +1780,8 @@
     {
       "id": 6242,
       "name": "special_bonus_unique_mirana_2",
-      "name_loc": "+{s:bonus_extra_arrows} стрелы у Sacred Arrow",
-      "desc_loc": "Дополнительные стрелы отклоняются на {s:bonus_extra_arrows_angle} градусов влево и вправо от основной и не могут попасть в ту же цель.",
+      "name_loc": "+{s:bonus_extra_arrows} Multishot Sacred Arrows",
+      "desc_loc": "The extra arrows are launched in a cone shape, {s:bonus_extra_arrows_angle} degrees to the left and right of the original arrow, and cannot hit the same target.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1844,7 +1844,7 @@
     {
       "id": 6692,
       "name": "special_bonus_unique_mirana_4",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Moonlight Shadow",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Moonlight Shadow Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1852,7 +1852,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "–{s:bonus_AbilityCooldown} сек. перезарядки Solar Flare",
+        "-{s:bonus_AbilityCooldown}s Solar Flare Cooldown",
         "",
         ""
       ],

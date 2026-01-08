@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_pudge",
   "order_id": 14,
   "name_loc": "Pudge",
-  "bio_loc": "На полях Вечной бойни, далеко на юге от Квойджа, тучная фигура упорно трудится под покровом ночи — расчленяет и потрошит павших, сгружая в кучи их конечности и потроха, — чтобы к рассвету поле боя было чисто. В этом проклятом мире ничто не разлагается само по себе — мертвецам не суждено вернуться обратно в землю, и не важно, насколько глубока могила. Окружённый стаями птиц-падальщиков, каждая из которых ждёт своего кусочка мёртвой плоти, мясник упражняется с лезвиями, и с каждым движением они становятся лишь острее. Вжик-вжик-тук. Плоть отсекается от костей, связки и сухожилия разрываются как мокрая бумага. И хоть мясницкое ремесло всегда было по вкусу тучному здоровяку, с годами у него проснулся интерес ещё и к тому, что остаётся после его работы. Сначала кусочек мускула там, потом глоточек крови здесь... Вскоре он впивался в самые крепкие тела подобно грызущей кость собаке. Даже те, кто не питают страха перед жнецом Смерти, предпочитают не связываться с мясником.",
-  "hype_loc": "Каждый точный бросок <b>знаменитого крюка</b> вселяет страх во врагов Pudge, ведь, <b>притянув</b> жертву, он расчленяет её своим тесаком. С каждым убийством его <b>здоровье и урон увеличиваются</b>, и вскоре погибель от его рук становится неизбежной.",
-  "npe_desc_loc": "Притягивает врагов своим крюком",
+  "bio_loc": "In the Fields of Endless Carnage, far to the south of Quoidge, a corpulent figure works tirelessly through the night--dismembering, disembowelling, piling up the limbs and viscera of the fallen that the battlefield might be clear by dawn. In this cursed realm, nothing can decay or decompose; no corpse may ever return to the earth from which it sprang, no matter how deep you dig the grave. Flocked by carrion birds who need him to cut their meals into beak-sized chunks, Pudge the Butcher hones his skills with blades that grow sharper the longer he uses them. Swish, swish, thunk. Flesh falls from the bone; tendons and ligaments part like wet paper. And while he always had a taste for the butchery, over the ages, Pudge has developed a taste for its byproduct as well. Starting with a gobbet of muscle here, a sip of blood there...before long he was thrusting his jaws deep into the toughest of torsos, like a dog gnawing at rags. Even those who are beyond fearing the Reaper, fear the Butcher.",
+  "hype_loc": "Each carefully aimed throw of Pudge's <b>signature hook</b> strikes fear into his foes. <b>Pulling</b> his enemies near to carve them with his cleavers, he gains <b>additional health and damage</b> with every kill, and soon becomes an unstoppable killer.",
+  "npe_desc_loc": "Hooks and pulls enemies towards him",
   "facets": [
     {
       "color": 0,
       "title_loc": "Fresh Meat",
-      "description_loc": "Способность Dismember увеличивает силу владельца, когда наносит урон героям.",
+      "description_loc": "Dismember increases Strength when dealing damage to heroes.",
       "name": "pudge_fresh_meat",
       "icon": "meat",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 2,
       "title_loc": "Rotten Core",
-      "description_loc": "Каждую секунду действия способности Rot её владелец получает бонус к урону от атак.",
+      "description_loc": "While Rot is activated, Pudge gains bonus attack damage every second.",
       "name": "pudge_rotten_core",
       "icon": "fist",
       "gradient_id": 3,
@@ -66,20 +66,20 @@
       "id": 5075,
       "name": "pudge_meat_hook",
       "name_loc": "Meat Hook",
-      "desc_loc": "Бросает окровавленный крюк в указанную цель или в выбранном направлении. Крюк зацепится за первое существо, в которое попадёт, и притащит его к владельцу способности. Вражеские герои получают от крюка урон, а крипы, не являющиеся древними, сразу погибают.",
-      "lore_loc": "Крюк мясника — это воплощение кошмара: его изогнутое лезвие всем своим видом требует крови.",
+      "desc_loc": "Launches a bloody hook toward a unit or location. The hook will snag the first unit it encounters, dragging the unit back to Pudge, killing it if it's a non-ancient creep and dealing damage if it is an enemy otherwise.",
+      "lore_loc": "The Butcher's hook is a symbolic nightmare, its curved blade a frightening reminder of his slaughterous intent.",
       "notes_loc": [
-        "Останавливает прерываемые заклинания у врагов.",
-        "Действует на невидимых существ.",
-        "Крюк проходит сквозь деревья, возвышенности, постройки, древних крипов и Рошана.",
-        "Притягивает союзников, но не наносит им урон.",
-        "Крюк может притягивать руны. В таком случае мана за его применение сразу вернётся."
+        "Interrupts channeling spells of the primary target if it's an enemy.",
+        "Meat Hook hits invisible units.",
+        "Meat Hook can go through trees, cliffs, buildings, ancient units and Roshan.",
+        "Meat Hook can drag friendly units, but they won't be damaged.",
+        "Meat Hook can hit and drag runes to Pudge, refunding the Hook's mana cost."
       ],
-      "shard_loc": "Притягивание врага наносит ему дополнительный урон, зависящий от преодолеваемого на крюке расстояния.<br><br>Попадание по союзнику уменьшает перезарядку этой способности на %cooldown_reduction_pct_allied_hook%%%.",
+      "shard_loc": "When Meat Hook hits an enemy, it deals bonus damage based on the distance pulled.<br><br>When Meat Hook hits an ally, Meat Hook's cooldown is reduced by %cooldown_reduction_pct_allied_hook%%%.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Снижает базовый урон способности Meat Hook , но она наносит дополнительный урон, зависящий от преодолённого на крюке расстояния.",
+        "Meat Hook deals bonus damage based on the distance pulled, but base damage is reduced.",
         ""
       ],
       "type": 0,
@@ -133,7 +133,7 @@
             360
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pudge_7",
@@ -231,7 +231,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ РАССТОЯНИЯ:",
+          "heading_loc": "DISTANCE AS DAMAGE:",
           "bonuses": [],
           "values_shard": [
             20
@@ -305,7 +305,7 @@
             1300
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "heading_loc": "CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -396,20 +396,20 @@
       "id": 5076,
       "name": "pudge_rot",
       "name_loc": "Rot",
-      "desc_loc": "Ядовитое облако, которое замедляет врагов и наносит значительный урон как им, так и владельцу способности.",
-      "lore_loc": "Чувствуете удушающий запах гнили? Это ядовитый газ, что источает прелая пухнущая плоть мясника.",
+      "desc_loc": "A toxic cloud that deals intense damage and slows movement--harming not only enemy units but Pudge himself.",
+      "lore_loc": "A foul odor precedes a toxic, choking gas, emanating from the Butcher's putrid, ever-swelling mass.",
       "notes_loc": [
-        "Не останавливает прерываемые заклинания.",
-        "Действует на невидимых врагов.",
-        "Эту способность нельзя выключить, если герой обезмолвлен.",
-        "Владелец этой способности не может умереть от её урона."
+        "Using Rot doesn't interrupt channeling.",
+        "Rot hits invisible units.",
+        "If Pudge is silenced, he can't deactivate Rot if it's activated.",
+        "Rot self-damage is non-lethal."
       ],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает радиус и урон способности. Уменьшает пополнение здоровья у жертв.",
+      "scepter_loc": "Increases Rot radius and damage, and causes it to reduce enemy Health Restoration.",
       "facets_loc": [
         "",
         "",
-        "Каждую секунду действия этой способности её владелец получает +%attack_damage_per_second_tooltip%%% к урону от атак. После выключения способности бонус снижается до нуля в течение %time_for_decay_tooltip% сек."
+        "While Rot is activated, Pudge gains %attack_damage_per_second_tooltip%%% bonus attack damage every second. Damage bonus decays rapidly over %time_for_decay_tooltip%s while Rot is deactivated."
       ],
       "type": 0,
       "behavior": "138412548",
@@ -456,7 +456,7 @@
             250
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -495,7 +495,7 @@
             -32
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pudge_4",
@@ -521,7 +521,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -540,7 +540,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ ПОПОЛНЕНИЯ ЗДОРОВЬЯ:",
+          "heading_loc": "HEALTH RESTORATION LOSS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -650,7 +650,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. БОНУС К УРОНУ ОТ АТАК:",
+          "heading_loc": "MAX BONUS ATTACK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -672,7 +672,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДО МАКС. БОНУСА:",
+          "heading_loc": "TIME FOR MAX BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -722,8 +722,8 @@
       "id": 5074,
       "name": "pudge_flesh_heap",
       "name_loc": "Meat Shield",
-      "desc_loc": "Герой покрывает себя слоем плоти, который блокирует часть любого получаемого урона.",
-      "lore_loc": "Мясник не понаслышке знает, каково это — быть толстокожим.",
+      "desc_loc": "Pudge covers himself with a layer of flesh that blocks damage of any type taken from any source.",
+      "lore_loc": "The Butcher gives new meaning to the words 'meat shield.'",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -783,7 +783,7 @@
             26
           ],
           "is_percentage": false,
-          "heading_loc": "БЛОК УРОНА:",
+          "heading_loc": "DAMAGE BLOCK:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pudge_1",
@@ -809,7 +809,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -878,10 +878,10 @@
       "id": 1223,
       "name": "pudge_innate_graft_flesh",
       "name_loc": "Flesh Heap",
-      "desc_loc": "С каждым героем, убитым владельцем этой способности, его кожа утолщается, а сила увеличивается на %flesh_heap_strength_buff_amount%.",
+      "desc_loc": "Pudge's skin thickens permanently every time he kills an enemy Hero, gaining %flesh_heap_strength_buff_amount% bonus Strength for each stack.",
       "lore_loc": "",
       "notes_loc": [
-        "Бонус также даётся за вражеских героев, погибших в радиусе %flesh_heap_range% по любой причине."
+        "Enemy Heroes that die within %flesh_heap_range% of Pudge grant a stack regardless of its killer."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -987,15 +987,15 @@
       "id": 5077,
       "name": "pudge_dismember",
       "name_loc": "Dismember",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — герой заживо пожирает врага, оглушая его и нанося периодический урон, который зависит от силы владельца способности и излечивает его на столько же, сколько наносит урона. Жертва притягивается со скоростью %pull_units_per_second% единиц в секунду, пока расстояние не сократится до %pull_distance_limit% единиц.",
-      "lore_loc": "«Есть с падалью одна загвоздка: час как поел - и опять голодный!»",
+      "desc_loc": "CHANNELED - Pudge chows down on an enemy unit, disabling it and dealing damage over time. Damage is increased by Pudge's Strength and heals him for the total amount. Pudge pulls the unit at a rate of %pull_units_per_second% units, up to a minimum of %pull_distance_limit% range.",
+      "lore_loc": "'When I'm through with these vermin, they'll be fit for a pie!'",
       "notes_loc": [
-        "Способность не прервётся, если её цель станет невидимой."
+        "If a unit becomes invisible while Dismembered, it will still be under the effects of Dismember."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Способность Dismember увеличивает силу владельца, когда наносит урон героям.",
+        "Dismember increases Strength when dealing damage to heroes.",
         "",
         ""
       ],
@@ -1051,7 +1051,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pudge_3",
@@ -1076,7 +1076,7 @@
             0.9
           ],
           "is_percentage": false,
-          "heading_loc": "МНОЖИТЕЛЬ СИЛЫ:",
+          "heading_loc": "STRENGTH MULTIPLIER:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pudge_3",
@@ -1232,7 +1232,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "УВЕЛИЧЕНИЕ СИЛЫ:",
+          "heading_loc": "STRENGTH INCREASE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1253,7 +1253,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БОНУСА:",
+          "heading_loc": "STRENGTH DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1289,7 +1289,7 @@
             2.75
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pudge_6",
@@ -1350,7 +1350,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1380,7 +1380,7 @@
     {
       "id": 5932,
       "name": "special_bonus_armor_5",
-      "name_loc": "+{s:value} к броне",
+      "name_loc": "+{s:value} Armor",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1461,7 +1461,7 @@
     {
       "id": 7142,
       "name": "special_bonus_unique_pudge_4",
-      "name_loc": "+{s:bonus_rot_slow}% к замедлению от Rot",
+      "name_loc": "+{s:bonus_rot_slow}% Rot Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1524,7 +1524,7 @@
     {
       "id": 6565,
       "name": "special_bonus_spell_lifesteal_8",
-      "name_loc": "+{s:value}% к вампиризму заклинаниями",
+      "name_loc": "+{s:value}% Spell Lifesteal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1605,7 +1605,7 @@
     {
       "id": 507,
       "name": "special_bonus_unique_pudge_7",
-      "name_loc": "+{s:bonus_damage} к урону от Meat Hook",
+      "name_loc": "+{s:bonus_damage} Meat Hook Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1668,7 +1668,7 @@
     {
       "id": 408,
       "name": "special_bonus_unique_pudge_6",
-      "name_loc": "+{s:bonus_AbilityChannelTime} сек. действия Dismember",
+      "name_loc": "+{s:bonus_AbilityChannelTime}s Dismember Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1731,7 +1731,7 @@
     {
       "id": 332,
       "name": "special_bonus_unique_pudge_5",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Meat Hook",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Meat Hook Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1794,7 +1794,7 @@
     {
       "id": 6506,
       "name": "special_bonus_unique_pudge_3",
-      "name_loc": "Урон/лечение от Dismember умножаются на {s:bonus_dismember_damage}",
+      "name_loc": "{s:bonus_dismember_damage}x Dismember Damage/Heal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1857,7 +1857,7 @@
     {
       "id": 6023,
       "name": "special_bonus_unique_pudge_1",
-      "name_loc": "Эффекты Flesh Heap и Meat Shield умножаются на {s:bonus_flesh_heap_strength_buff_amount}",
+      "name_loc": "{s:bonus_flesh_heap_strength_buff_amount}x Flesh Heap and Meat Shield bonuses",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

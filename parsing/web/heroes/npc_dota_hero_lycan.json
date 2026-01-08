@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_lycan",
   "order_id": 72,
   "name_loc": "Lycan",
-  "bio_loc": "Бэйнхаллоу с рождения принадлежал благородному дому Эмбри, могущественнейшему из всех землевладельческих родов королевства Слом. Ещё до того, как свершилось Падение, дом Эмбри первым восстал против ненасытного короля, чьи желания становились всё страннее и страннее, а двор его заполонили колдуны и шарлатаны. Не желая больше платить вассальские залоги, Эмбри послали в столицу шеститысячную армию, но её перерезали в сражении, названным позже «Бойней отступников». Тогда старое выражение показало свою настоящую шкуру: когда метишь в шею королю, лучше рубить сразу всю голову.\r\n\t\t\t\t<br><br>Разъярённый свершившимся предательством, король истребил всякого живущего Эмбри, оставив жизнь лишь лорду и его младшему сыну, Бэйнхаллоу. Опозоренный лорд был прикован к узорчатому мраморному полу королевской залы, и монарх приказал своим волшебникам превратить мальчика в волка, чтобы тот разодрал глотку своему же отцу. «Сделайте это, — сказал король, — чтобы Лорд Эмбри осознал, как остры зубы предательства». Были призваны сильнейшие магические силы, и тело ребёнка исказилось. Однако в то время как тело Бэйнхаллоу больше не было человеческим, его душа осталась на месте — и вместо того, чтобы разодрать шею беззащитного отца, он набросился на прислугу монарха. Прежде чем волка наконец-то смогли выгнать из замка, далеко в ночь, он разорвал на клочки дюжину королевских рыцарей. Лорд Эмбри, всё ещё в кандалах, смеялся, даже когда его тело пронзил королевский меч. Теперь же Бэйнхаллоу — наследник потерянного дома Эмбри, бродящий по миру под именем Lycan. Наполовину воин, наполовину волк, он ищет возмездия за всё то, что потерял.",
-  "hype_loc": "Lycan разрывает врагов острыми когтями и смертоносными клыками в обличье человека или волка. Он <b>призывает невидимых волков,</b> которые помогают в разведке и нападении. Превратившись в волка, он становится <b>сильнее и быстрее</b> и с лёгкостью догоняет врагов или спасается из засады.",
-  "npe_desc_loc": "Превращается в свирепого волка",
+  "bio_loc": "Banehallow was noble-born to the house of Ambry, the greatest of the landed castes in the old kingdom of Slom. Before the Fall, as the King's wants grew strange, and his court grew crowded with sorcerers and charlatans, the house of Ambry was the first to rise against the avarice of the throne. No longer willing to pay homage and fealty, they instead sent six-thousand swords into the capital, where they were wiped out in the Massacre of the Apostates. And then came the teeth behind the old truth: When you strike a king's neck, you had better take his head.\r\n\t\t\t\t<br><br>Enraged by the betrayal, the king exterminated the vast Ambry bloodline, sparing only the lord of the house and his youngest son, Banehallow. Before all the royal court, with the disgraced lord chained to the ornate marble floor, the King bade his magicians transform the boy into a wolf so that he might tear out his own father's throat. \"Do this,\" the king said, \"so that Lord Ambry will understand the bite of betrayal.\" Powerful magic was invoked, and the child was transformed. But though his body was changed, his spirit remained intact, and instead of biting the exposed neck of his father, he attacked his handlers, tearing them to pieces. A dozen of the King's knights perished under the wolf's teeth before they managed to drive it off into the night. Lord Ambry laughed from his chains even as the King ran him through with a sword. Now the heir to the lost house of Ambry, Banehallow wanders the trail as the Lycan, part warrior, part wolf, in search of justice for all that he lost.",
+  "hype_loc": "As a man or as a wolf, Lycan devastates enemies with sharp claws and deadly jaws. <b>Summoning stealthy wolves</b> to scout ahead or assault a foe, his wolf transformation grants him the <b>speed and strength</b> to run down his enemies, or escape an ambush.",
+  "npe_desc_loc": "Shapeshifts into a ferocious beast",
   "facets": [
     {
       "color": 5,
       "title_loc": "Pack Leader",
-      "description_loc": "Время действия способности Shapeshift продлевается, когда её владелец или его существа убивают вражеского героя.",
+      "description_loc": "Enemy heroes killed by Lycan or his units extend Shapeshift duration.",
       "name": "lycan_pack_leader",
       "icon": "summons",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Spirit Wolves",
-      "description_loc": "Summon Wolves призывает неуязвимых и неуправляемых волков, которые не атакуют, но увеличивают здоровье и урон владельца.",
+      "description_loc": "Summon Wolves creates invulnerable non-attacking wolves that buff Lycan's health and attack damage.",
       "name": "lycan_spirit_wolves",
       "icon": "spirit",
       "gradient_id": 0,
@@ -28,7 +28,7 @@
     {
       "color": 2,
       "title_loc": "Alpha Wolves",
-      "description_loc": "Увеличивает максимальный уровень способности Summon Wolves и снижает его у Howl и Feral Impulse.",
+      "description_loc": "Increases the max level of Summon Wolves while lowering the max level of Howl and Feral Impulse.",
       "name": "lycan_alpha_wolves",
       "icon": "wolf",
       "gradient_id": 2,
@@ -75,17 +75,17 @@
       "id": 5395,
       "name": "lycan_summon_wolves",
       "name_loc": "Summon Wolves",
-      "desc_loc": "Призывает %wolf_count% волков, которые будут помогать герою в бою. С третьего уровня волки обладают постоянной невидимостью, а с четвёртого — имеют шанс в 20% покалечить противника атакой, отчего он получает 8 урона в секунду и теряет 60 скорости атаки на 4 секунды.",
-      "lore_loc": "То самое заклинание, что исказило его сущность, также позволяет призывать волков-напарников.",
+      "desc_loc": "Summons %wolf_count% wolves to aid Lycan in battle. At level 3, wolves gain Permanent Invisibility, and at level 4 wolves gain Cripple that gives 20% chance to cripple the target, causing 8 damage per second and lose 60 attack speed for 4 seconds.",
+      "lore_loc": "The very enchantment that twisted his being also summons canine familiars.",
       "notes_loc": [
-        "Применение этой способности заменит уже существующих волков на новых."
+        "Using this spell will replace currently active summoned Wolves."
       ],
-      "shard_loc": "Добавляет к одной из волн крипов неуправляемого волка, который может покалечить башню атакой.",
+      "shard_loc": "Causes one of your creep waves to include one uncontrollable wolf that moves with the wave. Additionally, wolves spawned this way may Cripple towers.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Волки являются неуязвимыми и неуправляемыми призраками, которые не атакуют, но увеличивают здоровье и урон владельца.",
-        "Увеличивает максимальный уровень до %max_level%. На пятом уровне атаки волков могут наложить на жертву оцепенение, при этом увеличивая получаемый ей физический урон от атак. На шестом уровне волки получают активную способность Hightail, которая даёт им уклонение и возможность проходить сквозь других существ, а также ускоряет их передвижение и атаку."
+        "Summoned Wolves are invulnerable and uncontrollable spirits that do not attack, but provide health and damage bonuses to Lycan.",
+        "Max Level increased to %max_level%. Level 5 wolves gain Hamstring, which empowers their attacks to root enemies and cause them to take more physical damage on attacks. Level 6 wolves have Hightail, an active ability that gives wolves phased movement, evasion, movespeed, and attack speed."
       ],
       "type": 0,
       "behavior": "4",
@@ -162,7 +162,7 @@
             50
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -186,7 +186,7 @@
             0.9
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ ИНТЕРВАЛ АТАК:",
+          "heading_loc": "BASE ATTACK TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -215,7 +215,7 @@
             52
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lycan_3",
@@ -250,7 +250,7 @@
             575
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ:",
+          "heading_loc": "HP:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lycan_7",
@@ -378,7 +378,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ВОЛКОВ:",
+          "heading_loc": "WOLF COUNT:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lycan_2",
@@ -499,7 +499,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ЗДОРОВЬЕ ЗА ВОЛКА:",
+          "heading_loc": "BONUS HEALTH PER WOLF:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -524,7 +524,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. БАЗОВЫЙ УРОН ЗА ВОЛКА:",
+          "heading_loc": "BASE DAMAGE INCREASE PER WOLF:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -654,15 +654,15 @@
       "id": 5396,
       "name": "lycan_howl",
       "name_loc": "Howl",
-      "desc_loc": "Нагоняет ужас в радиусе %radius% от владельца способности и его волков, уменьшая врагам броню и урон от атак. Ночью уменьшение брони и урона действует по всей карте.",
-      "lore_loc": "Леденящий кровь вой даёт врагам знать: Бэйнхаллоу уже среди них.",
+      "desc_loc": "Strikes fear into enemies, reducing armor and attack damage of all enemies within %radius% range of Lycan and his wolves. At night, Howl's armor and attack damage reductions are global.",
+      "lore_loc": "Blood-curdling wolf cries signal to opponents that Banehallow is among them.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Максимальный уровень уменьшен до %max_level%."
+        "Max level decreased to %max_level%."
       ],
       "type": 0,
       "behavior": "134217732",
@@ -712,7 +712,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -732,7 +732,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА ОТ АТАК:",
+          "heading_loc": "ATTACK DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -773,7 +773,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ:",
+          "heading_loc": "ARMOR REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lycan_howl_armor",
@@ -898,15 +898,15 @@
       "id": 5397,
       "name": "lycan_feral_impulse",
       "name_loc": "Feral Impulse",
-      "desc_loc": "Увеличивает урон и восстановление здоровья у героя и всех подконтрольных ему существ.",
-      "lore_loc": "Звериный симбиоз с волчьим родом даёт Бэйнхаллоу улучшенные рефлексы и способности для охоты.",
+      "desc_loc": "Increases the HP regeneration and damage of Lycan and all units under his control.",
+      "lore_loc": "His animalistic symbiosis with canine kind gives Banehallow enhanced reflexes and hunting capabilities.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Максимальный уровень уменьшен до %max_level%."
+        "Max level decreased to %max_level%."
       ],
       "type": 0,
       "behavior": "2",
@@ -953,7 +953,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lycan_4",
@@ -979,7 +979,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:",
+          "heading_loc": "BONUS HP REGEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1027,10 +1027,10 @@
       "id": 333,
       "name": "lycan_wolf_bite",
       "name_loc": "Wolf Bite",
-      "desc_loc": "Владелец кусает союзного героя или крипа-героя, наделяя его бонусами от способности Shapeshift. Они с целью получают %lifesteal_percent%%% вампиризма, который восстанавливает здоровье им обоим, если они находятся на расстоянии не более %lifesteal_range%.",
-      "lore_loc": "Как думаешь, это заразно?",
+      "desc_loc": "Lycan bites an allied hero or creep-hero, granting them Shapeshift properties. Lycan and the bitten target gain %lifesteal_percent%%% Lifesteal and share the healing effect of Lifesteal with each other as long as they are within %lifesteal_range% range of each other.",
+      "lore_loc": "Does this bite look infected?",
       "notes_loc": [
-        "Имеет такую же перезарядку, как способность Shapeshift."
+        "Wolf Bite cooldown matches the cooldown of the current level of Shapeshift."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1225,7 +1225,7 @@
       "id": 1339,
       "name": "lycan_apex_predator",
       "name_loc": "Apex Predator",
-      "desc_loc": "Каждый уровень героя повышает урон, который он и его подконтрольные существа наносят нейтральным крипам, на %damage_amp_per_level%%%.",
+      "desc_loc": "Lycan and units he controls deal %damage_amp_per_level%%% extra damage to neutral creeps per hero level.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1294,7 +1294,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН:",
+          "heading_loc": "EXTRA DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1323,15 +1323,15 @@
       "id": 5398,
       "name": "lycan_shapeshift",
       "name_loc": "Shapeshift",
-      "desc_loc": "Герой принимает волчий облик, отчего двигается с увеличенной скоростью, не может быть замедлен и получает увеличенный обзор ночью.",
-      "lore_loc": "Навеки раб своей ликантропии, Бэйнхаллоу смирился с проклятием и принял свою свирепость как данное.",
+      "desc_loc": "Lycan assumes his lupine form, granting him critical strikes and added vision at night. During Shapeshift, Lycan moves at increased speed and cannot be slowed.",
+      "lore_loc": "Forever a slave to his lycanthropy, Banehallow has come to accept his curse, and embrace his own savagery.",
       "notes_loc": [
-        "Hex не влияет на скорость передвижения вашего героя."
+        "Hex doesn't remove Lycan's movement speed."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Бонус к скорости передвижения и шанс критической атаки также даются всем подконтрольным герою существам. Если он или его существа убьют вражеского героя, действие этой способности продлится на %kill_duration_extension% сек.",
+        "Movement and critical strike bonuses are also applied to all units under Lycan's control. Enemy heroes killed by Lycan or his units extends Shapeshift duration by %kill_duration_extension%s.",
         "",
         ""
       ],
@@ -1379,7 +1379,7 @@
             25
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lycan_1",
@@ -1402,7 +1402,7 @@
             550
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "SHAPESHIFT MOVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1419,7 +1419,7 @@
             1000
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. НОЧНОЙ ОБЗОР:",
+          "heading_loc": "BONUS NIGHT VISION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1436,7 +1436,7 @@
             1.1
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ПРЕВРАЩЕНИЯ:",
+          "heading_loc": "TRANSFORM TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1453,7 +1453,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС КРИТИЧЕСКОЙ АТАКИ:",
+          "heading_loc": "CRITICAL CHANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1472,7 +1472,7 @@
             240
           ],
           "is_percentage": true,
-          "heading_loc": "КРИТИЧЕСКИЙ УРОН:",
+          "heading_loc": "CRITICAL DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1491,7 +1491,7 @@
             425
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ЗДОРОВЬЕ:",
+          "heading_loc": "HEALTH BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1601,7 +1601,7 @@
     {
       "id": 1152,
       "name": "special_bonus_unique_lycan_howl_armor",
-      "name_loc": "+{s:bonus_armor} к снижению брони от Howl",
+      "name_loc": "+{s:bonus_armor} Howl Armor Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1664,7 +1664,7 @@
     {
       "id": 6519,
       "name": "special_bonus_unique_lycan_3",
-      "name_loc": "+{s:bonus_bonus_damage} к урону волков",
+      "name_loc": "+{s:bonus_bonus_damage} Wolves Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1672,7 +1672,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "+{s:bonus_damage_per_wolf} к урону за волка от Summon Wolves",
+        "+{s:bonus_damage_per_wolf} Summon Wolves Damage Per Wolf",
         ""
       ],
       "type": 2,
@@ -1727,7 +1727,7 @@
     {
       "id": 794,
       "name": "special_bonus_unique_lycan_7",
-      "name_loc": "+{s:bonus_bonus_health} к здоровью волков",
+      "name_loc": "+{s:bonus_bonus_health} Summon Wolves Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1735,7 +1735,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "+{s:bonus_health_per_wolf} к здоровью за волка от Summon Wolves",
+        "+{s:bonus_health_per_wolf} Summon Wolves Health Per Wolf",
         ""
       ],
       "type": 2,
@@ -1790,7 +1790,7 @@
     {
       "id": 846,
       "name": "special_bonus_unique_lycan_8",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Shapeshift",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Shapeshift Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1853,7 +1853,7 @@
     {
       "id": 6134,
       "name": "special_bonus_unique_lycan_1",
-      "name_loc": "+{s:bonus_duration} сек. действия Shapeshift",
+      "name_loc": "+{s:bonus_duration}s Shapeshift Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1916,7 +1916,7 @@
     {
       "id": 6684,
       "name": "special_bonus_unique_lycan_4",
-      "name_loc": "+{s:bonus_bonus_damage}% к доп. урону от Feral Impulse",
+      "name_loc": "+{s:bonus_bonus_damage}% Feral Impulse Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1979,7 +1979,7 @@
     {
       "id": 6685,
       "name": "special_bonus_unique_lycan_5",
-      "name_loc": "Howl уменьшает общий урон от атак",
+      "name_loc": "Howl Reduces Total Attack Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2042,7 +2042,7 @@
     {
       "id": 6140,
       "name": "special_bonus_unique_lycan_2",
-      "name_loc": "+{s:bonus_wolf_count} к числу призываемых волков",
+      "name_loc": "+{s:bonus_wolf_count} Wolves Summoned",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

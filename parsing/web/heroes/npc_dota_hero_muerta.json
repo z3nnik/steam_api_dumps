@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_muerta",
   "order_id": 124,
   "name_loc": "Muerta",
-  "bio_loc": "Про Муэрту сложили историй больше, чем могил на Полях падальшиков в Горме. Некоторые рассказывают своим детям страшилки про юную деревенскую деву, что восстала из мёртвых и желает наказать убивших её семью бандитов. Пьяницы в тёмных трактирах бормочут про теории заговоров, похищения и фантомные гильдии убийц...<br><br>Однако все истории сходятся в одном: девушка, неистово жаждущая отомстить своим палачам, отказалась умереть. Смерть же так впечатлилась неугасимой ненавистью, что подарила девушке Милосердие и Пощаду — свои призрачные пистолеты, — тем самым сделав её своей правой рукой. Теперь Муэрта охотится на своенравные души, не желающие мириться с наставшей кончиной, отправляя их суетные и кричащие тела на вечный покой.",
-  "hype_loc": "Повелительница смерти Муэрта ступает по миру живых, устрашая своих жертв <b>виртуозными выстрелами</b> и <b>насылая духов</b> на врагов. Муэрта всегда готова <b>присмирить беспечных противников</b> огнём из запасного пистолета и обрушить на них бесплотную ярость проклятых, <b>зайдя за вуаль духов</b>.",
-  "npe_desc_loc": "Устрашает врагов виртуозными выстрелами и бесплотным гневом",
+  "bio_loc": "There are as many stories about Muerta as there are graves in the Carrion Fields of Gorm. Some tell their children ghost stories of a young peasant girl returned from the dead to punish the bandits who killed her family. Others, drunk in dark taverns, slur conspiracy theories about kidnappings and phantom guilds of killers.<br><br>One constant bleeds through every tale: of a woman so consumed by hate for those who killed her that she refused to die. And of Death, so impressed by whatever hate-filled engine that drove this woman that he gave her Mercy and Grace — twin ethereal pistols — and made her his second in command. Now she hunts down wayward souls whose last grains have tumbled from their hourglass, and drags them kicking and screaming to their eternal reward.",
+  "hype_loc": "Muerta is a master of death who stalks the lands of life, corralling targets with <b>fearsome trickshots</b> and <b>summoning revenants</b> to smother her foes. Always ready to <b>pick off unwary targets</b> with her spare gunhand, Muerta is at her most menacing when she <b>crosses the veil of the dead</b> to strike her enemies with the ethereal fury of the damned.",
+  "npe_desc_loc": "Blasts fearsome trickshots and unleashes ethereal ruin",
   "facets": [
     {
       "color": 2,
       "title_loc": "Dance of the Dead",
-      "description_loc": "Способность The Calling становится сильнее, если внутри неё погибают герои.",
+      "description_loc": "The Calling becomes stronger when heroes die inside it.",
       "name": "muerta_dance_of_the_dead",
       "icon": "spirit",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Quickdraw",
-      "description_loc": "Попадание по герою рикошетом от способности Dead Shot увеличивает шанс срабатывания Gunslinger.<br><br>Срабатывание Gunslinger сокращает текущую перезарядку способности Dead Shot. ",
+      "description_loc": "Dead Shot fears increase Gunslinger chance.<br><br>Gunslinger procs reduce Dead Shot cooldown. ",
       "name": "muerta_slingshot",
       "icon": "ricochet",
       "gradient_id": 1,
@@ -66,19 +66,19 @@
       "id": 5751,
       "name": "muerta_dead_shot",
       "name_loc": "Dead Shot",
-      "desc_loc": "Герой выпускает призрачную пулю во врага или в дерево. Достигнув цели, пуля нанесёт ей урон и ненадолго замедлит её, после чего отрикошетит в указанном направлении.<br><br>Рикошет наносит урон всем существам на пути и останавливается при попадании в героя, накладывая на жертву страх, отчего та бежит по направлению рикошета.",
-      "lore_loc": "Твёрдая рука и вечность тренировок — залог виртуозной стрельбы, неподвластной смертному разуму.",
+      "desc_loc": "Muerta fires a ghostly trickshot at an enemy unit or tree. When the bullet strikes, it damages and briefly slows, then ricochets in the targeted direction.<br><br>The ricochet damages all units that it passes through, stopping when it hits a hero. Heroes hit by the ricochet are feared away from the impact.",
+      "lore_loc": "A steady gunhand and an eternity of practice produce trickshots that defy the mortal mind.",
       "notes_loc": [
-        "Враг под действием страха проходит сквозь существ, и его нельзя замедлить.",
-        "Дальность рикошета — умноженная на %ricochet_distance_multiplier% дальность применения способности.",
-        "Пуля отрикошетит, даже если цель невосприимчива к магии."
+        "Feared enemies are phased and unslowable.",
+        "The ricochet will travel %ricochet_distance_multiplier%x Dead Shot's cast range.",
+        "Can ricochet off of magic immune targets."
       ],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает урон способности. После рикошета пуля расширяется и накладывает страх на всех вражеских героев на своём пути, проходя их насквозь.",
+      "scepter_loc": "Dead Shot damage is increased. Dead Shot expands after it ricochets and pierces through enemy heroes as it fears them.",
       "facets_loc": [
         "",
         "",
-        "Попадание рикошетом по герою увеличивает шанс срабатывания способности Gunslinger в %gunslinger_buffed_chance_multiplier% раза на %gunslinger_buffed_chance_duration% сек."
+        "Dead Shot fears increase Gunslinger chance to %gunslinger_buffed_chance_multiplier%x for %gunslinger_buffed_chance_duration%s."
       ],
       "type": 0,
       "behavior": "1073741832",
@@ -131,7 +131,7 @@
             325
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -257,7 +257,7 @@
             1.25
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ СТРАХА ОТ РИКОШЕТА:",
+          "heading_loc": "RICOCHET FEAR DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -274,7 +274,7 @@
             -100
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "IMPACT SLOW PERCENT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -291,7 +291,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "IMPACT SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -478,13 +478,13 @@
       "id": 5752,
       "name": "muerta_the_calling",
       "name_loc": "The Calling",
-      "desc_loc": "Призывает %num_revenants% призраков, неторопливо кружащих в указанной области. Враги в ней передвигаются медленнее, а каждый коснувшийся призрака получит урон и безмолвие.",
-      "lore_loc": "Семья Муэрты навсегда ушла за вуаль духов, но сделка со Смертью позволяет ненадолго призвать усопших в трудную минуту.",
+      "desc_loc": "Summons a group of %num_revenants% revenants that slowly circle the targeted location. Enemies within the area are slowed. Revenants deal damage and silence enemies as they pass through them.",
+      "lore_loc": "Muerta's family are forever beyond the spirit veil, but her deal with Death allows her to briefly call on them in times of want or need.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Когда любой герой умирает в области действия этой способности, её длительность начинается сначала, число призраков увеличивается на 1, а радиус действия — на %kill_radius_expansion%.",
+        "Heroes killed inside The Calling refresh its duration, create another Revenant, and expand the radius of The Calling by %kill_radius_expansion%.",
         "",
         ""
       ],
@@ -536,7 +536,7 @@
             180
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -556,7 +556,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ СУЩЕСТВОВАНИЯ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -681,7 +681,7 @@
             -20
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -701,7 +701,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БЕЗМОЛВИЯ:",
+          "heading_loc": "SILENCE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -896,20 +896,20 @@
       "id": 5753,
       "name": "muerta_gunslinger",
       "name_loc": "Gunslinger",
-      "desc_loc": "Переключаемая. Когда включена, при каждой атаке герой имеет шанс совершить дополнительный выстрел в случайную цель.",
-      "lore_loc": "Муэрта одаряет каждую свою жертву Милосердием, и лишь счастливцам выпадает знакомство ещё и с Пощадой.",
+      "desc_loc": "Toggleable. When toggled on, Muerta's attacks have a chance to fire a second shot at another target.",
+      "lore_loc": "Muerta offers all of her victims Mercy. Some are fortunate enough to also earn Grace.",
       "notes_loc": [
-        "Если в радиусе действия нет других врагов, то второй выстрел будет совершён в ту же цель.",
-        "Максимальная дальность дополнительного выстрела равна дальности атаки героя + %target_search_bonus_range%.",
-        "На дополнительный выстрел действуют эффекты атаки.",
-        "В первую очередь целью становятся герои, затем остальные существа, а затем постройки."
+        "If no other units are in range, she fires both guns at the original target.",
+        "Secondary shots can hit units within Muerta's attack range plus %target_search_bonus_range%.",
+        "The secondary shot can trigger attack modifiers.",
+        "Prioritizes heroes, then non-hero units, then buildings."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Каждый двойной выстрел снижает текущую перезарядку способности Dead Shot на %dead_shot_cooldown_reduction_on_proc% сек."
+        "Gunslinger procs reduce Dead Shot cooldown by %dead_shot_cooldown_reduction_on_proc%s."
       ],
       "type": 0,
       "behavior": "137438956036",
@@ -956,7 +956,7 @@
             45
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС:",
+          "heading_loc": "CHANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_muerta_gunslinger_double_shot_chance",
@@ -1048,13 +1048,13 @@
       "id": 5754,
       "name": "muerta_pierce_the_veil",
       "name_loc": "Pierce the Veil",
-      "desc_loc": "Герой принимает бесплотную форму, получая невосприимчивость к физическому урону и возможность проходить сквозь существ. Урон от атак увеличивается и становится магическим.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "Зайдя за завесу духов, Муэрта сбрасывает свою телесную оболочку и обрушивает на врагов ярость проклятых.",
+      "desc_loc": "Muerta transforms, becoming immune to physical damage. All of her attack damage is dealt as magical damage and Muerta gains bonus attack damage and phased movement.<br><br>DISPEL TYPE: Basic Dispel",
+      "lore_loc": "Muerta sheds her corporeal form, crossing the spirit veil and striking her enemies with the fury of the damned.",
       "notes_loc": [
-        "Превращение сбивает с цели летящие в героя снаряды.",
-        "Под действием этой способности нельзя атаковать постройки."
+        "Muerta will dodge projectiles upon transformation.",
+        "Muerta cannot attack buildings while transformed."
       ],
-      "shard_loc": "Способность также даёт +%spell_lifesteal%%% к вампиризму заклинаниями.<br>Когда эта способность действует, её владелец навсегда получает +%spell_amp_steal%%% к урону от заклинаний за каждого погибшего рядом или убитого вражеского героя. Эффекты накапливаются с начала игры.",
+      "shard_loc": "Muerta gains %spell_lifesteal%%% Spell Lifesteal during Pierce the Veil.<br>While Pierce the Veil is active Muerta permanently gains %spell_amp_steal%%% spell amplification each time she kills an enemy Hero or they die in her vicinity. Bonus applies retroactively.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -1107,7 +1107,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_muerta_pierce_the_veil_duration",
@@ -1130,7 +1130,7 @@
             0.35
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРЕВРАЩЕНИЯ:",
+          "heading_loc": "TRANSFORM DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1183,7 +1183,7 @@
             130
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ОТ АТАКИ:",
+          "heading_loc": "BONUS ATTACK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1303,7 +1303,7 @@
       "id": 1436,
       "name": "muerta_supernatural",
       "name_loc": "Supernatural",
-      "desc_loc": "Герой всегда может совершать атаки по бесплотным целям, делая весь урон от атак магическим. Помимо этого, герой сам может совершать атаки, находясь в бесплотной форме.",
+      "desc_loc": "Muerta can always attack when she is ethereal. Muerta can always attack ethereal targets. When attacking ethereal targets, all of her attack damage is dealt as magical damage.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1367,7 +1367,7 @@
     {
       "id": 5757,
       "name": "special_bonus_unique_muerta_dead_shot_range",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальности применения Dead Shot",
+      "name_loc": "+{s:bonus_AbilityCastRange} Dead Shot Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1430,7 +1430,7 @@
     {
       "id": 5906,
       "name": "special_bonus_attack_speed_20",
-      "name_loc": "+{s:value} к скорости атаки",
+      "name_loc": "+{s:value} Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1511,8 +1511,8 @@
     {
       "id": 1438,
       "name": "special_bonus_unique_muerta_calling_hp_regen",
-      "name_loc": "The Calling излечивает {s:bonus_hp_regen_pct}% макс. здоровья в секунду",
-      "desc_loc": "Действует только на владельца способности.",
+      "name_loc": "+{s:bonus_hp_regen_pct}% Max HP Regen while inside The Calling",
+      "desc_loc": "Only applies to Muerta.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1574,8 +1574,8 @@
     {
       "id": 1439,
       "name": "special_bonus_unique_muerta_gunslinger_bonus_damage",
-      "name_loc": "+{s:bonus_bonus_damage} к урону при срабатывании Gunslinger",
-      "desc_loc": "Действует на оба выстрела.",
+      "name_loc": "+{s:bonus_bonus_damage} Gunslinger Damage",
+      "desc_loc": "Affects both shots.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1637,7 +1637,7 @@
     {
       "id": 1629,
       "name": "special_bonus_unique_muerta_pierce_the_veil_duration",
-      "name_loc": "+{s:bonus_duration} сек. действия Pierce the Veil",
+      "name_loc": "+{s:bonus_duration}s Pierce the Veil Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1700,7 +1700,7 @@
     {
       "id": 5758,
       "name": "special_bonus_unique_muerta_the_calling_num_revenants",
-      "name_loc": "+{s:bonus_num_revenants} к числу духов от The Calling",
+      "name_loc": "The Calling summons {s:bonus_num_revenants} additional revenants",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1763,7 +1763,7 @@
     {
       "id": 5759,
       "name": "special_bonus_unique_muerta_gunslinger_double_shot_chance",
-      "name_loc": "+{s:bonus_double_shot_chance}% к шансу срабатывания Gunslinger",
+      "name_loc": "+{s:bonus_double_shot_chance}% Gunslinger chance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1826,7 +1826,7 @@
     {
       "id": 5755,
       "name": "special_bonus_unique_muerta_dead_shot_charges",
-      "name_loc": "{s:bonus_AbilityCharges} заряда Dead Shot",
+      "name_loc": "{s:bonus_AbilityCharges} Dead Shot Charges",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

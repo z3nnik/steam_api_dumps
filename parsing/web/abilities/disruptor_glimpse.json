@@ -1,265 +1,263 @@
-[
-  {
-    "id": 5459,
-    "name": "disruptor_glimpse",
-    "name_loc": "Glimpse",
-    "desc_loc": "Возвращает выбранного героя туда, где он был %backtrack_time% сек. назад, и наносит ему урон. Мгновенно убивает иллюзии. Урон равен доле от преодолённого жертвой расстояния, но не может превысить максимум.",
-    "lore_loc": "Игры с электричеством иногда приносят неожиданные результаты.",
-    "notes_loc": [
-      "Время возвращения цели зависит от преодолённого ею расстояния."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "8",
-    "target_team": 2,
-    "target_type": 1,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 3,
-    "max_level": 4,
-    "cast_ranges": [
-      600,
-      1000,
-      1400,
-      1800
-    ],
-    "cast_points": [
-      0.05,
-      0.05,
-      0.05,
-      0.05
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      24,
-      22,
-      20,
-      18
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      70,
-      85,
-      100,
-      115
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "backtrack_time",
-        "values_float": [
-          4
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5459,
+  "name": "disruptor_glimpse",
+  "name_loc": "Glimpse",
+  "desc_loc": "Teleports the target hero back to where it was %backtrack_time% seconds ago.  Instantly kills illusions. Deals damage equal to a percentage of the distance glimpsed, that cannot go over a damage maximum.",
+  "lore_loc": "Playing with electricity can have unexpected results.",
+  "notes_loc": [
+    "The travel time is a function of the distance the target will travel."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "8",
+  "target_team": 2,
+  "target_type": 1,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 3,
+  "max_level": 4,
+  "cast_ranges": [
+    600,
+    1000,
+    1400,
+    1800
+  ],
+  "cast_points": [
+    0.05,
+    0.05,
+    0.05,
+    0.05
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    24,
+    22,
+    20,
+    18
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    70,
+    85,
+    100,
+    115
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "backtrack_time",
+      "values_float": [
+        4
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "cast_range",
-        "values_float": [
-          600,
-          1000,
-          1400,
-          1800
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "cast_range",
+      "values_float": [
+        600,
+        1000,
+        1400,
+        1800
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "min_damage",
-        "values_float": [
-          25
-        ],
-        "is_percentage": false,
-        "heading_loc": "МИНИМАЛЬНЫЙ УРОН:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "min_damage",
+      "values_float": [
+        25
+      ],
+      "is_percentage": false,
+      "heading_loc": "MIN DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "max_damage",
-        "values_float": [
-          100,
-          160,
-          220,
-          280
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКСИМАЛЬНЫЙ УРОН:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_disruptor_9",
-            "value": 300,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "max_damage",
+      "values_float": [
+        100,
+        160,
+        220,
+        280
+      ],
+      "is_percentage": false,
+      "heading_loc": "MAX DAMAGE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_disruptor_9",
+          "value": 300,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage_to_distance_pct",
-        "values_float": [
-          20,
-          25,
-          30,
-          35
-        ],
-        "is_percentage": true,
-        "heading_loc": "УРОН ОТ РАССТОЯНИЯ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_disruptor_9",
-            "value": 10,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "damage_to_distance_pct",
+      "values_float": [
+        20,
+        25,
+        30,
+        35
+      ],
+      "is_percentage": true,
+      "heading_loc": "GLIMPSE DISTANCE TO DAMAGE:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_disruptor_9",
+          "value": 10,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          600,
-          1000,
-          1400,
-          1800
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        600,
+        1000,
+        1400,
+        1800
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.05
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.05
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          70,
-          85,
-          100,
-          115
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        70,
+        85,
+        100,
+        115
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          24,
-          22,
-          20,
-          18
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_disruptor_4",
-            "value": 12,
-            "operation": 2
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        24,
+        22,
+        20,
+        18
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_disruptor_4",
+          "value": 12,
+          "operation": 2
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

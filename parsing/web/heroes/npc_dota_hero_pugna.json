@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_pugna",
   "order_id": 35,
   "name_loc": "Pugna",
-  "bio_loc": "В родном мире Pugna, неподалёку от пробоин в Пределах пустоты, стоял ламаистский монастырь магии забвения, питавшийся энергией, идущей из проходов в Пределы. Настоятель храма отошёл в Забвение несколько лет назад, оставив академию без предводителя. Сразу же после смерти своего учителя, регенты монастыря приступили к ритуалам поиска нового воплощения своего учителя, и, в конце концов, все знаки указали на ближайшие поселения. Несколько деревень притулились в тени храма, и их улицы и площади были заполнены смехом и криками детей.\r\n\t\t\t\t<br><br>Pugna, младенец тринадцати месяцев от роду, был лишь одним из множества кандидатов среди местных непосед, и в назначенный день его представили ламам вместе с ещё двумя маленькими кандидатами. Детям была подана горсть поношенных реликвий, некогда принадлежавших настоятелю. Один мальчик схватил порфировую палочку, принадлежавшую ламе,... и стал ковыряться ей у себя в ноздре. Неусидчивая девчонка заграбастала амулет ламы, после чего сразу его проглотила. Pugna невозмутимо посмотрел на обоих, весело рассмеялся и испепелил их зарядами изумрудного пламени. Потом вытащил палочку и амулет из двух кучек праха, и крикнул: «Моё!». Регенты монастыря подхватили малыша на плечи, обмотали его в одеяния старого хозяина, и спешно понесли ребёнка к его трону, пока у их старого нового учителя не сменилось настроение. В течение пяти лет правления Pugna, к его нескончаемому удовольствию, кучей пепла стала уже вся академия.",
-  "hype_loc": "Умелый колдун Pugna обращает силы противника против него же, подрывая его оборону и укрепления. Пока его <b>тотем</b> бьёт ближайших врагов, осмелившихся использовать магию, сам Pugna <b>вытягивает из них жизнь</b>, чтобы быть готовым к следующему наступлению.",
-  "npe_desc_loc": "Высасывает из врага жизнь, чтобы излечиться самому",
+  "bio_loc": "In the realm of Pugna's birth, near the vents of the Nether Reaches, there stood a lamasery devoted to the Arts of Oblivion, which drew its power from the nether energies. The Grandmaster of the temple compound had himself passed into Oblivion several years prior, leaving his academy without a leader. From the moment of their master's death, the regents of the temple began rites of divination to identify their master's reincarnation, and eventually all signs converged on the immediate neighborhood. Several villages squatted in the shadow of the temple, their alleys and plazas full of the laughter of squalling children.\r\n\t\t\t\t<br><br>Pugna, a mere thirteen months of age, was but one candidate among the local brats, and on the appointed day he was presented at the temple alongside two other promising tots. The lamas offered a jumble of worn relics to the children, treasured possessions of their former grandmaster. One boy reached for a porphyry wand that had belonged to the lama...and put it in his nostril. An impish girl pulled out an amulet that had also been the lama's, and immediately swallowed it. Pugna regarded the other two coolly, gave a merry laugh, and blasted them with gouts of emerald flame, reducing them to ashes in an instant. He then snatched up the wand and amulet, saying 'Mine!' The regents hoisted the beaming Pugna on their shoulders, wrapped him in their grandmaster's vestments, and rushed him to the throne before his mood could change. Within five years, the temple itself was another pile of ash, which pleased Pugna to no end.",
+  "hype_loc": "A crafty trickster, Pugna turns the enemy's power against itself as he blasts their defenses. While his <b>nether ward</b> strikes nearby foes that dare to cast a spell, he <b>drains life</b> from enemies to ensure he will be ready for the next assault.",
+  "npe_desc_loc": "Drains enemy life to heal himself",
   "facets": [
     {
       "color": 2,
       "title_loc": "Siphoning Ward",
-      "description_loc": "Нанося урон, тотем от Nether Ward восстанавливает владельцу здоровье и ману.",
+      "description_loc": "Nether Ward restores mana and health to Pugna based on how much damage is dealt.",
       "name": "pugna_siphoning_ward",
       "icon": "healing",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 4,
       "title_loc": "Rewards of Ruin",
-      "description_loc": "Герой получает +{s:bonus_tower_scale}% к урону от заклинаний за каждую разрушенную башню.",
+      "description_loc": "Pugna receives {s:bonus_tower_scale}% spell amplification per destroyed tower.",
       "name": "pugna_rewards_of_ruin",
       "icon": "siege",
       "gradient_id": 2,
@@ -66,10 +66,10 @@
       "id": 5186,
       "name": "pugna_nether_blast",
       "name_loc": "Nether Blast",
-      "desc_loc": "Взрыв астральной энергии, который наносит урон врагам и постройкам в области действия. Постройки получают %structure_damage_mod%%% урона.",
-      "lore_loc": "Искусства Забвения включают в себя оглушающий взрыв изумрудного пламени из Нижних пределов.",
+      "desc_loc": "An exploding pulse deals damage to enemies and structures in the area.  Deals %structure_damage_mod%%% damage to structures.",
+      "lore_loc": "The Arts of Oblivion include a deafening blast of emerald flames from the Nether Reaches.",
       "notes_loc": [
-        "Задержка перед взрывом — %delay% сек."
+        "Damage is delayed by %delay% seconds."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -142,7 +142,7 @@
             0.8
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАДЕРЖКА:",
+          "heading_loc": "BLAST DELAY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -159,7 +159,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -179,7 +179,7 @@
             320
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "BLAST DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pugna_2",
@@ -291,12 +291,12 @@
       "id": 5187,
       "name": "pugna_decrepify",
       "name_loc": "Decrepify",
-      "desc_loc": "Могущественное заклятие изгнания замедляет выбранное существо, лишает его возможности атаковать или быть атакованным, а также увеличивает его лечение, если это союзник, или получаемый магический урон, если это враг.",
-      "lore_loc": "Изученное до совершенства умение из юности, позволяющее отправлять существ в Нижние пределы — во благо ли, во зло или просто забавы ради.",
+      "desc_loc": "A powerful banishing spell that slows a unit and renders it unable to attack or be attacked. Healing on affected allies is increased, while afflicted enemies take extra magic damage instead.",
+      "lore_loc": "A now-mastered relic from his childhood, Pugna delights in banishing others into the Nether Realm, whether for good, evil, or simple enjoyment.",
       "notes_loc": [
-        "Существу под действием этой способности наносится только магический и чистый урон.",
-        "Не замедляет союзников.",
-        "Можно применять на тотем от способности Nether Ward."
+        "Only magical and pure damage can affect a unit under the effects of Decrepify.",
+        "Doesn't slow allied units.",
+        "Can be used on your Nether Ward."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -358,7 +358,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. ЛЕЧЕНИЕ СОЮЗНИКАМ:",
+          "heading_loc": "ALLY HEAL AMPLIFICATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -399,7 +399,7 @@
             -50
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. МАГИЧЕСКИЙ УРОН ВРАГАМ:",
+          "heading_loc": "ENEMY INCREASED MAGIC DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -419,7 +419,7 @@
             -60
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ВРАГОВ:",
+          "heading_loc": "ENEMY MOVE SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -456,7 +456,7 @@
             3.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pugna_5",
@@ -545,17 +545,17 @@
       "id": 5188,
       "name": "pugna_nether_ward",
       "name_loc": "Nether Ward",
-      "desc_loc": "Герой создаёт в указанном месте тотем бездны, который наносит врагам урон, когда те применяют способности. Часть урона постоянна, а часть зависит от того, сколько маны использует жертва.",
-      "lore_loc": "Изучая искусства Забвения, колдун научился побеждать своих товарищей простым тотемом, заряженным магией Предела.",
+      "desc_loc": "Pugna places a Nether Ward at the target location. The ward will fire at any enemy hero who casts a spell dealing base damage plus the damage multiplier of the mana spent by the enemy hero.",
+      "lore_loc": "While at the lamasery for the Arts of Oblivion, Pugna learned to dominate his classmates with a simple ward charged with Nether magic.",
       "notes_loc": [
-        "Наносит урон перед применением способности, так что способность противника, убитого тотемом, не сработает.",
-        "На тотем можно применить способность Decrepify.",
-        "Иллюзии и крипы наносят тотему четверть обычного урона."
+        "Nether Ward deals damage before the actual spell is cast, so if the caster dies the spell will have no effect.",
+        "Nether Ward can be decrepified.",
+        "Illusions and creeps deal 25% damage to Nether Ward."
       ],
-      "shard_loc": "Увеличивает дальность применения до %AbilityCastRange%.",
+      "shard_loc": "Increases cast range to %AbilityCastRange%.",
       "scepter_loc": "",
       "facets_loc": [
-        "Нанося урон, тотем от Nether Ward восстанавливает владельцу здоровье и ману.",
+        "Nether Ward restores mana and health to Pugna based on how much damage is dealt.",
         ""
       ],
       "type": 0,
@@ -606,7 +606,7 @@
             1400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЕЙСТВИЯ ТОТЕМА:",
+          "heading_loc": "WARD ATTACK RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -626,7 +626,7 @@
             110
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -646,7 +646,7 @@
             1.6
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ЗА ЕД. МАНЫ:",
+          "heading_loc": "DAMAGE PER MANA:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pugna_3",
@@ -669,7 +669,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ВОССТ. ЗДОРОВЬЯ ЗА ЕД. УРОНА:",
+          "heading_loc": "DAMAGE TO HP:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -688,7 +688,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ВОССТ. МАНЫ ЗА ЕД. УРОНА:",
+          "heading_loc": "DAMAGE TO MANA:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -707,7 +707,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "АТАК ДЛЯ УНИЧТОЖЕНИЯ:",
+          "heading_loc": "ATTACKS TO DESTROY:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pugna_6",
@@ -789,7 +789,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ ТОТЕМА:",
+          "heading_loc": "WARD DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -869,11 +869,11 @@
       "id": 1288,
       "name": "pugna_oblivion_savant",
       "name_loc": "Oblivion Savant",
-      "desc_loc": "Герой может активировать предметы и способности во время применения прерываемых заклинаний.",
+      "desc_loc": "Pugna can cast spells and use items while channeling.",
       "lore_loc": "",
       "notes_loc": [
-        "Не прерываются и заклинания предметов.",
-        "Можно применять не больше одного прерываемого заклинания одновременно."
+        "Includes items which are channeled.",
+        "Can still only channel a single spell at a time."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -954,11 +954,11 @@
       "id": 5189,
       "name": "pugna_life_drain",
       "name_loc": "Life Drain",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — при применении на врага даёт обзор по нему и отнимает его жизненные силы, пополняя здоровье владельца.\n\nПри применении на союзника передаёт ему здоровье владельца.",
-      "lore_loc": "Воистину, его мощь не постигнуть даже повелителю Забвения.",
+      "desc_loc": "CHANNELED - When cast on an enemy, Pugna drains health from the target enemy unit to heal himself and granting vision over the target.\n\nWhen cast on an ally, Pugna will drain his own health into his ally.",
+      "lore_loc": "Pugna has truly become more powerful than even the grandmaster of Oblivion.",
       "notes_loc": [],
-      "shard_loc": "Позволяет применять эту способность на тотем бездны от Nether Ward, чтобы красть жизнь у врагов в радиусе %abilitycastrange% вокруг тотема. Способность, применённая на тотем, действует в %shard_damage_pct_from_ward%%% от своей обычной силы и прервётся, если уничтожить тотем.",
-      "scepter_loc": "Уменьшает перезарядку на %abilitycooldown% сек. Применение этой способности на вражеского героя каждую секунду уменьшает наносимый его заклинаниями урон на %spell_amp_drain_rate%%% (максимум — %spell_amp_drain_max%%%), при этом увеличивая урон, наносимый заклинаниями владельца, вплоть до %max_spell_amp_drain_pct%%%. При применении через тотем от Nether Ward скорость изменения урона составляет %spell_amp_drain_rate_ward%%%. Этот эффект действует %spell_amp_drain_duration% сек.",
+      "shard_loc": "Life Drain can target your Nether Ward, causing life drain to refract to all enemy heroes within %abilitycastrange% units of the ward for %shard_damage_pct_from_ward%%% of its normal value. The effect is interrupted if the ward is destroyed.",
+      "scepter_loc": "Reduces cooldown by %abilitycooldown%s. When targeting an enemy hero, Pugna reduces their outgoing spell damage by %spell_amp_drain_rate%%% per second up to a maximum of %spell_amp_drain_max%%% and increases his own, up to a maximum of %max_spell_amp_drain_pct%%%. When draining through a Nether Ward using Shard, the rate of increase/decrease is %spell_amp_drain_rate_ward%%% instead. Debuff lasts %spell_amp_drain_duration% seconds.",
       "facets_loc": [
         "",
         ""
@@ -1011,7 +1011,7 @@
             350
           ],
           "is_percentage": false,
-          "heading_loc": "ЕЖЕСЕКУНДНАЯ КРАЖА ЗДОРОВЬЯ У ВРАГА:",
+          "heading_loc": "ENEMY DRAIN PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1049,7 +1049,7 @@
             350
           ],
           "is_percentage": false,
-          "heading_loc": "ЕЖЕСЕКУНДНАЯ ПЕРЕДАЧА ЗДОРОВЬЯ СОЮЗНИКУ:",
+          "heading_loc": "ALLY DRAIN/HEAL PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1252,7 +1252,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "MAX DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1337,7 +1337,7 @@
     {
       "id": 6448,
       "name": "special_bonus_unique_pugna_4",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Nether Blast",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Nether Blast Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1399,7 +1399,7 @@
     {
       "id": 6859,
       "name": "special_bonus_unique_pugna_6",
-      "name_loc": "+{s:bonus_attacks_to_destroy} к атакам для уничтожения Nether Ward",
+      "name_loc": "+{s:bonus_attacks_to_destroy} Nether Ward Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1461,7 +1461,7 @@
     {
       "id": 1191,
       "name": "special_bonus_unique_pugna_decrepify_ally_movespeed",
-      "name_loc": "Decrepify ускоряет союзников на {s:bonus_bonus_movement_speed_allies}%",
+      "name_loc": "+{s:bonus_bonus_movement_speed_allies}% Decrepify Movement Speed To Allies",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1523,7 +1523,7 @@
     {
       "id": 5903,
       "name": "special_bonus_hp_250",
-      "name_loc": "+{s:value} к здоровью",
+      "name_loc": "+{s:value} Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1603,7 +1603,7 @@
     {
       "id": 6220,
       "name": "special_bonus_unique_pugna_1",
-      "name_loc": "+{s:bonus_bonus_heal_pct}% лечения от Life Drain",
+      "name_loc": "+{s:bonus_bonus_heal_pct}% Life Drain Heal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1665,7 +1665,7 @@
     {
       "id": 6541,
       "name": "special_bonus_unique_pugna_5",
-      "name_loc": "+{s:bonus_AbilityDuration} сек. действия Decrepify",
+      "name_loc": "+{s:bonus_AbilityDuration}s Decrepify Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1727,7 +1727,7 @@
     {
       "id": 6238,
       "name": "special_bonus_unique_pugna_2",
-      "name_loc": "+{s:bonus_blast_damage} к урону от Nether Blast",
+      "name_loc": "+{s:bonus_blast_damage} Nether Blast Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1789,7 +1789,7 @@
     {
       "id": 6403,
       "name": "special_bonus_unique_pugna_3",
-      "name_loc": "+{s:bonus_mana_multiplier} к урону за единицу маны у Nether Ward",
+      "name_loc": "+{s:bonus_mana_multiplier} Nether Ward Damage Per Mana",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_life_stealer",
   "order_id": 61,
   "name_loc": "Lifestealer",
-  "bio_loc": "В темнице Деварка томился закованный в кандалы мстительный маг, замышлявший побег. Он делил камеру с невнятно бормочущим существом по имени Н'эйкс — вором, которого Чёрствый совет проклял вечной жизнью, чтобы наказание за воровство и мошенничество проучило его как следует. За долгие годы цепи заключённого проржавели, как и его разум, и Н'эйкс уже не помнил, кем был раньше, и больше не мечтал сбежать.\r\n\t\t\t\t<br><br>В нём волшебник увидел идеальный инструмент и, сплетя заклинание Заражения, заключил свою жизненную силу в тело вора, чтобы заставить того пожертвовать собой и пройти по подземельям ураганом разрушения, пока сам маг вернулся бы в своё тело и сбежал незамеченным. Но разум мага оказался в таком мощном водовороте безумия, что всего его планы были забыты, а воля сломлена. А вот Н'эйкс, которого внезапный прилив свежей жизни пробудил от кошмарного безумия, подчинился бесплотному голосу у себя в черепной коробке, который повторял лишь одно слово: «Сбежать».\r\n\t\t\t\t<br><br>В тот момент и родилось это существо. Оно поглощало сознание стражей и солдат, заставляя тех открывать замки и убивать друг друга, и вышло на свободу, питаясь жизнью жертв. Оно до сих пор носит на себе разорванные кандалы, чтобы каждый знал: никто больше не заберёт его свободу... Но до сих пор он остаётся узником. В одном теле живут две сущности: безымянный жестокий вор и Хозяин, чьему гласу вор будто бы подчиняется.",
-  "hype_loc": "Если Lifestealer смог подобраться близко к своей жертве, то её уже ничего не спасёт. Он может забраться внутрь крипа или союзника, чтобы, оказавшись возле врага, <b>неожиданно</b> вырваться из носителя и разорвать жертву своими <b>когтями</b>.",
-  "npe_desc_loc": "Забирается в других существ, делая их быстрее и крепче",
+  "bio_loc": "In the dungeons of Devarque, a vengeful wizard lay in shackles, plotting his escape. He shared his cell with a gibbering creature known as N'aix, a thief cursed by the Vile Council with longevity, so that its life-sentence for theft and cozening might be as punishing as possible. Over the years, its chains had corroded, along with its sanity; N'aix retained no memory of its former life and no longer dreamt of escape.\r\n\t\t\t\t<br><br>Seeing a perfect vessel for his plans, the wizard wove a spell of Infestation and cast his life-force into N'aix's body, intending to compel N'aix to sacrifice itself in a frenzy of violence while the mage returned to his body and crept away unnoticed. Instead, the wizard found his mind caught in a vortex of madness so powerful that it swept away his plans and shattered his will. Jarred to consciousness by the sudden infusion of fresh life, N'aix woke from its nightmare of madness and obeyed the disembodied voice that filled its skull, which had only the one thought: To escape.\r\n\t\t\t\t<br><br>In that moment Lifestealer was born. The creature cast its mind into dungeon guards and soldiers, compelling them to open locks and cut down their companions, opening an unobstructed path to freedom while feeding on their lives. Lifestealer still wears the broken shackles as a warning that none may hold him, but on the inside remains a prisoner. Two minds inhabit the single form--a nameless creature of malevolent cunning, and the Master whose voice he pretends to obey.",
+  "hype_loc": "Should Lifestealer get close to his prey, there is little that can save them. Travelling within a creep or an allied hero, once he nears a foe he explodes from his host body, <b>surprising enemies</b> and tearing into them with his <b>claws.</b>",
+  "npe_desc_loc": "Infests other units for mobility and strength",
   "facets": [
     {
       "color": 5,
       "title_loc": "Fleshfeast",
-      "description_loc": "Увеличивает бонус к максимальному здоровью за героя от Feast. Перезарядка способности Open Wounds сбрасывается, если под её действием умирает существо.",
+      "description_loc": "Feast's max HP per hero kill is increased. Open Wounds' cooldown is refreshed if a unit dies while afflicted by Open Wounds.",
       "name": "life_stealer_fleshfeast",
       "icon": "full_heart",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Gorestorm",
-      "description_loc": "Вырвавшись из крипа, ставшего целью способности Infest, герой окатывает врагов кровью, которая наносит периодический урон, зависящий от остававшегося у носителя здоровья. Позволяет применять эту способность на древних крипов.",
+      "description_loc": "Consuming a creep with Infest drenches enemies in blood which deals damage over time based on the host's remaining health. Infest can be used on Ancient creeps.",
       "name": "life_stealer_gorestorm",
       "icon": "area_of_effect",
       "gradient_id": 0,
@@ -66,8 +66,8 @@
       "id": 5249,
       "name": "life_stealer_rage",
       "name_loc": "Rage",
-      "desc_loc": "Погружаясь в безумную ярость, герой становится невосприимчивым к эффектам и увеличивает своё сопротивление магии.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "Безумие и жесткость делают Н'эйкса злобным и безжалостным противником.",
+      "desc_loc": "Launch into a maddened rage, becoming Debuff Immune and increasing magic resistance.\n\nDISPEL TYPE: Basic Dispel",
+      "lore_loc": "The madness and brutality of N'aix makes him a vicious and unrelenting foe in combat.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -129,7 +129,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lifestealer",
@@ -152,7 +152,7 @@
             80
           ],
           "is_percentage": true,
-          "heading_loc": "СОПРОТИВЛЕНИЕ МАГИИ:",
+          "heading_loc": "MAGIC RESISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -238,11 +238,11 @@
       "id": 5251,
       "name": "life_stealer_open_wounds",
       "name_loc": "Open Wounds",
-      "desc_loc": "Герой разрывает плоть вражеского существа, замедляя его передвижение и позволяя своим союзникам излечиваться на часть урона, наносимого ими жертве. Её скорость постепенно восстанавливается.",
-      "lore_loc": "Открытые раны и запах крови часто привлекают падальщиков, заканчивающих дело за хищником.",
+      "desc_loc": "Lifestealer rends an enemy unit, slowing the victim's movement speed and allowing all allies to regain health for a percentage of the damage they deal to that unit. The victim recovers movement speed over the duration.",
+      "lore_loc": "Fresh wounds and the scent of blood often draw out the scavengers to finish the job.",
       "notes_loc": [
-        "Замедление разделяется на 8 фаз: 50% / 50% / 40% / 30% / 20% / 10% / 10% / 10%. Каждая фаза длится секунду.",
-        "Объём лечения увеличивается усилением вампиризма у владельца."
+        "Open Wounds slows over 8 different steps: 50% / 50% / 40% / 30% / 20% / 10% / 10% / 10%, with the slow decreasing one step per second.",
+        "The amount healed is amplified by Lifestealer's Lifesteal Amplification."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -250,7 +250,7 @@
         "",
         "",
         "",
-        "Перезарядка этой способности сбрасывается, если под её действием умирает существо.",
+        "Open Wounds' cooldown is refreshed if a unit dies while afflicted by Open Wounds.",
         ""
       ],
       "type": 0,
@@ -301,7 +301,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -351,7 +351,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "ЛЕЧЕНИЕ ОТ УРОНА:",
+          "heading_loc": "DAMAGE TO HEALING:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lifestealer_6",
@@ -414,7 +414,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "MAX SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lifestealer_4",
@@ -542,8 +542,8 @@
       "id": 631,
       "name": "life_stealer_ghoul_frenzy",
       "name_loc": "Ghoul Frenzy",
-      "desc_loc": "Пассивно увеличивает скорость передвижения и атаки владельца.",
-      "lore_loc": "Отдалённые воспоминания о Чёрством совете подталкивают один разум к плетению заговоров, а другой — к менее деликатным мрачным замыслам.",
+      "desc_loc": "Passively grants Lifestealer Movement and Attack Speed.",
+      "lore_loc": "Distant memories of the Vile Council fuel one mind to plotting and the other to more immediate dark ends.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -599,7 +599,7 @@
             8
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVE SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lifestealer_2",
@@ -625,7 +625,7 @@
             90
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lifestealer_5",
@@ -660,14 +660,14 @@
       "id": 5250,
       "name": "life_stealer_feast",
       "name_loc": "Feast",
-      "desc_loc": "Атаки героя наносят дополнительный урон и излечивают его пропорционально максимальному здоровью жертвы. Позволяет атаковать союзных крипов, имеющих меньше %creep_deny_percent%%% здоровья. Даёт постоянный бонус к максимальному здоровью за каждого убитого крипа и героя.",
-      "lore_loc": "После побега из темницы Деварка Н'эйкс начал питаться плотью и костьми тех, кому не посчастливилось с ним встретиться.",
+      "desc_loc": "Lifestealer's attacks deal damage and provide heal for a percentage of his target's max health. Allows Lifestealer to attack allied creeps at %creep_deny_percent%%% health. Lifestealer gains permanent max HP whenever he kills a creep or hero.",
+      "lore_loc": "After escaping from his cell in Devarque, N'aix subsisted on flesh and bones of those unfortunate to cross his path.",
       "notes_loc": [
-        "Действует на союзников и врагов. Не действует на Рошана.",
-        "Объём лечения не зависит от наносимого урона.",
-        "Объём лечения увеличивается усилением вампиризма.",
-        "Получение бонусов к здоровью отключается истощением.",
-        "Существующие бонусы к здоровью не отключаются истощением."
+        "Works on allies and enemies. Does not affect Roshan.",
+        "The heal is independent of the damage.",
+        "Amount healed is amplified by Lifesteal Amplification.",
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -675,7 +675,7 @@
         "",
         "",
         "",
-        "Бонус к максимальному здоровью за героя увеличен.",
+        "Feast's max HP per hero kill is increased.",
         ""
       ],
       "type": 0,
@@ -723,7 +723,7 @@
             2.75
           ],
           "is_percentage": true,
-          "heading_loc": "ЛЕЧЕНИЕ ОТ МАКС. ЗДОРОВЬЯ ЦЕЛИ:",
+          "heading_loc": "HEAL FROM TARGET'S MAX HEALTH:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lifestealer_3",
@@ -749,7 +749,7 @@
             2.75
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "MAX HEALTH DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lifestealer_3",
@@ -775,7 +775,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ЗДОРОВЬЕ ЗА ГЕРОЯ:",
+          "heading_loc": "MAX HP PER HERO KILL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -797,7 +797,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ЗДОРОВЬЕ ЗА КРИПА:",
+          "heading_loc": "MAX HP PER CREEP KILL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -831,7 +831,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ПОСТОЯННЫЙ БОНУС К МАКС. ЗДОРОВЬЮ:",
+          "heading_loc": "PERMANENT MAX HP:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -860,22 +860,22 @@
       "id": 5252,
       "name": "life_stealer_infest",
       "name_loc": "Infest",
-      "desc_loc": "Герой забирается в тело выбранного существа, становясь незаметным для противников и ежесекундно восстанавливая долю от своего максимального здоровья. После этого он может вырваться из носителя, нанеся урон окружающим врагам. Находясь внутри вражеского или нейтрального крипа, герой управляет его атаками и передвижением, а также наносит ему периодический урон, зависящий от его максимального здоровья. Не действует на вражеских героев.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "Вгрызаясь в плоть врага, Н'эйкс питается его кровью, восстанавливая свою нечистую силу.",
+      "desc_loc": "Lifestealer infests the body of a target unit, becoming undetectable, and healing for a portion of his max hitpoints every second while inside. He can then explode from the host body, dealing damage to nearby enemies. If the infested unit is an enemy creep or a neutral creep, he can take control of the unit's ability to move and attack, and the creep loses a portion of their max hitpoints over time. Does not work on enemy heroes.\n\nDISPEL TYPE: Basic Dispel",
+      "lore_loc": "With this infestation, N'aix consumes the life blood of the host, restoring him back to full unholy power.",
       "notes_loc": [
-        "Герой продолжает получать опыт, пока находится в теле другого существа.",
-        "Бонус к скорости передвижения даётся и крипам под управлением этой способности.",
-        "Эту способность нельзя отразить.",
-        "При применении с Aghanim's Scepter на вражеского героя урон аспекта Gorestorm зависит от суммарного урона, нанесённого жертве владельцем этой способности за время её действия."
+        "Lifestealer gains experience while under the effects of Infest.",
+        "Creeps that are controlled while Infested gain Infest's movement speed bonus.",
+        "Does not trigger spell reflect.",
+        "Infesting an enemy hero with Aghanim's Scepter will deal Gorestorm damage based on all damage that Lifestealer dealt to the host during the Infest duration."
       ],
-      "shard_loc": "Вырвавшись из жертвы Infest, герой накладывает на всех врагов в радиусе урона эффект Open Wounds, действующий %bonus_open_wounds_duration_pct%%% от обычной длительности.",
-      "scepter_loc": "Увеличивает дальность применения и уменьшает перезарядку до %bonus_AbilityCooldown% сек. Позволяет ненадолго забраться в тело вражеского героя, чтобы некоторое время атаковать его изнутри, имея увеличенное восстановление здоровья.",
+      "shard_loc": "Infest explosion applies a %bonus_open_wounds_duration_pct%%% duration Open Wounds to enemies in the damage radius.",
+      "scepter_loc": "Increases cast range and reduces cooldown to %bonus_AbilityCooldown%s.  Infest may target enemy heroes for a short duration, attacking them from the inside while increasing Lifestealer's regeneration rate.",
       "facets_loc": [
         "",
         "",
         "",
         "",
-        "Вырвавшись из крипа-носителя, герой окатывает врагов кровью, которая наносит периодический урон, зависящий от остававшегося у носителя здоровья. Позволяет применять эту способность на древних крипов."
+        "Consuming a creep with Infest drenches enemies in blood which deals damage over time based on the host's remaining health. Infest can be used on Ancient creeps."
       ],
       "type": 1,
       "behavior": "33554440",
@@ -923,7 +923,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС УРОНА:",
+          "heading_loc": "DAMAGE RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -942,7 +942,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lifestealer_infest_damage",
@@ -967,7 +967,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lifestealer_infest_target_bonus",
@@ -992,7 +992,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ЗДОРОВЬЕ:",
+          "heading_loc": "HEALTH BONUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lifestealer_infest_target_bonus",
@@ -1017,7 +1017,7 @@
             5
           ],
           "is_percentage": true,
-          "heading_loc": "ЛЕЧЕНИЕ ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "SELF MAX HP REGEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1036,7 +1036,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ НА ВРАГАХ:",
+          "heading_loc": "ENEMY DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1055,7 +1055,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ИНТЕРВАЛ АТАК:",
+          "heading_loc": "ATTACK RATE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1095,7 +1095,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ПОТЕРЯ МАКС. ЗДОРОВЬЯ КРИПА В СЕК.:",
+          "heading_loc": "CREEP MAX HP LOSS / SEC:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1131,7 +1131,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ ОСТАВШЕГОСЯ ЗДОРОВЬЯ:",
+          "heading_loc": "REMAINING HEALTH AS GORESTORM DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1150,7 +1150,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПЕРИОДИЧЕСКОГО УРОНА:",
+          "heading_loc": "GORESTORM DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1277,7 +1277,7 @@
     {
       "id": 5920,
       "name": "special_bonus_all_stats_4",
-      "name_loc": "+{s:value} ко всем атрибутам",
+      "name_loc": "+{s:value} All Attributes",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1360,7 +1360,7 @@
     {
       "id": 6676,
       "name": "special_bonus_unique_lifestealer_2",
-      "name_loc": "+{s:bonus_movement_speed_bonus}% к доп. скорости передв. от Ghoul Frenzy",
+      "name_loc": "+{s:bonus_movement_speed_bonus}% Ghoul Frenzy Movement Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1425,7 +1425,7 @@
     {
       "id": 499,
       "name": "special_bonus_unique_lifestealer_5",
-      "name_loc": "+{s:bonus_attack_speed_bonus} к скорости атаки от Ghoul Frenzy",
+      "name_loc": "+{s:bonus_attack_speed_bonus} Ghoul Frenzy Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1490,7 +1490,7 @@
     {
       "id": 464,
       "name": "special_bonus_unique_lifestealer_4",
-      "name_loc": "+{s:bonus_slow_tooltip}% к замедлению от Open Wounds",
+      "name_loc": "+{s:bonus_slow_tooltip}% Open Wounds Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1555,7 +1555,7 @@
     {
       "id": 1034,
       "name": "special_bonus_unique_lifestealer_infest_target_bonus",
-      "name_loc": "+{s:bonus_bonus_movement_speed} к доп. скорости и здоровью у цели Infest",
+      "name_loc": "+{s:bonus_bonus_movement_speed}% Infest Target Movespeed/Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1620,7 +1620,7 @@
     {
       "id": 709,
       "name": "special_bonus_unique_lifestealer_6",
-      "name_loc": "+{s:bonus_heal_percent}% к вампиризму от Open Wounds",
+      "name_loc": "+{s:bonus_heal_percent}% Open Wounds Lifesteal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1685,7 +1685,7 @@
     {
       "id": 7012,
       "name": "special_bonus_unique_lifestealer_3",
-      "name_loc": "+{s:bonus_hp_damage_percent}% к лечению и урону от Feast",
+      "name_loc": "+{s:bonus_hp_damage_percent}% Feast Heal and Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1750,7 +1750,7 @@
     {
       "id": 6173,
       "name": "special_bonus_unique_lifestealer",
-      "name_loc": "+{s:bonus_duration} сек. действия Rage",
+      "name_loc": "+{s:bonus_duration}s Rage Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1759,7 +1759,7 @@
       "facets_loc": [
         "",
         "",
-        "+{s:bonus_duration} сек. действия Unfettered",
+        "+{s:bonus_duration}s Unfettered Duration",
         "",
         ""
       ],

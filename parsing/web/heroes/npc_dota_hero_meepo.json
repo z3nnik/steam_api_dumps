@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_meepo",
   "order_id": 91,
   "name_loc": "Meepo",
-  "bio_loc": "«Как по мне, так в жизни важны лишь две вещи: те, кого ты знаешь, и то, что можешь найти. Поживи в руинах Ущелья теней, и ты поймешь, что даже поиск пищи — занятие непростое. Тебе придется сильно экономить, попрошайничать. Путь к выживанию — в твоих сильных сторонах. Некоторые твари с поверхности способны запросто убить тебя, так что нужно охотиться на слабых и избегать тех, что посильнее. Но есть и светлая сторона — эти руины являют собой ценное хранилище истории, а тем, кто живет на поверхности, история дорога во всех смыслах этого слова. Раньше здесь был дворец, и в нем бывшие жители проводили свои темные ритуалы. Ужас один. Если кто переживал церемонию, они разбивали кристалл и расщепляли душу страдальца по получившимся кусочкам. Зато искусство у них было на высоте! Скульптуры, все дела. Я тебе вот что скажу: бывает, натыкаешься на куски старинной резьбы. Набираешь их столько, сколько можешь унести, продаешь в городе — и несколько сытых недель тебе обеспечены. А если совсем повезет, то найдешь кристалл Ущелья теней. Задаешь высокую цену и начинаешь искать покупателя. Дураков, ищущих подобные безделушки, благо, хватает. Ежели не получается — продаешь любому проезжему магу, если такой найдется. Они обожают подобные штуковины. Но нужно быть аккуратным. Не позавидуешь тому, из чьих рук выскользнет этот кристалл. Это очень больно!»",
-  "hype_loc": "Призвав до пяти своих полноценных копий, Meepo способен сражаться на всех фронтах одновременно. Он распределяет своих клонов по полю боя и, заметив врага, приковывает его к земле, <b>со взрывом</b> телепортирует к себе остальные копии и добивает истощённую жертву.",
-  "npe_desc_loc": "Пятеро сильнее одного",
+  "bio_loc": "\"If you ask me, life is all about who you know and what you can find. When you live up in the Riftshadow Ruins, just finding food can be tough. So you need to cut corners, you need to scrounge, you need to know your strengths. Some of the beasts up there can kill you, so you need a way to trap the weak and duck the strong. On the upside, the ruins have history, and history is worth a lot to some people. There used to be a palace there, where they had all these dark rituals. Bad stuff. If you survived the ceremony, they would shatter a crystal and split your soul into pieces. They made great art though! Sculptures and such. Let me tell you: sometimes you stumble onto some of those old carvings. Take a pack full of those to town and sell them, then get yourself food for a few weeks. If luck is really on your side, you might find a Riftshadow crystal. Get it appraised and start asking around. Someone always knows some crazy fool looking for this kind of thing. If all else fails, sell it to a Magus the next time one's in town. They love that stuff. Still, whatever you do, be careful handling those crystals. You do not want one to go off on you. It really hurts.\"",
+  "hype_loc": "By summoning up to five permanent copies of himself, Meepo can fight from every front at once. Spreading his clones throughout the battlefield, when an enemy is found, he binds his foe, gathers his selves with an <b>explosive teleport</b>, then buries what remains.",
+  "npe_desc_loc": "Five are stronger than one",
   "facets": [
     {
       "color": 3,
       "title_loc": "More Meepo",
-      "description_loc": "Клонов можно получить раньше, и их число увеличивается на одного.",
+      "description_loc": "Obtain extra Meepos sooner and get 1 extra Meepo.",
       "name": "meepo_more_meepo",
       "icon": "summons",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 1,
       "title_loc": "Codependent",
-      "description_loc": "Герой и его копии увеличивают скорость атаки и броню друг друга.",
+      "description_loc": "Meepos increase other Meepos' attack speed and armor.",
       "name": "meepo_codependent",
       "icon": "illusion",
       "gradient_id": 1,
@@ -66,11 +66,11 @@
       "id": 5430,
       "name": "meepo_earthbind",
       "name_loc": "Earthbind",
-      "desc_loc": "Бросает в указанную область сеть, которая накладывает оцепенение на врагов.",
-      "lore_loc": "Бывает, что даже поймать ужин в руинах Ущелья теней — задача не из легких.",
+      "desc_loc": "Tosses a net at the target point, rooting down all enemy units in an area around it.",
+      "lore_loc": "Catching dinner in the Riftshadow Ruins can be quite the task.",
       "notes_loc": [
-        "Действует на невидимых врагов и раскрывает невидимость.",
-        "Не действует на невосприимчивых к эффектам существ и Рошана."
+        "Affects invisible units, revealing them.",
+        "Does not work on Debuff Immune units or Roshan."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -130,7 +130,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -147,7 +147,7 @@
             220
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -314,14 +314,14 @@
       "id": 5431,
       "name": "meepo_poof",
       "name_loc": "Poof",
-      "desc_loc": "Используя таинственную энергию земли, герой телепортируется к своем клону после %cast_duration% сек. произнесения заклинания, при этом нанося урон как в исходной, так и в конечной точке.<br><br>Если включено альтернативное применение, к цели телепортируются и остальные клоны. При применении на точку все клоны, кроме выбранного, телепортируются как можно ближе к ней.",
-      "lore_loc": "Иногда приходится разбивать один из кристаллов Ущелья теней, чтобы выпутать себя из передряги. Или другого себя.",
+      "desc_loc": "Drawing mystical energies from the earth, a Meepo can teleport to another Meepo or itself after channeling for %cast_duration% seconds, damaging the enemy in both the departure and arrival locations. <br><br>If the ability is in alt-cast state, all Meepos will also cast Poof to the target. When cast on the ground, all Meepos except the selected one will Poof to the closest location.",
+      "lore_loc": "Sometimes breaking one of the Riftshadow Crystals can be just the trick for getting yourself out of a bind.  Or your other self.",
       "notes_loc": [
-        "Можно применять через мини-карту.",
-        "Может телепортировать к вашим иллюзиям."
+        "Can be cast through the minimap.",
+        "Can teleport to Meepo illusions."
       ],
       "shard_loc": "",
-      "scepter_loc": "Во время действия MegaMeepo урон увеличивается на %megameepo_poof_scaling%%% за каждого клона.",
+      "scepter_loc": "Each additional Meepo in the tower when poofing increases the damage done by %megameepo_poof_scaling%%%",
       "facets_loc": [
         "",
         "",
@@ -395,7 +395,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -415,7 +415,7 @@
             140
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_meepo_2",
@@ -523,10 +523,10 @@
       "id": 7318,
       "name": "meepo_ransack",
       "name_loc": "Ransack",
-      "desc_loc": "Каждая атака крадёт здоровье у противника и излечивает остальные копии героя.",
-      "lore_loc": "Делиться будешь?",
+      "desc_loc": "Steals health from the enemy with each strike and heals all other Meepos for that amount.",
+      "lore_loc": "So you gonna need that, or...?",
       "notes_loc": [
-        "Объём лечения увеличивается усилением вампиризма"
+        "Amount healed is amplified by Lifesteal Amplification"
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -580,7 +580,7 @@
             18
           ],
           "is_percentage": false,
-          "heading_loc": "ПОХИЩЕНИЕ ЗДОРОВЬЯ (ГЕРОИ):",
+          "heading_loc": "HEALTH STEAL (HEROES):",
           "bonuses": [
             {
               "name": "special_bonus_unique_meepo_6",
@@ -606,7 +606,7 @@
             9
           ],
           "is_percentage": false,
-          "heading_loc": "ПОХИЩЕНИЕ ЗДОРОВЬЯ (КРИПЫ):",
+          "heading_loc": "HEALTH STEAL (CREEPS):",
           "bonuses": [
             {
               "name": "special_bonus_unique_meepo_6",
@@ -641,8 +641,8 @@
       "id": 547,
       "name": "meepo_petrify",
       "name_loc": "Dig",
-      "desc_loc": "Герой закапывается в землю, благодаря чему следующие %duration% сек. он неуязвим и его нельзя выбрать целью. Находясь в земле, герой постепенно восстанавливает %hp_restore%%% от максимального запаса здоровья.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "Эй, я тут копаю!",
+      "desc_loc": "Digs into the ground for a short duration, dispelling Meepo and causing him to become invulnerable and untargetable for %duration%s. Restores %hp_restore%%% of his max health over that duration.<br><br>DISPEL TYPE: Basic Dispel",
+      "lore_loc": "I'm diggin' here!",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -693,7 +693,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -710,7 +710,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "MAX HP RESTORE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -790,8 +790,8 @@
       "id": 1109,
       "name": "meepo_megameepo",
       "name_loc": "MegaMeepo",
-      "desc_loc": "Герой садит всех клонов в радиусе %radius% себе на плечи. В этой форме он получает %stats_pct%%% от атрибутов клонов и может метать их во врагов, нанося жертве урон и замедляя её.\n\nЗа каждого клона добавляется сеть от способности Earthbind и увеличивается урон от способности Poof.",
-      "lore_loc": "Здоров, Мипо!",
+      "desc_loc": "Primary Meepo mounts all other Meepos in a %radius% radius around him on top of his shoulders. While in this form, he gains %stats_pct%%% of the other Meepo stats and can Fling them at enemies, dealing damage and slowing them.\n\n When cast, Earthbind generates additional nets and Poof deals bonus damage based on the amount of Meepos riding on top.",
+      "lore_loc": "Hi, Meepos!",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -859,7 +859,7 @@
             25
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -973,16 +973,16 @@
       "id": 5433,
       "name": "meepo_divided_we_stand",
       "name_loc": "Divided We Stand",
-      "desc_loc": "Герой создаёт неидеальную и почти разумную копию самого себя. Эти клоны получают золото и опыт, а также перенимают способности, характеристики и уровень героя. Клоны не могут использовать какие-либо предметы, кроме сапог главного героя. Если хоть один из клонов погибнет, то умрут как все остальные клоны, так и сам герой. Также даёт герою и его копиям бонус к сопротивлению магии.",
-      "lore_loc": "Мы знакомы?",
+      "desc_loc": "Meepo summons an imperfect, semi-autonomous duplicate of himself, which can gain gold and experience as he does and shares his experience, attributes and abilities. However, the clones cannot wield any items but the boots that Meepo himself wears.  If any of the clones die, they all die. Divided We Stand grants all Meepos bonus Magic Resistance.",
+      "lore_loc": "Do I know you?",
       "notes_loc": [
-        "Клоны не могут использовать активные заклинания сапогов, за исключением Phase Boots."
+        "Of boot abilities, clones can only use the active ability from Phase Boots."
       ],
-      "shard_loc": "Позволяет применить эту способность, чтобы её владельца швырнул ближайший клон в радиусе %fling_radius%. Наносит жертве урон и замедляет её передвижение. Дальность применения: %AbilityCastRange%. Расход маны: %AbilityManaCost%.",
+      "shard_loc": "Divided We Stand can be cast as long as there's a Meepo within %fling_radius% radius of yourself. Causes that Meepo to fling you towards a target within a %AbilityCastRange% range, dealing damage and slowing their movement speed. Mana Cost: %AbilityManaCost%",
       "scepter_loc": "",
       "facets_loc": [
-        "Эту способность можно изучить на %required_level% уровне и каждые %bonus_levels_between_upgrades% уровней после этого. Максимальный уровень способности — %max_level%. Копии героя получают %main_meepo_stats_pct%%% от бонусов к его атрибутам.",
-        "Герой и все его копии получают складывающуюся ауру, которая увеличивает их скорость атаки на %support_group_attack_speed_pct%%%, а броню — на %support_group_armor%. Радиус ауры: %support_radius%.",
+        "Can now be upgraded at level %required_level% and every %bonus_levels_between_upgrades% levels afterwards to a max level of %max_level%. Duplicate Meepos receive %main_meepo_stats_pct%%% of the main Meepo's bonus attributes.",
+        "All Meepos have a stackable aura that increases nearby Meepos' attack speed by %support_group_attack_speed_pct%%% and armor by %support_group_armor%. Radius: %support_radius%.",
         ""
       ],
       "type": 1,
@@ -1026,7 +1026,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО КЛОНОВ:",
+          "heading_loc": "NUMBER OF DUPLICATES:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1048,7 +1048,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО КЛОНОВ:",
+          "heading_loc": "NUMBER OF DUPLICATES:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1123,7 +1123,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СОПРОТИВЛЕНИЕ МАГИИ:",
+          "heading_loc": "BONUS MAGIC RESIST:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1328,10 +1328,10 @@
       "id": 329,
       "name": "meepo_megameepo_fling",
       "name_loc": "MegaMeepo Fling",
-      "desc_loc": "Под действием MegaMeepo герой может метнуть самого верхнего клона в цель в радиусе %AbilityCastRange%, нанося ей урон и замедляя её передвижение.",
-      "lore_loc": "Чур ты первый!",
+      "desc_loc": "In MegaMeepo form, Meepo flings the topmost meepo towards a target within a %AbilityCastRange% range, dealing damage and slowing their movement speed.",
+      "lore_loc": "You go first!",
       "notes_loc": [
-        "Эту способность нельзя отразить."
+        "Does not trigger spell reflect."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1385,7 +1385,7 @@
             225
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1453,7 +1453,7 @@
             -60
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1533,7 +1533,7 @@
       "id": 1356,
       "name": "meepo_sticky_fingers",
       "name_loc": "Sticky Fingers",
-      "desc_loc": "Число нейтральных предметов, дающихся на выбор, увеличивается на 1.",
+      "desc_loc": "Has an extra choice of neutral item to select from.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1615,7 +1615,7 @@
     {
       "id": 6115,
       "name": "special_bonus_strength_7",
-      "name_loc": "+{s:value} к силе",
+      "name_loc": "+{s:value} Strength",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1696,7 +1696,7 @@
     {
       "id": 6689,
       "name": "special_bonus_unique_meepo_2",
-      "name_loc": "+{s:bonus_poof_damage} к урону от Poof",
+      "name_loc": "+{s:bonus_poof_damage} Poof Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1759,7 +1759,7 @@
     {
       "id": 5972,
       "name": "special_bonus_evasion_15",
-      "name_loc": "+{s:value}% к уклонению",
+      "name_loc": "+{s:value}% Evasion",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1840,7 +1840,7 @@
     {
       "id": 7027,
       "name": "special_bonus_unique_meepo_3",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Earthbind",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Earthbind Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1903,7 +1903,7 @@
     {
       "id": 7102,
       "name": "special_bonus_unique_meepo_4",
-      "name_loc": "Атаки без промахов по жертвам Earthbind",
+      "name_loc": "Earthbind grants True Strike on Targets",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1966,7 +1966,7 @@
     {
       "id": 618,
       "name": "special_bonus_unique_meepo_6",
-      "name_loc": "+{s:bonus_health_steal_heroes} к похищению здоровья от Ransack",
+      "name_loc": "+{s:bonus_health_steal_heroes} Ransack Health Steal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2029,7 +2029,7 @@
     {
       "id": 6195,
       "name": "special_bonus_hp_350",
-      "name_loc": "+{s:value} к здоровью",
+      "name_loc": "+{s:value} Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2110,7 +2110,7 @@
     {
       "id": 1357,
       "name": "special_bonus_unique_meepo_poof_cast_point",
-      "name_loc": "–{s:bonus_cast_duration} сек. применения Poof",
+      "name_loc": "-{s:bonus_cast_duration}s Poof Cast Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

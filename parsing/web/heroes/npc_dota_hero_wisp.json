@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_wisp",
   "order_id": 83,
   "name_loc": "Io",
-  "bio_loc": "Ио — непостижимое проявление жизненной силы, присутствующее везде и во всём, и для врагов оно оказывается великим разрушителем, а для учёных мужей — блеском божественного ока. Сущность эта находится одновременно на всех уровнях бытия, а её малейшие частицы воплощаются в физическом мире в каждое отдельно взятое мгновение.\r\n\t\t\t\t<br><br>Подобно великим всадникам-близнецам, Тьме и Свету, а также древнему путнику, чьё истинное происхождение затеряно в веках, — это предвечная сущность вселенной, сила старше самого времени, пришелец из миров за гранью понимания смертных. Ио есть совокупность всех материальных сил притяжения и отторжения, разумное проявление связующей реальность энергии. Присутствие его в материальном мире осязается лишь в контролируемых искривлениях векторов этих сил. Сущность эта по своей природе благожелательна, и передаёт свой непостижимый магнетизм союзникам, делая их сильнее и выносливее. Что движет этой невообразимой силой — неведомо, а её движение по физическому миру — прекрасное напоминание, что вселенная полна загадок и тайн.",
-  "hype_loc": "Io мастерски <b>повышает эффективность союзников</b>. Связав себя с кем-нибудь из них, он <b>ускоряет свою цель</b>, а враги между ним и его товарищем <b>замедляются</b>. Способность <b>телепортироваться</b> вместе с союзником может многократно увеличить потенциал и без того смертоносного героя.",
-  "npe_desc_loc": "Связывается с союзниками, чтобы усилить их",
+  "bio_loc": "Io is everywhere, and in all things.  Denounced by enemies as the great unmaker, worshiped by scholars as the twinkling of a divine eye, this strange Wisp of life-force occupies all planes at once, the merest fraction of its being crossing into physical existence at any one moment.  \r\n\t\t\t\t<br><br>Like the great twin riders Dark and Light, and yet another ancient traveler whose true history is lost to the ages, Io the Wisp is a Fundamental of the universe, a force older than time, a wanderer from realms far beyond mortal understanding. Io is nothing less than the sum of all attractive and repulsive forces within the material field, a sentient manifestation of the charge that bind existence together. It is only in the controlled warping of these electrical waylines that Io's presence can be experienced on the physical plane. A benevolent, cooperative force, Io bonds its strange magnetism to others so that the power of allies might be enhanced.  Its motives inscrutable, its strength unimaginable, Io moves through the physical plane, the perfect expression of the mysteries of the universe.",
+  "hype_loc": "Io has a talent for <b>making allies more effective</b>. A powerful companion, the wisp's tether <b>speeds allies and stops enemies</b>. Capable of linking to and <b>teleporting</b> across the battlefield with an ally, Io can make a dangerous ally even deadlier.",
+  "npe_desc_loc": "Links to its allies to buff them",
   "facets": [
     {
       "color": 3,
       "title_loc": "Kritzkrieg",
-      "description_loc": "Способность Overcharge увеличивает скорость атаки и урон от заклинаний как владельцу, так и связанному с помощью Tether существу.",
+      "description_loc": "Overcharge grants attack speed and spell amplification to Io and any Tethered allies.",
       "name": "wisp_kritzkrieg",
       "icon": "damage",
       "gradient_id": 3,
@@ -19,7 +19,7 @@
     {
       "color": 5,
       "title_loc": "Medigun",
-      "description_loc": "Способность Overcharge увеличивает броню и сопротивление магии как владельцу, так и связанному с помощью Tether существу.",
+      "description_loc": "Overcharge grants armor and magic resistance to Io and any Tethered allies.",
       "name": "wisp_medigun",
       "icon": "armor",
       "gradient_id": 3,
@@ -66,14 +66,14 @@
       "id": 5485,
       "name": "wisp_tether",
       "name_loc": "Tether",
-      "desc_loc": "Связывает героя с союзным существом, увеличивая скорость передвижения обоих. Когда владелец способности восстанавливает здоровье или ману, их в приумноженном количестве получает и связанное существо. Связь разорвётся, если отменить способность вручную или если расстояние до цели окажется слишком большим. Если противник заденет связь, его скорость передвижения будет уменьшена.",
-      "lore_loc": "Великодушное прикосновение предвечного наполняет межпространственной силой.",
+      "desc_loc": "Tethers Io to an allied unit, granting bonus movement speed to both. When Io restores health or mana, the tethered unit gains a portion of that amount. The tether breaks when the allied unit moves too far away, or Io cancels the tether. Tether slows enemies touching it.",
+      "lore_loc": "The benevolent touch of Io brings strength from between the planes.",
       "notes_loc": [
-        "Если вы попытаетесь связаться с союзником на расстоянии в 700 единиц или больше, вас притянет к нему на расстояние в 300.",
-        "Связанный с вами союзник быстрее восстанавливает здоровье и ману, даже если у вас полное здоровье.",
-        "Скорость передвижения героя приравнивается к скорости того, с кем он связан."
+        "If you try to tether a unit that is 700 distance or further away from Io, he will latch on and pull himself closer to the tethered unit (to a distance of 300).",
+        "The tethered unit will heal faster and will heal even if Io is at full health.",
+        "Io's movement speed matches the tethered unit's."
       ],
-      "shard_loc": "Связь наносит урон задетым противникам и излечивает владельца на %damage_to_heal%%% от этого урона.",
+      "shard_loc": "Tether damages enemies touching it. Io is healed for %damage_to_heal%%% of the damage done.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -125,7 +125,7 @@
             1000
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. РАССТОЯНИЕ СВЯЗКИ:",
+          "heading_loc": "MAX TETHER DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -145,7 +145,7 @@
             12
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED BONUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_wisp_3",
@@ -205,7 +205,7 @@
             120
           ],
           "is_percentage": true,
-          "heading_loc": "ПЕРЕДАВАЕМЫЕ ЗДОРОВЬЕ/МАНА:",
+          "heading_loc": "HP/MANA TRANSFER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -245,7 +245,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ/АТАКИ ВРАГА:",
+          "heading_loc": "ENEMY MOVE/ATTACK SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_wisp_11",
@@ -285,7 +285,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [
             120
@@ -445,13 +445,13 @@
       "id": 5486,
       "name": "wisp_spirits",
       "name_loc": "Spirits",
-      "desc_loc": "Призывает пять духов, которые кружатся вокруг героя. При столкновении с вражеским героем дух взрывается, нанося урон всем существам в области вокруг взрыва. При столкновении с крипом дух наносит немного урона, но не взрывается. По окончании действия способности взрываются все оставшиеся духи.",
-      "lore_loc": "Своей невообразимой силой предвечный раскручивает частицы вселенной.",
+      "desc_loc": "Summon five particle spirits that dance in a circle around Io. If a particle collides with an enemy hero, it explodes, damaging all enemy units in an area around it.  Creeps take minor damage from touching a particle spirit, but do not cause them to explode.  When its duration ends, any remaining Spirits explode.",
+      "lore_loc": "Io twists the particles of the universe with its unimaginable capabilities.",
       "notes_loc": [
-        "Призвав духов, герой может приблизить или отдалить их."
+        "After summoning, Io can call the spirits in and out."
       ],
       "shard_loc": "",
-      "scepter_loc": "Духи постоянно кружатся вокруг героя. При столкновении с вражеским героем дух ненадолго замедляет его. Взорвавшиеся духи возвращаются по одному раз в секунду. Способность можно применить, чтобы взорвать духов.",
+      "scepter_loc": "Spirits now passively spawn around Io constantly every second up to the max. Spirits colliding with enemy Heroes slows them briefly. Can be activated to explode spirits.",
       "facets_loc": [
         "",
         ""
@@ -504,7 +504,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ПО КРИПАМ:",
+          "heading_loc": "CREEP DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_wisp",
@@ -530,7 +530,7 @@
             90
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ПО ГЕРОЯМ:",
+          "heading_loc": "HERO DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_wisp",
@@ -587,7 +587,7 @@
             650
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС КОЛЕБАНИЙ:",
+          "heading_loc": "OSCILLATION RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -621,7 +621,7 @@
             360
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ВЗРЫВА:",
+          "heading_loc": "EXPLOSION RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -672,7 +672,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -706,7 +706,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -725,7 +725,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -812,14 +812,14 @@
       "id": 5487,
       "name": "wisp_overcharge",
       "name_loc": "Overcharge",
-      "desc_loc": "Герой ежесекундно восстанавливает долю от своего максимального здоровья. Связанное с владельцем способности существо также получает бонусы от этой способности.",
-      "lore_loc": "Привлекая энергию мироздания из всех миров, предвечный начинает расплетать время.",
+      "desc_loc": "Io gains health regeneration based on max health.  If Io is Tethered to an ally, that unit also gains any bonuses granted by Overcharge.",
+      "lore_loc": "Drawing on the energy of matter from all worlds, Io begins the unravelling of time.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Способность Overcharge увеличивает скорость атаки и урон от заклинаний как владельцу, так и связанному с помощью Tether существу.",
-        "Способность Overcharge увеличивает броню и сопротивление магии как владельцу, так и связанному с помощью Tether существу."
+        "Overcharge grants attack speed and spell amplification to Io and any Tethered allies.",
+        "Overcharge grants armor and magic resistance to Io and any Tethered allies."
       ],
       "type": 0,
       "behavior": "2052",
@@ -875,7 +875,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -900,7 +900,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ОТ ЗАКЛИНАНИЙ:",
+          "heading_loc": "SPELL AMPLIFICATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -925,7 +925,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. БРОНЯ:",
+          "heading_loc": "BONUS ARMOR:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -950,7 +950,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СОПРОТИВЛЕНИЕ МАГИИ:",
+          "heading_loc": "BONUS MAGIC RESISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -975,7 +975,7 @@
             0.8
           ],
           "is_percentage": true,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "MAX HEALTH REGEN:",
           "bonuses": [
             {
               "name": "special_bonus_unique_wisp_10",
@@ -998,7 +998,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_wisp_overcharge_duration",
@@ -1094,7 +1094,7 @@
       "id": 5490,
       "name": "wisp_spirits_in",
       "name_loc": "Spirits In",
-      "desc_loc": "Приближает духов к герою. Повторное применение остановит приближение.",
+      "desc_loc": "Sends the spirits closer to you. Can be toggled on and off.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1159,7 +1159,7 @@
       "id": 5493,
       "name": "wisp_spirits_out",
       "name_loc": "Spirits Out",
-      "desc_loc": "Отдаляет духов от героя. Повторное применение остановит отдаление.",
+      "desc_loc": "Sends the spirits farther away from you. Can be toggled on and off.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1224,13 +1224,13 @@
       "id": 5488,
       "name": "wisp_relocate",
       "name_loc": "Relocate",
-      "desc_loc": "Телепортирует героя и связанного с ним союзника в любую точку карты. Спустя некоторое время герой вернётся туда, откуда он телепортировался, также перенеся связанного с собой союзника. Двойное нажатие отправит героя к своему фонтану.",
-      "lore_loc": "Ио есть воплощение тайн вселенной.",
+      "desc_loc": "Teleports Io and a tethered ally to any location. After the spell expires, Io and the tethered ally will return to their original location. Double-click to teleport to your team's base fountain.",
+      "lore_loc": "Io is the embodiment of the mystery of the universe.",
       "notes_loc": [
-        "Враги видят место телепортации как в игре, так и на мини-карте с момента применения способности.",
-        "Если вас оглушат во время подготовки к телепортации, она прервется.",
-        "Если вы связаны с союзным героем, то он телепортируется с вами. Чтобы избежать этого, можно в любой момент разорвать связь.",
-        "Позволяет телепортировать только героев, крипов-героев и иллюзии."
+        "Enemies receive a visual indicator in the world and on the minimap of the target location during the cast delay.",
+        "If Io is disabled during the cast delay, Relocate is cancelled.",
+        "If an allied hero is Tethered, that hero will teleport along with you. You can break the tether at any time to prevent that hero from teleporting with you.",
+        "Only heroes, creep heroes, and illusions can be relocated."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1284,7 +1284,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ПРИМЕНЕНИЯ:",
+          "heading_loc": "CAST TIME:",
           "bonuses": [
             {
               "name": "special_bonus_unique_wisp_relocate_delay",
@@ -1307,7 +1307,7 @@
             12
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДО ВОЗВРАТА:",
+          "heading_loc": "RETURN TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1378,11 +1378,11 @@
       "id": 1626,
       "name": "wisp_essence_conduction",
       "name_loc": "Wellspring",
-      "desc_loc": "Ускоряет постепенное восстановление от расходников и некоторых предметов в %consume_speed% раза.",
+      "desc_loc": "Io regenerates from consumables and certain items %consume_speed%x faster.",
       "lore_loc": "",
       "notes_loc": [
-        "Объём восстанавливаемых здоровья и маны не меняется.\n",
-        "Действует на следующие предметы: Tango, Healing Salve, Clarity, Bottle, Urn of Shadows, Spirit Vessel, Pollywog Charm и Mana Draught."
+        "Total amount of restored health or mana remains the same.\n",
+        "Only applies to Healing Salve, Tango, Clarity, Bottle, Urn of Shadows, Spirit Vessel, Mana Draught, and Pollywog Charm."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1462,7 +1462,7 @@
     {
       "id": 1559,
       "name": "special_bonus_unique_wisp_overcharge_duration",
-      "name_loc": "+{s:bonus_duration} сек. действия Overcharge",
+      "name_loc": "+{s:bonus_duration}s Overcharge Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1524,7 +1524,7 @@
     {
       "id": 6115,
       "name": "special_bonus_strength_7",
-      "name_loc": "+{s:value} к силе",
+      "name_loc": "+{s:value} Strength",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1604,7 +1604,7 @@
     {
       "id": 6659,
       "name": "special_bonus_unique_wisp_3",
-      "name_loc": "+{s:bonus_movespeed}% к доп. скорости передвижения от Tether",
+      "name_loc": "+{s:bonus_movespeed}% Tether Movement Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1666,7 +1666,7 @@
     {
       "id": 6265,
       "name": "special_bonus_unique_wisp",
-      "name_loc": "+{s:bonus_hero_damage}% к урону от Spirits",
+      "name_loc": "+{s:bonus_hero_damage}% Spirits Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1728,7 +1728,7 @@
     {
       "id": 7073,
       "name": "special_bonus_unique_wisp_10",
-      "name_loc": "+{s:bonus_hp_regen}% к восстановлению от макс. здоровья у Overcharge",
+      "name_loc": "+{s:bonus_hp_regen}% Overcharge Max HP Regen Bonus",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1790,7 +1790,7 @@
     {
       "id": 7070,
       "name": "special_bonus_unique_wisp_6",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Relocate",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Relocate Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1852,7 +1852,7 @@
     {
       "id": 1711,
       "name": "special_bonus_unique_wisp_relocate_delay",
-      "name_loc": "–{s:bonus_cast_delay} сек. применения Relocate",
+      "name_loc": "-{s:bonus_cast_delay}s Relocate Cast Delay",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1914,8 +1914,8 @@
     {
       "id": 6808,
       "name": "special_bonus_unique_wisp_4",
-      "name_loc": "Атака вместе с целью Tether ({s:bonus_tether_attack_damage_pct}% урона)",
-      "desc_loc": "Герой автоматически атакует ту же цель, что и союзник, с которым он связан.",
+      "name_loc": "Attack Tethered Ally's Target ({s:bonus_tether_attack_damage_pct}% damage)",
+      "desc_loc": "While tethered to a friendly Hero, each time that Hero attacks, Io will attack the same target automatically.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",

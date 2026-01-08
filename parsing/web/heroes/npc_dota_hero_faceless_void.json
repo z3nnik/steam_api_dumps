@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_faceless_void",
   "order_id": 27,
   "name_loc": "Faceless Void",
-  "bio_loc": "Дарктеррор явился из Класзурема, мира вне времени. Остаётся загадкой, почему битва за Осколки привлекла существо из иного измерения в наш физический мир. Вероятно, разлад в гармонии нашей вселенной ощутим и в соседних измерениях. Для Дарктеррора время ничтожно. Это лишь инструмент, что помогает союзникам и обременяет противников. Способность видеть прошлое и будущее бытия сделала гостя из иного мира отстранённым, даже безразличным, однако в бой он стремится с необычайным рвением.",
-  "hype_loc": "Для Faceless Void важна каждая секунда. Он <b>стремительно перемещается</b>, ускорив ход времени, а затем, манипулируя им, <b>уклоняется от ударов</b>, останавливает его на большой территории и уничтожает замерших врагов. Имея в своём распоряжении достаточно времени, он становится невероятно могучим.",
-  "npe_desc_loc": "Может остановить время для врагов",
+  "bio_loc": "Darkterror the Faceless Void is a visitor from Claszureme, a realm outside of time. It remains a mystery why this being from another dimension believes the struggle for the Nemesis Stones is worth entering our physical plane, but apparently an upset in the balance of power in this world has repercussions in adjacent dimensions. Time means nothing to Darkterror, except as a way to thwart his foes and aid his allies. His long-view of the cosmos has given him a remote, disconnected quality, although in battle he is quite capable of making it personal.",
+  "hype_loc": "Time is everything to Faceless Void. He speeds time to <b>dash between locations</b>, manipulates it to <b>dodge attacks</b>, stops it in a large area to devastate his foes, and given enough of it to gather resources, he can make himself unbelievably powerful.",
+  "npe_desc_loc": "Can freeze his enemies in time",
   "facets": [
     {
       "color": 2,
       "title_loc": "Chronosphere",
-      "description_loc": "Герой имеет способность <b color='white'>Chronosphere</b>, создающую сферу, в которой застывают враги.",
+      "description_loc": "Faceless Void can cast <b color='white'>Chronosphere</b>, trapping enemies in a sphere.",
       "name": "faceless_void_chronosphere",
       "icon": "area_of_effect",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 4,
       "title_loc": "Time Zone",
-      "description_loc": "Герой имеет способность <b color='white'>Time Zone</b>, которая значительно замедляет врагов и ускоряет союзников в указанной области.",
+      "description_loc": "Faceless Void can cast <b color='white'>Time Zone</b>, dramatically slowing down enemies and speeding up allies in an area.",
       "name": "faceless_void_time_zone",
       "icon": "chrono_cube",
       "gradient_id": 1,
@@ -66,13 +66,13 @@
       "id": 5182,
       "name": "faceless_void_time_walk",
       "name_loc": "Time Walk",
-      "desc_loc": "Совершает рывок к указанной точке и восстанавливает здоровье, потерянное за последние %backtrack_duration% секунды.",
-      "lore_loc": "Дарктеррор разрывает ткань времени, проходя через Класзурем и мгновенно возвращаясь назад.",
+      "desc_loc": "Rushes to a target location while backtracking any damage taken the last %backtrack_duration% seconds.",
+      "lore_loc": "Darkterror tears a hole in time, passing through Claszureme, and appearing back in an instant.",
       "notes_loc": [
-        "Во время действия этой способности герой неуязвим."
+        "Faceless Void is invulnerable while using Time Walk."
       ],
-      "shard_loc": "Увеличивает дальность применения",
-      "scepter_loc": "Применяет способность Time Lock на всех существ в точке окончания прыжка.",
+      "shard_loc": "Increases range",
+      "scepter_loc": "Applies a Time Lock to all units at the landing destination.",
       "facets_loc": [
         "",
         "",
@@ -143,7 +143,7 @@
             800
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "heading_loc": "RANGE:",
           "bonuses": [],
           "values_shard": [
             150
@@ -162,7 +162,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ОТМЕНЫ УРОНА:",
+          "heading_loc": "BACKTRACK DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_faceless_void_7",
@@ -221,7 +221,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "TIME LOCK RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -312,10 +312,10 @@
       "id": 5691,
       "name": "faceless_void_time_dilation",
       "name_loc": "Time Dilation",
-      "desc_loc": "На %duration% сек. заключает всех окружающих врагов во временнóе поле, которое продлевает перезарядку способностей и наносит ежесекундный урон, а также замедляет передвижение и атаку на %slow%%%. Замедление и урон увеличиваются с каждой поражённой способностью.",
-      "lore_loc": "Для тех, кто сражается с Дарктеррором, каждый миг тянется вечность.",
+      "desc_loc": "Faceless Void traps all nearby enemies in a time dilation field for %duration% seconds, extending their cooldowns and slowing their movement and attack speed by %slow%%%, amplified by each cooldown extended. Deals bonus damage per second for each cooldown.",
+      "lore_loc": "For those facing off against Darkterror, each moment seems to stretch into eternity.",
       "notes_loc": [
-        "Не влияет на перезарядку предметов."
+        "Does not affect item cooldowns."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -369,7 +369,7 @@
             775
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -389,7 +389,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -409,7 +409,7 @@
             7
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ЗА СПОСОБНОСТЬ:",
+          "heading_loc": "SLOW PER COOLDOWN:",
           "bonuses": [
             {
               "name": "special_bonus_unique_faceless_void_8",
@@ -435,7 +435,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕЗАРЯДОК:",
+          "heading_loc": "COOLDOWN PROGRESSION SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -455,7 +455,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ ЗА СПОСОБНОСТЬ:",
+          "heading_loc": "DPS PER COOLDOWN:",
           "bonuses": [
             {
               "name": "special_bonus_unique_faceless_void_6",
@@ -544,10 +544,10 @@
       "id": 5184,
       "name": "faceless_void_time_lock",
       "name_loc": "Time Lock",
-      "desc_loc": "Атака может остановить время для вражеского существа, отчего оно получает ещё один удар.",
-      "lore_loc": "Удары Дарктеррора способны выбить противника в другое измерение.",
+      "desc_loc": "Adds the chance for an attack to lock an enemy unit in time while attacking it a second time.",
+      "lore_loc": "The strike of the Faceless Void lands with dimension shifting force.",
       "notes_loc": [
-        "Не сочетается с эффектом от предмета Skull Basher."
+        "Does not stack with Skull Basher."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -598,7 +598,7 @@
             0.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -635,7 +635,7 @@
             24
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС:",
+          "heading_loc": "CHANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -655,7 +655,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_faceless_void_3",
@@ -707,8 +707,8 @@
       "id": 8030,
       "name": "faceless_void_time_walk_reverse",
       "name_loc": "Reverse Time Walk",
-      "desc_loc": "Эту способность можно применить в течение 1,5 сек. после Time Walk, чтобы вернуться на прежнюю позицию. Возвращение не влияет на здоровье героя и не применяет на врагов Time Lock от Aghanim's Scepter.",
-      "lore_loc": "Всё относительно.",
+      "desc_loc": "Available for 1.5 seconds after landing Time Walk. If used in this period, you will reverse your time walk back to your previous cast location. Does not affect health or proc scepter hits.",
+      "lore_loc": "It's all relative.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -822,7 +822,7 @@
       "id": 1280,
       "name": "faceless_void_distortion_field",
       "name_loc": "Distortion Field",
-      "desc_loc": "Вражеские снаряды атак в радиусе %slow_distance_max% замедляются на %attack_projectile_slow%%%.",
+      "desc_loc": "Enemy Attack Projectiles within %slow_distance_max% radius are slowed by %attack_projectile_slow%%%.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -924,7 +924,7 @@
     {
       "id": 856,
       "name": "special_bonus_unique_faceless_void_6",
-      "name_loc": "+{s:bonus_damage_per_stack} к урону в секунду за способность у Time Dilation",
+      "name_loc": "+{s:bonus_damage_per_stack} Time Dilation DPS Per Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -987,7 +987,7 @@
     {
       "id": 867,
       "name": "special_bonus_unique_faceless_void_7",
-      "name_loc": "+{s:bonus_backtrack_duration} сек. ко времени отмены урона у Time Walk",
+      "name_loc": "+{s:bonus_backtrack_duration}s Time Walk Backtrack Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1050,7 +1050,7 @@
     {
       "id": 6807,
       "name": "special_bonus_unique_faceless_void_3",
-      "name_loc": "+{s:bonus_bonus_damage} к урону от Time Lock",
+      "name_loc": "+{s:bonus_bonus_damage} Time Lock Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1113,7 +1113,7 @@
     {
       "id": 868,
       "name": "special_bonus_unique_faceless_void_8",
-      "name_loc": "+{s:bonus_slow}% к замедлению за способность у Time Dilation",
+      "name_loc": "+{s:bonus_slow}% Time Dilation Slow per Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1176,7 +1176,7 @@
     {
       "id": 6128,
       "name": "special_bonus_unique_faceless_void",
-      "name_loc": "+{s:bonus_bonus_attack_speed} к скорости атаки под действием Chronosphere",
+      "name_loc": "+{s:bonus_bonus_attack_speed} Attack Speed during Chronosphere",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1185,7 +1185,7 @@
       "facets_loc": [
         "",
         "",
-        "+{s:bonus_bonus_attack_speed} к скорости атаки под действием Time Zone"
+        "+{s:bonus_bonus_attack_speed} Attack Speed during Time Zone"
       ],
       "type": 2,
       "behavior": "2",
@@ -1239,7 +1239,7 @@
     {
       "id": 7388,
       "name": "special_bonus_unique_faceless_void_5",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Time Walk",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Time Walk Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1302,8 +1302,8 @@
     {
       "id": 7001,
       "name": "special_bonus_unique_faceless_void_4",
-      "name_loc": "Универсальное уклонение с шансом в {s:dodge_chance_pct}%",
-      "desc_loc": "Позволяет полностью избежать урона с вероятностью в {s:dodge_chance_pct}%. Отключается истощением.",
+      "name_loc": "+{s:dodge_chance_pct}% Backtrack Chance",
+      "desc_loc": "Grants a {s:dodge_chance_pct}% chance to avoid damage entirely. Disabled by break.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1383,7 +1383,7 @@
     {
       "id": 6651,
       "name": "special_bonus_unique_faceless_void_2",
-      "name_loc": "+{s:bonus_radius} к радиусу Chronosphere",
+      "name_loc": "+{s:bonus_radius} Chronosphere AoE",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1392,7 +1392,7 @@
       "facets_loc": [
         "",
         "",
-        "+{s:bonus_radius} к радиусу Time Zone"
+        "+{s:bonus_radius} Time Zone AoE"
       ],
       "type": 2,
       "behavior": "2",
@@ -1451,11 +1451,11 @@
           "id": 5185,
           "name": "faceless_void_chronosphere",
           "name_loc": "Chronosphere",
-          "desc_loc": "Создаёт сферу, в которой застывают пространство и время. Она останавливает всё внутри себя, а её владелец и подконтрольные ему существа передвигаются в ней с увеличенной скоростью. Внутри сферы раскрывается невидимость врагов.",
-          "lore_loc": "Когда открывается проход в Класзурем, все оказавшиеся в нём бедняги вряд ли смогут вернуться назад.",
+          "desc_loc": "Creates a blister in spacetime, trapping all units caught in its sphere of influence and causes you to move very quickly inside it. Only Faceless Void and any units he controls are unaffected. Invisible enemies in the sphere will be revealed.",
+          "lore_loc": "When a rift opens to Claszureme, all poor souls caught within will likely never return.",
           "notes_loc": [
-            "Застывают все постройки и существа, кроме подконтрольных владельцу способности.",
-            "Faceless Void не застывает внутри сферы, даже если её применил не он."
+            "Pauses all units and buildings, friendly or enemy, except those owned by Faceless Void.",
+            "Faceless Void is never affected by Chronospheres with any owner."
           ],
           "shard_loc": "",
           "scepter_loc": "",
@@ -1512,7 +1512,7 @@
                 500
               ],
               "is_percentage": false,
-              "heading_loc": "РАДИУС:",
+              "heading_loc": "RADIUS:",
               "bonuses": [
                 {
                   "name": "special_bonus_unique_faceless_void_2",
@@ -1537,7 +1537,7 @@
                 4.75
               ],
               "is_percentage": false,
-              "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+              "heading_loc": "DURATION:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1680,8 +1680,8 @@
           "id": 1281,
           "name": "faceless_void_time_zone",
           "name_loc": "Time Zone",
-          "desc_loc": "Создаёт пространственно-временной куб, который увеличивает скорость передвижения, поворота, применения заклинаний и полёта снарядов для союзников внутри и уменьшает эти показатели для врагов. Помимо этого ускоряет перезарядку союзных заклинаний и останавливает перезарядку вражеских. У существ внутри куба не уменьшается таймер способности Time Dilation.",
-          "lore_loc": "Остановить время — тривиальная задача для прислужников Класза, но лишь немногие из них достигают мастерства, которое позволяет точечно манипулировать его ходом.",
+          "desc_loc": "Creates a blister in spacetime, altering the movement, cast, projectile, cooldown, and turn rate speed of all units inside. Allies have increased speed and cooldown acceleration. Enemies have decreased speed, and have frozen ability and item cooldowns. Time Dilation does not tick down while inside.",
+          "lore_loc": "For the Acolytes of Clasz, stopping time is trivial, but manipulating the minutiae of its flow requires a mastery few have attained.",
           "notes_loc": [],
           "shard_loc": "",
           "scepter_loc": "",
@@ -1763,7 +1763,7 @@
                 4.75
               ],
               "is_percentage": false,
-              "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+              "heading_loc": "DURATION:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1795,7 +1795,7 @@
               "name": "bonus_attack_speed",
               "values_float": [],
               "is_percentage": false,
-              "heading_loc": "ИЗМЕНЕНИЕ СКОРОСТИ АТАКИ:",
+              "heading_loc": "ATTACK SPEED MANIPULATION:",
               "bonuses": [
                 {
                   "name": "special_bonus_unique_faceless_void",
@@ -1818,7 +1818,7 @@
                 50
               ],
               "is_percentage": true,
-              "heading_loc": "ИЗМЕНЕНИЕ СКОРОСТИ ПЕРЕДВИЖЕНИЯ:",
+              "heading_loc": "MOVEMENT SPEED MANIPULATION:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1835,7 +1835,7 @@
                 50
               ],
               "is_percentage": true,
-              "heading_loc": "ИЗМЕНЕНИЕ СКОРОСТИ ЗАКЛИНАНИЙ:",
+              "heading_loc": "CAST SPEED MANIPULATION:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1852,7 +1852,7 @@
                 50
               ],
               "is_percentage": true,
-              "heading_loc": "ИЗМЕНЕНИЕ СКОРОСТИ ПОВОРОТА:",
+              "heading_loc": "TURN SPEED MANIPULATION:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1869,7 +1869,7 @@
                 40
               ],
               "is_percentage": true,
-              "heading_loc": "ИЗМЕНЕНИЕ СКОРОСТИ СНАРЯДОВ:",
+              "heading_loc": "PROJECTILE SPEED MANIPULATION:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1903,7 +1903,7 @@
                 400
               ],
               "is_percentage": true,
-              "heading_loc": "УСКОРЕНИЕ ПЕРЕЗАРЯДОК:",
+              "heading_loc": "COOLDOWN ACCELERATION:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

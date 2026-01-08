@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_pangolier",
   "order_id": 115,
   "name_loc": "Pangolier",
-  "bio_loc": "Дамы и господа, что зовутся Ниванскими франтами, живут фехтованием, гуляньями и помпезной романтикой. И пусть все они держатся своего кредо — «Достойна лишь та жизнь, что полна приключений», — подвиги Донтé Панлина вскружат голову даже самому праздному мастеру клинка.<br><br>Он сразит любое чудище. Расположит к себе кого угодно. Восстанет против каждого тирана. И никакой чин не устоит перед его сладкими речами.",
-  "hype_loc": "Pangolier жаждет немедля встать на пути у любой опасности, мастерски <b>сдерживая врагов</b> и стремясь в самую гущу сражения. Его клинок виртуозно находит щели в любой броне, а сам Донтé <b>надёжно защищён чешуёй</b>, и потому этот грациозный фехтовальщик всегда готов вкатиться в битву.",
-  "npe_desc_loc": "Скачет и катается по полю боя, сдерживая врагов",
+  "bio_loc": "The men and women that make up the Nivan Gallants live a life of swordplay, chandelier swinging, and tawdry romance. And while all adhere to their creed that “A life of adventure is the only life worth living,” the exploits of Donté Panlin still manage to raise the eyebrows of even the most hedonistic of swordsmen.<br><br>There is no monster he won’t slay. No creature he won’t woo. No tyrant he won’t stand against. And no noble immune to his silver tongue.",
+  "hype_loc": "Eager to dash into danger at a moment's notice, the Pangolier thrives on <b>disrupting enemy movements</b> and placing himself in the midst of chaos. Artfully guiding his blade between cracks in armor and shrugging off attacks with his <b>protective scales</b>, this graceful swordsman is always ready to roll into battle.",
+  "npe_desc_loc": "Dashes and rolls in to disrupt enemy movements",
   "facets": [
     {
       "color": 3,
       "title_loc": "Dangerous Liaisons",
-      "description_loc": "Этот аспект ничего не делает. Герой всё ещё не отошёл от очередного геройского подвига...",
+      "description_loc": "This facet doesn't do anything. Pangolier is still recovering from a heroic exploit...",
       "name": "pangolier_pangolier",
       "icon": "cooldown",
       "gradient_id": 1,
@@ -57,10 +57,10 @@
       "id": 6344,
       "name": "pangolier_swashbuckle",
       "name_loc": "Swashbuckle",
-      "desc_loc": "Герой отскакивает в указанную сторону, а затем наносит в выбранном направлении несколько ударов шпагой, которые ненадолго замедляют врагов и наносят им урон.\n\nУдары могут активировать способность Lucky Shot.",
-      "lore_loc": "Клинок Донтé ещё острее, чем его язык.",
+      "desc_loc": "Pangolier dashes along the target line, then slashes and briefly slows all enemies in the drawn direction with several quick swipes.\n\nLucky Shot has a chance to activate from this damage.",
+      "lore_loc": "The Pangolier's blade is even nimbler than his tongue.",
       "notes_loc": [
-        "Применив эту способность, герой прервёт действие Rolling Thunder."
+        "Casting Swashbuckle during Rolling Thunder ends Rolling Thunder."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -123,7 +123,7 @@
             800
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ СКАЧКА:",
+          "heading_loc": "DASH RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -140,7 +140,7 @@
             850
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ УДАРОВ:",
+          "heading_loc": "SLASH RANGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pangolier",
@@ -166,7 +166,7 @@
             125
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ЗА УДАР:",
+          "heading_loc": "DAMAGE PER STRIKE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -238,7 +238,7 @@
             155
           ],
           "is_percentage": false,
-          "heading_loc": "ШИРИНА УДАРОВ:",
+          "heading_loc": "SLASH WIDTH:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -272,7 +272,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "УДАРОВ:",
+          "heading_loc": "STRIKES:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -306,7 +306,7 @@
             0.4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -323,7 +323,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -452,13 +452,13 @@
       "id": 6461,
       "name": "pangolier_shield_crash",
       "name_loc": "Shield Crash",
-      "desc_loc": "Герой прыгает вперёд и бьётся спиной о землю, нанося урон всем противникам неподалёку. Если попасть хотя бы по одному вражескому герою, владелец ненадолго получит барьер, поглощающий урон всех типов.\n\nЕсли применить эту способность во время действия Rolling Thunder, движение не прекратится, а герой перепрыгнет через препятствия перед собой.",
-      "lore_loc": "Донтé воистину хорош именно в окружении врагов.",
+      "desc_loc": "Pangolier jumps in the air and slams back to the ground in front of his current position damaging all enemies in a radius. Pangolier gains an all damage barrier for a short time if Shield Crash hits an enemy hero.\n\nForward movement is maintained if Shield Crash is used while Rolling Thunder is active, and allows Rolling Thunder to clear walls or cliffs.",
+      "lore_loc": "Only in the midst of his enemies does the Pangolier truly thrive.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Добавляет к прыжку по 2 атаки от способности Swashbuckle в четырёх направлениях, наносящие %scepter_damage_outgoing_tooltip%%% от обычного урона.",
+      "scepter_loc": "Causes Shield Crash to cast a 2-attack Swashbuckle every 90 degrees around your hero that deals %scepter_damage_outgoing_tooltip%%% damage.",
       "facets_loc": [
-        "Герой может повторно применить Shield Crash в полёте, чтобы увеличить урон и получаемый барьер. Чем позже совершён второй прыжок, тем сильнее эффект.",
+        "Pangolier can cast Shield Crash a second time mid-flight, dealing more damage and gaining more barrier. Longer flight time results in more damage and barrier increases.",
         "",
         ""
       ],
@@ -513,7 +513,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -533,7 +533,7 @@
             240
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ БАРЬЕРА:",
+          "heading_loc": "BARRIER:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pangolier_shield_crash_herostacks",
@@ -556,7 +556,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БАРЬЕРА:",
+          "heading_loc": "BARRIER DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -573,7 +573,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -609,7 +609,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "МИН. УВЕЛИЧЕНИЕ УРОНА:",
+          "heading_loc": "MIN DAMAGE INCREASE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -628,7 +628,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. УВЕЛИЧЕНИЕ УРОНА:",
+          "heading_loc": "MAX DAMAGE INCREASE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -647,7 +647,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "МИН. УВЕЛИЧЕНИЕ БАРЬЕРА:",
+          "heading_loc": "MIN BARRIER INCREASE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -823,8 +823,8 @@
       "id": 7307,
       "name": "pangolier_lucky_shot",
       "name_loc": "Lucky Shot",
-      "desc_loc": "Герой бросает кости, оставляя врагов на милость судьбы. Нанося любой урон атакой или способностью, герой имеет шанс значительно замедлить атаку жертвы и уменьшить её броню.",
-      "lore_loc": "Клинок Донтé больше ведом прихотью, а не логикой.",
+      "desc_loc": "Pangolier rolls the dice and lets fate decide the outcome for his enemies. Grants a chance to drastically slow their attack speed and reduce armor on any damage dealt by Pangolier's attacks or abilities.",
+      "lore_loc": "The Pangolier's blade is guided more often by whim than reason.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -875,7 +875,7 @@
             17
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС:",
+          "heading_loc": "CHANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -895,7 +895,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -915,7 +915,7 @@
             160
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SPEED REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -935,7 +935,7 @@
             9
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ:",
+          "heading_loc": "ARMOR REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pangolier_luckyshot_armor",
@@ -970,8 +970,8 @@
       "id": 8027,
       "name": "pangolier_rollup",
       "name_loc": "Roll Up",
-      "desc_loc": "Герой сворачивается в неподвижный защитный шар, получая невосприимчивость к эффектам и +%magic_resistance%%% к сопротивлению магии, но не теряя возможность поворачиваться. Эту способность можно применять во время действия Rolling Thunder, чтобы на время затормозить. Во время действия Roll Up можно применять и Rolling Thunder, и Shield Crash. Если атаковать свернувшегося в шар героя, он покатится от нападающих с теми же уроном и оглушением, что и у Rolling Thunder.",
-      "lore_loc": "Чтобы не поддаваться натиску разбушевавшейся битвы, нужно бесподобно чувствовать равновесие и искусно владеть хвостом.",
+      "desc_loc": "Pangolier curls into an immobile protective ball, gaining debuff immunity, %magic_resistance%%% magic resistance, and allowing him to turn. Can be cast during Rolling Thunder to temporarily hit the brakes. Can cast Rolling Thunder and Shield Crash during Roll Up. If enemies attack Pangolier during this, he will roll away from the attacker, applying Rolling Thunder damage/stun if there are enemies in the way.",
+      "lore_loc": "It requires deft tailwork and immense balance to defy momentum in the heart of battle.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1194,7 +1194,7 @@
             2.25
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1228,7 +1228,7 @@
             0.75
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПЕРЕКАТА ОТ АТАКИ:",
+          "heading_loc": "ROLL AWAY DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1325,18 +1325,18 @@
       "id": 6343,
       "name": "pangolier_gyroshell",
       "name_loc": "Rolling Thunder",
-      "desc_loc": "Герой сворачивается в невосприимчивый к эффектам шар, имеющий +%magic_resistance%%% к сопротивлению магии, и катится с увеличенной скоростью, проламываясь сквозь деревья, но поворачиваясь медленнее обычного. Шар отталкивает задетых врагов, а когда они приземляются — наносит им урон, пропорциональный атаке владельца, и оглушает их.\n\nСтолкнувшись со стеной или уступом, шар после небольшой задержки покатится в обратную сторону.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "Донтé видел возможности там, где его предки видели только убежище...",
+      "desc_loc": "Pangolier curls into a debuff immune ball with %magic_resistance%%% additional magic resistance and rolls out. When rolling, he moves at an increased speed and can move through trees, but has a decreased ability to turn. Striking enemies knocks them back, inflicting damage proportional to his attack damage and stunning them when they land. \n\nColliding with walls or cliffs will cause a temporary pause while Pangolier reverses in direction.\n\nDISPEL TYPE: Basic Dispel",
+      "lore_loc": "Where his ancestors sought only refuge, the Pangolier saw opportunity...",
       "notes_loc": [
-        "Можно оглушить противника повторно, но не раньше, чем закончится предыдущее оглушение от этой способности.",
-        "Если оглушить героя, он всё равно будет оглушать и отталкивать врагов в радиусе действия.",
-        "Разгон до максимальной скорости занимает %move_speed_ramp_up_time% сек."
+        "Enemies can be stunned multiple times per use, but cannot be affected a subsequent time until the previous stun duration ends.",
+        "If Pangolier is disabled while rolling, he will continue to stun and knock enemies that come within range.",
+        "It takes Pangolier %move_speed_ramp_up_time%s to reach full roll speed."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Увеличивает скорость передвижения и поворота под действием способности Rolling Thunder, но уменьшает её длительность.",
+        "Rolling Thunder movement and turn speed increased, but duration is decreased.",
         ""
       ],
       "type": 1,
@@ -1384,7 +1384,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ДОЛЯ СУММАРНОГО УРОНА ОТ АТАК:",
+          "heading_loc": "TOTAL ATTACK DAMAGE AS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1401,7 +1401,7 @@
             1.2
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ТРАНСФОРМАЦИИ:",
+          "heading_loc": "TRANSFORM TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1435,7 +1435,7 @@
             550
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ ШАРА:",
+          "heading_loc": "ROLL SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1526,7 +1526,7 @@
             150
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1562,7 +1562,7 @@
             1.2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1579,7 +1579,7 @@
             150
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ТОЛЧКА:",
+          "heading_loc": "KNOCKBACK DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1598,7 +1598,7 @@
             12
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_pangolier_6",
@@ -1749,11 +1749,11 @@
       "id": 1412,
       "name": "pangolier_fortune_favors_the_bold",
       "name_loc": "Fortune Favors the Bold",
-      "desc_loc": "У врагов вокруг героя реже срабатывают эффекты, зависящие от вероятности.",
+      "desc_loc": "Random item and ability effects of enemies near Pangolier have a reduced chance to affect him.",
       "lore_loc": "",
       "notes_loc": [
-        "Касается как способностей героев, так и предметов.",
-        "Эффект уменьшается не вычитанием, а умножением."
+        "Applies to hero abilities and items.",
+        "Effect is a relative reduction in chance for effects to happen."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1804,7 +1804,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1821,7 +1821,7 @@
             -40
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ ВЕРОЯТНОСТЕЙ:",
+          "heading_loc": "CHANCE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1851,7 +1851,7 @@
     {
       "id": 1054,
       "name": "special_bonus_unique_pangolier_luckyshot_armor",
-      "name_loc": "+{s:bonus_armor} к снижению брони от Lucky Shot",
+      "name_loc": "+{s:bonus_armor} Lucky Shot Armor Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1914,7 +1914,7 @@
     {
       "id": 9063,
       "name": "special_bonus_unique_pangolier",
-      "name_loc": "+{s:bonus_range} к дальности ударов Swashbuckle",
+      "name_loc": "+{s:bonus_range} Swashbuckle Slash Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1977,7 +1977,7 @@
     {
       "id": 9061,
       "name": "special_bonus_unique_pangolier_4",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Swashbuckle",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Swashbuckle Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2040,7 +2040,7 @@
     {
       "id": 1053,
       "name": "special_bonus_unique_pangolier_shield_crash_herostacks",
-      "name_loc": "+{s:bonus_hero_shield} к барьеру от Shield Crash",
+      "name_loc": "+{s:bonus_hero_shield} Shield Crash Barrier",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2103,7 +2103,7 @@
     {
       "id": 9135,
       "name": "special_bonus_unique_pangolier_6",
-      "name_loc": "+{s:bonus_duration} сек. действия Rolling Thunder",
+      "name_loc": "+{s:bonus_duration}s Rolling Thunder Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2166,7 +2166,7 @@
     {
       "id": 1694,
       "name": "special_bonus_unique_pangolier_shield_crash_cooldown",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Shield Crash",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Shield Crash Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2229,7 +2229,7 @@
     {
       "id": 9060,
       "name": "special_bonus_unique_pangolier_3",
-      "name_loc": "+{s:bonus_attack_damage}% урона от атак к урону от Swashbuckle",
+      "name_loc": "+{s:bonus_attack_damage}% Attack Damage as Swashbuckle Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2292,7 +2292,7 @@
     {
       "id": 9062,
       "name": "special_bonus_unique_pangolier_5",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Rolling Thunder",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Rolling Thunder Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

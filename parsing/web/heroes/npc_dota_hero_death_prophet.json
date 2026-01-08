@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_death_prophet",
   "order_id": 62,
   "name_loc": "Death Prophet",
-  "bio_loc": "Долгие годы Кробелус служила пророчицей. Её услуги очень высоко ценились, и лишь богатейшие могли позволить себе заглянуть за порог смерти её глазами. В конце концов Кробелус захотелось узнать, что же судьба уготовила для неё самой. Но в этот раз смерть отказалась открывать свои тайны. В сердцах пророчица решила заплатить самым дорогим — своей жизнью. Однако и этого оказалось недостаточно.\r\n\t\t\t\t<br><br>Алчная смерть отвергала её снова и снова, отказываясь раскрывать свои потаённые секреты. В Кробелус начала расти зависть. «Если остальным дано умереть навсегда — почему не могу я? Почему я вновь и вновь возвращаюсь к бренной жизни? Почему меня лишили того единственного, что остальные смертные принимают как должное?» — негодовала она.\r\n\t\t\t\t<br><br>Несмотря на преграды, Кробелус не оставляла свои попытки. Каждый раз, поднимаясь из могилы, она несла с собой частичку смерти. С ней возвращались тени умерших — порой казалось, что это её собственная душа раздробилась на множество осколков. Кровь её все сильнее блекла и стала более походить на эктоплазму, а обитатели сумеречных миров уже начали принимать её за свою. Умирая, каждый раз пророчица лишалась крупицы жизни, и ей уже начало казаться, что конец близок. Теперь ещё с большим рвением Кробелус бросается в объятья смерти в попытках осуществить собственное несбывшееся пророчество, в надежде, что однажды смерть заберёт её раз и навсегда.",
-  "hype_loc": "Своей <b>армией призраков</b> Death Prophet уничтожает как <b>противников</b>, так и их постройки. Возглавив наступление и выпуская одну <b>смертоносную волну</b> за другой, она может повергнуть врагов в отчаяние.",
-  "npe_desc_loc": "Призывает в бой армию призраков",
+  "bio_loc": "Krobelus was a Death Prophet--which is one way of saying she told fortunes for the wealthiest of those who wished to look beyond the veil. But after years of inquiring on behalf of others, she began to seek clues on her own fate. When death refused to yield its secrets, she tried to buy them with her life. But the ultimate price proved insufficient.\r\n\t\t\t\t<br><br>Death disgorged her again and again, always holding back its deepest mysteries. Her jealousy grew. Others could die for eternity--why not she? Why must she alone be cast back on the shores of life with such tiresome regularity? Why was she not worthy of the one thing all other living creatures took for granted? Still, she would not be discouraged.\r\n\t\t\t\t<br><br>Each time she returned from the grave, she brought a bit of death back with her. Wraiths followed her like fragments of her shattered soul; her blood grew thin and ectoplasmic; the feasting creatures of twilight took her for their kin.. She gave a little of her life with every demise, and it began to seem as if her end was in sight. With her dedication to death redoubled, and no client other than herself, Krobelus threw herself ever more fervently into death's abyss, intent on fulfilling the one prophecy that eluded her: That someday the Death Prophet would return from death no more.",
+  "hype_loc": "When she unleashes her <b>army of ghosts</b>, Death Prophet excels at <b>demolishing enemies</b> and their defenses alike. Leading her team's forces toward the enemy base with wave after damaging wave from her <b>swarm</b>, her onslaught can seem unstoppable.",
+  "npe_desc_loc": "Summons an army of ghosts to attack",
   "facets": [
     {
       "color": 2,
       "title_loc": "Spirit Collector",
-      "description_loc": "Смерти героев делают следующее применение Exorcism сильнее.",
+      "description_loc": "Hero deaths empower your next Exorcism.",
       "name": "death_prophet_ghosts",
       "icon": "spirit",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Mourning Ritual",
-      "description_loc": "Герой получает часть урона не сразу, а с короткими интервалами за небольшой промежуток времени.",
+      "description_loc": "Death Prophet delays a percentage of incoming damage, taking the damage in even intervals over a short duration.",
       "name": "death_prophet_delayed_damage",
       "icon": "healing",
       "gradient_id": 1,
@@ -66,11 +66,11 @@
       "id": 5090,
       "name": "death_prophet_carrion_swarm",
       "name_loc": "Crypt Swarm",
-      "desc_loc": "Посылает вперёд стаю крылатых тварей, наносящих урон врагам на своём пути.",
-      "lore_loc": "Во время своих путешествий в загробный мир Кробелус забирает с собой души проклятых, материализуя их стаей летучих мышей в нашем мире.",
+      "desc_loc": "Sends a swarm of winged beasts to savage enemy units in front of Death Prophet.",
+      "lore_loc": "Krobelus' many trips to the grave gather a flock of the damned.",
       "notes_loc": [
-        "Задевает существ на расстоянии до 1100 единиц.",
-        "Эту способность нельзя заблокировать или отразить."
+        "Can hit units up to 1110 range away.",
+        "Does not trigger spell block or spell reflect."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -130,7 +130,7 @@
             325
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_death_prophet_crypt_swarm_damage",
@@ -187,7 +187,7 @@
             900
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "heading_loc": "CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -313,15 +313,15 @@
       "id": 5091,
       "name": "death_prophet_silence",
       "name_loc": "Silence",
-      "desc_loc": "Выпускает снаряд, который запрещает врагам в указанной области применять способности.",
-      "lore_loc": "Кробелус видит лишь безмолвное будущее, вглядываясь в смертное предначертание своего врага.",
+      "desc_loc": "Fires a projectile that prevents enemy units in a target area from casting spells.",
+      "lore_loc": "Peering into the veil of her opponent's demise, Krobelus sees a silent future.",
       "notes_loc": [
-        "Не запрещает использовать предметы."
+        "Doesn't prevent usage of items."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Способность Silence замедляет врагов.",
+        "Silenced enemies are also slowed.",
         "",
         ""
       ],
@@ -376,7 +376,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_death_prophet_silence_aoe",
@@ -419,7 +419,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -461,7 +461,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -547,12 +547,12 @@
       "id": 5685,
       "name": "death_prophet_spirit_siphon",
       "name_loc": "Spirit Siphon",
-      "desc_loc": "Герой создаёт мистическую связь с вражеским существом, передавая его здоровье себе.",
-      "lore_loc": "Кробелус охотно покажет другим путь, по которому ей не пройти в одиночку.",
+      "desc_loc": "Creates a spirit link between Death Prophet and an enemy unit, draining health from the enemy.",
+      "lore_loc": "Krobelus willingly shows others the path she alone cannot follow.",
       "notes_loc": [
-        "На каждую цель может действовать только одна связь."
+        "Cannot cast multiple on same target."
       ],
-      "shard_loc": "Увеличивает максимум зарядов на %shard_bonus_charges% и накладывает на врагов %shard_fear_duration% сек. страха, если способность действует на них %shard_consecutive_siphon_duration% сек. подряд.",
+      "shard_loc": "Increases Spirit Siphon charges by %shard_bonus_charges% and causes enemies to be feared for %shard_fear_duration% seconds if they are siphoned for %shard_consecutive_siphon_duration% seconds consecutively.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -604,7 +604,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_death_prophet_3",
@@ -627,7 +627,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -824,7 +824,7 @@
       "id": 5092,
       "name": "death_prophet_witchcraft",
       "name_loc": "Witchcraft",
-      "desc_loc": "Полученный опыт расширяет оккультные знания героя: с каждым уровнем его скорость передвижения увеличивается, а перезарядки заклинаний уменьшаются.",
+      "desc_loc": "Death Prophet's occult knowledge deepens with experience, gaining movement speed and spell cooldown reduction.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -876,7 +876,7 @@
             0.75
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -893,7 +893,7 @@
             0.75
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДОК:",
+          "heading_loc": "COOLDOWN REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -922,14 +922,14 @@
       "id": 5093,
       "name": "death_prophet_exorcism",
       "name_loc": "Exorcism",
-      "desc_loc": "Герой выпускает злых духов, вытягивающих здоровье из вражеских существ и построек поблизости. После каждой атаки дух должен вернуться к владельцу, прежде чем атаковать вновь. Через %abilityduration% сек. духи возвращаются окончательно, исцеляя владельца на долю от нанесённого урона. Постройки получают 50% урона.",
-      "lore_loc": "Осколки неисчислимых прошлых жизней банши материализуются, чтобы сеять ужас в настоящем.",
+      "desc_loc": "Unleashes evil spirits to drain the life of nearby enemy units and structures. Spirits need to return back to Death Prophet in order to attack again. At the end of the spell's duration, Death Prophet is healed in proportion to the damage dealt. Deals 50% damage to buildings. Lasts %abilityduration% seconds.",
+      "lore_loc": "Over time, the banshee remnants of her previous lives return to haunt the present.",
       "notes_loc": [
-        "Радиус указывает область вокруг героя, в которой духи выбирают цель.",
-        "Урон от духов не уменьшается способностями, блокирующими урон."
+        "Radius represents the area in which the spirits will acquire targets around Death Prophet.",
+        "Spirit damage isn't reduced by damage block abilities."
       ],
       "shard_loc": "",
-      "scepter_loc": "Создаёт духа каждый раз, когда владелец попадает по врагу способностью или совершает атаку. Дух летит к жертве, наносит ей увеличенный урон, а затем возвращается и восстанавливает владельцу здоровье.",
+      "scepter_loc": "Whenever an enemy is affected by Death Prophet's spells or when she attacks an enemy, a ghost will fly out and hit the enemy for an increased bonus of its usual damage then return to her with life.",
       "facets_loc": [
         "",
         "",
@@ -981,7 +981,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1000,7 +1000,7 @@
             26
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ДУХОВ:",
+          "heading_loc": "SPIRITS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_death_prophet",
@@ -1110,7 +1110,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "МИН. УРОН ГЕРОЙСКИХ ДУХОВ:",
+          "heading_loc": "HERO SPIRIT MIN DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1133,7 +1133,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. УРОН ГЕРОЙСКИХ ДУХОВ:",
+          "heading_loc": "HERO SPIRIT MAX DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1154,7 +1154,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "ВОССТ. ЗДОРОВЬЯ:",
+          "heading_loc": "LIFE DRAIN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1171,7 +1171,7 @@
             64
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ДУХОВ:",
+          "heading_loc": "SPIRIT DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1224,7 +1224,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ОТ ДУХОВ:",
+          "heading_loc": "SPIRIT BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1326,7 +1326,7 @@
     {
       "id": 5907,
       "name": "special_bonus_attack_speed_30",
-      "name_loc": "+{s:value} к скорости атаки",
+      "name_loc": "+{s:value} Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1407,7 +1407,7 @@
     {
       "id": 6299,
       "name": "special_bonus_magic_resistance_12",
-      "name_loc": "+{s:value}% к сопротивлению магии",
+      "name_loc": "+{s:value}% Magic Resistance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1488,7 +1488,7 @@
     {
       "id": 1458,
       "name": "special_bonus_unique_death_prophet_silence_aoe",
-      "name_loc": "+{s:bonus_radius} к радиусу Silence",
+      "name_loc": "+{s:bonus_radius} Silence AoE",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1551,7 +1551,7 @@
     {
       "id": 6367,
       "name": "special_bonus_unique_death_prophet_2",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Crypt Swarm",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Crypt Swarm Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1614,7 +1614,7 @@
     {
       "id": 5976,
       "name": "special_bonus_hp_400",
-      "name_loc": "+{s:value} к здоровью",
+      "name_loc": "+{s:value} Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1695,7 +1695,7 @@
     {
       "id": 6628,
       "name": "special_bonus_unique_death_prophet_3",
-      "name_loc": "+{s:bonus_damage} к урону/лечению от Spirit Siphon",
+      "name_loc": "+{s:bonus_damage} Spirit Siphon Damage/Heal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1758,7 +1758,7 @@
     {
       "id": 698,
       "name": "special_bonus_unique_death_prophet_5",
-      "name_loc": "–{s:bonus_AbilityChargeRestoreTime} сек. восстановления заряда Spirit Siphon",
+      "name_loc": "-{s:bonus_AbilityChargeRestoreTime}s Spirit Siphon Replenish Time",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1821,7 +1821,7 @@
     {
       "id": 6191,
       "name": "special_bonus_unique_death_prophet",
-      "name_loc": "+{s:bonus_spirits} к числу духов от Exorcism",
+      "name_loc": "+{s:bonus_spirits} Exorcism Spirits",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1889,11 +1889,11 @@
           "id": 1285,
           "name": "death_prophet_spirit_collector",
           "name_loc": "Spirit Collector",
-          "desc_loc": "Смерти героев делают следующее применение Exorcism сильнее.",
+          "desc_loc": "Hero deaths empower your next Exorcism.",
           "lore_loc": "",
           "notes_loc": [
-            "Каждый раз, когда погибает любой герой, его дух оказывается у владельца этой способности. Применение способности Exorcism выпускает геройских духов, заменяя ими стандартных. Геройские духи наносят больше урона.<br><br>Духи героев, убитых во время действия Exorcism, при возможности заменяют обычных и хранятся до следующего применения этой способности.",
-            "Смерть владельца аспекта также даёт ему духа."
+            "Whenever a hero dies, Death Prophet traps their spirit for later use. When she casts Exorcism, each trapped hero spirit will replace a standard spirit. Hero spirits deal more damage than standard spirits.<br><br>When a hero is killed while Exorcism is active a standard spirit will be replaced with a hero spirit if possible and stored for the next cast of Exorcism.",
+            "Includes Death Prophet's own death."
           ],
           "shard_loc": "",
           "scepter_loc": "",
@@ -1959,10 +1959,10 @@
           "id": 1459,
           "name": "death_prophet_mourning_ritual",
           "name_loc": "Mourning Ritual",
-          "desc_loc": "Герой получает часть урона не сразу, а с короткими интервалами за небольшой промежуток времени.",
+          "desc_loc": "Death Prophet delays a percentage of incoming damage, taking the damage in even intervals over a short duration.",
           "lore_loc": "",
           "notes_loc": [
-            "Отложенный урон имеет тот же тип, что при нанесении, и игнорирует броню, сопротивление магии и блок урона."
+            "Delayed damage matches the damage type of the initial damage and bypasses armor, magic resistance, and damage block."
           ],
           "shard_loc": "",
           "scepter_loc": "",
@@ -2016,7 +2016,7 @@
                 45
               ],
               "is_percentage": true,
-              "heading_loc": "ОТЛОЖЕННЫЙ УРОН:",
+              "heading_loc": "DAMAGE DELAYED:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -2033,7 +2033,7 @@
                 5
               ],
               "is_percentage": false,
-              "heading_loc": "ДЛИТЕЛЬНОСТЬ ОТКЛАДЫВАНИЯ:",
+              "heading_loc": "DELAY DURATION:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -2050,7 +2050,7 @@
                 1
               ],
               "is_percentage": false,
-              "heading_loc": "ИНТЕРВАЛ ПОЛУЧЕНИЯ УРОНА:",
+              "heading_loc": "DAMAGE INTERVAL:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

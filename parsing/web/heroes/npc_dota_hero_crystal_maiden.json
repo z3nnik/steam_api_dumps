@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_crystal_maiden",
   "order_id": 3,
   "name_loc": "Crystal Maiden",
-  "bio_loc": "Рождённая в тихих местах и взращённая вместе со своей огненно-рыжей сестрой, ещё в молодости Рилай поняла, что её внутреннее единство со стихией льда вредит всем вокруг. Источники и горные реки замерзали, стоило ей прикорнуть неподалеку; зреющие плоды сковывал кусачий мороз, а цветущие висячие сады осыпались на землю безжизненной ледяной мозаикой. Когда отчаявшиеся родители решили отселить пламенную Лину на экватор, они изгнали и Рилай, чьим новым домом стали холодные земли Айсрека. Там, в пещере на вершине ледника Голубого сердца, её и стал наставлять маг льда. Спустя многие дни тренировок волшебник признал, что она готова творить магию в одиночку и оставил ей свой пост — а сам спустился вглубь ледника на тысячелетнюю спячку. С тех пор Рилай серьёзно отточила свое мастерство, и с ней не сравнится уже никто.",
-  "hype_loc": "Crystal Maiden пригодится любой команде, ведь она <b>даёт союзникам ману</b> и <b>не позволяет врагам сбежать</b>. А когда представляется случай, она может уничтожить врагов своим <b>сокрушительным ультом</b>.",
-  "npe_desc_loc": "Обрушивает на врагов жестокую метель",
+  "bio_loc": "Born in a temperate realm, raised with her fiery older sister Lina, Rylai the Crystal Maiden soon found that her innate elemental affinity to ice created trouble for all those around her. Wellsprings and mountain rivers froze in moments if she stopped to rest nearby; ripening crops were bitten by frost, and fruiting orchards turned to mazes of ice and came crashing down, spoiled. When their exasperated parents packed Lina off to the equator, Rylai found herself banished to the cold northern realm of Icewrack, where she was taken in by an Ice Wizard who had carved himself a hermitage at the crown of the Blueheart Glacier. After long study, the wizard pronounced her ready for solitary practice and left her to take his place, descending into the glacier to hibernate for a thousand years. Her mastery of the Frozen Arts has only deepened since that time, and now her skills are unmatched.",
+  "hype_loc": "Able to keep her <b>allies supplied with mana</b> as she <b>slows down enemies</b> to ensure a kill, Crystal Maiden is a helpful addition to any team. And, when the opportunity arises, she can unleash her <b>massive ultimate ability</b> to devastate her foes.",
+  "npe_desc_loc": "Unleashes a high damage blizzard upon her foes",
   "facets": [
     {
       "color": 5,
       "title_loc": "Glacial Guard",
-      "description_loc": "Увеличивает радиус способности Crystal Nova. Её применение даёт союзным героям физический барьер, здоровье которого больше для владельца способности.",
+      "description_loc": "Crystal Nova has increased radius and grants allied heroes a physical damage barrier. Barrier is increased for Crystal Maiden.",
       "name": "crystal_maiden_glacial_guard",
       "icon": "armor",
       "gradient_id": 3,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Arcane Overflow",
-      "description_loc": "Способность Arcane Aura можно активировать, чтобы увеличить себе урон от заклинаний и расход маны. Способности, применённые под действием этого эффекта, восстанавливают ману владельцу и его союзникам.",
+      "description_loc": "Activating Arcane Aura temporarily increases Crystal Maiden's spell amplification and mana costs. During the duration, Crystal Maiden restores her and her allies' Mana when casting spells.",
       "name": "crystal_maiden_arcane_overflow",
       "icon": "mana",
       "gradient_id": 2,
@@ -66,17 +66,17 @@
       "id": 5126,
       "name": "crystal_maiden_crystal_nova",
       "name_loc": "Crystal Nova",
-      "desc_loc": "Обдаёт выбранную область морозным ветром, который наносит врагам урон и замедляет их передвижение.",
-      "lore_loc": "Температура воздуха вокруг Рилай резко падает, насквозь промораживая всё вокруг неё.",
+      "desc_loc": "A burst of damaging frost slows enemy movement in the targeted area.",
+      "lore_loc": "The air temperature around Rylai drops rapidly, chilling all around her to the core.",
       "notes_loc": [
-        "Раскрывает туман войны в области действия."
+        "Crystal Nova provides vision in the targeted area for the duration."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Увеличивает радиус способности. Её применение даёт союзным героям физический барьер, здоровье которого больше для владельца способности.",
+        "Crystal Nova has increased radius and grants allied heroes a physical damage barrier. Barrier is increased for Crystal Maiden.",
         ""
       ],
       "type": 0,
@@ -130,7 +130,7 @@
             425
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -152,7 +152,7 @@
             -50
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -172,7 +172,7 @@
             -75
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -189,7 +189,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -226,7 +226,7 @@
             260
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_crystal_maiden_2",
@@ -252,7 +252,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ ФИЗИЧЕСКОГО БАРЬЕРА:",
+          "heading_loc": "PHYSICAL BARRIER AMOUNT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -277,7 +277,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ ФИЗИЧЕСКОГО БАРЬЕРА СЕБЕ:",
+          "heading_loc": "SELF PHYSICAL BARRIER AMOUNT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -299,7 +299,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БАРЬЕРА:",
+          "heading_loc": "BARRIER DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -410,10 +410,10 @@
       "id": 5127,
       "name": "crystal_maiden_frostbite",
       "name_loc": "Frostbite",
-      "desc_loc": "Заковывает противника в лёд, нанося ему периодический урон и запрещая двигаться и атаковать. Наносит в %creep_multiplier% раза больше урона всем крипам, кроме древних.",
-      "lore_loc": "Рилай призывает холодный ветер с айсберга Голубого Сердца, который заточает противника в ледяную глыбу.",
+      "desc_loc": "Encases an enemy unit in ice, prohibiting movement and attack, while dealing damage over time. Deals %creep_multiplier%x damage to non-ancient creeps.",
+      "lore_loc": "Rylai channels winds from the Blueheart Glacier, imprisoning attackers in thick blocks of ice.",
       "notes_loc": [
-        "Накладывает эффект оцепенения."
+        "Frostbite is considered a root."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -474,7 +474,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -494,7 +494,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_crystal_maiden_1",
@@ -643,10 +643,10 @@
       "id": 5128,
       "name": "crystal_maiden_brilliance_aura",
       "name_loc": "Arcane Aura",
-      "desc_loc": "Увеличивает восстановление маны у всех союзников на карте. Действует в %proximity_bonus_factor% раза сильнее на союзников в радиусе %proximity_bonus_radius%.",
-      "lore_loc": "Холод — сущность магии, поэтому присутствие ледяной волшебницы Рилай позволяет союзникам использовать магию в избытке.",
+      "desc_loc": "Gives additional mana regeneration to all friendly units on the map. Allies within a %proximity_bonus_radius% radius of Crystal Maiden receive %proximity_bonus_factor%x the mana regeneration.",
+      "lore_loc": "Cold temperatures promote the essence of magic, causing Rylai's presence to allow spell usage in abundance.",
       "notes_loc": [
-        "Активация этой способности от аспекта Arcane Overflow недоступна во время применения Freezing Field с Aghanim's Scepter."
+        "With Arcane Overflow and Aghanim's Scepter, cannot be activated while channeling Freezing Field."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -654,7 +654,7 @@
         "",
         "",
         "",
-        "Эту способность можно активировать, чтобы увеличить себе урон от заклинаний и расход маны. Способности, применённые под действием этого эффекта, восстанавливают ману владельцу и его союзникам. Не влияет на предметы. Отсчёт времени действия приостанавливается во время применения Freezing Field."
+        "Activating Arcane Aura temporarily increases Crystal Maiden's spell amplification and mana costs. During the duration, Crystal Maiden restores her own and her allies' Mana when casting spells. Does not affect items. Duration is paused while channeling Freezing Field."
       ],
       "type": 0,
       "behavior": "2",
@@ -701,7 +701,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ МАНЫ:",
+          "heading_loc": "MANA REGEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -721,7 +721,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ МАНЫ ПОБЛИЗОСТИ:",
+          "heading_loc": "CLOSE MANA REGEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -755,7 +755,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -791,7 +791,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ОТ ЗАКЛИНАНИЙ:",
+          "heading_loc": "SPELL AMP:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -810,7 +810,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УВЕЛИЧЕНИЕ РАСХОДА МАНЫ:",
+          "heading_loc": "MANA COST INCREASE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -829,7 +829,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ВОССТАНОВЛЕНИЯ МАНЫ:",
+          "heading_loc": "MANA GRANT RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -848,7 +848,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ РАСХОДУЕМОЙ МАНЫ:",
+          "heading_loc": "MANA SPENT GRANTED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -867,7 +867,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -886,7 +886,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -917,8 +917,8 @@
       "id": 953,
       "name": "crystal_maiden_crystal_clone",
       "name_loc": "Crystal Clone",
-      "desc_loc": "Герой откатывается в выбранном направлении, сбивая с цели летящие в него снаряды, а на его прежнем месте появляется кристальный клон. Когда время жизни клона закончится или его уничтожат, на всех врагов в радиусе %frostbite_radius% сработает способность Frostbite. Остальные способности владельца также наносят урон клону.",
-      "lore_loc": "Эта копия настолько убедительна, что некоторые союзники могут проговорить с ней несколько минут, прежде чем поймут, что им не отвечают.",
+      "desc_loc": "Slides in a direction, creating a crystal clone of herself in her place and disjointing incoming projectiles. If the clone takes enough damage or times out, it shatters, Frostbiting enemies in a %frostbite_radius% AoE around its place. The Clone can also be destroyed by Crystal Maiden's own spells.",
+      "lore_loc": "So convincing that some allies have spent minutes talking to the clone before they realized she wasn't speaking back.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -970,7 +970,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ:",
+          "heading_loc": "DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1004,7 +1004,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ КЛОНА:",
+          "heading_loc": "CLONE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1055,7 +1055,7 @@
             150
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ КЛОНА:",
+          "heading_loc": "CLONE HEALTH:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1135,7 +1135,7 @@
       "id": 1204,
       "name": "crystal_maiden_blueheart_floe",
       "name_loc": "Blueheart Floe",
-      "desc_loc": "Увеличивает восстановление маны владельца на %mana_regen_multiplier%%%.",
+      "desc_loc": "Crystal Maiden has %mana_regen_multiplier%%% Mana Regeneration Amplification.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1220,17 +1220,17 @@
       "id": 5129,
       "name": "crystal_maiden_freezing_field",
       "name_loc": "Freezing Field",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — вокруг героя в течение %abilitychanneltime% сек. происходят 100 случайных ледяных взрывов, замедляющих врагов и наносящих большой урон.",
-      "lore_loc": "Когда-то изгнанная в морозную пустошь, Рилай сделала ледяные бури тех краёв вершиной своей жестокой магии.",
+      "desc_loc": "CHANNELED - Surrounds Crystal Maiden with 100 random icy explosions that slow enemies and deal massive damage. Lasts %abilitychanneltime% seconds.",
+      "lore_loc": "Once the place of her exile, Icewrack has become an anchor for Rylai's frigid onslaught.",
       "notes_loc": [
-        "В момент применения способности все враги в области действия замедляются на %slow_duration% сек., даже если взрывы их не задели.",
-        "Взрыв происходит каждую %explosion_interval% секунды.",
-        "Пассивные бонусы от Frozen Expanse отключаются истощением."
+        "The slow is applied on all enemies in the radius, even if they aren't hit by an explosion (lasts %slow_duration% second).",
+        "Explosions occur every %explosion_interval% seconds.",
+        "Break disables the passive effects of Frozen Expanse."
       ],
-      "shard_loc": "Позволяет передвигаться, атаковать и применять заклинания во время действия способности. Враги всё ещё могут её прервать. Герой передвигается на %shard_self_movement_speed_slow_pct%%% медленнее.<br><br>Увеличивает число взрывов на %shard_bonus_explosion%%%.",
-      "scepter_loc": "Позволяет передвигаться, атаковать и применять заклинания во время действия способности. Враги всё ещё могут её прервать. Герой передвигается на %shard_self_movement_speed_slow_pct%%% медленнее. Увеличивает число взрывов на %shard_bonus_explosion%%%. На существ, находящихся под действием ульта больше %frostbite_delay% сек., применяется способность Frostbite.",
+      "shard_loc": "Allows you to move, cast and attack during Freezing Field. Can still be interrupted by enemies. You move %shard_self_movement_speed_slow_pct%%% slower during this.<br><br>Increases total number of explosions by %shard_bonus_explosion%%%.",
+      "scepter_loc": "Allows you to move, cast and attack during Freezing Field. Can still be interrupted by enemies. You move %shard_self_movement_speed_slow_pct%%% slower during this. Increases total number of explosions by %shard_bonus_explosion%%%. Applies Frostbite to any unit that has been standing in the Freezing Field for over %frostbite_delay%s.",
       "facets_loc": [
-        "Эта способность даёт владельцу бонус к дальности применения и радиусу заклинаний.",
+        "Freezing Field also passively increases Crystal Maiden's cast range and area of effect.",
         "",
         "",
         ""
@@ -1281,7 +1281,7 @@
             810
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1298,7 +1298,7 @@
             320
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ВЗРЫВА:",
+          "heading_loc": "EXPLOSION RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1332,7 +1332,7 @@
             -40
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1351,7 +1351,7 @@
             -160
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1421,7 +1421,7 @@
             250
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_crystal_maiden_3",
@@ -1522,7 +1522,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "БОНУС К ДАЛЬНОСТИ ЗАКЛИНАНИЙ:",
+          "heading_loc": "CAST RANGE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1545,7 +1545,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. РАДИУС ЗАКЛИНАНИЙ:",
+          "heading_loc": "AOE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1651,7 +1651,7 @@
     {
       "id": 5959,
       "name": "special_bonus_hp_200",
-      "name_loc": "+{s:value} к здоровью",
+      "name_loc": "+{s:value} Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1733,7 +1733,7 @@
     {
       "id": 5926,
       "name": "special_bonus_intelligence_12",
-      "name_loc": "+{s:value} к интеллекту",
+      "name_loc": "+{s:value} Intelligence",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1815,7 +1815,7 @@
     {
       "id": 956,
       "name": "special_bonus_unique_crystal_maiden_frostbite_castrange",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальности применения Frostbite",
+      "name_loc": "+{s:bonus_AbilityCastRange} Frostbite Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1879,7 +1879,7 @@
     {
       "id": 7654,
       "name": "special_bonus_unique_crystal_maiden_5",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Crystal Nova",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Crystal Nova Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1943,7 +1943,7 @@
     {
       "id": 6623,
       "name": "special_bonus_attack_speed_225",
-      "name_loc": "+{s:value} к скорости атаки",
+      "name_loc": "+{s:value} Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2025,7 +2025,7 @@
     {
       "id": 6520,
       "name": "special_bonus_unique_crystal_maiden_3",
-      "name_loc": "+{s:bonus_damage} к урону от Freezing Field",
+      "name_loc": "+{s:bonus_damage} Freezing Field Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2089,7 +2089,7 @@
     {
       "id": 6072,
       "name": "special_bonus_unique_crystal_maiden_1",
-      "name_loc": "+{s:bonus_duration} сек. действия Frostbite",
+      "name_loc": "+{s:bonus_duration}s Frostbite Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2153,7 +2153,7 @@
     {
       "id": 6234,
       "name": "special_bonus_unique_crystal_maiden_2",
-      "name_loc": "+{s:bonus_nova_damage} к урону от Crystal Nova",
+      "name_loc": "+{s:bonus_nova_damage} Crystal Nova Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

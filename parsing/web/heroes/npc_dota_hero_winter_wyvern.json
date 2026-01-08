@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_winter_wyvern",
   "order_id": 110,
   "name_loc": "Winter Wyvern",
-  "bio_loc": "Как и другим великим поэтам, Аурос постоянно не хватает времени на творчество, ведь жизнь ее полна неожиданностей. Эпос древних драконов знаменит своей долгой и насыщенной историей, но некоторые с опаской полагают, что оставшиеся ученые драконы не настолько плодовиты, как их предки, поскольку с момента процветания в Сказание драконов было добавлено всего лишь несколько строк. Аурос сетует: «Мы стали забывать, что жизнь — это не только победы над врагами и завоевания земель. Каждый должен стремиться к творчеству». Она собралась в исследовательскую экспедицию на поиски новых книг для вдохновения. Но эти исследования жутко утомляют и отвлекают от творческого процесса, на который должно уходить гораздо больше времени. Хоть Аурос и должна скрываться в своем логове, постоянно пополняя сказание, она часто вступает в грандиозные битвы с могучими противниками. Она обыскивает замки и древние библиотеки, а славу, заслуженную в процессе своих поисков, считает побочным эффектом этих исследований. Ее мастерство и отвага на полях сражений стали легендарными, но в муках творчества она не смогла создать того, что заслужило бы признание. Как бы то ни было, она не будет довольствоваться ролью героя сказания. Она хочет быть его автором.",
-  "hype_loc": "Winter Wyvern бороздит небо над полем боя, <b>замедляя врагов</b> жгучим льдом. Если враги по глупости столпятся, она <b>обернёт их против одного из товарищей</b> и обдаст всех <b>ледяными осколками</b>.",
-  "npe_desc_loc": "Вынуждает врагов атаковать их же соратника",
+  "bio_loc": "Like many great poets, Auroth just wants time to write, but the Winter Wyvern's life is full of interruptions. The epics of the Eldwurms have a long and colorful history, but some fear that the remaining dragon scholars are not as prolific as they once were, with few lines added to the Eldwurm Eddas since the last age of greatness. Auroth laments: \"We forget that there is more to life than triumph and dominion over enemies. We must also live our lives in the pursuit of creative expression.\" She embarks on research expeditions, collecting books for inspiration. But all this research can be terribly distracting, and she spends less time writing than she should. Although she knows she should be lurking in her lair, adding to the Eddas, she finds herself engaged in epic battles against powerful enemies. She loots castles, raids ancient libraries ... and if she happens to heap glory on herself in the process, she tells herself that it's merely a side effect of her research. The fact is, while her skill and power on the battlefield are legendary, her scholarly travails have thus far hardly been the stuff of literary acclaim. But she is not content to stand as a protagonist of heroic lore. She wishes also to create it.",
+  "hype_loc": "Winter Wyvern stalks the skies, <b>slowing foes</b> with burning cold as she soars over the battlefield. Should the enemy be foolish enough to gather, she <b>curses them</b> to attack one of their own as she blasts the gathering with <b>icy splinters.</b>",
+  "npe_desc_loc": "Able to force her enemies to attack their own ally",
   "facets": [
     {
       "color": 3,
       "title_loc": "Winterproof",
-      "description_loc": "Способность Cold Embrace можно применять на постройки, но она их не лечит. Союзные существа и постройки получают дополнительный урон от атак после выхода из кокона.",
+      "description_loc": "Cold Embrace can be cast on buildings. Does not heal buildings. Allied units and buildings gain bonus attack damage when emerging from the icy cocoon.",
       "name": "winter_wyvern_winterproof",
       "icon": "tower",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Recursive",
-      "description_loc": "Если изначальная цель способности Winter's Curse умрёт, её эффект перейдёт на вражеского героя с наименьшим здоровьем.",
+      "description_loc": "Winter's Curse is recast on the lowest health enemy hero if the primary target dies.",
       "name": "winter_wyvern_recursive",
       "icon": "ricochet",
       "gradient_id": 0,
@@ -66,16 +66,16 @@
       "id": 5651,
       "name": "winter_wyvern_arctic_burn",
       "name_loc": "Arctic Burn",
-      "desc_loc": "Герой взмывает в небо на арктическом ветре, получая беспрепятственное передвижение и вдыхая жгучий мороз в каждую свою атаку. В полёте можно атаковать дальше и быстрее. Цель морозных атак замедляется и каждую секунду получает урон в размере %percent_damage%%% от текущего запаса здоровья.",
-      "lore_loc": "Из органа, которым драконы извергают пламя, Аурос выдыхает невообразимый холод, ввергающий врагов в жгучую агонию.",
+      "desc_loc": "Winter Wyvern soars upon an arctic wind, granting her unobstructed movement and allowing her to exhale a blistering chill into each attack. While soaring, her attacks travel further and faster, and slow enemies with a magical freeze that strips them of %percent_damage%%% of their current health each second.",
+      "lore_loc": "The same organ where some dragons stoke their inner flame is, in Auroth, a crucible of unimaginable cold. From deep within her frosty gullet, an exhalation sends enemies into burning agony.",
       "notes_loc": [
-        "Эффекты нескольких атак от одного применения способности не складываются.",
-        "Не действует на Рошана.",
-        "Уменьшает задержку перед атакой до %attack_point% сек.",
-        "Урон и замедление от этой способности можно развеять."
+        "Enemy units can only receive the Arctic Burn debuff once per cast.",
+        "This ability does not affect Roshan.",
+        "Reduces Winter Wyvern's attack point to %attack_point%.",
+        "The damage and slow from Arctic Burn can be dispelled."
       ],
       "shard_loc": "",
-      "scepter_loc": "Делает способность переключаемой и ежесекундно расходующей ману. Также снимает ограничение на число атак по одной цели и увеличивает скорость героя.",
+      "scepter_loc": "Causes Arctic Burn to be a toggle ability, draining mana every second when active. Removes limit on number of attacks per target. Increases Winter Wyvern's movement speed.",
       "facets_loc": [
         "",
         "",
@@ -133,7 +133,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПОЛЁТА:",
+          "heading_loc": "FLIGHT DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -153,7 +153,7 @@
             325
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -173,7 +173,7 @@
             10
           ],
           "is_percentage": true,
-          "heading_loc": "ПЕРИОДИЧЕСКИЙ УРОН:",
+          "heading_loc": "HEALTH BURN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -207,7 +207,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ УРОНА:",
+          "heading_loc": "BURN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_winter_wyvern_6",
@@ -233,7 +233,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_winter_wyvern_1",
@@ -324,7 +324,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАСХОД МАНЫ В СЕКУНДУ:",
+          "heading_loc": "MANA PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -343,7 +343,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -411,11 +411,11 @@
       "id": 5652,
       "name": "winter_wyvern_splinter_blast",
       "name_loc": "Splinter Blast",
-      "desc_loc": "Запускает в выбранное существо ледяной шар, который не причиняет ему ущерб, но после удара разбивается на осколки, летящие в противников в базовом радиусе %split_radius% вокруг цели. Осколки наносят противникам урон и замедляют их на %movespeed_slow_tooltip%%%.",
-      "lore_loc": "Виверна запускает во врагов ледяной шар, медленно собирающийся железами ее холодной глотки.",
+      "desc_loc": "Launches a ball of brittle ice toward a unit. The ice shatters on impact, leaving the primary target completely unaffected, while hurling damaging splinters into nearby enemies in a %split_radius% base radius. Enemies struck by these splinters are slowed by %movespeed_slow_tooltip%%%.",
+      "lore_loc": "Produced slowly by specialized vesicles in her frozen gullet, Winter Wyvern blast shards of ice at her enemies.",
       "notes_loc": [
-        "Скорость основного снаряда — %projectile_speed%.",
-        "Основной снаряд невозможно сбить с цели или запустить в самого себя."
+        "The primary projectile moves at %projectile_speed% movement speed.",
+        "The primary projectile cannot be disjointed and cannot be targeted towards Winter Wyvern herself."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -507,7 +507,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС РАЗЛЁТА ОСКОЛКОВ:",
+          "heading_loc": "SHATTER RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_winter_wyvern_2",
@@ -553,7 +553,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -570,7 +570,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТ. ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -607,7 +607,7 @@
             320
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_winter_wyvern_7",
@@ -734,15 +734,15 @@
       "id": 5653,
       "name": "winter_wyvern_cold_embrace",
       "name_loc": "Cold Embrace",
-      "desc_loc": "Заковывает союзника в ледяной кокон, замораживая его и ежесекундно восстанавливая определённое количество здоровья плюс процент от максимального запаса здоровья. Кокон полностью блокирует весь физический урон.",
-      "lore_loc": "Сердце зимы заключает раненого в холодные целительные объятья. Лёд замедляет течение крови и упрощает работу лечебной магии.",
+      "desc_loc": "Encases an ally in an icy cocoon, freezing them solid while healing a base amount as well as a percentage of their maximum health each second. The cocoon blocks all physical damage.",
+      "lore_loc": "From winter's heart comes a cold, healing embrace. The ice slows the blood and allows the spell to better work its curative magic.",
       "notes_loc": [],
-      "shard_loc": "По окончании действия кокон взрывается осколками способности Splinter Blast, которые летят во врагов в радиусе %shard_splinter_range%. Уменьшает перезарядку на %shard_cooldown_reduction% сек.",
+      "shard_loc": "When Cold Embrace ends, a Splinter Blast goes off at that location, hitting enemies within %shard_splinter_range% range. Reduces cooldown by %shard_cooldown_reduction% seconds.",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Способность можно применять на постройки, но она их не лечит. Союзные существа и постройки получают дополнительный урон от атак после выхода из кокона. Действие кокона на постройку приостанавливается, если она защищена укреплением.",
+        "Cold Embrace can be cast on buildings. Does not heal buildings. Allied units and buildings gain bonus attack damage when emerging from the icy cocoon. Duration is paused if the building is protected by both Glyph of Fortification and Cold Embrace.",
         ""
       ],
       "type": 0,
@@ -799,7 +799,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -819,7 +819,7 @@
             55
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВОЕ ЛЕЧЕНИЕ В СЕКУНДУ:",
+          "heading_loc": "BASE HEAL PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_winter_wyvern_5",
@@ -845,7 +845,7 @@
             4.5
           ],
           "is_percentage": true,
-          "heading_loc": "ЛЕЧЕНИЕ ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "MAX HP HEAL PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -936,7 +936,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ОТ АТАК:",
+          "heading_loc": "BONUS ATTACK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -955,7 +955,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ДОП. УРОНА:",
+          "heading_loc": "DAMAGE BUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1063,7 +1063,7 @@
       "id": 1404,
       "name": "winter_wyvern_eldwurm_scholar",
       "name_loc": "Eldwurm Scholar",
-      "desc_loc": "Герой делится знаниями со всеми союзниками: когда кто-то из его команды активирует алтарь мудрости, по %share_percentage%%% опыта получают и остальные %three_tooltip% игрока, которые иначе бы его не получили.",
+      "desc_loc": "When a Shrine of Wisdom grants experience to allies, Winter Wyvern shares the knowledge with her entire team, granting %share_percentage%%% of the experience to each of the %three_tooltip% heroes that did not collect the initial bonus.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1162,11 +1162,11 @@
       "id": 5654,
       "name": "winter_wyvern_winters_curse",
       "name_loc": "Winter's Curse",
-      "desc_loc": "Развеивает с противника эффекты и примораживает его к земле, повергая окружающих его союзников в безумие и заставляя их атаковать цель способности с повышенной скоростью. Противники под этим эффектом получают урон только от своих союзников, владельца способности и его подконтрольных существ.",
-      "lore_loc": "Старейшее из заклинаний, почитаемых драконами-писателями, открывает глаза на истину: иногда враг моего врага — мой враг.",
+      "desc_loc": "Winter Wyvern dispells then freezes an enemy in place while striking those nearby with a maddening curse which causes them to attack their frozen ally with increased attack speed. The frozen ally and those cursed to attack their ally are immune to all damage from their enemies with the exception of damage from Winter Wyvern or her controlled units.",
+      "lore_loc": "The oldest of the bookwurm's spells, this curse lends truth to the old saw: sometimes the enemy of my enemy is my enemy still.",
       "notes_loc": [
-        "Если цель умрёт от рук союзников, убийство засчитается владельцу способности.",
-        "Проходит сквозь невосприимчивость к магии у цели способности, но не у её союзников."
+        "If the target dies to its allies, Winter Wyvern will receive credit for the kill.",
+        "Will only pierce the spell immunity of the primary target, not the target's surrounding allies."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1174,7 +1174,7 @@
         "",
         "",
         "",
-        "Если изначальная цель способности умрёт, её эффект перейдёт на вражеского героя с наименьшим здоровьем. Минимальная, максимальная и дополнительные длительности для новых целей меньше на %transfer_duration_pct%%%. Новой целью не могут стать иллюзии."
+        "Winter's Curse is recast on the lowest health enemy hero if the primary target dies. When recast, minimum, maximum, and bonus durations are %transfer_duration_pct%%% as long. Cannot transfer to illusions."
       ],
       "type": 1,
       "behavior": "35184372088872",
@@ -1225,7 +1225,7 @@
             525
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "CURSE RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1242,7 +1242,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ УРОНА:",
+          "heading_loc": "CURSE DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1259,7 +1259,7 @@
             65
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "CURSE ATTACK SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_winter_wyvern_3",
@@ -1282,7 +1282,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "МИН. ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "CURSE MINIMUM DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1301,7 +1301,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "CURSE MAXIMUM DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1318,7 +1318,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДЛИТЕЛЬНОСТЬ ЗА ГЕРОЯ:",
+          "heading_loc": "CURSE BONUS DURATION PER HERO:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1335,7 +1335,7 @@
             0.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДЛИТЕЛЬНОСТЬ ЗА КРИПА:",
+          "heading_loc": "CURSE BONUS DURATION PER CREEP:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1475,7 +1475,7 @@
     {
       "id": 418,
       "name": "special_bonus_unique_winter_wyvern_5",
-      "name_loc": "+{s:bonus_heal_additive} к базовому лечению в секунду от Cold Embrace",
+      "name_loc": "+{s:bonus_heal_additive} HP/s Cold Embrace Heal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1539,7 +1539,7 @@
     {
       "id": 6164,
       "name": "special_bonus_attack_damage_35",
-      "name_loc": "+{s:value} к урону",
+      "name_loc": "+{s:value} Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1621,7 +1621,7 @@
     {
       "id": 684,
       "name": "special_bonus_unique_winter_wyvern_6",
-      "name_loc": "+{s:bonus_damage_duration} сек. к длительности урона от Arctic Burn",
+      "name_loc": "+{s:bonus_damage_duration}s Arctic Burn Debuff Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1685,7 +1685,7 @@
     {
       "id": 6297,
       "name": "special_bonus_unique_winter_wyvern_2",
-      "name_loc": "+{s:bonus_split_radius} к радиусу разлёта осколков у Splinter Blast",
+      "name_loc": "+{s:bonus_split_radius} Splinter Blast Shatter Radius",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1749,7 +1749,7 @@
     {
       "id": 6106,
       "name": "special_bonus_unique_winter_wyvern_1",
-      "name_loc": "+{s:bonus_move_slow}% к замедлению от Arctic Burn",
+      "name_loc": "+{s:bonus_move_slow}% Arctic Burn Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1813,7 +1813,7 @@
     {
       "id": 719,
       "name": "special_bonus_unique_winter_wyvern_7",
-      "name_loc": "+{s:bonus_damage} к урону от Splinter Blast",
+      "name_loc": "+{s:bonus_damage} Splinter Blast Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1877,7 +1877,7 @@
     {
       "id": 6523,
       "name": "special_bonus_unique_winter_wyvern_3",
-      "name_loc": "+{s:bonus_bonus_attack_speed} к скорости атаки от Winter's Curse",
+      "name_loc": "+{s:bonus_bonus_attack_speed} Winter's Curse Attack Speed ",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1941,8 +1941,8 @@
     {
       "id": 6994,
       "name": "special_bonus_unique_winter_wyvern_4",
-      "name_loc": "Осколки от Splinter Blast оглушают на {s:bonus_stun_duration} сек.",
-      "desc_loc": "Замедление всё ещё действует с той же длительностью.",
+      "name_loc": "Splinter Blast {s:bonus_stun_duration}s Stun",
+      "desc_loc": "The slow is still applied for the same duration.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",

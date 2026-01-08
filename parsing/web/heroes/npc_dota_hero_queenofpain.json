@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_queenofpain",
   "order_id": 51,
   "name_loc": "Queen of Pain",
-  "bio_loc": "Правитель и верховный жрец королевства Эльзе таил страсть к боли — запретной боли. У обычного сановника такие желания сочли бы неразумными, но прознай кто, что им предаётся монаршья особа, вся вера в праведность самого Божественного престола оказалась бы под угрозой. Потому король обратился к пленным демонологам, обещая свободу тому, кто сможет призвать суккуба мучений и подчинить её воле правителя. Так и явилась в наш мир сущность по имени Акаша, и доставляла она столь изысканные муки, что монарх прозвал её своей тайной королевой и стал проводить с ней каждую свободную минуту, отдаваясь изощрённым мукам. Со временем он оставил все свои королевские обязанности в погоне за сладострастными страданиями, что могла принести лишь его королева. Она могла довести его до полусмерти, однако руны повиновения сдерживали её, сохраняя правителю жизнь. В конце концов народ восстал против нерадивого монарха: его вытащили из покоев и сбросили с башни заклинателей. Стоило ему умереть, как Акаша обрела свободу, сбросила свои оковы... и теперь несёт мучения каждому, кто ей приглянется.",
-  "hype_loc": "Queen of Pain нападает без предупреждения, уничтожая собравшихся вместе противников своим <b>оглушающим криком</b>. Если враг смог сдержать её натиск, она не позволяет ему отступить, <b>замедляя броском кинжала</b>.",
-  "npe_desc_loc": "Впрыгивает в бой, чтобы нанести огромный магический урон",
+  "bio_loc": "The Ecclesiast-King of Elze nursed a desire for pain--forbidden pain. In a less prominent political figure, such desires might be considered unwise, but in a monarch of his stature, to satisfy such thirsts would have threatened the virtue of the Divine Throne itself. Therefore he turned to his dungeon full of demonologists, promising freedom to whoever could summon a personal succubus of torment and bind it entirely to his service. The creature who arrived, Akasha by name, visited upon him such exquisite torments that he named her his Secret Queen, and he began to spend all his spare moments submitting to her clever torments--eventually abdicating all his responsibilities in his pursuit of the painful pleasures that only she could bring. Queen of Pain could bring him to the brink of death, but she was rune-bound to keep him alive. At last the King's neglect of state brought on an uprising. He was dragged from his chamber and hurled from the Tower of Invocations, and at the moment of death, Queen of Pain was let loose into the world, freed from servitude--freed to visit her sufferings on anyone she deigned to notice.",
+  "hype_loc": "Queen of Pain strikes without warning, destroying gathered foes with <b>deafening screams</b>. Should an enemy survive her onslaught, she <b>slows</b> their escape with a <b>throw of her dagger</b> before finishing them off.",
+  "npe_desc_loc": "Blinks in to deal massive magical damage",
   "facets": [
     {
       "color": 0,
       "title_loc": "Masochist",
-      "description_loc": "Даёт бонус к урону от заклинаний, но доля урона, наносимого вражеским героям заклинаниями, наносится и владельцу.",
+      "description_loc": "Queen of Pain has bonus Spell Amplification but a percentage of her spell damage is reflected back to her.",
       "name": "queenofpain_selfdmg",
       "icon": "nuke",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Bondage",
-      "description_loc": "Герой отражает во врагов получаемый урон от заклинаний. Вампиризм заклинаниями от способности Succubus также срабатывает при отражении чистого и магического урона.",
+      "description_loc": "Queen of Pain returns spell damage back to enemies. Succubus's Spell Lifesteal also applies to Pure & Magical reflected damage.",
       "name": "queenofpain_facet_bondage",
       "icon": "twin_hearts",
       "gradient_id": 0,
@@ -66,14 +66,14 @@
       "id": 5173,
       "name": "queenofpain_shadow_strike",
       "name_loc": "Shadow Strike",
-      "desc_loc": "Бросает кинжал, который наносит урон при попадании и отравляет цель на %duration% сек. Жертва передвигается медленнее и каждые %damage_interval% сек. получает урон от яда.",
-      "lore_loc": "Акаша обожает растягивать страдания жертвы, пронзив её отравленным кинжалом.",
+      "desc_loc": "Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed slowed for %duration% seconds.  An instance of damage is dealt every %damage_interval% seconds.",
+      "lore_loc": "Akasha's envenomed dagger allows her to delight in the drawn out suffering of her victims.",
       "notes_loc": [
-        "Враг под воздействием этой способности со временем восстанавливает потерянную скорость.",
-        "Если здоровье цели упадёт ниже 25%, её смогут добить её же союзники."
+        "The affected unit slowly regains its original movement speed every second during the duration.",
+        "Units afflicted by Shadow Strike can be denied by their allies when their HP drops below 25% of their maximum health."
       ],
       "shard_loc": "",
-      "scepter_loc": "Способность применяется по области радиусом %aoe_radius%. Когда эффект этой способности на вражеском герое заканчивается или обновляется, он издаёт крик от способности Scream of Pain.",
+      "scepter_loc": "Causes Shadow Strike to become a %aoe_radius% AoE Spell. When Shadow Strike ends or is re-applied to an enemy Hero, the target emits a Scream of Pain, hitting any nearby enemies.",
       "facets_loc": [
         "",
         "",
@@ -133,7 +133,7 @@
             140
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ ПОПАДАНИЯ:",
+          "heading_loc": "INITIAL DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -153,7 +153,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРИОДИЧЕСКИЙ УРОН:",
+          "heading_loc": "DAMAGE PER TICK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -173,7 +173,7 @@
             -55
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -289,7 +289,7 @@
             16
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -395,12 +395,12 @@
       "id": 5174,
       "name": "queenofpain_blink",
       "name_loc": "Blink",
-      "desc_loc": "Перемещение на короткую дистанцию, позволяющее ворваться в схватку или быстро из неё сбежать.",
-      "lore_loc": "Негласная королева сделала себе имя, не оставляя без боли ни одного подданного.",
+      "desc_loc": "Short distance teleportation that allows Queen of Pain to move in and out of combat.",
+      "lore_loc": "The Secret Queen lives up to her title, making her pain impossible to escape.",
       "notes_loc": [
-        "Позволяет сбить с цели многие направленные в героя снаряды."
+        "You can use Blink to dodge incoming projectiles."
       ],
-      "shard_loc": "В начальной и конечной точке перемещения происходит звуковой удар, который наносит %shard_damage% урона в радиусе %shard_aoe% и накладывает безмолвие на %shard_duration% сек.",
+      "shard_loc": "Releases a sonic boom when Queen of Pain blinks, at both her starting and ending locations. Deals %shard_damage% damage in a %shard_aoe% AoE and silences the target for %shard_duration% seconds.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -624,11 +624,11 @@
       "id": 5175,
       "name": "queenofpain_scream_of_pain",
       "name_loc": "Scream Of Pain",
-      "desc_loc": "Герой издаёт пронзительный вопль, нанося урон всем врагам поблизости.",
-      "lore_loc": "Акаша одурманивает противников своим сладострастным голосом, когда крадёт их души.",
+      "desc_loc": "The Queen of Pain lets loose a piercing scream around her, damaging nearby enemies.",
+      "lore_loc": "The sultry voice of Akasha beckons her opponents while stealing their souls.",
       "notes_loc": [
-        "Наносит урон невидимым врагам.",
-        "Снаряд этой способности нельзя сбить с цели."
+        "Scream Of Pain will hit invisible units.",
+        "Scream Of Pain cannot be disjointed."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -685,7 +685,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -722,7 +722,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_queen_of_pain_2",
@@ -794,7 +794,7 @@
       "id": 1277,
       "name": "queenofpain_succubus",
       "name_loc": "Succubus",
-      "desc_loc": "Все источники вампиризма заклинаниями срабатывают и от чистого урона. Даёт вампиризм заклинаниями, который тем больше, чем владелец способности ближе к жертве: минимум — на расстоянии %max_radius% или дальше, максимум — на расстоянии %close_radius% или ближе.",
+      "desc_loc": "All sources of Spell Lifesteal also apply to Pure Damage. Queen of Pain gains Spell Lifesteal that increases with proximity to her enemies. Lifesteal is at its maximum when the enemy is %close_radius% units or closer to her and at its minimum when the enemy is %max_radius% units or further from her.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -802,7 +802,7 @@
       "facets_loc": [
         "",
         "",
-        "Вампиризм заклинаниями также срабатывает при отражении чистого и магического урона."
+        "Spell Lifesteal also applies to Pure & Magical reflected damage."
       ],
       "type": 0,
       "behavior": "8796093022210",
@@ -846,7 +846,7 @@
             2
           ],
           "is_percentage": true,
-          "heading_loc": "МИН. ВАМПИРИЗМ:",
+          "heading_loc": "MINIMUM LIFESTEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -897,7 +897,7 @@
             14
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ВАМПИРИЗМ:",
+          "heading_loc": "MAXIMUM LIFESTEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -945,10 +945,10 @@
       "id": 5176,
       "name": "queenofpain_sonic_wave",
       "name_loc": "Sonic Wave",
-      "desc_loc": "Создаёт перед героем гигантскую звуковую волну, отталкивающую врагов и наносящую им огромный урон.",
-      "lore_loc": "Самая изысканная пытка Акаши — звуковая волна, добивающая её многострадальных противников.",
+      "desc_loc": "Creates a gigantic wave of sound in front of Queen of Pain, dealing heavy damage to all enemy units in its wake and pushing them back.",
+      "lore_loc": "Her most exquisite of all of torments, Akasha's Sonic Wave puts her poor foes out of their misery.",
       "notes_loc": [
-        "Задевает существ на расстоянии до 1150 единиц."
+        "Sonic Wave can hit units up to 1150 units away."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1039,7 +1039,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ШИРИНА ВОЛНЫ:",
+          "heading_loc": "WAVE MAX RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1075,7 +1075,7 @@
             625
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_queen_of_pain_7",
@@ -1115,7 +1115,7 @@
             350
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ОТТАЛКИВАНИЯ:",
+          "heading_loc": "KNOCKBACK DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1240,7 +1240,7 @@
     {
       "id": 1279,
       "name": "special_bonus_unique_queen_of_pain_1",
-      "name_loc": "+{s:bonus_attack_speed} к скорости атаки по жертвам Shadow Strike",
+      "name_loc": "+{s:bonus_attack_speed} Attack Speed against Shadow Striked units",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1303,7 +1303,7 @@
     {
       "id": 6115,
       "name": "special_bonus_strength_7",
-      "name_loc": "+{s:value} к силе",
+      "name_loc": "+{s:value} Strength",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1384,7 +1384,7 @@
     {
       "id": 629,
       "name": "special_bonus_unique_queen_of_pain_4",
-      "name_loc": "–{s:bonus_damage_interval} сек. интервала у Shadow Strike",
+      "name_loc": "-{s:bonus_damage_interval}s Shadow Strike Damage Interval",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1447,7 +1447,7 @@
     {
       "id": 5939,
       "name": "special_bonus_attack_damage_30",
-      "name_loc": "+{s:value} к урону",
+      "name_loc": "+{s:value} Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1528,7 +1528,7 @@
     {
       "id": 6856,
       "name": "special_bonus_unique_queen_of_pain_2",
-      "name_loc": "+{s:bonus_damage} к урону от Scream of Pain",
+      "name_loc": "+{s:bonus_damage} Scream of Pain Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1591,7 +1591,7 @@
     {
       "id": 590,
       "name": "special_bonus_unique_queen_of_pain_3",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Sonic Wave",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Sonic Wave Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1654,7 +1654,7 @@
     {
       "id": 751,
       "name": "special_bonus_unique_queen_of_pain_6",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Blink",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Blink Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1717,7 +1717,7 @@
     {
       "id": 965,
       "name": "special_bonus_unique_queen_of_pain_7",
-      "name_loc": "+{s:bonus_damage} к урону от Sonic Wave",
+      "name_loc": "+{s:bonus_damage} Sonic Wave Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1785,7 +1785,7 @@
           "id": 1276,
           "name": "queenofpain_masochist",
           "name_loc": "Masochist",
-          "desc_loc": "Даёт бонус к урону от заклинаний, но доля урона, наносимого вражеским героям заклинаниями, наносится и владельцу.",
+          "desc_loc": "Queen of Pain has bonus Spell Amplification but a percentage of her spell damage is reflected back to her.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",
@@ -1837,7 +1837,7 @@
                 14
               ],
               "is_percentage": true,
-              "heading_loc": "ДОП. УРОН ОТ ЗАКЛИНАНИЙ:",
+              "heading_loc": "SPELL AMPLIFICATION:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1854,7 +1854,7 @@
                 27
               ],
               "is_percentage": true,
-              "heading_loc": "ОТРАЖАЕМЫЙ УРОН ОТ ЗАКЛИНАНИЙ:",
+              "heading_loc": "OUTGOING SPELL DAMAGE REFLECTED:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1887,7 +1887,7 @@
           "id": 1278,
           "name": "queenofpain_bondage",
           "name_loc": "Bondage",
-          "desc_loc": "Владелец отражает %spell_reflect_pct%%% получаемого урона от заклинаний обратно в обидчика, если он находится в радиусе %radius%.",
+          "desc_loc": "Whenever an enemy within %radius% range deals spell damage to Queen of Pain, she returns %spell_reflect_pct%%% of the damage dealt.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",

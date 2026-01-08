@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_witch_doctor",
   "order_id": 23,
   "name_loc": "Witch Doctor",
-  "bio_loc": "Вдали ковыляет тонкий силуэт — конечности его свисают, а походка виляет: это колдун неустанно ищет на поле боя слабину, где его умения принесут больше всего пользы и вреда. Неясно, уродилось ли это существо таким или его что-то обезобразило, но никто не усомнится в силах, что держит в себе такой неопрятный каркас. Громко стуча посохом оземь, Жарвакко вышагивает по полю боя, пользуясь внушительным арсеналом амулетов, проклятий, заговоров и заклинаний. В его теле — магические знания, добытые за несколько жизненных циклов на взгорье острова Арктура, и теперь колдун мастерски разит этими знаниями противников. Жарвакко может стать и лучшим другом, и злейшим врагом: он исцеляет союзников, но сеет смерть для тех, кто встаёт у него на пути.",
-  "hype_loc": "Witch Doctor <b>идеально дополняет любую команду</b>. Мало кто сравнится с ним по <b>универсальности</b>: он может <b>постепенно излечивать</b> товарищей, <b>оглушать и насмерть проклинать</b> врагов, а также уничтожать их своим мощным ультом.",
-  "npe_desc_loc": "Призывает тотем смерти, наносящий значительный урон",
+  "bio_loc": "A wiry silhouette hitches forward--uneven of feature and limb, bizarre of gait, relentlessly criss-crossing the battlefield in search of that vital weak point where his talents can do most good, and most harm. Whether broken or mismade it is not clear, but still, none can doubt the power carried in his twisted physique. A long staff thumps the earth as Zharvakko the Witch Doctor advances, deploying a terrifying arsenal of fetishes, hexes and spells.  It is a body of magical knowledge learned and perfected over several lifetimes in the island highlands of Arktura, now wielded with precision accuracy against his enemies. Zharvakko can be your best friend or your worst enemy--healing allies and laying waste to all who oppose him.",
+  "hype_loc": "Witch Doctor is <b>whatever his team needs him to be</b>. Whether aiding his team with <b>gradual healing</b>, <b>stunning and cursing foes</b> to ensure a kill, or destroying enemies himself with a dance by his mighty ultimate, few can match Witch Doctor's <b>versatility.</b>",
+  "npe_desc_loc": "Channels a high damage death ward",
   "facets": [
     {
       "color": 4,
       "title_loc": "Cleft Death",
-      "description_loc": "Тотем от Death Ward атакует несколько целей одновременно, но наносит меньше урона.",
+      "description_loc": "Death Ward attacks multiple targets with reduced damage.",
       "name": "witch_doctor_cleft_death",
       "icon": "death_ward",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Malpractice",
-      "description_loc": "Враги взрываются, если умирают под действием Maledict.",
+      "description_loc": "Enemies dying while Maledicted explode.",
       "name": "witch_doctor_malpractice",
       "icon": "nuke",
       "gradient_id": 2,
@@ -66,15 +66,15 @@
       "id": 5138,
       "name": "witch_doctor_paralyzing_cask",
       "name_loc": "Paralyzing Cask",
-      "desc_loc": "Бросает бочонок с парализующим порошком, который отскакивает от противников, оглушая их и нанося им урон, увеличивающийся с каждым отскоком.",
-      "lore_loc": "Жарвакко перемалывает кости павших союзников и противников, пополняя порошком свой арсенал чар и алхимии.",
+      "desc_loc": "Launches a cask of paralyzing powder that ricochets between enemy units, stunning and damaging those it hits. Damage increases each bounce.",
+      "lore_loc": "The Witch Doctor recycles the bones of fallen friends and foes, using the powder as part of his arsenal of charms and alchemy.",
       "notes_loc": [
-        "Цель может быть оглушена несколько раз, если рядом есть другое существо, к которому отскочит бочонок."
+        "Targets can be hit multiple times, as long as another unit is struck in between the bounces."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Урон способности Paralyzing Cask увеличивается с каждым отскоком.",
+        "Paralyzing Cask deals more damage each bounce.",
         "",
         "",
         ""
@@ -127,7 +127,7 @@
             0.8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -164,7 +164,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -201,7 +201,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ОТСКОКОВ:",
+          "heading_loc": "BOUNCES:",
           "bonuses": [
             {
               "name": "special_bonus_unique_witch_doctor_3",
@@ -258,7 +258,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ЗА ОТСКОК:",
+          "heading_loc": "BONUS DAMAGE PER BOUNCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -384,17 +384,17 @@
       "id": 5139,
       "name": "witch_doctor_voodoo_restoration",
       "name_loc": "Voodoo Restoration",
-      "desc_loc": "Герой направляет свои чары на лечение ближайших союзников, теряя ману каждую секунду действия этой способности.",
-      "lore_loc": "Фокусы Жарвакко могут не только околдовать врагов, но и исцелить от различных болезней.",
+      "desc_loc": "Witch Doctor focuses his magic to heal nearby allied units, costing Witch Doctor mana every second Voodoo Restoration is active.",
+      "lore_loc": "Zharvakko's hocus pocus is not limited only to hexxing his opponents and is quite adept at curing ailments.",
       "notes_loc": [
-        "Лечение происходит каждые %heal_interval% секунды.",
-        "Лечит союзников, невосприимчивых к магии."
+        "Healing is done in %heal_interval% second intervals.",
+        "Can heal Spell Immune units."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Способность Voodoo Restoration наносит урон врагам и лечит только владельца.",
+        "Voodoo Restoration deals damage to enemies and only heals Witch Doctor.",
         "",
         ""
       ],
@@ -446,7 +446,7 @@
             18
           ],
           "is_percentage": false,
-          "heading_loc": "МАНЫ В СЕКУНДУ:",
+          "heading_loc": "MANA PER SEC:",
           "bonuses": [
             {
               "name": "special_bonus_unique_witch_doctor_4",
@@ -493,7 +493,7 @@
             650
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -515,7 +515,7 @@
             50
           ],
           "is_percentage": false,
-          "heading_loc": "ЛЕЧЕНИЕ:",
+          "heading_loc": "HEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -592,7 +592,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ЛЕЧЕНИЕ СЕБЕ:",
+          "heading_loc": "SELF HEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -664,10 +664,10 @@
       "id": 5140,
       "name": "witch_doctor_maledict",
       "name_loc": "Maledict",
-      "desc_loc": "Накладывает сглаз на всех вражеских героев и подконтрольных им существ в небольшой области, отчего они каждую секунду получают фиксированный урон. Помимо этого, каждые 4 секунды им наносится периодический урон, зависящий от количества здоровья, которое было потеряно с наложения сглаза.",
-      "lore_loc": "Некоторые заклятия вуду способны заставить врага жалеть о том, что он повстречался с Жарвакко.",
+      "desc_loc": "Curses all enemy Heroes and player-controlled units in a small area, causing them to take a set amount of damage each second, as well as bursts of damage every 4 seconds based on how much health they have lost since the curse began.",
+      "lore_loc": "Certain voodoo magics can make an enemy regret engaging the Witch Doctor.",
       "notes_loc": [
-        "Если у жертвы больше здоровья, чем на момент произнесения этого заклинания, периодического урона не будет."
+        "If an affected hero's health has increased above the amount they had when Maledict was cast, the burst damage will be 0."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -675,7 +675,7 @@
         "",
         "",
         "",
-        "Если враг умирает под действием сглаза, все вражеские существа в радиусе %spread_radius% от него получают %spread_pct%%% урона, который нанёсся бы погибшему при следующем срабатывании."
+        "Enemies who die while cursed deal damage equal to %spread_pct%%% of what the next burst damage would be to all enemy units in a %spread_radius% radius."
       ],
       "type": 0,
       "behavior": "134217776",
@@ -728,7 +728,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -748,7 +748,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ ПОТЕРЯННОГО ЗДОРОВЬЯ:",
+          "heading_loc": "LOST HEALTH BURST DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -897,7 +897,7 @@
             12
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_witch_doctor_7",
@@ -989,7 +989,7 @@
       "id": 632,
       "name": "witch_doctor_voodoo_switcheroo",
       "name_loc": "Voodoo Switcheroo",
-      "desc_loc": "Ненадолго превращает владельца в тотем от способности Death Ward, атакующий медленнее. Скрывает героя на время действия.",
+      "desc_loc": "Turns Witch Doctor into a Death Ward briefly with reduced attack speed. He is hidden during this time.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1042,7 +1042,7 @@
             2.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1059,7 +1059,7 @@
             45
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SPEED REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1139,7 +1139,7 @@
       "id": 1257,
       "name": "witch_doctor_gris_gris",
       "name_loc": "Gris-Gris",
-      "desc_loc": "Герой получает Gris-Gris — предмет, который нельзя выложить или поместить в ранец. Когда владелец погибает, %death_gold_lost_reduction_pct_tooltip%%% от потерянного из-за смерти золота добавляется к предмету. Кроме того, его ценность повышается на 1 каждые %gold_tick_interval_tooltip% сек. Применив предмет, герой навсегда лишится его и получит всё накопленное в нём золото. <br><br> Чтобы применить предмет, нажмите на него правой кнопкой мыши и выберите «Использовать».",
+      "desc_loc": "Witch Doctor gets a Gris-Gris, an item that cannot be dropped or placed in the backpack. When the owner dies, %death_gold_lost_reduction_pct_tooltip%%% of the gold lost from death is added to the item, and will be refunded when the item is consumed. The value of the Gris-Gris is increased by 1 every %gold_tick_interval_tooltip%s. <br><br> Right-click to consume and permanently remove the item.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1238,19 +1238,19 @@
       "id": 5141,
       "name": "witch_doctor_death_ward",
       "name_loc": "Death Ward",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — призывает смертоносный тотем, атакующий вражеских героев. Действует до %abilitychanneltime% сек. Тотем имеет бонус к точности в %bonus_accuracy%%%.",
-      "lore_loc": "Жарвакко исполняет ритуальный танец, приходящий к пережившим его в страшных снах.",
+      "desc_loc": "CHANNELED - Summons a deadly ward to attack enemy heroes within its attack range. Lasts a maximum of %abilitychanneltime% seconds. Death Ward has %bonus_accuracy%%% bonus accuracy.",
+      "lore_loc": "Witch Doctor performs a ritualistic dance, one that haunts the dreams of those who live to recount it.",
       "notes_loc": [
-        "Тотем невозможно уничтожить, но он исчезнет, если способность закончится или прервётся.",
-        "Цель атаки тотема можно выбрать вручную.",
-        "Тотем атакует каждые 0,22 секунды."
+        "The Death Ward is invulnerable, and is only destroyed if Witch Doctor is interrupted or its duration expires.",
+        "The Death Ward can be controlled, and made to attack a specific target.",
+        "Death Ward attacks once every 0.22 seconds."
       ],
       "shard_loc": "",
-      "scepter_loc": "Атаки тотема отскакивают между вражескими героями.",
+      "scepter_loc": "Death Ward attacks bounce between nearby enemies.",
       "facets_loc": [
         "",
         "",
-        "Тотем от Death Ward атакует %initial_target_count% цели одновременно, но наносит меньше урона. Вторичная цель получает %secondary_attack_damage_pct%%% урона.",
+        "Death Ward attacks %initial_target_count% targets at once with reduced damage. The secondary target takes %secondary_attack_damage_pct%%% of the damage.",
         ""
       ],
       "type": 1,
@@ -1303,7 +1303,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_witch_doctor_5",
@@ -1330,7 +1330,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK RANGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_witch_doctor_1",
@@ -1374,7 +1374,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ОТСКОКА:",
+          "heading_loc": "BOUNCE RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1567,7 +1567,7 @@
     {
       "id": 6995,
       "name": "special_bonus_unique_witch_doctor_4",
-      "name_loc": "–{s:bonus_tooltip_mana_per_second}% расхода маны на Voodoo Restoration",
+      "name_loc": "-{s:bonus_tooltip_mana_per_second}% Voodoo Restoration Mana Per Second",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1631,7 +1631,7 @@
     {
       "id": 5959,
       "name": "special_bonus_hp_200",
-      "name_loc": "+{s:value} к здоровью",
+      "name_loc": "+{s:value} Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1713,7 +1713,7 @@
     {
       "id": 6524,
       "name": "special_bonus_unique_witch_doctor_3",
-      "name_loc": "+{s:bonus_bounces} к числу отскоков у Paralyzing Cask",
+      "name_loc": "+{s:bonus_bounces} Paralyzing Cask Bounces",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1777,7 +1777,7 @@
     {
       "id": 555,
       "name": "special_bonus_unique_witch_doctor_7",
-      "name_loc": "+{s:bonus_AbilityDuration} сек. действия Maledict",
+      "name_loc": "+{s:bonus_AbilityDuration}s Maledict Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1841,7 +1841,7 @@
     {
       "id": 5998,
       "name": "special_bonus_unique_witch_doctor_1",
-      "name_loc": "+{s:bonus_bonus_attack_range} к дальности атаки тотема от Death Ward",
+      "name_loc": "+{s:bonus_bonus_attack_range} Death Ward Attack Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1905,7 +1905,7 @@
     {
       "id": 6298,
       "name": "special_bonus_unique_witch_doctor_2",
-      "name_loc": "+{s:bonus_bonus_heal_percent}% макс. здоровья к лечению от Voodoo Restoration",
+      "name_loc": "+{s:bonus_bonus_heal_percent}% Target Max Health Voodoo Restoration Heal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1913,7 +1913,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "+{s:bonus_bonus_heal_percent}% макс. здоровья к урону от Voodoo Restoration",
+        "+{s:bonus_bonus_heal_percent}% Target Max Health Voodoo Restoration Damage",
         "",
         ""
       ],
@@ -1969,7 +1969,7 @@
     {
       "id": 417,
       "name": "special_bonus_unique_witch_doctor_6",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Paralyzing Cask",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Paralyzing Cask Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2033,7 +2033,7 @@
     {
       "id": 6996,
       "name": "special_bonus_unique_witch_doctor_5",
-      "name_loc": "+{s:bonus_damage} к урону тотема от Death Ward",
+      "name_loc": "+{s:bonus_damage} Death Ward Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

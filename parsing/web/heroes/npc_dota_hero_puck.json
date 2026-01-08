@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_puck",
   "order_id": 13,
   "name_loc": "Puck",
-  "bio_loc": "На первый взгляд это существо обладает озорным, ребяческим характером, но за ним скрывается чужеродная личность. Волшебные дракончики живут целую вечность, и пусть эта особь провела в юном облике несчётные тысячелетия, она всё равно будет считаться молодой, даже когда города нашего времени обратятся в пыль. Посему побуждения этого создания непостижимы, а игривость может скрывать его тёмное начало. Истинная природа дракончика — в его бесконечных проказах.",
-  "hype_loc": "Игривый и <b>увёртливый</b> Puck мастерски запутывает противников. Он может переместиться на небольшое расстояние с помощью своей <b>смертоносной сферы</b> и обезмолвить врагов <b>магической пылью</b>, а когда противник опомнится, будет слишком поздно: Puck уже исчезнет за горизонтом.",
-  "npe_desc_loc": "Влетает во врагов на магическом шаре и выводит их из строя",
+  "bio_loc": "While Puck seems at first glance a mischievous, childish character, this quality masks an alien personality. The juvenile form of a Faerie Dragon, a creature that lives for eons, Puck spends countless millennia in its childish form. So while it is technically true that Puck is juvenile, it will continue to be so when the cities of the present age have sloughed away into dust. Its motives are therefore inscrutable, and what appears to be play may in fact hide a darker purpose. Its endless fondness for mischief is the true indicator of Puck's true nature.",
+  "hype_loc": "Puck has a talent for confounding its enemies with playfully <b>elusive</b> mischief. By teleporting to its <b>damaging orb</b> in order to hop short distances, it attacks foes with bursts of <b>silencing dust</b>. By the time its enemies can react, Puck has long since escaped.",
+  "npe_desc_loc": "Orbs to enemies and silences them",
   "facets": [
     {
       "color": 4,
       "title_loc": "Jostling Rift",
-      "description_loc": "Способность Waning Rift отталкивает либо притягивает врагов.",
+      "description_loc": "Waning Rift can push or pull targets.",
       "name": "puck_jostling_rift",
       "icon": "movement",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Curveball",
-      "description_loc": "Позволяет запустить шар от способности Illusory Orb по дуге. Он движется быстрее, наносит больше урона и существует дольше.",
+      "description_loc": "Puck's Illusory Orb can be curved in any direction, moves faster, deals more damage and lasts longer.",
       "name": "puck_curveball",
       "icon": "curve_ball",
       "gradient_id": 2,
@@ -66,17 +66,17 @@
       "id": 5069,
       "name": "puck_illusory_orb",
       "name_loc": "Illusory Orb",
-      "desc_loc": "Герой выпускает волшебный шар, летящий по прямой и поражающий всех противников на своем пути. К шару можно переместиться в любой момент, применив способность Ethereal Jaunt.",
-      "lore_loc": "Волшебный дракончик обожает вводить врагов в замешательство, внезапно исчезая и появляясь то тут, то там.",
+      "desc_loc": "Puck launches a magic orb that floats in a straight path, damaging enemy units along the way. At any point, Puck may teleport to the orb's location using Ethereal Jaunt.",
+      "lore_loc": "The playful Faerie Dragon delights in confusing others, vanishing and reappearing where unexpected.",
       "notes_loc": [
-        "Шар даёт беспрепятственный обзор по местности, над которой он летит.",
-        "Переместившись к шару, герой собьёт с цели направленные в него снаряды."
+        "The Illusory Orb grants unobstructed vision around its location while it travels.",
+        "Jaunting to the Orb will disjoint projectiles."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Делает применение способности векторным, что позволяет задать траекторию движения шара. Максимальное расстояние его полёта остаётся прежним, но он движется быстрее, существует дольше и помимо основного урона наносит %damage_over_time_pct%%% от него каждые %damage_interval% сек."
+        "Illusory Orb can now be vector targeted to manipulate the orb's travel path. The orb moves faster, lasts longer, and deals an additional %damage_over_time_pct%%% of it's damage every %damage_interval%s in it's area of effect, but if it exceeds the max cast range it will be destroyed."
       ],
       "type": 0,
       "behavior": "16",
@@ -130,7 +130,7 @@
             225
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -147,7 +147,7 @@
             1950
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. РАССТОЯНИЕ:",
+          "heading_loc": "MAX DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -164,7 +164,7 @@
             550
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ:",
+          "heading_loc": "SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -220,7 +220,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_puck_orb_damage",
@@ -279,7 +279,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "МНОЖИТЕЛЬ ДЛИТЕЛЬНОСТИ:",
+          "heading_loc": "DURATION MULTIPLIER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -536,13 +536,13 @@
       "id": 5071,
       "name": "puck_waning_rift",
       "name_loc": "Waning Rift",
-      "desc_loc": "Герой перемещается в указанную точку и выпускает облако волшебной пыльцы, нанося врагам вокруг урон и запрещая им применять способности.",
-      "lore_loc": "Дракончик с шаловливой улыбкой распыляет зачарованный порошок, нарушающий магический поток.",
+      "desc_loc": "Puck teleports to the target location and releases a burst of faerie dust that deals damage and silences enemy units nearby.",
+      "lore_loc": "With a mischievous grin, Puck spreads its enchanted powder which disrupts magical flow.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Способность отталкивает врагов, а если включено альтернативное применение — притягивает.",
+        "Waning Rift pushes enemies away. If the ability is in alt-cast state, it will pull them instead.",
         ""
       ],
       "type": 0,
@@ -593,7 +593,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_puck_rift_radius",
@@ -619,7 +619,7 @@
             3.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_puck_7",
@@ -645,7 +645,7 @@
             240
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_puck_6",
@@ -668,7 +668,7 @@
             350
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДАЛЬНОСТЬ:",
+          "heading_loc": "MAX DISTANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_puck_rift_radius",
@@ -713,7 +713,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ СМЕЩЕНИЯ ВРАГОВ:",
+          "heading_loc": "PUSH/PULL DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -735,7 +735,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ СМЕЩЕНИЯ:",
+          "heading_loc": "PUSH/PULL DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -873,14 +873,14 @@
       "id": 5072,
       "name": "puck_phase_shift",
       "name_loc": "Phase Shift",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — герой ненадолго смещается в другое измерение, защищаясь от любого вреда.",
-      "lore_loc": "Ехидно усмехнувшись, волшебный дракончик со вспышкой возвращается в иное, родное для себя измерение.",
+      "desc_loc": "CHANNELED - Puck briefly shifts into another dimension where it is immune from harm.",
+      "lore_loc": "With a quip and flash, Puck returns to the alien dimension from whence it came.",
       "notes_loc": [
-        "Через героя под действием этой способности нельзя пройти.",
-        "Любой приказ прекратит действие этой способности.",
-        "Под действием этой способности герой неуязвим."
+        "Puck retains collision size while under the effects of Phase Shift.",
+        "Issuing any action will cancel Phase Shift.",
+        "Puck is invulnerable during Phase Shift."
       ],
-      "shard_loc": "Атаки героя наносят дополнительный магический урон. При применении этой способности герой атакует всех врагов в радиусе атаки.",
+      "shard_loc": "Puck's attacks deal bonus magic damage. Puck attacks all enemies within its attack range every time it phase shifts.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -940,7 +940,7 @@
             3.25
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -976,7 +976,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [
             20
@@ -1064,7 +1064,7 @@
       "id": 1222,
       "name": "puck_puckish",
       "name_loc": "Puckish",
-      "desc_loc": "Сбив с цели снаряд атаки, герой восстановит себе %hp_restore_base% + %hp_restore_pct%%% от максимального здоровья и %mana_restore_base% + %mana_restore_pct%%% от максимальной маны. Уклонение от снаряда направленного заклинания принесёт в %dodged_spell_multiplier% раза больше здоровья и маны. Не срабатывает при уклонении от атак башен.",
+      "desc_loc": "Whenever Puck disjoints an attack, it restores %mana_restore_base% + %mana_restore_pct%%% of its max mana and %hp_restore_base% + %hp_restore_pct%%% of its max health. Dodging a targeted spell projectile restores %dodged_spell_multiplier%x that amount. Does not apply to attacks by Towers.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1212,11 +1212,11 @@
       "id": 5073,
       "name": "puck_dream_coil",
       "name_loc": "Dream Coil",
-      "desc_loc": "Цепляет вражеских героев нестабильной магической спиралью, накладывая на них эффект привязки и нанося им урон. Если враг отойдёт слишком далеко от центра спирали, то она разорвётся, оглушив его и нанеся дополнительный урон.",
-      "lore_loc": "Волшебный дракончик сеет смятение в рядах врагов, заставляя их осознать свою смертность.",
+      "desc_loc": "Creates a coil of volatile magic that latches onto enemy Heroes, damaging and leashing them.  If the enemy hero stretches the coil by moving too far away, it snaps, stunning and dealing additional damage.",
+      "lore_loc": "The Faerie Dragon sows confusion by forcing its enemies to vividly dream about their own mortality.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Владелец способности атакует всех врагов под её действием со скоростью в %attack_rate_pct%%% от обычной. Если враг разорвёт спираль, то атаки прекратятся лишь после того, как закончится оглушение.",
+      "scepter_loc": "All enemies affected by Dream Coil are attacked at a rate equal to %attack_rate_pct%%% of Puck's attack rate. The attacks continue while the target is stunned if they break the Dream Coil.",
       "facets_loc": [
         "",
         ""
@@ -1269,7 +1269,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДЕЙСТВИЯ СПИРАЛИ:",
+          "heading_loc": "COIL DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1286,7 +1286,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС РАЗРЫВА:",
+          "heading_loc": "BREAK RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1322,7 +1322,7 @@
             325
           ],
           "is_percentage": false,
-          "heading_loc": "НАЧАЛЬНЫЙ УРОН:",
+          "heading_loc": "INITIAL DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_puck_coil_damage",
@@ -1347,7 +1347,7 @@
             2.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "BREAK STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1366,7 +1366,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ПРИ РАЗРЫВЕ:",
+          "heading_loc": "BREAK DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_puck_coil_damage",
@@ -1573,7 +1573,7 @@
     {
       "id": 1057,
       "name": "special_bonus_unique_puck_orb_damage",
-      "name_loc": "+{s:bonus_damage} к урону от Illusory Orb",
+      "name_loc": "+{s:bonus_damage} Illusory Orb Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1635,7 +1635,7 @@
     {
       "id": 767,
       "name": "special_bonus_unique_puck_7",
-      "name_loc": "+{s:bonus_silence_duration} сек. безмолвия от Waning Rift",
+      "name_loc": "+{s:bonus_silence_duration}s Waning Rift Silence Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1697,7 +1697,7 @@
     {
       "id": 6219,
       "name": "special_bonus_unique_puck",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Dream Coil",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Dream Coil Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1759,7 +1759,7 @@
     {
       "id": 407,
       "name": "special_bonus_unique_puck_6",
-      "name_loc": "+{s:bonus_damage} к урону от Waning Rift",
+      "name_loc": "+{s:bonus_damage} Waning Rift Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1821,7 +1821,7 @@
     {
       "id": 6402,
       "name": "special_bonus_unique_puck_2",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Waning Rift",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Waning Rift Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1883,7 +1883,7 @@
     {
       "id": 1058,
       "name": "special_bonus_unique_puck_coil_damage",
-      "name_loc": "+{s:bonus_coil_break_damage} ко всему урону от Dream Coil",
+      "name_loc": "+{s:bonus_coil_break_damage} Initial/Break Dream Coil Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1945,7 +1945,7 @@
     {
       "id": 348,
       "name": "special_bonus_unique_puck_5",
-      "name_loc": "Dream Coil сквозь невоспр. к эффектам",
+      "name_loc": "Dream Coil Pierces Debuff Immunity",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2007,7 +2007,7 @@
     {
       "id": 1129,
       "name": "special_bonus_unique_puck_rift_radius",
-      "name_loc": "+{s:bonus_radius} к радиусу и макс. дальности Waning Rift",
+      "name_loc": "+{s:bonus_radius} Waning Rift Radius/Max Distance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

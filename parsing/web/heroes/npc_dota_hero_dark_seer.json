@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_dark_seer",
   "order_id": 33,
   "name_loc": "Dark Seer",
-  "bio_loc": "Стремительный и хитрый стратег Иш'Кафэль — провидец, которому для уничтожения противника не требуется оружие. Он привык побеждать силой мысли, повергая врагов в замешательство и меняя ход битвы мановением своего тактического гения. Иш'Кафэль пришёл из измерения вне граней реальности, который он сам называет «миром за стеной».\r\n\t\t\t\t<br><br>Будучи великим военачальником и защитником святого короля Даматрикса, он без тени сомнения отправился на войну за Великий предел, но в последние её дни его войско пало. Неспособный справиться с превосходящими силами врага, провидец завёл преследователей в иллюзорный лабиринт, а затем совершил отчаянный поступок. В последний момент Иш'Кафэль прорвал окружение, выскользнул из лабиринта и выпустил сокрушительную волну тёмной энергии, навеки заточив в нём своих врагов. Опомнившись, верный провидец был рад осознать, что его народ в целости и сохранности, однако сам он оказался в неизвестном ему мире, неспособный вернуться домой. Теперь Иш'Кафэль поставил себе новую цель — доказать этому новому странному миру абсолютное величие своей стратегии.",
-  "hype_loc": "Изворотливый стратег Dark Seer мастерски <b>манипулирует местоположением</b> своих врагов. Он способен <b>затянуть их</b> под удары союзников и обратить мощь неприятелей против них самих своей <b>отражающей стеной</b>.",
-  "npe_desc_loc": "Стягивает врагов в точку и манипулирует их местоположением",
+  "bio_loc": "Fast when he needs to be, and a cunning strategist, Ish'Kafel the Dark Seer requires no edged weapons to vanquish his enemies, relying instead on the strength of his powerful mind. His talent lies in his ability to maneuver the fight to his advantage. Hailing from a place he calls 'The Land behind the wall,' Dark Seer remains an outsider here--a warrior from a realm beyond the veil of this reality.  \r\n\t\t\t\t<br><br>Once a great general among his people, and a valiant defender of the god-king Damathryx, Dark Seer's army was wiped out by a much larger force in the final days of the Great Boundaries War. Facing certain defeat, he made one last desperate act: he led the enemy forces into the maze between the walls. At the last moment, just before capture, he crossed over--then sealed the walls forever in an explosive release of dark energy. When the dust settled, he saw that he had saved his people but found himself blinking at the sun of a different world, with no way to return.  Now he is committed to proving his worth as a military strategist, and vows to show that he's the greatest tactician this strange new world has ever seen.",
+  "hype_loc": "Versatile and strategic, Dark Seer excels at <b>manipulating the positions</b> of his enemies. <b>Vacuuming foes</b> into the attacks of his allies, he can turn enemy strength against itself by pulling foes through his <b>replicating wall.</b>",
+  "npe_desc_loc": "Pulls and manipulates his enemies' positions",
   "facets": [
     {
       "color": 5,
       "title_loc": "Quick Wit",
-      "description_loc": "Интеллект также увеличивает скорость атаки этого героя.",
+      "description_loc": "Dark Seer also gains Attack Speed from Intelligence.",
       "name": "dark_seer_atkspd",
       "icon": "damage",
       "gradient_id": 3,
@@ -19,7 +19,7 @@
     {
       "color": 4,
       "title_loc": "Heart of Battle",
-      "description_loc": "Этот герой передвигается быстрее рядом с другими.",
+      "description_loc": "Dark Seer moves faster when near other heroes.",
       "name": "dark_seer_movespd",
       "icon": "speed",
       "gradient_id": 2,
@@ -66,12 +66,12 @@
       "id": 5255,
       "name": "dark_seer_vacuum",
       "name_loc": "Vacuum",
-      "desc_loc": "Герой создаёт в выбранной области вакуум, который втягивает в себя врагов и наносит им урон.",
-      "lore_loc": "Иш'Кафэль создаёт центр притяжения в указанном месте.",
+      "desc_loc": "Dark Seer creates a vacuum over the target area that sucks in enemy units, disrupting them and dealing damage.",
+      "lore_loc": "Ish'Kafel modifies the center of gravity to a place of his choosing.",
       "notes_loc": [
-        "Останавливает прерываемые заклинания.",
-        "Стягивает существ в течение %duration% сек., а затем наносит урон.",
-        "Уничтожает деревья возле центра применения способности."
+        "This ability interrupts channeling.",
+        "Pulls units over %duration% seconds before dealing damage.",
+        "Trees near the center of the vacuum will be destroyed."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -133,7 +133,7 @@
             550
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dark_seer_2",
@@ -179,7 +179,7 @@
             250
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -302,12 +302,12 @@
       "id": 5256,
       "name": "dark_seer_ion_shell",
       "name_loc": "Ion Shell",
-      "desc_loc": "Накладывает на выбранное существо колючий щит, наносящий урон всем врагам вокруг.",
-      "lore_loc": "Иш-Кафэль пробивает дыры в «мир за стеной», заставляя призматическую энергию просачиваться наружу.",
+      "desc_loc": "Surrounds the target unit with a bristling shield that damages enemy units in an area around it.",
+      "lore_loc": "The Dark Seer slices holes into the 'Land Behind the Wall,' causing prismatic energy to seep forth.",
       "notes_loc": [
-        "Наносит небольшой урон с интервалом в %tick_interval% сек.",
-        "Цель способности не получает от неё урон.",
-        "Если на цели способности уже есть щит, он заменится новым."
+        "Deals small amounts of damage in %tick_interval% second intervals.",
+        "Doesn't damage the target it is cast on.",
+        "If cast on a unit that already has Ion Shell, the new Shell replaces the old one."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -363,7 +363,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dark_seer_5",
@@ -389,7 +389,7 @@
             90
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dark_seer",
@@ -415,7 +415,7 @@
             26
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -574,12 +574,12 @@
       "id": 5257,
       "name": "dark_seer_surge",
       "name_loc": "Surge",
-      "desc_loc": "Заряжает дружественное существо энергией, ненадолго увеличивающей скорость передвижения и позволяющей проходить сквозь существ. Цель достигает стандартного максимума скорости, и её невозможно замедлить.",
-      "lore_loc": "Однажды Иш'Кафэль использовал скорость своего разума, чтобы преодолеть лабиринт между стенами.",
+      "desc_loc": "Charges a target friendly unit with power, giving it a brief burst of phased movement speed. Allows the unit to reach maximum movement speed and cannot be slowed.",
+      "lore_loc": "Ish'Kafel once used his speed of mind to navigate the maze between the walls.",
       "notes_loc": [
-        "Цель способности нельзя замедлить, пока не спадёт её эффект."
+        "Units with Surge cannot be slowed unless the Surge effect is removed."
       ],
-      "shard_loc": "Существа под действием этой способности оставляют за собой след радиусом %trail_radius%, существующий %trail_duration% сек., замедляющий врагов на %trail_move_slow%%% и наносящий %trail_damage% урона в секунду с интервалом в %trail_damage_interval% сек. Если включено альтернативное применение, след не остаётся.",
+      "shard_loc": "Surged units leave behind a %trail_radius% radius trail that lasts %trail_duration%s, slows enemies around it by %trail_move_slow%%% and deals %trail_damage% damage per second in %trail_damage_interval%s intervals. Can be put on alt-cast to disable the trail.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -633,7 +633,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [
             0
@@ -868,8 +868,8 @@
       "id": 687,
       "name": "dark_seer_normal_punch",
       "name_loc": "Normal Punch",
-      "desc_loc": "Следующая атака по вражескому герою не промахнётся, создаст его копию от способности Wall of Replica, нанесёт дополнительный урон, а также оглушит и оттолкнёт его. Сила эффекта зависит от того, какое расстояние владелец способности преодолел за %recent_duration% сек. до атаки. Максимальный эффект достигается при расстоянии в %max_distance%.",
-      "lore_loc": "Ещё молодым солдатом — задолго до того, как возглавить свой народ, — Иш'Кафэль слыл среди сослуживцев тем ещё кулачным бойцом.",
+      "desc_loc": "Passive ability. Causes Dark Seer's next attack on a hero to have True Strike, knock a replica out of the victim, damaging and stunning them based on how far Dark Seer has moved in the past %recent_duration% seconds. Max power is reached after %max_distance% distance moved.",
+      "lore_loc": "As a young soldier, long before he became a leader of his people, Ish'Kafel was known amongst his fellow recruits as quite the pugilist.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -919,7 +919,7 @@
             1.25
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "MAX STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -970,7 +970,7 @@
             350
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДАЛЬНОСТЬ ТОЛЧКА:",
+          "heading_loc": "MAX KNOCKBACK DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -987,7 +987,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ КОПИИ:",
+          "heading_loc": "ILLUSION DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1004,7 +1004,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМАЛЬНЫЙ УРОН:",
+          "heading_loc": "MAX DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1067,7 +1067,7 @@
       "id": 1553,
       "name": "dark_seer_aggrandize",
       "name_loc": "Aggrandize",
-      "desc_loc": "Когда уровень героя повышается, он восстанавливает себе долю от максимального запаса здоровья и маны, равную %heal_pct_base%%% + %heal_pct_per_level%%% за уровень.",
+      "desc_loc": "When Dark Seer levels up, he restores a percentage of his max health and mana. Restore percentage is equal to %heal_pct_base%%% + %heal_pct_per_level%%% per hero level.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1152,7 +1152,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ВОССТ. МАКС. ЗДОРОВЬЯ И МАНЫ:",
+          "heading_loc": "MAX HP/MANA RESTORE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1181,11 +1181,11 @@
       "id": 5258,
       "name": "dark_seer_wall_of_replica",
       "name_loc": "Wall of Replica",
-      "desc_loc": "Создаёт стену преломлённого света, которая замедляет проходящих сквозь неё вражеских героев, наносит им урон и создаёт их копии, подчиняющиеся владельцу способности. Копии пропадут, если их уничтожить или если закончится время действия стены.",
-      "lore_loc": "Пусть Иш'Кафэль и не в состоянии вернуться домой, силой разума он может призвать осколок призматической стены, вызывая смятение в рядах врагов.",
+      "desc_loc": "Raises a wall of warping light that slows, damages, and creates replicas of any enemy hero who crosses it. Enemy replicas serve at the Dark Seer's will. Replicas last until they are destroyed, or until the wall's duration ends.",
+      "lore_loc": "The Dark Seer, while unable to return to his natural realm, can channel part of the prismatic wall with powerful strength of mind, sowing confusion amongst enemy ranks.",
       "notes_loc": [
-        "Не создаёт иллюзии других иллюзий.",
-        "Стена не может одновременно создать больше одной иллюзии одного и того же игрока."
+        "Doesn't create illusions from other illusions.",
+        "There cannot be more than one illusion per player per wall."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1239,7 +1239,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДЕЙСТВИЯ СТЕНЫ:",
+          "heading_loc": "WALL DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1283,7 +1283,7 @@
             90
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН КОПИЙ:",
+          "heading_loc": "REPLICA DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dark_seer_7",
@@ -1323,7 +1323,7 @@
             200
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ПО КОПИЯМ:",
+          "heading_loc": "REPLICA DAMAGE TAKEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1357,7 +1357,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1374,7 +1374,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1412,7 +1412,7 @@
             55
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1533,7 +1533,7 @@
     {
       "id": 560,
       "name": "special_bonus_unique_dark_seer_7",
-      "name_loc": "+{s:bonus_tooltip_outgoing}% к урону иллюзий от Wall of Replica",
+      "name_loc": "+{s:bonus_tooltip_outgoing}% Wall of Replica Illusion Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1595,7 +1595,7 @@
     {
       "id": 420,
       "name": "special_bonus_unique_dark_seer_5",
-      "name_loc": "+{s:bonus_radius} к радиусу Ion Shell",
+      "name_loc": "+{s:bonus_radius} Ion Shell Radius",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1657,7 +1657,7 @@
     {
       "id": 6365,
       "name": "special_bonus_unique_dark_seer_2",
-      "name_loc": "+{s:bonus_radius} к радиусу Vacuum",
+      "name_loc": "+{s:bonus_radius} Vacuum AoE",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1719,7 +1719,7 @@
     {
       "id": 513,
       "name": "special_bonus_unique_dark_seer_6",
-      "name_loc": "Ion Shell даёт +{s:bonus_bonus_health} к макс. здоровью",
+      "name_loc": "Ion Shell Provides +{s:bonus_bonus_health} Max Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1781,7 +1781,7 @@
     {
       "id": 736,
       "name": "special_bonus_unique_dark_seer_13",
-      "name_loc": "–{s:bonus_cooldown_reduction} сек. перезарядки Wall of Replica",
+      "name_loc": "-{s:bonus_cooldown_reduction}s Wall of Replica Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1843,7 +1843,7 @@
     {
       "id": 6047,
       "name": "special_bonus_unique_dark_seer",
-      "name_loc": "+{s:bonus_damage_per_second} к урону от Ion Shell",
+      "name_loc": "+{s:bonus_damage_per_second} Ion Shell Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1905,7 +1905,7 @@
     {
       "id": 954,
       "name": "special_bonus_unique_dark_seer_14",
-      "name_loc": "{s:bonus_AbilityCharges} заряда Ion Shell ",
+      "name_loc": "{s:bonus_AbilityCharges} Ion Shell Charges ",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1967,7 +1967,7 @@
     {
       "id": 6624,
       "name": "special_bonus_unique_dark_seer_3",
-      "name_loc": "Surge применяется по области радиусом {s:bonus_aoe_radius}",
+      "name_loc": "{s:bonus_aoe_radius} AoE Surge",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2034,10 +2034,10 @@
           "id": 1303,
           "name": "dark_seer_quick_wit",
           "name_loc": "Quick Wit",
-          "desc_loc": "Интеллект также увеличивает скорость атаки этого героя.",
+          "desc_loc": "Dark Seer also gains Attack Speed from Intelligence.",
           "lore_loc": "",
           "notes_loc": [
-            "Каждая единица интеллекта увеличивает скорость атаки героя на %int_to_atkspd%."
+            "Dark Seer gains %int_to_atkspd% Attack Speed from each point of Intelligence."
           ],
           "shard_loc": "",
           "scepter_loc": "",
@@ -2120,10 +2120,10 @@
           "id": 1304,
           "name": "dark_seer_heart_of_battle",
           "name_loc": "Heart of Battle",
-          "desc_loc": "Этот герой передвигается быстрее рядом с другими.",
+          "desc_loc": "Dark Seer moves faster when near other heroes.",
           "lore_loc": "",
           "notes_loc": [
-            "Герой получает %movement_speed_pct%%% от скорости передвижения всех героев в радиусе %radius%. Базовая скорость передвижения снижена."
+            "Dark Seer gains %movement_speed_pct%%% of the movement speed of heroes within %radius% radius. Base movement speed reduced."
           ],
           "shard_loc": "",
           "scepter_loc": "",

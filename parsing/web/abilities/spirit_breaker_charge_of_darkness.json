@@ -1,313 +1,311 @@
-[
-  {
-    "id": 5353,
-    "name": "spirit_breaker_charge_of_darkness",
-    "name_loc": "Charge of Darkness",
-    "desc_loc": "Герой мчится на врага, игнорируя препятствия на своём пути. Вначале даётся %min_movespeed_bonus_pct%%% от дополнительной скорости, а её максимум достигается спустя %windup_time% сек.<br><br>На цель разбега и задетых врагов сработает способность Greater Bash. Если цель умрёт раньше, чем герой добежит до неё, целью станет ближайший враг неподалёку.",
-    "lore_loc": "Баратрум прорывается сквозь тьму с неудержимой силой.",
-    "notes_loc": [
-      "Герой игнорирует деревья, возвышенности и существ на своём пути.",
-      "Указатель над целью виден только союзникам.",
-      "Эта способность делает цель видимой для всех ваших союзников."
-    ],
-    "shard_loc": "Увеличивает дополнительную скорость у Charge of Darkness на %bonus_movement_speed%.",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "17301512",
-    "target_team": 2,
-    "target_type": 19,
-    "flags": 0,
-    "damage": 0,
-    "immunity": 4,
-    "dispellable": 3,
-    "max_level": 4,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0.1
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      22,
-      19,
-      16,
-      13
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      90,
-      100,
-      110,
-      120
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "movement_speed",
-        "values_float": [
-          275,
-          325,
-          375,
-          425
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДОП. СКОРОСТЬ ПРИ РАЗБЕГЕ:",
-        "bonuses": [],
-        "values_shard": [
-          85
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5353,
+  "name": "spirit_breaker_charge_of_darkness",
+  "name_loc": "Charge of Darkness",
+  "desc_loc": "Spirit Breaker fixes his sight on an enemy unit and starts charging through all objects, starting at %min_movespeed_bonus_pct%%% of the bonus speed and reaching his max speed after %windup_time%s.<br><br>All enemy units passed through and the targeted unit will be hit by a Greater Bash.  If the targeted unit dies, Spirit Breaker will change his target to the nearest enemy unit to that location.",
+  "lore_loc": "Barathrum erupts from the darkness with unwieldy force.",
+  "notes_loc": [
+    "Spirit Breaker passes through trees, cliffs, and units.",
+    "The charge indicator is visible only to allies.",
+    "Spirit Breaker gains shared vision of the target."
+  ],
+  "shard_loc": "Increases Charge of Darkness Bonus Speed by %bonus_movement_speed%.",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "17301512",
+  "target_team": 2,
+  "target_type": 19,
+  "flags": 0,
+  "damage": 0,
+  "immunity": 4,
+  "dispellable": 3,
+  "max_level": 4,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0.1
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    22,
+    19,
+    16,
+    13
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    90,
+    100,
+    110,
+    120
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "movement_speed",
+      "values_float": [
+        275,
+        325,
+        375,
+        425
+      ],
+      "is_percentage": false,
+      "heading_loc": "CHARGE BONUS SPEED:",
+      "bonuses": [],
+      "values_shard": [
+        85
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "stun_duration",
-        "values_float": [
-          1.3,
-          1.6,
-          1.9,
-          2.2
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "stun_duration",
+      "values_float": [
+        1.3,
+        1.6,
+        1.9,
+        2.2
+      ],
+      "is_percentage": false,
+      "heading_loc": "STUN DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bash_radius",
-        "values_float": [
-          300
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bash_radius",
+      "values_float": [
+        300
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "vision_radius",
-        "values_float": [
-          400
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "vision_radius",
+      "values_float": [
+        400
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "vision_duration",
-        "values_float": [
-          0.94
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "vision_duration",
+      "values_float": [
+        0.94
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "windup_time",
-        "values_float": [
-          1.5
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "windup_time",
+      "values_float": [
+        1.5
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "min_movespeed_bonus_pct",
-        "values_float": [
-          25
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "min_movespeed_bonus_pct",
+      "values_float": [
+        25
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "linger_time_min",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "МИН. ДЛИТЕЛЬНОСТЬ УСКОРЕНИЯ ПОСЛЕ РАЗБЕГА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "linger_time_min",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "MIN LINGER TIME:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "linger_time_max",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ УСКОРЕНИЯ ПОСЛЕ РАЗБЕГА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "linger_time_max",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "MAX LINGER TIME:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "charge_for_max_linger",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "ВРЕМЯ РАЗБЕГА ДЛЯ МАКС. ДЛИТЕЛЬНОСТИ УСКОРЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "charge_for_max_linger",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "CHARGE FOR MAX LINGER:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.1
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.1
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          90,
-          100,
-          110,
-          120
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          22,
-          19,
-          16,
-          13
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_spirit_breaker_4",
-            "value": 4,
-            "operation": 2
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": true,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        22,
+        19,
+        16,
+        13
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_spirit_breaker_4",
+          "value": 4,
+          "operation": 2
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": true,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

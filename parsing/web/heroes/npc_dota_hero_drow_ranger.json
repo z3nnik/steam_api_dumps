@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_drow_ranger",
   "order_id": 5,
   "name_loc": "Drow Ranger",
-  "bio_loc": "Её назвали Траксекс — и такое имя отлично подходит представителю низкорослой, троллеподобной, не располагающей к себе расы дроу. Но Траксекс не из них. На караван её родителей-путешественников устроили засаду разбойники, и шумное убийство невинных навлекло гнев тихого народа дроу.\r\n\t\t\t\t<br><br>Сразив головорезов, заступники заметили маленькую девочку, прячущуюся за обломками телег, и решили не бросать её на произвол судьбы. Уже ребёнком Траксекс показывала черты, что ценились у дроу: скрытность, безмолвность, ловкость. Душой, если не телом, она будто была подкидышем дроу, вернувшимся в отеческий дом. Но время шло, девочка росла, всё больше возвышаясь над остальными, и чувствовала себя уродиной. Неудивительно: черты её лица были гладкими и симметричными, лишёнными бородавок и жёстких усов.\r\n\t\t\t\t<br><br>Покинув приютившее её племя, она ушла в лес одиночкой. Заплутавшие странники, нашедшие выход из чащобы, иногда рассказывают о невероятно красивой девушке, наблюдавшей за ними из гущи леса и исчезнувшей как наваждение прежде, чем они могли приблизиться. Ловкая и скрытная, обжигающая как лёд, она двигается, словно туман в тишине. Ты услышишь лишь шёпот её стрел, находящих вражеские сердца. ",
-  "hype_loc": "Немногим удаётся спастись от Drow Ranger. <b>Обезмолвив</b> врагов <b>морозной волной</b>, она накрывает их градом <b>замедляющих ледяных стрел</b>, после которого мало кто способен выжить.",
-  "npe_desc_loc": "Замедляет врагов ледяными стрелами",
+  "bio_loc": "Drow Ranger's given name is Traxex--a name well suited to the short, trollish, rather repulsive Drow people. But Traxex herself is not a Drow. Her parents were travelers in a caravan set upon by bandits, whose noisy slaughter of innocents roused the ire of the quiet Drow people.\r\n\t\t\t\t<br><br>After the battle settled, the Drow discovered a small girl-child hiding in the ruined wagons, and agreed she could not be abandoned. Even as child, Traxex showed herself naturally adept at the arts they prized: Stealth, silence, subtlety. In spirit, if not in physique, she might have been a Drow changeling, returned to her proper home. But as she grew, she towered above her family and came to think of herself as ugly. After all,  her features were smooth and symmetrical, entirely devoid of warts and coarse whiskers.\r\n\t\t\t\t<br><br>Estranged from her adopted tribe, she withdrew to live alone in the woods. Lost travelers who find their way from the forest sometimes speak of an impossibly beautiful Ranger who peered at them from deep among the trees, then vanished like a dream before they could approach. Lithe and stealthy, icy hot, she moves like mist in silence. That whispering you hear is her frozen arrows finding an enemy's heart. ",
+  "hype_loc": "Not many can escape Drow Ranger once she's within range. After her foes have been <b>silenced</b> with a <b>chilling blast</b>, she finishes them off with a barrage of <b>slowing, ice-tipped arrows</b> that few can survive.",
+  "npe_desc_loc": "Slows with her frost-tipped arrows",
   "facets": [
     {
       "color": 5,
       "title_loc": "Vantage Point",
-      "description_loc": "Атакуя с возвышенности, герой наносит на %damage_bonus%%% больше урона.",
+      "description_loc": "Drow deals %damage_bonus%%% more damage when attacking from high ground.",
       "name": "drow_ranger_high_ground",
       "icon": "damage",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Sidestep",
-      "description_loc": "Во время действия Multishot можно применять предметы и медленно передвигаться.",
+      "description_loc": "Drow can move slowly and use items while casting Multishot.",
       "name": "drow_ranger_sidestep",
       "icon": "multi_arrow",
       "gradient_id": 1,
@@ -66,13 +66,13 @@
       "id": 5019,
       "name": "drow_ranger_frost_arrows",
       "name_loc": "Frost Arrows",
-      "desc_loc": "Добавляет к атакам героя замораживающий эффект, замедляющий передвижение цели на %abilityduration% сек. и наносящий дополнительный урон.",
-      "lore_loc": "Покрытые льдом стрелы беззвучно пронзают воздух, насквозь промораживая врагов.",
+      "desc_loc": "Adds a freezing effect to Drow's attacks, slowing enemy movement and dealing bonus damage.  Slow lasts %abilityduration% seconds.",
+      "lore_loc": "Ice-encased arrows pierce the silence, chilling their victims to the core.",
       "notes_loc": [
-        "Каждое попадание обновляет отсчёт до окончания замедления."
+        "The slow duration is refreshed on successive casts."
       ],
       "shard_loc": "",
-      "scepter_loc": "Способность накладывает на врага переохлаждение. Каждый такой эффект уменьшает восстановление здоровья и увеличивает урон от этой способности. Если цель умрёт под действием переохлаждения, из неё во всех врагов вокруг разлетятся осколки, которые наносят магический урон за каждый эффект и замедляют жертв.",
+      "scepter_loc": "Frost Arrows now apply a Hypothermia stack to enemies, increasing damage from Frost Arrows and reducing their regeneration per stack. If an enemy dies with Hypothermia stacks, they burst and deal damage per stack and slow in an area around it.",
       "facets_loc": [
         "",
         ""
@@ -131,7 +131,7 @@
             -45
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -151,7 +151,7 @@
             25
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -168,7 +168,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ ПОПОЛНЕНИЯ ЗДОРОВЬЯ ЗА ЭФФЕКТ:",
+          "heading_loc": "REGEN REDUCTION PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -187,7 +187,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "БОНУС К ДОП. УРОНУ ЗА ЭФФЕКТ:",
+          "heading_loc": "BONUS DAMAGE PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -206,7 +206,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "STACK DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -225,7 +225,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС РАЗЛЁТА ОСКОЛКОВ:",
+          "heading_loc": "BURST RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -244,7 +244,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОСКОЛКОВ ЗА ЭФФЕКТ:",
+          "heading_loc": "BURST DAMAGE PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -263,7 +263,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ ОТ ОСКОЛКОВ:",
+          "heading_loc": "BURST MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -282,7 +282,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ ОТ ОСКОЛКОВ:",
+          "heading_loc": "BURST SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -301,7 +301,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМУМ ЭФФЕКТОВ:",
+          "heading_loc": "MAX STACKS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -392,8 +392,8 @@
       "id": 5632,
       "name": "drow_ranger_wave_of_silence",
       "name_loc": "Gust",
-      "desc_loc": "Выпускает волну, которая отбрасывает вражеских существ и запрещает им применять способности, а также раскрывает невидимость. Чем ближе был враг, тем дальше его отбросит.",
-      "lore_loc": "Траксекс предпочитает тишину физического боя и, взывая к корням своей приёмной расы, запрещает использовать на поле боя любую магию.",
+      "desc_loc": "Releases a wave that silences and knocks back and reveals invisible enemy units. Knockback distance is relative to how close they are to Drow.",
+      "lore_loc": "Traxex is rather fond of the tranquility of physical combat, calling on her Drow heritage to end the incantations of opposing magi.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -463,7 +463,7 @@
             250
           ],
           "is_percentage": false,
-          "heading_loc": "ШИРИНА:",
+          "heading_loc": "WIDTH:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -483,7 +483,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "SILENCE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -500,7 +500,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДАЛЬНОСТЬ ТОЛЧКА:",
+          "heading_loc": "KNOCKBACK MAX:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -520,7 +520,7 @@
             0.9
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ТОЛЧКА:",
+          "heading_loc": "KNOCKBACK DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -675,17 +675,17 @@
       "id": 343,
       "name": "drow_ranger_multishot",
       "name_loc": "Multishot",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — герой выпускает один залп стрел за другим, нанося врагам долю от базового урона и применяя на них способность Frost Arrows. Действует до %abilitychanneltime% сек.",
-      "lore_loc": "Когда лучница была юна, её попытки выпускать сразу несколько стрел считали пустой тратой времени. В войне Древних это умение стало вынужденной необходимостью.",
+      "desc_loc": "CHANNELED - Drow releases a flurry of arrows in continuous salvos, hitting enemies for extra damage and applying Frost Arrows. Lasts up to %abilitychanneltime% seconds.",
+      "lore_loc": "In the ranger's youth, learning to fire multiple arrows at once was considered a distracting frivolity. In the war of the Ancients, such technique has become strange necessity.",
       "notes_loc": [
-        "Базовый урон стрел проходит сквозь невосприимчивость к магии.",
-        "Замедление и дополнительный урон от Frost Arrows не проходят сквозь невосприимчивость к магии."
+        "Arrow base damage pierces magic immunity.",
+        "Frost Arrows' damage and slow do not pierce magic immunity."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Во время действия Multishot можно применять предметы и медленно передвигаться."
+        "Drow can move slowly and use items while casting Multishot."
       ],
       "type": 0,
       "behavior": "1168",
@@ -735,7 +735,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ВОЛН:",
+          "heading_loc": "WAVE COUNT:",
           "bonuses": [
             {
               "name": "special_bonus_unique_drow_ranger_8",
@@ -758,7 +758,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "СТРЕЛ В ВОЛНЕ:",
+          "heading_loc": "ARROWS PER WAVE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_drow_ranger_2",
@@ -784,7 +784,7 @@
             160
           ],
           "is_percentage": true,
-          "heading_loc": "ДОЛЯ ОТ БАЗОВОГО УРОНА:",
+          "heading_loc": "ARROW BASE DAMAGE BONUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_drow_ranger_1",
@@ -841,7 +841,7 @@
             1.75
           ],
           "is_percentage": false,
-          "heading_loc": "МНОЖИТЕЛЬ ДАЛЬНОСТИ АТАКИ:",
+          "heading_loc": "ARROW RANGE MULTIPLIER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -892,7 +892,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED PENALTY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -986,8 +986,8 @@
       "id": 1121,
       "name": "drow_ranger_glacier",
       "name_loc": "Glacier",
-      "desc_loc": "Герой создаёт под собой ледяной холм. Стоящие на холме существа получают бонус к дальности атаки, преимущества возвышенности, атаки без промахов и беспрепятственный обзор. На холме увеличивается число стрел от способности Multishot. Передняя сторона холма закрывает обзор, и пройти сквозь неё может только владелец способности. Создание холма не прерывает применение способности Multishot.",
-      "lore_loc": "Траксекс стала дочерью не только народу дроу, но и их землям.",
+      "desc_loc": "Drow creates a hill of ice beneath her. While standing on the hill, attackers gain bonus attack range and high ground advantage - they cannot miss and gain flying vision. Drow additionally gets bonus Multishot arrows per wave while on the hill. The front of the hill obscures vision and cannot be moved through except by Drow. Does not interrupt Multishot when cast.",
+      "lore_loc": "Traxex wasn't just adopted by the Drow, she was adopted by the lands they lived in.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1091,7 +1091,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1193,7 +1193,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK RANGE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1210,7 +1210,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СТРЕЛ В ВОЛНЕ:",
+          "heading_loc": "BONUS ARROWS PER WAVE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1375,8 +1375,8 @@
       "id": 1205,
       "name": "drow_ranger_trueshot",
       "name_loc": "Precision Aura",
-      "desc_loc": "Даёт владельцу дополнительную ловкость, зависящую от его уровня и от текущего показателя ловкости. Герои дальнего боя неподалёку получают %trueshot_agi_bonus_allies_pct%%% от бонуса.",
-      "lore_loc": "Коротая своё одиночество в бесконечных тренировках, Траксекс научилась передавать толику своего мастерства любому лучнику.",
+      "desc_loc": "Grants Drow bonus agility based on Drow's current agility and level. Nearby ranged heroes received %trueshot_agi_bonus_allies_pct%%% of the bonus agility.",
+      "lore_loc": "Traxex' time spent alone in the forests of her Drow home has allowed her to teach other archers how to improve their bow skills.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1426,7 +1426,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1446,7 +1446,7 @@
             16
           ],
           "is_percentage": true,
-          "heading_loc": "БАЗОВЫЙ БОНУС К ЛОВКОСТИ:",
+          "heading_loc": "AGILITY BASE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1463,7 +1463,7 @@
             1
           ],
           "is_percentage": true,
-          "heading_loc": "БОНУС К ЛОВКОСТИ ЗА УРОВЕНЬ:",
+          "heading_loc": "AGILITY BONUS PER LEVEL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1497,7 +1497,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "СУММАРНЫЙ БОНУС К ЛОВКОСТИ:",
+          "heading_loc": "TOTAL AGILITY BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1526,10 +1526,10 @@
       "id": 5022,
       "name": "drow_ranger_marksmanship",
       "name_loc": "Marksmanship",
-      "desc_loc": "Опыт в бою позволяет герою стрелять метче и эффективнее. С каждой атакой есть вероятность выпустить стрелу, игнорирующую базовую броню врага. Способность не действует, если в радиусе %disable_range% от её владельца есть вражеские герои.",
-      "lore_loc": "Траксекс — воплощение мастерства стрельбы из лука.",
+      "desc_loc": "Drow's experiences in battle grant her a chance to launch arrows with incredible accuracy and effectiveness. Pierces through the enemy's defenses, ignoring their base armor. This ability is disabled if there is an enemy hero within %disable_range% range.",
+      "lore_loc": "The Drow Ranger is the epitome of archery prowess.",
       "notes_loc": [
-        "Атакой под эффектом этой способности нельзя промахнуться."
+        "Marksmanship procs have true strike."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1581,7 +1581,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС:",
+          "heading_loc": "CHANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_drow_ranger_3",
@@ -1606,7 +1606,7 @@
             90
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ПРИ СРАБАТЫВАНИИ:",
+          "heading_loc": "BONUS PROC DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1653,7 +1653,7 @@
     {
       "id": 580,
       "name": "special_bonus_unique_drow_ranger_7",
-      "name_loc": "–{s:bonus_AbilityManaCost}% расхода маны на Frost Arrows",
+      "name_loc": "-{s:bonus_AbilityManaCost}% Frost Arrows Mana Cost",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1715,7 +1715,7 @@
     {
       "id": 6209,
       "name": "special_bonus_unique_drow_ranger_2",
-      "name_loc": "+{s:bonus_arrow_count_per_wave} к числу стрел в волне у Multishot",
+      "name_loc": "+{s:bonus_arrow_count_per_wave} Multishot Arrow Per Wave",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1777,7 +1777,7 @@
     {
       "id": 6027,
       "name": "special_bonus_attack_range_75",
-      "name_loc": "+{s:value} к дальности атаки",
+      "name_loc": "+{s:value} Attack Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1857,7 +1857,7 @@
     {
       "id": 486,
       "name": "special_bonus_unique_drow_ranger_6",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Multishot",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Multishot Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1919,7 +1919,7 @@
     {
       "id": 6202,
       "name": "special_bonus_unique_drow_ranger_1",
-      "name_loc": "+{s:bonus_arrow_damage_pct}% к урону от Multishot",
+      "name_loc": "+{s:bonus_arrow_damage_pct}% Multishot Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1981,7 +1981,7 @@
     {
       "id": 1088,
       "name": "special_bonus_unique_drow_ranger_gust_selfmovespeed",
-      "name_loc": "{s:bonus_bonus_movespeed}% к доп. скорости передвижения от Gust",
+      "name_loc": "{s:bonus_bonus_movespeed}% Gust Self Movement Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2043,7 +2043,7 @@
     {
       "id": 6280,
       "name": "special_bonus_unique_drow_ranger_3",
-      "name_loc": "+{s:bonus_chance}% к шансу у Marksmanship",
+      "name_loc": "+{s:bonus_chance}% Marksmanship Chance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2105,7 +2105,7 @@
     {
       "id": 739,
       "name": "special_bonus_unique_drow_ranger_8",
-      "name_loc": "+{s:bonus_wave_count} к числу волн у Multishot",
+      "name_loc": "+{s:bonus_wave_count} Multishot Wave",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2172,7 +2172,7 @@
           "id": 1207,
           "name": "drow_ranger_vantage_point",
           "name_loc": "Vantage Point",
-          "desc_loc": "Атакуя с возвышенности, герой наносит на %damage_bonus%%% больше урона.",
+          "desc_loc": "Drow deals %damage_bonus%%% more damage when attacking from high ground.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",

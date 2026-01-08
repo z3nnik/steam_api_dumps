@@ -1,297 +1,295 @@
-[
-  {
-    "id": 5015,
-    "name": "bloodseeker_bloodrage",
-    "name_loc": "Bloodrage",
-    "desc_loc": "Пробуждает во владельце или союзном герое жажду крови, из-за которой он атакует быстрее и наносит больше урона заклинаниями, но каждую секунду теряет долю от своего здоровья. Союзным героям даётся только половина бонуса к скорости атаки.",
-    "lore_loc": "Стригвир делится с другими своей животной жаждой кровопролития.",
-    "notes_loc": [
-      "Урон от этой способности не может убить владельца или его союзников."
-    ],
-    "shard_loc": "При применении на себя добавляет к атакам <font color=\"#d8ae53\">чистый</font> урон в размере %max_health_dmg_pct%%% от максимального здоровья жертвы.",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "8",
-    "target_team": 1,
-    "target_type": 1,
-    "flags": 0,
-    "damage": 4,
-    "immunity": 4,
-    "dispellable": 2,
-    "max_level": 4,
-    "cast_ranges": [
-      800
-    ],
-    "cast_points": [
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      14,
-      12,
-      10,
-      8
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      0
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "duration",
-        "values_float": [
-          8
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5015,
+  "name": "bloodseeker_bloodrage",
+  "name_loc": "Bloodrage",
+  "desc_loc": "Drives Bloodseeker or an allied hero into a bloodthirsty rage which causes them to attack faster and deal more spell damage at the cost of a percentage of their health per second. Provides half attack speed to allied heroes.",
+  "lore_loc": "Strygwyr shares his animalistic thirst for bloodshed.",
+  "notes_loc": [
+    "Damage dealt to Bloodseeker or allies is non-lethal and can never kill a hero."
+  ],
+  "shard_loc": "Bloodseeker's Bloodrage attacks now deal %max_health_dmg_pct%%% of the target's max health as <font color=\"#d8ae53\">Pure</font> damage.",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "8",
+  "target_team": 1,
+  "target_type": 1,
+  "flags": 0,
+  "damage": 4,
+  "immunity": 4,
+  "dispellable": 2,
+  "max_level": 4,
+  "cast_ranges": [
+    800
+  ],
+  "cast_points": [
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    14,
+    12,
+    10,
+    8
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "duration",
+      "values_float": [
+        8
+      ],
+      "is_percentage": false,
+      "heading_loc": "DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "attack_speed",
-        "values_float": [
-          60,
-          90,
-          120,
-          150
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_bloodseeker_5",
-            "value": 30,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "attack_speed",
+      "values_float": [
+        60,
+        90,
+        120,
+        150
+      ],
+      "is_percentage": false,
+      "heading_loc": "ATTACK SPEED:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_bloodseeker_5",
+          "value": 30,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "spell_amp",
-        "values_float": [
-          15,
-          20,
-          25,
-          30
-        ],
-        "is_percentage": true,
-        "heading_loc": "ДОП. УРОН ОТ ЗАКЛИНАНИЙ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "spell_amp",
+      "values_float": [
+        15,
+        20,
+        25,
+        30
+      ],
+      "is_percentage": true,
+      "heading_loc": "SPELL AMPLIFICATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage_pct",
-        "values_float": [
-          1.4
-        ],
-        "is_percentage": true,
-        "heading_loc": "ПОТЕРЯ МАКС. ЗДОРОВЬЯ В СЕКУНДУ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_bloodseeker",
-            "value": 0.7,
-            "operation": 2
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "damage_pct",
+      "values_float": [
+        1.4
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAX HEALTH DAMAGE PER SECOND:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_bloodseeker",
+          "value": 0.7,
+          "operation": 2
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage_pct_enemies",
-        "values_float": [
-          1.4
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "damage_pct_enemies",
+      "values_float": [
+        1.4
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "max_health_dmg_pct",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [
-          2
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "max_health_dmg_pct",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [
+        2
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "can_silence",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "can_silence",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "base_damage_amp",
-        "values_float": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "is_percentage": true,
-        "heading_loc": "ДОП. БАЗОВЫЙ УРОН:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "base_damage_amp",
+      "values_float": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "BASE DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "enemy_castpoint",
-        "values_float": [
-          0.3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "enemy_castpoint",
+      "values_float": [
+        0.3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          800
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        800
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          14,
-          12,
-          10,
-          8
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": true,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        14,
+        12,
+        10,
+        8
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": true,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

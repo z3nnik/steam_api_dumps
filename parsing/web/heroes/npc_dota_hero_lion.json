@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_lion",
   "order_id": 9,
   "name_loc": "Lion",
-  "bio_loc": "Некогда Великий магистр демонологии заслужил известность среди своих собратьев, сражаясь на стороне света и справедливости. Но лесть испортила его. Силы мага превосходило лишь его же честолюбие, и демон завлёк его на тёмную сторону, выменяв душу магистра на уважение других. Запятнав душу ужасными преступлениями, маг остался в одиночестве: демон предал его и стал искать выгоды у врагов. Ярость демонолога погнала его за предателем в самый ад, где, отрывая конечность за конечностью, он жестоко расправился с демоном и забрал себе его демоническую руку. Оказалось, что демонопластика не проходит бесследно. В ходе трансфигурации тело мага изменилось до неузнаваемости. Он восстал из ада и обрушил ярость на наш мир, убивая даже тех, кто однажды называл его господином, и не оставляя камня на камне в тех землях, где его когда-то обожали. Теперь он живёт в уединении, упражняясь в демонологии, а те, кто называют себя его помощниками или учениками, вскоре лишаются своей маны и растворяются в легчайших порывах ветра.",
-  "hype_loc": "Lion не даёт врагам выбраться из своей цепкой хватки. Он <b>оглушает жертву</b> каменными шипами и на время <b>превращает её в безобидную зверушку</b>. Если одних его заклинаний не хватит, чтобы расправиться с врагом, он обязательно даст команде достаточно времени.",
-  "npe_desc_loc": "Крадёт вражескую ману, чтобы применять свои способности",
+  "bio_loc": "Once a Grandmaster of the Demon Witch tradition of sorcery, Lion earned fame among his brethren for fighting on the side of light and righteousness. But adulation corrupts. With powers surpassed only by his ambition, the mage was seduced by a demon and turned to evil, trading his soul for prestige. After committing horrible crimes that marred his soul, he was abandoned. The demon betrayed him, striking better deals with his enemies. Such was Lion's rage that he followed the demon back to hell and slew it, ripping it limb from limb, taking its demonic hand for his own. However, such demonoplasty comes at a cost. Lion was transfigured by the process, his body transformed into something unrecognizable. He rose from hell, rage incarnate, slaying even those who had once called him master, and laying waste to the lands where he had once been so adored. He survives now as the sole practitioner of the Demon Witch tradition, and those who present themselves as acolytes or students are soon relieved of their mana and carried off by the faintest gust of wind.",
+  "hype_loc": "Lion gives enemies little chance to retaliate. <b>Stunning targets</b> with a damaging row of spikes, or temporarily <b>transforming them into a harmless critter</b>, even if his powerful spells aren't enough, he and his allies should still have all the time they need to slay their foes.",
+  "npe_desc_loc": "Steals enemy mana to fuel his own abilities",
   "facets": [
     {
       "color": 4,
       "title_loc": "Essence Eater",
-      "description_loc": "Mana Drain наносит урон в размере {s:bonus_damage_pct}% от поглощаемой маны.",
+      "description_loc": "Mana Drain deals damage equal to {s:bonus_damage_pct}% of mana stolen.",
       "name": "lion_essence_eater",
       "icon": "nuke",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Fist of Death",
-      "description_loc": "Применив Finger of Death, герой получает сильную атаку ближнего боя с прорубанием.",
+      "description_loc": "Lion gains a strong Melee cleaving attack after casting Finger of Death.",
       "name": "lion_fist_of_death",
       "icon": "fist",
       "gradient_id": 2,
@@ -66,11 +66,11 @@
       "id": 5044,
       "name": "lion_impale",
       "name_loc": "Earth Spike",
-      "desc_loc": "Из земли прорывается полоса каменных шипов. Они подбрасывают врагов в воздух, а по приземлении оглушают их и наносят урон.",
-      "lore_loc": "Демонолог осуществляет свой демонический завет, открывая трещину в ад.",
+      "desc_loc": "Rock spikes burst from the earth along a straight path. Enemy units are hurled into the air, then are stunned and take damage when they fall.",
+      "lore_loc": "The Demon Witch exercises his demonic covenant, opening a fissure from hell.",
       "notes_loc": [
-        "Скорость шипов — %speed% единиц в секунду.",
-        "Эту способность нельзя заблокировать или отразить."
+        "The spikes move at %speed% units per second.",
+        "Does not trigger spell block or spell reflect."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -132,7 +132,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lion_3",
@@ -175,7 +175,7 @@
             2.2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -339,11 +339,11 @@
       "id": 5045,
       "name": "lion_voodoo",
       "name_loc": "Hex",
-      "desc_loc": "Превращает врага в безобидную зверюшку, блокируя все его способности.",
-      "lore_loc": "Демонолог вынужден разделять своё преобразование с несогласными, закручивая и их сущность.",
+      "desc_loc": "Transforms an enemy unit into a harmless beast, with all special abilities disabled.",
+      "lore_loc": "Lion is compelled to share his transfiguration, twisting the essence of those who oppose him.",
       "notes_loc": [
-        "Мгновенно уничтожает иллюзии.",
-        "Жертва имеет базовую скорость в %movespeed%, но не теряет эффекты, дающие максимальную скорость."
+        "Instantly destroys illusions.",
+        "The target will have a base movement speed of %movespeed%, but buffs granting maximum movement speed won't be disabled."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -408,7 +408,7 @@
             3.2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -541,15 +541,15 @@
       "id": 5046,
       "name": "lion_mana_drain",
       "name_loc": "Mana Drain",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — создаёт магическую связь с противником, забирая себе его ману и замедляя его передвижение. Если у жертвы не осталось маны, замедление увеличивается на %movespeed_bonus_when_empty_pct%%%. <br><br> Можно применить на союзника, чтобы передавать ему свою ману и ускорить его передвижение на %ally_pct%%%.",
-      "lore_loc": "Младшие маги — не более чем источник магической силы для демонолога.",
+      "desc_loc": "CHANNELED - Channels magical energy, taking mana and slowing enemies over time. If the enemy has no mana remaining, the slow is increased by %movespeed_bonus_when_empty_pct%%%. <br><br> Can target allies to give them mana and movement speed at a %ally_pct%%% rate.",
+      "lore_loc": "Lesser magi are nothing more than a source of magical restoration for the Demon Witch.",
       "notes_loc": [
-        "Не позволяет жертвам уйти в невидимость."
+        "Prevents heroes from going invisible."
       ],
-      "shard_loc": "Увеличивает число целей способности на %shard_bonus_targets%. Также увеличивает расстояние разрыва. Владелец способности на время её применения становится невосприимчивым к эффектам и получает +%magic_resist%%% к сопротивлению магии.",
+      "shard_loc": "Causes Mana Drain to affect up to %shard_bonus_targets% additional enemies and increases break distance. Lion becomes Debuff Immune with %magic_resist%%% magic resistance while channeling.",
       "scepter_loc": "",
       "facets_loc": [
-        "Способность наносит урон в размере %damage_pct%%% от поглощаемой маны.",
+        "Mana Drain deals damage equal to %damage_pct%%% of mana stolen.",
         ""
       ],
       "type": 0,
@@ -600,7 +600,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "CHANNEL TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -620,7 +620,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "МАНЫ В СЕКУНДУ:",
+          "heading_loc": "MANA PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -637,7 +637,7 @@
             1100
           ],
           "is_percentage": false,
-          "heading_loc": "РАССТОЯНИЕ РАЗРЫВА:",
+          "heading_loc": "BREAK DISTANCE:",
           "bonuses": [],
           "values_shard": [
             200
@@ -676,7 +676,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ/УСКОРЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW/BONUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lion_6",
@@ -873,7 +873,7 @@
       "id": 1249,
       "name": "lion_to_hell_and_back",
       "name_loc": "To Hell and Back",
-      "desc_loc": "Возродившись, герой на %duration% сек. получает +%debuff_amp%%% к длительности отрицательных эффектов и +%spell_amp%%% к урону заклинаниями.",
+      "desc_loc": "Lion gains %debuff_amp%%% debuff duration and %spell_amp%%% spell amplification for %duration%s after respawning.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -999,17 +999,17 @@
       "id": 5047,
       "name": "lion_finger_of_death",
       "name_loc": "Finger of Death",
-      "desc_loc": "Разрывает вражеское существо, пытаясь вывернуть его наизнанку. Наносит большой урон, который увеличивается с каждым убитым этой способностью врагом.",
-      "lore_loc": "Изувеченная рука демонолога является источником его великой силы, способной утопить жертв колдовской мощью.",
+      "desc_loc": "Rips at an enemy unit, trying to turn it inside-out. Deals massive damage and grows stronger with each life it consumes.",
+      "lore_loc": "Lion's disfigured hand is also the source of his greatest power, capable of flooding victims with malefic force.",
       "notes_loc": [
-        "Между применением способности и нанесением урона есть задержка в %damage_delay% сек., что даёт возможность избежать урона.",
-        "Урон способности увеличится, если вражеский герой умрёт в течение %grace_period% сек. после получения урона от неё."
+        "Finger of Death has a %damage_delay% delay before the damage is applied after the spell is cast, allowing certain abilities to avoid the damage.",
+        "Finger of Death only gains damage if the enemy hero dies within %grace_period% seconds of being affected by Finger of Death."
       ],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает урон и уменьшает перезарядку. Способность действует на существ в небольшой области.",
+      "scepter_loc": "Increases damage. Decreases cooldown. Finger of Death hits all units in a small area.",
       "facets_loc": [
         "",
-        "Применив эту способность, герой переходит в ближний бой демоническим кулаком с повышенным уроном и прорубающей атакой. За вражеских героев, погибших в течение %punch_grace_period% сек. после такой атаки, также увеличивается число эффектов этой способности."
+        "After casting Finger of Death, Lion switches from ranged to melee attacks and gains bonus damage and cleave. Enemy heroes killed within %punch_grace_period%s of being punched will add Finger of Death stacks."
       ],
       "type": 1,
       "behavior": "40",
@@ -1061,7 +1061,7 @@
             850
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1080,7 +1080,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ЗА УБИЙСТВО:",
+          "heading_loc": "DAMAGE PER KILL:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lion_8",
@@ -1137,7 +1137,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1158,7 +1158,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ОБЛАСТЬ ДЕЙСТВИЯ:",
+          "heading_loc": "AREA OF EFFECT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1177,7 +1177,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ КУЛАКА:",
+          "heading_loc": "FIST DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1215,7 +1215,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН КУЛАКА:",
+          "heading_loc": "FIST DAMAGE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1234,7 +1234,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН КУЛАКА ЗА ЭФФЕКТ:",
+          "heading_loc": "FIST DAMAGE BONUS PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1329,7 +1329,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ПРОРУБАЮЩИЙ УРОН:",
+          "heading_loc": "CLEAVE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1433,7 +1433,7 @@
     {
       "id": 465,
       "name": "special_bonus_unique_lion_6",
-      "name_loc": "+{s:bonus_movespeed}% к замедлению от Mana Drain",
+      "name_loc": "+{s:bonus_movespeed}% Mana Drain Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1495,7 +1495,7 @@
     {
       "id": 5918,
       "name": "special_bonus_movement_speed_20",
-      "name_loc": "+{s:value} к скорости передвижения",
+      "name_loc": "+{s:value} Movement Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1575,7 +1575,7 @@
     {
       "id": 401,
       "name": "special_bonus_unique_lion_5",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Hex",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Hex Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1637,7 +1637,7 @@
     {
       "id": 781,
       "name": "special_bonus_unique_lion_11",
-      "name_loc": "+{s:bonus_spell_amp}% к эффектам To Hell and Back",
+      "name_loc": "+{s:bonus_spell_amp}% To Hell And Back Debuff/Spell Amp",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1699,7 +1699,7 @@
     {
       "id": 541,
       "name": "special_bonus_unique_lion_8",
-      "name_loc": "+{s:bonus_damage_per_kill} к урону за убийство у Finger of Death",
+      "name_loc": "+{s:bonus_damage_per_kill} Finger of Death Damage Per Kill",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1761,7 +1761,7 @@
     {
       "id": 777,
       "name": "special_bonus_unique_lion_10",
-      "name_loc": "Earth Spike в 30-градусном конусе",
+      "name_loc": "Earth Spike affects a 30 degree cone",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1823,7 +1823,7 @@
     {
       "id": 6389,
       "name": "special_bonus_unique_lion_2",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальности Earth Spike",
+      "name_loc": "+{s:bonus_AbilityCastRange} Earth Spike cast range/travel distance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1885,7 +1885,7 @@
     {
       "id": 6678,
       "name": "special_bonus_unique_lion_4",
-      "name_loc": "Hex по области радиусом {s:bonus_radius}",
+      "name_loc": "+{s:bonus_radius} AoE Hex",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

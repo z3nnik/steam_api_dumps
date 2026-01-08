@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_snapfire",
   "order_id": 118,
   "name_loc": "Snapfire",
-  "bio_loc": "Путешествуя по пустынным дорогам и оазисам Нанарака, засушливого преддверия в Чужеземье, истощённые и отчаянно цепляющиеся за жизнь люди всегда рады увидеть Беатрикс Пороховницу и её драконью жабу Мортимера.<br><br>Пережив многих собратьев по ремеслу благодаря острому уму и верной руке, Беатриша прославилась не только как непревзойдённая оружейница, но и как мудрая и жизнерадостная дама почтенного возраста, пекущая самое лакомое на свете пороховое печенье.<br><br>Потому-то Чужеземье и усыпано костьми бандитов и негодников, вздумавших провести добродушную старушку.",
-  "hype_loc": "Snapfire будет рада как отстрелить кому-нибудь ноги из своего <b>верного дробовика</b>, так и накормить всех до отвала своим <b>вкусным, но немного взрывным печеньем</b>. Беатрикс с удовольствием рассекает по полю битвы на своей драконьей жабе Мортимере, готовая выкосить врагов своей самодельной крупнокалиберной пушкой и добить их залпом <b>лавовых шаров Мортимера</b>.",
-  "npe_desc_loc": "Подавляет врагов тяжёлой артиллерией и верным ящером",
+  "bio_loc": "Beatrix Snapfire and her dragon toad Mortimer are a welcome sight to the ragged folk who scratch out lives along the desert routes and oases scattered throughout Nanarak, the rain-forsaken gateway to the Outlands.<br><br>As well known for her unrivaled skills as a weaponsmith as for dispensing wisdom, mirth, and the meanest firesnap cookies the world has ever seen, Beadie's survived to a ripe old age in a young keen's trade by being quick with her wits and even quicker with her guns.<br><br>Indeed, the Outlands are littered with the bones of bandits and ne'er-do-wells who thought to take advantage of her small stature and propensity for kindness.",
+  "hype_loc": "Just as happy to blow your legs off with her <b>trusty scattergun</b> as to fill your belly up with a <b>deliciously-dangerous cookie</b>, Beatrix Snapfire delights in riding into battle with her dragon toad Mortimer, always ready to mow down their enemies with her homemade heavy artillery or finish them off with a steady barrage of <b>Mortimer's firespit globs.</b>",
+  "npe_desc_loc": "Mows down her enemies with heavy artillery and trusty lizard",
   "facets": [
     {
       "color": 5,
       "title_loc": "Ricochet II",
-      "description_loc": "Если герой промахнётся атакой или у него произойдёт осечка, во врагов неподалёку от цели срикошетят две атаки.",
+      "description_loc": "Whenever Snapfire glances or misses an attack, 2 ricochet attacks will bounce towards nearby enemies.",
       "name": "snapfire_ricochet_ii",
       "icon": "ricochet",
       "gradient_id": 3,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Full Bore",
-      "description_loc": "Выстрел от Scatterblast имеет уменьшенный конус и увеличенную дальность. Бонусные урон и замедление срабатывают только за пределом выстрела в упор.",
+      "description_loc": "Scatterblast is narrower and longer. Bonus damage and slow when enemies are not in point blank range.",
       "name": "snapfire_full_bore",
       "icon": "range",
       "gradient_id": 0,
@@ -66,14 +66,14 @@
       "id": 6480,
       "name": "snapfire_scatterblast",
       "name_loc": "Scatterblast",
-      "desc_loc": "Герой стреляет из дробовика по конической области действия, нанося врагам урон и замедляя их. Выстрел в упор увеличивает урон, замедление и его длительность на %point_blank_dmg_bonus_pct%%%.",
-      "lore_loc": "Мерзавчик — любимая пушка из коллекции Беатришы. Его она соорудила, чтобы всегда было чем защищаться в Чужеземье.",
+      "desc_loc": "Snapfire unloads with a wide blast that damages and slows enemies in a cone. Damage, Movement Slow, Attack Slow and Slow Duration are increased by %point_blank_dmg_bonus_pct%%% for enemies caught at point-blank range.",
+      "lore_loc": "A favorite from her collection, Beadie crafted Ol' Rackatee as her first line of defense when she ventured into the Outlands.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Выстрел от Scatterblast имеет уменьшенный конус и увеличенную дальность. Бонусные урон и замедление срабатывают только за пределом выстрела в упор."
+        "Scatterblast is narrower and longer. Bonus damage and slow when enemies are not in point blank range."
       ],
       "type": 0,
       "behavior": "16",
@@ -126,7 +126,7 @@
             280
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_snapfire_7",
@@ -204,7 +204,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -221,7 +221,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -238,7 +238,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -255,7 +255,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ВЫСТРЕЛА В УПОР:",
+          "heading_loc": "POINT-BLANK RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -474,12 +474,12 @@
       "id": 6483,
       "name": "snapfire_firesnap_cookie",
       "name_loc": "Firesnap Cookie",
-      "desc_loc": "Герой скармливает бодрящую печеньку Мортимеру или союзнику, отчего тот совершает прыжок на небольшое расстояние, оглушая врагов в области приземления и нанося им урон.",
-      "lore_loc": "Благодаря секретному рецепту, сочетающему умелую выпечку Беатриши с её любовью к чёрному пороху, эти боевые крекеры невероятно бодрят.",
+      "desc_loc": "Snapfire feeds a potent cookie to Mortimer or an ally, causing them to hop a short distance. The hopping unit stuns and damages enemies in the landing zone.",
+      "lore_loc": "With the help of a secret mixture that pairs Beadie's baking skills with her passion for black powder, these battle biscuits pack a punch.",
       "notes_loc": [
-        "Печенье летит со скоростью %projectile_speed%."
+        "The cookie projectile has a speed of %projectile_speed%."
       ],
-      "shard_loc": "Печенька становится ещё мощнее, отчего цель излечивается, а в точку приземления выплёвывается шар от Mortimer's Kisses, попадание которого наносит %shard_damage_multiplier_tooltip%%% обычного урона.",
+      "shard_loc": "Firesnap cookies become even more potent, healing the target and launching a Mortimer Kiss that does %shard_damage_multiplier_tooltip%%% impact damage to the landing destination.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -581,7 +581,7 @@
             425
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРЫЖКА:",
+          "heading_loc": "HOP DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -632,7 +632,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПРИЗЕМЛЕНИЯ:",
+          "heading_loc": "IMPACT RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -652,7 +652,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ ПРИЗЕМЛЕНИЯ:",
+          "heading_loc": "IMPACT DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -672,7 +672,7 @@
             2.2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "IMPACT STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -706,7 +706,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЛЕЧЕНИЕ:",
+          "heading_loc": "HEAL AMOUNT:",
           "bonuses": [],
           "values_shard": [
             200
@@ -878,11 +878,11 @@
       "id": 6488,
       "name": "snapfire_lil_shredder",
       "name_loc": "Lil' Shredder",
-      "desc_loc": "Герой разогревает свою турель и совершает %buffed_attacks% атак-выстрелов, наносящих базовый урон и долю урона от атаки. Каждый выстрел уменьшает броню жертвы. Во время действия дальность атаки увеличивается.",
-      "lore_loc": "Беатриша то и дело модифицирует устройство, которое она придумала, замышляя побег от своей бывшей банды.",
+      "desc_loc": "Snapfire heats up her mounted turret to rapidly fire %buffed_attacks% attacks dealing fixed damage plus a percentage of her attack damage. Each attack reduces the enemy's armor. Provides bonus attack range for the duration.",
+      "lore_loc": "Beadie constantly tinkers with a design she first dreamed up plotting an exodus from her old gang.",
       "notes_loc": [
-        "Базовый интервал атак во время действия: %base_attack_time% сек.",
-        "При каждом выстреле могут сработать эффекты атаки."
+        "Sets base attack time to %base_attack_time%s for the duration.",
+        "Attack modifiers have a chance to proc on Lil' Shredder attacks."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -941,7 +941,7 @@
             65
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE PER SHOT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -981,7 +981,7 @@
             35
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ АТАКИ:",
+          "heading_loc": "ATTACK DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_snapfire_6",
@@ -1024,7 +1024,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "BONUS RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1075,7 +1075,7 @@
             0.5
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ ЗА ЭФФЕКТ:",
+          "heading_loc": "ARMOR LOSS PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1092,7 +1092,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ СНИЖЕНИЯ БРОНИ:",
+          "heading_loc": "ARMOR LOSS DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1216,10 +1216,10 @@
       "id": 6484,
       "name": "snapfire_gobble_up",
       "name_loc": "Gobble Up",
-      "desc_loc": "Проглатывает крипа или союзного героя, чтобы затем плюнуть им во врагов. Цель может сидеть в животике не более %max_time_in_belly% сек.",
-      "lore_loc": "ГЛОТЬ!",
+      "desc_loc": "Mortimer gobbles up a creep or an allied hero, which he can then spit towards enemies. The unit stays in his belly up to %max_time_in_belly% seconds.",
+      "lore_loc": "SHLORP!",
       "notes_loc": [
-        "Герой получает награду за смерть выплюнутого крипа."
+        "Snapfire earns the creep's bounty after it has been spat out and died."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1368,8 +1368,8 @@
       "id": 6486,
       "name": "snapfire_spit_creep",
       "name_loc": "Spit Out",
-      "desc_loc": "Выплёвывает сидевшее в животике существо, нанося урон и оглушая противников в большой области. Под существом образуется лужа огненной слюны, которая замедляет врагов и наносит периодический урон в зависимости от текущего уровня Mortimer Kisses. У этой способности нет минимальной дальности.",
-      "lore_loc": "ХА-ТЬФУ!",
+      "desc_loc": "Mortimer spits out the unit that's in his mouth, causing impact damage and stun in a large area. The glob leaves a pool of firespit based on the current level of Mortimer Kisses, that slows and applies damage over time. Spit Out has a no minimum launch range.",
+      "lore_loc": "SPITTOOO!",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1453,7 +1453,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПЛЕВКА:",
+          "heading_loc": "IMPACT RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1606,7 +1606,7 @@
             1.2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1737,11 +1737,11 @@
       "id": 6482,
       "name": "snapfire_mortimer_kisses",
       "name_loc": "Mortimer Kisses",
-      "desc_loc": "Верный питомец выпускает несколько шаров лавы на расстояние от %min_range% в течение %duration_tooltip% сек. Шары наносят урон при попадании и создают огненные лужи, которые замедляют и наносят периодический урон. Во время действия герой имеет уменьшенную скорость поворота. Каждый шар можно выпустить нажатием правой кнопки мыши.",
-      "lore_loc": "Когда Беатриша пригрела у себя Мортимера, она ещё не знала, что драконьи жабы (которые вовсе и не жабы) похожи на своих далёких огнедышащих сородичей не только названием.",
+      "desc_loc": "Snapfire's friend launches a barrage of firespit globs over %duration_tooltip% seconds. Globs cause impact damage and create pools of firespit, which slow and apply damage over time. Snapfire has a reduced turn rate for the duration and a minimum launch range of %min_range%. Each glob can be targeted with a right click.",
+      "lore_loc": "Little did Beadie know when she adopted Mortimer, dragon toads--which aren't even toads at all--share more than just a name with their distant draconic cousins.",
       "notes_loc": [
-        "Чтобы остановить способность, нажмите кнопку отмены текущего действия или удерживания позиции, либо примените другую способность.",
-        "Полёт шара занимает от %min_lob_travel_time% до %max_lob_travel_time% сек."
+        "Can be cancelled by pressing Stop, Hold Position, or using another ability.",
+        "Has a minimum travel time of %min_lob_travel_time% and maximum travel time of %max_lob_travel_time%."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1795,7 +1795,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ШАРОВ:",
+          "heading_loc": "GLOB COUNT:",
           "bonuses": [
             {
               "name": "special_bonus_unique_snapfire_1",
@@ -1873,7 +1873,7 @@
             275
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПОПАДАНИЯ:",
+          "heading_loc": "IMPACT RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1892,7 +1892,7 @@
             360
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ ШАРА:",
+          "heading_loc": "DAMAGE PER GLOB:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1979,7 +1979,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ ОТ ЛУЖИ:",
+          "heading_loc": "BURN DPS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_snapfire_5",
@@ -2004,7 +2004,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "ENEMY MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -2021,7 +2021,7 @@
             3.5
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДЕЙСТВИЯ ЛУЖИ:",
+          "heading_loc": "FIRESPIT POOL DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -2241,15 +2241,15 @@
       "id": 1421,
       "name": "snapfire_buckshot",
       "name_loc": "Buckshot",
-      "desc_loc": "Атаки по вражеским героям наносят на %damage_amp%%% больше урона, но с вероятностью в %miss_chance%%% может произойти осечка, отчего атака нанесёт только %glancing_shot_damage_pct%%% урона.",
+      "desc_loc": "When attacking enemy heroes, Snapfire deals %damage_amp%%% more damage with her auto attacks, but has a %miss_chance%%% chance of a glancing shot, dealing %glancing_shot_damage_pct%%% damage.",
       "lore_loc": "",
       "notes_loc": [
-        "Срикошетившей атакой нельзя промахнуться."
+        "Ricochet II attacks cannot miss."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Если герой промахнётся атакой или у него произойдёт осечка, во врагов неподалёку от цели срикошетят две атаки.",
+        "Whenever Snapfire glances or misses an attack, 2 ricochet attacks will bounce towards nearby enemies.",
         ""
       ],
       "type": 0,
@@ -2347,7 +2347,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ РИКОШЕТА:",
+          "heading_loc": "RICOCHET ATTACK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -2396,7 +2396,7 @@
     {
       "id": 384,
       "name": "special_bonus_unique_snapfire_7",
-      "name_loc": "+{s:bonus_damage} к урону от Scatterblast",
+      "name_loc": "+{s:bonus_damage} Scatterblast Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2458,7 +2458,7 @@
     {
       "id": 6479,
       "name": "special_bonus_unique_snapfire_5",
-      "name_loc": "+{s:bonus_burn_damage} к урону от лужи у Mortimer Kisses",
+      "name_loc": "+{s:bonus_burn_damage} Mortimer Kisses Burn DPS",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2520,7 +2520,7 @@
     {
       "id": 6487,
       "name": "special_bonus_unique_snapfire_2",
-      "name_loc": "+{s:bonus_buffed_attacks} к числу атак от Lil' Shredder",
+      "name_loc": "+{s:bonus_buffed_attacks} Lil' Shredder attacks",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2582,7 +2582,7 @@
     {
       "id": 6489,
       "name": "special_bonus_unique_snapfire_3",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Firesnap Cookie",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Firesnap Cookie Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2644,7 +2644,7 @@
     {
       "id": 500,
       "name": "special_bonus_unique_snapfire_8",
-      "name_loc": "+{s:bonus_extra_targets} цели атаки у Lil' Shredder",
+      "name_loc": "+{s:bonus_extra_targets} Lil' Shredder Targets",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2706,7 +2706,7 @@
     {
       "id": 1628,
       "name": "special_bonus_unique_snapfire_firesnap_cookie_additional_charge",
-      "name_loc": "{s:bonus_AbilityCharges} заряда Firesnap Cookie",
+      "name_loc": "{s:bonus_AbilityCharges} Firesnap Cookie Charges",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2768,7 +2768,7 @@
     {
       "id": 382,
       "name": "special_bonus_unique_snapfire_6",
-      "name_loc": "+{s:bonus_damage_pct}% к урону от атак у Lil' Shredder",
+      "name_loc": "+{s:bonus_damage_pct}% Lil' Shredder Attack Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2830,7 +2830,7 @@
     {
       "id": 6485,
       "name": "special_bonus_unique_snapfire_1",
-      "name_loc": "+{s:bonus_projectile_count} к числу шаров от Mortimer Kisses",
+      "name_loc": "+{s:bonus_projectile_count} Mortimer Kisses Launched",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

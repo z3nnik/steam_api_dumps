@@ -1,268 +1,266 @@
-[
-  {
-    "id": 5094,
-    "name": "sven_storm_bolt",
-    "name_loc": "Storm Hammer",
-    "desc_loc": "Герой высвобождает всю мощь своей магической рукавицы, нанося жертве и её союзникам в небольшой области урон и оглушая их.",
-    "lore_loc": "Железная рукавица мятежного рыцаря, позаимствованная в отцовской школе, выбивает дух из любого врага.",
-    "notes_loc": [
-      "Улучшение от Aghanim's Scepter не позволяет выбирать целью неуязвимых существ."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "Увеличивает дальность применения и скорость снаряда. Он действует на неуязвимых существ и применяет на жертв нормальное развеивание. Если включено альтернативное применение, снаряд нанесёт на %scepter_bonus_damage% урона больше, а герой полетит вместе с ним.",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "134217768",
-    "target_team": 2,
-    "target_type": 19,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 1,
-    "max_level": 4,
-    "cast_ranges": [
-      600
-    ],
-    "cast_points": [
-      0.2,
-      0.2,
-      0.2,
-      0.2
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      21,
-      18,
-      15,
-      12
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      80,
-      160,
-      240,
-      320
-    ],
-    "mana_costs": [
-      110,
-      115,
-      120,
-      125
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "bolt_speed",
-        "values_float": [
-          1000
-        ],
-        "is_percentage": false,
-        "heading_loc": "СКОРОСТЬ СНАРЯДА:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          25
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5094,
+  "name": "sven_storm_bolt",
+  "name_loc": "Storm Hammer",
+  "desc_loc": "Sven unleashes his magical gauntlet that deals damage and stuns enemy units in a small area around the target.",
+  "lore_loc": "The Rogue Knight's iron gauntlet, taken from the school of his father, strikes his foes to their core.",
+  "notes_loc": [
+    "Aghanim's Scepter upgrade does not allow Storm Hammer to target invulnerable targets."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "Increases cast range, projectile speed and applies a basic dispel to affected enemies. Allows Storm Hammer to affect invulnerable enemies in the radius. If alt-cast, it deals an additional %scepter_bonus_damage% damage and Sven travels with the Storm Hammer.",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "134217768",
+  "target_team": 2,
+  "target_type": 19,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 1,
+  "max_level": 4,
+  "cast_ranges": [
+    600
+  ],
+  "cast_points": [
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    21,
+    18,
+    15,
+    12
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    80,
+    160,
+    240,
+    320
+  ],
+  "mana_costs": [
+    110,
+    115,
+    120,
+    125
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "bolt_speed",
+      "values_float": [
+        1000
+      ],
+      "is_percentage": false,
+      "heading_loc": "PROJECTILE SPEED:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        25
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bolt_stun_duration",
-        "values_float": [
-          1,
-          1.2,
-          1.4,
-          1.6
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_sven_4",
-            "value": 1,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "bolt_stun_duration",
+      "values_float": [
+        1,
+        1.2,
+        1.4,
+        1.6
+      ],
+      "is_percentage": false,
+      "heading_loc": "STUN DURATION:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_sven_4",
+          "value": 1,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bolt_aoe",
-        "values_float": [
-          250,
-          270,
-          290,
-          310
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bolt_aoe",
+      "values_float": [
+        250,
+        270,
+        290,
+        310
+      ],
+      "is_percentage": false,
+      "heading_loc": "RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "vision_radius",
-        "values_float": [
-          225
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "vision_radius",
+      "values_float": [
+        225
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "scepter_bonus_damage",
-        "values_float": [
-          180
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "scepter_bonus_damage",
+      "values_float": [
+        180
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "#AbilityDamage",
-        "values_float": [
-          80,
-          160,
-          240,
-          320
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "#AbilityDamage",
+      "values_float": [
+        80,
+        160,
+        240,
+        320
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          600
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          25
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        600
+      ],
+      "is_percentage": false,
+      "heading_loc": "CAST RANGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        25
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.2
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.2
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          110,
-          115,
-          120,
-          125
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        110,
+        115,
+        120,
+        125
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          21,
-          18,
-          15,
-          12
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        21,
+        18,
+        15,
+        12
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

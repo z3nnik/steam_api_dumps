@@ -1,337 +1,335 @@
-[
-  {
-    "id": 5392,
-    "name": "obsidian_destroyer_astral_imprisonment",
-    "name_loc": "Astral Imprisonment",
-    "desc_loc": "Помещает выбранное существо в астральное заточение, где оно неуязвимо и не может ничего делать. По окончании эффекта происходит взрыв, наносящий цели урон и крадущий долю от её максимального запаса маны.",
-    "lore_loc": "Запертые в карманном измерении на границе с Внемирьем, жертвы осознают свою смертность и ничтожность своих знаний.",
-    "notes_loc": [
-      "На врагов под эффектом этой способности действует ваш ульт.",
-      "Кража маны не увеличивает текущий запас маны героя и не уменьшает напрямую текущий запас маны жертвы."
-    ],
-    "shard_loc": "Способность наносит урон по области. Позволяет союзникам под действием этой способности перемещаться со скоростью в %allied_movement_speed_pct%%%. Они не могут совершать другие действия и видны противникам, но их нельзя выбрать целью.",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "33554472",
-    "target_team": 3,
-    "target_type": 19,
-    "flags": 32,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 3,
-    "max_level": 4,
-    "cast_ranges": [
-      650
-    ],
-    "cast_points": [
-      0.3
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      18,
-      16,
-      14,
-      12
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      150
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "prison_duration",
-        "values_float": [
-          1.75,
-          2.5,
-          3.25,
-          4
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5392,
+  "name": "obsidian_destroyer_astral_imprisonment",
+  "name_loc": "Astral Imprisonment",
+  "desc_loc": "Places a target unit into an astral prison. The hidden unit is invulnerable and disabled. When the astral prison implodes, it deals damage to the target and steals a percentage of their max mana.",
+  "lore_loc": "Locked away in the pocket between this world and the Outworld, victims realize their infantile knowledge and mortality.",
+  "notes_loc": [
+    "Imprisoned units can still be hit by Sanity's Eclipse.",
+    "Max mana steal does not increase Outworld Destroyer's current mana values or directly reduce the victim's mana values."
+  ],
+  "shard_loc": "Astral Imprisonment now deals damage in an area. Also allows allies to move at %allied_movement_speed_pct%%% movement speed during Astral Imprisonment (they are visible, but untargettable and can't perform any other actions).",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "33554472",
+  "target_team": 3,
+  "target_type": 19,
+  "flags": 32,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 3,
+  "max_level": 4,
+  "cast_ranges": [
+    650
+  ],
+  "cast_points": [
+    0.3
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    18,
+    16,
+    14,
+    12
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    150
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "prison_duration",
+      "values_float": [
+        1.75,
+        2.5,
+        3.25,
+        4
+      ],
+      "is_percentage": false,
+      "heading_loc": "DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage",
-        "values_float": [
-          90,
-          180,
-          270,
-          360
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "damage",
+      "values_float": [
+        90,
+        180,
+        270,
+        360
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "has_mana_steal",
-        "values_float": [
-          1
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "has_mana_steal",
+      "values_float": [
+        1
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "mana_capacity_steal",
-        "values_float": [
-          16,
-          19,
-          22,
-          25
-        ],
-        "is_percentage": true,
-        "heading_loc": "КРАЖА ЗАПАСА МАНЫ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_outworld_devourer_2",
-            "value": 8,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "mana_capacity_steal",
+      "values_float": [
+        16,
+        19,
+        22,
+        25
+      ],
+      "is_percentage": true,
+      "heading_loc": "MANA CAPACITY STEAL:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_outworld_devourer_2",
+          "value": 8,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "mana_capacity_duration",
-        "values_float": [
-          30,
-          40,
-          50,
-          60
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ КРАЖИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "mana_capacity_duration",
+      "values_float": [
+        30,
+        40,
+        50,
+        60
+      ],
+      "is_percentage": false,
+      "heading_loc": "MANA STEAL DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "allied_movement_speed_pct",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [
-          70
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "allied_movement_speed_pct",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [
+        70
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage_radius",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "РАДИУС УРОНА:",
-        "bonuses": [],
-        "values_shard": [
-          300
-        ],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "damage_radius",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE RADIUS:",
+      "bonuses": [],
+      "values_shard": [
+        300
+      ],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "debuff_duration",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "debuff_duration",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "percentage_damage",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "percentage_damage",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "percentage_heal",
-        "values_float": [
-          0
-        ],
-        "is_percentage": true,
-        "heading_loc": "ЛЕЧЕНИЕ ОТ МАНЫ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "percentage_heal",
+      "values_float": [
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "MANA AS HEAL:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          650
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_outworld_devourer_astral_castrange",
-            "value": 100,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        650
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_outworld_devourer_astral_castrange",
+          "value": 100,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          150
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        150
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          18,
-          16,
-          14,
-          12
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": true,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        18,
+        16,
+        14,
+        12
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": true,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

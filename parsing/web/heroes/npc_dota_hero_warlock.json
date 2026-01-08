@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_warlock",
   "order_id": 59,
   "name_loc": "Warlock",
-  "bio_loc": "Будучи старшим хранителем и главой отдела приобретений в скрытых архивах Ультимирской академии, Демнок Лэнник неустанно искал затерянные, редкие и запретные тома. Ни проклятые храмы, ни коварные пещерные ходы — ничто не заставило бы Демнока свернуть с тропы, стоило ему прознать, что, быть может, в конце пути он найдет хотя бы жалкий кусочек свитка с древними знаниями. И так часто приходилось ему сталкиваться с сущностями, оставленными защищать эти древние знания, что он наконец посчитал необходимым изучить таинства магии. С такой же одержимостью принялся Демнок за учение, с какой отправлялся в опаснейшие походы за записями — и превзошёл всех чернокнижников Ультимирской академии за время, которого остальным хватило бы, лишь чтобы изучить самые основы. В последнюю очередь он вырезал себе посох из дредвудского дерева и заточил в него духа из Глубин Ада. И, ожидая дня, когда он найдёт последнюю затерянную книгу заклинаний, Демнок приступил к своему собственному произведению — «Чёрному гримуару». Сомнений нет: он будет весьма поучительным.",
-  "hype_loc": "Призвав на помощь <b>демона-голема</b>, Warlock уничтожает врагов и их постройки. Но чернокнижник способен <b>сеять хаос</b> и без посторонней помощи: одним лишь словом он <b>излечивает союзников</b> и <b>калечит противников</b> — или связывает врагов в общей агонии.",
-  "npe_desc_loc": "Призывает на свою сторону могучих демонов",
+  "bio_loc": "As Chief Curator and Head of Acquisitions for the Arcane Archives of the Ultimyr Academy, Demnok Lannik was tireless in his pursuit of lost, rare and forbidden tomes. No cursed temple was so foreboding, no cavern path so treacherous, that any concern for his own survival could dissuade him from entering if rumors hinted that some pamphlet of primordial lore might still survive in its depths. However, so often did his investigations trigger the wrath of protector entities, that he finally found it necessary to master the arts of magic. He bent himself to learning sorcery with the same thorough obsessiveness that marked his quest for incunabula, becoming the most powerful Warlock of the Academy in less time than most practitioners required to complete a course of undergraduate work. Almost as an afterthought, he carved a staff of Dreadwood and summoned into it a captive spirit from the Outer Hells. And anticipating the day when he will have recovered every last lost spellbook, he has commenced writing his own Black Grimoire. It will undoubtedly be instructive.",
+  "hype_loc": "Summoning forth his <b>demonic golem</b>, Warlock brings ruin to enemies and destroys their defenses. Yet even without his golem, his <b>dark spells</b> can still wreak havoc, whether <b>healing allies</b> and <b>harming enemies</b> with a word, or binding foes together to share their agony.",
+  "npe_desc_loc": "Summons powerful demons to fight at his side",
   "facets": [
     {
       "color": 0,
       "title_loc": "Champion of Gorroth",
-      "description_loc": "Часть восстановления здоровья и маны героя добавляется к обжигающему урону у его големов от Chaotic Offering.",
+      "description_loc": "Chaotic Offering Golems deal more burn damage based on Warlock's health and mana regeneration.",
       "name": "warlock_golem",
       "icon": "summons",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 5,
       "title_loc": "Black Grimoire",
-      "description_loc": "Герой начинает игру с расходуемым предметом Black Grimoire, применение которого даёт дополнительный опыт за каждое участие в убийстве. Изначально имеет 1 заряд.",
+      "description_loc": "Grants Warlock the item Black Grimoire, which can be consumed to gain experience for each kill Warlock participated in. Starts with 1 charge.",
       "name": "warlock_grimoire",
       "icon": "xp",
       "gradient_id": 3,
@@ -66,10 +66,10 @@
       "id": 5162,
       "name": "warlock_fatal_bonds",
       "name_loc": "Fatal Bonds",
-      "desc_loc": "Соединяет несколько видимых врагов магической связью, в результате чего часть урона, полученного любым из них, наносится и остальным.",
-      "lore_loc": "Древнее заклятие, которое объединяет жизненные силы различных существ в единую сущность.",
+      "desc_loc": "Binds several visible enemy units together, causing a percentage of the damage dealt to one of them to be felt by the others.",
+      "lore_loc": "An ancient incantation that links the vital energies of multiple lifeforms into one collective body.",
       "notes_loc": [
-        "Общий урон имеет тот же тип, что и нанесённый изначально."
+        "The shared damage type is the same as the type of damage inflicted."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -125,7 +125,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО СВЯЗЫВАЕМЫХ ВРАГОВ:",
+          "heading_loc": "ENEMIES BOUND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_warlock_fatal_bonds_count",
@@ -151,7 +151,7 @@
             24
           ],
           "is_percentage": true,
-          "heading_loc": "РАСПРЕДЕЛЯЕМЫЙ УРОН:",
+          "heading_loc": "SHARED DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_warlock_5",
@@ -174,7 +174,7 @@
             18
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -191,7 +191,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС СВЯЗИ:",
+          "heading_loc": "BIND RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -294,8 +294,8 @@
       "id": 5163,
       "name": "warlock_shadow_word",
       "name_loc": "Shadow Word",
-      "desc_loc": "Герой шепчет заклинание, которое действует на цель и существ вокруг неё. Излечивает союзников и наносит урон врагам.",
-      "lore_loc": "Тайные искусства Демнока могут найти множество применений — будь то мощные исцеляющие чары либо губительное проклятье.",
+      "desc_loc": "Warlock whispers an incantation, casting a spell on a unit that makes it deal damage to nearby enemy units and heal nearby ally units. Target Unit will also heal or be damaged depending on whether they are ally or enemy.",
+      "lore_loc": "Demnok's arcane arts have a myriad of uses, allowing them to be powerful friendly enchantments or damaging curses.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "Increases Effect Radius. Shadow Word now applies to %additional_targets% additional units in a %cast_aoe% radius, prioritizing heroes. The healing and damage on the additional targets is reduced by %secondary_reduction%%%.",
@@ -357,7 +357,7 @@
             45
           ],
           "is_percentage": false,
-          "heading_loc": "ЛЕЧЕНИЕ/УРОН:",
+          "heading_loc": "HEAL/DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -374,7 +374,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -408,7 +408,7 @@
             225
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЕЙСТВИЯ:",
+          "heading_loc": "EFFECT RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_warlock_7",
@@ -539,12 +539,12 @@
       "id": 5164,
       "name": "warlock_upheaval",
       "name_loc": "Upheaval",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — мощный поток энергии, который замедляет врагов, наносит им урон и становится сильнее по мере применения. Действует до %abilitychanneltime% сек. Эффект сохраняется в течение %duration% сек. после того, как враг покинул зону действия или способность прервалась.",
-      "lore_loc": "Демнок управляет пространством и временем, ослабляя целые армии.",
+      "desc_loc": "CHANNELED - A powerful slowing and damaging current that grows stronger as it's channeled. Lasts up to %abilitychanneltime% seconds. Enemies are slowed for %duration% second after leaving the area or the spell ends.",
+      "lore_loc": "Demnok manipulates space-time, impairing entire armies.",
       "notes_loc": [
-        "Замедление зависит от длительности прочтения способности, а не от времени в области его действия."
+        "The slow increase is based on length of the channel, not the duration an enemy was standing in the area."
       ],
-      "shard_loc": "Каждые %imps_interval% сек. применения этой способности создаётся один малый бес, живущий %minor_imp_duration% сек. При смерти бес взрывается, нанося урон всем врагам вокруг.",
+      "shard_loc": "While channeling, Warlock spawns a minor imp every %imps_interval% seconds that lasts for %minor_imp_duration% seconds and explodes dealing damage to all enemies around them upon death.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -601,7 +601,7 @@
             650
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_warlock_upheaval_aoe",
@@ -627,7 +627,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ В СЕКУНДУ:",
+          "heading_loc": "SLOW PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -664,7 +664,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "MAX SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -723,7 +723,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -743,7 +743,7 @@
             110
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМАЛЬНЫЙ УРОН:",
+          "heading_loc": "MAX DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_warlock_3",
@@ -837,7 +837,7 @@
             16
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ВРЕМЯ ПРИМЕНЕНИЯ:",
+          "heading_loc": "MAX CHANNEL DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -920,13 +920,13 @@
       "id": 1274,
       "name": "warlock_eldritch_summoning",
       "name_loc": "Eldritch Summoning",
-      "desc_loc": "На месте существа, погибшего под действием любой способности героя, появляется малый бес, который живёт %minor_imp_duration% сек. и взрывается при смерти. Бес автоматически преследует ближайших врагов (в первую очередь героев под действием способности Fatal Bonds) и взрывается, добежав до жертвы.",
+      "desc_loc": "Whenever an enemy unit dies while afflicted by one or more of Warlock's abilities, a minor imp is summoned that lasts for %minor_imp_duration% seconds and explodes on death. Imps will automatically seek out nearby units, favoring fatally bonded heroes, and will explode when reaching their prey.",
       "lore_loc": "",
       "notes_loc": [
-        "Малые бесы имеют %tooltip_imp_health% здоровья и взрываются, нанося %tooltip_imp_explode% урона в радиусе %tooltip_imp_explode_radius%.",
-        "Малый бес не взрывается, если его убил вражеский герой."
+        "Minor imps have %tooltip_imp_health% health and explode for %tooltip_imp_explode% damage in a %tooltip_imp_explode_radius% radius.",
+        "Minor imps do not explode if killed by enemy heroes."
       ],
-      "shard_loc": "Увеличивает мощь всех призываемых бесов.",
+      "shard_loc": "Increases the power of all imps summoned by Warlock.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -1084,15 +1084,15 @@
       "id": 5165,
       "name": "warlock_rain_of_chaos",
       "name_loc": "Chaotic Offering",
-      "desc_loc": "Вызывает из недр земли голема, оглушая врагов на %stun_duration% сек. Голем живёт %golem_duration% сек., получает меньше урона от заклинаний, а также имеет повышенное сопротивление замедлениям и две способности: одна обжигает врагов вокруг, а другая добавляет к атакам урон по области.",
-      "lore_loc": "Демнок выпускает из своего дредвудского посоха плененного духа, который разрушает вражеские ряды.",
+      "desc_loc": "Summons a Golem from the depths, stunning enemies for %stun_duration% seconds. The Golem lives %golem_duration% seconds, takes reduced damage from spells, has increased Slow Resistance, has Permanent Immolation and Flaming Fists on attack.",
+      "lore_loc": "Demnok unleashes the captive spirit in his Dreadwood staff, causing destruction in enemy ranks.",
       "notes_loc": [
-        "Уничтожает деревья в области действия."
+        "This ability destroys trees in its area of effect."
       ],
       "shard_loc": "",
-      "scepter_loc": "Призывает %number_of_golems_scepter% големов.",
+      "scepter_loc": "Calls %number_of_golems_scepter% Golems.",
       "facets_loc": [
-        "Часть восстановления здоровья и маны героя добавляется к обжигающему урону у его големов от Chaotic Offering.",
+        "Chaotic Offering Golems deal more burn damage based on Warlock's health and mana regeneration.",
         ""
       ],
       "type": 1,
@@ -1175,7 +1175,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ОГЛУШЕНИЯ:",
+          "heading_loc": "SUMMON BLAST RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1194,7 +1194,7 @@
             3000
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ ГОЛЕМА:",
+          "heading_loc": "GOLEM HEALTH:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1213,7 +1213,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ГОЛЕМА:",
+          "heading_loc": "GOLEM DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1251,7 +1251,7 @@
             360
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ГОЛЕМА:",
+          "heading_loc": "GOLEM MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1270,7 +1270,7 @@
             75
           ],
           "is_percentage": false,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ ГОЛЕМА:",
+          "heading_loc": "GOLEM HEALTH REGEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1289,7 +1289,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "ЗОЛОТО ЗА УБИЙСТВО ГОЛЕМА:",
+          "heading_loc": "GOLEM GOLD BOUNTY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1449,7 +1449,7 @@
             14
           ],
           "is_percentage": false,
-          "heading_loc": "БРОНЯ ГОЛЕМА:",
+          "heading_loc": "GOLEM ARMOR:",
           "bonuses": [
             {
               "name": "special_bonus_unique_warlock_2",
@@ -1472,7 +1472,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "СОПРОТИВЛЕНИЕ ЗАМЕДЛЕНИЯМ ГОЛЕМА:",
+          "heading_loc": "GOLEM SLOW RESISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1489,7 +1489,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ОБЖИГ. УРОН ОТ ВОССТАНОВЛЕНИЯ:",
+          "heading_loc": "HP/MANA REGEN TO BURN DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1612,7 +1612,7 @@
     {
       "id": 6982,
       "name": "special_bonus_unique_warlock_5",
-      "name_loc": "+{s:bonus_damage_share_percentage}% к урону от Fatal Bonds",
+      "name_loc": "+{s:bonus_damage_share_percentage}% Fatal Bonds Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1674,7 +1674,7 @@
     {
       "id": 1038,
       "name": "special_bonus_unique_warlock_upheaval_aoe",
-      "name_loc": "+{s:bonus_aoe} к радиусу Upheaval",
+      "name_loc": "+{s:bonus_aoe} Upheaval Radius",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1736,8 +1736,8 @@
     {
       "id": 845,
       "name": "special_bonus_unique_warlock_10",
-      "name_loc": "Upheaval ускоряет атаку союзников на {s:bonus_aspd_per_second} в секунду",
-      "desc_loc": "Максимум: +70 к скорости атаки.",
+      "name_loc": "+{s:bonus_aspd_per_second} Upheaval Attack Speed per second on Allies",
+      "desc_loc": "Maximum of +70 Attack Speed",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1798,7 +1798,7 @@
     {
       "id": 764,
       "name": "special_bonus_unique_warlock_7",
-      "name_loc": "+{s:bonus_spell_aoe} к радиусу действия Shadow Word",
+      "name_loc": "+{s:bonus_spell_aoe} Shadow Word AoE",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1860,7 +1860,7 @@
     {
       "id": 6053,
       "name": "special_bonus_unique_warlock_1",
-      "name_loc": "{s:bonus_bonus_damage_resist}% сопротивления урону у големов от Chaotic Offering",
+      "name_loc": "{s:bonus_bonus_damage_resist}% Damage Resistance for Chaotic Offering Golems",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1922,7 +1922,7 @@
     {
       "id": 6412,
       "name": "special_bonus_unique_warlock_3",
-      "name_loc": "+{s:bonus_base_damage} к урону от Upheaval",
+      "name_loc": "+{s:bonus_base_damage} Upheaval Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1984,7 +1984,7 @@
     {
       "id": 6505,
       "name": "special_bonus_unique_warlock_4",
-      "name_loc": "Призыв голема при смерти",
+      "name_loc": "Summons a Golem on death",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2046,7 +2046,7 @@
     {
       "id": 1703,
       "name": "special_bonus_unique_warlock_fatal_bonds_count",
-      "name_loc": "+{s:bonus_count} к числу связываемых врагов у Fatal Bonds",
+      "name_loc": "+{s:bonus_count} Fatal Bonds Targets",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2116,7 +2116,7 @@
           "id": 1275,
           "name": "warlock_black_grimoire",
           "name_loc": "Black Grimoire",
-          "desc_loc": "Герой начинает игру с расходуемым предметом Black Grimoire, применение которого даёт дополнительный опыт за каждое участие в убийстве. Изначально имеет 1 заряд.",
+          "desc_loc": "Grants Warlock the item Black Grimoire, which can be consumed to gain experience for each kill Warlock participated in. Starts with 1 charge.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",
@@ -2167,7 +2167,7 @@
                 200
               ],
               "is_percentage": false,
-              "heading_loc": "ОПЫТ ЗА УБИЙСТВО/ПОМОЩЬ:",
+              "heading_loc": "XP PER KILL/ASSIST:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -2184,7 +2184,7 @@
                 420
               ],
               "is_percentage": false,
-              "heading_loc": "ПЕРЕЗАРЯДКА В НАЧАЛЕ ИГРЫ:",
+              "heading_loc": "STARTING COOLDOWN:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

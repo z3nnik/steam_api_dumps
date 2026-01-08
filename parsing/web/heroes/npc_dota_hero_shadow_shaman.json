@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_shadow_shaman",
   "order_id": 17,
   "name_loc": "Shadow Shaman",
-  "bio_loc": "Рождённый на Кровоточащих холмах, юный Раста жил впроголодь, пока его не подобрал странствующий шарлатан. За два медяка старый пройдоха мог предсказать судьбу. За три — кастрировать свинью. За пять — совершить обрезание. За хорошие харчи он мог облачиться в шкуру шамана и зачитать проклятия из древних книг, насылая их на ваших врагов. А чудной юнец, наполовину холмовой тролль, наполовину... что-то ещё, работал помощником и придавал налёт экзотики услугам старого ловкача.\r\n\t\t\t\t<br><br>Всегда на шаг впереди облапошенных покупателей, на один город впереди взбешённых преследователей, эти двое путешествовали по гиблым землям до тех пор, пока шарлатан не понял, что его юный напарник на самом деле способен на то, чем сам старик только дурил зрителей. Его подопечный имел дар, который очень ценили клиенты. И вот юный Раста стал развлекать толпу, и прозвали его тогда шаманом теней. Напарники продолжили странствовать по городам, колдуя за деньги, а молва о кудеснике всё росла и росла. В конце концов странников настигло шарлатанское прошлое: их подкараулила толпа обманутых покупателей. Шарлатана убили, и впервые в жизни Раста использовал свою силу во зло, перебив всех нападавших. Он похоронил своего любимого учителя и теперь использует свою силу против любого, кто посягнёт на его жизнь.",
-  "hype_loc": "Shadow Shaman быстро расчищает своей команде путь до вражеского Древнего. Он способен поразить противников <b>ударом энергии</b>, превратить нападающего в <b>беспомощное животное</b> и призвать <b>могучие змеиные тотемы</b>, которые с лёгкостью разрушат вражеские постройки.",
-  "npe_desc_loc": "Призывает могучих змеев, наносящих урон",
+  "bio_loc": "Born in the Bleeding Hills, Rhasta was just a starving youngling when picked up by a travelling con-man.  For two pins of copper, the old con-man would tell your fortune. For three, he'd castrate your pig, for five, he'd circumcise your sons. For a good meal, he'd don his shaman garb, read from his ancient books, and lay a curse upon your enemies. His strange new youngling, part hill troll, part...something else, worked as assistant and lent an air of the exotic to the con-man's trade. \r\n\t\t\t\t<br><br>Always one step ahead of cheated customers, one town ahead of a pursuing patronage, the two trekked across the blighted lands until one day the con-man realized that the little youngling could actually do what he only pretended at. His ward had a gift--a gift that customers valued. And so the youngling Rhasta was thrust before the crowds, and the trade-name Shadow Shaman was born. The two continued from town to town, conjuring for money as Shadow Shaman's reputation grew. Eventually, the pair's duplicitous past caught up with them, and they were ambushed by a mob of swindled ex-clients. The con-man was slain, and for the first time, Rhasta used his powers for darkness, massacring the attackers. He buried his beloved master, and now uses his powers to destroy any who would seek to do him harm.",
+  "hype_loc": "Shadow Shaman quickly clears the way for his team's forces to march on the enemy base. Blasting enemies with <b>shocking spells</b> and <b>interrupting attackers</b> with hexes, his powerful <b>serpent wards</b> destroy enemy defenses with ease.",
+  "npe_desc_loc": "Summons powerful serpent wards to deal damage",
   "facets": [
     {
       "color": 1,
       "title_loc": "Chicken Fingers",
-      "description_loc": "Атаки героя превращают врагов в куриц.",
+      "description_loc": "Shadow Shaman's attacks can transform enemies into a chicken.",
       "name": "shadow_shaman_voodoo_hands",
       "icon": "chicken",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Massive Serpent Ward",
-      "description_loc": "Способность Mass Serpent Ward создаёт один гигантский змеиный тотем. Его урон увеличен в {s:bonus_mega_ward_multiplier_damage} раз, а здоровье и награда — в {s:bonus_mega_ward_multiplier_health} раз.",
+      "description_loc": "Summons a single massive Serpent Ward with {s:bonus_mega_ward_multiplier_damage}x damage and {s:bonus_mega_ward_multiplier_health}x health and bounty values.",
       "name": "shadow_shaman_massive_serpent_ward",
       "icon": "snake",
       "gradient_id": 1,
@@ -66,10 +66,10 @@
       "id": 5078,
       "name": "shadow_shaman_ether_shock",
       "name_loc": "Ether Shock",
-      "desc_loc": "Создаёт конус бесплотной энергии, который бьёт по нескольким вражеским существам.",
-      "lore_loc": "Когда-то красочные молнии Расты впечатляли зрителей. Но не повезёт тем, на кого эти молнии направлены.",
+      "desc_loc": "Creates a cone of ethereal energy that strikes multiple enemy units.",
+      "lore_loc": "Originally used to open shows with the travelling con-man, Rhasta's lightning display shocks adversaries in more ways than one.",
       "notes_loc": [
-        "Дальность удара по вторичным целям — 1000."
+        "Can hit secondary targets up to 1000 distance away."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -183,7 +183,7 @@
             9
           ],
           "is_percentage": false,
-          "heading_loc": "ЦЕЛЕЙ:",
+          "heading_loc": "TARGETS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -203,7 +203,7 @@
             320
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_shadow_shaman_3",
@@ -312,11 +312,11 @@
       "id": 5079,
       "name": "shadow_shaman_voodoo",
       "name_loc": "Hex",
-      "desc_loc": "Превращает врага в безобидную зверюшку, лишая его возможности атаковать или применять способности.",
-      "lore_loc": "Раста часто завершал представления, превращая себя в курицу. Теперь он может унизить таким образом кого пожелает.",
+      "desc_loc": "Transforms an enemy unit into a harmless creature, disabling their attacks and abilities.",
+      "lore_loc": "Rhasta often ended performances by turning himself into a chicken - now, the humiliation is shared.",
       "notes_loc": [
-        "Мгновенно уничтожает иллюзии.",
-        "Жертва имеет базовую скорость в %movespeed%, но не теряет эффекты, дающие максимальную скорость."
+        "Instantly destroys illusions.",
+        "The target will have a base movement speed of %movespeed%, but buffs granting maximum movement speed won't be disabled."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -396,7 +396,7 @@
             2.9
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -503,11 +503,11 @@
       "id": 5080,
       "name": "shadow_shaman_shackles",
       "name_loc": "Shackles",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — связывает врага магическими путами, которые постепенно поглощают жизненную энергию жертвы и не позволяют ей передвигаться или атаковать.",
-      "lore_loc": "Заклинание самообороны, познанное Растой после гибели его учителя на Кровоточащих холмах.",
+      "desc_loc": "CHANNELED - Magically binds an enemy unit so that it cannot move or attack, absorbing their life energy over time.",
+      "lore_loc": "A self-defense incantation, Rhasta developed shackles after his master was slain in the Bleeding Hills.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает дальность применения. Каждые %scepter_shock_interval% сек. всех врагов в радиусе %scepter_shock_radius% от связанной цели поражают молнии способности Ether Shock, наносящие %scepter_shock_pct%%% обычного урона. Также позволяет применять эту способность на змеиные тотемы и союзников. Связь не обездвиживает последних, но разорвётся, если расстояние до цели превысит %ally_break_range% единиц.",
+      "scepter_loc": "Increase cast range. Every %scepter_shock_interval% seconds, shackled units emit a radial Ether Shock hitting all other units within %scepter_shock_radius% of the target for %scepter_shock_pct%%% of Ether Shock's normal damage. Shackles can now also be cast on allies and Mass Serpent Wards that stay within %ally_break_range% units of Shadow Shaman. Allied units are not disabled by Shackle.",
       "facets_loc": [
         "",
         "",
@@ -587,7 +587,7 @@
             280
           ],
           "is_percentage": false,
-          "heading_loc": "СУММАРНЫЕ УРОН И ЛЕЧЕНИЕ:",
+          "heading_loc": "TOTAL DAMAGE/HEAL:",
           "bonuses": [
             {
               "name": "special_bonus_unique_shadow_shaman_6",
@@ -613,7 +613,7 @@
             4.2
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "MAX DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_shadow_shaman_2",
@@ -767,7 +767,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "heading_loc": "CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -875,13 +875,13 @@
       "id": 1250,
       "name": "shadow_shaman_fowl_play",
       "name_loc": "Fowl Play",
-      "desc_loc": "Получив смертельный урон, герой выживает с единицей здоровья и превращается в курицу. На него применяется сильное развеивание, и в течение %damage_reduction_duration% сек. он не получает урон.<br/><br/>Перезарядка сбрасывается при возрождении.\n\nТИП РАЗВЕИВАНИЯ: сильное",
-      "lore_loc": "Расте с ранних пор пришлось научиться быть на шаг впереди тех, кто (как заслуженно, так и необоснованно) желал ему навредить.",
+      "desc_loc": "When taking lethal damage, Shadow Shaman receives a strong dispel and survives as a 1 HP chicken. Incoming damage is reduced to zero for %damage_reduction_duration%s.<br/><br/>Cooldown is reset upon respawning.\n\nDISPEL TYPE: Strong Dispel",
+      "lore_loc": "Rhasta had to learn early on how to stay one step ahead of those who (rightfully or wrongfully) wished him harm.",
       "notes_loc": [
-        "Не защищает от убийства способностями Culling Blade у Axe и Reaper's Scythe у Necrophos.",
-        "Уменьшение получаемого урона не позволяет некоторым эффектам, отнимающим здоровье, убить владельца способности."
+        "Lethal Damage from Axe's Culling Blade and Necrophos's Reaper's Scythe will not be prevented.",
+        "Incoming damage reduction buff will prevent certain sources of HP removal from killing Shadow Shaman."
       ],
-      "shard_loc": "Увеличивает длительность защиты от урона до %damage_reduction_duration% сек. и позволяет герою использовать предметы даже в облике курицы. При срабатывании герой становится неуязвимым на %invuln_duration% сек., а рядом с ним появляются %ally_chicken_images_count% неуправляемые курицы, которые существуют %ally_voodoo_duration% сек.",
+      "shard_loc": "Increases the amount of time incoming damage is reduced to %damage_reduction_duration% seconds. When Fowl Play is triggered, Shadow Shaman becomes invulnerable for %invuln_duration% seconds and %ally_chicken_images_count% additional uncontrollable chickens are created that last for %ally_voodoo_duration% seconds. While Shadow Shaman is transformed, he can now use items.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -930,7 +930,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1126,15 +1126,15 @@
       "id": 5081,
       "name": "shadow_shaman_mass_serpent_ward",
       "name_loc": "Mass Serpent Ward",
-      "desc_loc": "Призывает %ward_count% невосприимчивых к магии змеиных тотемов, атакующих врагов и постройки. Крипы наносят тотемам в два раза меньше урона.",
-      "lore_loc": "Заклинание змей было важным элементом в выступлениях Расты. Теперь же змеи беспрекословно выполняют его приказы.",
+      "desc_loc": "Summons %ward_count% Serpent Wards to attack enemy units and structures. The Wards are immune to magic. Creeps deal half damage to the Serpent Ward.",
+      "lore_loc": "Snake charming was a big part of the Shadow Shaman's act; now Rhasta can empower the snakes to do his bidding.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Способность создаёт один гигантский змеиный тотем. Его урон увеличен в %mega_ward_multiplier_damage% раз, а здоровье и награда — в %mega_ward_multiplier_health% раз."
+        "Summons a single massive Serpent Ward with %mega_ward_multiplier_damage%x damage and %mega_ward_multiplier_health%x health and bounty values."
       ],
       "type": 1,
       "behavior": "48",
@@ -1220,7 +1220,7 @@
             45
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1254,7 +1254,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "АТАК ДЛЯ УБИЙСТВА ТОТЕМА:",
+          "heading_loc": "HITS TO DESTROY:",
           "bonuses": [
             {
               "name": "special_bonus_unique_shadow_shaman_1",
@@ -1279,7 +1279,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "АТАК ДЛЯ УБИЙСТВА ТОТЕМА:",
+          "heading_loc": "HITS TO DESTROY:",
           "bonuses": [
             {
               "name": "special_bonus_unique_shadow_shaman_1",
@@ -1426,7 +1426,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ТОТЕМА:",
+          "heading_loc": "WARD DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1530,7 +1530,7 @@
     {
       "id": 468,
       "name": "special_bonus_unique_shadow_shaman_6",
-      "name_loc": "+{s:bonus_total_damage} к суммарному урону от Shackles",
+      "name_loc": "+{s:bonus_total_damage} Shackles Total Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1593,7 +1593,7 @@
     {
       "id": 6926,
       "name": "special_bonus_mp_regen_175",
-      "name_loc": "+{s:value} маны в секунду",
+      "name_loc": "+{s:value} Mana Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1674,7 +1674,7 @@
     {
       "id": 793,
       "name": "special_bonus_unique_shadow_shaman_8",
-      "name_loc": "+{s:bonus_bonus_attack_range} к дальн. атаки тотемов от Mass Serpent Ward",
+      "name_loc": "+{s:bonus_bonus_attack_range} Serpent Wards Attack Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1737,7 +1737,7 @@
     {
       "id": 760,
       "name": "special_bonus_unique_shadow_shaman_7",
-      "name_loc": "Hex накладывает истощение",
+      "name_loc": "Hex Breaks",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1800,7 +1800,7 @@
     {
       "id": 6295,
       "name": "special_bonus_unique_shadow_shaman_2",
-      "name_loc": "+{s:bonus_channel_time} сек. действия Shackles",
+      "name_loc": "+{s:bonus_channel_time}s Shackles Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1863,7 +1863,7 @@
     {
       "id": 6052,
       "name": "special_bonus_unique_shadow_shaman_1",
-      "name_loc": "+{s:bonus_hits_to_destroy_tooltip}% к атакам для убийства тотема от Mass Serpent Ward",
+      "name_loc": "+{s:bonus_hits_to_destroy_tooltip}% Serpent Wards Max HP",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1926,7 +1926,7 @@
     {
       "id": 6502,
       "name": "special_bonus_unique_shadow_shaman_3",
-      "name_loc": "+{s:bonus_damage} к урону от Ether Shock",
+      "name_loc": "+{s:bonus_damage} Ether Shock Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1989,7 +1989,7 @@
     {
       "id": 6521,
       "name": "special_bonus_unique_shadow_shaman_4",
-      "name_loc": "+{s:bonus_bonus_attack_targets} цель атаки тотемов от Mass Serpent Ward",
+      "name_loc": "+{s:bonus_bonus_attack_targets} Ward Attack Targets",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2057,10 +2057,10 @@
           "id": 1544,
           "name": "shadow_shaman_voodoo_hands",
           "name_loc": "Chicken Fingers",
-          "desc_loc": "Следующая атака по вражескому герою превратит его в курицу на %voodoo_duration% сек.",
-          "lore_loc": "Даже кратчайший миг в облике курицы даёт несостоявшимся агрессорам шанс серьёзно задуматься над своим поведением.",
+          "desc_loc": "Your next attack on an enemy hero transforms them into a chicken for %voodoo_duration%s.",
+          "lore_loc": "Even a brief moment as a chicken is long enough to make most would-be aggressors rethink their mark.",
           "notes_loc": [
-            "Таланты, усиливающие способность Hex, действуют и на этот эффект."
+            "Talents that affect Hex also affects enemies transformed by Chicken Fingers."
           ],
           "shard_loc": "",
           "scepter_loc": "",

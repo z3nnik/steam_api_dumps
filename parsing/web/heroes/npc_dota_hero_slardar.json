@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_slardar",
   "order_id": 25,
   "name_loc": "Slardar",
-  "bio_loc": "Слардар из рода змееногих, один из обитателей глубин, охраняет обширную сеть затонувших городов и скрытых ими древних ценностей. Он стоит на страже потайных сокровищниц, скрытых в бессветной пучине, и неусыпно охраняет их от подводных воров, посланных на морское дно алчными магами с поверхности. Страж верен своей службе как никто, а за его молчаливостью скрыто знание всех тайных морских проходов. Несмотря на жгучий свет, он поднимается на мелководье, чтобы разведать, не сговаривается ли кто против моря, — а иногда и чтобы расправиться с теми немногими, кто всё же обворовал затонувшую сокровищницу. Проведённое под огромным давлением морской толщи время сделало из змееногого стража существо невероятной мощи.",
-  "hype_loc": "Всегда готовый найти и сокрушить врагов Slardar шустро вползает в битву. <b>Раскрыв расположение противника</b> и разрушив его броню, он сокращает расстояние до жертвы и держит её на месте сокрушительными водными всплесками и оглушающими ударами своего внушительного трезубца.",
-  "npe_desc_loc": "Преследует, ослабляет и оглушает врагов",
+  "bio_loc": "Slardar is a Slithereen, one of the Deep Ones, guardian of a vast network of sunken cities and the ancient riches buried within them. In the lightless gulf of the deepest ocean abysses, the Slithereen Guard patrols secret treasure rooms, ever vigilant against the subaqueous thieves sent into the deeps by covetous dryland sorcerers. He is utterly loyal, and his taciturn nature hides deep knowledge of the most secret places of the sea. He rises to the shallows in spite of the pain caused him by brightness, to commit reconnaissance, to make sure no one is conspiring against the depths, and sometimes in relentless pursuit of the rare few who manage to steal off with an item from the Sunken Treasury. Because he has spent his whole life at great pressure, under tremendous weight of the sea, Slardar the Slithereen Guard is a creature of immense power.",
+  "hype_loc": "Ready to find and demolish his foes, Slardar quickly slithers into battle. After <b>exposing an enemy's position</b> and shattering their defenses, he closes the distance to lock them in place with crushing blows and powerful bashes from his trident.",
+  "npe_desc_loc": "Chases down his enemies to weaken and bash them",
   "facets": [
     {
       "color": 0,
       "title_loc": "Leg Day",
-      "description_loc": "В начале действия способность Guardian Sprint даёт сопротивление замедлениям и ускоряет передвижение ещё сильнее.",
+      "description_loc": "Slardar has slow resistance and even more movement speed at the beginning of Guardian Sprint.",
       "name": "slardar_leg_day",
       "icon": "speed",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 4,
       "title_loc": "Brineguard",
-      "description_loc": "Владелец Corrosive Haze получает {s:bonus_armor_pct}% от брони, отнятой у врагов этой способностью.",
+      "description_loc": "Corrosive Haze increases Slardar's armor by {s:bonus_armor_pct}% of the total armor reduced.",
       "name": "slardar_brineguard",
       "icon": "armor",
       "gradient_id": 1,
@@ -66,15 +66,15 @@
       "id": 5114,
       "name": "slardar_sprint",
       "name_loc": "Guardian Sprint",
-      "desc_loc": "Герой стремительно скользит, передвигаясь значительно быстрее и проходя сквозь других существ.",
-      "lore_loc": "Мощный хвост змееногого стража, привыкший к морским глубинам, носит его и на суше.",
+      "desc_loc": "Slardar slithers ahead, moving significantly faster and passing through units.",
+      "lore_loc": "As Slardar has made the transition from the Deeps, it has been necessary to use his powerful tail for sprinting instead of swimming.",
       "notes_loc": [
-        "Не останавливает прерываемые заклинания."
+        "Activating this skill doesn't interrupt channeling abilities."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "В начале действия способность Guardian Sprint даёт сопротивление замедлениям и ускоряет передвижение ещё сильнее.",
+        "Slardar has slow resistance and even more movement speed at the beginning of Guardian Sprint.",
         ""
       ],
       "type": 0,
@@ -128,7 +128,7 @@
             34
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -145,7 +145,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slardar_7",
@@ -168,7 +168,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ПЕРВИЧНЫЙ БОНУС К СКОРОСТИ:",
+          "heading_loc": "SPEED BURST MOVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -206,7 +206,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПЕРВИЧНОГО БОНУСА:",
+          "heading_loc": "SPEED BURST DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -225,7 +225,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "СОПРОТИВЛЕНИЕ ЗАМЕДЛЕНИЯМ:",
+          "heading_loc": "SLOW RESISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -293,11 +293,11 @@
       "id": 5115,
       "name": "slardar_slithereen_crush",
       "name_loc": "Slithereen Crush",
-      "desc_loc": "Бьёт по земле, создавая небольшой пруд, оглушая наземных врагов неподалёку и нанося им урон. После оглушения враги будут замедлены.",
-      "lore_loc": "Мощь воды вкупе с её быстротой пробьёт даже самую сильную защиту.",
+      "desc_loc": "Slams the ground, leaving a puddle of water, and stunning and damaging nearby enemy units.  After the stun, the affected units are slowed.",
+      "lore_loc": "A swift crush of might and water breaks even the toughest of defenses.",
       "notes_loc": [],
-      "shard_loc": "Способность ненадолго накладывает на жертв эффект Corrosive Haze.",
-      "scepter_loc": "Увеличивает радиус и длительность пруда.",
+      "shard_loc": "Slithereen Crush now applies Corrosive Haze for a short time to units affected.",
+      "scepter_loc": "Increases Slithereen Crush puddle radius and duration.",
       "facets_loc": [
         "",
         ""
@@ -344,7 +344,7 @@
             325
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -364,7 +364,7 @@
             -35
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -384,7 +384,7 @@
             -35
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -404,7 +404,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -421,7 +421,7 @@
             0.8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slardar_slithereen_crush_stun",
@@ -444,7 +444,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРУДА:",
+          "heading_loc": "PUDDLE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -463,7 +463,7 @@
             325
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПРУДА:",
+          "heading_loc": "PUDDLE RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -485,7 +485,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slardar",
@@ -508,7 +508,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ CORROSIVE HAZE:",
+          "heading_loc": "HAZE DURATION:",
           "bonuses": [],
           "values_shard": [
             5
@@ -615,10 +615,10 @@
       "id": 5116,
       "name": "slardar_bash",
       "name_loc": "Bash of the Deep",
-      "desc_loc": "После каждых %attack_count% атак герой оглушит и нанесёт дополнительный урон своей следующей атакой.",
-      "lore_loc": "Любой, кто посягнёт на сокровища глубин, встретится лицом к лицу с их беспощадным змееногим стражем.",
+      "desc_loc": "After %attack_count% attacks, your next attack will bash the target.",
+      "lore_loc": "Thieves of the wealth of the Deep Ones meet the brutality of the Slithereen Guard in melee combat.",
       "notes_loc": [
-        "Не сочетается с эффектом от предмета Skull Basher."
+        "Does not stack with Skull Basher."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -671,7 +671,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slardar_2",
@@ -694,7 +694,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "BASH DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -740,11 +740,11 @@
       "id": 1253,
       "name": "slardar_seaborn_sentinel",
       "name_loc": "Seaborn Sentinel",
-      "desc_loc": "Скорость передвижения, восстановление здоровья и броня героя увеличиваются, когда он находится в реке, в пруду или на водном следе.",
+      "desc_loc": "Slardar gains bonus movement speed, health regeneration, attack damage, and armor while in a puddle, trail, or river.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает восстановление здоровья, броню и сопротивление эффектам в реке, на водном следе и в пруду. Также увеличивает радиус пруда и водного следа на %scepter_puddle_radius_tooltip%, а их длительность — на %scepter_puddle_duration_increase_tooltip% сек.",
+      "scepter_loc": "Provides additional HP Regen, Armor and Status Resistance while in a puddle, trail, or river. Increases puddle/trail radius by %scepter_puddle_radius_tooltip% and puddle/trail duration by %scepter_puddle_duration_increase_tooltip%s.",
       "facets_loc": [
         "",
         ""
@@ -791,7 +791,7 @@
             18
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -811,7 +811,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:",
+          "heading_loc": "HP REGEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -833,7 +833,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. БРОНЯ:",
+          "heading_loc": "BONUS ARMOR:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -852,7 +852,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СОПРОТИВЛЕНИЕ ЭФФЕКТАМ:",
+          "heading_loc": "STATUS RESISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -874,7 +874,7 @@
             32
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slardar_6",
@@ -943,14 +943,14 @@
       "id": 5117,
       "name": "slardar_amplify_damage",
       "name_loc": "Corrosive Haze",
-      "desc_loc": "Уменьшает сопротивление цели физическому урону, даёт по ней обзор и раскрывает её невидимость. Жертва оставляет за собой водный след.",
-      "lore_loc": "Даже самая крепкая броня тает под натиском солёных вод океана.",
+      "desc_loc": "Reduces enemy armor to amplify physical damage and provides True Sight and vision of the targeted unit, revealing invisibility. The enemy unit leaves a trail of water behind it.",
+      "lore_loc": "Even the strongest armor counts for little when left to the brine of the sea.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Владелец Corrosive Haze получает %armor_pct%%% от брони, отнятой у врагов этой способностью."
+        "Corrosive Haze increases Slardar's armor by %armor_pct%%% of the total armor reduced."
       ],
       "type": 1,
       "behavior": "8",
@@ -996,7 +996,7 @@
             -20
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ:",
+          "heading_loc": "ARMOR REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_slardar_5",
@@ -1019,7 +1019,7 @@
             18
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1057,7 +1057,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС СЛЕДА:",
+          "heading_loc": "TRAIL RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1076,7 +1076,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ СЛЕДА:",
+          "heading_loc": "TRAIL DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1214,7 +1214,7 @@
     {
       "id": 852,
       "name": "special_bonus_unique_slardar_7",
-      "name_loc": "+{s:bonus_duration} сек. действия Guardian Sprint",
+      "name_loc": "+{s:bonus_duration}s Guardian Sprint Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1276,7 +1276,7 @@
     {
       "id": 695,
       "name": "special_bonus_unique_slardar_6",
-      "name_loc": "+{s:bonus_river_damage} к дополнительному урону от Seaborn Sentinel",
+      "name_loc": "+{s:bonus_river_damage} Seaborn Sentinel Bonus Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1338,7 +1338,7 @@
     {
       "id": 5993,
       "name": "special_bonus_hp_300",
-      "name_loc": "+{s:value} к здоровью",
+      "name_loc": "+{s:value} Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1418,7 +1418,7 @@
     {
       "id": 6889,
       "name": "special_bonus_unique_slardar_2",
-      "name_loc": "+{s:bonus_bonus_damage} к урону от Bash of the Deep",
+      "name_loc": "+{s:bonus_bonus_damage} Bash of the Deep Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1480,7 +1480,7 @@
     {
       "id": 6211,
       "name": "special_bonus_unique_slardar",
-      "name_loc": "+{s:bonus_crush_damage} к урону от Slithereen Crush",
+      "name_loc": "+{s:bonus_crush_damage} Slithereen Crush Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1542,7 +1542,7 @@
     {
       "id": 504,
       "name": "special_bonus_unique_slardar_5",
-      "name_loc": "+{s:bonus_armor_reduction} к снижению брони от Corrosive Haze",
+      "name_loc": "-{s:bonus_armor_reduction} Corrosive Haze Armor",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1604,7 +1604,7 @@
     {
       "id": 7871,
       "name": "special_bonus_unique_slardar_4",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Slithereen Crush",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Slithereen Crush Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1666,7 +1666,7 @@
     {
       "id": 6890,
       "name": "special_bonus_unique_slardar_3",
-      "name_loc": "Эффект от Corrosive Haze нельзя развеять",
+      "name_loc": "Corrosive Haze Undispellable",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

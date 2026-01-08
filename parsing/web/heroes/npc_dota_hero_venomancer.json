@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_venomancer",
   "order_id": 30,
   "name_loc": "Venomancer",
-  "bio_loc": "В Кислотных джунглях острова Джиди всякая ползучая, летучая или ходячая тварь содержит в себе яд — он бурлит в венах и пузырится в желудках, и ядовитые звери прыгают с одного токсичного дерева на другое по лианам брызжущим разъедающей кислотой. Но даже во всём этом ядовитом безумии одно существо считается гораздо опаснее всех местных обитателей. Много лет назад залив Фраджи на своей лодчонке пересёк травник по имени Лисейл. Он прибыл на опасный остров в поисках полезных экстрактов, добываемых из корней и коры местной флоры, но нашёл лишь жестокую судьбу. Зайдя на десять километров вглубь джунглей, Лисейл набрёл на искомый эпифит. Только растение оказалось замаскированным ящером, который сразу укусил потянувшуюся к нему руку. Травник отчаянно бросился делать из местных растений антидот, благо знаний хватало: нужно лишь смешать яд свежезадушенной рептилии с нектаром броненосной орхидеи. За считанные мгновения до полного паралича Лисейл ввёл себе антидот через шип орхидеи и впал в кому.\r\n\t\t\t\t<br><br>Семнадцать лет спустя что-то зашевелилось под многолетним слоем перегноя — но то был уже не травник Лисейл. То был Лисейл-смертоносец, веномант. Его сознание хоть и сохранилось, но необратимо исказилось, а старая плоть перегнила в новую материю — живую ткань, в которой смешались яд той рептилии и токсичная оболочка броненосной орхидеи. Так родился новый повелитель Кислотных джунглей, которого в скором времени уважали и боялись даже самые свирепые хищники. Но небольшой остров оказался недостаточно велик для веноманта — отголоски человеческих страстей повели Лисейла прочь, на поиски новых смертоносных токсинов и достойных жертв.",
-  "hype_loc": "Venomancer несёт своим врагам медленную смерть. Он взращивает <b>бесконечную армию прыскающих ядом защитников</b>, а стоит неприятелям показаться рядом, он выпускает огромное <b>облако яда</b>, надолго ослабляющего недругов.",
-  "npe_desc_loc": "Наносит периодический урон ядовитыми атаками",
+  "bio_loc": "In the Acid Jungles of Jidi Isle, poison runs in the veins and bubbles in the guts of every creature that scuttles, climbs or swoops between fluorescent vines dripping with caustic sap. Yet even in this toxic menagerie, Venomancer is acknowledged as the most venomous. Ages ago, an Herbalist named Lesale crossed the Bay of Fradj by coracle, searching for potent essences that might be extracted from bark and root, and found instead a nightmare transformation. Two leagues into Jidi's jungle, Lesale encountered a reptile camouflaged as an epiphyte, which stung him as he mistakenly plucked it. In desperation, he used his partial knowledge of the jungle's herbal bounty, mixing the venom of the (swiftly throttled) reptile with the nectar of an armored orchid, to compound an antidote. In the moments before a black paralysis claimed him completely, he injected himself by orchid-thorn, and instantly fell into a coma.\r\n\t\t\t\t<br><br>Seventeen years later, something stirred in the spot where he had fallen, throwing off the years' accumulation of humus: Venomancer. Lesale the Herbalist no longer--but Lesale the Deathbringer. His mind was all but erased, and his flesh had been consumed and replaced by a new type of matter--one fusing the venom of the reptile with the poisonous integument of the orchid. Jidi's Acid Jungles knew a new master, one before whom even the most vicious predators soon learned to bow or burrow for their lives. The lurid isle proved too confining, and some human hunger deep in the heart of the Venomancer drove Lesale out in search of new poisons--and new deaths to bring.",
+  "hype_loc": "Venomancer brings slow death to his enemies. Sprouting an <b>endless army of toxin-spitting watchers</b> to defend his territory, should foes draw near he can release a massive <b>cloud of lingering poison</b> to weaken enemies.",
+  "npe_desc_loc": "Deals damage over time with venomous attacks",
   "facets": [
     {
       "color": 2,
       "title_loc": "Patient Zero",
-      "description_loc": "Зараза от способности Noxious Plague распространяется дважды.",
+      "description_loc": "Noxious Plague spreads again.",
       "name": "venomancer_patient_zero",
       "icon": "snot",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 1,
       "title_loc": "Plague Carrier",
-      "description_loc": "Venomous Gale cоздаёт {s:bonus_num_created_wards_tooltip} чумных тотема от способности Plague Ward вокруг задетых снарядом вражеских героев. Добавляет урон от способности Septic Shock к урону тотемов.",
+      "description_loc": "When Venomous Gale impacts enemy heroes, {s:bonus_num_created_wards_tooltip} Plague Wards are created around them. Plague Wards also deal Septic Shock damage based on their attack damage.",
       "name": "venomancer_plague_carrier",
       "icon": "summons",
       "gradient_id": 0,
@@ -66,18 +66,18 @@
       "id": 5178,
       "name": "venomancer_venomous_gale",
       "name_loc": "Venomous Gale",
-      "desc_loc": "Выплёвывает в указанном направлении ядовитый шар, который наносит урон всем задетым врагам и отравляет их. Поражённые цели медленнее передвигаются, а также получают урон каждые 3 секунды действия способности.",
-      "lore_loc": "Смесь различных жал, ядов и токсинов, найденных в лесах острова Джиди, обычно выживших не оставляет.",
+      "desc_loc": "Launches a ball of venom in a line, poisoning enemy units so that they take both initial damage and damage over time, as well as suffering slowed movement.  Venomous Gale deals damage every 3 seconds over its duration.",
+      "lore_loc": "A concoction of various stings, poisons, and toxins gathered from the jungles of Jidi Isle, victims surviving it are rare.",
       "notes_loc": [
-        "Урон от этой способности может убить.",
-        "Периодический урон наносится каждые %tick_interval% сек.",
-        "Замедление начинается с %movement_slow%%% и постепенно уменьшается."
+        "Venomous Gale can be lethal.",
+        "Duration damage is dealt every %tick_interval% seconds.",
+        "Slow starts at %movement_slow%%%, and decreases as time passes."
       ],
-      "shard_loc": "Если эффект этой способности развеется любым способом, жертва получит %explosion_damage% урона и будет оглушена на %explosion_stun_duration% сек.",
+      "shard_loc": "If Venomous Gale is dispelled in any way, the target will receive %explosion_damage% damage and be stunned for %explosion_stun_duration% seconds.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Снаряд создаёт вокруг задетых вражеских героев %num_created_wards_tooltip% чумных тотема от способности Plague Ward текущего уровня, имеющих %ward_hp_dmg_pct%%% здоровья и урона."
+        "When Venomous Gale impacts enemy heroes, %num_created_wards_tooltip% Plague Wards that have %ward_hp_dmg_pct%%% health and damage are created around them based on the current level of Plague Ward."
       ],
       "type": 0,
       "behavior": "48",
@@ -130,7 +130,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -150,7 +150,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ ПОПАДАНИЯ:",
+          "heading_loc": "INITIAL DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -170,7 +170,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРИОДИЧЕСКИЙ УРОН:",
+          "heading_loc": "DAMAGE PER TICK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -207,7 +207,7 @@
             -50
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -428,11 +428,11 @@
       "id": 5179,
       "name": "venomancer_poison_sting",
       "name_loc": "Poison Sting",
-      "desc_loc": "Добавляет в обычные атаки героя яд, который наносит периодический урон и снижает скорость передвижения жертвы.",
-      "lore_loc": "Лисейл перенял парализующий токсин существа, вызвавшего его трансформацию.",
+      "desc_loc": "Adds poison damage to Venomancer's normal attacks and slowing movement speed.",
+      "lore_loc": "The paralytic sting of the creature which caused his transformation now belongs to the Venomancer.",
       "notes_loc": [
-        "Урон от этой способности может убить.",
-        "Урон от этой способности не прерывает лечение предметами и не запрещает использовать Blink Dagger."
+        "Poison Sting damage can be lethal.",
+        "Damage from Poison Sting does not interrupt healing from items, nor does it activate the cooldown on Blink Dagger."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -485,7 +485,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -505,7 +505,7 @@
             32
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -525,7 +525,7 @@
             -14
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_venomancer_2",
@@ -581,8 +581,8 @@
       "id": 5180,
       "name": "venomancer_plague_ward",
       "name_loc": "Plague Ward",
-      "desc_loc": "Призывает чумной тотем, атакующий вражеских существ и сооружения. Тотем невосприимчив к магии. Он имеет текущий уровень способности Poison Sting, нанося 50% от её урона.",
-      "lore_loc": "Сочетание давних талантов травника и новообретённых умений в приготовлении ядов становится живым воплощением чумы.",
+      "desc_loc": "Summons a plague ward to attack enemy units and structures. The ward is immune to magic. Wards gain the Poison Sting level from Venomancer, dealing 50% of the full damage.",
+      "lore_loc": "A mixture of his old herbalist talents and newfound toxic mastery creates a living embodiment of plague.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -655,7 +655,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -721,7 +721,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ ТОТЕМА:",
+          "heading_loc": "WARD HP:",
           "bonuses": [
             {
               "name": "special_bonus_unique_venomancer",
@@ -747,7 +747,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ТОТЕМА:",
+          "heading_loc": "WARD DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_venomancer",
@@ -842,16 +842,16 @@
       "id": 1457,
       "name": "venomancer_sepsis",
       "name_loc": "Septic Shock",
-      "desc_loc": "Атаки героя по врагам, имеющим отрицательные эффекты от его способностей или чумных тотемов, наносят больше урона за каждый такой эффект на жертве. Дополнительный урон от атак является магическим.",
+      "desc_loc": "Venomancer's attacks deal extra damage based on how many debuffs the attack target has. Extra damage is dealt as magical damage. Only counts debuffs from Venomancer or his Plague Wards.",
       "lore_loc": "",
       "notes_loc": [
-        "Истощением отключается только дополнительный урон от атак героя."
+        "Break only disables the bonus damage for Venomancer's attacks."
       ],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает базовый урон за каждый отрицательный эффект.",
+      "scepter_loc": "Increases base damage per debuff.",
       "facets_loc": [
         "",
-        "Чумные тотемы также получают эту способность и наносят урон, зависящий от их атаки."
+        "Plague Wards also deal Septic Shock damage based on their attack damage."
       ],
       "type": 0,
       "behavior": "66",
@@ -895,7 +895,7 @@
             8
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. БАЗОВЫЙ УРОН ЗА ЭФФЕКТ:",
+          "heading_loc": "BASE DAMAGE PER DEBUFF:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -945,13 +945,13 @@
       "id": 1105,
       "name": "venomancer_noxious_plague",
       "name_loc": "Noxious Plague",
-      "desc_loc": "Накладывает на врага смертоносную заразу, которая наносит начальный урон, а затем наносит урон в зависимости от максимального здоровья цели. Зараза замедляет жертву и врагов рядом с ней — чем они ближе, тем замедление сильнее. Когда жертва умирает или действие способности заканчивается, все враги неподалёку получают такой же эффект заразы, который не передаётся другим существам.",
-      "lore_loc": "В самом сердце джунглей Джиди обильно прорастают семена погибели.",
+      "desc_loc": "Infects an enemy with a deadly plague that does an initial burst of damage and additional damage over time based on the unit's maximum health. The plague slows the target and nearby enemies based on their distance to the target. When the target dies or the debuff expires, all nearby enemies are infected with a noncommunicable version of the plague.",
+      "lore_loc": "Deep in the heart of the jungles of Jidi, the seeds of extermination freely grow.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Зараза распространяется %spread_count% раза. После первого распространения начальный урон уменьшается на %impact_damage_reduce%%%.",
+        "Noxious Plague spreads %spread_count% times. Impact damage for spreads after the first one is reduced by %impact_damage_reduce%%%.",
         ""
       ],
       "type": 1,
@@ -1000,7 +1000,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1019,7 +1019,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "НАЧАЛЬНЫЙ УРОН:",
+          "heading_loc": "INITIAL DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1038,7 +1038,7 @@
             5
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "MAX HP AS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_venomancer_4",
@@ -1061,7 +1061,7 @@
             800
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ЭФФЕКТА:",
+          "heading_loc": "DEBUFF RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1078,7 +1078,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "MAX SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1095,7 +1095,7 @@
             15
           ],
           "is_percentage": true,
-          "heading_loc": "МИН. ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "MIN SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1171,7 +1171,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ СНАРЯДА:",
+          "heading_loc": "PROJECTILE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1273,7 +1273,7 @@
     {
       "id": 6979,
       "name": "special_bonus_unique_venomancer_3",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Venomous Gale",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Venomous Gale CD",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1335,7 +1335,7 @@
     {
       "id": 859,
       "name": "special_bonus_unique_venomancer_poisonsting_regen_reduction",
-      "name_loc": "Poison Sting снижает восст. здоровья на {s:bonus_hp_regen_reduction}%",
+      "name_loc": "{s:bonus_hp_regen_reduction}% Poison Sting Health Regen Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1397,7 +1397,7 @@
     {
       "id": 811,
       "name": "special_bonus_unique_venomancer_8",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Plague Ward",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Plague Ward Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1459,7 +1459,7 @@
     {
       "id": 6532,
       "name": "special_bonus_unique_venomancer_2",
-      "name_loc": "+{s:bonus_movement_speed}% к замедлению от Poison Sting",
+      "name_loc": "+{s:bonus_movement_speed}% Poison Sting Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1521,7 +1521,7 @@
     {
       "id": 6980,
       "name": "special_bonus_unique_venomancer_4",
-      "name_loc": "+{s:bonus_health_damage}% к урону от макс. здоровья у Noxious Plague",
+      "name_loc": "+{s:bonus_health_damage}% Noxious Plague Max HP Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1583,7 +1583,7 @@
     {
       "id": 548,
       "name": "special_bonus_attack_base_damage_50",
-      "name_loc": "+{s:value} к базовому урону",
+      "name_loc": "+{s:value} Base Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1663,7 +1663,7 @@
     {
       "id": 6981,
       "name": "special_bonus_unique_venomancer_5",
-      "name_loc": "Аура Noxious Plague замедляет атаку на {s:bonus_attack_slow}",
+      "name_loc": "Noxious Plague Aura reduces {s:bonus_attack_slow} Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1725,7 +1725,7 @@
     {
       "id": 6058,
       "name": "special_bonus_unique_venomancer",
-      "name_loc": "Здоровье/урон чумных тотемов больше в {s:bonus_ward_hp_tooltip} раза",
+      "name_loc": "{s:bonus_ward_hp_tooltip}x Plague Ward HP/Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

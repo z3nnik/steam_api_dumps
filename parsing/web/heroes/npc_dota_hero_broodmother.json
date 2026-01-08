@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_broodmother",
   "order_id": 53,
   "name_loc": "Broodmother",
-  "bio_loc": "Веками чёрная паучиха Арахния скрывалась в тёмных лавовых туннелях под тлеющими кратерами горы Пиротей, взращивая миллионы паучков и отправляя их охотиться на поверхности. Однажды визирь жадности Фолопталис воздвиг на склоне этого потухшего вулкана свой магнетитовый зиккурат, прекрасно зная: любым грабителям, что ищут его притягательные богатства, сначала придётся пройти через паучьи владения. \r\n\t\t\t\t<br><br>Тысячелетию материнского спокойствия пришёл конец: гору непрерывно осаждали мохноноги и воришки, смелые рыцари и благородные юноши — несомненно, очень питательные, но всё же мешающие воспитывать невинное паучье потомство. Устав от вторжений, Арахния нанесла Фолопталису визит, а когда тот отказался уступить, паучиха затянула его в шёлковый кокон и отложила до особого пира в честь дня рождения.\r\n\t\t\t\t<br><br>К несчастью, опустевший зиккурат лишь привлёк новых охотников за наживой. Когда один из паучков попал под ноги неуклюжего наглеца, материнскому терпению пришёл конец. Арахния направилась на поверхность и объявила: она избавит мир от каждого вредителя, вплоть до самого последнего героя — пока не убедится, что её драгоценные паучата растут в безопасности.",
-  "hype_loc": "Скользя по своей паутине, Broodmother взращивает <b>армию пауков</b>, которые вместе с её командой наступают на базу врага. Если на пути встречается жертва, паучиха присоединяется к своим отпрыскам и нападает, <b>замедляя врагов</b> ядовитыми укусами и утоляя свой животный голод.",
-  "npe_desc_loc": "Охотится на врагов со своей паучьей армией",
+  "bio_loc": "For centuries, Black Arachnia the Broodmother lurked in the dark lava tubes beneath the smoldering caldera of Mount Pyrotheos, raising millions of spiderlings in safety before sending them to find prey in the wide world above. In a later age, the Vizier of Greed, Ptholopthales, erected his lodestone ziggurat on the slopes of the dead volcano, knowing that any looters who sought his magnetic wealth must survive the spider-haunted passages.\r\n\t\t\t\t<br><br>After millennia of maternal peace, Black Arachnia found herself beset by a steady trickle of furfeet and cutpurses, bold knights and noble youths--all of them delicious, certainly, and yet tending to create a less than nurturing environment for her innocent offspring. Tiring of the intrusions, she paid a visit to Ptholopthales; and when he proved unwilling to discuss a compromise, she wrapped the Vizier in silk and set him aside to be the centerpiece of a special birthday feast.\r\n\t\t\t\t<br><br>Unfortunately, the absence of the Magnetic Ziggurat's master merely emboldened a new generation of intruders. When one of her newborns was trodden underfoot by a clumsy adventurer, she reached the end of her silken rope. Broodmother headed for the surface, declaring her intent to rid the world of each and every possible invader, down to the last Hero if necessary, until she could ensure her nursery might once more be a safe and wholesome environment for her precious spiderspawn.",
+  "hype_loc": "Gliding along her webs, Broodmother births an <b>army of spiders</b> to lead her team's forces toward the enemy base. As prey wanders near, she joins her children and attacks, <b>slowing foes</b> with incapacitating bites as she indulges her insatiable hunger.",
+  "npe_desc_loc": "Hunts with her army of spiderlings",
   "facets": [
     {
       "color": 5,
       "title_loc": "Necrotic Webs",
-      "description_loc": "У врагов в паутине уменьшается пополнение здоровья.",
+      "description_loc": "Reduces health restoration of enemies on webs.",
       "name": "broodmother_necrotic_webs",
       "icon": "web",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Feeding Frenzy",
-      "description_loc": "Insatiable Hunger также действует на паучков неподалёку.",
+      "description_loc": "Insatiable Hunger also applies to nearby Spiderlings.",
       "name": "broodmother_feeding_frenzy",
       "icon": "summons",
       "gradient_id": 0,
@@ -66,14 +66,14 @@
       "id": 5282,
       "name": "broodmother_insatiable_hunger",
       "name_loc": "Insatiable Hunger",
-      "desc_loc": "Неистовая жажда питательных соков увеличивает урон от атак героя и наделяет его вампиризмом.",
-      "lore_loc": "Большинство своих жертв паучиха заплетает в шёлковые коконы и оставляет на пропитание выводку, но и сама она тоже любит полакомиться заплутавшими героями.",
+      "desc_loc": "A violent lust for vital fluids increases Broodmother's attack damage and gives her a vampiric attack.",
+      "lore_loc": "While most of her prey is wrapped in silken cocoons and saved for her young, the Broodmother herself has a taste for wandering heroes.",
       "notes_loc": [],
-      "shard_loc": "Пока эта способность действует, бонусный урон увеличивается на %shard_damage_per_tick%%% каждые %shard_damage_tick_interval% сек.",
+      "shard_loc": "While Hunger is active, the bonus damage is increased by %shard_damage_per_tick%%% every %shard_damage_tick_interval%s.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Insatiable Hunger также действует на паучков неподалёку."
+        "Insatiable Hunger also applies to nearby Spiderlings."
       ],
       "type": 0,
       "behavior": "4",
@@ -125,7 +125,7 @@
             70
           ],
           "is_percentage": true,
-          "heading_loc": "БОНУС К БАЗОВОМУ УРОНУ ОТ АТАК:",
+          "heading_loc": "BASE ATTACK DAMAGE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -145,7 +145,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ВАМПИРИЗМ:",
+          "heading_loc": "LIFESTEAL:",
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_6",
@@ -171,7 +171,7 @@
             14
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -247,7 +247,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "SPIDERLING RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -332,15 +332,15 @@
       "id": 5280,
       "name": "broodmother_spin_web",
       "name_loc": "Spin Web",
-      "desc_loc": "Герой сплетает паутину, в которой он быстрее передвигается и поворачивается, а также может проходить через препятствия.<br><br>Если новая паутина будет касаться старой, то её можно создать из любой точки карты. Длительность существования паутин не ограничена по времени, и их можно уничтожить вручную. Если превысить максимальное число паутин, то самая старая из них исчезнет.",
-      "lore_loc": "Сплетённое из блестящего волокна ложе оберегает паучиху и её потомство, а также служит дурным знаком для наступающих противников.",
+      "desc_loc": "Spins a large web that grants Broodmother a passive movement speed increase and increases her Turn Rate, while in its vicinity, as well as giving free movement.<br><br>Spin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears.",
+      "lore_loc": "Weaving a bed of silken fibers, Arachnia's web both protects her and her offspring, as well as giving advancing opponents a sense of foreboding.",
       "notes_loc": [
-        "Также действует на паучков."
+        "Also affects Spiderlings."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "У врагов в той же сети паутин, что и её владелец, уменьшается пополнение здоровья.",
+        "Reduces health restoration of enemies on webs that are in the same web network as Broodmother.",
         ""
       ],
       "type": 0,
@@ -405,7 +405,7 @@
             9
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ПАУТИН ОДНОВРЕМЕННО:",
+          "heading_loc": "MAX SIMULTANEOUS WEBS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -425,7 +425,7 @@
             46
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVESPEED BONUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_web_speed",
@@ -448,7 +448,7 @@
             0.2
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ ПОВОРОТА:",
+          "heading_loc": "BONUS TURN RATE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -468,7 +468,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ ПОПОЛНЕНИЯ ЗДОРОВЬЯ У ВРАГОВ:",
+          "heading_loc": "ENEMY RESTORATION REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -617,10 +617,10 @@
       "id": 5281,
       "name": "broodmother_incapacitating_bite",
       "name_loc": "Incapacitating Bite",
-      "desc_loc": "Яд героя ослабляет врагов, замедляя их, заставляя промахиваться при атаках и увеличивая урон, получаемый ими от атак.",
-      "lore_loc": "Клыки чёрной паучихи выделяют парализующие токсины, вызывая медленную и мучительную смерть у тех, кто угодил в её паутину.",
+      "desc_loc": "Broodmother's venom cripples enemy units, causing her attacks to slow and giving the affected unit a chance to miss its attacks and extra damage from attacks.",
+      "lore_loc": "Paralytic toxins come from Black Arachnia's fangs, causing a slow and painful death to those who intrude on her webs.",
       "notes_loc": [
-        "Шанс промаха складывается с шансом уворота от способностей и особенностей ландшафта."
+        "The miss chance stacks with evasion and terrain dodge chance."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -673,7 +673,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС ПРОМАХА:",
+          "heading_loc": "MISS CHANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_4",
@@ -699,7 +699,7 @@
             -30
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_4",
@@ -722,7 +722,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -742,7 +742,7 @@
             12
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ОТ АТАК:",
+          "heading_loc": "ATTACK BONUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_2",
@@ -777,8 +777,8 @@
       "id": 873,
       "name": "broodmother_sticky_snare",
       "name_loc": "Spinner's Snare",
-      "desc_loc": "Герой может создать до %count% невидимых линий из паутины в любом месте, где есть паутина от способности Spin Web. Если линию пересечёт вражеский герой, то на него сработает оцепенение, он начнёт получать периодический урон, а вся вражеская команда получит оповещение о срабатывании линии и сможет видеть жертву в тумане войны. Когда этот эффект закончится, то линия пропадёт, но до этого в неё могут попасться и другие герои.",
-      "lore_loc": "Даже по малейшему трепету паутины Арахния сможет отыскать свою жертву.",
+      "desc_loc": "Broodmother may create up to %count% invisible web lines touching any existing web. Enemy Heroes that cross the web line will spring the trap, becoming rooted, revealed in fog, and take damage over time.  Multiple Heroes can trip on the same line until it's destroyed after being initially triggered.  Broodmother's team is alerted via the minimap when an enemy has triggered the snare.",
+      "lore_loc": "The slightest tremor of her web is all Arachnia needs to find her prey.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -828,7 +828,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАДЕРЖКА ДО СОЗДАНИЯ:",
+          "heading_loc": "FORMATION DELAY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -845,7 +845,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ:",
+          "heading_loc": "ROOT DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -862,7 +862,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -896,7 +896,7 @@
             900
           ],
           "is_percentage": false,
-          "heading_loc": "ШИРИНА ЛИНИИ:",
+          "heading_loc": "WEB LINE WIDTH:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1010,7 +1010,7 @@
       "id": 1313,
       "name": "broodmother_spiders_milk",
       "name_loc": "Spider's Milk",
-      "desc_loc": "Убив любое существо, герой и подконтрольные ему существа в радиусе %kill_heal_aoe% получают эффект, раз в %tick_rate% сек. излечивающий их на долю от здоровья жертвы. Лечение считается вампиризмом и при срабатывании от крипов уменьшается на %kill_creeps_penalty%%%.",
+      "desc_loc": "Whenever Broodmother kills a unit, she and all units under her control in a %kill_heal_aoe% radius receive a buff that heals them for a percentage of the victims health every %tick_rate% seconds. Healing from creeps is reduced by %kill_creeps_penalty%%%.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1061,7 +1061,7 @@
             2
           ],
           "is_percentage": true,
-          "heading_loc": "ЛЕЧЕНИЕ ОТ ЗДОРОВЬЯ ГЕРОЯ:",
+          "heading_loc": "HERO HEALTH AS HEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1095,7 +1095,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1112,7 +1112,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "BUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1158,11 +1158,11 @@
       "id": 5279,
       "name": "broodmother_spawn_spiderlings",
       "name_loc": "Spawn Spiderlings",
-      "desc_loc": "Герой впрыскивает во врага свои яйца, наносит ему урон и замедляет его на %slow_duration% сек. Если жертва умрёт, находясь под действием этой способности, из её трупа появятся несколько паучков.",
-      "lore_loc": "Чёрная паучиха продолжает взращивать своё потомство даже на поле битвы. Выводок быстро понимает, как поддержать мать.",
+      "desc_loc": "Broodmother injects her young into an enemy unit, dealing damage and slowing them for %slow_duration% seconds. The spiderlings will hatch if the target is killed while under this influence.",
+      "lore_loc": "Black Arachnia continues to raise her young, even amidst the field of combat.  The brood quickly learns how to support their mother.",
       "notes_loc": [
-        "Если жертва умрёт в течение %buff_duration% сек. после попадания, на её месте появятся паучки.",
-        "Из существ, которые умрут от лап паучков, также появятся паучки."
+        "If the target is killed within %buff_duration% seconds of being hit with this skill, the Spiderlings will spawn.",
+        "Units killed by Spiderlings will then give birth to additional Spiderlings."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1234,7 +1234,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ ПАУЧКОВ:",
+          "heading_loc": "LIFETIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1253,7 +1253,7 @@
             420
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_3",
@@ -1318,7 +1318,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ПАУЧКОВ:",
+          "heading_loc": "COUNT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1352,7 +1352,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ ПАУЧКОВ:",
+          "heading_loc": "SPIDERLINGS HP:",
           "bonuses": [
             {
               "name": "special_bonus_unique_broodmother_7",
@@ -1394,7 +1394,7 @@
             45
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1494,7 +1494,7 @@
     {
       "id": 6361,
       "name": "special_bonus_unique_broodmother_3",
-      "name_loc": "+{s:bonus_damage} к урону от Spawn Spiderlings",
+      "name_loc": "+{s:bonus_damage} Spawn Spiderlings Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1556,7 +1556,7 @@
     {
       "id": 900,
       "name": "special_bonus_unique_broodmother_6",
-      "name_loc": "+{s:bonus_lifesteal_pct}% к вампиризму от Insatiable Hunger",
+      "name_loc": "+{s:bonus_lifesteal_pct}% Insatiable Hunger Lifesteal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1618,7 +1618,7 @@
     {
       "id": 6258,
       "name": "special_bonus_unique_broodmother_2",
-      "name_loc": "+{s:bonus_attack_damage} к доп. урону от атак у Incapacitating Bite",
+      "name_loc": "+{s:bonus_attack_damage} Incapacitating Bite Attack Bonus",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1680,7 +1680,7 @@
     {
       "id": 1039,
       "name": "special_bonus_unique_broodmother_7",
-      "name_loc": "+{s:bonus_hp_bonus} к здоровью паучков",
+      "name_loc": "+{s:bonus_hp_bonus} Spiderlings Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1742,7 +1742,7 @@
     {
       "id": 8033,
       "name": "special_bonus_unique_broodmother_5",
-      "name_loc": "–{s:bonus_AbilityChargeRestoreTime} сек. восстановления заряда Spin Web",
+      "name_loc": "-{s:bonus_AbilityChargeRestoreTime}s Spin Web Charge Restore Time",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1804,7 +1804,7 @@
     {
       "id": 6362,
       "name": "special_bonus_unique_broodmother_4",
-      "name_loc": "+{s:bonus_miss_chance}% к замедл. и промахам от Incapacitating Bite",
+      "name_loc": "+{s:bonus_miss_chance}% Incapacitating Bite Slow/Miss Chance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1866,7 +1866,7 @@
     {
       "id": 6257,
       "name": "special_bonus_unique_broodmother_1",
-      "name_loc": "Insatiable Hunger снижает интервал атак на {s:bonus_bat_bonus} сек.",
+      "name_loc": "-{s:bonus_bat_bonus}s BAT during Insatiable Hunger",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1928,7 +1928,7 @@
     {
       "id": 1704,
       "name": "special_bonus_unique_broodmother_web_speed",
-      "name_loc": "+{s:bonus_bonus_movespeed}% к доп. скорости от Spin Web и снятие лимита на скорость",
+      "name_loc": "+{s:bonus_bonus_movespeed}% Spin Web Move Speed and Ignore Speed Limit",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

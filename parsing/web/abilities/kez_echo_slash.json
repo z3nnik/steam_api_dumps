@@ -1,298 +1,296 @@
-[
-  {
-    "id": 1498,
-    "name": "kez_echo_slash",
-    "name_loc": "Echo Slash",
-    "desc_loc": "Герой делает молниеносный выпад вперёд, совершая атаку по всем врагам на пути и ненадолго замедляя их. Наносит героям больше урона. После небольшой задержки на том же месте происходит повторный выпад.",
-    "lore_loc": "Кез и его наставник Крау неустанно улучшали древние техники, позволяющие нарушить баланс летающего противника, и обучали им казураев.",
-    "notes_loc": [
-      "Выпад уничтожает деревья, и от него не срабатывает эффект прорубания."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "134479876",
-    "target_team": 2,
-    "target_type": 19,
-    "flags": 0,
-    "damage": 1,
-    "immunity": 0,
-    "dispellable": 0,
-    "max_level": 4,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0.2
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      21,
-      18,
-      15,
-      12
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      75,
-      90,
-      105,
-      120
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "katana_echo_damage",
-        "values_float": [
-          70,
-          80,
-          90,
-          100
-        ],
-        "is_percentage": true,
-        "heading_loc": "УРОН ОТ АТАКИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 1498,
+  "name": "kez_echo_slash",
+  "name_loc": "Echo Slash",
+  "desc_loc": "Kez slashes forward in a line with his Katana, attacking enemies in an area and applying a brief slow. After a short delay, the area is attacked again. Heroes take bonus damage.",
+  "lore_loc": "Kez and his master Kraw have worked tirelessly to train the Kazurai new ways to keep the flyers off balance by improving upon ancient techniques.",
+  "notes_loc": [
+    "Destroys trees. Doesn't apply Cleave."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "134479876",
+  "target_team": 2,
+  "target_type": 19,
+  "flags": 0,
+  "damage": 1,
+  "immunity": 0,
+  "dispellable": 0,
+  "max_level": 4,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0.2
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    21,
+    18,
+    15,
+    12
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    75,
+    90,
+    105,
+    120
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "katana_echo_damage",
+      "values_float": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "is_percentage": true,
+      "heading_loc": "ATTACK DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "echo_hero_damage",
-        "values_float": [
-          20,
-          40,
-          60,
-          80
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДОП. УРОН ГЕРОЯМ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "echo_hero_damage",
+      "values_float": [
+        20,
+        40,
+        60,
+        80
+      ],
+      "is_percentage": false,
+      "heading_loc": "BONUS HERO DAMAGE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "katana_strikes",
-        "values_float": [
-          2
-        ],
-        "is_percentage": false,
-        "heading_loc": "ЧИСЛО ВЫПАДОВ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_kez_echo_slash_strike_count",
-            "value": 1,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "katana_strikes",
+      "values_float": [
+        2
+      ],
+      "is_percentage": false,
+      "heading_loc": "ATTACKS:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_kez_echo_slash_strike_count",
+          "value": 1,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "strike_interval",
-        "values_float": [
-          1.2
-        ],
-        "is_percentage": false,
-        "heading_loc": "ЗАДЕРЖКА ПЕРЕД ПОВТОРОМ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_kez_echo_slash_strike_count",
-            "value": 0.6,
-            "operation": 2
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "strike_interval",
+      "values_float": [
+        1.2
+      ],
+      "is_percentage": false,
+      "heading_loc": "ECHO DELAY:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_kez_echo_slash_strike_count",
+          "value": 0.6,
+          "operation": 2
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "katana_radius",
-        "values_float": [
-          200
-        ],
-        "is_percentage": false,
-        "heading_loc": "ШИРИНА ВЫПАДОВ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "katana_radius",
+      "values_float": [
+        200
+      ],
+      "is_percentage": false,
+      "heading_loc": "SLASH RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "katana_distance",
-        "values_float": [
-          800
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДАЛЬНОСТЬ ВЫПАДОВ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "katana_distance",
+      "values_float": [
+        800
+      ],
+      "is_percentage": false,
+      "heading_loc": "DISTANCE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "travel_distance",
-        "values_float": [
-          250
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "travel_distance",
+      "values_float": [
+        250
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "tag_slow",
-        "values_float": [
-          100
-        ],
-        "is_percentage": true,
-        "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "tag_slow",
+      "values_float": [
+        100
+      ],
+      "is_percentage": true,
+      "heading_loc": "MOVE SLOW:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "tag_slow_duration",
-        "values_float": [
-          0.25
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "tag_slow_duration",
+      "values_float": [
+        0.25
+      ],
+      "is_percentage": false,
+      "heading_loc": "SLOW DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.2
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.2
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          75,
-          90,
-          105,
-          120
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        75,
+        90,
+        105,
+        120
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          21,
-          18,
-          15,
-          12
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        21,
+        18,
+        15,
+        12
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

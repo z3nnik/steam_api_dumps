@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_terrorblade",
   "order_id": 107,
   "name_loc": "Terrorblade",
-  "bio_loc": "Этот демон-мародёр обрёл славу закоренелого преступника даже среди других адских тварей. Он был невиданным бунтарём, обворовал самих Владык-демонов, отверг все установленные обряды, призванные его смирить, и преступил все законы семи кругов Ада. За это ему преподали урок: даже в преисподней есть собственный ад. После короткого, сурового суда в окружении мириады мертвецов его наконец отправили в Колодец душ — скрытое измерение, куда демоны заключают себе подобных.\r\n\t\t\t\t<br><br>Но это далеко не обычная тюрьма. Колодец душ — тёмное зеркало реальности, в котором демоны обречены взирать на искривлённое отражение собственной души. Однако заключённый и не думал страдать: он подчинил себе это отражение, яростного и вороватого демона невообразимой силы. Укротив своё тёмное начало, демон разрушил фрактальные стены темницы и вырвался на свободу, дабы вселять страх во всё мироздание.",
-  "hype_loc": "Если в игре Terrorblade, то всё становится относительным. Своими <b>могучими иллюзиями</b> он обманывает врагов и разрушает их постройки, а если нужно предотвратить смерть или ослабить соперника, он <b>меняется здоровьем с союзником или противником</b>.",
-  "npe_desc_loc": "Превращается в могучего демона дальнего боя",
+  "bio_loc": "Terrorblade is the demon marauder--an outlaw hellion whom even other demons fear. A cosmic iconoclast, he stole from the Demon Lords, ignored the codified rites that should have bound his behavior, and broke every law of the seven Infernal Regions. For his crimes, he was taught this lesson: even Hell has a hell. A short, brutal trial ensued, with many dead on all sides, and he was finally incarcerated in Foulfell, a hidden dimension where demonkind imprison their own.\r\n\t\t\t\t<br><br>But Foulfell is no normal prison. In this dark mirror of reality, demons are sentenced to gaze eternally into the twisted reflection of their own souls. But instead of suffering, Terrorblade made himself master of his own reflected worst self--a raging, thieving demon of unimaginable power. With his inner beast under sway, he destroyed the fractal prison walls and burst free to turn his terror loose upon all creation.",
+  "hype_loc": "With Terrorblade, nothing is as it seems. Conjuring <b>powerful illusions</b> to confuse enemies and break their defenses, the demon marauder can <b>exchange health with foes and friends</b> to stave off death or weaken his enemies.",
+  "npe_desc_loc": "Transforms into a powerful ranged demon",
   "facets": [
     {
       "color": 5,
       "title_loc": "Condemned",
-      "description_loc": "Ограничение на минимум здоровья после применения Sunder не действует на врагов.",
+      "description_loc": "There is no minimum health threshold for Sundered enemies.",
       "name": "terrorblade_condemned",
       "icon": "twin_hearts",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Soul Fragment",
-      "description_loc": "Способность Conjure Image расходует здоровье вместо маны, но всегда призывает иллюзии с полным здоровьем.",
+      "description_loc": "Conjure Image illusions always spawn at full health and cost health instead of mana.",
       "name": "terrorblade_soul_fragment",
       "icon": "illusion",
       "gradient_id": 2,
@@ -66,11 +66,11 @@
       "id": 5619,
       "name": "terrorblade_reflection",
       "name_loc": "Reflection",
-      "desc_loc": "Создаёт неуязвимых тёмных двойников всех вражеских героев в указанной области. Каждый двойник атакует свою цель и замедляет её передвижение и атаку.",
-      "lore_loc": "Заточённый в Колодце душ, демон-мародёр понял смысл древней поговорки: «Твой злейший враг — это ты сам». Теперь он учит этому других.",
+      "desc_loc": "Terrorblade brings forth an invulnerable dark reflection of all enemy heroes in a target area. Affected enemy heroes have movement and attack speeds slowed and attacked by their reflection.",
+      "lore_loc": "In the fractal prison of Foulfell, Terrorblade learned the truth of this old tale: you are your own worst enemy.  Now it is a lesson he teaches others.",
       "notes_loc": [
-        "Двойники являются неуязвимыми иллюзиями.",
-        "Двойники атакуют только исходных героев."
+        "Reflections are untargetable, invulnerable illusions, that will be destroyed if the slow debuff is removed.",
+        "Reflections can only attack their source."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -126,7 +126,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "REFLECTION DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_terrorblade_2",
@@ -178,7 +178,7 @@
             75
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ДВОЙНИКОВ:",
+          "heading_loc": "REFLECTION DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_terrorblade_6",
@@ -204,7 +204,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_terrorblade_6",
@@ -230,7 +230,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SPEED SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_terrorblade_6",
@@ -253,7 +253,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -356,16 +356,16 @@
       "id": 5620,
       "name": "terrorblade_conjure_image",
       "name_loc": "Conjure Image",
-      "desc_loc": "Создаёт иллюзию героя, которая наносит урон.",
-      "lore_loc": "Опаснее встречи с одним мародёром может быть только встреча сразу с несколькими.",
+      "desc_loc": "Creates an illusion of Terrorblade that deals damage.",
+      "lore_loc": "There's only one thing more dangerous than facing Terrorblade.  Facing MORE Terrorblades!",
       "notes_loc": [
-        "Для врагов иллюзии от этой способности также отличаются от героя."
+        "Illusions created by Conjure Image are visually different for enemies."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Эта способность расходует здоровье вместо маны, но всегда призывает иллюзии с полным здоровьем."
+        "Conjure Image illusions always spawn at full health and cost health instead of mana."
       ],
       "type": 0,
       "behavior": "4",
@@ -412,7 +412,7 @@
             34
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ ИЛЛЮЗИИ:",
+          "heading_loc": "ILLUSION DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_terrorblade_5",
@@ -458,7 +458,7 @@
             35
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ИЛЛЮЗИИ:",
+          "heading_loc": "ILLUSION DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -492,7 +492,7 @@
             250
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ПО ИЛЛЮЗИИ:",
+          "heading_loc": "ILLUSION DAMAGE TAKEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -543,7 +543,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "РАСХОД ТЕКУЩЕГО ЗДОРОВЬЯ:",
+          "heading_loc": "CURRENT HP COST:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -655,10 +655,10 @@
       "id": 5621,
       "name": "terrorblade_metamorphosis",
       "name_loc": "Metamorphosis",
-      "desc_loc": "Герой и все его иллюзии в радиусе %metamorph_aura_tooltip% превращаются в могущественных демонов, сражающихся в дальнем бою.",
-      "lore_loc": "Тише, тише. Ярость вскипает и берёт контроль над демоном, делая его ещё страшнее.",
+      "desc_loc": "Terrorblade transforms into a powerful demon with a ranged attack. Any of Terrorblade's illusions that are within %metamorph_aura_tooltip% range will also be transformed by Metamorphosis.",
+      "lore_loc": "Temper, temper. The rage rises up and takes control.  Meet Terrorblade's own worst self.",
       "notes_loc": [
-        "Перезарядка некоторых предметов зависит от того, какой тип атаки герой имел при их использовании."
+        "Cooldowns of items that are different for ranged and melee units will be based on which form Terrorblade was in when the item was used."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -714,7 +714,7 @@
             50
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_terrorblade_3",
@@ -737,7 +737,7 @@
             0.35
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ТРАНСФОРМАЦИИ:",
+          "heading_loc": "TRANSFORMATION TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -754,7 +754,7 @@
             1.5
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ ИНТЕРВАЛ АТАК:",
+          "heading_loc": "BASE ATTACK TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -794,7 +794,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -814,7 +814,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -831,7 +831,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЕЙСТВИЯ НА ИЛЛЮЗИИ:",
+          "heading_loc": "ILLUSION AURA RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -903,8 +903,8 @@
       "id": 699,
       "name": "terrorblade_demon_zeal",
       "name_loc": "Demon Zeal",
-      "desc_loc": "Герой расходует часть своего текущего здоровья, чтобы получить для себя и своих иллюзий неподалёку бонус к скорости передвижения и атаки, а также восстановлению здоровья. Копии противников от способности Reflection получают %reflection_pct%%% от этих бонусов. На последних эффект имеет %reflection_pct%%% силы. действует Нельзя применить под действием Metamorphosis. Применение Metamorphosis прерывает действие этой способности.",
-      "lore_loc": "Страх врагов Террорблейда подкрепляется смятением от того, что первым он ранит самого себя — и от этого становится лишь сильнее.",
+      "desc_loc": "Costs part of Terrorblade's current HP to cast, providing Terrorblade and nearby illusions bonus movement, HP Regen and attack speed. Reflection illusions gain %reflection_pct%%% of the bonuses. Can't be cast while in Metamorphosis and Metamorphosis will remove Demon Zeal",
+      "lore_loc": "Fear is fueled by confusion when Terrorblade's enemies see that the first cut he makes is one to embolden himself.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -954,7 +954,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -971,7 +971,7 @@
             60
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -988,7 +988,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1005,7 +1005,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:",
+          "heading_loc": "BONUS HEALTH REGEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1039,7 +1039,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ПОТЕРЯ ТЕКУЩЕГО ЗДОРОВЬЯ:",
+          "heading_loc": "CURRENT HEALTH COST:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1119,8 +1119,8 @@
       "id": 425,
       "name": "terrorblade_terror_wave",
       "name_loc": "Terror Wave",
-      "desc_loc": "Выпускает круговую волну, наносящую задетым вражеским героям урон и заставляющую их бежать в страхе. Ненадолго дарует владельцу способности демонический облик от Metamorphosis.",
-      "lore_loc": "Ударная волна, способная разрушить даже стены Колодца душ.",
+      "desc_loc": "Causes a wave to travel outwards in all directions forcing enemy heroes to become Feared upon impact and dealing damage, and grants Terrorblade Metamorphosis for a short time.",
+      "lore_loc": "A shockwave of power strong enough to break the walls of Foulfell itself.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1170,7 +1170,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ СТРАХА:",
+          "heading_loc": "FEAR DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1187,7 +1187,7 @@
             1600
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1204,7 +1204,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1255,7 +1255,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ДЕМОНИЧЕСКОГО ОБЛИКА:",
+          "heading_loc": "METAMORPHOSIS DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1318,15 +1318,15 @@
       "id": 5622,
       "name": "terrorblade_sunder",
       "name_loc": "Sunder",
-      "desc_loc": "Меняет местами жизненные силы героя и его цели. Некоторая часть здоровья остаётся на месте.",
-      "lore_loc": "Тебе ведь ни к чему эта жизнь, не так ли? Демон-мародер похищает самое дорогое.",
+      "desc_loc": "Severs the life from both Terrorblade and a target hero, exchanging a percentage of both units' current health. Some health points must remain.",
+      "lore_loc": "You didn't need that life, did you?  The demon marauder steals that which you hold most dear.",
       "notes_loc": [
-        "Не изменяет здоровье врага, если он невосприимчив к эффектам."
+        "Debuff Immune enemies don't get their HP modified."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Ограничение на минимум здоровья после применения Sunder не действует на врагов.",
+        "There is no minimum health threshold for Sundered enemies.",
         ""
       ],
       "type": 1,
@@ -1377,7 +1377,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "МИН. ЗДОРОВЬЕ ПОСЛЕ ОБМЕНА:",
+          "heading_loc": "MINIMUM HP SWAP:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1522,10 +1522,10 @@
       "id": 1396,
       "name": "terrorblade_dark_unity",
       "name_loc": "Dark Unity",
-      "desc_loc": "Иллюзии, созданные этим героем и находящиеся рядом с ним, наносят увеличенный урон.",
+      "desc_loc": "Nearby Illusions created by Terrorblade have bonus attack damage.",
       "lore_loc": "",
       "notes_loc": [
-        "Также влияет на иллюзии от способности Reflection."
+        "Reflection Illusions are also affected."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1575,7 +1575,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1592,7 +1592,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "ATTACK DAMAGE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1622,7 +1622,7 @@
     {
       "id": 6942,
       "name": "special_bonus_unique_terrorblade_2",
-      "name_loc": "+{s:bonus_illusion_duration} сек. действия Reflection",
+      "name_loc": "+{s:bonus_illusion_duration}s Reflection Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1684,7 +1684,7 @@
     {
       "id": 7861,
       "name": "special_bonus_unique_terrorblade_4",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Conjure Image",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Conjure Image Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1746,7 +1746,7 @@
     {
       "id": 1186,
       "name": "special_bonus_unique_terrorblade_metamorphosis_cooldown",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Metamorphosis",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Metamorphosis Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1808,7 +1808,7 @@
     {
       "id": 924,
       "name": "special_bonus_unique_terrorblade_6",
-      "name_loc": "+{s:bonus_move_slow}% к урону двойников и замедлению от Reflection",
+      "name_loc": "+{s:bonus_move_slow}% Reflection Slow/Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1870,7 +1870,7 @@
     {
       "id": 6168,
       "name": "special_bonus_all_stats_10",
-      "name_loc": "+{s:value} ко всем атрибутам",
+      "name_loc": "+{s:value} All Attributes",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1950,7 +1950,7 @@
     {
       "id": 479,
       "name": "special_bonus_unique_terrorblade_5",
-      "name_loc": "+{s:bonus_illusion_duration} сек. жизни иллюзии от Conjure Image",
+      "name_loc": "+{s:bonus_illusion_duration}s Conjure Image Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2012,7 +2012,7 @@
     {
       "id": 6107,
       "name": "special_bonus_unique_terrorblade",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Sunder",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Sunder Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2074,7 +2074,7 @@
     {
       "id": 6943,
       "name": "special_bonus_unique_terrorblade_3",
-      "name_loc": "+{s:bonus_duration} сек. действия Metamorphosis",
+      "name_loc": "+{s:bonus_duration}s Metamorphosis Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

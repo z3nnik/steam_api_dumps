@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_kez",
   "order_id": 126,
   "name_loc": "Kez",
-  "bio_loc": "«С самого рождения за мою голову назначена награда. Она росла вместе с моим навыком устраивать переполох. Каждый раз, когда королева Империя её повышала, я понимал, что делаю всё правильно. Пожалуй, самый большой минус долгого нахождения в Айсреке — это то, что теперь мне придётся изрядно потрудиться, чтобы вернуть цену за свою голову на достойный уровень».",
-  "hype_loc": "Обычно в бою Кеза окрыляет фантазия: он <b>на лету меняет катану на саи и обратно</b>, чтобы при надобности <b>нападать, рубить, парировать и отступать</b>. Но когда Кез берётся за дело всерьёз, он может заранее приготовиться к любому развитию событий и верно распорядиться своим арсеналом, чтобы <b>атаковать, избежать или попросту перехитрить противников</b>.",
-  "npe_desc_loc": "Мастер боевых искусств с двумя наборами оружия и способностей, благодаря которым он готов ко всему",
+  "bio_loc": "\"I was born with a price on my head. As I got better at causing trouble, that price went up. Every time Queen Imperia raised the bounty, I knew I must have done something right. I think that's the worst part about being gone so long in Icewrack... I've got to get that price back up to a respectable number.\"",
+  "hype_loc": "When it comes to strategy, Kez tends to wing it — he's able to <b>swap on the fly between his katana and sai</b> to <b>slash, dash, swoop, and parry</b> as the needs of the battlefield demand. But when he puts his mind to it, he can account for any eventuality, choosing the right tool to <b>attack, escape or simply outwit his enemies</b> with a little advance planning.",
+  "npe_desc_loc": "Flexible melee master with two sets of weapons and abilities",
   "facets": [
     {
       "color": 1,
       "title_loc": "Flutter",
-      "description_loc": "При смене на катану увеличивается урон от следующей атаки, а при смене на саи увеличивается скорость передвижения.",
+      "description_loc": "Kez deals extra damage on the first attack after switching to Katana, and gains bonus movement speed after switching to Sai.",
       "name": "kez_flutter",
       "icon": "kez_flutter",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Shadowhawk",
-      "description_loc": "Атака из невидимости по существу с меткой от Shodo Sai нанесёт дополнительный критический урон. Увеличивает длительность невидимости от Raven's Veil.",
+      "description_loc": "Triggering a Shodo Sai Mark from invisibility deals bonus critical damage. Increases Raven's Veil invisibility duration.",
       "name": "kez_shadowhawk",
       "icon": "kez_shadowhawk",
       "gradient_id": 3,
@@ -66,10 +66,10 @@
       "id": 1498,
       "name": "kez_echo_slash",
       "name_loc": "Echo Slash",
-      "desc_loc": "Герой делает молниеносный выпад вперёд, совершая атаку по всем врагам на пути и ненадолго замедляя их. Наносит героям больше урона. После небольшой задержки на том же месте происходит повторный выпад.",
-      "lore_loc": "Кез и его наставник Крау неустанно улучшали древние техники, позволяющие нарушить баланс летающего противника, и обучали им казураев.",
+      "desc_loc": "Kez slashes forward in a line with his Katana, attacking enemies in an area and applying a brief slow. After a short delay, the area is attacked again. Heroes take bonus damage.",
+      "lore_loc": "Kez and his master Kraw have worked tirelessly to train the Kazurai new ways to keep the flyers off balance by improving upon ancient techniques.",
       "notes_loc": [
-        "Выпад уничтожает деревья, и от него не срабатывает эффект прорубания."
+        "Destroys trees. Doesn't apply Cleave."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -128,7 +128,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ АТАКИ:",
+          "heading_loc": "ATTACK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -148,7 +148,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ГЕРОЯМ:",
+          "heading_loc": "BONUS HERO DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -165,7 +165,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ВЫПАДОВ:",
+          "heading_loc": "ATTACKS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_kez_echo_slash_strike_count",
@@ -188,7 +188,7 @@
             1.2
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАДЕРЖКА ПЕРЕД ПОВТОРОМ:",
+          "heading_loc": "ECHO DELAY:",
           "bonuses": [
             {
               "name": "special_bonus_unique_kez_echo_slash_strike_count",
@@ -211,7 +211,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "ШИРИНА ВЫПАДОВ:",
+          "heading_loc": "SLASH RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -228,7 +228,7 @@
             800
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ВЫПАДОВ:",
+          "heading_loc": "DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -262,7 +262,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -279,7 +279,7 @@
             0.25
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -365,8 +365,8 @@
       "id": 1499,
       "name": "kez_grappling_claw",
       "name_loc": "Grappling Claw",
-      "desc_loc": "Герой запускает «кошку», чтобы притянуться к указанному врагу или дереву. Попадание по вражеской цели замедлит её передвижение, а подлетев к ней, герой совершит атаку.",
-      "lore_loc": "Скорость и ловкость казураев позволяет им спустить с небес на землю птиц даже самого высокого полёта.",
+      "desc_loc": "Kez swings on a grappling hook towards the target unit or tree.  When the grappling hook collides with the target, that unit has slowed movement speed. Upon reaching the enemy target, Kez lands an attack on them.",
+      "lore_loc": "The Kazurai have the speed and reach to drag even the highest flyers from the skies.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -493,7 +493,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -513,7 +513,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "MOVE SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -599,10 +599,10 @@
       "id": 1500,
       "name": "kez_kazurai_katana",
       "name_loc": "Kazurai Katana",
-      "desc_loc": "Когда герой использует катану, его атаки и способности накладывают на врагов складывающийся эффект, который постепенно наносит долю от урона атаки.<br><br>Способность можно применить на врага, чтобы пронзить его катаной, мгновенно нанеся отложенный урон от части эффектов и запретив передвигаться или поворачиваться.",
-      "lore_loc": "Чтобы добиться успеха в борьбе против Империи и её гвардейцев, казураям пришлось поднатореть в ведении войны на истощение.",
+      "desc_loc": "Katana attacks and abilities apply a stacking damage over time to enemies that deals a percentage of the original attack's damage as additional damage over time. <br><br>Kez may activate the ability to impale the target with his attack, preventing them from moving or turning. The target's Katana debuff bursts, causing some of the stacks to deal damage instantly.",
+      "lore_loc": "To fight back against the reach of Imperia and her Queensguard, the Kazurai had to become skilled in the ways of attrition.",
       "notes_loc": [],
-      "shard_loc": "Добавляет %lifesteal_pct%%% вампиризма при пронзании и увеличивает его максимальный урон. Если цель повёрнута спиной, способность оглушит её и мгновенно нанесёт весь отложенный урон.",
+      "shard_loc": "Kez lifesteals %lifesteal_pct%%% from the impale. If the impale comes from behind the target, the target is stunned. Increases max burst stacks.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -653,7 +653,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -673,7 +673,7 @@
             12
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_kez_kazura_katana_bleed_damage",
@@ -696,7 +696,7 @@
             0.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРОНЗАНИЯ:",
+          "heading_loc": "IMPALE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -713,7 +713,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "ДОЛЯ АКТИВИРУЕМЫХ ПРОНЗАНИЕМ ЭФФЕКТОВ:",
+          "heading_loc": "STACKS AS BURST DAMAGE:",
           "bonuses": [],
           "values_shard": [
             50
@@ -770,7 +770,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. УРОН ОТ ПРОНЗАНИЯ:",
+          "heading_loc": "MAX BURST STACKS:",
           "bonuses": [],
           "values_shard": [
             500
@@ -874,13 +874,13 @@
       "id": 1497,
       "name": "kez_switch_weapons",
       "name_loc": "Switch Discipline",
-      "desc_loc": "Герой меняет свой боевой стиль, переключаясь между катаной казураев и саями Шодо.<br><br>У каждого стиля свои характеристики атаки и способности. Способности, занимающие одну ячейку, имеют общие уровни и перезарядки для обоих стилей.",
-      "lore_loc": "Главы казураев, как бывшие члены ордена Шодо, могут на лету переключаться между катаной и саями, демонстрируя мастерское владение обоими боевыми стилями.",
+      "desc_loc": "Kez switches between his Kazurai Katana and Shodo Sai.<br><br>He gains different attack capabilities and abilities based on the weapon equipped. The abilities level up together, and when an ability is used, the associated alternate weapon ability also goes on cooldown.",
+      "lore_loc": "As former followers of the Shodo, the leaders of the Kazurai Order can switch effortlessly between twin disciplines of martial mastery over sai and blade.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Первая способность, применённая в течение %scepter_cooldown_timer% сек. после переключения стиля боя, не начнёт перезарядку её альтернативной версии.<br><br>Эта способность мгновенно перезаряжается при применении других у выбранного стиля боя.",
+      "scepter_loc": "Casting a weapon ability that would set its alternate weapon ability on cooldown does not do so if it's the first one used within %scepter_cooldown_timer% seconds after casting Switch Discipline.<br><br>Casting any weapon ability refreshes the cooldown of Switch Discipline.",
       "facets_loc": [
-        "При смене на катану увеличивается урон от следующей атаки, а при смене на саи увеличивается скорость передвижения.",
+        "Kez deals extra damage on the first attack after switching to Katana, and gains bonus speed after switching to Sai.",
         ""
       ],
       "type": 0,
@@ -925,7 +925,7 @@
             225
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ АТАКИ (КАТАНА):",
+          "heading_loc": "KATANA ATTACK RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -942,7 +942,7 @@
             1.9
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ ИНТЕРВАЛ АТАК (КАТАНА):",
+          "heading_loc": "KATANA BASE ATTACK TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -959,7 +959,7 @@
             16
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ОТ ЛОВКОСТИ (КАТАНА):",
+          "heading_loc": "KATANA BONUS AGILITY BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -976,7 +976,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ПРИ СМЕНЕ НА КАТАНУ:",
+          "heading_loc": "KATANA SWAP BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -995,7 +995,7 @@
             150
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ АТАКИ (САИ):",
+          "heading_loc": "SAI ATTACK RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1012,7 +1012,7 @@
             1.5
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ ИНТЕРВАЛ АТАК (САИ):",
+          "heading_loc": "SAI BASE ATTACK TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1029,7 +1029,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ ПРИ СМЕНЕ НА САИ:",
+          "heading_loc": "SAI SWAP MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1048,7 +1048,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТ. УСКОРЕНИЯ ПРИ СМЕНЕ НА САИ:",
+          "heading_loc": "SAI SWAP SPEED DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1084,7 +1084,7 @@
             7.75
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1113,10 +1113,10 @@
       "id": 1501,
       "name": "kez_raptor_dance",
       "name_loc": "Raptor Dance",
-      "desc_loc": "Герой %AbilityCastPoint% сек. готовится совершить шквал мощных круговых ударов, которые наносят урон в зависимости от максимального здоровья жертв и исцеляют героя на долю от нанесённого урона.<br><br>Перед подготовкой он становится неуязвимым на %invuln_period% сек. и получает простое развеивание, а во время неё и при совершении ударов получает полную защиту от магического урона.",
-      "lore_loc": "Высвобождение сокрытой ярости нелётных позволяет им поглощать сущность их врагов.",
+      "desc_loc": "Kez enters into an uncontrollable state for %AbilityCastPoint% second, becoming invulnerable for %invuln_period%s and receiving a basic dispel, remaining immune to magic damage for the remainder of the cast time and the duration of the slashes.<br><br> If the cast completes successfully, Kez performs a series of deadly radial slashes around him that deal damage based on the max health of the target and heal Kez for a percentage of all damage dealt.",
+      "lore_loc": "Unleash the inner fury of the Flightless to feast on the essence of your foes.",
       "notes_loc": [
-        "Исцеление считается вампиризмом, который уменьшается до %illusion_lifesteal_pct%%% от урона крипам и иллюзиям."
+        "Slash Lifesteal is reduced to %illusion_lifesteal_pct%%% when slashing a creep or an illusion."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1187,7 +1187,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО УДАРОВ:",
+          "heading_loc": "STRIKES:",
           "bonuses": [
             {
               "name": "special_bonus_unique_kez_raptor_dance_strikes",
@@ -1210,7 +1210,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС УДАРОВ:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_kez_raptor_dance_radius",
@@ -1235,7 +1235,7 @@
             90
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1252,7 +1252,7 @@
             2.5
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "MAX HEALTH AS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1269,7 +1269,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ВАМПИРИЗМ ОТ УДАРА:",
+          "heading_loc": "SLASH LIFESTEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1421,10 +1421,10 @@
       "id": 1502,
       "name": "kez_falcon_rush",
       "name_loc": "Falcon Rush",
-      "desc_loc": "Герой получает возможность стремительно сблизиться с целью атаки, и каждый его удар повторяется после короткой задержки. Во время действия этой способности герой проходит сквозь других существ и получает сопротивление замедлениям.",
-      "lore_loc": "Эта древняя техника Шодо, используемая против воздушных противников, призвана перехватить инициативу нанесением множества ударов за один взмах крыльев паникующей жертвы.",
+      "desc_loc": "Kez gains the ability to rush towards enemy targets to deliver echoing secondary attacks.  While in this state, Kez has phased collision and slow resistance.",
+      "lore_loc": "An ancient Shodo technique used to hunt faster aerial foes, stealing the advantage and delivering multiple attacks within a single flap of their prey's panicking wings.",
       "notes_loc": [
-        "Не срабатывает от построек."
+        "Does not work on buildings."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1480,7 +1480,7 @@
             525
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДАЛЬНОСТЬ СБЛИЖЕНИЯ:",
+          "heading_loc": "RUSH RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1497,7 +1497,7 @@
             850
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ СБЛИЖЕНИЯ:",
+          "heading_loc": "RUSH SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1517,7 +1517,7 @@
             45
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ПОВТОРНЫХ АТАК:",
+          "heading_loc": "ECHO ATTACK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1537,7 +1537,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "СОПРОТИВЛЕНИЕ ЗАМЕДЛЕНИЯМ:",
+          "heading_loc": "SLOW RESISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1557,7 +1557,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_kez_falcon_rush_duration",
@@ -1618,7 +1618,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ ВЕРОЯТНОСТЕЙ:",
+          "heading_loc": "ECHO PROC CHANCE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1687,10 +1687,10 @@
       "id": 1503,
       "name": "kez_talon_toss",
       "name_loc": "Talon Toss",
-      "desc_loc": "Герой бросает свой сай в выбранное существо, чтобы обезмолвить его и нанести ему фиксированный урон, считающийся атакой.",
-      "lore_loc": "В бою с более сильными противниками Шодо полагались на дистанцию и внесение смуты во вражеские ряды.",
+      "desc_loc": "Kez throws a Sai at the target unit, applying a fixed damage attack and silence.",
+      "lore_loc": "The Shodo learned to rely upon distance and disorientation to survive against much stronger opposition.",
       "notes_loc": [
-        "Атакой от этой способности невозможно промахнуться."
+        "The fixed damage attack has True Strike."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1749,7 +1749,7 @@
             240
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1786,7 +1786,7 @@
             2.75
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БЕЗМОЛВИЯ:",
+          "heading_loc": "SILENCE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1889,8 +1889,8 @@
       "id": 1504,
       "name": "kez_shodo_sai",
       "name_loc": "Shodo Sai",
-      "desc_loc": "Когда герой использует саи, его атаки и способности могут наложить на врагов метку, которая сделает урон от следующей атаки или другой способности этого героя критическим и оглушающим жертву.<br><br>Эту способность можно применить, чтобы парировать атаки и эффекты атак в указанном направлении в течение %parry_duration% сек. Если парировать атаку вражеского героя, тот оглушится и получит метку с увеличенными оглушением и критическим уроном, равным %parry_bonus_crit%%% * <span class=\"GameplayVariable\">уровень жертвы</span>. Во время парирования нельзя атаковать.<br><br>Повторное применение способности остановит парирование.",
-      "lore_loc": "Хоть сами Шодо и сбились с пути, их знания ещё не раз принесут пользу народу Кеза.",
+      "desc_loc": "Kez's attacks and abilities with the Sai have a chance to Mark enemies. The next attack or ability damage from Kez will stun the enemy and deal a critical strike, consuming the buff.<br><br>Kez may activate the ability to disarm himself, lock his facing, and parry attacks and attack effects from the targeted direction for %parry_duration% seconds. If an attack is parried from an enemy Hero in this way, that Hero is stunned and gains a stronger Mark that stuns for longer and deals %parry_bonus_crit%%% * <span class=\"GameplayVariable\">Target Hero Level</span> bonus critical strike.<br><br>The sub-ability may be used to cancel the blocking early.",
+      "lore_loc": "The Shodo may have lost their way, but Kez and the Kazurai can still use Shodo knowledge for the good of the people.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1946,7 +1946,7 @@
             18
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС НАЛОЖИТЬ МЕТКУ:",
+          "heading_loc": "CHANCE TO MARK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1963,7 +1963,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ МЕТКИ:",
+          "heading_loc": "MARKED DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1983,7 +1983,7 @@
             200
           ],
           "is_percentage": true,
-          "heading_loc": "КРИТИЧЕСКИЙ УРОН ОТ МЕТКИ:",
+          "heading_loc": "MARKED CRITICAL STRIKE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_kez_mark_damage",
@@ -2006,7 +2006,7 @@
             0.4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ ОТ МЕТКИ:",
+          "heading_loc": "MARKED STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -2097,7 +2097,7 @@
             0.4
           ],
           "is_percentage": false,
-          "heading_loc": "ОГЛУШЕНИЕ ПРИ ПАРИРОВАНИИ:",
+          "heading_loc": "PARRY STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -2183,14 +2183,14 @@
       "id": 1506,
       "name": "kez_ravens_veil",
       "name_loc": "Raven's Veil",
-      "desc_loc": "Герой выпускает волну дыма, которая накладывает на врагов поблизости метку и ненадолго снижает их обзор. На героя накладывается нормальное развеивание, и он получает невидимость и дополнительную скорость передвижения до тех пор, пока не совершит атаку или не применит заклинание.",
-      "lore_loc": "Мастера Шодо постоянно настороже: в ожидании угрозы или удачного случая они готовы в любой момент нырнуть в тень и перехватить инициативу в сражении.",
+      "desc_loc": "Kez releases a wave of smoke that applies his Mark to nearby enemies, briefly reducing their vision. Kez receives a basic dispel and gains bonus movement speed and invisibility until he attacks or casts a spell.",
+      "lore_loc": "Eying either threat or opportunity, Shodo masters slip instantly into shadow to reset the terms of any engagement in their own favor.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Увеличивает длительность невидимости."
+        "Increases Raven's Veil invisibility duration."
       ],
       "type": 1,
       "behavior": "8724152325",
@@ -2238,7 +2238,7 @@
             1500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ВОЛНЫ:",
+          "heading_loc": "WAVE RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -2255,7 +2255,7 @@
             1500
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ ВОЛНЫ:",
+          "heading_loc": "WAVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -2274,7 +2274,7 @@
             9
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТ. НЕВИДИМОСТИ:",
+          "heading_loc": "BUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -2293,7 +2293,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТ. СНИЖЕНИЯ ОБЗОРА:",
+          "heading_loc": "VISION DEBUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -2312,7 +2312,7 @@
             35
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -2435,7 +2435,7 @@
     {
       "id": 6299,
       "name": "special_bonus_magic_resistance_12",
-      "name_loc": "+{s:value}% к сопротивлению магии",
+      "name_loc": "+{s:value}% Magic Resistance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2515,7 +2515,7 @@
     {
       "id": 1509,
       "name": "special_bonus_unique_kez_raptor_dance_radius",
-      "name_loc": "+{s:bonus_radius} к радиусу Raptor Dance",
+      "name_loc": "+{s:bonus_radius} Raptor Dance Radius",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2577,7 +2577,7 @@
     {
       "id": 1511,
       "name": "special_bonus_unique_kez_falcon_rush_duration",
-      "name_loc": "+{s:bonus_duration} сек. действия Falcon Rush",
+      "name_loc": "+{s:bonus_duration}s Falcon Rush Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2639,7 +2639,7 @@
     {
       "id": 1655,
       "name": "special_bonus_unique_kez_raptor_dance_strikes",
-      "name_loc": "+{s:bonus_strikes} к числу ударов у Raptor Dance",
+      "name_loc": "+{s:bonus_strikes} Raptor Dance Strike",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2701,7 +2701,7 @@
     {
       "id": 1510,
       "name": "special_bonus_unique_kez_kazura_katana_bleed_damage",
-      "name_loc": "+{s:bonus_katana_bleed_attack_damage_pct}% к урону в секунду от Kazurai Katana",
+      "name_loc": "+{s:bonus_katana_bleed_attack_damage_pct}% Kazurai Katana Damage Per Second",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2763,7 +2763,7 @@
     {
       "id": 1714,
       "name": "special_bonus_unique_kez_falcon_rush_attack_speed",
-      "name_loc": "Falcon Rush даёт +{s:bonus_bonus_attack_speed} к скорости атаки",
+      "name_loc": "+{s:bonus_bonus_attack_speed} Attack Speed During Falcon Rush",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2825,7 +2825,7 @@
     {
       "id": 1514,
       "name": "special_bonus_unique_kez_mark_damage",
-      "name_loc": "+{s:bonus_base_crit_pct}% к крит. урону от метки Shodo Sai",
+      "name_loc": "+{s:bonus_base_crit_pct}% Shodo Sai Mark Critical Strike",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2887,8 +2887,8 @@
     {
       "id": 1513,
       "name": "special_bonus_unique_kez_echo_slash_strike_count",
-      "name_loc": "+{s:bonus_katana_strikes} выпад у Echo Slash",
-      "desc_loc": "–0,6 сек. от задержки между повторами",
+      "name_loc": "+{s:bonus_katana_strikes} Echo Slash Attack",
+      "desc_loc": "-0.6s Interval",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2957,7 +2957,7 @@
           "id": 1612,
           "name": "kez_shadowhawk_passive",
           "name_loc": "Shadowhawk",
-          "desc_loc": "Атака из невидимости по существу с меткой от Shodo Sai нанесёт дополнительный критический урон. Увеличивает длительность невидимости от Raven's Veil.",
+          "desc_loc": "Triggering a Shodo Sai Mark from invisibility deals bonus critical damage. Increases Raven's Veil invisibility duration.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",
@@ -3028,7 +3028,7 @@
                 75
               ],
               "is_percentage": true,
-              "heading_loc": "ДОП. КРИТ. УРОН ИЗ НЕВИДИМОСТИ:",
+              "heading_loc": "INVIS BONUS CRIT:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

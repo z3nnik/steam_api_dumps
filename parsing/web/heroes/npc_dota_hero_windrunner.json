@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_windrunner",
   "order_id": 22,
   "name_loc": "Windranger",
-  "bio_loc": "Западные леса крепко хранят свои секреты. Один из них — Лиралей, непревзойдённая лучница лесов, любимая крестница ветра. Это сейчас её прозвали ветрокрылой — но семья Лиралей поглибла во время ночного шторма: буря разрушила дом до основания, открыв его жителей всем ветрам. Лишь новорождённая выжила среди развалин, пронизанных смертью и разрушением. Когда шторм стих, ветер услышал плачущего в траве везучего младенца. Он пожалел ребёнка и перенёс его на порог дома в соседней деревне. Следующие годы ветер то и дело навещал девочку, наблюдая со стороны, как она оттачивает свои навыки. Теперь, после многих лет тренировок, стрелы Лиралей неизменно попадают точно в цель. Она двигается с ослепительной скоростью, будто бы подгоняемая ветром, а враги её гибнут в шквале стрел, словно их наказывает сама природа.",
-  "hype_loc": "<b>Проворная и ловкая</b> Windranger всегда поджидает подходящего момента для нападения. Она постоянно в движении — даже когда расчищает путь <b>смертоносным выстрелом</b> или <b>связывает врагов</b>, чтобы нашпиговать их стрелами.",
-  "npe_desc_loc": "Осыпает одну цель стремительным градом стрел",
+  "bio_loc": "The western forests guard their secrets well. One of these is Lyralei, master archer of the wood, and favored godchild of the wind.  Known now as Windranger, Lyralei's family was killed in a storm on the night of her birth--their house blown down by the gale, contents scattered to the winds. Only the newborn survived among the debris field of death and destruction.  In the quiet after the storm, the wind itself took notice of the lucky infant crying in the grass. The wind pitied the child and so lifted her into the sky and deposited her on a doorstep in a neighboring village.  In the years that followed, the wind returned occasionally to the child's life, watching from a distance while she honed her skills.  Now, after many years of training, Windranger fires her arrows true to their targets.  She moves with blinding speed, as if hastened by a wind ever at her back.  With a flurry of arrows, she slaughters her enemies, having become, nearly, a force of nature herself.",
+  "hype_loc": "<b>Evasive and swift</b>, the nimble Windranger is always seeking the right angle to attack. Whether she's clearing the way with a draw of her <b>deadly powershot</b>, or <b>shackling enemies together</b> to pepper them with arrows, she's always on the move.",
+  "npe_desc_loc": "Fires swift flurry of arrows at a single target",
   "facets": [
     {
       "color": 1,
       "title_loc": "Tangled",
-      "description_loc": "Способность Shackleshot связывает больше врагов и даёт бонус к урону за каждую жертву.",
+      "description_loc": "Shackleshot affects more enemies and grants damage per unit shackled.",
       "name": "windrunner_tangled",
       "icon": "tree",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 2,
       "title_loc": "Killshot",
-      "description_loc": "Способность Powershot мгновенно убивает вражеских героев с низким здоровьем.",
+      "description_loc": "Powershot executes low health enemy heroes.",
       "name": "windrunner_killshot",
       "icon": "execute",
       "gradient_id": 0,
@@ -66,12 +66,12 @@
       "id": 5130,
       "name": "windrunner_shackleshot",
       "name_loc": "Shackleshot",
-      "desc_loc": "Связывает цель с находящимся позади неё врагом или деревом. Если цель не будет с чем-либо связана, длительность оглушения сократится до %fail_stun_duration% сек.",
-      "lore_loc": "Мастерство владения луком позволяет Лиралей выпустить стрелу с толстой верёвкой, которая не даст жертве вырваться.",
+      "desc_loc": "Shackles the target to an enemy unit or tree in a line directly behind it.  If no unit or tree is present, the stun duration is reduced to %fail_stun_duration%.",
+      "lore_loc": "Windranger's variety of bow skills includes an arrow with thick ropes attached to encumber any escaping target.",
       "notes_loc": [
-        "Может связать двух противников, оглушая обоих.",
-        "Связывает цель с вражеским существом или деревом на расстоянии до %shackle_distance%.",
-        "Снаряд этой способности можно сбить с цели."
+        "This spell can shackle two enemies together, stunning them both.",
+        "Can shackle the target to an enemy unit or tree at most %shackle_distance% behind the target.",
+        "Shackleshot can be disjointed."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -79,7 +79,7 @@
         "",
         "",
         "",
-        "Также связывает всех существ и деревья позади цели. Увеличивает урон от атак владельца способности за каждое дополнительное существо и дерево (бонус за крипов и деревья меньше).",
+        "Shackleshot applies to all units and trees behind the target unit and grants Windranger bonus attack damage for each additional shackled unit and tree. Creeps and trees grant less bonus damage.",
         ""
       ],
       "type": 0,
@@ -150,7 +150,7 @@
             3.25
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "SHACKLE DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_windranger_6",
@@ -243,7 +243,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ЗА ГЕРОЯ:",
+          "heading_loc": "BONUS DAMAGE PER HERO:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -262,7 +262,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ЗА КРИПА/ДЕРЕВО:",
+          "heading_loc": "CREEP/TREE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -284,7 +284,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ДОП. УРОНА:",
+          "heading_loc": "DAMAGE BUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -392,10 +392,10 @@
       "id": 5131,
       "name": "windrunner_powershot",
       "name_loc": "Powershot",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — герой заряжает лук, чтобы совершить мощный выстрел, наносящий врагам урон и замедляющий их передвижение. Урон и замедление увеличиваются по мере зарядки, но снижаются с каждым задетым врагом. Максимальное время зарядки: %abilitychanneltime% сек.",
-      "lore_loc": "В ранние годы своих тренировок Лиралей научилась стрелять мощными стрелами, которые на пути к своей цели пробивают даже деревья.",
+      "desc_loc": "CHANNELED - Windranger charges her bow for up to %abilitychanneltime% second for a single powerful shot, which deals more damage the longer it is charged. The arrow damages and slows enemies' movement speed along its path. For each enemy that Powershot hits, its damage and slow is reduced.",
+      "lore_loc": "During her early years of training, Lyralei learned to fire powerful arrows that cleaved even trees to reach their targets.",
       "notes_loc": [
-        "Уничтожает деревья в зоне действия способности."
+        "Powershot will destroy trees in its area of effect."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -404,7 +404,7 @@
         "",
         "",
         "",
-        "Мгновенно убивает поражённых вражеских героев со здоровьем ниже определённого значения. Порог здоровья для убийства увеличивается по мере зарядки."
+        "Enemy heroes hit are executed if below a health threshold. The execute threshold is based on the arrow's power."
       ],
       "type": 0,
       "behavior": "144",
@@ -457,7 +457,7 @@
             470
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -477,7 +477,7 @@
             35
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -494,7 +494,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_windranger_powershot_slow",
@@ -517,7 +517,7 @@
             15
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА ЗА СУЩЕСТВО:",
+          "heading_loc": "REDUCTION PER UNIT:",
           "bonuses": [
             {
               "name": "special_bonus_unique_windranger_3",
@@ -557,7 +557,7 @@
             3000
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ:",
+          "heading_loc": "RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -642,7 +642,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "МИН. ПОРОГ ДЛЯ УБИЙСТВА:",
+          "heading_loc": "MIN EXECUTE THRESHOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -664,7 +664,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ПОРОГ ДЛЯ УБИЙСТВА:",
+          "heading_loc": "MAX EXECUTE THRESHOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -772,13 +772,13 @@
       "id": 5132,
       "name": "windrunner_windrun",
       "name_loc": "Windrun",
-      "desc_loc": "Увеличивает скорость передвижения героя и позволяет ему уворачиваться от всех физических атак.",
-      "lore_loc": "Лиралей зачаровывает порывы ветра, и они отражают удары по ней.",
+      "desc_loc": "Increases movement speed and adds evasion from all physical attacks.",
+      "lore_loc": "Lyralei enchants gusts of winds to fight incoming attacks.",
       "notes_loc": [
-        "С помощью этой способности нельзя увернуться от снарядов, выпущенных до начала её действия."
+        "Activating Windrun will evade incoming projectiles."
       ],
       "shard_loc": "",
-      "scepter_loc": "Уменьшает получаемый физический урон на %physical_damage_pct%%% и даёт невидимость, которая не прерывается атаками и применением заклинаний.",
+      "scepter_loc": "Windrun reduces physical damage taken by %physical_damage_pct%%%, and grants invisibility that is not broken by attacking or casting spells.",
       "facets_loc": [
         "",
         "",
@@ -837,7 +837,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SPEED BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -854,7 +854,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "УКЛОНЕНИЕ:",
+          "heading_loc": "EVASION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -971,7 +971,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1080,8 +1080,8 @@
       "id": 652,
       "name": "windrunner_gale_force",
       "name_loc": "Gale Force",
-      "desc_loc": "Векторное применение. Призывает могучий порыв ветра, который толкает в выбранном направлении всех врагов в области действия.",
-      "lore_loc": "Лиралей наконец научилась взывать к мощи, принадлежащей ей по праву рождения.",
+      "desc_loc": "Vector Targeted. Summons a strong wind that pushes all enemies in the target area towards the target direction.",
+      "lore_loc": "At last Lyralei has learned to call upon the might of her true birthright.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1134,7 +1134,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1151,7 +1151,7 @@
             240
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ ВЕТРА:",
+          "heading_loc": "WIND SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1168,7 +1168,7 @@
             900
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1265,18 +1265,18 @@
       "id": 5133,
       "name": "windrunner_focusfire",
       "name_loc": "Focus Fire",
-      "desc_loc": "Герой призывает вихрь, увеличивающий скорость его атаки по выбранному вражескому существу или строению на %bonus_attack_speed%. Весь урон от этих атак будет уменьшен, за исключением урона от эффектов предметов.",
-      "lore_loc": "Способность Лиралей обрушить на оппонента шквал стрел — пусть и в ущерб точности — просто бесподобна.",
+      "desc_loc": "Windranger channels the wind to gain %bonus_attack_speed% additional attack speed against a single enemy unit or structure, though with a reduction to her attack damage.  Extra damage from secondary item effects is not reduced.",
+      "lore_loc": "Lyralei's ability to bombard opponents with a flurry of arrows is unparalleled - even at the expense of accuracy.",
       "notes_loc": [
-        "Если отдать команду удерживать позицию, герой перестанет атаковать.",
-        "Герой может атаковать на ходу."
+        "Issuing a Hold Position command will pause Windranger's attacks.",
+        "Windranger can move while attacking."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Способность становится ненаправленной. Герой каждую секунду совершает фиксированное число атак по случайным врагам в радиусе атаки + %bonus_range% (в первую очередь по героям). Один и тот же враг может стать целью только каждые 4 атаки.",
+        "Focus Fire no longer requires a target, instead firing at random enemies within Windranger's attack range + %bonus_range%. Fires a fixed number of attacks per second, and can only hit the same enemy every 4 shots. Prioritizes Heroes.",
         "",
         ""
       ],
@@ -1330,7 +1330,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1351,7 +1351,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО АТАК В СЕКУНДУ:",
+          "heading_loc": "ATTACKS PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1372,7 +1372,7 @@
             -25
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА:",
+          "heading_loc": "DAMAGE REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_windranger_8",
@@ -1471,7 +1471,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1524,7 +1524,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1597,7 +1597,7 @@
       "id": 1239,
       "name": "windrunner_easy_breezy",
       "name_loc": "Easy Breezy",
-      "desc_loc": "Скорость передвижения героя не может упасть ниже %min_movespeed%, а её максимум повышается до %max_movespeed%.",
+      "desc_loc": "Windranger's movement speed cannot be lower than %min_movespeed% and can reach %max_movespeed%.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1698,7 +1698,7 @@
     {
       "id": 1195,
       "name": "special_bonus_unique_windranger_powershot_slow",
-      "name_loc": "+{s:bonus_slow_duration} сек. замедления от Powershot",
+      "name_loc": "+{s:bonus_slow_duration}s Powershot Slow Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1763,7 +1763,7 @@
     {
       "id": 5920,
       "name": "special_bonus_all_stats_4",
-      "name_loc": "+{s:value} ко всем атрибутам",
+      "name_loc": "+{s:value} All Attributes",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1846,7 +1846,7 @@
     {
       "id": 6992,
       "name": "special_bonus_unique_windranger_4",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Windrun",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Windrun Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1911,7 +1911,7 @@
     {
       "id": 6562,
       "name": "special_bonus_unique_windranger_3",
-      "name_loc": "–{s:bonus_damage_reduction}% снижения за существо у Powershot",
+      "name_loc": "-{s:bonus_damage_reduction}% Powershot Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1976,7 +1976,7 @@
     {
       "id": 7062,
       "name": "special_bonus_unique_windranger_6",
-      "name_loc": "+{s:bonus_stun_duration} сек. действия Shackleshot",
+      "name_loc": "+{s:bonus_stun_duration}s Shackleshot Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2041,7 +2041,7 @@
     {
       "id": 7889,
       "name": "special_bonus_unique_windranger_8",
-      "name_loc": "–{s:bonus_focusfire_damage_reduction}% снижения урона у Focus Fire",
+      "name_loc": "-{s:bonus_focusfire_damage_reduction}% Focus Fire Damage Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2106,7 +2106,7 @@
     {
       "id": 1071,
       "name": "special_bonus_unique_windranger_windrun_undispellable",
-      "name_loc": "Windrun нельзя развеять",
+      "name_loc": "Windrun Cannot Be Dispelled",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2171,8 +2171,8 @@
     {
       "id": 6413,
       "name": "special_bonus_unique_windranger_2",
-      "name_loc": "–{s:bonus_cooldown_reduction_per_kill} сек. перезарядки при убийстве жертвы Focus Fire",
-      "desc_loc": "Срабатывает, если жертва Focus Fire умрёт. Убийцей может быть кто угодно.",
+      "name_loc": "Focus Fire Kills Advance Cooldown by {s:bonus_cooldown_reduction_per_kill}s",
+      "desc_loc": "Triggers if Focus Fired unit dies, regardless of killer.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2180,7 +2180,7 @@
       "facets_loc": [
         "",
         "",
-        "Убийства с Focus Fire продлевают её на {s:bonus_duration_increase_per_kill} сек.",
+        "Whirlwind Kills extend duration by {s:bonus_duration_increase_per_kill}s",
         "",
         ""
       ],

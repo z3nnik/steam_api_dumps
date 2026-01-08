@@ -1,210 +1,208 @@
-[
-  {
-    "id": 5161,
-    "name": "necrolyte_reapers_scythe",
-    "name_loc": "Reaper's Scythe",
-    "desc_loc": "Оглушает выбранного вражеского героя, а затем наносит ему урон, пропорциональный отсутствующему у него здоровью. Убийство врага под действием этой способности засчитывается её владельцу и навсегда увеличивает ему восстановление здоровья и маны.",
-    "lore_loc": "Смерть и страдания, витающие в воздухе, усиливают чумную магию Ротунд'йера.",
-    "notes_loc": [
-      "Урон наносится сразу после оглушения."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 1,
-    "behavior": "8",
-    "target_team": 2,
-    "target_type": 1,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 3,
-    "max_level": 3,
-    "cast_ranges": [
-      600
-    ],
-    "cast_points": [
-      0.45
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      100
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      250,
-      375,
-      500
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "damage_per_health",
-        "values_float": [
-          0.7,
-          0.8,
-          0.9
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН ЗА ЕД. ЗДОРОВЬЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5161,
+  "name": "necrolyte_reapers_scythe",
+  "name_loc": "Reaper's Scythe",
+  "desc_loc": "Stuns the target enemy hero, then deals damage based on how much life it is missing. If Necrophos kills an enemy this way, he'll permanently gain Health and Mana Regen. Any kill under this effect is credited to Necrophos.",
+  "lore_loc": "The amount of death and suffering in the air increases the power of Necrophos's plague magic.",
+  "notes_loc": [
+    "Damage is dealt at the end of the stun."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 1,
+  "behavior": "8",
+  "target_team": 2,
+  "target_type": 1,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 3,
+  "max_level": 3,
+  "cast_ranges": [
+    600
+  ],
+  "cast_points": [
+    0.45
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    100
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    250,
+    375,
+    500
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "damage_per_health",
+      "values_float": [
+        0.7,
+        0.8,
+        0.9
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE PER MISSING HP:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "stun_duration",
-        "values_float": [
-          1.5
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "stun_duration",
+      "values_float": [
+        1.5
+      ],
+      "is_percentage": false,
+      "heading_loc": "STUN DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "hp_per_kill",
-        "values_float": [
-          1,
-          2,
-          3
-        ],
-        "is_percentage": false,
-        "heading_loc": "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ ЗА УБИЙСТВО:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "hp_per_kill",
+      "values_float": [
+        1,
+        2,
+        3
+      ],
+      "is_percentage": false,
+      "heading_loc": "HP REGEN PER KILL:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "mana_per_kill",
-        "values_float": [
-          1,
-          2,
-          3
-        ],
-        "is_percentage": false,
-        "heading_loc": "ВОССТАНОВЛЕНИЕ МАНЫ ЗА УБИЙСТВО:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "mana_per_kill",
+      "values_float": [
+        1,
+        2,
+        3
+      ],
+      "is_percentage": false,
+      "heading_loc": "MANA REGEN PER KILL:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastRange",
-        "values_float": [
-          600
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastRange",
+      "values_float": [
+        600
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          0.45
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        0.45
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          250,
-          375,
-          500
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        250,
+        375,
+        500
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          100
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        100
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

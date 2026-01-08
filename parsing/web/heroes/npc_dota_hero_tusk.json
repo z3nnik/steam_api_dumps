@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_tusk",
   "order_id": 98,
   "name_loc": "Tusk",
-  "bio_loc": "Славная была потасовка! После неё в таверне «Волчья дыра» на ногах остался стоять лишь Имир — он же Бивень, он же Ужас из Барьера, он же Снежный ком из Кобальта и единственный, кому удалось одолеть одного небезызвестного вышибалу с иглами на спине. Все началось с безобидного спора «кто кого?», что не редкость среди завсегдатаев заведений подобного рода. В итоге у трактирщика не осталось ни одной целой бутылки, кувшина или стула, а в глубокий нокаут отправились четверо здешних постояльцев, один кузнец и шестеро лучших вояк Морозной дружины. Созерцая эту картину, Имир провозгласил громкий тост в свою честь и осушил кружку хмельного.\r\n\t\t\t\t<br><br>Как только проигравшие пришли в себя, тут же начали требовать реванша и ставок повыше. Имиру это было лишь в радость, вот только он сомневался, что у этих бедолаг ещё что-то осталось из наличности. Видя весь этот погром и пытаясь любым способом предотвратить очередной дебош, трактирщик пошёл на хитрость. Поскольку Имир, несмотря на свои отменные боевые качества, никогда не участвовал в реальной битве, не ведал хаоса, творящегося на поле брани, и не знал, какой неразборчивой порой бывает смерть, трактирщик предложил ему новое пари: принять участие в самом масштабном сражении, неважно за какую сторону, при этом выжить и разгромить врага. Ну а что на кону? Конечно же, добротная порция выпивки за счёт заведения.",
-  "hype_loc": "Tusk никогда не против затеять драку. Он отрезает врагам путь к отступлению <b>стеной ледяных осколков</b>, собирает союзников в <b>гигантский снежный ком</b> и влетает в нём в противников, завершая комбинацию фирменным <b>сногсшибательным ударом</b>.",
-  "npe_desc_loc": "Снежным комом врывается во врагов, оглушая их",
+  "bio_loc": "It had been a brawl to remember. There stood Ymir, the Tusk, the Terror from the Barrier, the Snowball from Cobalt, the only fighter to have bested the Bristled Bruiser in a fair fight, and now the last man standing in Wolfsden Tavern. What started as a simple bar bet of supremacy ended with four regulars, a blacksmith, and six of the Frost Brigade's best soldiers writhing against the shards and splinters of almost every bottle, mug, and chair in the building. The Tusk boasted and toasted his victory as he emptied his brew.\r\n\t\t\t\t<br><br>No sooner had the defeated regained consciousness than the cries for double-or-nothing rang out. The Tusk was pleased at the prospect, but none could think of a bet bigger than the one he just conquered. Horrified at the damage to his tavern and desperate to avoid another brawl, the barkeep had an idea. As skilled as he was, Ymir had never taken part in a real battle, never tested himself against the indiscriminate death and chaos of war. He proposed a wager to the fighter: seek out the biggest battle he could find, survive, and win it for whichever side he chose. The stakes? The next round of drinks.",
+  "hype_loc": "Tusk is always eager to start a fight. Able to instantly corner an enemy with a <b>wall of ice shards</b>, he gathers with his allies and rolls into enemies inside of a <b>massive snowball</b>, bringing him in range to land his signature <b>knockout punch.</b>",
+  "npe_desc_loc": "Snowballs into his enemies to stun",
   "facets": [
     {
       "color": 3,
       "title_loc": "Tag Team",
-      "description_loc": "Даёт способность <b color='white'>Tag Team</b>, которая увеличивает урон от атак, получаемый врагами неподалёку.",
+      "description_loc": "Tusk can cast <b color='white'>Tag Team</b> causing nearby enemies to receive bonus damage from attacks.",
       "name": "tusk_facet_tag_team",
       "icon": "damage",
       "gradient_id": 3,
@@ -19,7 +19,7 @@
     {
       "color": 1,
       "title_loc": "Drinking Buddies",
-      "description_loc": "Даёт способность <b color='white'>Drinking Buddies</b>, которая притягивает союзника и увеличивает как ему, так и владельцу скорость передвижения и урон.",
+      "description_loc": "Tusk can cast <b color='white'>Drinking Buddies</b>, pulling him and a teammate closer and granting both bonus Movement Speed and Attack Damage.",
       "name": "tusk_facet_fist_bump",
       "icon": "movement",
       "gradient_id": 0,
@@ -66,12 +66,12 @@
       "id": 5565,
       "name": "tusk_ice_shards",
       "name_loc": "Ice Shards",
-      "desc_loc": "Герой сжимает осколки льда в шар холодной энергии, который наносит урон всем задетым врагам. Когда шар достигнет точки назначения, осколки высвободятся, создавая барьер на %shard_duration% сек.",
-      "lore_loc": "Когда заходит последнее осеннее солнце, морозная тундра у Барьера леденеет с тревожной быстротой.",
+      "desc_loc": "Tusk compresses shards of ice into a ball of frozen energy that damages all enemies it comes in contact with. When the ball reaches its target destination the shards are released, creating a barrier that lasts for %shard_duration% seconds.",
+      "lore_loc": "In the frozen tundra near the Barrier, after the last sun of autumn has set, ice can form with alarming speed.",
       "notes_loc": [
-        "Создаёт непроходимый барьер."
+        "Creates an impassable barrier."
       ],
-      "shard_loc": "Увеличивает глубину барьера, замедляет врагов внутри и наносит им периодический урон.",
+      "shard_loc": "Increases depth of Ice Shards, and enemies trapped within an ice shard are slowed and take damage per second.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -125,7 +125,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -145,7 +145,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "SHARD DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -199,7 +199,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БАРЬЕРА:",
+          "heading_loc": "SHARD DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -250,7 +250,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SLOW:",
           "bonuses": [],
           "values_shard": [
             50
@@ -269,7 +269,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [
             85
@@ -288,7 +288,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ГЛУБИНА БАРЬЕРА С AGHANIM'S SHARD:",
+          "heading_loc": "SHARD DEPTH:",
           "bonuses": [],
           "values_shard": [
             300
@@ -396,14 +396,14 @@
       "id": 5566,
       "name": "tusk_snowball",
       "name_loc": "Snowball",
-      "desc_loc": "Герой заворачивается в снежный ком. Союзников в радиусе %snowball_grab_radius% также можно поместить в ком, нажав на них правой кнопкой мыши, даже если ком уже движется. После запуска все враги на пути кома будут оглушены и получат урон. Чем больше в коме союзных героев, тем больше урон и оглушение от него.",
-      "lore_loc": "О приёме, завершившем великую потасовку на Белоснежных полях, до сих пор ходят легенды.",
+      "desc_loc": "Tusk begins rolling into a snowball. Allies within a %snowball_grab_radius% radius can also be added to the snowball by right-clicking on them, even while the snowball is moving. Once launched, any enemies caught in the snowball's path will be stunned and take damage. Each allied Hero in the snowball will add to its damage and stun duration.",
+      "lore_loc": "Tales are still told of the wild feat that ended the grand brawl at White Fields.",
       "notes_loc": [
-        "Снежный ком может катиться до 3 секунд, а потом развалится.",
-        "Снежный ком можно запустить раньше обычного, применив способность Launch Snowball.",
-        "Снежный ком не переносит иллюзии, но переносит клонов Meepo и существ под контролем владельца способности.",
-        "Каждый клон Meepo повышает урон снежного кома.",
-        "Союзники могут нажать на снежный ком, чтобы попасть в него."
+        "The snowball will break apart a maximum of 3 seconds after launch.",
+        "The snowball can be launched early by pressing using the Launch Snowball ability.",
+        "Doesn't carry illusions, but will carry Meepo clones and other units that Tusk controls.",
+        "Each Meepo clone added to the snowball will add its own bonus damage.",
+        "Allies can click on a snowball to add themselves to it."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -465,7 +465,7 @@
             260
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tusk_2",
@@ -491,7 +491,7 @@
             650
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ КОМА:",
+          "heading_loc": "SNOWBALL SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -511,7 +511,7 @@
             115
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ЗА СОЮЗНИКА:",
+          "heading_loc": "BONUS DAMAGE PER ALLY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -531,7 +531,7 @@
             1.2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -548,7 +548,7 @@
             0.2
           ],
           "is_percentage": false,
-          "heading_loc": "ОГЛУШЕНИЕ ЗА СОЮЗНИКА:",
+          "heading_loc": "STUN DURATION PER ALLY:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -633,7 +633,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДО ЗАПУСКА:",
+          "heading_loc": "LAUNCH TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -650,7 +650,7 @@
             325
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ СБОРА:",
+          "heading_loc": "GATHER RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -773,8 +773,8 @@
       "id": 5672,
       "name": "tusk_walrus_kick",
       "name_loc": "Walrus Kick",
-      "desc_loc": "Герой пинает ближайшего врага в указанном направлении, нанося ему урон, оглушая и замедляя его. Также урон получают все герои в радиусе %search_radius% вокруг точки приземления. Перезарядка меньше на %creep_cooldown_reduction_pct%%%, если пнуть крипа.",
-      "lore_loc": "Может, Имир и прославился своими кулаками, но мудрый противник опасается любых его конечностей.",
+      "desc_loc": "Kicks the closest enemy unit in the drawn direction, stunning, damaging, and slowing them. Also deals damage to all heroes within %search_radius% radius of its landing area. Cooldown is reduced by %creep_cooldown_reduction_pct%%% if kicking a creep.",
+      "lore_loc": "Tusk may have made his name with his fists, but the wise enemy is wary of any and all limbs.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -841,7 +841,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПИНКА:",
+          "heading_loc": "KICK PUSH DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -858,7 +858,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "MOVE SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -875,7 +875,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -892,7 +892,7 @@
             550
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1023,7 +1023,7 @@
       "id": 1386,
       "name": "tusk_bitter_chill",
       "name_loc": "Bitter Chill",
-      "desc_loc": "Уменьшает скорость атаки вражеских героев в радиусе %radius% на %attack_speed_slow%.",
+      "desc_loc": "Passively slows the attack speed of all enemy heroes within %radius% radius by %attack_speed_slow%.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1123,10 +1123,10 @@
       "id": 5568,
       "name": "tusk_walrus_punch",
       "name_loc": "Walrus PUNCH!",
-      "desc_loc": "Герой совершает свой коронный удар — настолько мощную критическую атаку с увеличенным уроном, что она подбрасывает жертву в воздух.",
-      "lore_loc": "Неважно, кто ударил первым. Важно, кто ударит последним.",
+      "desc_loc": "Tusk connects with his mighty Walrus Punch, a critical strike with bonus damage so powerful it launches its victim into the air.",
+      "lore_loc": "It never matters who throws the first punch, only who throws the last.",
       "notes_loc": [
-        "Атакой под эффектом этой способности нельзя промахнуться."
+        "Walrus PUNCH has true strike."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1180,7 +1180,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1199,7 +1199,7 @@
             300
           ],
           "is_percentage": true,
-          "heading_loc": "КРИТИЧЕСКИЙ УРОН:",
+          "heading_loc": "CRITICAL DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tusk",
@@ -1222,7 +1222,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ В ВОЗДУХЕ:",
+          "heading_loc": "AIR TIME:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tusk_7",
@@ -1349,7 +1349,7 @@
     {
       "id": 6961,
       "name": "special_bonus_unique_tusk_3",
-      "name_loc": "+{s:bonus_debuff_duration} сек. замедления от Tag Team",
+      "name_loc": "+{s:bonus_debuff_duration}s Tag Team Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1357,7 +1357,7 @@
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "+{s:bonus_buff_duration} сек. действия Drinking Buddies"
+        "+{s:bonus_buff_duration}s Drinking Buddies Duration"
       ],
       "type": 2,
       "behavior": "2",
@@ -1411,7 +1411,7 @@
     {
       "id": 414,
       "name": "special_bonus_unique_tusk_7",
-      "name_loc": "+{s:bonus_air_time} сек. оглушения от Walrus Punch",
+      "name_loc": "+{s:bonus_air_time}s Walrus Punch Stun Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1473,7 +1473,7 @@
     {
       "id": 6423,
       "name": "special_bonus_hp_325",
-      "name_loc": "+{s:value} к здоровью",
+      "name_loc": "+{s:value} Health",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1553,7 +1553,7 @@
     {
       "id": 6411,
       "name": "special_bonus_unique_tusk_2",
-      "name_loc": "+{s:bonus_snowball_damage} к урону от Snowball",
+      "name_loc": "+{s:bonus_snowball_damage} Snowball Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1615,7 +1615,7 @@
     {
       "id": 6963,
       "name": "special_bonus_unique_tusk_5",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Ice Shards",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Ice Shards Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1677,7 +1677,7 @@
     {
       "id": 6194,
       "name": "special_bonus_unique_tusk",
-      "name_loc": "+{s:bonus_crit_multiplier}% к критическому урону от Walrus Punch",
+      "name_loc": "+{s:bonus_crit_multiplier}% Walrus Punch Crit",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1739,8 +1739,8 @@
     {
       "id": 6962,
       "name": "special_bonus_unique_tusk_4",
-      "name_loc": "Walrus Punch сработает при атаке с шансом в {s:bonus_proc_chance}%",
-      "desc_loc": "Walrus Punch может сработать при обычных атаках, независимо от маны или перезарядки.",
+      "name_loc": "{s:bonus_proc_chance}% Chance Walrus Punch",
+      "desc_loc": "Walrus Punch gains a chance to be triggered on normal attacks, independent of mana cost or cooldown.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1801,7 +1801,7 @@
     {
       "id": 7891,
       "name": "special_bonus_unique_tusk_6",
-      "name_loc": "−{s:bonus_AbilityCooldown} сек. перезарядки Snowball",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Snowball Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1868,10 +1868,10 @@
           "id": 7322,
           "name": "tusk_tag_team",
           "name_loc": "Tag Team",
-          "desc_loc": "Временно даёт герою ауру, в которой атаки замедляют передвижение врагов и наносят им дополнительный физический урон. Действует %debuff_duration% секунд.",
-          "lore_loc": "Даже вдали от Кобальта кости Бивня полны прохлады Барьера.",
+          "desc_loc": "Activate to temporarily apply a negative debuff aura around you, causing enemies that are attacked under it to take bonus physical damage and reduced movement speed. Lasts %debuff_duration% seconds.",
+          "lore_loc": "Even far from Cobalt, Tusk carries the 'Barrier Chill' in his very bones.",
           "notes_loc": [
-            "Действует на атаки союзных героев, владельца способности и всех его существ."
+            "Affects attacks from allied heroes, Tusk or any of his units."
           ],
           "shard_loc": "",
           "scepter_loc": "",
@@ -1927,7 +1927,7 @@
                 100
               ],
               "is_percentage": false,
-              "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+              "heading_loc": "BONUS DAMAGE:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1944,7 +1944,7 @@
                 75
               ],
               "is_percentage": true,
-              "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+              "heading_loc": "MOVEMENT SLOW:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1961,7 +1961,7 @@
                 0.5
               ],
               "is_percentage": false,
-              "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+              "heading_loc": "SLOW DURATION:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -1978,7 +1978,7 @@
                 6
               ],
               "is_percentage": false,
-              "heading_loc": "ВРЕМЯ ДЕЙСТВИЯ АУРЫ:",
+              "heading_loc": "DEBUFF DURATION:",
               "bonuses": [
                 {
                   "name": "special_bonus_unique_tusk_3",
@@ -2001,7 +2001,7 @@
                 350
               ],
               "is_percentage": false,
-              "heading_loc": "РАДИУС:",
+              "heading_loc": "RADIUS:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -2071,11 +2071,11 @@
           "id": 1385,
           "name": "tusk_drinking_buddies",
           "name_loc": "Drinking Buddies",
-          "desc_loc": "Герой и выбранный союзник притягиваются друг к другу, после чего получают бонус к скорости передвижения и урону от атак. Если включено альтернативное применение, то дальность становится меньше на %alt_cast_castrange_pct%%%, а притягивается только владелец способности.",
-          "lore_loc": "Найти хорошего собутыльника — замечательно, но найти столь же хорошего врага, которому вы вдвоём сможете начистить морду — ещё лучше. ",
+          "desc_loc": "Tusk reaches out to tag an allied unit, pulling them closer. Once tagged, both Tusk and his tagged ally gain movement speed and attack damage. Can be put on alt-cast to only pull Tusk towards his ally with %alt_cast_castrange_pct%%% reduced cast range.",
+          "lore_loc": "The only thing better than finding a good drinking buddy is finding an equally good enemy the two of you can punch. ",
           "notes_loc": [
-            "Ни владелец, ни цель не перемещаются, если расстояние между ними менее %min_distance%.",
-            "Нельзя применить под действием Snowball."
+            "Doesn't pull Tusk or targeted ally if they are within %min_distance% range of each other.",
+            "Cannot be used during Snowball."
           ],
           "shard_loc": "",
           "scepter_loc": "",
@@ -2148,7 +2148,7 @@
                 6
               ],
               "is_percentage": false,
-              "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+              "heading_loc": "BUFF DURATION:",
               "bonuses": [
                 {
                   "name": "special_bonus_unique_tusk_3",
@@ -2225,7 +2225,7 @@
                 20
               ],
               "is_percentage": true,
-              "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+              "heading_loc": "BONUS MOVEMENT SPEED:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],
@@ -2245,7 +2245,7 @@
                 110
               ],
               "is_percentage": false,
-              "heading_loc": "ДОП. УРОН ОТ АТАК:",
+              "heading_loc": "BONUS ATTACK DAMAGE:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

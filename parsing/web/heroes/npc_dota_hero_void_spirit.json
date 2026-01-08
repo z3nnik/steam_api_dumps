@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_void_spirit",
   "order_id": 119,
   "name_loc": "Void Spirit",
-  "bio_loc": "Даже другие духи не понимают стремлений и замыслов их старшего брата Иная, духа пустоты. Он хранит секреты, которые могут расколоть сознание смертного, и наблюдает за мановениями вселенной с непостижимой прозорливостью, оставляя подготовленным слугам исполнять его волю; и только если он решит, что больше никто не сможет направить реальность на верный путь, он покинет Сокрытый храм и переместится в материальный мир.<br><br>Инай видит перед собой всё сущее, но его взгляд прикован к тому моменту времени, в котором столкнётся множество реальностей — грядущее ему неведомо. Теперь же он материализуется из небытия, чтобы лично решить исход битвы Древних и подготовить своих союзников к более важному противостоянию.",
-  "hype_loc": "Дух пустоты хранит секреты, которые могут расколоть сознание смертного. Он покидает Сокрытый храм, несёт дозор <b>над всем полем битвы</b> и по своей воле может покинуть мир смертных и вернуться в него. В мгновения нужды взывая к <b>защите</b> скрытой реальности, он <b>легко обходит врагов</b>, чтобы ударить, откуда он сам пожелает.",
-  "npe_desc_loc": "Атакует врагов, то и дело покидая мир смертных",
+  "bio_loc": "Not even the other spirits claim to understand the mind and machinations of the eldest amongst them, Inai the Void Spirit. Privy to secrets that would shatter a mortal mind, the Void Spirit observes the workings of the universe from an unknowable vantage, choosing to let carefully groomed servants do his bidding -- only emerging from his Hidden Temple into the material plane when he deems that he alone can steer the course of reality along its proper path.<br><br>With an expansive perspective on existence, Inai is focused intently on a point in time beyond which he cannot see, when the fabrics of multiple realities are fated to collide. Now he steps from the aether to personally resolve the battle of the Ancients and prepare his allies for what he views as a greater conflict to come.",
+  "hype_loc": "Privy to secrets that would shatter a mortal mind, the Void Spirit emerges from his Hidden Temple to stand guard over <b>multiple areas of the battlefield</b> at once. Able to step into and out of the mortal plane at will, he easily <b>outmaneuvers opponents</b> to strike from wherever he desires, calling upon the powers of the aether to <b>shield him</b> in times of need.",
+  "npe_desc_loc": "Steps in and out of the mortal plane to strike his foes",
   "facets": [
     {
       "color": 4,
       "title_loc": "Sanctuary",
-      "description_loc": "Способность Resonant Pulse даёт усиленный барьер, поглощающий урон всех типов.",
+      "description_loc": "Resonant Pulse creates a larger all damage barrier instead of a physical barrier.",
       "name": "void_spirit_sanctuary",
       "icon": "armor",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 5,
       "title_loc": "Call of the Void",
-      "description_loc": "Когда герой выходит из любого портала Dissimilate, кроме центрального, в {s:bonus_aether_remnant_count} наиболее далёких от него порталах создаются его копии от Aether Remnant.",
+      "description_loc": "Upon exiting Dissimilate, Aether Remnants are created at the {s:bonus_aether_remnant_count} portals furthest from Void Spirit.",
       "name": "void_spirit_aether_artifice",
       "icon": "illusion",
       "gradient_id": 3,
@@ -66,10 +66,10 @@
       "id": 7701,
       "name": "void_spirit_aether_remnant",
       "name_loc": "Aether Remnant",
-      "desc_loc": "Герой отправляет в указанную точку свою копию. Копия смотрит в сторону, указанную при применении. Когда в её обзор попадает существо, копия притягивает его и наносит урон.",
-      "lore_loc": "Инай существует далеко не в одной точке пространства и времени.",
+      "desc_loc": "Void Spirit dispatches a remnant to the target location. The remnant stands watch over the region, facing the direction of his vector. When a unit crosses its gaze, the remnant pulls it in and damages it.",
+      "lore_loc": "Inai exists far beyond the scope of a single point in space and time.",
       "notes_loc": [],
-      "shard_loc": "Создаёт дополнительную линию обзора, которая вращается вокруг копии. Также копия раскрывает невидимых существ неподалёку и больше не срабатывает на крипов, а наносит им своим взглядом %creep_damage_pct%%% урона в секунду.",
+      "shard_loc": "Creates an additional watcher path that rotates around the remnant.  The remnant now provides True Sight, and no longer triggers on creeps, instead dealing %creep_damage_pct%%% damage to them every second in both paths.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -192,7 +192,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПОИСКА ЦЕЛИ:",
+          "heading_loc": "WATCH RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -243,7 +243,7 @@
             0.4
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ДО АКТИВАЦИИ:",
+          "heading_loc": "ACTIVATION TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -263,7 +263,7 @@
             240
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_void_spirit_2",
@@ -289,7 +289,7 @@
             1.6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРИТЯГИВАНИЯ:",
+          "heading_loc": "PULL DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -326,7 +326,7 @@
             17
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ КОПИИ:",
+          "heading_loc": "REMNANT LIFETIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -562,17 +562,17 @@
       "id": 6470,
       "name": "void_spirit_dissimilate",
       "name_loc": "Dissimilate",
-      "desc_loc": "Герой временно исчезает в иной мир, создавая несколько порталов, через которые он может собрать свою сущность воедино. Выйдя из портала, герой наносит урон всем врагам в области действия.",
-      "lore_loc": "Инай предпочитает наблюдать за нашим миром, не обременяя себя материальной формой.",
+      "desc_loc": "Void Spirit temporarily fades into the aether, creating a number of portals through which he can reassemble himself. Upon exiting a portal, he damages all enemies in the area.",
+      "lore_loc": "Inai much prefers to observe our plane free from the confines of corporeal form.",
       "notes_loc": [
-        "Копии от Aether Remnant не появляются во внешнем круге с аспектом Call of the Void."
+        "Call of the Void will never spawn Aether Remnants in the Outer Ring."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Когда герой выходит из любого портала, кроме центрального, в %aether_remnant_count% наиболее далёких от него порталах создаются его копии от Aether Remnant. Они смотрят в сторону центрального портала, а их урон и длительность притягивания уменьшены."
+        "Upon exiting Dissimilate, Aether Remnants are created at the %aether_remnant_count% portals furthest from Void Spirit. No effect if reassembling from the center portal. Remnants face towards the center portal and have reduced pull duration and damage."
       ],
       "type": 0,
       "behavior": "524292",
@@ -619,7 +619,7 @@
             1.1
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ИСЧЕЗНОВЕНИЯ:",
+          "heading_loc": "PHASE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -761,7 +761,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ЖИЗНИ КОПИЙ:",
+          "heading_loc": "REMNANT DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -779,8 +779,8 @@
           "values_float": [
             0
           ],
-          "is_percentage": false,
-          "heading_loc": "ЭФФЕКТИВНОСТЬ КОПИЙ:",
+          "is_percentage": true,
+          "heading_loc": "REMNANT EFFECTIVENESS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -925,13 +925,13 @@
       "id": 7710,
       "name": "void_spirit_resonant_pulse",
       "name_loc": "Resonant Pulse",
-      "desc_loc": "Герой помещает себя в защитную оболочку, которая поглощает физический урон и выпускает одну наносящую урон волну. Оболочка поглощает тем больше урона, чем больше вражеских героев заденет волна.",
-      "lore_loc": "Инай без сомнений укрывается своей истинной сущностью, когда ему приходится взаимодействовать с миром смертных.",
+      "desc_loc": "Void Spirit wraps himself in a protective shield that absorbs physical damage and emits a single damaging pulse around him. The shield gains increased damage absorption for each enemy hero the pulse hits.",
+      "lore_loc": "Inai never hesitates to shroud himself in the essence of his true self when forced to interact with the mortal plane.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Перезарядка заменяется %max_charges% зарядами. Способность накладывает на жертв безмолвие.",
+      "scepter_loc": "Causes Resonant Pulse to silence and gain %max_charges% charges.",
       "facets_loc": [
-        "Способность даёт усиленный барьер, поглощающий урон всех типов.",
+        "Resonant Pulse creates a larger all damage barrier instead of a physical barrier.",
         "",
         ""
       ],
@@ -980,7 +980,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ВОЛНЫ:",
+          "heading_loc": "PULSE RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1017,7 +1017,7 @@
             210
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_void_spirit_4",
@@ -1040,7 +1040,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БАРЬЕРА:",
+          "heading_loc": "BARRIER DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1060,7 +1060,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВОЕ ЗДОРОВЬЕ БАРЬЕРА:",
+          "heading_loc": "BASE DAMAGE BARRIER:",
           "bonuses": [
             {
               "name": "special_bonus_unique_void_spirit_resonant_pulse_barrier",
@@ -1086,7 +1086,7 @@
             80
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ПОГЛОЩАЕМЫЙ УРОН ЗА ГЕРОЯ:",
+          "heading_loc": "BARRIER AMOUNT PER HERO HIT:",
           "bonuses": [
             {
               "name": "special_bonus_unique_void_spirit_resonant_pulse_barrier",
@@ -1169,7 +1169,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВОЕ ВРЕМЯ ВОССТАНОВЛЕНИЯ ЗАРЯДА:",
+          "heading_loc": "BASE CHARGE RESTORE TIME:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1188,7 +1188,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БЕЗМОЛВИЯ:",
+          "heading_loc": "SILENCE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1256,7 +1256,7 @@
       "id": 1420,
       "name": "void_spirit_intrinsic_edge",
       "name_loc": "Intrinsic Edge",
-      "desc_loc": "Увеличивает неосновные бонусы от атрибутов на %secondary_stat_bonus_pct%%%. Сила даёт герою больше восстановления здоровья, ловкость — больше брони, а интеллект — больше восстановления маны и сопротивления магии.",
+      "desc_loc": "Void Spirit gains %secondary_stat_bonus_pct%%% more HP regen from Strength, armor from Agility, and mana regen and magic resistance from Intelligence.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1325,7 +1325,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:",
+          "heading_loc": "HEALTH REGENERATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1342,7 +1342,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "БРОНЯ:",
+          "heading_loc": "ARMOR:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1359,7 +1359,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ МАНЫ:",
+          "heading_loc": "MANA REGENERATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1376,7 +1376,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "СОПРОТИВЛЕНИЕ МАГИИ:",
+          "heading_loc": "MAGIC RESIST:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1405,10 +1405,10 @@
       "id": 7705,
       "name": "void_spirit_astral_step",
       "name_loc": "Astral Step",
-      "desc_loc": "Герой перемещается в указанную точку через астральный разлом, атакуя всех врагов на пути. Эта атака накладывает метку пустоты, которая замедляет жертв на %pop_damage_delay% сек. и затем наносит урон.",
-      "lore_loc": "Один шаг Иная приводит к страшным разрушениям в мире смертных.",
+      "desc_loc": "Void Spirit tears a rift through the astral plane to appear at the target location, attacking all enemies along the path. This attack inflicts a void mark that slows for %pop_damage_delay% seconds and then detonates.",
+      "lore_loc": "A small step for Inai creates great devastation on the mortal plane.",
       "notes_loc": [
-        "Атаки от этой способности не наносят прорубающий урон."
+        "Astral Step attacks do not cleave."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1495,7 +1495,7 @@
             1000
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ:",
+          "heading_loc": "RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1531,7 +1531,7 @@
             330
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ МЕТКИ ПУСТОТЫ:",
+          "heading_loc": "VOID MARK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1550,7 +1550,7 @@
             80
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1677,7 +1677,7 @@
     {
       "id": 7132,
       "name": "special_bonus_mp_regen_150",
-      "name_loc": "+{s:value} маны в секунду",
+      "name_loc": "+{s:value} Mana Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1758,7 +1758,7 @@
     {
       "id": 7709,
       "name": "special_bonus_unique_void_spirit_4",
-      "name_loc": "+{s:bonus_damage} к урону от Resonant Pulse",
+      "name_loc": "+{s:bonus_damage} Resonant Pulse Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1821,7 +1821,7 @@
     {
       "id": 1657,
       "name": "special_bonus_unique_void_spirit_resonant_pulse_barrier",
-      "name_loc": "+{s:bonus_base_absorb_amount}% к барьеру от Resonant Pulse",
+      "name_loc": "+{s:bonus_base_absorb_amount}% Resonant Pulse Barrier",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1884,7 +1884,7 @@
     {
       "id": 7707,
       "name": "special_bonus_unique_void_spirit_2",
-      "name_loc": "+{s:bonus_impact_damage} к урону от Aether Remnant",
+      "name_loc": "+{s:bonus_impact_damage} Aether Remnant Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1947,8 +1947,8 @@
     {
       "id": 1070,
       "name": "special_bonus_unique_void_spirit_dissimilate_outerring",
-      "name_loc": "Внешний круг у Dissimilate",
-      "desc_loc": "Добавляет частичный внешний круг у способности Dissimilate",
+      "name_loc": "Outer Dissimilate Ring",
+      "desc_loc": "Add a partial outer ring to Dissimilate",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2010,7 +2010,7 @@
     {
       "id": 7706,
       "name": "special_bonus_unique_void_spirit_1",
-      "name_loc": "–{s:bonus_AbilityChargeRestoreTime} сек. восстановления заряда Astral Step",
+      "name_loc": "-{s:bonus_AbilityChargeRestoreTime}s Astral Step Charge Restore Time",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2073,8 +2073,8 @@
     {
       "id": 7714,
       "name": "special_bonus_unique_void_spirit_8",
-      "name_loc": "Критические атаки в {s:bonus_crit_damage}% урона от Astral Step",
-      "desc_loc": "Атаки с помощью способности Astral Step наносят критический урон.",
+      "name_loc": "{s:bonus_crit_damage}% Astral Step Crit",
+      "desc_loc": "Attacks made with Astral Step deal a critical strike.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -2136,7 +2136,7 @@
     {
       "id": 7708,
       "name": "special_bonus_unique_void_spirit_3",
-      "name_loc": "Dissimilate накладывает оцепенение на {s:bonus_root_duration} сек.",
+      "name_loc": "Dissimilate Roots for {s:bonus_root_duration}s",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

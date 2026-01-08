@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_antimage",
   "order_id": 1,
   "name_loc": "Anti-Mage",
-  "bio_loc": "Монахи Турстаркури наблюдали за неровными долинами, раскинувшимися под их горным монастырем, в то время, как вторженцы, волна за волной, набегали на стоявшие у подножья королевства. Аскетичные, прагматичные, они пребывали в медитации, не знавшей никаких богов, засев в своем отрешенном от суетного мира высокогорном гнезде. Потом грянул легион Мертвого бога — крестоносцы, уничтожающие все местные культы и заменяющие их своей верой, родом из земель, известных лишь безжалостностью и тысячелетними войнами. Легионы мертвецов осадили Турстаркури. Две недели монастырь едва сдерживал натиск врагов, а те немногие монахи, что решили разузнать, в чем дело, восприняли нападение как попытку бесовских иллюзий отвлечь их от медитации. Они были убиты прямо на своих шелковых подстилках. Выжил лишь один молодой послушник — пилигрим, пришедший в поисках мудрости, но еще не принятый в монастырь. С ужасом он смотрел за тем, как монахи, которым он еще недавно подавал чаи и травы, гибли на своих местах, а потом присоединялись к рядам служителей Мертвого бога. Схватив охапку ценнейших священных писаний, он бежал в более безопасное место, поклявшись не только искоренить армию колдунов Мертвого бога, но и положить конец любой, какой бы то ни было, магии. ",
-  "hype_loc": "Если Anti-Mage наберёт полную силу, мало кто сможет его остановить. Он способен <b>забирать у врагов ману</b> каждым ударом или <b>телепортироваться на небольшие расстояния</b>, что не позволяет врагам загнать его в угол.",
-  "npe_desc_loc": "Выжигает ману врагов атаками",
+  "bio_loc": "The monks of Turstarkuri watched the rugged valleys below their mountain monastery as wave after wave of invaders swept through the lower kingdoms. Ascetic and pragmatic, in their remote monastic eyrie they remained aloof from mundane strife, wrapped in meditation that knew no gods or elements of magic. Then came the Legion of the Dead God, crusaders with a sinister mandate to replace all local worship with their Unliving Lord's poisonous nihilosophy. From a landscape that had known nothing but blood and battle for a thousand years, they tore the souls and bones of countless fallen legions and pitched them against Turstarkuri. The monastery stood scarcely a fortnight against the assault, and the few monks who bothered to surface from their meditations believed the invaders were but demonic visions sent to distract them from meditation. They died where they sat on their silken cushions. Only one youth survived--a pilgrim who had come as an acolyte, seeking wisdom, but had yet to be admitted to the monastery. He watched in horror as the monks to whom he had served tea and nettles were first slaughtered, then raised to join the ranks of the Dead God's priesthood. With nothing but a few of Turstarkuri's prized dogmatic scrolls, he crept away to the comparative safety of other lands, swearing to obliterate not only the Dead God's magic users--but to put an end to magic altogether. ",
+  "hype_loc": "Should Anti-Mage have the opportunity to gather his full strength, few can stop his assaults. <b>Draining mana</b> from enemies with every strike or <b>teleporting short distances</b> to escape an ambush, cornering him is a challenge for any foe.",
+  "npe_desc_loc": "Slashes his foes with mana-draining attacks",
   "facets": [
     {
       "color": 4,
       "title_loc": "Magebane's Mirror",
-      "description_loc": "Если отразить заклинание с помощью Counterspell, оно немедленно сожжёт обидчику ману пропорционально затраченной и нанесёт ему урон в размере доли от сожжённой маны.",
+      "description_loc": "Spells countered by Counterspell will immediately burn a percentage of its mana cost from the enemy and deal damage based on the burned mana cost.",
       "name": "antimage_magebanes_mirror",
       "icon": "ricochet",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Mana Thirst",
-      "description_loc": "Урон героя увеличивается, когда у врагов вокруг мало маны.",
+      "description_loc": "Anti-Mage gains damage when his enemies are at low mana.",
       "name": "antimage_mana_thirst",
       "icon": "mana",
       "gradient_id": 3,
@@ -66,10 +66,10 @@
       "id": 5003,
       "name": "antimage_mana_break",
       "name_loc": "Mana Break",
-      "desc_loc": "Каждая атака сжигает ману цели и наносит ей урон, равный доле от сожжённой маны.",
-      "lore_loc": "Изменённый приём турстаркурийских монахов, обращающий волшебную энергию против самого чародея.",
+      "desc_loc": "Burns an opponent's mana on each attack and deals damage equal to a percentage of the mana burnt.",
+      "lore_loc": "A modified technique of the Turstarkuri monks' peaceful ways is to turn magical energies on their owner.",
       "notes_loc": [
-        "Иллюзии дают %illusion_percentage%%% от эффекта этой способности."
+        "Mana Break has %illusion_percentage%%% effect if caused by illusions."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -119,7 +119,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ СОЖЖЁННОЙ МАНЫ:",
+          "heading_loc": "MANA BURNED AS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -139,7 +139,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "СЖИГАНИЕ МАНЫ ЗА АТАКУ:",
+          "heading_loc": "MANA BURNED PER HIT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -159,7 +159,7 @@
             4
           ],
           "is_percentage": true,
-          "heading_loc": "СЖИГАЕМАЯ ДОЛЯ ОТ МАКС. МАНЫ:",
+          "heading_loc": "MAX MANA BURNED PER HIT:",
           "bonuses": [
             {
               "name": "special_bonus_unique_antimage_7",
@@ -249,13 +249,13 @@
       "id": 5004,
       "name": "antimage_blink",
       "name_loc": "Blink",
-      "desc_loc": "Перемещение на короткую дистанцию, позволяющее ворваться в схватку или быстро из неё сбежать.",
-      "lore_loc": "В схватках с мёртвыми богами юный послушник познал важность неуловимости.",
+      "desc_loc": "Short distance teleportation that allows Anti-Mage to move in and out of combat.",
+      "lore_loc": "In his encounter with the Dead Gods, Anti-Mage learned the value of being elusive.",
       "notes_loc": [
-        "Позволяет сбить с цели многие снаряды."
+        "You can use Blink to dodge incoming projectiles."
       ],
       "shard_loc": "",
-      "scepter_loc": "Уменьшает перезарядку этой способности на %bonus_AbilityCooldown% сек. В течение %empowered_mana_break_duration%s сек. после её применения следующая атака с эффектом Mana Break дополнительно сожжёт %empowered_max_burn_pct_tooltip%%% от максимальной маны и ненадолго запретит жертве восстанавливать её (этот эффект нельзя развеять).",
+      "scepter_loc": "After casting Blink, your next Mana Break within %empowered_mana_break_duration%s burns an additional %empowered_max_burn_pct_tooltip%%% max mana and prevents the target from regenerating or gaining mana for a short duration. This debuff is undispellable. Blink Cooldown reduced by %bonus_AbilityCooldown%s.",
       "facets_loc": [
         "",
         ""
@@ -366,7 +366,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "DEBUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -479,15 +479,15 @@
       "id": 7314,
       "name": "antimage_counterspell",
       "name_loc": "Counterspell",
-      "desc_loc": "Пассивно увеличивает сопротивление магическому урону. Можно применить, чтобы создать вокруг себя противомагический щит, который блокирует и отражает все направленные заклинания.",
-      "lore_loc": "Сконцентрировавшись, Антимаг обращает врождённое сопротивление в точную контратаку.",
+      "desc_loc": "Passively grants magic resistance. Counterspell may be activated to create an anti-magic shell around Anti-Mage that blocks and reflects any targeted spells.",
+      "lore_loc": "With the proper focus, Anti-Mage turns innate resistance into calculated retaliation.",
       "notes_loc": [
-        "Пассивное сопротивление магии отключается истощением."
+        "Break disables the passive magic resistance."
       ],
-      "shard_loc": "Создаёт фрагмент владельца рядом с врагом, применившим отражённую способность.",
+      "shard_loc": "Creates a blinked fragment of Anti-Mage next to the enemy caster upon reflecting their unit-targeted spell while active.",
       "scepter_loc": "",
       "facets_loc": [
-        "Отразив заклинание, эта способность сожжёт обидчику ману пропорционально затраченной и нанесёт ему урон в размере %damage_from_mana_drain_percent%%% от сожжённой маны (но не больше %max_damage_from_mana_drain% за заклинание).",
+        "Counterspell burns a percentage of the countered spell's mana cost from its caster and does damage based on %damage_from_mana_drain_percent%%% of the burned mana cost, up to a maximum of %max_damage_from_mana_drain% damage per reflected spell.",
         ""
       ],
       "type": 0,
@@ -541,7 +541,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "СОПРОТИВЛЕНИЕ МАГИИ:",
+          "heading_loc": "MAGIC RESISTANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_antimage_4",
@@ -564,7 +564,7 @@
             1.2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -635,7 +635,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "СЖИГАЕМАЯ МАНА:",
+          "heading_loc": "MANA BURN PERCENTAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -744,10 +744,10 @@
       "id": 1447,
       "name": "antimage_persectur",
       "name_loc": "Persecutor",
-      "desc_loc": "Атаки замедляют жертв в зависимости от недостающей у них маны. Замедление начинает действовать при %mana_threshold%%% маны и становится максимальным при %zero_tooltip%%% маны.",
+      "desc_loc": "Attacks slow enemies based on how much mana they are missing. Min slow at %mana_threshold%%% mana, up to max slow at %zero_tooltip%%% mana. No effect if enemy is above %mana_threshold%%% mana.",
       "lore_loc": "",
       "notes_loc": [
-        "Иллюзии накладывают полный эффект этой способности."
+        "Full effect if caused by illusions."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -800,7 +800,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "МИН. ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MIN MOVEMENT SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_antimage_5",
@@ -826,7 +826,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MAX MOVEMENT SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_antimage_5",
@@ -866,7 +866,7 @@
             0.75
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -895,17 +895,17 @@
       "id": 5006,
       "name": "antimage_mana_void",
       "name_loc": "Mana Void",
-      "desc_loc": "Кратковременно оглушает вражескую цель, а затем наносит ей и всем окружающим её противникам урон, пропорциональный числу отсутствующей у неё маны.",
-      "lore_loc": "Одолев врагов, борец с магией карает их за использование тайных искусств.",
+      "desc_loc": "For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies.  The main target is also mini-stunned.",
+      "lore_loc": "After bringing enemies to their knees, Anti-Mage punishes them for their use of the arcane arts.",
       "notes_loc": [
-        "Урон зависит от количества маны у цели, но наносится всем противникам в радиусе действия способности.",
-        "Бонус к урону и обзор по врагам от Mana Thirst отключается истощением."
+        "Damage is calculated based on the primary target's mana, but applied to all enemies within the area of effect.",
+        "Break disables Mana Thirst vision and attack bonuses."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Пассивно увеличивает урон от атак, когда вражеский герой в радиусе %thirst_range% имеет меньше %min_bonus_pct%%% маны. Чем ниже уровень маны, тем сильнее эффект.<br><br> Если мана вражеского героя упадёт ниже %threshold_pct%%%, бонус к атаке станет максимальным, а самого героя станет видно, даже если он невидим. Бонусы от разных героев складываются."
+        "Passively grants attack damage when an enemy hero's mana falls below %min_bonus_pct%%%, with the bonuses increasing as their mana falls further.<br><br> If the enemies mana falls below %threshold_pct%%% Anti-Mage gains the maximum amount of damage, as well as vision and True Sight of that hero. Applies to enemy heroes within %thirst_range% range. Bonuses stack per hero."
       ],
       "type": 1,
       "behavior": "40",
@@ -956,7 +956,7 @@
             1.1
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ЗА ЕДИНИЦУ МАНЫ:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_antimage_6",
@@ -979,7 +979,7 @@
             0.3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_antimage_8",
@@ -1002,7 +1002,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_antimage_manavoid_aoe",
@@ -1122,7 +1122,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. БОНУС К АТАКЕ ЗА НЕХВАТКУ МАНЫ:",
+          "heading_loc": "MANA THIRST MAX ATTACK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1251,7 +1251,7 @@
     {
       "id": 1495,
       "name": "special_bonus_hp_regen_3",
-      "name_loc": "+{s:value} здоровья в секунду",
+      "name_loc": "+{s:value} Health Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1331,7 +1331,7 @@
     {
       "id": 966,
       "name": "special_bonus_unique_antimage_manavoid_aoe",
-      "name_loc": "+{s:bonus_mana_void_aoe_radius} к радиусу Mana Void",
+      "name_loc": "+{s:bonus_mana_void_aoe_radius} Mana Void Radius",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1393,7 +1393,7 @@
     {
       "id": 666,
       "name": "special_bonus_unique_antimage_7",
-      "name_loc": "+{s:bonus_mana_per_hit_pct}% к сжигаемой макс. мане от Mana Burn",
+      "name_loc": "+{s:bonus_mana_per_hit_pct}% Max Mana Mana Burn",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1455,7 +1455,7 @@
     {
       "id": 6800,
       "name": "special_bonus_unique_antimage_5",
-      "name_loc": "+{s:bonus_move_slow_min}/{s:bonus_move_slow_max}% к мин./макс. замедлению от Persecutor",
+      "name_loc": "+{s:bonus_move_slow_min}%/{s:bonus_move_slow_max}% Persecutor Min/Max Movement Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1517,7 +1517,7 @@
     {
       "id": 665,
       "name": "special_bonus_unique_antimage_6",
-      "name_loc": "+{s:bonus_mana_void_damage_per_mana} к урону за единицу маны от Mana Void",
+      "name_loc": "+{s:bonus_mana_void_damage_per_mana} Mana Void Damage Multiplier",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1579,7 +1579,7 @@
     {
       "id": 735,
       "name": "special_bonus_unique_antimage_8",
-      "name_loc": "+{s:bonus_mana_void_ministun} сек. оглушения от Mana Void",
+      "name_loc": "+{s:bonus_mana_void_ministun}s Mana Void Stun",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1641,7 +1641,7 @@
     {
       "id": 6606,
       "name": "special_bonus_unique_antimage_3",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальности Blink",
+      "name_loc": "+{s:bonus_AbilityCastRange} Blink Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1703,7 +1703,7 @@
     {
       "id": 6353,
       "name": "special_bonus_unique_antimage_2",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Mana Void",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Mana Void Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

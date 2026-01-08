@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_earthshaker",
   "order_id": 6,
   "name_loc": "Earthshaker",
-  "bio_loc": "Словно голем или гаргулья, Рейгор когда-то лежал в земле, но сейчас свободно ступает по ней. В отличие от других, он создал себя своей волей и никому не служит. В беспокойных снах, заключённый глубоко в камне, он узнал, что жизнь проходит над ним. Любопытство пытало его.\r\n\t\t\t\t<br><br>В сезон землетрясений пик горы Нишай стряхивал с себя рыхлые лавины, меняя течение рек и превращая пологие низины в бездонные разломы. Когда земля наконец перестала содрогаться, из оседающей пыли вышел наш герой, сбрасывая с себя тяжёлые валуны, словно невесомую простыню.\r\n\t\t\t\t<br><br>Он сделался похожим на смертную тварь и назвался Рейгором Каменное Копыто. В его венах течёт кровь, а в лёгких проходит воздух, и это значит, что теперь он смертен. Но дух его всё ещё един с землёй; он несёт её силу в волшебном тотеме и никогда не расстаётся с ним. И в день, когда Рейгор обратится в пыль, земля с радостью примет своего блудного сына.",
-  "hype_loc": "Внезапные атаки Earthshaker <b>не дают врагам отступить</b>, разделяют их силы и <b>разрывают под ними землю</b>. Всех, кому удалось выжить, он добивает взмахами своего <b>могучего тотема</b>.",
-  "npe_desc_loc": "Мешает врагам, оглушая их раз за разом",
+  "bio_loc": "Like a golem or gargoyle, Earthshaker was one with the earth but now walks freely upon it. Unlike those other entities, he created himself through an act of will, and serves no other master. In restless slumbers, encased in a deep seam of stone, he became aware of the life drifting freely above him. He grew curious.\r\n\t\t\t\t<br><br>During a season of tremors, the peaks of Nishai shook themselves loose of avalanches, shifting the course of rivers and turning shallow valleys into bottomless chasms. When the land finally ceased quaking, Earthshaker stepped from the settling dust, tossing aside massive boulders as if throwing off a light blanket.\r\n\t\t\t\t<br><br>He had shaped himself in the image of a mortal beast, and named himself Raigor Stonehoof. He bleeds now, and breathes, and therefore he can die. But his spirit is still that of the earth; he carries its power in the magical totem that never leaves him. And on the day he returns to dust, the earth will greet him as a prodigal son.",
+  "hype_loc": "Whether <b>blocking an enemy's escape</b>, dividing their forces, or <b>shattering the ground</b> beneath gathered foes, Earthshaker is at his best when he strikes without warning. Whatever survives the <b>aftershocks</b> still has a swing from his <b>mighty totem</b> to look forward to.",
+  "npe_desc_loc": "Disrupts enemy team with his chain stuns",
   "facets": [
     {
       "color": 0,
       "title_loc": "Tectonic Buildup",
-      "description_loc": "Радиус Aftershock увеличивается на {s:bonus_aftershock_range_increase_per_level_interval} за каждый уровень способности Echo Slam.",
+      "description_loc": "Aftershock radius is increased by {s:bonus_aftershock_range_increase_per_level_interval} for every level of Echo Slam.",
       "name": "earthshaker_tectonic_buildup",
       "icon": "area_of_effect",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 5,
       "title_loc": "Resonating Ridge",
-      "description_loc": "Герои, оглушённые способностью Fissure, создают волновое эхо от Echo Slam.",
+      "description_loc": "Enemy heroes stunned by Fissure emit an echo to each nearby unit.",
       "name": "earthshaker_reverberating_ridge",
       "icon": "ricochet",
       "gradient_id": 2,
@@ -66,18 +66,18 @@
       "id": 5023,
       "name": "earthshaker_fissure",
       "name_loc": "Fissure",
-      "desc_loc": "Герой разбивает землю могучим тотемом, оставляя перед собой непроходимую каменную борозду, при этом оглушая стоящих на её пути врагов и нанося им урон.",
-      "lore_loc": "Силою земли нишианский тотем раскалывает поверхность планеты до её ядра.",
+      "desc_loc": "Slams the ground with a mighty totem, creating an impassable ridge of stone while stunning and damaging enemy units along its line.",
+      "lore_loc": "The Nishian totem splits the world to its core with tectonic force.",
       "notes_loc": [
-        "Крипы будут ждать, пока борозда не исчезнет. Они не будут пытаться обойти её.",
-        "Linken's Sphere не блокирует эту способность."
+        "Creeps will wait for Fissure to disappear. They will not attempt to walk around it.",
+        "Fissure is not blocked by Linken's Sphere."
       ],
-      "shard_loc": "Уменьшает перезарядку. При применении любой способности вдоль борозды срабатывает эффект Aftershock с уменьшенной длительностью оглушения.",
+      "shard_loc": "Reduces Fissure cooldown and releases an Aftershock along its path that stuns for a shortened duration when Earthshaker casts another ability.",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Оглушённые герои создают волновое эхо от способности Echo Slam, наносящее %echoes_damage_multiplier%%% обычного урона всем врагам в радиусе %echoes_radius%."
+        "Enemy heroes stunned by Fissure emit an echo to each nearby unit within a %echoes_radius% radius, dealing damage equal to %echoes_damage_multiplier%%% of Echo Slam's current echo damage."
       ],
       "type": 0,
       "behavior": "134217744",
@@ -133,7 +133,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ БОРОЗДЫ:",
+          "heading_loc": "FISSURE DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -170,7 +170,7 @@
             1.4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -190,7 +190,7 @@
             280
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_earthshaker_4",
@@ -213,7 +213,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ДОП. ОГЛУШЕНИЯ:",
+          "heading_loc": "AFTERSHOCK STUN PCT:",
           "bonuses": [],
           "values_shard": [
             50
@@ -386,7 +386,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ПЕРЕЗАРЯДКА:",
+          "heading_loc": "COOLDOWN:",
           "bonuses": [],
           "values_shard": [
             2
@@ -417,13 +417,13 @@
       "id": 5024,
       "name": "earthshaker_enchant_totem",
       "name_loc": "Enchant Totem",
-      "desc_loc": "Заряжает тотем, увеличивая урон от следующей атаки и увеличивая её дальность на %bonus_attack_range%.",
-      "lore_loc": "Неукротимая мощь Рейгора способна крушить горы.",
+      "desc_loc": "Empowers Earthshaker's totem, causing it to deal extra damage and have %bonus_attack_range% bonus attack range on the next attack.",
+      "lore_loc": "Raigor's gorilla strength can destroy mountains.",
       "notes_loc": [
-        "Дополнительный урон рассчитывается на основе базового урона и перка основного атрибута."
+        "Bonus damage is based on base damage and that given by primary attribute."
       ],
       "shard_loc": "",
-      "scepter_loc": "Позволяет прыгнуть в указанную точку и применить Enchant Totem в ней. Применение на себя работает как прежде, без прыжка. Атака с эффектом этой способности наносит прорубающий урон.",
+      "scepter_loc": "Enchant Totem becomes a ground target ability, causing Earthshaker to jump in the air and land at the target spot, casting Enchant Totem there.  Self-casting the ability will behave in the original form, without jumping. Grants Enchant Totem a cleaving attack.",
       "facets_loc": [
         "",
         "",
@@ -477,7 +477,7 @@
             400
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН:",
+          "heading_loc": "BONUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_earthshaker_totem_damage",
@@ -500,7 +500,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРЫЖКА:",
+          "heading_loc": "JUMP DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -604,7 +604,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ПРОРУБАЮЩИЙ УРОН:",
+          "heading_loc": "CLEAVE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -661,7 +661,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРОРУБАНИЯ:",
+          "heading_loc": "CLEAVE DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -697,7 +697,7 @@
             14
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -786,15 +786,15 @@
       "id": 5025,
       "name": "earthshaker_aftershock",
       "name_loc": "Aftershock",
-      "desc_loc": "Герой сотрясает землю при каждом применении способности, нанося урон врагам поблизости и оглушая их.",
-      "lore_loc": "Земля содрогается от могучих шагов Рейгора.",
+      "desc_loc": "Causes the earth to shake underfoot, adding additional damage and stuns to nearby enemy units when Earthshaker casts his abilities.",
+      "lore_loc": "The earth trembles beneath the mighty footsteps of Raigor.",
       "notes_loc": [
-        "Не срабатывает от использования предметов."
+        "Using items does not trigger Aftershock."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Радиус увеличивается на %aftershock_range_increase_per_level_interval% с каждым уровнем способности Echo Slam.",
+        "Aftershock radius is increased by %aftershock_range_increase_per_level_interval% for every level of Echo Slam.",
         "",
         ""
       ],
@@ -863,7 +863,7 @@
             140
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_earthshaker_6",
@@ -905,7 +905,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -927,7 +927,7 @@
             1.3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -956,8 +956,8 @@
       "id": 5026,
       "name": "earthshaker_echo_slam",
       "name_loc": "Echo Slam",
-      "desc_loc": "По земле распространяются ударные волны, наносящие урон врагам. Каждое попадание по врагу создаёт волновое эхо, которое наносит урон ближайшим врагам. Попадание по герою создаёт двойное эхо.",
-      "lore_loc": "Одним хлопком Рейгор разламывает тектонические плиты, скручивает горы и сминает недругов.",
+      "desc_loc": "Shockwaves travel through the ground, damaging enemy units.  Each enemy hit causes an echo to damage nearby units. Real heroes cause two echoes.",
+      "lore_loc": "Tectonic plates crack, mountains fold, and foes are crushed by the Echo Slam.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1015,7 +1015,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1068,7 +1068,7 @@
             110
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ ЭХА:",
+          "heading_loc": "ECHO DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_earthshaker_2",
@@ -1093,7 +1093,7 @@
             180
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "INITIAL DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1166,7 +1166,7 @@
       "id": 1494,
       "name": "earthshaker_slugger",
       "name_loc": "Slugger",
-      "desc_loc": "Тело врага, убитого атакой с эффектом Enchant Totem или способностями, отлетит и нанесёт урон задетым противникам.",
+      "desc_loc": "Enemies killed with Enchant Totem or Earthshaker's other abilities are sent flying, dealing damage to enemies they hit.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1252,7 +1252,7 @@
             1600
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ:",
+          "heading_loc": "SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1269,7 +1269,7 @@
             1200
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ:",
+          "heading_loc": "DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1340,7 +1340,7 @@
             75
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ТЕЛОМ КРИПА:",
+          "heading_loc": "DAMAGE (CREEP DEATH):",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1360,7 +1360,7 @@
             450
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ТЕЛОМ ГЕРОЯ:",
+          "heading_loc": "DAMAGE (HERO DEATH):",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1377,7 +1377,7 @@
             7
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ МАКС. ЗДОРОВЬЯ УБИТОГО:",
+          "heading_loc": "FLYING ENEMY'S MAX HEALTH AS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1407,7 +1407,7 @@
     {
       "id": 450,
       "name": "special_bonus_attack_base_damage_25",
-      "name_loc": "+{s:value} к базовому урону",
+      "name_loc": "+{s:value} Base Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1488,7 +1488,7 @@
     {
       "id": 744,
       "name": "special_bonus_unique_earthshaker_4",
-      "name_loc": "+{s:bonus_fissure_damage} к урону от Fissure",
+      "name_loc": "+{s:bonus_fissure_damage} Fissure Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1551,7 +1551,7 @@
     {
       "id": 6511,
       "name": "special_bonus_unique_earthshaker_3",
-      "name_loc": "+{s:bonus_AbilityCastRange} к длине борозды от Fissure",
+      "name_loc": "+{s:bonus_AbilityCastRange} Fissure Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1614,7 +1614,7 @@
     {
       "id": 858,
       "name": "special_bonus_unique_earthshaker_6",
-      "name_loc": "+{s:bonus_aftershock_damage} к урону от Aftershock",
+      "name_loc": "+{s:bonus_aftershock_damage} Aftershock Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1677,7 +1677,7 @@
     {
       "id": 6425,
       "name": "special_bonus_unique_earthshaker_2",
-      "name_loc": "+{s:bonus_echo_slam_echo_damage} к урону от эха у Echo Slam",
+      "name_loc": "+{s:bonus_echo_slam_echo_damage} Echo Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1740,7 +1740,7 @@
     {
       "id": 918,
       "name": "special_bonus_unique_earthshaker_totem_damage",
-      "name_loc": "+{s:bonus_totem_damage_percentage}% к доп. урону от Enchant Totem",
+      "name_loc": "+{s:bonus_totem_damage_percentage}% Enchant Totem Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1803,7 +1803,7 @@
     {
       "id": 1208,
       "name": "special_bonus_unique_earthshaker_echo_cd",
-      "name_loc": "–{s:bonus_AbilityCooldown}% перезарядки Echo Slam",
+      "name_loc": "-{s:bonus_AbilityCooldown}% Echo Slam Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1866,7 +1866,7 @@
     {
       "id": 6035,
       "name": "special_bonus_unique_earthshaker",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Enchant Totem",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Enchant Totem Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_lich",
   "order_id": 7,
   "name_loc": "Lich",
-  "bio_loc": "При жизни Этриан (тогда ещё не Лич) был могущественным колдуном — его легендарные заклинания обращали в лёд города и могли погрести под снежными бурями целые королевства. А у кого есть сила, у того есть и завистники. Несколько магов тщательно проработали покушение на Этриана и, ко всеобщему удивлению, дилетанты достигли успеха, поймав колдуна врасплох, обезоружив его и заковав в волшебные цепи. Этриана доставили к бездонному озеру и торжественно сбросили в тёмные воды. Но озеро было не таким уж и бездонным.\r\n\t\t\t\t<br><br>Этриан опускался глубже и глубже в течение года, пока, наконец, не зацепился за скалистый выступ в стене бездонного колодца. Там он и остался висеть, мёртвый, но не разлагающийся. Спустя многие годы некромант Анхил решил проверить, действительно ли бездонно это озеро, и отправился в экспедицию. Отвес, который Анхил опускал в воду, нашёл связанного Этриана. Анхил, обрадовавшись неведомой добыче, поспешил извлечь труп из воды. К сожалению, слишком много времени прошло с момента погребения Этриана и не нашлось никого, кто предупредил бы Анхила об опасности. Наивный волшебник расковал Этриана и провёл ритуал воскрешения. Некромант понял, что просчитался, только в тот момент, когда Lich открыл глаза и щелчком пальца разорвал волшебника на куски.",
-  "hype_loc": "Паря над полем битвы, Lich <b>подпитывает свои силы</b> союзными крипами и помогает союзникам своим <b>замедляющим холодом</b>. Если противники по глупости сбились в кучу, то он расправится сразу со всеми своим <b>отскакивающим ультом</b>.",
-  "npe_desc_loc": "Выпускает мощный ледяной шар, скачущий между врагами",
+  "bio_loc": "In life, the frost-mage Ethreain (not yet a Lich) had used the threat of destructive ice to enslave entire kingdoms. His subjects, aided by a few desperate magicians, eventually grew bold enough to ambush him. Armed with enough charmed rope to bind him forever, they tied the frost mage to adamant weights and dropped him in a pool known chiefly for being bottomless. It wasn't.\r\n\t\t\t\t<br><br>He only fell for a year or so before an outcrop snagged him. There he rested, dead but undecaying, until the geomancer Anhil thought to verify the legend of the supposedly bottomless Black Pool. Anhil's plumbline snarled with the ropes that bound the drowned magician, and up he hauled an unexpected prize. Thinking that by rendering the dead undead, he could question the Lich about the properties of the pool, he removed the bindings and commenced a simple rite of resurrection. Even the descendants of Ethreain's enemies were long forgotten by time, so there were none to warn Anhil against imprudence. But he learned the error of his judgment almost immediately, as Lich threw off the shackles and consumed him.",
+  "hype_loc": "Drifting from battle to battle and <b>sacrificing creeps</b> to fuel his assaults, Lich is always ready to help his fellow heroes destroy their enemies with <b>slowing frost</b>. Should his foes be foolish enough to gather, his <b>bouncing ultimate</b> will ensure their demise.",
+  "npe_desc_loc": "Unleashes a powerful attack that bounces between enemies",
   "facets": [
     {
       "color": 5,
       "title_loc": "Growing Cold",
-      "description_loc": "Если враг умрёт под эффектом Frost Shield или от снаряда Chain Frost, их действие продлится.",
+      "description_loc": "When an enemy is killed by Chain Frost or while under the effect of Frost Shield, the duration of these abilities is extended.",
       "name": "lich_growing_cold",
       "icon": "cooldown",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Evil Eye",
-      "description_loc": "Sinister Gaze накладывает на цель продолжительный эффект, который снижает её сопротивление замедлениям и увеличивает весь магический урон, наносимый по ней владельцем способности.",
+      "description_loc": "Sinister Gaze applies a lingering effect to the target, causing it to take extra magic damage from Lich and amplify incoming movement slows.",
       "name": "lich_cryophobia",
       "icon": "vision",
       "gradient_id": 0,
@@ -66,8 +66,8 @@
       "id": 5134,
       "name": "lich_frost_nova",
       "name_loc": "Frost Blast",
-      "desc_loc": "Обдаёт указанного врага морозом, нанося урон в области действия и замедляя передвижение и атаку всех задетых противников на %abilityduration% сек. Основная цель получает как базовый урон, так и урон по площади.",
-      "lore_loc": "Маг льда Этриан не забыл даже простейших манипуляций со льдом.",
+      "desc_loc": "Blasts the target enemy unit with damaging frost, dealing area damage and slowing movement and attack rates for %abilityduration% seconds.  The primary target receives both base and area damage.",
+      "lore_loc": "Frost-mage Ethreain has not forgotten even the simplest of ice manipulation.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -124,7 +124,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lich_6",
@@ -147,7 +147,7 @@
             -25
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -167,7 +167,7 @@
             -60
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -187,7 +187,7 @@
             160
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -207,7 +207,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ПО ОБЛАСТИ:",
+          "heading_loc": "AREA DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lich_6",
@@ -339,17 +339,17 @@
       "id": 5136,
       "name": "lich_frost_shield",
       "name_loc": "Frost Shield",
-      "desc_loc": "Накладывает на цель магический ледяной щит, уменьшая урон от атак по ней. Пока щит действует, он раз в %interval% сек. наносит немного магического урона вражеским существам вокруг и замедляет их.",
-      "lore_loc": "Магия, которая защищала Этриана ещё в смертной жизни, с годами стала лишь морознее.",
+      "desc_loc": "Applies a magical frost shield around the target, reducing damage from attacks against it. While the shield is active, ice magic will affect nearby enemy units every %interval% seconds, dealing minor damage and slowing them.",
+      "lore_loc": "First conceived of to protect him in his mortal years, the frost magic that Ethreain weaves around himself has only grown colder with time.",
       "notes_loc": [
-        "Не замедляет невосприимчивых к магии врагов и не наносит им урон.",
-        "Можно применять на союзные постройки."
+        "Spell-immune enemies are not affected by the damage or slow.",
+        "Frost Shield can be cast on buildings."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Если под эффектом этой способности умрёт враг, её действие продлится.",
+        "Whenever an enemy dies under the effect of Frost Shield, its duration is increased.",
         ""
       ],
       "type": 0,
@@ -403,7 +403,7 @@
             60
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ УРОНА:",
+          "heading_loc": "DAMAGE REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lich_8",
@@ -429,7 +429,7 @@
             35
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -446,7 +446,7 @@
             0.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -466,7 +466,7 @@
             60
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -520,7 +520,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "BUFF DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lich_4",
@@ -564,7 +564,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДЛИТЕЛЬНОСТЬ ПРИ УБИЙСТВЕ ГЕРОЯ:",
+          "heading_loc": "BONUS DURATION ON HERO KILL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -583,7 +583,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДЛИТЕЛЬНОСТЬ ПРИ УБИЙСТВЕ КРИПА:",
+          "heading_loc": "BONUS DURATION ON CREEP KILL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -688,15 +688,15 @@
       "id": 7325,
       "name": "lich_sinister_gaze",
       "name_loc": "Sinister Gaze",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — гипнотизирует вражеское существо, отчего оно идёт к определённой точке в направлении владельца способности и отдаёт ему долю от текущей маны.",
-      "lore_loc": "Держи голову в холоде...",
+      "desc_loc": "CHANNELED - Hypnotizes an enemy unit, causing it to move towards a point between the two of you and drains a percentage of its current mana.",
+      "lore_loc": "Mind the cold...",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Способность действует на всех врагов в выбранной области радиусом %aoe_scepter%. Во время её применения можно использовать другие способности.",
+      "scepter_loc": "Sinister Gaze becomes an Area of Effect ability, affecting units within a radius of %aoe_scepter% in the target area. Sinister Gaze allows Lich to cast other abilities while channeling it.",
       "facets_loc": [
         "",
         "",
-        "Накладывает на цель отрицательный эффект, который снижает её сопротивление замедлениям на %slow_resistance%%% и увеличивает весь магический урон, наносимый по ней владельцем способности. По окончании гипноза этот эффект продолжает действовать в %post_gaze_debuff_duration_multiplier% раза дольше, чем применялась сама способность."
+        "Sinister Gaze applies an Evil Eye debuff that will deal additional damage every time Lich deals magic damage to the target, and amplifies received movement slows by %slow_resistance%%%. The Evil Eye debuff duration lingers up to %post_gaze_debuff_duration_multiplier%x the elapsed Sinister Gaze duration."
       ],
       "type": 0,
       "behavior": "136",
@@ -775,7 +775,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "ДАЛЬНОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "DISTANCE MOVED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -792,7 +792,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "КРАЖА МАНЫ В СЕКУНДУ:",
+          "heading_loc": "MANA DRAIN PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -831,7 +831,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -853,7 +853,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ СОПРОТИВЛЕНИЯ ЗАМЕДЛЕНИЯМ:",
+          "heading_loc": "SLOW RESISTANCE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -911,7 +911,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lich_2",
@@ -983,8 +983,8 @@
       "id": 8028,
       "name": "lich_ice_spire",
       "name_loc": "Ice Spire",
-      "desc_loc": "Создаёт в указанной точке ледяной шпиль, который замедляет всех врагов вокруг. Если уничтожить шпиль, на его месте произойдёт морозный взрыв от способности Frost Blast. Атак героев для уничтожения шпиля: %max_hero_attacks%. Атак крипов для уничтожения шпиля: %max_creep_attacks%.<br><br>Шар от способности Chain Frost может отскочить к шпилю, если поблизости нет врагов, но нанесёт ему урон от 1 атаки героя.<br><br>На шпиль можно применять способности Chain Frost и Frost Shield. Каждое срабатывание последней излечивает шпиль на урон от 1 атаки героя.",
-      "lore_loc": "Воды чёрного озера не замерзают даже при самых низких температурах, но в мгновение ока превращаются в кристалл, оказавшись вне его берегов.",
+      "desc_loc": "Creates an Ice Spire at the target spot, slowing enemies around it. Can take %max_hero_attacks% hero hits or %max_creep_attacks% creep hits and when destroyed it will create a Frost Blast around it.<br><br>Chain Frost can be cast on the Spire and can bounce to the Spire and damage the spire by 1 hero attack if there are no other enemies in range.<br><br>Lich can cast Frost Shield on the Spire. Each Frost Shield tick will heal the spire by 1 hero attack.",
+      "lore_loc": "The waters within the Black Pool remain liquid far below the point of freezing and immediately crystallize when removed.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1035,7 +1035,7 @@
             -25
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1052,7 +1052,7 @@
             550
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЕЙСТВИЯ:",
+          "heading_loc": "EFFECT RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1103,7 +1103,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ СУЩЕСТВОВАНИЯ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1217,7 +1217,7 @@
       "id": 1245,
       "name": "lich_death_charge",
       "name_loc": "Death Charge",
-      "desc_loc": "Мана героя не восстанавливается пассивно. Он получает %mana_restore_pct_from_hero%%% от максимальной маны, если в радиусе %radius% от него погибает герой, и %mana_restore_pct_from_creep%%% — если погибает другое существо. Предметы и способности, восстанавливающие ману мгновенно, действуют как обычно.",
+      "desc_loc": "Lich cannot gain passive mana regeneration, but any unit dying within %radius% range of Lich restores %mana_restore_pct_from_creep%%% of his Max Mana (Dying heroes restore %mana_restore_pct_from_hero%%% of Lich's Max Mana). Instant mana restoration from items and abilities apply to Lich as normal.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1441,18 +1441,18 @@
       "id": 5137,
       "name": "lich_chain_frost",
       "name_loc": "Chain Frost",
-      "desc_loc": "Создаёт ледяной шар, который отскакивает от противников до %jumps% раз, замедляя их и нанося им урон, увеличивающийся с каждым скачком. Если снаряду Chain Frost не в кого отскочить, он будет кружить вокруг последней цели, пока в радиусе отскока не появится новая.",
-      "lore_loc": "Ледяной шар Этриана повсеместно считается вершиной мастерства в магии льда, вгоняя страх в любого, кто осмелится встать на пути колдуна.",
+      "desc_loc": "Releases an orb of frost that bounces between nearby enemy units up to %jumps% times, slowing and damaging each time it hits. Each bounce increases the damage for the subsequent bounces. Chain Frost lingers on its last target if it fails to bounce and can bounce again if new targets become available.",
+      "lore_loc": "Almost universally considered the ultimate in frost magic, Ethreain's orb of frozen death strikes fear into those who dare stand against him.",
       "notes_loc": [
-        "Снаряд этой способности нельзя сбить с цели.",
-        "Снаряд летит со скоростью в %projectile_speed%.",
-        "Не работает на зомби, призванных Tombstone у Undying."
+        "Chain Frost cannot be disjointed.",
+        "Chain Frost has a movement speed of %projectile_speed%.",
+        "Chain Frost doesn't bounce to Zombies."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Если снаряду Chain Frost не в кого отскочить, он будет кружить вокруг последней цели, пока в радиусе не появится новая.",
-        "Если снаряд этой способности убьёт врага, число оставшихся отскоков увеличится.",
+        "Chain Frost lingers on its last target if it fails to bounce and can bounce again if new targets become available.",
+        "Killing an enemy with Chain Frost increases the number of bounces.",
         ""
       ],
       "type": 1,
@@ -1503,7 +1503,7 @@
             550
           ],
           "is_percentage": false,
-          "heading_loc": "УРОНА ЗА ОТСКОК:",
+          "heading_loc": "DAMAGE EACH BOUNCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1522,7 +1522,7 @@
             25
           ],
           "is_percentage": false,
-          "heading_loc": "УВЕЛИЧЕНИЕ УРОНА:",
+          "heading_loc": "INCREMENTAL DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_lich_jump_damage",
@@ -1562,7 +1562,7 @@
             550
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ОТСКОКА:",
+          "heading_loc": "BOUNCE RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1579,7 +1579,7 @@
             -65
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1596,7 +1596,7 @@
             -65
           ],
           "is_percentage": false,
-          "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
+          "heading_loc": "ATTACK SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1613,7 +1613,7 @@
             2.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1702,7 +1702,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ОТСКОКИ ПРИ УБИЙСТВЕ ГЕРОЯ:",
+          "heading_loc": "BONUS JUMPS ON HERO KILL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1721,7 +1721,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ОТСКОКИ ПРИ УБИЙСТВЕ КРИПА:",
+          "heading_loc": "BONUS JUMPS ON CREEP KILL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1742,7 +1742,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОЖИДАНИЯ:",
+          "heading_loc": "LINGER DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1848,7 +1848,7 @@
     {
       "id": 775,
       "name": "special_bonus_unique_lich_8",
-      "name_loc": "+{s:bonus_damage_reduction}% к уменьшению урона от Frost Shield",
+      "name_loc": "+{s:bonus_damage_reduction}% Frost Shield Damage Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1911,7 +1911,7 @@
     {
       "id": 530,
       "name": "special_bonus_unique_lich_6",
-      "name_loc": "+{s:bonus_radius} к радиусу и урону по области у Frost Blast",
+      "name_loc": "+{s:bonus_radius} Frost Blast Radius and Area Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1974,7 +1974,7 @@
     {
       "id": 6292,
       "name": "special_bonus_unique_lich_2",
-      "name_loc": "+{s:bonus_AbilityChannelTime} сек. действия Sinister Gaze",
+      "name_loc": "+{s:bonus_AbilityChannelTime}s Sinister Gaze Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2037,7 +2037,7 @@
     {
       "id": 6387,
       "name": "special_bonus_unique_lich_3",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Frost Blast",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Frost Blast Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2100,7 +2100,7 @@
     {
       "id": 531,
       "name": "special_bonus_unique_lich_7",
-      "name_loc": "Применение Chain Frost при смерти",
+      "name_loc": "Chain Frost on Death",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2163,7 +2163,7 @@
     {
       "id": 7360,
       "name": "special_bonus_unique_lich_4",
-      "name_loc": "+{s:bonus_duration} сек. действия Frost Shield",
+      "name_loc": "+{s:bonus_duration}s Frost Shield Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2226,7 +2226,7 @@
     {
       "id": 6039,
       "name": "special_bonus_unique_lich_1",
-      "name_loc": "Frost Shield даёт +{s:bonus_health_regen} здоровья в секунду",
+      "name_loc": "Frost Shield Provides +{s:bonus_health_regen} HP Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2289,7 +2289,7 @@
     {
       "id": 1543,
       "name": "special_bonus_unique_lich_jump_damage",
-      "name_loc": "+{s:bonus_bonus_jump_damage} к увеличению урона от Chain Frost",
+      "name_loc": "+{s:bonus_bonus_jump_damage} Chain Frost Incremental Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

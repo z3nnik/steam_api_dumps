@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_batrider",
   "order_id": 56,
   "name_loc": "Batrider",
-  "bio_loc": "Среди тварей, обитающих в джунглях Йама Раскав, такой вещи, как гармония, попросту нет. Любое проявление слабости приведёт к мгновенной смерти от клювов, когтей, жвал или копыт. Поговаривают, что давным-давно, когда Batrider ещё был простым пареньком, выкапывающим сорняки с семейного поля, его схватила огромная летучая мышь, искавшая себе пищу. Но у парня были другие планы, и, вырвавшись из лап хищника, он вскарабкался на спину зверя и зарубил его своими инструментами. Выбравшись из кровавых ошмётков, пьяный от ощущения полёта, мальчик осознал, что нашёл своё призвание.\r\n\t\t\t\t<br><br>Он рос и каждое лето выходил на то же поле, частенько лез в кусты в поиске тех же ощущений, которые он испытывал, стоя на пороге смерти от падения либо острых клыков. Годы шли, но пламя в его душе разгоралось только сильнее. Он исследовал заросли, забираясь все глубже и глубже с каждым своим походом, пока, наконец, не нашёл путь к пещерам — самому сердцу враждебности. Легенда гласит, что той знойной ночью всадник имел с собой только верёвку, бутылку жидкой отваги и собственную решимость, когда, мечтая почувствовать небеса снова, прыгнул внутрь...",
-  "hype_loc": "Взмыв в небеса, Batrider может нанести удар с любой стороны. Захватив противника своим <b>лассо</b>, он поднимается над верхушками деревьев и тащит жертву по <b>тропе огня</b> прямо к своим беспощадным союзникам.",
-  "npe_desc_loc": "Может утащить врага от его команды, накинув на него лассо",
+  "bio_loc": "There is no such thing as harmony among the creatures of the Yama Raskav Jungle. By bite, or claw, or pincer, or hoof, even the slightest sign of weakness means a swift death. They say the Rider was just a lad cutting chaff in his family's field when he was taken, swept up by a massive morde-bat looking for take-out. But this boy had a better idea, and wriggled his way from his captor's grip, onto the beast's back, and hacked it down with his tools. Emerging from the bloody wreckage and intoxicated by the thrill of flight, the boy realized he'd found his calling.\r\n\t\t\t\t<br><br>The boy grew, and every summer he'd return to his family's field, often setting out into the bush seeking to reclaim that first thrill of facing death in the form of jaws or a fatal fall. The years went on, but his fire only grew stronger. He studied the overgrowth, plunging deeper with each expedition, until finally he found his way to the caves at the heart of hostility. They say the Rider, on the eve of a scorching summer night, had nothing but a rope, a bottle of liquid courage and a burning determination to feel the skies once more, when he plunged inside...",
+  "hype_loc": "Once he takes to the skies, Batrider can strike from any direction. Snatching a foe with his <b>lasso</b>, he soars above the treetops, pulling his prey through a <b>trail of flame</b> as he drags them before his merciless allies.",
+  "npe_desc_loc": "Can lasso an enemy away from his team",
   "facets": [
     {
       "color": 0,
       "title_loc": "Stoked",
-      "description_loc": "Способность Firefly поджигает владельца, отчего он теряет долю от максимального запаса здоровья каждую секунду, но у него постепенно увеличиваются скорость передвижения и урон от заклинаний.",
+      "description_loc": "Firefly also lights Batrider on fire. He gains increasingly more Move Speed and Spell Amplification and burns away a portion of his max health each second.",
       "name": "batrider_buff_on_displacement",
       "icon": "nuke",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 1,
       "title_loc": "Arsonist",
-      "description_loc": "Увеличивает максимальный уровень Sticky Napalm до {s:bonus_max_level_tooltip}-го. На последнем уровне каждая атака героя накладывает на цель {s:bonus_napalm_stacks_on_attack_tooltip} эффект способности.",
+      "description_loc": "Increases the max level of Sticky Napalm. Level {s:bonus_max_level_tooltip} Sticky Napalm causes every attack to apply {s:bonus_napalm_stacks_on_attack_tooltip} stack of Sticky Napalm.",
       "name": "batrider_arsonist",
       "icon": "damage",
       "gradient_id": 1,
@@ -66,18 +66,18 @@
       "id": 5320,
       "name": "batrider_sticky_napalm",
       "name_loc": "Sticky Napalm",
-      "desc_loc": "Выплёскивает в выбранную область вязкое масло, которое увеличивает урон от всех атак и способностей героя. Масло замедляет передвижение и поворот врагов. Эффект от масла складывается до %max_stacks% раз. Каждое попадание наносит немного урона.",
-      "lore_loc": "Не удивляйтесь, если услышите, как Batrider хихикает, увеличивая горючесть противников.",
+      "desc_loc": "Drenches an area in sticky oil, amplifying damage from Batrider's attacks and abilities and slowing the movement speed and turn rate of enemies. Additional casts of Sticky Napalm continue to increase damage, up to %max_stacks% stacks. Applies a small amount of damage with each cast.",
+      "lore_loc": "It's not uncommon to hear the Rider cackle while he increases the flammability of his opponents.",
       "notes_loc": [
-        "Увеличивает весь урон, наносимый героем, за исключением урона от предметов Radiance, Orb of Venom, Urn of Shadows и Spirit Vessel.",
-        "Для применения способности не нужно поворачиваться.",
-        "Наносит %creep_damage_pct%%% урона крипам."
+        "All damage from Batrider gets amplified, except for Radiance, Orb of Venom, Urn of Shadows, and Spirit Vessel.",
+        "Sticky Napalm does not require turning to cast.",
+        "Sticky Napalm deals %creep_damage_pct%%% damage to creeps."
       ],
-      "shard_loc": "Снимает ограничение на число эффектов.<br><br>Позволяет способности наносить урон постройкам.",
+      "shard_loc": "Sticky Napalm no longer has a stack limit.<br><br>Sticky Napalm deals damage to structures.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Увеличивает максимальный уровень этой способности до %max_level_tooltip%-го. На последнем уровне каждая атака героя накладывает на цель %napalm_stacks_on_attack_tooltip% эффект Sticky Napalm."
+        "Increases the max level of Sticky Napalm. Level %max_level_tooltip% Sticky Napalm causes every attack to apply %napalm_stacks_on_attack_tooltip% stack of Sticky Napalm."
       ],
       "type": 0,
       "behavior": "35184506306608",
@@ -159,7 +159,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ЭФФЕКТОВ ЗА ПРИМЕНЕНИЕ:",
+          "heading_loc": "STACKS PER CAST:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -180,7 +180,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ЗА ЭФФЕКТ:",
+          "heading_loc": "DAMAGE PER STACK:",
           "bonuses": [
             {
               "name": "special_bonus_unique_batrider_4",
@@ -203,7 +203,7 @@
             375
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_batrider_7",
@@ -226,7 +226,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -247,7 +247,7 @@
             -3
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -268,7 +268,7 @@
             -70
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПОВОРОТА:",
+          "heading_loc": "TURN RATE SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -342,7 +342,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ ПОПАДАНИЯ:",
+          "heading_loc": "APPLICATION DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -359,7 +359,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ПОСТРОЙКАМ:",
+          "heading_loc": "BUILDING DAMAGE:",
           "bonuses": [],
           "values_shard": [
             25
@@ -487,8 +487,8 @@
       "id": 5321,
       "name": "batrider_flamebreak",
       "name_loc": "Flamebreak",
-      "desc_loc": "Кидает в указанную точку бутылку с горючей смесью, взрыв которой отталкивает и замедляет всех врагов в области действия, после чего им наносится периодический урон.",
-      "lore_loc": "Бутылка с горячей смесью — любимое оружие наездника.",
+      "desc_loc": "Hurls an explosive cocktail that explodes when it reaches the target location, knocking back, slowing and dealing damage over time to enemies in the area.",
+      "lore_loc": "A molotov cocktail is the weapon of choice for Batrider.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -547,7 +547,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ОТ ВЗРЫВА:",
+          "heading_loc": "IMPACT DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -567,7 +567,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -587,7 +587,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ГОРЕНИЯ:",
+          "heading_loc": "BURN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -604,7 +604,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ВЗРЫВА:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -672,7 +672,7 @@
             250
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ОТТАЛКИВАНИЯ:",
+          "heading_loc": "KNOCKBACK DISTANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_batrider_3",
@@ -753,7 +753,7 @@
             24
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -859,17 +859,17 @@
       "id": 5322,
       "name": "batrider_firefly",
       "name_loc": "Firefly",
-      "desc_loc": "Герой поднимается в воздух, оставляя за собой огненный след. Огонь наносит урон врагам и уничтожает деревья.",
-      "lore_loc": "Большинство противников, попав в джунгли Йама Раскав, начинают прорубаться сквозь заросли в надежде найти беглеца. Batrider же предпочитает просто уничтожить лес, а заодно и врагов в нем.",
+      "desc_loc": "Batrider takes to the skies, laying down a trail of flames from the air.  The fire damages any enemies it touches, and destroys trees below Batrider.",
+      "lore_loc": "When an enemy escapes into the Yama Raskav Jungle, most would cut through the brush to find the fugitive.  Batrider just chooses to destroy the jungle along with his foes.",
       "notes_loc": [
-        "Позволяет перелетать через существ, деревья и непроходимые территории.",
-        "Если герой окажется над непроходимой территорией, когда закончится действие способности, он может там застрять.",
-        "Огненный след остаётся после смерти владельца способности."
+        "During this the Batrider can fly above units, trees and impassable terrain.",
+        "If duration ends when above impassable terrain, the Batrider can get stuck.",
+        "The trail persists through Batrider's death."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Способность поджигает владельца, отчего он теряет долю от максимального запаса здоровья каждую секунду, но у него постепенно увеличиваются скорость передвижения и урон от заклинаний. Максимальные бонусы достигаются в момент окончания действия способности. Урон себе не увеличивается со временем.",
+        "Firefly also lights Batrider on fire. He gains increasingly more Move Speed and Spell Amplification and burns away a portion of his max health each second. Maximum bonuses are reached at the end of Firefly's duration. Self-burn damage is constant and does not increase over time.",
         ""
       ],
       "type": 0,
@@ -923,7 +923,7 @@
             100
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -940,7 +940,7 @@
             250
           ],
           "is_percentage": false,
-          "heading_loc": "ШИРИНА СЛЕДА:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -957,7 +957,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_batrider_1",
@@ -1036,7 +1036,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MAX MOVEMENT SPEED BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1058,7 +1058,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ДОП. УРОН ОТ ЗАКЛИНАНИЙ:",
+          "heading_loc": "MAX SPELL AMPLIFICATION BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1077,7 +1077,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ПОТЕРЯ МАКС. ЗДОРОВЬЯ В СЕКУНДУ:",
+          "heading_loc": "MAX HEALTH AS DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1145,7 +1145,7 @@
       "id": 1319,
       "name": "batrider_smoldering_resin",
       "name_loc": "Smoldering Resin",
-      "desc_loc": "Атаки героя накладывают эффект, который раз в %tick_rate% сек. наносит %tick_attack_damage_pct%%% урона от его атаки. Длительность: %total_ticks% сек.",
+      "desc_loc": "Batrider's attacks apply a debuff that deals %tick_attack_damage_pct%%% of the attack damage every %tick_rate%s for %total_ticks%s.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1265,15 +1265,15 @@
       "id": 5323,
       "name": "batrider_flaming_lasso",
       "name_loc": "Flaming Lasso",
-      "desc_loc": "Захватывает врага в огненное лассо и тащит за собой, не давая ему атаковать, передвигаться или использовать способности. Телепортация разорвёт лассо.",
-      "lore_loc": "Немногие осмеливаются прокатиться на летучей мыши, потому что Batrider предлагает сделать это бесплатно.",
+      "desc_loc": "Lassoes an enemy and drags them in Batrider's wake. Dragged units cannot move, attack, or use abilities.  Teleporting or blinking will break the lasso.",
+      "lore_loc": "Few dare to ask to ride on the bat, as Batrider gives them free of charge.",
       "notes_loc": [
-        "Действие способности прекратится, если её владелец или цель умрёт.",
-        "Лассо порвётся, если передвинуться более чем на 425 единиц за 0,05 секунды.",
-        "При применении этой способности невозможно атаковать."
+        "Killing the target or the Batrider will break the lasso before its expiration.",
+        "If Batrider moves more than 425 units in 0.05 seconds the lasso breaks.",
+        "Batrider cannot attack while using Flaming Lasso."
       ],
       "shard_loc": "",
-      "scepter_loc": "Помимо основной цели, лассо захватывает ближайшего к ней вражеского героя в радиусе %grab_radius_scepter%. Вторая цель будет привязана к первой.",
+      "scepter_loc": "Flaming Lasso grabs both its target, as well as the target's nearest allied hero within %grab_radius_scepter% units. The secondary target is tethered to the first.",
       "facets_loc": [
         "",
         ""
@@ -1326,7 +1326,7 @@
             3.25
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1379,7 +1379,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "СУММАРНЫЙ УРОН:",
+          "heading_loc": "TOTAL DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1523,7 +1523,7 @@
     {
       "id": 714,
       "name": "special_bonus_unique_batrider_7",
-      "name_loc": "+{s:bonus_radius} к радиусу Sticky Napalm",
+      "name_loc": "+{s:bonus_radius} Sticky Napalm Radius",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1585,7 +1585,7 @@
     {
       "id": 6610,
       "name": "special_bonus_unique_batrider_3",
-      "name_loc": "+{s:bonus_knockback_distance} к дальности отталкивания у Flamebreak",
+      "name_loc": "+{s:bonus_knockback_distance} Flamebreak Knockback Distance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1647,7 +1647,7 @@
     {
       "id": 5918,
       "name": "special_bonus_movement_speed_20",
-      "name_loc": "+{s:value} к скорости передвижения",
+      "name_loc": "+{s:value} Movement Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1727,7 +1727,7 @@
     {
       "id": 658,
       "name": "special_bonus_unique_batrider_6",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Flaming Lasso",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Flaming Lasso Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1789,7 +1789,7 @@
     {
       "id": 1496,
       "name": "special_bonus_unique_batrider_smoldering_resin_ticks",
-      "name_loc": "+{s:bonus_total_ticks} сек. действия Smoldering Resin",
+      "name_loc": "+{s:bonus_total_ticks}s Smoldering Resin Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1851,7 +1851,7 @@
     {
       "id": 572,
       "name": "special_bonus_unique_batrider_5",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Flamebreak",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Flamebreak Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1913,7 +1913,7 @@
     {
       "id": 512,
       "name": "special_bonus_unique_batrider_4",
-      "name_loc": "+{s:bonus_damage} к доп. урону от Sticky Napalm",
+      "name_loc": "+{s:bonus_damage} Sticky Napalm Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1975,7 +1975,7 @@
     {
       "id": 6229,
       "name": "special_bonus_unique_batrider_2",
-      "name_loc": "Flamebreak накладывает {s:bonus_napalm_stacks} эффекта Sticky Napalm",
+      "name_loc": "Flamebreak applies {s:bonus_napalm_stacks} Sticky Napalm Stacks",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

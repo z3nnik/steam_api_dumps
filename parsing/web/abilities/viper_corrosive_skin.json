@@ -1,237 +1,235 @@
-[
-  {
-    "id": 5220,
-    "name": "viper_corrosive_skin",
-    "name_loc": "Corrosive Skin",
-    "desc_loc": "Если враг на расстоянии до %max_range% нанесёт герою урон, то отравится заразным ядом, который наносит урон и замедляет атаки. Также способность увеличивает сопротивление магическому урону.",
-    "lore_loc": "Ржавеющие прямо в руках щиты и мечи — обычное дело для тех, кто посмеет напасть на низшего дракона.",
-    "notes_loc": [
-      "Перемножается с другими источниками сопротивления магическому урону.",
-      "Истощением отключается обычное срабатывание, но не эффект от применения способности Nosedive."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "Замедление атаки в %effect_multiplier% раза сильнее для врагов в радиусе %effect_multiplier_distance% вокруг владельца.",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "2",
-    "target_team": 0,
-    "target_type": 0,
-    "flags": 0,
-    "damage": 2,
-    "immunity": 4,
-    "dispellable": 2,
-    "max_level": 4,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      0
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      0
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      0
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "duration",
-        "values_float": [
-          4
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+{
+  "id": 5220,
+  "name": "viper_corrosive_skin",
+  "name_loc": "Corrosive Skin",
+  "desc_loc": "Viper exudes an infectious toxin that damages and slows the attack speed of any enemy that damages it in a %max_range% radius. The acid exudate also increases Viper's resistance to magic.",
+  "lore_loc": "It is not unusual for sword and shield alike to corrode in the very hands of those who attack the Netherdrake.",
+  "notes_loc": [
+    "Stacks multiplicatively with other magic damage resistance sources.",
+    "Break prevents the application of Corrosive Skin. Does not disable Corrosive Skin application from Nosedive."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "Corrosive Skin applies %effect_multiplier%x the attack speed slow to enemies that are within %effect_multiplier_distance% distance of Viper.",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "2",
+  "target_team": 0,
+  "target_type": 0,
+  "flags": 0,
+  "damage": 2,
+  "immunity": 4,
+  "dispellable": 2,
+  "max_level": 4,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    0
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    0
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "duration",
+      "values_float": [
+        4
+      ],
+      "is_percentage": false,
+      "heading_loc": "DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bonus_attack_speed",
-        "values_float": [
-          9,
-          18,
-          27,
-          36
-        ],
-        "is_percentage": false,
-        "heading_loc": "ЗАМЕДЛЕНИЕ АТАКИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_attack_speed",
+      "values_float": [
+        9,
+        18,
+        27,
+        36
+      ],
+      "is_percentage": false,
+      "heading_loc": "ATTACK SLOW:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "bonus_magic_resistance",
-        "values_float": [
-          10,
-          15,
-          20,
-          25
-        ],
-        "is_percentage": true,
-        "heading_loc": "СОПРОТИВЛЕНИЕ МАГИИ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_magic_resistance",
+      "values_float": [
+        10,
+        15,
+        20,
+        25
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAGIC RESISTANCE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "damage",
-        "values_float": [
-          8,
-          16,
-          24,
-          32
-        ],
-        "is_percentage": false,
-        "heading_loc": "УРОН В СЕКУНДУ:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_viper_1",
-            "value": 20,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+      "required_facet": ""
+    },
+    {
+      "name": "damage",
+      "values_float": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "is_percentage": false,
+      "heading_loc": "DAMAGE PER SECOND:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_viper_1",
+          "value": 20,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "max_range",
-        "values_float": [
-          1200
-        ],
-        "is_percentage": false,
-        "heading_loc": "МАКС. ДАЛЬНОСТЬ ДЕЙСТВИЯ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "max_range",
+      "values_float": [
+        1200
+      ],
+      "is_percentage": false,
+      "heading_loc": "MAX RANGE RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "effect_multiplier_distance",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          500
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "effect_multiplier_distance",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        500
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "effect_multiplier",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [
-          4
-        ],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "effect_multiplier",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [
+        4
+      ],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "nethertoxin_bonus_pct",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "nethertoxin_bonus_pct",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "nethertoxin_bonus_pct_max_duration_tooltip",
-        "values_float": [
-          0
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": true,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "nethertoxin_bonus_pct_max_duration_tooltip",
+      "values_float": [
+        0
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": true,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

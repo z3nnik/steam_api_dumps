@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_bristleback",
   "order_id": 99,
   "name_loc": "Bristleback",
-  "bio_loc": "Ригварл никогда не уходил от драк и не поворачивался спиной к противнику, даже если тот был крупнее и сильнее его. Окрещённый пьяными толпами как Bristleback, он стал постоянным участником подпольных боев, что проводились в тавернах на тракте между Сломом и Эльзе. Однажды умелого бойца заприметил один трактирщик, искавший вышибалу в бар. За скромную выпивку он стал собирать с посетителей плату, следить за порядком и время от времени ломать конечности особо несговорчивым клиентам (а одному членистоногому бедняге однажды сломал целых пять). Но все же Ригварлу довелось встретить бойца, равного себе.\r\n\t\t\t\t<br><br>Однажды во время очередной вечерней вахты, уже будучи навеселе от хмеля, он подошёл за платой к одному кряжистому детине с севера и заплетающимся языком пробормотал: «Что-то не нравятся мне ваши бивни, уважаемый». Что тут началось! Это было побоище века! В бой бросилось с дюжину посетителей. Не уцелел ни один стул. Хотя Ригварл изрядно приложился к буянам, но и сам в полной мере схлопотал по печени. И все бы ничего, но случилось нечто страшное — клиент ушёл, не заплатив за выпивку. За несколько недель раны вышибалы затянулись, а вырванные иглы отросли, но удар по чести был нанесён непростительный. Счёт он оплатил из своего кармана, поклявшись выследить северянина и взыскать плату по полной. После этого он занялся тренировками, чего не делал никогда ранее, и неожиданно для себя сделал поразительное открытие. Расправив иглы и усмехнувшись сквозь зубы, он понял — иногда все же стоит показывать противнику спину.",
-  "hype_loc": "В сражении Bristleback совсем не против подставить врагам спину. <b>Уменьшая весь урон</b>, который ему наносят сзади и сбоку, он безрассудно бросается в бой и обдаёт врагов <b>смертоносными иглами</b> и <b>замедляющими соплями</b>.",
-  "npe_desc_loc": "Получает меньше урона, отвернувшись от врагов",
+  "bio_loc": "Never one to turn his back on a fight, Rigwarl was known for battling the biggest, meanest scrappers he could get his hands on. Christened Bristleback by the drunken crowds, he waded into backroom brawls in every road tavern between Slom and Elze, until his exploits finally caught the eye of a barkeep in need of an enforcer. For a bit of brew, Bristleback was hired to collect tabs, keep the peace, and break the occasional leg or two (or five, in the case of one unfortunate web-hund).\r\n\t\t\t\t<br><br>After indulging in a night of merriment during which bodily harm was meted out in equal parts upon both delinquent patrons and his own liver, Bristleback finally met his match. \"Your tusks offend me, sir,\" he was heard to drunkenly slur to one particularly large fellow from the northern wastes whose bill had come due. What followed was a fight for the ages. A dozen fighters jumped in. No stool was left unbroken, and in the end, the impossible happened: the tab went unpaid. Over the weeks that followed, Bristleback's wounds healed, and his quills grew back; but an enforcer's honor can be a prickly thing. He paid the tab from his own coin, vowing to track down this northerner and extract redemption. And then he did something he'd never done before: he actually trained, and in so doing made a startling discovery about himself. A smile peeled back from his teeth as he flexed his quills. Turning his back to a fight might be just the thing.",
+  "hype_loc": "When it comes to a fight, Bristleback really puts his back into it. <b>Reducing all damage</b> arriving from the rear or from the sides, he wades into battle with barely a care, spraying enemies with <b>damaging quills</b> and <b>slowing snot.</b>",
+  "npe_desc_loc": "Takes reduced damage when facing away from enemies",
   "facets": [
     {
       "color": 2,
       "title_loc": "Snot Rocket",
-      "description_loc": "Когда героя бьют в спину, он выпускает не иглы, а сопли от Viscous Nasal Goo. Кроме того, усиливает эффект соплей.",
+      "description_loc": "Bristleback now fires Viscous Nasal Goo instead of Quills when damaged. Viscous Nasal Goo effects are stronger.",
       "name": "bristleback_snot_rocket",
       "icon": "snot",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Seeing Red",
-      "description_loc": "Герой может активировать способность Warpath, чтобы получить различные бонусы. В этом состоянии он не получает обзор от союзников.",
+      "description_loc": "Warpath can be activated to gain extra bonuses. While Seeing Red, Bristleback's vision is limited and he does not receive vision from his allies.",
       "name": "bristleback_seeing_red",
       "icon": "no_vision",
       "gradient_id": 0,
@@ -66,14 +66,14 @@
       "id": 5548,
       "name": "bristleback_viscous_nasal_goo",
       "name_loc": "Viscous Nasal Goo",
-      "desc_loc": "Обильно сморкается на жертву, снижая её броню и скорость передвижения на %goo_duration% сек. Эффекты способности складываются, а время действия обновляется с каждым её применением.",
-      "lore_loc": "Простуду, подхваченную в снегах, Ригварл делает своим преимуществом.",
+      "desc_loc": "Covers a target in snot, causing it to have reduced armor and movement speed for %goo_duration% seconds.  Multiple casts stack and refresh the duration.",
+      "lore_loc": "Having caught a cold while stuck in the snow, Bristleback turns it to his advantage.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Увеличивает максимум эффектов.",
+        "Max stacks increased.",
         ""
       ],
       "type": 0,
@@ -158,7 +158,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВОЕ СНИЖЕНИЕ БРОНИ:",
+          "heading_loc": "BASE ARMOR LOSS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -178,7 +178,7 @@
             3.5
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ ЗА ЭФФЕКТ:",
+          "heading_loc": "ARMOR LOSS PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -195,7 +195,7 @@
             12
           ],
           "is_percentage": true,
-          "heading_loc": "БАЗОВОЕ ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BASE MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -215,7 +215,7 @@
             12
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ЗА ЭФФЕКТ:",
+          "heading_loc": "MOVE SLOW PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -232,7 +232,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМУМ ЭФФЕКТОВ:",
+          "heading_loc": "STACK LIMIT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -357,10 +357,10 @@
       "id": 5549,
       "name": "bristleback_quill_spray",
       "name_loc": "Quill Spray",
-      "desc_loc": "Выпускает во все стороны иглы, нанося урон всем врагам вокруг себя. Жертвы получают дополнительный урон за каждое попадание иглами за последние %quill_stack_duration% сек.",
-      "lore_loc": "Честь вышибалы — острый вопрос. Как и его шипы.",
+      "desc_loc": "Sprays enemy units with quills dealing damage in an area of effect around Bristleback.  Deals bonus damage for every time a unit was hit by Quill Spray in the last %quill_stack_duration% seconds.",
+      "lore_loc": "An enforcer's honor can be a prickly thing.  So can his quills.",
       "notes_loc": [
-        "Урон от этой способности не уменьшается способностями, блокирующими урон."
+        "Quill Spray damage is not reduced by damage block abilities."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -420,7 +420,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -440,7 +440,7 @@
             85
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "QUILL BASE DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -457,7 +457,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "QUILL STACK DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bristleback_2",
@@ -480,7 +480,7 @@
             14
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОДНОГО ЭФФЕКТА:",
+          "heading_loc": "STACK DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -497,7 +497,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМАЛЬНЫЙ УРОН:",
+          "heading_loc": "MAX DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -577,17 +577,17 @@
       "id": 5550,
       "name": "bristleback_bristleback",
       "name_loc": "Bristleback",
-      "desc_loc": "Герой получает меньше урона от атак со спины и с боков. При получении %quill_release_threshold% урона со спины применяется способность Quill Spray текущего уровня.",
-      "lore_loc": "Иногда бывает полезно повернуться спиной к врагу во время битвы.",
+      "desc_loc": "Bristleback takes less damage if hit on the sides or rear.  If Bristleback takes %quill_release_threshold% damage from the rear, he releases a Quill Spray of the current level.",
+      "lore_loc": "Turning his back to a fight might be just the thing.",
       "notes_loc": [
-        "Спиной героя считаются 70 градусов от середины его спины.",
-        "Боками героя считаются 110 градусов от середины его спины."
+        "Bristleback's rear is considered to be within 70 degrees from the back.",
+        "Bristleback's side is considered to be within 110 degrees from the back."
       ],
       "shard_loc": "",
-      "scepter_loc": "Позволяет применить эту способность на точку. Герой разворачивается к ней спиной и спустя %activation_delay% сек. выпускает %activation_num_quill_sprays% волн игл от Quill Spray в конусовидной области. Под действием этой способности герой замедлен на %activation_movement_speed_pct%%% и не может поворачиваться и атаковать, но может применять заклинания в любом направлении. Интервал волн: %activation_spray_interval% сек.",
+      "scepter_loc": "Adds active ability to Bristleback. Bristleback rotates towards the targeted direction and, after %activation_delay%s, forcefully ejects %activation_num_quill_sprays% sequential Quill Sprays in a tight conical pattern out of his back every %activation_spray_interval%s. Bristleback's facing is locked during this time, he is disarmed, and his speed is reduced by %activation_movement_speed_pct%%%.",
       "facets_loc": [
         "",
-        "Вместо игл герой выпускает во всех врагов неподалёку сопли от способности Viscous Nasal Goo текущего уровня.",
+        "Instead of releasing Quill Spray from taking damage, he instead launches Nasal Goo of the current level at all nearby enemies.",
         ""
       ],
       "type": 0,
@@ -635,7 +635,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА ОТ АТАК С БОКОВ:",
+          "heading_loc": "SIDE DAMAGE REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bristleback_6",
@@ -661,7 +661,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ УРОНА ОТ АТАК В СПИНУ:",
+          "heading_loc": "BACK DAMAGE REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bristleback_6",
@@ -721,7 +721,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "ПОРОГ УРОНА:",
+          "heading_loc": "DAMAGE THRESHOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -755,7 +755,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС РАЗБРЫЗГИВАНИЯ СОПЛЕЙ:",
+          "heading_loc": "NASAL GOO RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -973,8 +973,8 @@
       "id": 643,
       "name": "bristleback_hairball",
       "name_loc": "Hairball",
-      "desc_loc": "Отхаркивает в указанную область комок игл. Приземлившись, он лопается и применяет на всех врагов вокруг несколько эффектов Viscous Nasal Goo и один эффект Quill Spray.",
-      "lore_loc": "Иглогрив использует в качестве оружия все части своего тела — даже те, которые случайно проглотил.",
+      "desc_loc": "Coughs a quill-packed hairball towards the target location. Erupts at the location, hitting enemies with Viscous Nasal Goo stacks and Quill Spray.",
+      "lore_loc": "Every part of Bristleback's body is a weapon -- even the parts he accidentally swallowed.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1042,7 +1042,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1059,7 +1059,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ЭФФЕКТОВ QUILL SPRAY:",
+          "heading_loc": "QUILL STACKS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1076,7 +1076,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ЧИСЛО ЭФФЕКТОВ VISCOUS NASAL GOO:",
+          "heading_loc": "GOO STACKS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1173,20 +1173,20 @@
       "id": 5551,
       "name": "bristleback_warpath",
       "name_loc": "Warpath",
-      "desc_loc": "Герой нагоняет на себя ярость каждый раз, когда использует способность, повышая свои скорость передвижения и урон.",
-      "lore_loc": "«Держи себя в руках», — часто наставляла его мама. Но в битве ярость всегда к месту.",
+      "desc_loc": "Bristleback works himself up into a fury every time he casts a spell, increasing his movement speed and damage.",
+      "lore_loc": "'Temper, temper,' his mum always chided.  But in a fight, a temper can come in handy.",
       "notes_loc": [
-        "Бонусы передаются иллюзиям героя.",
-        "Не срабатывает от использования предметов.",
-        "Получение эффектов отключается истощением.",
-        "Существующие эффекты не отключаются истощением."
+        "Bristleback's illusions will receive the bonuses.",
+        "Items will not trigger Warpath.",
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Эффекты Warpath увеличивают не урон, а скорость атаки.",
+        "Warpath grants scaling Attack Speed instead of Damage.",
         "",
-        "Способность можно активировать, чтобы ненадолго получить бонус к скорости передвижения и урону от атак. В этом состоянии герой видит только в узком конусе перед собой и не получает обзор от союзников."
+        "Warpath can be activated to grant bonus attack damage and movement speed for a short duration. While Seeing Red, Bristleback's vision is reduced to a narrow cone and he does not receive vision from his allies."
       ],
       "type": 1,
       "behavior": "2",
@@ -1234,7 +1234,7 @@
             25
           ],
           "is_percentage": false,
-          "heading_loc": "БОНУС К УРОНУ ЗА ЭФФЕКТ:",
+          "heading_loc": "DAMAGE PER STACK:",
           "bonuses": [
             {
               "name": "special_bonus_unique_bristleback_3",
@@ -1284,7 +1284,7 @@
             3
           ],
           "is_percentage": true,
-          "heading_loc": "БОНУС К СКОРОСТИ ЗА ЭФФЕКТ:",
+          "heading_loc": "MOVEMENT PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1303,7 +1303,7 @@
             20
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОДНОГО ЭФФЕКТА:",
+          "heading_loc": "STACK DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1322,7 +1322,7 @@
             12
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ЭФФЕКТОВ:",
+          "heading_loc": "MAX STACKS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1339,7 +1339,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. УРОН ЗА ЭФФЕКТ ПРИ АКТИВАЦИИ:",
+          "heading_loc": "ACTIVE BONUS DAMAGE PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1358,7 +1358,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ЗА ЭФФЕКТ ПРИ АКТИВАЦИИ:",
+          "heading_loc": "ACTIVE BONUS MOVEMENT PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1379,7 +1379,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1488,7 +1488,7 @@
       "id": 1479,
       "name": "bristleback_prickly",
       "name_loc": "Prickly",
-      "desc_loc": "Герой наносит врагам позади на %amp_pct%%% больше урона, а его отрицательные эффекты действуют на них на %amp_pct%%% дольше.",
+      "desc_loc": "Bristleback has %amp_pct%%% damage and debuff duration amp against enemy heroes that are behind him.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1587,7 +1587,7 @@
     {
       "id": 6016,
       "name": "special_bonus_attack_speed_25",
-      "name_loc": "+{s:value} к скорости атаки",
+      "name_loc": "+{s:value} Attack Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1668,7 +1668,7 @@
     {
       "id": 7132,
       "name": "special_bonus_mp_regen_150",
-      "name_loc": "+{s:value} маны в секунду",
+      "name_loc": "+{s:value} Mana Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1749,7 +1749,7 @@
     {
       "id": 1078,
       "name": "special_bonus_unique_bristleback_5",
-      "name_loc": "+{s:bonus_AbilityCastRange} к дальн. применения Viscous Nasal Goo",
+      "name_loc": "+{s:bonus_AbilityCastRange} Goo Cast Range",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1812,7 +1812,7 @@
     {
       "id": 1079,
       "name": "special_bonus_unique_bristleback_6",
-      "name_loc": "+{s:bonus_back_damage_reduction}%/{s:bonus_side_damage_reduction}% к снижению урона сзади/сбоку от Bristleback",
+      "name_loc": "+{s:bonus_back_damage_reduction}%/{s:bonus_side_damage_reduction}% Bristleback Back/Side Damage Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1875,7 +1875,7 @@
     {
       "id": 6308,
       "name": "special_bonus_hp_regen_25",
-      "name_loc": "+{s:value} здоровья в секунду",
+      "name_loc": "+{s:value} Health Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1956,7 +1956,7 @@
     {
       "id": 6360,
       "name": "special_bonus_unique_bristleback_2",
-      "name_loc": "+{s:bonus_quill_stack_damage} к дополнительному урону от Quill Spray",
+      "name_loc": "+{s:bonus_quill_stack_damage} Quill Stack Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2019,7 +2019,7 @@
     {
       "id": 434,
       "name": "special_bonus_spell_lifesteal_12",
-      "name_loc": "+{s:value}% к вампиризму заклинаниями",
+      "name_loc": "+{s:value}% Spell Lifesteal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2100,7 +2100,7 @@
     {
       "id": 6615,
       "name": "special_bonus_unique_bristleback_3",
-      "name_loc": "+{s:bonus_damage_per_stack} к урону за эффект Warpath",
+      "name_loc": "+{s:bonus_damage_per_stack} Warpath Damage Per Stack",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

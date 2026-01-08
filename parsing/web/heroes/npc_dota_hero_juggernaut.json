@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_juggernaut",
   "order_id": 46,
   "name_loc": "Juggernaut",
-  "bio_loc": "Никто никогда не видел лица, что скрыто за маской Юрнеро. Остаётся гадать, каков он на вид. Однажды Юрнеро бросил вызов нечистому на руку лорду и был изгнан с древнего острова Масок. Кара спасла ему жизнь: скорой ночью остров исчез под волнами, ведомыми мстительной магией. Лишь Юрнеро отныне хранит обычаи острова: древние ритуалы и искусство боя на мечах. Непоколебимость и мужество пришли к нему в нескончаемых упражнениях с клинком, а изобретательность в бою он укоренял, неутомимо испытывая себя. Как и лик воина, желания его остаются тайной. Он уже дважды терял всё, но сражается так, будто победа предрешена.",
-  "hype_loc": "Juggernaut разрубает своих врагов <b>шквалом рассекающих ударов</b>. Мало кто сможет остановить или пережить его отчаянное наступление, ведь, <b>набрав обороты</b>, он становится практически неуязвимым.",
-  "npe_desc_loc": "Разрубает врагов точными взмахами меча",
+  "bio_loc": "No one has ever seen the face hidden beneath the mask of Yurnero the Juggernaut. It is only speculation that he even has one. For defying a corrupt lord, Yurnero was exiled from the ancient Isle of Masks--a punishment that saved his life. The isle soon after vanished beneath the waves in a night of vengeful magic. He alone remains to carry on the Isle's long Juggernaut tradition, one of ritual and swordplay. The last practitioner of the art, Yurnero's confidence and courage are the result of endless practice; his inventive bladework proves that he has never stopped challenging himself. Still, his motives are as unreadable as his expression. For a hero who has lost everything twice over, he fights as if victory is a foregone conclusion. ",
+  "hype_loc": "In a <b>flurry of slashes</b>, Juggernaut cuts down his foes. Sprinting and <b>spinning into battle</b> with reckless abandon, and nearly invincible once he is able to begin his assault, stopping Juggernaut can often be just as difficult as surviving him.",
+  "npe_desc_loc": "Slices through his enemies with precise strikes",
   "facets": [
     {
       "color": 1,
       "title_loc": "Bladestorm",
-      "description_loc": "Способность Blade Fury может наносить критический урон в зависимости от уровня Blade Dance.",
+      "description_loc": "Blade Fury can now critically strike based on the level of Blade Dance.",
       "name": "juggernaut_bladestorm",
       "icon": "spinning",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Bladeform",
-      "description_loc": "Герой получает бонус к ловкости и скорости передвижения, пока ему не наносят урон.",
+      "description_loc": "Juggernaut gains Agility and Movement Speed as long as he's not taking damage.",
       "name": "juggernaut_agigain",
       "icon": "agility",
       "gradient_id": 2,
@@ -66,16 +66,16 @@
       "id": 5028,
       "name": "juggernaut_blade_fury",
       "name_loc": "Blade Fury",
-      "desc_loc": "Герой крутится в вихре сокрушительных ударов клинком, становясь невосприимчивым к эффектам, получая +80%% к сопротивлению магии и нанося урон врагам поблизости каждые %blade_fury_damage_tick% сек. По окончании действия применяет на владельца сильное развеивание.",
-      "lore_loc": "Умение Юрнеро обращаться с катаной внушает страх и воинам, и магам.",
+      "desc_loc": "Causes a bladestorm of destructive force around Juggernaut, rendering him debuff immune, increasing his magic resistance by 80%%, and dealing damage every %blade_fury_damage_tick%s to nearby enemy units. Applies a strong dispel at the end of the spin.",
+      "lore_loc": "Yurnero's renowned katana techniques are feared by warriors and sorcerors alike.",
       "notes_loc": [
-        "Во время действия этой способности можно использовать предметы.",
-        "Герой может атаковать во время действия этой способности, но урон от атак будут получать лишь объекты, на которые не действует Blade Fury — например, тотемы, варды и постройки."
+        "You can use items during Blade Fury.",
+        "Juggernaut can still perform attacks while in Blade Fury. However, only units that are not affected by Blade Fury, such as wards or structures, will take damage from these attacks."
       ],
-      "shard_loc": "Увеличивает радиус способности. Она замедляет передвижение врагов на %bonus_movement_slow%%%.",
+      "shard_loc": "Increases Blade Fury radius, and slows enemies by %bonus_movement_slow%%%.",
       "scepter_loc": "",
       "facets_loc": [
-        "Способность Blade Fury может наносить критический урон в зависимости от уровня Blade Dance.",
+        "Blade Fury can now critically strike based on the level of Blade Dance.",
         ""
       ],
       "type": 0,
@@ -129,7 +129,7 @@
             170
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_juggernaut",
@@ -169,7 +169,7 @@
             260
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [
             100
@@ -188,7 +188,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -319,11 +319,11 @@
       "id": 5029,
       "name": "juggernaut_healing_ward",
       "name_loc": "Healing Ward",
-      "desc_loc": "Призывает тотем, лечащий всех союзников неподалёку и передвигающийся со скоростью %healing_ward_movespeed_tooltip%. Объём лечения зависит от максимального здоровья союзника. Действует %abilityduration% сек.",
-      "lore_loc": "Среди ритуалов, выученных на острове Масок, навык залечивания ран с толикой магии вуду оказался довольно полезным.",
+      "desc_loc": "Summons a Healing Ward which heals all nearby allied units, based on their max health.  The Healing Ward moves at %healing_ward_movespeed_tooltip% movement speed after being summoned.  Lasts %abilityduration% seconds.",
+      "lore_loc": "Of the rituals learned at the Isle of Masks, tending wounds with a bit of voodoo magic has proven to be quite useful.",
       "notes_loc": [
-        "Тотемом можно управлять.",
-        "Эффект от нескольких тотемов не складывается."
+        "The Healing Ward can be controlled.",
+        "Multiple Healing Wards do not stack."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -382,7 +382,7 @@
             5
           ],
           "is_percentage": true,
-          "heading_loc": "МАКС. ЗДОРОВЬЯ В СЕКУНДУ:",
+          "heading_loc": "MAX HEALTH PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_juggernaut_healing_ward_heal",
@@ -405,7 +405,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -460,7 +460,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "АТАК ДЛЯ УНИЧТОЖЕНИЯ:",
+          "heading_loc": "HITS TO DESTROY:",
           "bonuses": [
             {
               "name": "special_bonus_unique_juggernaut_2",
@@ -589,8 +589,8 @@
       "id": 5027,
       "name": "juggernaut_blade_dance",
       "name_loc": "Blade Dance",
-      "desc_loc": "Даёт герою шанс нанести атакой критический урон.",
-      "lore_loc": "Как последний представитель своего народа, Юрнеро стремится, чтобы его стиль боя не ушёл в небытие.",
+      "desc_loc": "Gives Juggernaut a chance to deal critical damage on each attack.",
+      "lore_loc": "The last remnant of his heritage's commitment to bladework, Yurnero ensures that the style is remembered.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -640,7 +640,7 @@
             35
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС КРИТИЧЕСКОЙ АТАКИ:",
+          "heading_loc": "CRITICAL CHANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -660,7 +660,7 @@
             190
           ],
           "is_percentage": true,
-          "heading_loc": "КРИТИЧЕСКИЙ УРОН:",
+          "heading_loc": "CRITICAL DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_juggernaut_4",
@@ -716,8 +716,8 @@
       "id": 419,
       "name": "juggernaut_swift_slash",
       "name_loc": "Swiftslash",
-      "desc_loc": "Применяет короткую версию способности Omnislash, действующую %duration% сек.",
-      "lore_loc": "Мимолётный выпад по тем, кто не заслуживает бо́льшей чести.",
+      "desc_loc": "Performs a short Omnislash for %duration% seconds.",
+      "lore_loc": "A briefer onslaught for those less deserving of the honor.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -769,7 +769,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -866,7 +866,7 @@
       "id": 1209,
       "name": "juggernaut_duelist",
       "name_loc": "Duelist",
-      "desc_loc": "Герой наносит на %front_damage_increase%%% больше урона существам, стоящим лицом к нему. Бонус к урону всегда действует на жертв способности Omnislash.",
+      "desc_loc": "Juggernaut deals %front_damage_increase%%% more damage to targets that are facing him. Damage bonus always applies during Omnislash.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -969,10 +969,10 @@
       "id": 5030,
       "name": "juggernaut_omni_slash",
       "name_loc": "Omnislash",
-      "desc_loc": "Герой прыгает к указанному врагу, а затем с повышенной скоростью атакует его и ближайших противников. На время действия способности герой становится неуязвимым.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "«Плоды дисциплины; повторение — мать умения».",
+      "desc_loc": "Juggernaut leaps towards the target enemy units, and then slashes the target and other nearby enemy units at an increased attack rate. Juggernaut is invulnerable for the duration.\n\nDISPEL TYPE: Basic Dispel",
+      "lore_loc": "'The fruits of discipline; with practice comes strength.'",
       "notes_loc": [
-        "Во время действия этой способности можно использовать предметы."
+        "You can use items during Omnislash."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1026,7 +1026,7 @@
             1.4
           ],
           "is_percentage": false,
-          "heading_loc": "МНОЖИТЕЛЬ СКОРОСТИ АТАКИ:",
+          "heading_loc": "SLASHES RATE MULTIPLIER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1045,7 +1045,7 @@
             35
           ],
           "is_percentage": false,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1062,7 +1062,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1081,7 +1081,7 @@
             3.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_juggernaut_omnislash_duration",
@@ -1104,7 +1104,7 @@
             425
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС СКАЧКА:",
+          "heading_loc": "SLASH JUMP RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1204,7 +1204,7 @@
     {
       "id": 628,
       "name": "special_bonus_unique_juggernaut_5",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Healing Ward",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Healing Ward Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1266,7 +1266,7 @@
     {
       "id": 7021,
       "name": "special_bonus_unique_juggernaut_3",
-      "name_loc": "+{s:bonus_front_damage_increase}% к урону от Duelist",
+      "name_loc": "+{s:bonus_front_damage_increase}% Duelist Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1328,7 +1328,7 @@
     {
       "id": 1489,
       "name": "special_bonus_unique_juggernaut_healing_ward_heal",
-      "name_loc": "+{s:bonus_healing_ward_heal_amount}% к макс. здоровью в секунду у Healing Ward",
+      "name_loc": "+{s:bonus_healing_ward_heal_amount}% Healing Ward Heal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1390,7 +1390,7 @@
     {
       "id": 1192,
       "name": "special_bonus_unique_juggernaut_blade_fury_movespeed",
-      "name_loc": "Blade Fury ускоряет передвижение на {s:bonus_bonus_movespeed}",
+      "name_loc": "+{s:bonus_bonus_movespeed} Movement Speed During Blade Fury",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1452,7 +1452,7 @@
     {
       "id": 6662,
       "name": "special_bonus_unique_juggernaut_2",
-      "name_loc": "+{s:bonus_healing_ward_bonus_health} к атакам для уничтожения Healing Ward",
+      "name_loc": "+{s:bonus_healing_ward_bonus_health} Healing Ward Hits to Destroy",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1514,7 +1514,7 @@
     {
       "id": 6105,
       "name": "special_bonus_unique_juggernaut",
-      "name_loc": "+{s:bonus_blade_fury_damage} к урону в секунду от Blade Fury",
+      "name_loc": "+{s:bonus_blade_fury_damage} Blade Fury DPS",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1576,7 +1576,7 @@
     {
       "id": 1013,
       "name": "special_bonus_unique_juggernaut_omnislash_duration",
-      "name_loc": "+{s:bonus_duration} сек. действия Omnislash",
+      "name_loc": "+{s:bonus_duration}s Omnislash Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1638,7 +1638,7 @@
     {
       "id": 915,
       "name": "special_bonus_unique_juggernaut_blade_dance_lifesteal",
-      "name_loc": "{s:bonus_blade_dance_lifesteal}% вампиризма от Blade Dance",
+      "name_loc": "+{s:bonus_blade_dance_lifesteal}% Blade Dance Lifesteal",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1708,12 +1708,12 @@
           "id": 1210,
           "name": "juggernaut_bladeform",
           "name_loc": "Bladeform",
-          "desc_loc": "Герой получает бонус к ловкости и скорости передвижения, пока ему не наносят урон.",
+          "desc_loc": "Juggernaut gains Agility and Movement Speed as long as he's not taking damage.",
           "lore_loc": "",
           "notes_loc": [
-            "Каждые %stack_gain_time% сек. даётся эффект, увеличивающий базовую ловкость на %agi_bonus_pct_per_stack%%%, а скорость передвижения — на %movement_speed_pct_per_stack%%%. Эффекты теряются спустя %linger_duration% сек. после получения любого урона. Максимум эффектов: %max_stacks%.",
-            "Получение бонусов отключается истощением.",
-            "Существующие бонусы не отключаются истощением."
+            "Grants a stack of Bladeform every %stack_gain_time%s that Juggernaut does not take damage. Each stack grants %agi_bonus_pct_per_stack%%% base agility bonus and %movement_speed_pct_per_stack%%% movement speed with a max of %max_stacks% stacks. Stacks fade after %linger_duration%s upon taking any damage.",
+            "Break disables the gaining of new stacks.",
+            "Break does not disable the bonuses from existing stacks."
           ],
           "shard_loc": "",
           "scepter_loc": "",

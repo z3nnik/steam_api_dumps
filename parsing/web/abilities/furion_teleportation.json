@@ -1,180 +1,178 @@
-[
-  {
-    "id": 5246,
-    "name": "furion_teleportation",
-    "name_loc": "Teleportation",
-    "desc_loc": "Телепортирует владельца в любую точку карты и по прибытии даёт ему барьер.",
-    "lore_loc": "Вездесущий страж леса всегда готов прийти на помощь своим подчинённым.",
-    "notes_loc": [
-      "Если прервать подготовку способности, то она не потратит ману героя и не начнёт перезаряжаться.",
-      "При применении способности в конечной точке появляется видимый союзникам и противникам эффект."
-    ],
-    "shard_loc": "",
-    "scepter_loc": "",
-    "facets_loc": [],
-    "type": 0,
-    "behavior": "67633200",
-    "target_team": 0,
-    "target_type": 1,
-    "flags": 0,
-    "damage": 1,
-    "immunity": 4,
-    "dispellable": 2,
-    "max_level": 4,
-    "cast_ranges": [
-      0
-    ],
-    "cast_points": [
-      3,
-      3,
-      3,
-      3
-    ],
-    "channel_times": [
-      0
-    ],
-    "cooldowns": [
-      65,
-      50,
-      35,
-      20
-    ],
-    "durations": [
-      0
-    ],
-    "damages": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "mana_costs": [
-      50,
-      60,
-      70,
-      80
-    ],
-    "gold_costs": [],
-    "health_costs": [],
-    "special_values": [
-      {
-        "name": "barrier",
-        "values_float": [
-          70,
-          130,
-          190,
-          250
-        ],
-        "is_percentage": false,
-        "heading_loc": "ЗДОРОВЬЕ БАРЬЕРА:",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_furion_teleportation_barrier",
-            "value": 100,
-            "operation": 0
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
+{
+  "id": 5246,
+  "name": "furion_teleportation",
+  "name_loc": "Teleportation",
+  "desc_loc": "Teleports to any point on the map. Gains a barrier after arriving to its destination.",
+  "lore_loc": "The Prophet keeps his sentinel over the forest, protecting it when in need.",
+  "notes_loc": [
+    "Mana and cooldown take effect when the cast is completed.  Nature's Prophet will not use any mana or waste the cooldown if the spell is interrupted while casting.",
+    "When the cast begins, an effect is created at the target location, which is visible to allies and enemies."
+  ],
+  "shard_loc": "",
+  "scepter_loc": "",
+  "facets_loc": [],
+  "type": 0,
+  "behavior": "67633200",
+  "target_team": 0,
+  "target_type": 1,
+  "flags": 0,
+  "damage": 1,
+  "immunity": 4,
+  "dispellable": 2,
+  "max_level": 4,
+  "cast_ranges": [
+    0
+  ],
+  "cast_points": [
+    3,
+    3,
+    3,
+    3
+  ],
+  "channel_times": [
+    0
+  ],
+  "cooldowns": [
+    65,
+    50,
+    35,
+    20
+  ],
+  "durations": [
+    0
+  ],
+  "damages": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mana_costs": [
+    50,
+    60,
+    70,
+    80
+  ],
+  "gold_costs": [],
+  "health_costs": [],
+  "special_values": [
+    {
+      "name": "barrier",
+      "values_float": [
+        70,
+        130,
+        190,
+        250
+      ],
+      "is_percentage": false,
+      "heading_loc": "BARRIER:",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_furion_teleportation_barrier",
+          "value": 100,
           "operation": 0
-        },
-        "required_facet": ""
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "buff_duration",
-        "values_float": [
-          15
-        ],
-        "is_percentage": false,
-        "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "buff_duration",
+      "values_float": [
+        15
+      ],
+      "is_percentage": false,
+      "heading_loc": "DURATION:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCastPoint",
-        "values_float": [
-          3
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCastPoint",
+      "values_float": [
+        3
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityManaCost",
-        "values_float": [
-          50,
-          60,
-          70,
-          80
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityManaCost",
+      "values_float": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
       },
-      {
-        "name": "AbilityCooldown",
-        "values_float": [
-          65,
-          50,
-          35,
-          20
-        ],
-        "is_percentage": false,
-        "heading_loc": "",
-        "bonuses": [
-          {
-            "name": "special_bonus_unique_furion_3",
-            "value": 100,
-            "operation": 4
-          }
-        ],
-        "values_shard": [],
-        "values_scepter": [],
-        "facet_bonus": {
-          "name": "",
-          "values": [],
-          "operation": 0
-        },
-        "required_facet": ""
-      }
-    ],
-    "is_item": false,
-    "ability_has_scepter": false,
-    "ability_has_shard": false,
-    "ability_is_granted_by_scepter": false,
-    "ability_is_granted_by_shard": false,
-    "ability_is_innate": false,
-    "item_cost": 0,
-    "item_initial_charges": 0,
-    "item_neutral_tier": 4294967295,
-    "item_stock_max": 0,
-    "item_stock_time": 0,
-    "item_quality": 0
-  }
-]
+      "required_facet": ""
+    },
+    {
+      "name": "AbilityCooldown",
+      "values_float": [
+        65,
+        50,
+        35,
+        20
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [
+        {
+          "name": "special_bonus_unique_furion_3",
+          "value": 100,
+          "operation": 4
+        }
+      ],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
+  "is_item": false,
+  "ability_has_scepter": false,
+  "ability_has_shard": false,
+  "ability_is_granted_by_scepter": false,
+  "ability_is_granted_by_shard": false,
+  "ability_is_innate": false,
+  "item_cost": 0,
+  "item_initial_charges": 0,
+  "item_neutral_tier": 4294967295,
+  "item_stock_max": 0,
+  "item_stock_time": 0,
+  "item_quality": 0
+}

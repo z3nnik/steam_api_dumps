@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_tinker",
   "order_id": 40,
   "name_loc": "Tinker",
-  "bio_loc": "Карликовый народец, которому принадлежит Боуш, известен своими изобретательностью, хитростью и нелюбовью к магии. Гордятся они, что зарабатывают себе на хлеб исключительно разумом, применяя лишь те силы природы, которым могут найти объяснение. Но даже такая сдержанность может обернуться трагедией — уж Боушу ли не знать. Когда-то он был одним из главных исследователей законов природы, основателем подземной лаборатории всего и вся, расположенной под окутанным туманами Фиолетовым плато. Презирая магов за опасность, которую те представляют для мира, Боуш и его помощники, не ведая об опасности, открыли портал в некий мир за гранью разумения и оказались во власти собственных кошмаров. Чёрный туман покрыл Фиолетовое плато вечной тьмой, откуда теперь доносятся полные ужаса звуки. Только благодаря всяким штуковинам собственного изобретения Боушу удалось бежать. Один он пережил беду Фиолетового плато.",
-  "hype_loc": "Tinker сокрушает врагов своей <b>армией механизмов</b> и другими <b>смертоносными устройствами</b>. Набрав мощь, он способен нападать по нескольким фронтам благодаря ульту, который <b>перезаряжает все его способности</b>.",
-  "npe_desc_loc": "Уничтожает врагов полчищами своих механизмов",
+  "bio_loc": "Boush the Tinker's diminutive race is known for its intelligence, its cunning, and its prickly relationship with magic. As a matter of pride, they survive by their wits, and use only those powers of nature that may be unlocked through rational methodologies. Even this forbearance has led to a great deal of trouble, as Boush can attest. Once a key investigator of natural law, Boush the Tinker led a vast intellectual investigation into the workings of nature, founding a subterranean laboratory in the rumored, mist-wreathed wastes of the Violet Plateau. While scorning mages for the dangers they visit upon the world, Boush and his Tinker associates haughtily wrenched open a portal to some realm beyond comprehension and ushered in some nightmares of their own. A black mist rose from the cavernous interior of the Violet Plateau, shrouding it in permanent darkness from which sounds of horror perpetually emanate. Boush escaped with only his wits and the contraptions he carried, the sole Tinker to survive the Violet Plateau Incident. ",
+  "hype_loc": "Tinker demolishes foes with <b>swarms of machines</b> and a host of <b>deadly gadgets</b>. If he can gather the resources he needs, the power that instantly <b>refreshes his abilities</b> enables him to lead his team from every front.",
+  "npe_desc_loc": "Demolishes his enemies with swarms of machines",
   "facets": [
     {
       "color": 3,
       "title_loc": "Repair Bots",
-      "description_loc": "Роботы от March of the Machines накладывают эффект постепенного лечения на союзников, сквозь которых проезжают. Лечение от нескольких роботов не складывается.",
+      "description_loc": "March of the Machines applies a non-stacking heal over time when passing through allied heroes.",
       "name": "tinker_repair_bots",
       "icon": "healing",
       "gradient_id": 2,
@@ -19,7 +19,7 @@
     {
       "color": 1,
       "title_loc": "Translocator",
-      "description_loc": "Когда барьер от способности Self-Defense Matrix полностью расходуется на её владельце, он мгновенно перемещается в случайном направлении впереди себя.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное",
+      "description_loc": "When a Self-Defense Matrix barrier on Tinker is fully absorbed, he blinks in a random forward direction.<br><br>DISPEL TYPE: Basic Dispel",
       "name": "tinker_translocator",
       "icon": "movement",
       "gradient_id": 2,
@@ -66,11 +66,11 @@
       "id": 5150,
       "name": "tinker_laser",
       "name_loc": "Laser",
-      "desc_loc": "Выпускает луч сконцентрированной энергии, который наносит урон цели и ослепляет её, из-за чего она промахивается при каждой атаке.",
-      "lore_loc": "В своей подземной лаборатории Боуш довёл до совершенства этот лазерный резак для твёрдых пород, даже не задумываясь о его боевом применении.",
+      "desc_loc": "Fires an intense energy beam, damaging and blinding the target. Blinded targets miss all physical attacks.",
+      "lore_loc": "Boush perfected this rock cutting laser in his subterranean laboratory, never considering its combat utility.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Способность уменьшает размер, а также текущее и максимальное здоровье основной цели на %scepter_reduction_pct%%%. Эффекты от нескольких применений складываются. Луч отражается в самого дальнего врага в радиусе %scepter_bounce_radius% вокруг цели (в первую очередь в героев).",
+      "scepter_loc": "Upgrades Tinker's Laser into a Shrink Ray, reducing the main target's size, current health, and maximum health by %scepter_reduction_pct%%% (stacking). The laser bounces once on the farthest target up to %scepter_bounce_radius% range from the primary one, prioritizing heroes.",
       "facets_loc": [
         "",
         ""
@@ -123,7 +123,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС ПРОМАХА:",
+          "heading_loc": "BLIND MISS RATE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -143,7 +143,7 @@
             4.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОСЛЕПЛЕНИЯ:",
+          "heading_loc": "BLIND DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -163,7 +163,7 @@
             300
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "LASER DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tinker",
@@ -184,7 +184,7 @@
           "name": "radius_explosion",
           "values_float": [],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tinker_4",
@@ -367,15 +367,15 @@
       "id": 5152,
       "name": "tinker_march_of_the_machines",
       "name_loc": "March of the Machines",
-      "desc_loc": "Призывает армию механических слуг, атакующих врагов в области вокруг героя.",
-      "lore_loc": "Несмотря на то что лабораторию уже давно запечатали, радиовызов роботизированных дронов всё еще работает.",
+      "desc_loc": "Enlists an army of robotic minions to destroy enemy units in an area around Tinker.",
+      "lore_loc": "Even though the laboratory has since been sealed off, the ability to radio in robotic drones is still in working order.",
       "notes_loc": [
-        "За секунду появляется %machines_per_sec% робота."
+        "Robots spawn at a rate of %machines_per_sec% per second."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Роботы от March of the Machines накладывают эффект постепенного лечения на союзников, сквозь которых проезжают. Лечение от нескольких роботов не складывается.",
+        "March of the Machines applies a non-stacking heal over time when passing through allied heroes.",
         ""
       ],
       "type": 0,
@@ -423,7 +423,7 @@
             900
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -474,7 +474,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tinker_march_duration",
@@ -551,7 +551,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -571,7 +571,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЛЕЧЕНИЕ В СЕКУНДУ:",
+          "heading_loc": "HEAL PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -593,7 +593,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЛЕЧЕНИЯ:",
+          "heading_loc": "HEAL DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -698,16 +698,16 @@
       "id": 650,
       "name": "tinker_defense_matrix",
       "name_loc": "Defense Matrix",
-      "desc_loc": "Создаёт вокруг союзного существа барьер, который поглощает урон всех типов и даёт сопротивление эффектам.",
-      "lore_loc": "Выдающийся ум, не стеснённый моральными или этическими принципами, неизбежно привлекает недоброжелателей.",
+      "desc_loc": "Targets an allied unit, applying an all damage barrier to them that also provides Status Resistance.",
+      "lore_loc": "A gifted mind unconstrained by moral or ethical boundaries tends to attract an adversary or two.",
       "notes_loc": [
-        "Аспект Translocator не перенесёт владельца, если после развеивания он будет находиться под действием оцепенения или привязки."
+        "Translocator will not blink Tinker forward if he is Rooted or Leashed after the Basic Dispel."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Когда барьер от способности Self-Defense Matrix полностью расходуется на её владельце, он мгновенно перемещается в случайном направлении впереди себя.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное"
+        "When a Self-Defense Matrix barrier on Tinker is fully absorbed, he blinks in a random forward direction.<br><br>DISPEL TYPE: Basic Dispel"
       ],
       "type": 0,
       "behavior": "8589934600",
@@ -757,7 +757,7 @@
             320
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ БАРЬЕРА:",
+          "heading_loc": "DAMAGE BARRIER:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tinker_7",
@@ -783,7 +783,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "СОПРОТИВЛЕНИЕ ЭФФЕКТАМ:",
+          "heading_loc": "STATUS RESISTANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tinker_defense_matrix_status_resistance",
@@ -806,7 +806,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_tinker_3",
@@ -829,7 +829,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПЕРЕМЕЩЕНИЯ:",
+          "heading_loc": "BLINK RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -948,10 +948,10 @@
       "id": 909,
       "name": "tinker_warp_grenade",
       "name_loc": "Warp Flare",
-      "desc_loc": "Герой выпускает во врага снаряд, который наносит урон, перемещает цель от владельца, накладывает на неё оцепенение и уменьшает её дальность атаки и применения заклинаний на %debuff_duration% сек.<br><br> Дальность перемещения отсчитывается от точки применения способности и всегда равна её текущей дальности применения + %bonus_distance%.",
-      "lore_loc": "Самое смертоносное оружие Боуша мгновенно превращает врагов в космическую пыль. Устранить досадный побочный эффект «идеального копирования»... пока не удалось.",
+      "desc_loc": "Throws a flare towards an enemy, dealing damage, teleporting them away, rooting them and reducing their Cast and Attack Range for %debuff_duration% seconds.<br><br> The teleport location is always the ability's current cast range + %bonus_distance% from Tinker's position when he threw the flare.",
+      "lore_loc": "Tinker's deadliest weapon instantly turns an enemy into space dust. Research to resolve the annoying 'perfect copy' side effect... is ongoing.",
       "notes_loc": [
-        "Не переместит врага, если он находится на расстоянии более %max_distance%."
+        "Will not teleport enemies if the distance is over %max_distance% units away."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1001,7 +1001,7 @@
             150
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1052,7 +1052,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ ДАЛЬНОСТИ АТАКИ И ЗАКЛИНАНИЙ:",
+          "heading_loc": "CAST/ATTACK RANGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1166,8 +1166,8 @@
       "id": 5153,
       "name": "tinker_rearm",
       "name_loc": "Rearm",
-      "desc_loc": "ПРЕРЫВАЕМАЯ — сбрасывает перезарядку способностей героя.",
-      "lore_loc": "Новую батарею сюда, пару ракет туда — Боуш постоянно совершенствует и обновляет свои устройства.",
+      "desc_loc": "CHANNELED - Resets the cooldown on Tinker's abilities.",
+      "lore_loc": "A new battery here, another set of rockets there, Boush continually improves on existing technology.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1225,7 +1225,7 @@
             1.25
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ПРИМЕНЕНИЯ:",
+          "heading_loc": "TIME TO REARM:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1292,7 +1292,7 @@
       "id": 1262,
       "name": "tinker_eureka",
       "name_loc": "Eureka!",
-      "desc_loc": "Каждые %int_per_one_cdr% ед. интеллекта уменьшают перезарядку предметов на %one_percent_tooltip%%% (максимум — на %max_cdr%%%).",
+      "desc_loc": "Tinker gains %one_percent_tooltip%%% item cooldown reduction per %int_per_one_cdr% Intelligence, up to a maximum of %max_cdr%%%.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1394,7 +1394,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ ПЕРЕЗАРЯДКИ ПРЕДМЕТОВ:",
+          "heading_loc": "ITEM COOLDOWN REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1424,7 +1424,7 @@
     {
       "id": 1266,
       "name": "special_bonus_unique_tinker_march_duration",
-      "name_loc": "+{s:bonus_duration} сек. действия March of the Machines",
+      "name_loc": "+{s:bonus_duration}s March of the Machines Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1486,7 +1486,7 @@
     {
       "id": 1675,
       "name": "special_bonus_mana_reduction_10",
-      "name_loc": "+{s:value}% к уменьшению расхода и сжигания маны",
+      "name_loc": "+{s:value}% Manacost/Manaloss Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1566,7 +1566,7 @@
     {
       "id": 8039,
       "name": "special_bonus_unique_tinker_7",
-      "name_loc": "+{s:bonus_damage_absorb} к здоровью барьера у Defense Matrix",
+      "name_loc": "+{s:bonus_damage_absorb} Defense Matrix Damage Barrier",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1628,7 +1628,7 @@
     {
       "id": 6152,
       "name": "special_bonus_unique_tinker",
-      "name_loc": "+{s:bonus_laser_damage} к урону от Laser",
+      "name_loc": "+{s:bonus_laser_damage} Laser Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1690,7 +1690,7 @@
     {
       "id": 1267,
       "name": "special_bonus_unique_tinker_defense_matrix_status_resistance",
-      "name_loc": "+{s:bonus_status_resistance}% к сопротивлению эффектам от Defense Matrix",
+      "name_loc": "+{s:bonus_status_resistance}% Defense Matrix Status Resistance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1752,7 +1752,7 @@
     {
       "id": 413,
       "name": "special_bonus_unique_tinker_5",
-      "name_loc": "–{s:bonus_AbilityChannelTime} сек. применения Keen Conveyance",
+      "name_loc": "-{s:bonus_AbilityChannelTime}s Keen Conveyance Channel Time",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1814,7 +1814,7 @@
     {
       "id": 7898,
       "name": "special_bonus_unique_tinker_4",
-      "name_loc": "Laser по области радиусом {s:bonus_radius_explosion}",
+      "name_loc": "{s:bonus_radius_explosion} AoE Laser",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1876,7 +1876,7 @@
     {
       "id": 1534,
       "name": "special_bonus_intelligence_40",
-      "name_loc": "+{s:value} к интеллекту",
+      "name_loc": "+{s:value} Intelligence",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

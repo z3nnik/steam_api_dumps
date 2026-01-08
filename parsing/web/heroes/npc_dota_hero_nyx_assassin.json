@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_nyx_assassin",
   "order_id": 88,
   "name_loc": "Nyx Assassin",
-  "bio_loc": "Глубоко в архивах Ультимира, среди учёных трактатов о кладистике драконов и книгах непереводимых заклинаний, есть древний том с описаниями энтомологических диковин. Составленная учёными книга описывает телепатические способности скарабея-фанатика, странного вида социальных насекомых со способностями, которых нет больше ни у кого во всех семи вселенных.\r\n\t\t\t\t<br><br>В отличие от других личинок колонии, Nyx Assassin не превратился в жука с ограниченным мышлением и затупленными конечностями, как большинство членов рабочей касты его вида. Для него было приготовлено особое превращение, благословленное самой Никс. Он был избран, один из множества, и помазан экстрактом самой королевы-богини. Мало кто выживал в полумраке королевских покоев, но он проявил проницательный ум. Его бритвенно-острые жвалы секли воздух, пока разум проникал в мысли тех, кто стоял вокруг него. Среди всех скарабеев-фанатиков, только он один был удостоен наивысшей участи. После нового превращения он переродился, благословленный Никс, со способностями, служащими только одной цели: убивать во имя его богини.",
-  "hype_loc": "Nyx Assassin всегда охотится за хилыми противниками. Он <b>незаметно</b> крадётся по лесам и, обнаружив жертву, пронзает её острыми когтями и поражает <b>оглушающими шипами</b>, отражая любой ответный удар своим <b>панцирем</b>.",
-  "npe_desc_loc": "Отражает урон и оглушает врагов",
+  "bio_loc": "Deep in the Archive of Ultimyr, shelved between scholarly treatises on dragon cladistics and books of untranslatable spells, there is an ancient tome of entomological curiosities.  Compiled by scholars, the book describes the telepathic talents of the zealot scarab, a strange species of social insect with abilities unique to all the seven planes.    \r\n\t\t\t\t<br><br>Unlike most grubs of his colony, Nyx Assassin did not arise from metamorphosis with the plodding thoughts and blunted appendages common to the worker caste of his kind. For his was a special transformation, guided by the grace of Nyx.  He was the chosen one, selected from the many and anointed with an extract of the queen goddess herself.  Not all survive the dark blessing of the queen's chamber, but he emerged with a penetrating mind, and dagger-like claws--his razor sharp mandibles raking the air while his thoughts projected directly into the minds of those around him.  Of all zealot scarabs, he alone was selected for the highest calling.  After his metamorphosis, he was reborn, by grace of Nyx, with abilities which shaped him for one thing and one thing only: to kill in the name of his goddess.",
+  "hype_loc": "Nyx Assassin is always hunting for fragile targets. Sneaking <b>invisibly</b> through the forest, when he spots his prey, he swipes them with his deadly claws and impales them on <b>stunning spikes</b>, then reverses any counterattack with his <b>reflecting carapace.</b>",
+  "npe_desc_loc": "Reflects enemy damage and stuns",
   "facets": [
     {
       "color": 3,
       "title_loc": "Mana Burn",
-      "description_loc": "Способность Mind Flare также сжигает ману жертвы пропорционально её максимальной мане.",
+      "description_loc": "Mind Flare burns a percentage of the target's max mana.",
       "name": "nyx_assassin_burn_mana",
       "icon": "nuke",
       "gradient_id": 3,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Scuttle",
-      "description_loc": "Первые {s:bonus_free_pathing_duration} сек. действия Vendetta герой передвигается с максимальной скоростью и имеет свободное перемещение.",
+      "description_loc": "For the first {s:bonus_free_pathing_duration}s of Vendetta, Nyx Assassin is hasted and has unobstructed pathing.",
       "name": "nyx_assassin_scuttle",
       "icon": "speed",
       "gradient_id": 2,
@@ -66,11 +66,11 @@
       "id": 5462,
       "name": "nyx_assassin_impale",
       "name_loc": "Impale",
-      "desc_loc": "Из земли прорывается полоса каменных шипов. Они наносят урон и подбрасывают врагов в воздух, оглушая их.",
-      "lore_loc": "Все скарабеи-фанатики прекрасно знают подземные пути и умело используют их в бою.",
+      "desc_loc": "Rock spikes burst from the earth along a straight path. Enemy units take damage, then are hurled into the air and stunned.",
+      "lore_loc": "All zealot scarabs possess intimate knowledge of underground pathways, using them to their advantage.",
       "notes_loc": [
-        "Шипы двигаются со скоростью в %speed% в секунду на расстояние в %length%.",
-        "Linken's Sphere не блокирует эту способность."
+        "The spikes move at %speed% units per second, over %length% range.",
+        "Impale cannot be blocked by Linken's Sphere."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -146,7 +146,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nyx_3",
@@ -206,7 +206,7 @@
             280
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "IMPALE DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nyx_2",
@@ -315,13 +315,13 @@
       "id": 1104,
       "name": "nyx_assassin_jolt",
       "name_loc": "Mind Flare",
-      "desc_loc": "Наносит выбранному врагу урон, пропорциональный его максимальной мане, а также долю от урона, полученного им от владельца способности за последние %damage_echo_duration% сек. Подсчёт накопленного урона сбрасывается перед срабатыванием этой способности.",
-      "lore_loc": "Лишь воспитанники богини-королевы могут по-настоящему познать мир вокруг них.",
+      "desc_loc": "Deals damages to the enemy equal to a percentage of its Max Mana. Deals additional damage equal to a percentage of the damage the target has taken from Nyx Assassin in the last %damage_echo_duration%s. Resets accumulated damage before applying damage.",
+      "lore_loc": "Only those raised by the queen can use their minds to touch the world around them.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Также сжигает ману жертвы пропорционально её максимальной мане.",
+        "Mind Flare burns mana equal to a percentage of the target's max mana.",
         ""
       ],
       "type": 0,
@@ -378,7 +378,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ МАКС. МАНЫ:",
+          "heading_loc": "MAX MANA AS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -398,7 +398,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "СЖИГАЕМАЯ МАНА:",
+          "heading_loc": "MANA BURNT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -458,7 +458,7 @@
             15
           ],
           "is_percentage": true,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -567,12 +567,12 @@
       "id": 5464,
       "name": "nyx_assassin_spiked_carapace",
       "name_loc": "Spiked Carapace",
-      "desc_loc": "Полностью блокирует урон от атаки или способности, по одному разу отражая урон и оглушая каждого, кто пытался его нанести. Не снимает невидимость от способности Vendetta.\n\nЕсли герой находится под действием Burrow, эта способность мгновенно оглушает всех врагов вокруг.",
-      "lore_loc": "Несмотря на то что сам панцирь скарабея довольно тонкий, его надёжно защищают острые как бритва выдвижные шипы.",
+      "desc_loc": "When activated while above ground, Spiked Carapace reflects and negates damage dealt to Nyx Assassin (max once from each source), as well as stunning the source of the damage. Activating Spiked Carapace will not break Vendetta invisibility.\n\nWhile Burrowed, Spiked Carapace instantly stuns nearby enemies when cast.",
+      "lore_loc": "While their carapace is relatively thin, it's guarded by a retractable field of razor-sharp spikes.",
       "notes_loc": [
-        "Наносит урон, уменьшенный вашими показателями сопротивления.",
-        "Работает только на существ под контролем игроков.",
-        "Отражённый урон имеет тот же тип, что и наносимый."
+        "The damage is calculated after all reductions.",
+        "Spiked Carapace will only trigger on damage from other player controlled units.",
+        "The damage reflected will have the same damage type as it had when it was dealt to Nyx Assassin."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -631,7 +631,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "REFLECT DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -651,7 +651,7 @@
             1.6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nyx_6",
@@ -674,7 +674,7 @@
             140
           ],
           "is_percentage": true,
-          "heading_loc": "ОТРАЖАЕМЫЙ УРОН:",
+          "heading_loc": "DAMAGE REFLECTED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nyx_4",
@@ -746,10 +746,10 @@
       "id": 5666,
       "name": "nyx_assassin_burrow",
       "name_loc": "Burrow",
-      "desc_loc": "Герой торопливо закапывается в землю. Там он невидим, получает уменьшенный урон и усиливает свои способности: Spiked Carapace действует на всех окружающих врагов, Mind Flare и Impale получают увеличенную дальность применения, а у Impale уменьшается перезарядка.",
-      "lore_loc": "Некоторые скарабеи-фанатики залегают в землю и застают жертву врасплох.",
+      "desc_loc": "Nyx Assassin buries himself beneath the battlefield over a short duration. Once burrowed, Spiked Carapace instantly stuns nearby enemies when cast, the range of Mind Flare and Impale is increased, and Impale's cooldown is decreased. While burrowed, Nyx Assassin is stationary, unable to attack, and invisible. Nyx Assassin gains damage reduction from all damage sources.",
+      "lore_loc": "Some castes of zealot scarab are known to create small burrows to lie in wait, ready to ambush their prey.",
       "notes_loc": [
-        "Применив способность Vendetta, герой выкопается из земли."
+        "Casting Vendetta will cancel burrow."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -799,7 +799,7 @@
             1
           ],
           "is_percentage": true,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ ОТ МАКС. ЗДОРОВЬЯ:",
+          "heading_loc": "MAX HP REGEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -816,7 +816,7 @@
             1
           ],
           "is_percentage": true,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ ОТ МАКС. МАНЫ:",
+          "heading_loc": "MAX MANA REGEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -833,7 +833,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ УРОНА:",
+          "heading_loc": "BURROW DAMAGE REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -850,7 +850,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ ЗАКЛИНАНИЙ:",
+          "heading_loc": "BURROW BONUS CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -867,7 +867,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ:",
+          "heading_loc": "BURROW BONUS COOLDOWN REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -884,7 +884,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ДЕЙСТВИЯ SPIKED CARAPACE:",
+          "heading_loc": "BURROW SPIKED CARAPACE RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -930,7 +930,7 @@
       "id": 1365,
       "name": "nyx_assassin_nyxth_sense",
       "name_loc": "Nyxth Sense",
-      "desc_loc": "Раскрывает героев в радиусе %radius% вокруг владельца.",
+      "desc_loc": "Nyx Assassin can detect heroes within %radius% units of himself.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1010,18 +1010,18 @@
       "id": 5465,
       "name": "nyx_assassin_vendetta",
       "name_loc": "Vendetta",
-      "desc_loc": "Делает героя невидимым и увеличивает его скорость передвижения. Совершив атаку из невидимости, герой нанесёт огромный дополнительный урон. Такая атака имеет увеличенную на %attack_range_bonus% дальность и ускоренную на %attack_animation_bonus%%% анимацию.",
-      "lore_loc": "Скарабей убивает во славу своей королевы.",
+      "desc_loc": "Allows Nyx Assassin to become invisible and gain a speed bonus.  If Nyx Assassin attacks to break the invisibility, massive bonus damage is dealt with the attack. Nyx Assassin has %attack_range_bonus% additional attack range and a %attack_animation_bonus%%% faster attack animation for this attack.",
+      "lore_loc": "The scarab kills for the glory of his queen.",
       "notes_loc": [
-        "Задержка перед невидимостью составляет %fade_time% сек.",
-        "Если невидимость закончится или прервётся применением способности, герой не нанесёт дополнительный урон.",
-        "Истощение от Aghanim's Shard накладывается перед нанесением дополнительного урона."
+        "Has a %fade_time% second fadetime.",
+        "If a spell is used to break the invisibility, or the invisibility expires, the bonus damage is lost.",
+        "With Aghanim's Shard, the Break is applied before the bonus damage."
       ],
-      "shard_loc": "Атака из невидимости от этой способности накладывает истощение.",
+      "shard_loc": "Vendetta applies Break on attack.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Первые %free_pathing_duration% сек. действия Vendetta герой передвигается с максимальной скоростью и имеет свободное перемещение."
+        "For the first %free_pathing_duration%s of Vendetta, Nyx is hasted and has unobstructed pathing."
       ],
       "type": 1,
       "behavior": "4196356",
@@ -1069,7 +1069,7 @@
             60
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1088,7 +1088,7 @@
             20
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1107,7 +1107,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_nyx_vendetta_damage",
@@ -1164,7 +1164,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ИСТОЩЕНИЯ:",
+          "heading_loc": "BREAK DURATION:",
           "bonuses": [],
           "values_shard": [
             4
@@ -1306,7 +1306,7 @@
     {
       "id": 402,
       "name": "special_bonus_unique_nyx_4",
-      "name_loc": "+{s:bonus_damage_reflect_pct}% к отражаемому урону у Spiked Carapace",
+      "name_loc": "+{s:bonus_damage_reflect_pct}% Spiked Carapace Damage Reflect",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1368,7 +1368,7 @@
     {
       "id": 6814,
       "name": "special_bonus_unique_nyx_3",
-      "name_loc": "+{s:bonus_duration} сек. оглушения от Impale",
+      "name_loc": "+{s:bonus_duration}s Impale Stun Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1430,7 +1430,7 @@
     {
       "id": 1171,
       "name": "special_bonus_unique_nyx_vendetta_damage",
-      "name_loc": "+{s:bonus_bonus_damage} к урону от Vendetta",
+      "name_loc": "+{s:bonus_bonus_damage} Vendetta Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1492,7 +1492,7 @@
     {
       "id": 1368,
       "name": "special_bonus_unique_nyx_jolt_cooldown",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Mind Flare",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Mind Flare Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1554,7 +1554,7 @@
     {
       "id": 891,
       "name": "special_bonus_unique_nyx_6",
-      "name_loc": "+{s:bonus_stun_duration} сек. оглушения от Spiked Carapace",
+      "name_loc": "+{s:bonus_stun_duration}s Spiked Carapace Stun Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1616,7 +1616,7 @@
     {
       "id": 6399,
       "name": "special_bonus_unique_nyx_2",
-      "name_loc": "+{s:bonus_impale_damage} к урону от Impale",
+      "name_loc": "+{s:bonus_impale_damage} Impale Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1678,7 +1678,7 @@
     {
       "id": 6130,
       "name": "special_bonus_unique_nyx",
-      "name_loc": "Mind Flare по области радиусом {s:bonus_aoe}",
+      "name_loc": "{s:bonus_aoe} Mind Flare Radius",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1740,7 +1740,7 @@
     {
       "id": 435,
       "name": "special_bonus_agility_80",
-      "name_loc": "+{s:value} к ловкости",
+      "name_loc": "+{s:value} Agility",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

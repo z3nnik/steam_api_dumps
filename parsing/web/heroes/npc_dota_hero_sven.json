@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_sven",
   "order_id": 19,
   "name_loc": "Sven",
-  "bio_loc": "Внебрачный сын вигильского рыцаря и девы из рода бледных мерансов рос в руинах Тенистого взморья. Его отца казнили за нарушение Вигильского кодекса, а от матери отвернулись все родичи, и поэтому бастард считает, что честь следует искать не в обществе, но в себе. Он заботился о матери до самой её нескорой смерти, а затем отправился на службу вигильским рыцарям, не раскрывая своего происхождения. Тринадцать лет он учился в школе своего отца, постигая суровый закон, что презирал само его существование. И вот, в день присяги, он завладел Клинком изгоя, разбил Священный шлем и сжёг кодекс в праведном вигильском пламени. Он покинул цитадель, навсегда одинокий, строго следующий своим личным законам до последней руны. Да, он рыцарь... но рыцарь мятежный. Рыцарь, верный только себе.",
-  "hype_loc": "Sven всегда рад сражению. Он <b>оглушает столпившихся врагов</b>, а после использования ульта, <b>увеличивающего урон героя</b>, противники погибают от пары ударов огромного меча.",
-  "npe_desc_loc": "Могучими взмахами меча прорубает врагов насквозь",
+  "bio_loc": "Sven is the bastard son of a Vigil Knight, born of a Pallid Meranth, raised in the Shadeshore Ruins.  With his father executed for violating the Vigil Codex, and his mother shunned by her wild race, Sven believes that honor is to be found in no social order, but only in himself.  After tending his mother through a lingering death, he offered himself as a novice to the Vigil Knights, never revealing his identity.  For thirteen years he studied in his father's school, mastering the rigid code that declared his existence an abomination.  Then, on the day that should have been his In-Swearing, he seized the Outcast Blade, shattered the Sacred Helm, and burned the Codex in the Vigil's Holy Flame.  He strode from Vigil Keep, forever solitary, following his private code to the last strict rune. Still a knight, yes...but a Rogue Knight. He answers only to himself.",
+  "hype_loc": "Sven is always eager to charge into a fight. He <b>stuns grouped enemies</b> as he wades into battle, and once he ignites his <b>damage-boosting ultimate</b>, a few swings of his massive sword are often more than enough to slay his foes.",
+  "npe_desc_loc": "Cleaves down enemies with his incredible strength",
   "facets": [
     {
       "color": 3,
       "title_loc": "Heavy Plate",
-      "description_loc": "Способность Warcry даёт физический барьер.",
+      "description_loc": "Warcry provides a physical damage barrier.",
       "name": "sven_heavy_plate",
       "icon": "armor",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Wrath of God",
-      "description_loc": "Каждая единица силы приносит герою дополнительный бонус к урону.",
+      "description_loc": "Sven gains additional attack damage from Strength.",
       "name": "sven_strscaling",
       "icon": "strength",
       "gradient_id": 0,
@@ -66,13 +66,13 @@
       "id": 5094,
       "name": "sven_storm_bolt",
       "name_loc": "Storm Hammer",
-      "desc_loc": "Герой высвобождает всю мощь своей магической рукавицы, нанося жертве и её союзникам в небольшой области урон и оглушая их.",
-      "lore_loc": "Железная рукавица мятежного рыцаря, позаимствованная в отцовской школе, выбивает дух из любого врага.",
+      "desc_loc": "Sven unleashes his magical gauntlet that deals damage and stuns enemy units in a small area around the target.",
+      "lore_loc": "The Rogue Knight's iron gauntlet, taken from the school of his father, strikes his foes to their core.",
       "notes_loc": [
-        "Улучшение от Aghanim's Scepter не позволяет выбирать целью неуязвимых существ."
+        "Aghanim's Scepter upgrade does not allow Storm Hammer to target invulnerable targets."
       ],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает дальность применения и скорость снаряда. Он действует на неуязвимых существ и применяет на жертв нормальное развеивание. Если включено альтернативное применение, снаряд нанесёт на %scepter_bonus_damage% урона больше, а герой полетит вместе с ним.",
+      "scepter_loc": "Increases cast range, projectile speed and applies a basic dispel to affected enemies. Allows Storm Hammer to affect invulnerable enemies in the radius. If alt-cast, it deals an additional %scepter_bonus_damage% damage and Sven travels with the Storm Hammer.",
       "facets_loc": [
         "",
         ""
@@ -128,7 +128,7 @@
             1000
           ],
           "is_percentage": false,
-          "heading_loc": "СКОРОСТЬ СНАРЯДА:",
+          "heading_loc": "PROJECTILE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -150,7 +150,7 @@
             1.6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sven_4",
@@ -176,7 +176,7 @@
             310
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -247,7 +247,7 @@
             600
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРИМЕНЕНИЯ:",
+          "heading_loc": "CAST RANGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -335,8 +335,8 @@
       "id": 5095,
       "name": "sven_great_cleave",
       "name_loc": "Great Cleave",
-      "desc_loc": "Могучие атаки героя прорубают жертву, поражая всех врагов перед ним.",
-      "lore_loc": "Вигильские рыцари до сих пор надеются вернуть Клинок изгоя, украденный мятежным послушником, ведь это оружие способно прорубать целые ряды слабых воинов.",
+      "desc_loc": "Sven strikes with great force, cleaving all nearby enemy units with his attack.",
+      "lore_loc": "The Vigil Knights still seek to reclaim the stolen Outcast Blade from Sven, a weapon capable of cutting wide swaths through lesser warriors.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -426,7 +426,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ПРОРУБАНИЯ:",
+          "heading_loc": "CLEAVE DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -446,7 +446,7 @@
             90
           ],
           "is_percentage": true,
-          "heading_loc": "ПРОРУБАЮЩИЙ УРОН:",
+          "heading_loc": "CLEAVE DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sven_8",
@@ -481,13 +481,13 @@
       "id": 5096,
       "name": "sven_warcry",
       "name_loc": "Warcry",
-      "desc_loc": "Боевой клич поднимает дух союзных героев и увеличивает их броню и урон на %duration% сек.",
-      "lore_loc": "Цитируя Вигильский кодекс во всеуслышание, рыцарь укрепляется в верности своим мятежным законам. Как поэтично!",
+      "desc_loc": "Sven's Warcry heartens his allied heroes for battle, increasing their armor and movement speed. Lasts %duration% seconds.",
+      "lore_loc": "Calling a few lines from the Vigil Codex fortifies Sven's obedience to his rogue code. So poetic!",
       "notes_loc": [],
-      "shard_loc": "Способность становится неразвеиваемой и пассивно увеличивает броню союзников неподалёку на %shard_passive_armor%. Увеличивает дополнительную скорость при активации.",
+      "shard_loc": "Warcry is now undispellable and passively grants %shard_passive_armor% armor to all allies near Sven. Increases active movement speed bonus.",
       "scepter_loc": "",
       "facets_loc": [
-        "Помимо брони, способность даёт физический барьер.",
+        "Warcry provides a physical damage barrier.",
         ""
       ],
       "type": 0,
@@ -544,7 +544,7 @@
             15
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ:",
+          "heading_loc": "BONUS SPEED:",
           "bonuses": [],
           "values_shard": [
             3
@@ -566,7 +566,7 @@
             14
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. БРОНЯ:",
+          "heading_loc": "BONUS ARMOR:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sven_7",
@@ -589,7 +589,7 @@
             700
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -606,7 +606,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sven_5",
@@ -629,7 +629,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. БРОНЯ ОТ АУРЫ:",
+          "heading_loc": "PASSIVE BONUS ARMOR:",
           "bonuses": [],
           "values_shard": [
             6
@@ -667,7 +667,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС АУРЫ:",
+          "heading_loc": "PASSIVE RADIUS:",
           "bonuses": [],
           "values_shard": [
             1200
@@ -689,7 +689,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ ФИЗИЧЕСКОГО БАРЬЕРА:",
+          "heading_loc": "PHYSICAL BARRIER AMOUNT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -782,10 +782,10 @@
       "id": 5097,
       "name": "sven_gods_strength",
       "name_loc": "God's Strength",
-      "desc_loc": "Герой концентрирует свою неконтролируемую мощь, получая бонус к урону и сопротивлению замедлениям на %abilityduration% сек.",
-      "lore_loc": "Наделённый силой, сокрушившей Священный шлем, мятежный рыцарь непобедим в ближнем бою.",
+      "desc_loc": "Sven channels his rogue strength, granting bonus damage and slow resistance for %abilityduration% seconds.",
+      "lore_loc": "With the strength that shattered the Sacred Helm, the Rogue Knight stands unopposed in melee combat.",
       "notes_loc": [
-        "Дополнительный урон подсчитывается на основе базового урона и основной характеристики."
+        "The bonus damage is based on base damage and the primary attribute of Sven."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -843,7 +843,7 @@
             190
           ],
           "is_percentage": true,
-          "heading_loc": "ДОПОЛНИТЕЛЬНЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sven_2",
@@ -866,7 +866,7 @@
             30
           ],
           "is_percentage": true,
-          "heading_loc": "СОПРОТИВЛЕНИЕ ЗАМЕДЛЕНИЯМ:",
+          "heading_loc": "SLOW RESISTANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sven_gods_strength_slow_resist",
@@ -979,7 +979,7 @@
       "id": 1232,
       "name": "sven_vanquisher",
       "name_loc": "Vanquisher",
-      "desc_loc": "Атаки героя наносят на %bonus_damage_pct%%% больше урона оглушённым врагам.",
+      "desc_loc": "Sven's attacks deal %bonus_damage_pct%%% bonus damage to stunned enemies.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1066,7 +1066,7 @@
     {
       "id": 673,
       "name": "special_bonus_unique_sven_5",
-      "name_loc": "+{s:bonus_duration} сек. действия Warcry",
+      "name_loc": "+{s:bonus_duration}s Warcry Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1128,7 +1128,7 @@
     {
       "id": 6045,
       "name": "special_bonus_unique_sven",
-      "name_loc": "+{s:bonus_bonus_damage_pct}% к дополнительному урону от Vanquisher",
+      "name_loc": "+{s:bonus_bonus_damage_pct}% Vanquisher Bonus Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1190,7 +1190,7 @@
     {
       "id": 6911,
       "name": "special_bonus_unique_sven_3",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки God's Strength",
+      "name_loc": "-{s:bonus_AbilityCooldown}s God's Strength Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1252,7 +1252,7 @@
     {
       "id": 763,
       "name": "special_bonus_unique_sven_8",
-      "name_loc": "+{s:bonus_great_cleave_damage}% к прорубающему урону от Great Cleave",
+      "name_loc": "+{s:bonus_great_cleave_damage}% Great Cleave Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1314,7 +1314,7 @@
     {
       "id": 1188,
       "name": "special_bonus_unique_sven_gods_strength_slow_resist",
-      "name_loc": "+{s:bonus_bonus_slow_resistance}% к сопр. замедлениям от God's Strength",
+      "name_loc": "+{s:bonus_bonus_slow_resistance}% God's Strength Slow Resistance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1376,7 +1376,7 @@
     {
       "id": 716,
       "name": "special_bonus_unique_sven_7",
-      "name_loc": "+{s:bonus_bonus_armor} к броне от Warcry",
+      "name_loc": "+{s:bonus_bonus_armor} Warcry Armor",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1438,7 +1438,7 @@
     {
       "id": 6910,
       "name": "special_bonus_unique_sven_2",
-      "name_loc": "+{s:bonus_gods_strength_damage}% к урону от God's Strength",
+      "name_loc": "+{s:bonus_gods_strength_damage}% God's Strength Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1500,7 +1500,7 @@
     {
       "id": 7112,
       "name": "special_bonus_unique_sven_4",
-      "name_loc": "+{s:bonus_bolt_stun_duration} сек. оглушения от Storm Hammer",
+      "name_loc": "+{s:bonus_bolt_stun_duration}s Storm Hammer Stun Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1570,7 +1570,7 @@
           "id": 1234,
           "name": "sven_wrath_of_god",
           "name_loc": "Wrath of God",
-          "desc_loc": "Каждая единица силы приносит герою дополнительный бонус к урону.",
+          "desc_loc": "Sven gains additional attack damage from Strength.",
           "lore_loc": "",
           "notes_loc": [],
           "shard_loc": "",
@@ -1624,7 +1624,7 @@
                 0.4
               ],
               "is_percentage": false,
-              "heading_loc": "ДОП. УРОН ЗА ЕДИНИЦУ СИЛЫ:",
+              "heading_loc": "BONUS DAMAGE PER STR:",
               "bonuses": [],
               "values_shard": [],
               "values_scepter": [],

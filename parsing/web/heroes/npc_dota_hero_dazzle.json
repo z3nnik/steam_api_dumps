@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_dazzle",
   "order_id": 4,
   "name_loc": "Dazzle",
-  "bio_loc": "Перед получением титула жреца теней каждый юный послушник ордена Дезун должен пройти серию ритуалов. Последний из них, ритуал теней, представляет собой опасное путешествие в мир Нотл, непредсказуемую реальность, откуда возвращается далеко не каждый, кто посмел войти. Одни из тех, что возвращались, теряли рассудок. У других открывались странные способности. Но так или иначе, всякий, кто попадал в мир Нотл, бесповоротно изменялся.\r\n\t\t\t\t<br><br>Ведомый мыслями о просвещении, Dazzle был самым юным претендентом на прохождение ритуала за всю историю своего племени. Поначалу орден отверг его кандидатуру, говоря, что он слишком молод. Однако Dazzle было не отговорить. Все-таки рассмотрев что-то особенное в упорном послушнике, старейшины согласились на проведение ритуала. Dazzle выпил священное зелье, и сел у огня, пока остальные члены его племени исполняли ритуальный танец.\r\n\t\t\t\t<br><br>В отражении мира Нотл, куда он попал, понятия света и тени были перепутаны и смешаны между собой. Поэтому исцеляющий свет, приятно мерцающий в темноте, на самом деле воплощение зла, а самые кошмарные свершения проводятся в ослепительной вспышке великолепия. Интуиция старейшин оказалась пророческой: Dazzle оказался жрецом теней, подобных по силе которому его народ никогда не видел. С силой, способной как исцелять, так и убивать. И теперь он использует свои способности, чтобы укреплять союзников и сокрушать врагов.",
-  "hype_loc": "Рождённый поддерживать своих сторонников, Dazzle <b>не даёт соратникам умереть</b>, пока те уничтожают врагов. Его <b>необычные заклинания</b> вплетаются <b>в броню</b>, ослабляя противников и усиливая союзников.",
-  "npe_desc_loc": "Могучий лекарь, способный ненадолго отложить смерть",
+  "bio_loc": "Each young acolyte to the Dezun order must complete a series of rites before becoming a shadow priest. The final rite, the rite of shades, is a harrowing spiritual journey through the Nothl Realm, an unpredictable domain from which not all visitants return.  Of those who do, some return mad. Others return with strange aptitudes. But all who go there are changed by their experiences.\r\n\t\t\t\t<br><br>Driven by the need for enlightenment, Dazzle was the youngest of his tribe ever to request the sacred ritual. At first the order refused him, saying he was too young. But Dazzle was not to be dissuaded. Sensing something special in the headstrong young acolyte, the elders relented. Dazzle drank down the sacred potion and sat by the fire while the rest of his tribe danced through the night.\r\n\t\t\t\t<br><br>In this ethereal dimension of the Nothl Realm, the properties of light and dark are inverted. Thus his brilliant healing light, beautiful to our eye, is actually a sinister kind of evil; and the darkest deeds are done in a dazzling glow. The elders' intuition was prophetic: Dazzle returned to his people as a Shadow Priest like none seen before, with the power to heal as well as to destroy. Now he uses his gift to cut down his enemies and mend his friends.",
+  "hype_loc": "Born to support his cohorts in battle, Dazzle <b>keeps wounded allies alive</b> so they might later rain death upon the enemy. His <b>strange magic</b> weaves its way into <b>nearby armor</b>, weakening enemies and strengthening friends.",
+  "npe_desc_loc": "Powerful healer who can briefly prevent death",
   "facets": [
     {
       "color": 0,
       "title_loc": "Nothl Boon",
-      "description_loc": "Всё лечение героя сверх максимального здоровья превращается в барьер. Weave сильнее действует на союзников и увеличивает лечение от владельца аспекта.",
+      "description_loc": "Dazzle's overhealing is converted into a barrier. Weave is stronger on allies and amplifies incoming heals from Dazzle.",
       "name": "dazzle_facet_nothl_boon",
       "icon": "armor",
       "gradient_id": 1,
@@ -19,7 +19,7 @@
     {
       "color": 4,
       "title_loc": "Poison Bloom",
-      "description_loc": "Атакуя жертву способности Poison Touch, герой распространяет её на других врагов. Weave сильнее действует на врагов.",
+      "description_loc": "Dazzle can spread his Poison Touch when attacking enemies. Weave is stronger on enemies.",
       "name": "dazzle_poison_bloom",
       "icon": "ricochet",
       "gradient_id": 0,
@@ -66,16 +66,16 @@
       "id": 5233,
       "name": "dazzle_poison_touch",
       "name_loc": "Poison Touch",
-      "desc_loc": "Выпускает конус яда, поражающий нескольких врагов. Наносит жертвам периодический урон и замедляет их, а атаки владельца способности обновляют время действия эффекта и усиливают замедление.",
-      "lore_loc": "Этот весьма полезный паралитический яд — один из немногих обрядов культа Дезун, направленных во вред врагу.",
+      "desc_loc": "Releases a cone of poison that strikes multiple enemy units. Deals damage over time and slows the targets. Anytime the targets get attacked by Dazzle, the debuff duration is refreshed and slow is increased.",
+      "lore_loc": "One of the few Dezun rites used for offensive purposes, the paralytic enchantment often proves useful.",
       "notes_loc": [
-        "Урон не уменьшается способностями, блокирующими урон."
+        "The damage is not reduced by damage block abilities."
       ],
-      "shard_loc": "Способность превращает жертв в зверушек на %hex_duration% сек.",
+      "shard_loc": "Causes Poison Touch to hex affected targets for %hex_duration% seconds.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Если владелец способности атакует её жертву %attacks_to_split% раза, яд нанесёт дополнительный урон и распространится по новым целям в радиусе %split_radius% от жертвы."
+        "Every %attacks_to_split% attacks, the poison will deal additional damage and split to additional enemy units in a %split_radius% AoE."
       ],
       "type": 0,
       "behavior": "8",
@@ -188,7 +188,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ЦЕЛЕЙ:",
+          "heading_loc": "TARGETS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -208,7 +208,7 @@
             52
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dazzle_3",
@@ -234,7 +234,7 @@
             -22
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dazzle_1",
@@ -277,7 +277,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -297,7 +297,7 @@
             -3.5
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. ЗАМЕДЛЕНИЕ ЗА АТАКУ:",
+          "heading_loc": "BONUS SLOW PER HIT:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -357,7 +357,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ПРИ РАСПРОСТРАНЕНИИ:",
+          "heading_loc": "SPLIT DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -487,10 +487,10 @@
       "id": 5234,
       "name": "dazzle_shallow_grave",
       "name_loc": "Shallow Grave",
-      "desc_loc": "Накладывает на союзника священную защиту, не позволяющую ему умереть. Также увеличивает его лечение в зависимости от отсутствующего у него здоровья.",
-      "lore_loc": "Только могущественный послушник культа Теней способен обмануть саму смерть.",
+      "desc_loc": "An ally blessed with Shallow Grave, no matter how close to death, cannot die while under its protection. Healing on that ally is also amplified for the duration based on the hero's HP.",
+      "lore_loc": "Only a seasoned acolyte of the Shadow can properly perform the rite of preventing death.",
       "notes_loc": [
-        "Здоровье цели не может опуститься ниже 1, однако её можно убить способностью Culling Blade у Axe."
+        "HP cannot go below 1 while under the effects of Shallow Grave, but Axe's Culling Blade will still kill the hero."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -549,7 +549,7 @@
             5.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -589,7 +589,7 @@
             9
           ],
           "is_percentage": true,
-          "heading_loc": "УСИЛЕНИЕ ЛЕЧЕНИЯ ЗА 10% ОТСУТСТВУЮЩЕГО ЗДОРОВЬЯ:",
+          "heading_loc": "HEAL AMPLIFICATION PER 10% MISSING:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -698,14 +698,14 @@
       "id": 5235,
       "name": "dazzle_shadow_wave",
       "name_loc": "Shadow Wave",
-      "desc_loc": "Выпускает мощный заряд, который передаётся от союзника к союзнику, излечивая их и нанося урон противникам неподалёку. Способность всегда лечит своего владельца.",
-      "lore_loc": "Одно из самых простых заклинаний, известных жрецу теней. Оно же — одно из самых эффективных.",
+      "desc_loc": "Sends out a bolt of power that arcs between allies, healing them while damaging any enemy units standing nearby.  Dazzle is always healed by Shadow Wave.",
+      "lore_loc": "While it is a simplistic and routine rite among Shadow Priests, the Shadow Wave is also the most critical for success.",
       "notes_loc": [
-        "Лечит сначала героев, и уже потом крипов.",
-        "Противник получит урон несколько раз, если излечить несколько существ вокруг него."
+        "Prioritizes allied heroes over creeps.",
+        "If enemies are near multiple allied units affected by Shadow Wave, they will take multiple instances of damage."
       ],
       "shard_loc": "",
-      "scepter_loc": "Даёт возможность применять эту способность на любых существ. Позволяет её заряду отскакивать во врагов, нанося им урон и излечивая союзников неподалёку в размере %scepter_heal_pct%%% от обычных значений. Владелец способности атакует всех врагов, в которых она отскакивает.",
+      "scepter_loc": "Shadow Wave can now target and bounce between enemies in addition to allies. When bouncing to an enemy, they will take damage and heal nearby allies equal to %scepter_heal_pct%%% of the normal healing and damage values. Dazzle will also perform an attack against any enemy that Shadow Wave bounces to.",
       "facets_loc": [
         "",
         ""
@@ -758,7 +758,7 @@
             475
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ПЕРЕДАЧИ:",
+          "heading_loc": "HEAL ARC RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -775,7 +775,7 @@
             185
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС УРОНА:",
+          "heading_loc": "DAMAGE RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -815,7 +815,7 @@
             7
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ЦЕЛЕЙ ЛЕЧЕНИЯ:",
+          "heading_loc": "MAX HEAL TARGETS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -835,7 +835,7 @@
             145
           ],
           "is_percentage": false,
-          "heading_loc": "ЛЕЧЕНИЕ/УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dazzle_2",
@@ -975,14 +975,14 @@
       "id": 1293,
       "name": "dazzle_innate_weave",
       "name_loc": "Weave",
-      "desc_loc": "Способности героя накладывают складывающийся эффект, который повышает броню союзникам и снижает её врагам.",
-      "lore_loc": "Познания, которые жрец теней приобрёл в мире Нотл, позволяют ему сплетать мощь света и тьмы воедино, создавая противоположно направленные волны защиты.",
+      "desc_loc": "Dazzle's abilities apply Weave to both allies and enemies they affect, increasing allied armor and reducing enemy armor. Multiple instances of this effect stack.",
+      "lore_loc": "His ethereal journey into the Nothl realm has allowed Dazzle to mend together the powers of light and dark, creating shifting waves of enchantments.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Союзники получают в %ally_multiplier% раза больше эффектов, которые также увеличивают лечение, получаемое от владельца способности, на %heal_amplification_pct%%% за эффект.",
-        "Враги получают в %enemy_multiplier% раза больше эффектов."
+        "Weave applies %ally_multiplier%x stacks to allies. Weave amplifies incoming heals from Dazzle by %heal_amplification_pct%%% per stack.",
+        "Weave applies %enemy_multiplier%x stacks to enemies."
       ],
       "type": 0,
       "behavior": "66",
@@ -1029,7 +1029,7 @@
             1.25
           ],
           "is_percentage": false,
-          "heading_loc": "ИЗМЕНЕНИЕ БРОНИ ЗА ЭФФЕКТ:",
+          "heading_loc": "ARMOR CHANGE PER STACK:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dazzle_4",
@@ -1052,7 +1052,7 @@
             8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1172,13 +1172,13 @@
       "id": 1550,
       "name": "dazzle_nothl_projection",
       "name_loc": "Nothl Projection",
-      "desc_loc": "Герой отделяет свою душу от тела и направляет её в мир Нотл. Душа неуязвима и может как совершать атаки, так и применять способности и предметы, а между ней и телом возникает видимая связь. В мире Нотл все способности героя усилены: Poison Touch накладывает проклятие, превращающее врагов в зверушек, Shallow Grave лечит цель по окончании её бессмертия, а Shadow Wave перезаряжается быстрее. Герой вернётся в своё тело, если прервёт способность сам или если её действие закончится.",
-      "lore_loc": "Великолепие мира Нотл одурманивает, но Даззл никогда не забывает, ради чего он туда прибыл.",
+      "desc_loc": "Dazzle departs his body, traveling through the Nothl Realm as an invulnerable spirit that can cast spells, attack, and use items, leaving his body behind in the world with a visible tether. While active, Dazzle's basic abilities are empowered: Poison Touch hexes enemies, Shallow Grave heals upon expiration, and Shadow Wave has a shorter cooldown. The effect can be ended early, and Dazzle returns to the body at the end.",
+      "lore_loc": "The allure of the Nothl Realm is intoxicating, but Dazzle never forgets his purpose for being there.",
       "notes_loc": [
-        "Когда душа удаляется от тела на расстояние более %leash_start%, связь начинает притягивать её к телу: чем оно дальше, тем сильнее притяжение.",
-        "Душа не может атаковать постройки."
+        "When Dazzle's spirit is further than %leash_start% units from the body, the tether will begin to pull him back. The strength of the pull increases with distance.",
+        "Dazzle's Soul cannot attack buildings."
       ],
-      "shard_loc": "Даёт возможность применять эту способность, даже если герой выведен из строя. Увеличивает лечение от способностей героя, пока он находится в мире Нотл.",
+      "shard_loc": "Nothl Projection can be cast while Dazzle is disabled. Increases healing done while in the Nothl Realm.",
       "scepter_loc": "",
       "facets_loc": [
         "",
@@ -1230,7 +1230,7 @@
             5
           ],
           "is_percentage": false,
-          "heading_loc": "МИН. ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "MIN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1247,7 +1247,7 @@
             12
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "MAX DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_dazzle_nothl_projection_duration",
@@ -1374,7 +1374,7 @@
             1.8
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ПРОКЛЯТИЯ:",
+          "heading_loc": "HEX DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1393,7 +1393,7 @@
             375
           ],
           "is_percentage": false,
-          "heading_loc": "ЛЕЧЕНИЕ ПОСЛЕ SHALLOW GRAVE:",
+          "heading_loc": "SHALLOW GRAVE HEAL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1412,7 +1412,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "УМЕНЬШЕНИЕ ПЕРЕЗАРЯДКИ SHADOW WAVE:",
+          "heading_loc": "SHADOW WAVE COOLDOWN REDUCTION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1448,7 +1448,7 @@
             0
           ],
           "is_percentage": true,
-          "heading_loc": "УСИЛЕНИЕ ЛЕЧЕНИЯ:",
+          "heading_loc": "HEALING AMPLIFICATION:",
           "bonuses": [],
           "values_shard": [
             15
@@ -1552,8 +1552,8 @@
     {
       "id": 1018,
       "name": "special_bonus_unique_dazzle_poison_touch_attack_range_bonus",
-      "name_loc": "+{s:bonus_attack_range_bonus} к дальности атаки по жертвам Poison Touch",
-      "desc_loc": "Дальность атаки увеличивается на {s:bonus_attack_range_bonus}, если на цель действует Poison Touch.",
+      "name_loc": "+{s:bonus_attack_range_bonus} Poison Touch Attack Range",
+      "desc_loc": "+{s:bonus_attack_range_bonus} Attack Range when attacking an enemy affected by Poison Touch",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1614,7 +1614,7 @@
     {
       "id": 6926,
       "name": "special_bonus_mp_regen_175",
-      "name_loc": "+{s:value} маны в секунду",
+      "name_loc": "+{s:value} Mana Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1694,7 +1694,7 @@
     {
       "id": 6232,
       "name": "special_bonus_unique_dazzle_2",
-      "name_loc": "+{s:bonus_damage} к лечению/урону от Shadow Wave",
+      "name_loc": "+{s:bonus_damage} Shadow Wave Heal / Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1756,7 +1756,7 @@
     {
       "id": 1613,
       "name": "special_bonus_unique_dazzle_nothl_projection_duration",
-      "name_loc": "+{s:bonus_max_duration} сек. действия Nothl Projection",
+      "name_loc": "+{s:bonus_max_duration}s Nothl Projection Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1818,7 +1818,7 @@
     {
       "id": 1552,
       "name": "special_bonus_unique_dazzle_shallow_grave_cooldown",
-      "name_loc": "–{s:bonus_AbilityCooldown} сек. перезарядки Shallow Grave",
+      "name_loc": "-{s:bonus_AbilityCooldown}s Shallow Grave Cooldown",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1880,7 +1880,7 @@
     {
       "id": 6528,
       "name": "special_bonus_unique_dazzle_3",
-      "name_loc": "+{s:bonus_damage} к урону в секунду от Poison Touch",
+      "name_loc": "+{s:bonus_damage} Poison Touch DPS",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1942,7 +1942,7 @@
     {
       "id": 6049,
       "name": "special_bonus_unique_dazzle_1",
-      "name_loc": "+{s:bonus_slow}% к замедлению от Poison Touch",
+      "name_loc": "+{s:bonus_slow}% Poison Touch Slow",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2004,7 +2004,7 @@
     {
       "id": 6626,
       "name": "special_bonus_unique_dazzle_4",
-      "name_loc": "+{s:bonus_armor_change} к изменению брони от Weave",
+      "name_loc": "+{s:bonus_armor_change} Weave Armor Reduction/Increase",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -2071,10 +2071,10 @@
           "id": 1294,
           "name": "dazzle_nothl_boon",
           "name_loc": "Nothl Boon",
-          "desc_loc": "Всё лечение героя сверх максимального здоровья превращается в барьер. Weave сильнее действует на союзников и увеличивает лечение от владельца аспекта.",
+          "desc_loc": "Dazzle's overhealing is converted into a barrier. Weave is stronger on allies and amplifies incoming heals from Dazzle.",
           "lore_loc": "",
           "notes_loc": [
-            "Герои, излеченные сверх максимального здоровья владельцем этого аспекта, на %duration% сек. получают физический барьер, здоровье которого равно объёму сверхлечения. Если у существа уже есть барьер, имеющий больше здоровья, оно не пополнится, но время действия барьера обновится."
+            "Whenever Dazzle overheals himself or an ally, it grants that hero a physical damage barrier equal to the amount overhealed for %duration% seconds. If the overhealed target already has a larger barrier its duration will be refreshed instead."
           ],
           "shard_loc": "",
           "scepter_loc": "",

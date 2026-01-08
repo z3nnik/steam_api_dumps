@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_sniper",
   "order_id": 34,
   "name_loc": "Sniper",
-  "bio_loc": "Кардел Остроглаз родился глубоко в горах Кноллена, где смышлёнцы с незапамятных времён жили охотой на странных существ-скалолазов, обитавших над деревней — отстреливая их издали и собирая упавшие с высоких утёсов туши. Наш герой был одним из лучших стрелков своего народа — ружьё словно было продолжением его руки, а выстрел — её прикосновением.\r\n\t\t\t\t<br><br>В день инициации, когда Кардел должен был стать полноправным членом деревни, его ждало древнее испытание: убить животное на одном из утёсов одним выстрелом со дна долины. Промах лишил бы стрелка всякой чести. Под взглядами всей деревни Кардел выстрелил. Зверь был убит, толпа взревела. Но чуть только тушу нашли, ликования стихли: старейшины обнаружили, что пуля попала прямо в средний глаз зверя и застряла в жвалах. Этот зловещий знак был описан в тёмном пророчестве, предрекавшем стрелку славу, но обрекая его на изгнание. Один точный выстрел вынудил Кардела расстаться со своим народом — и никто не примет его обратно, пока он не выполнит пророчество, добившись легендарного величия на поле боя.",
-  "hype_loc": "<b>Сеять смерть на расстоянии</b> — вот что Sniper умеет лучше всего. Он сдерживает своих врагов нескончаемым градом пуль, а в подходящий момент добивает их <b>смертельным выстрелом</b>.",
-  "npe_desc_loc": "Обстреливает врагов издалека",
+  "bio_loc": "Kardel Sharpeye was born deep in the mountains of Knollen where, since time immemorial, Keen Folk have survived by hunting the strange, cliff-dwelling steepstalkers above their village, shooting them from a distance and collecting the carcasses where they fell. Sharpeye was among the best of these strange mountain keens for whom projectile weapons are but another appendage, and to shoot is as natural as to touch.\r\n\t\t\t\t<br><br>On his day of summoning, when he was to gain full standing in his village, Sharpeye took the ancient test: a single shot from the valley floor to strike a beast down from the cliffs. To miss was to be dishonored. With his entire village standing vigil, Sharpeye took his shot. A steepstalker fell; the crowd cheered.  But when the carcass was collected, the village grew silent, for the elders found that the bullet had pierced its glittering central eye then fallen to be clenched in the steepstalker's mandibles. This ominous sign was the literal opening of a dark prophecy, foretelling both greatness and exile for the gunman who made such a shot. Sharpeye the Sniper was thus, by his own skill, condemned to make his way apart from his people--and unwelcome back among them until he has fulfilled the remainder of the prophecy by attaining legendary stature on a field of battle.",
+  "hype_loc": "<b>Death from a distance</b> is Sniper's specialty. He keeps his enemies on their toes with a steady barrage of firepower, and then, when the time is right, picks them off with a <b>kill shot.</b>",
+  "npe_desc_loc": "Picks off his enemies from afar",
   "facets": [
     {
       "color": 1,
       "title_loc": "Ghillie Suit",
-      "description_loc": "Атакуя под действием способности Take Aim, герой не становится виден в тумане войны.",
+      "description_loc": "While Take Aim is active, Sniper's attacks do not reveal him from fog of war.",
       "name": "sniper_ghillie_suit",
       "icon": "vision",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 0,
       "title_loc": "Scattershot",
-      "description_loc": "Увеличивает замедление и урон способности Shrapnel, но уменьшает её длительность.",
+      "description_loc": "Shrapnel slow and damage are increased, but duration is decreased.",
       "name": "sniper_scattershot",
       "icon": "nuke",
       "gradient_id": 0,
@@ -66,18 +66,18 @@
       "id": 5154,
       "name": "sniper_shrapnel",
       "name_loc": "Shrapnel",
-      "desc_loc": "Использует заряд шрапнели, покрывая указанную область дождём из разрывной дроби. Противники под ней получают урон и замедляются. Раскрывает туман войны в области действия. Заряд способности восстанавливается каждые %abilitychargerestoretime% секунд.",
-      "lore_loc": "Универсальная винтовка Кардела способна стрелять зажигательными патронами, особенно эффективными в условиях позиционной войны.",
+      "desc_loc": "Consumes a charge to launch a ball of shrapnel that showers the target area in explosive pellets. Enemies are subject to damage and slowed movement. Reveals the targeted area. Shrapnel charges restore every %abilitychargerestoretime% seconds.",
+      "lore_loc": "Kardel's modular rifle also fires incendiary rounds, useful for assaulting entrenched locations.",
       "notes_loc": [
-        "Урон наносится 11 раз — в начале действия способности и каждую последующую секунду.",
-        "Не наносит урон строениям.",
-        "Раскрывает туман войны в области действия."
+        "Damage is dealt 11 times, immediately at spell effect then every second.",
+        "Does not damage buildings.",
+        "Provides vision in the targeted area."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Увеличивает замедление и урон способности Shrapnel, но уменьшает её длительность."
+        "Shrapnel slow and damage are increased, but duration is decreased."
       ],
       "type": 0,
       "behavior": "134217776",
@@ -127,7 +127,7 @@
             -30
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVEMENT SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -152,7 +152,7 @@
             475
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -172,7 +172,7 @@
             75
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sniper_shrapnel_damage",
@@ -200,7 +200,7 @@
             10
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -379,8 +379,8 @@
       "id": 5155,
       "name": "sniper_headshot",
       "name_loc": "Headshot",
-      "desc_loc": "Герой стреляет точнее, отчего каждая его атака может нанести дополнительный урон, оттолкнуть жертву и ненадолго замедлить её передвижение и атаку на %slow%%%. Чем ближе цель атаки, тем больше дальность отталкивания.",
-      "lore_loc": "Охотясь на горных тварей, юный Кардел научился идеально отслеживать траекторию передвижения врагов.",
+      "desc_loc": "Sniper increases his accuracy, giving him a chance to deal extra damage and knock back his enemies. Knockback distance increases based on how close the enemy is to Sniper. Headshots briefly slow enemy movement and attack speed by %slow%%%.",
+      "lore_loc": "Taking potshots at steepstalkers in his childhood has been thoroughly refined into perfect leads on enemy combatants.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -433,7 +433,7 @@
             110
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sniper_headshot_damage",
@@ -456,7 +456,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС:",
+          "heading_loc": "CHANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -473,7 +473,7 @@
             50
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ДАЛЬНОСТЬ ОТТАЛКИВАНИЯ:",
+          "heading_loc": "MAX KNOCKBACK DISTANCE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sniper_3",
@@ -516,7 +516,7 @@
             0.5
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -545,13 +545,13 @@
       "id": 5156,
       "name": "sniper_take_aim",
       "name_loc": "Take Aim",
-      "desc_loc": "Увеличивает радиус обзора, дальность атаки и шанс срабатывания Headshot. Под действием этой способности герой передвигается на %slow%%% медленнее и видит только в конусе перед собой.",
-      "lore_loc": "Кардел всегда старается держаться от опасности как можно дальше, при этом не забывая о своей задаче: стрелять точно в цель.",
+      "desc_loc": "Increases vision range, Headshot chance, and attack range. Slows you by %slow%%% for the duration and restricts your vision to a frontal cone.",
+      "lore_loc": "Kardel always takes it upon himself to stay as far from harm as he can while still performing his role - taking perfect aim.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
-        "Атакуя под действием способности Take Aim, герой не становится виден в тумане войны.",
+        "While Take Aim is active, Sniper's attacks do not reveal him from fog of war.",
         ""
       ],
       "type": 0,
@@ -602,7 +602,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sniper_4",
@@ -642,7 +642,7 @@
             100
           ],
           "is_percentage": true,
-          "heading_loc": "ШАНС СРАБАТЫВАНИЯ HEADSHOT:",
+          "heading_loc": "HEADSHOT CHANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -662,7 +662,7 @@
             250
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "BONUS ATTACK RANGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sniper_5",
@@ -688,7 +688,7 @@
             1250
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ОБЗОР:",
+          "heading_loc": "BONUS VISION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -739,7 +739,7 @@
           "name": "attack_speed",
           "values_float": [],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sniper_6",
@@ -811,8 +811,8 @@
       "id": 694,
       "name": "sniper_concussive_grenade",
       "name_loc": "Concussive Grenade",
-      "desc_loc": "Герой выпускает в указанную область гранату, отталкиваясь в обратном направлении. Наносит врагам урон, а также толкает их от центра взрыва, накладывает на них бессилие и замедляет их передвижение.",
-      "lore_loc": "ВНИМАНИЕ: В СЛУЧАЕ ОПАСНОСТИ ДЁРГАЙ ЧЕКУ",
+      "desc_loc": "Launches a grenade at the target area, dealing damage to enemies and knocking them and Sniper himself back. Enemies affected are disarmed and have their movement slowed after the knockback.",
+      "lore_loc": "ATTN: IN CASE OF DANGER PULL PIN",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -862,7 +862,7 @@
             200
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН:",
+          "heading_loc": "DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -879,7 +879,7 @@
             375
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -896,7 +896,7 @@
             50
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -913,7 +913,7 @@
             3
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+          "heading_loc": "SLOW DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -947,7 +947,7 @@
             475
           ],
           "is_percentage": false,
-          "heading_loc": "ДАЛЬНОСТЬ ТОЛЧКА:",
+          "heading_loc": "KNOCKBACK DISTANCE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1078,7 +1078,7 @@
       "id": 1268,
       "name": "sniper_keen_scope",
       "name_loc": "Keen Scope",
-      "desc_loc": "Увеличивает дальность атаки.",
+      "desc_loc": "Increases Sniper's attack range.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1132,7 +1132,7 @@
             460
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ДАЛЬНОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK RANGE BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1161,14 +1161,14 @@
       "id": 5157,
       "name": "sniper_assassinate",
       "name_loc": "Assassinate",
-      "desc_loc": "Герой с огромного расстояния целится во вражеское существо и после небольшой задержки совершает сокрушительный выстрел, ненадолго оглушающий цель и наносящий как базовый урон, так и усиленный урон от атаки. Если убить этой способностью вражеского героя, её перезарядка сбросится.",
-      "lore_loc": "Чтобы осуществить пророчество и вернуться в родной город, Кардел должен быть уверен, что следующий выстрел будет столь же метким, как и тот, что он совершил в далёкий день своего испытания.",
+      "desc_loc": "Sniper locks onto a target enemy unit and, after a short aiming duration, fires a devastating shot that delivers an amplified attack plus bonus damage at long range and mini-stuns the target. Whenever Sniper kills an enemy hero, Assassinate is refreshed.",
+      "lore_loc": "In order to fulfill the prophecy and return to his home town, Kardel must make another shot as perfect as the one on the day of his ancient test.",
       "notes_loc": [
-        "Значок прицела виден только союзникам.",
-        "Снаряд этой способности нельзя сбить с цели невидимостью."
+        "Crosshair effect is only visible to allies.",
+        "Invisibility doesn't disjoint the projectile."
       ],
       "shard_loc": "",
-      "scepter_loc": "Способность применяется быстрее и оглушает жертву.",
+      "scepter_loc": "Causes Assassinate to fire quicker and stun the enemy target.",
       "facets_loc": [
         "",
         ""
@@ -1219,7 +1219,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ УРОН:",
+          "heading_loc": "BONUS DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_sniper_1",
@@ -1259,7 +1259,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+          "heading_loc": "STUN DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1299,7 +1299,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ПОДГОТОВКИ:",
+          "heading_loc": "AIM DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1415,7 +1415,7 @@
             120
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН ОТ АТАКИ:",
+          "heading_loc": "ATTACK DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1449,7 +1449,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ВРЕМЯ ПОДГОТОВКИ:",
+          "heading_loc": "AIM DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1515,7 +1515,7 @@
     {
       "id": 7396,
       "name": "special_bonus_unique_sniper_5",
-      "name_loc": "+{s:bonus_active_attack_range_bonus} к доп. дальности атаки от Take Aim",
+      "name_loc": "+{s:bonus_active_attack_range_bonus} Take Aim Attack Range Bonus",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1577,7 +1577,7 @@
     {
       "id": 928,
       "name": "special_bonus_unique_sniper_headshot_damage",
-      "name_loc": "+{s:bonus_damage} к урону от Headshot",
+      "name_loc": "+{s:bonus_damage} Headshot Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1639,7 +1639,7 @@
     {
       "id": 7892,
       "name": "special_bonus_unique_sniper_6",
-      "name_loc": "Take Aim даёт +{s:bonus_attack_speed} к скорости атаки",
+      "name_loc": "+{s:bonus_attack_speed} Attack Speed During Take Aim",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1701,7 +1701,7 @@
     {
       "id": 6305,
       "name": "special_bonus_unique_sniper_1",
-      "name_loc": "+{s:bonus_damage} к урону от Assassinate",
+      "name_loc": "+{s:bonus_damage} Assassinate Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1763,7 +1763,7 @@
     {
       "id": 6897,
       "name": "special_bonus_unique_sniper_4",
-      "name_loc": "+{s:bonus_duration} сек. действия Take Aim",
+      "name_loc": "+{s:bonus_duration}s Take Aim Duration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1825,7 +1825,7 @@
     {
       "id": 1455,
       "name": "special_bonus_unique_sniper_shrapnel_damage",
-      "name_loc": "+{s:bonus_shrapnel_damage}% к урону от Shrapnel",
+      "name_loc": "+{s:bonus_shrapnel_damage}% Shrapnel Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1887,7 +1887,7 @@
     {
       "id": 6198,
       "name": "special_bonus_unique_sniper_2",
-      "name_loc": "–{s:bonus_AbilityChargeRestoreTime} сек. восстановления заряда Shrapnel",
+      "name_loc": "-{s:bonus_AbilityChargeRestoreTime}s Shrapnel Charge Restore Time",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1949,7 +1949,7 @@
     {
       "id": 6896,
       "name": "special_bonus_unique_sniper_3",
-      "name_loc": "+{s:bonus_knockback_distance} к макс. дальности отталкивания у Headshot",
+      "name_loc": "+{s:bonus_knockback_distance} Max Headshot Knockback Distance",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],

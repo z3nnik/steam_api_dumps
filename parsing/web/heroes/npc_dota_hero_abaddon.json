@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_abaddon",
   "order_id": 102,
   "name_loc": "Abaddon",
-  "bio_loc": "Род Аверно питает купель — разлом в земной тверди, который испускает загадочную энергию на протяжении поколений. Каждого новорождённого семьи окунают в этот тёмный туман, даруя тем самым связь с их землёй и её загадочной силой. Дети растут с непреклонной верой в защиту семейных ценностей и традиций земли, но на самом деле они охраняют саму купель, истинные намерения которой неизвестны.\r\n\t\t\t\t<br><br>Когда новорождённый Abaddon проходил обряд крещения, что-то пошло не так. В глазах малыша сверкнула искра разума, испугавшая всех присутствовавших и заставившая жрецов шептаться. Его растили, дабы он пошёл по пути всех отпрысков рода: война и защита родины во главе армии. Но сам Abaddon уделял этому не так много внимания. Пока другие тренировались в обращении с оружием, он медитировал у купели. Он глубоко вдыхал тёмный туман, учась быть единым с той силой, что протекала глубоко под землёй его дома. В конечном счёте он стал порождением чёрного тумана.\r\n\t\t\t\t<br><br>Род Аверно неодобрительно отнёсся к такому решению, обвиняя его в пренебрежении обязанностями. Но все эти обвинения прекратились, когда Abaddon вступил в свою первую битву и показал ту обретённую власть над жизнью и смертью, о которой другие члены рода не могли и мечтать.",
-  "hype_loc": "Abaddon, способный <b>лечиться</b> за счёт вражеских атак, может пережить почти любое нападение. Он всегда готов вклиниться в битву, <b>закрывая союзников щитом</b> и запуская обоюдоострые <b>витки мглы</b>, которыми он увечит врагов и исцеляет товарищей.",
-  "npe_desc_loc": "Защищает союзников или себя самого",
+  "bio_loc": "The Font of Avernus is the source of a family's strength, a crack in primal stones from which vapors of prophetic power have issued for generations. Each newborn of the cavernous House Avernus is bathed in the black mist, and by this baptism they are given an innate connection to the mystic energies of the land. They grow up believing themselves fierce protectors of their lineal traditions, the customs of the realm--but what they really are protecting is the Font itself. And the motives of the mist are unclear.\r\n\t\t\t\t<br><br>When the infant Abaddon was bathed in the Font, they say something went awry. In the child's eyes there flared a light of comprehension that startled all present and set the sacerdotes to whispering. He was raised with every expectation of following the path all scions of Avernus took--to train in war, that in times of need he might lead the family's army in defense of the ancestral lands. But Abaddon was always one apart. Where others trained with weapons, he bent himself to meditation in the presence of the mist. He drank deep from the vapors that welled from the Font, learning to blend his spirit with the potency that flowed from far beneath the House; he became a creature of the black mist.\r\n\t\t\t\t<br><br>There was bitterness within the House Avernus--elders and young alike accusing him of neglecting his responsibilities. But all such accusations stopped when Abaddon rode into battle, and they saw how the powers of the mist had given him mastery over life and death beyond those of any lord the House had ever known.",
+  "hype_loc": "Able to transform enemy attacks into <b>self-healing</b>, Abaddon can survive almost any assault. <b>Shielding allies</b> and launching his <b>double-edged coil</b> at a friend or foe, he is always ready to ride into the thick of battle.",
+  "npe_desc_loc": "Shields his allies or himself from attacks",
   "facets": [
     {
       "color": 5,
       "title_loc": "The Quickening",
-      "description_loc": "Когда рядом умирают существа, у героя уменьшается оставшееся время перезарядки способностей.",
+      "description_loc": "Units dying nearby Abaddon lower his cooldowns.",
       "name": "abaddon_death_dude",
       "icon": "cooldown",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 3,
       "title_loc": "Malignant Mist",
-      "description_loc": "Способность Mist Coil дополнительно наносит {s:bonus_damage_percentage_on_perform_attack}% урона от атаки и накладывает эффекты атаки от предметов и способностей. Наносит владельцу дополнительный урон, если применяется на врага.",
+      "description_loc": "Mist Coil also deals {s:bonus_damage_percentage_on_perform_attack}% attack damage and applies effects from items and abilities. Self Damage increased when targeting enemies.",
       "name": "abaddon_mists_of_fate",
       "icon": "phantom_ass_dagger",
       "gradient_id": 1,
@@ -66,17 +66,17 @@
       "id": 5585,
       "name": "abaddon_death_coil",
       "name_loc": "Mist Coil",
-      "desc_loc": "Ценой собственного здоровья герой выпускает смертельный туман, который наносит урон врагу или лечит союзника.",
-      "lore_loc": "Дыхание лорда Аверно преисполнено загадочными испарениями купели, подчиняющимися его воле.",
+      "desc_loc": "Abaddon releases a coil of deathly mist that can damage an enemy unit or heal a friendly unit at the cost of some of Abaddon's health.",
+      "lore_loc": "A mysterious vapor from the Font of Avernus now infuses the breath of Abaddon, who releases it at will.",
       "notes_loc": [
-        "Этой способностью нельзя совершить самоубийство."
+        "Abaddon can not kill himself with this skill."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
         "",
-        "Способность дополнительно наносит %damage_percentage_on_perform_attack%%% урона от атаки и накладывает эффекты атаки от предметов и способностей. Наносит владельцу дополнительный урон, если применяется на врага."
+        "Mist Coil also deals %damage_percentage_on_perform_attack%%% attack damage and applies effects from items and abilities. Self Damage increased when targeting enemies."
       ],
       "type": 0,
       "behavior": "8",
@@ -126,7 +126,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН СЕБЕ:",
+          "heading_loc": "SELF DAMAGE:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -143,7 +143,7 @@
             40
           ],
           "is_percentage": true,
-          "heading_loc": "УРОН СЕБЕ (ВРАЖЕСКАЯ ЦЕЛЬ):",
+          "heading_loc": "SELF DAMAGE (ENEMY CAST):",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -182,7 +182,7 @@
             290
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН/ЛЕЧЕНИЕ:",
+          "heading_loc": "DAMAGE/HEAL:",
           "bonuses": [
             {
               "name": "special_bonus_unique_abaddon_2",
@@ -382,17 +382,17 @@
       "id": 5586,
       "name": "abaddon_aphotic_shield",
       "name_loc": "Aphotic Shield",
-      "desc_loc": "Окружает союзника барьером из тёмной энергии, который поглощает урон всех типов, а в момент создания применяет на цель развеивание. Если барьер пропадёт или его уничтожат, он взорвётся и нанесёт врагам вокруг урон, равный своему здоровью.\n\nТИП РАЗВЕИВАНИЯ: сильное",
-      "lore_loc": "Сила чёрного тумана поглощает удары так же, как он сам поглощает дневной свет.",
+      "desc_loc": "Summons dark energies around an ally unit, dispelling them and creating an all damage barrier that absorbs a set amount of damage before expiring. When the barrier is destroyed it will burst and deal damage equal to the amount it could absorb to an area around it.\n\nDISPEL TYPE: Strong Dispel",
+      "lore_loc": "The powers of the black mist rise to absorb attacks like the black mist absorbs light.",
       "notes_loc": [
-        "Взрыв наносит максимальный урон вне зависимости от того, сколько урона поглотил барьер.",
-        "Взрыв щита не наносит урон существам в тумане войны."
+        "The max damage is always dealt whether the barrier is destroyed by expiring or absorbing damage.",
+        "The explosion does not damage units hidden by the fog of war."
       ],
-      "shard_loc": "При поглощении урона %absorb_to_damage%%% от него наносится врагам рядом с целью.",
+      "shard_loc": "%absorb_to_damage%%% of absorbed damage is dealt to nearby enemies.",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Здоровье барьера увеличено, но он не взрывается в конце действия. %absorb_to_damage%%% от поглощённого урона отражается во врагов неподалёку. Увеличивает перезарядку.",
+        "Damage barrier amount increased, but no longer bursts upon expiration. %absorb_to_damage%%% of absorbed damage is dealt to nearby enemies. Increases cooldown.",
         ""
       ],
       "type": 0,
@@ -443,7 +443,7 @@
             12
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -460,7 +460,7 @@
             675
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ВЗРЫВА:",
+          "heading_loc": "BURST RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -480,7 +480,7 @@
             210
           ],
           "is_percentage": false,
-          "heading_loc": "ЗДОРОВЬЕ БАРЬЕРА:",
+          "heading_loc": "DAMAGE BARRIER:",
           "bonuses": [
             {
               "name": "special_bonus_unique_abaddon",
@@ -543,7 +543,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ОТВЕТНОГО УРОНА:",
+          "heading_loc": "RETURN DAMAGE RADIUS:",
           "bonuses": [],
           "values_shard": [
             675
@@ -648,8 +648,8 @@
       "id": 5587,
       "name": "abaddon_frostmourne",
       "name_loc": "Curse of Avernus",
-      "desc_loc": "Атаки героя окутывают жертву ледяными чарами, которые замедляют её, наносят ей периодический урон и увеличивают скорость всех атак по ней. Наносит постройкам на %tower_dps_pct%%% меньше периодического урона.",
-      "lore_loc": "Крещёные в купели черпают из неё силы, но остальных дары Аверно смертельно изнуряют.",
+      "desc_loc": "Abaddon strikes an enemy, affecting them by a chilling curse, slowing them, causing them to take damage over time, and all attacks against them gain an attack speed boost. Damage over time component to buildings is reduced by %tower_dps_pct%%%.",
+      "lore_loc": "While the baptized draw strength from the Font, the gifts of Avernus are debilitating to the uninitiated.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -734,7 +734,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -754,7 +754,7 @@
             25
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ:",
+          "heading_loc": "SLOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -774,7 +774,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_abaddon_3",
@@ -800,7 +800,7 @@
             45
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DPS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_abaddon_5",
@@ -869,7 +869,7 @@
       "id": 1481,
       "name": "abaddon_withering_mist",
       "name_loc": "Withering Mist",
-      "desc_loc": "Нанеся врагу урон, герой на %duration% сек. накладывает на него отрицательный эффект, который уменьшает пополнение здоровья жертвы на %heal_reduction_pct%%%, если её здоровье ниже %hp_threshold_pct%%%.",
+      "desc_loc": "Damaging enemies applies the Withering Mist debuff for %duration%s. Affected enemies have their Health Restoration reduced by %heal_reduction_pct%%% if they are below %hp_threshold_pct%%% HP.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -938,7 +938,7 @@
             35
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ ПОПОЛНЕНИЯ ЗДОРОВЬЯ:",
+          "heading_loc": "HEALTH RESTORATION REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_abaddon_6",
@@ -990,15 +990,15 @@
       "id": 5588,
       "name": "abaddon_borrowed_time",
       "name_loc": "Borrowed Time",
-      "desc_loc": "Применяет на владельца развеивание и следующие несколько секунд обращает весь получаемый им урон в лечение. Если способность готова, то она сработает автоматически, как только здоровье владельца упадёт ниже %hp_threshold%.\n\nТИП РАЗВЕИВАНИЯ: сильное",
-      "lore_loc": "Эта сила, самая противоестественная из всех даров купели Аверно, бросает вызов пониманию смертных. Что должно ранить — лечит, а что должно убить — даёт свежие силы.",
+      "desc_loc": "When activated, dispels you and all damage dealt to you will heal instead of harm. If the ability is not on cooldown, it will automatically activate if your health falls below %hp_threshold%.\n\nDISPEL TYPE: Strong Dispel",
+      "lore_loc": "The most unnatural of all the gifts of the Font of Avernus, this power defies mortal understanding.  What should hurt, instead heals; and what should kill gives strength anew.",
       "notes_loc": [
-        "Эту способность можно применить, если ваш герой выведен из строя, но не когда он обезмолвлен. Автоматическое применение срабатывает даже под безмолвием.",
-        "Щит не блокирует урон при действии способности Borrowed Time.",
-        "Автоматическое срабатывание способности отключается истощением."
+        "Borrowed Time can be manually activated while Abaddon is disabled, but not while silenced.  The passive activation can still occur while silenced.",
+        "Aphotic Shield does not block any damage to Abaddon when Borrowed Time is active, allowing him to heal.",
+        "Break prevents Borrowed Time from automatically activating."
       ],
       "shard_loc": "",
-      "scepter_loc": "Увеличивает длительность. Во время действия способность Mist Coil автоматически срабатывает на союзников в радиусе её применения, когда они получают более %ally_threshold_scepter% урона.",
+      "scepter_loc": "Increases duration. While Borrowed Time is active, anytime an ally takes more than %ally_threshold_scepter% damage while within Mist Coil's cast range of Abaddon, an individual Mist Coil will automatically fire towards that ally.",
       "facets_loc": [
         "",
         "While Borrowed Time is active, Abaddon and enemies within %immolate_aoe% radius take %immolate_damage% damage per second.",
@@ -1050,7 +1050,7 @@
             400
           ],
           "is_percentage": false,
-          "heading_loc": "ПОРОГ ЗДОРОВЬЯ:",
+          "heading_loc": "HEALTH THRESHOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1069,7 +1069,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1088,7 +1088,7 @@
             0
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН ДЛЯ ЛЕЧЕНИЯ:",
+          "heading_loc": "DAMAGE THRESHOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [
@@ -1217,7 +1217,7 @@
     {
       "id": 972,
       "name": "special_bonus_unique_abaddon_6",
-      "name_loc": "+{s:bonus_heal_reduction_pct}% к сниж. пополнения здоровья от Withering Mist",
+      "name_loc": "+{s:bonus_heal_reduction_pct}% Withering Mist Health Restoration Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1280,7 +1280,7 @@
     {
       "id": 1165,
       "name": "special_bonus_unique_abaddon_7",
-      "name_loc": "Aphotic Shield даёт +{s:bonus_regen} здоровья в секунду",
+      "name_loc": "Aphotic Shield provides +{s:bonus_regen} HP Regen",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1343,7 +1343,7 @@
     {
       "id": 7340,
       "name": "special_bonus_unique_abaddon_5",
-      "name_loc": "+{s:bonus_curse_dps} к урону в секунду от Curse of Avernus",
+      "name_loc": "+{s:bonus_curse_dps} Curse of Avernus DPS",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1406,7 +1406,7 @@
     {
       "id": 6601,
       "name": "special_bonus_unique_abaddon_2",
-      "name_loc": "+{s:bonus_target_damage} к урону/лечению от Mist Coil",
+      "name_loc": "+{s:bonus_target_damage} Mist Coil Heal/Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1469,7 +1469,7 @@
     {
       "id": 6100,
       "name": "special_bonus_unique_abaddon",
-      "name_loc": "+{s:bonus_damage_absorb} к здоровью барьера от Aphotic Shield",
+      "name_loc": "+{s:bonus_damage_absorb} Aphotic Shield Barrier Amount",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1532,8 +1532,8 @@
     {
       "id": 8251,
       "name": "special_bonus_unique_abaddon_immolation",
-      "name_loc": "Borrowed Time сжигает {s:bonus_immolate_damage} здоровья в секунду",
-      "desc_loc": "Действует на владельца способности и всех врагов в радиусе {s:bonus_immolate_aoe}.",
+      "name_loc": "{s:bonus_immolate_damage} Borrowed Time Immolation DPS",
+      "desc_loc": "Affects Abaddon and all enemies in a {s:bonus_immolate_aoe} AoE.",
       "lore_loc": "",
       "notes_loc": [],
       "shard_loc": "",
@@ -1595,7 +1595,7 @@
     {
       "id": 6602,
       "name": "special_bonus_unique_abaddon_3",
-      "name_loc": "+{s:bonus_curse_attack_speed} к скорости атаки от Curse of Avernus",
+      "name_loc": "+{s:bonus_curse_attack_speed} Curse of Avernus Attack Speed Bonus",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1658,7 +1658,7 @@
     {
       "id": 7335,
       "name": "special_bonus_unique_abaddon_4",
-      "name_loc": "Mist Coil применяется по области радиусом {s:bonus_effect_radius}",
+      "name_loc": "{s:bonus_effect_radius} AoE Mist Coil",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1726,10 +1726,10 @@
           "id": 1389,
           "name": "abaddon_the_quickening",
           "name_loc": "The Quickening",
-          "desc_loc": "Когда рядом умирают существа, у героя уменьшается оставшееся время перезарядки способностей.",
+          "desc_loc": "Units dying nearby Abaddon lower his cooldowns.",
           "lore_loc": "",
           "notes_loc": [
-            "Если в радиусе %radius% погибает крип, все перезарядки уменьшаются на %cooldown_reduction_creeps% сек., а если погибает герой — то на %cooldown_reduction_heroes% сек."
+            "Every time a unit dies within %radius% range of Abaddon, reduce all of his Cooldowns by %cooldown_reduction_creeps% seconds if they are a creep or %cooldown_reduction_heroes% seconds if they are a hero."
           ],
           "shard_loc": "",
           "scepter_loc": "",

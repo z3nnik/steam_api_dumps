@@ -3,14 +3,14 @@
   "name": "npc_dota_hero_alchemist",
   "order_id": 60,
   "name_loc": "Alchemist",
-  "bio_loc": "Преданность священной алхимии была традицией рода Темноваров, но никто ещё никогда не показывал столько изобретательности, амбиций и безрассудства, сколько проявил юный Раззил. Повзрослев, он оставил семейное дело и решил попробовать себя в производстве золота.\r\n\t\t\t\t<br><br>В присущей ему манере он объявил, что обратит в золото целую гору. Спустя два десятилетия исследований, вложений и подготовок он с треском провалился, попав за решётку за множественные разрушения, причинённые экспериментом. Однако Раззил был не из робкого десятка и тщательно обдумывал варианты побега, чтобы продолжить свои исследования.\r\n\t\t\t\t<br><br>Когда его новым сокамерником оказался свирепый великан-людоед, алхимик увидел в нем столь желанную возможность для побега. Уговорив гиганта не съедать его, Раззил начал тщательно составлять настойку из плесени и мха, найденных во время исправительных работ. Через неделю она созрела. Когда великан выпил зелье, он впал в ослепительную ярость, разорвал железные прутья, разнёс стены и перебил всю стражу.\r\n\t\t\t\t<br><br>Скоро они затерялись где-то в лесу, окружавшем город, оставив за собой следы разрушений и никаких признаков погони. Когда действие тоника отошло, людоед чувствовал себя вполне хорошо и выглядел счастливым и вполне энергичным. Решив работать вместе, с тех пор парочка собирает материалы, необходимые Раззилу, чтобы в очередной раз попытать удачу.",
-  "hype_loc": "Alchemist, синтезирующий <b>дополнительные средства</b> за каждое убийство, с лёгкостью получает необходимое вооружение. Он сражается во имя своей жадности, используя <b>едкую кислоту</b> и запас <b>нестабильных химикатов</b>.",
-  "npe_desc_loc": "Получает больше золота за руны богатства и убийство существ",
+  "bio_loc": "The sacred science of Chymistry was a Darkbrew family tradition, but no Darkbrew had ever shown the kind of creativity, ambition, and recklessness of young Razzil. However, when adulthood came calling he pushed aside the family trade to try his hand at manufacturing gold through Alchemy.\r\n\t\t\t\t<br><br>In an act of audacity befitting his reputation, Razzil announced he would transmute an entire mountain into gold. Following two decades of research and spending and preparation, he failed spectacularly, quickly finding himself imprisoned for the widespread destruction his experiment wrought. Yet Razzil was never one to take a setback lightly, and sought escape to continue his research.\r\n\t\t\t\t<br><br>When his new cellmate turned out to be a fierce ogre, he found just the opportunity he needed. After convincing the ogre not to eat him, Razzil set about carefully concocting a tincture for it to drink, made from the moulds and mosses growing in the prison stone work. In a week's time, it seemed ready. When the ogre drank the potion, it flew into an unstoppable berserker rage, destroying the cell bars and exploding through walls and guards alike.\r\n\t\t\t\t<br><br>They soon found themselves lost somewhere in the forest surrounding the city with a trail of wreckage in their wake and no signs of pursuit.  In the tonic's afterglow, the ogre seemed serene, happy, and even eager. Resolving to work together, the pair set off to collect the materials needed to attempt Razzil's Alchemic transmutation once more.",
+  "hype_loc": "Synthesizing <b>extra resources</b> from each and every kill, Alchemist has no trouble gathering the tools needed to destroy his foes. Ambushing enemies with <b>corrosive acid</b> and a host of <b>unstable chemicals</b>, he battles to ensure his greedy escapades can remain uninterrupted.",
+  "npe_desc_loc": "Earns extra gold from unit kills and bounty runes",
   "facets": [
     {
       "color": 1,
       "title_loc": "Seed Money",
-      "description_loc": "Герой начинает игру, имея {s:bonus_starting_gold_bonus} дополнительного золота.",
+      "description_loc": "Alchemist starts with {s:bonus_starting_gold_bonus} more gold.",
       "name": "alchemist_seed_money",
       "icon": "gold",
       "gradient_id": 0,
@@ -19,7 +19,7 @@
     {
       "color": 4,
       "title_loc": "Mixologist",
-      "description_loc": "Unstable Concoction и Berserk Potion перезаряжаются быстрее, когда действует способность Chemical Rage.",
+      "description_loc": "Unstable Concoction and Berserk Potion recharge faster when in Chemical Rage.",
       "name": "alchemist_mixologist",
       "icon": "cooldown",
       "gradient_id": 2,
@@ -28,7 +28,7 @@
     {
       "color": 2,
       "title_loc": "Dividends",
-      "description_loc": "Герой получает +{s:bonus_gpm_increase_per_stack} к золоту в минуту за каждый расплавленный для союзников Aghanim's Scepter.",
+      "description_loc": "Alchemist gains +{s:bonus_gpm_increase_per_stack} GPM for each Aghanim's Scepter he has granted to allies.",
       "name": "alchemist_dividends",
       "icon": "aghs",
       "gradient_id": 2,
@@ -75,8 +75,8 @@
       "id": 5365,
       "name": "alchemist_acid_spray",
       "name_loc": "Acid Spray",
-      "desc_loc": "Распыляет в указанной области облако кислоты, которое наносит врагам периодический урон и снижает их броню.",
-      "lore_loc": "Используя семейные рецепты рода Темноваров, Раззил получает едкую кислоту, которая разрушает даже самые прочные металлы.",
+      "desc_loc": "Sprays high-pressure acid across a target area. Enemy units who step across the contaminated terrain take damage per second and have their armor reduced.",
+      "lore_loc": "Using traditional Alchemy from the Darkbrew family, Razzil concocts an acid that dissolves even the toughest metals.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -133,7 +133,7 @@
             500
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ОБЛАКА:",
+          "heading_loc": "RADIUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -150,7 +150,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -170,7 +170,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "УРОН В СЕКУНДУ:",
+          "heading_loc": "DAMAGE PER SECOND:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -190,7 +190,7 @@
             6
           ],
           "is_percentage": false,
-          "heading_loc": "СНИЖЕНИЕ БРОНИ:",
+          "heading_loc": "ARMOR REDUCTION:",
           "bonuses": [
             {
               "name": "special_bonus_unique_alchemist_5",
@@ -334,20 +334,20 @@
       "id": 5366,
       "name": "alchemist_unstable_concoction",
       "name_loc": "Unstable Concoction",
-      "desc_loc": "Герой начинает встряхивать колбу с гремучей смесью, которую можно бросить во вражеского героя. При попадании колба взорвётся, оглушив всех противников в радиусе взрыва и нанеся им урон. Чем дольше смесь встряхивать, тем больше урона она нанесёт и тем дольше будет оглушение. Пока герой не бросит колбу, он передвигается быстрее. Максимальный эффект достигается после %brew_time% сек., однако если не выбросить колбу через %brew_explosion% секунды, она взорвётся в руках героя, подействовав и на него самого.",
-      "lore_loc": "Хоть превращение горы в золото и потерпело провал, благодаря ему была получена летучая микстура с разрушительным потенциалом.",
+      "desc_loc": "Alchemist brews up an unstable concoction that he can throw at an enemy hero, to stun and deal damage in an area around the explosion. The longer the concoction brews, the more damage it deals and the longer the stun. Alchemist is faster while charging the concoction. After %brew_time% seconds, the brew reaches its maximum damage and stun time. However, after %brew_explosion% seconds, the concoction will explode on Alchemist himself if not thrown.",
+      "lore_loc": "A silver lining to the failure of turning a mountain into gold, this volatile solution has destructive potential.",
       "notes_loc": [
-        "Во время действия способность заменяется на бросок колбы. Встряхивая смесь, герой может передвигаться и действовать как обычно.",
-        "Таймер над головой героя показывает время, оставшееся до взрыва. Противники видят этот таймер.",
-        "Этой способностью можно совершить самоубийство.",
-        "Колбу нельзя сбить с цели. Её эффект перестаёт увеличиваться после броска.",
-        "Взрыв наносит урон как героям, так и крипам."
+        "While brewing, this ability is replaced by Unstable Concoction Throw.  Alchemist can move and act normally while brewing.",
+        "A timer above Alchemist's head will indicate the remaining brew time. This timer is visible to enemies.",
+        "You can deny yourself with this skill.",
+        "Unstable Concoction cannot be disjointed and once thrown Unstable Concoction stops brewing.",
+        "Unstable Concoction explosion damages heroes and creeps."
       ],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Перезарядка этой способности уменьшается на %chemical_rage_cooldown_reduction_pct%%%, когда на её владельца действует Chemical Rage.",
+        "While Alchemist is affected by Chemical Rage, cooldown is reduced by %chemical_rage_cooldown_reduction_pct%%%.",
         ""
       ],
       "type": 0,
@@ -446,7 +446,7 @@
             3.2
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ОГЛУШЕНИЕ:",
+          "heading_loc": "MAX STUN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -466,7 +466,7 @@
             360
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. УРОН:",
+          "heading_loc": "MAX DAMAGE:",
           "bonuses": [
             {
               "name": "special_bonus_unique_alchemist_2",
@@ -489,7 +489,7 @@
             250
           ],
           "is_percentage": false,
-          "heading_loc": "РАДИУС ВЗРЫВА:",
+          "heading_loc": "EXPLOSION RADIUS:",
           "bonuses": [
             {
               "name": "special_bonus_unique_alchemist",
@@ -515,7 +515,7 @@
             16
           ],
           "is_percentage": true,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SPEED BONUS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -614,8 +614,8 @@
       "id": 1116,
       "name": "alchemist_corrosive_weaponry",
       "name_loc": "Corrosive Weaponry",
-      "desc_loc": "Герой усиливает свои оружие и способности кислотой, которая снижает скорость передвижения и базовый урон его жертв. Этот эффект складывается.\n\nАтаки героя накладывают %stacks_per_attack% эффекта, а Unstable Concoction накладывает %one_tooltip% эффект за каждую секунду подготовки.",
-      "lore_loc": "Как выяснилось, этот растворитель оказался излишне мощным.",
+      "desc_loc": "Alchemist coats his weapons and empowers his spells with an acid that applies a stacking slow and base attack damage reduction to enemies hit.\n\nAttacks apply %stacks_per_attack% stacks. Unstable Concoction applies %one_tooltip% stack per second of brew time.",
+      "lore_loc": "A powerful solvent that turned out to work all too well.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
@@ -669,7 +669,7 @@
             16
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМУМ ЭФФЕКТОВ:",
+          "heading_loc": "MAX STACKS:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -686,7 +686,7 @@
             4
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ ЭФФЕКТА:",
+          "heading_loc": "DEBUFF DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -706,7 +706,7 @@
             3.5
           ],
           "is_percentage": true,
-          "heading_loc": "ЗАМЕДЛЕНИЕ ПЕРЕДВИЖЕНИЯ ЗА ЭФФЕКТ:",
+          "heading_loc": "MOVEMENT SLOW PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -726,7 +726,7 @@
             3.5
           ],
           "is_percentage": true,
-          "heading_loc": "СНИЖЕНИЕ БАЗОВОГО УРОНА ОТ АТАК ЗА ЭФФЕКТ:",
+          "heading_loc": "BASE ATTACK DAMAGE REDUCTION PER STACK:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -789,14 +789,14 @@
       "id": 642,
       "name": "alchemist_berserk_potion",
       "name_loc": "Berserk Potion",
-      "desc_loc": "Бросает в союзника зелье, которое применяет на него нормальное развеивание, увеличивает восстановление здоровья, а также ускоряет атаку и передвижение.<br><br>ТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "Когда-то прадед Раззила испытал на себе раннюю версию этого зелья. Выживший после этого член семьи тотчас же сообразил, как на нём можно заработать.",
+      "desc_loc": "Alchemist throws a potion at an ally, applying a basic dispel and giving them attack speed, movement speed and HP regen.<br><br>DISPEL TYPE: Basic Dispel",
+      "lore_loc": "After Razzil's great grandfather tested an early version of this potion on himself, a surviving family member immediately saw the profit potential.",
       "notes_loc": [],
       "shard_loc": "",
       "scepter_loc": "",
       "facets_loc": [
         "",
-        "Перезарядка этой способности уменьшается на %chemical_rage_cooldown_reduction_pct%%%, когда на её владельца действует Chemical Rage.",
+        "While Alchemist is affected by Chemical Rage, cooldown is reduced by %chemical_rage_cooldown_reduction_pct%%%.",
         ""
       ],
       "type": 0,
@@ -841,7 +841,7 @@
             15
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -858,7 +858,7 @@
             50
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ АТАКИ:",
+          "heading_loc": "ATTACK SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -875,7 +875,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:",
+          "heading_loc": "HP REGEN:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -909,7 +909,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "MOVE SPEED:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1025,15 +1025,15 @@
       "id": 1333,
       "name": "alchemist_goblins_greed",
       "name_loc": "Greevil's Greed",
-      "desc_loc": "Позволяет синтезировать больше золота из врагов и рун. Дополнительное золото за убийство существ состоит из начального бонуса и нарастающего, который увеличивается с каждым существом, убитым в течение %duration% сек. после предыдущего. Также способность умножает золото от рун богатства.",
-      "lore_loc": "Пускай эксперимент с горой и не удался, зато структуры поменьше Раззил легко обращает в звонкую монету.",
+      "desc_loc": "Alchemist synthesizes additional gold from his enemies and bounty runes. With each kill, Alchemist earns base bonus gold and extra bonus gold. If Alchemist kills another unit which yields gold within the next %duration% seconds, an additional instance of Extra Bonus Gold is added to the total. Additionally, causes bounty runes to yield more gold.",
+      "lore_loc": "While it is not a mountain, Razzil has mastered the conversion of smaller compounds to line his pockets.",
       "notes_loc": [],
       "shard_loc": "",
-      "scepter_loc": "Герой может расплавить Aghanim's Scepter, чтобы передать союзнику все его улучшения и получить +%scepter_bonus_damage% к урону от атак. Бонусы за несколько расплавленных скипетров складываются.",
+      "scepter_loc": "Alchemist melts down Aghanim's Scepter to grant an allied hero all Aghanim's Scepter upgrades. Alchemist will gain %scepter_bonus_damage% bonus damage for each gifted Scepter.",
       "facets_loc": [
         "",
         "",
-        "Герой получает +%gpm_increase_per_stack% к золоту в минуту за каждый расплавленный для союзников Aghanim's Scepter."
+        "Alchemist gains %gpm_increase_per_stack% GPM for each Aghanim's Scepter he has granted to allies."
       ],
       "type": 0,
       "behavior": "8796093022210",
@@ -1077,7 +1077,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "МАКС. ИНТЕРВАЛ УБИЙСТВ:",
+          "heading_loc": "RECENT KILL WINDOW:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1094,7 +1094,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "НАЧАЛЬНЫЙ БОНУС:",
+          "heading_loc": "BASE BONUS GOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1111,7 +1111,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "НАРАСТАЮЩИЙ БОНУС:",
+          "heading_loc": "EXTRA BONUS GOLD:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1128,7 +1128,7 @@
             2
           ],
           "is_percentage": false,
-          "heading_loc": "МНОЖИТЕЛЬ РУН БОГАТСТВА:",
+          "heading_loc": "BOUNTY RUNE MULTIPLIER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1166,7 +1166,7 @@
             18
           ],
           "is_percentage": false,
-          "heading_loc": "МАКСИМУМ ДОП. ЗОЛОТА:",
+          "heading_loc": "MAX BONUS GOLD PER KILL:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1202,7 +1202,7 @@
             25
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. УРОН ОТ АТАК ЗА СКИПЕТР:",
+          "heading_loc": "BONUS DAMAGE PER SCEPTER:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1286,10 +1286,10 @@
       "id": 5369,
       "name": "alchemist_chemical_rage",
       "name_loc": "Chemical Rage",
-      "desc_loc": "Особая химическая смесь разъяряет героя, отчего задержка перед его атакой уменьшается, а скорость его передвижения и восстановление здоровья увеличиваются.\n\nТИП РАЗВЕИВАНИЯ: нормальное",
-      "lore_loc": "Варево, которым Раззил напоил огра для побега из тюрьмы, стало полезным в сражении зельем.",
+      "desc_loc": "Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing movement speed and health regeneration.\n\nDISPEL TYPE: Basic Dispel",
+      "lore_loc": "The brew Razzil gave to the Ogre during their prison bust has become a useful potion in the midst of combat.",
       "notes_loc": [
-        "Трансформация длится %transformation_time% сек., которые можно использовать для уклонения от снарядов и оглушений."
+        "Has a %transformation_time% second transformation time, which can be used to dodge projectiles and stuns."
       ],
       "shard_loc": "",
       "scepter_loc": "",
@@ -1342,7 +1342,7 @@
             30
           ],
           "is_percentage": false,
-          "heading_loc": "ДЛИТЕЛЬНОСТЬ:",
+          "heading_loc": "DURATION:",
           "bonuses": [],
           "values_shard": [],
           "values_scepter": [],
@@ -1378,7 +1378,7 @@
             1
           ],
           "is_percentage": false,
-          "heading_loc": "БАЗОВЫЙ ИНТЕРВАЛ АТАК:",
+          "heading_loc": "BASE ATTACK TIME:",
           "bonuses": [
             {
               "name": "special_bonus_unique_alchemist_8",
@@ -1403,7 +1403,7 @@
             120
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. ВОССТАНОВЛЕНИЕ ЗДОРОВЬЯ:",
+          "heading_loc": "BONUS HEALTH REGEN:",
           "bonuses": [
             {
               "name": "special_bonus_unique_alchemist_4",
@@ -1428,7 +1428,7 @@
             40
           ],
           "is_percentage": false,
-          "heading_loc": "ДОП. СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+          "heading_loc": "BONUS MOVE SPEED:",
           "bonuses": [
             {
               "name": "special_bonus_unique_alchemist_6",
@@ -1500,7 +1500,7 @@
     {
       "id": 7144,
       "name": "special_bonus_unique_alchemist_5",
-      "name_loc": "+{s:bonus_armor_reduction} к снижению брони от Acid Spray",
+      "name_loc": "+{s:bonus_armor_reduction} Acid Spray Armor Reduction",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1563,7 +1563,7 @@
     {
       "id": 6101,
       "name": "special_bonus_unique_alchemist",
-      "name_loc": "+{s:bonus_radius} к радиусу взрыва у Unstable Concoction",
+      "name_loc": "+{s:bonus_radius} Unstable Concoction Radius",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1626,7 +1626,7 @@
     {
       "id": 6604,
       "name": "special_bonus_unique_alchemist_3",
-      "name_loc": "Acid Spray даёт броню союзникам",
+      "name_loc": "Acid Spray grants armor to allies",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1689,7 +1689,7 @@
     {
       "id": 1002,
       "name": "special_bonus_unique_alchemist_7",
-      "name_loc": "+{s:bonus_damage} к урону за эффект Greevil's Greed",
+      "name_loc": "+{s:bonus_damage} Damage per Greevil's Greed stack",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1752,7 +1752,7 @@
     {
       "id": 1003,
       "name": "special_bonus_unique_alchemist_8",
-      "name_loc": "–{s:bonus_base_attack_time} сек. интервала атак у Chemical Rage",
+      "name_loc": "-{s:bonus_base_attack_time}s Chemical Rage Base Attack Time",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1815,7 +1815,7 @@
     {
       "id": 6350,
       "name": "special_bonus_unique_alchemist_2",
-      "name_loc": "+{s:bonus_max_damage} к макс. урону от Unstable Concoction",
+      "name_loc": "+{s:bonus_max_damage} Unstable Concoction Max Damage",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1878,7 +1878,7 @@
     {
       "id": 351,
       "name": "special_bonus_unique_alchemist_6",
-      "name_loc": "+{s:bonus_bonus_movespeed} к скорости передв. от Chemical Rage",
+      "name_loc": "+{s:bonus_bonus_movespeed} Chemical Rage Movement Speed",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
@@ -1941,7 +1941,7 @@
     {
       "id": 7054,
       "name": "special_bonus_unique_alchemist_4",
-      "name_loc": "+{s:bonus_bonus_health_regen} к восстановлению здоровья от Chemical Rage",
+      "name_loc": "+{s:bonus_bonus_health_regen} Chemical Rage Regeneration",
       "desc_loc": "",
       "lore_loc": "",
       "notes_loc": [],
