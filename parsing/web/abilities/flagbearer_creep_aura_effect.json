@@ -1,22 +1,24 @@
 {
-  "id": 0,
-  "name": "dota_base_ability",
-  "name_loc": "",
-  "desc_loc": "Attribute Level",
+  "id": 1086,
+  "name": "flagbearer_creep_aura_effect",
+  "name_loc": "Inspiration Aura",
+  "desc_loc": "The Flagbearer inspires all allied creeps, granting them bonus health regeneration and magic resistance.",
   "lore_loc": "",
-  "notes_loc": [],
+  "notes_loc": [
+    "Magic resistance bonus upgrades by %bonus_magic_resistance_per_interval%%% every 7.5 minutes, up to a maximum of %maximum_intervals% upgrades."
+  ],
   "shard_loc": "",
   "scepter_loc": "",
   "facets_loc": [],
   "type": 0,
-  "behavior": "0",
+  "behavior": "2",
   "target_team": 0,
   "target_type": 0,
   "flags": 0,
   "damage": 0,
   "immunity": 0,
   "dispellable": 0,
-  "max_level": 4,
+  "max_level": 1,
   "cast_ranges": [
     0
   ],
@@ -43,7 +45,110 @@
   ],
   "gold_costs": [],
   "health_costs": [],
-  "special_values": [],
+  "special_values": [
+    {
+      "name": "bonus_health_regen",
+      "values_float": [
+        3
+      ],
+      "is_percentage": false,
+      "heading_loc": "BONUS HEALTH REGEN:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "radius",
+      "values_float": [
+        700
+      ],
+      "is_percentage": false,
+      "heading_loc": "RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_gold",
+      "values_float": [
+        10
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_magic_resistance_per_interval",
+      "values_float": [
+        4
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "maximum_intervals",
+      "values_float": [
+        15
+      ],
+      "is_percentage": false,
+      "heading_loc": "",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "total_magic_resistance",
+      "values_float": [
+        0
+      ],
+      "is_percentage": true,
+      "heading_loc": "BONUS MAGIC RESISTANCE:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
   "is_item": false,
   "ability_has_scepter": false,
   "ability_has_shard": false,

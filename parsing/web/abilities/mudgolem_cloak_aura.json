@@ -1,22 +1,22 @@
 {
-  "id": 0,
-  "name": "dota_base_ability",
-  "name_loc": "",
-  "desc_loc": "Attribute Level",
+  "id": 5688,
+  "name": "mudgolem_cloak_aura",
+  "name_loc": "Cloak Aura",
+  "desc_loc": "This creature protects its allies with a Magic resistance aura. Creeps are better protected.",
   "lore_loc": "",
   "notes_loc": [],
   "shard_loc": "",
   "scepter_loc": "",
   "facets_loc": [],
   "type": 0,
-  "behavior": "0",
+  "behavior": "2",
   "target_team": 0,
   "target_type": 0,
   "flags": 0,
   "damage": 0,
   "immunity": 0,
   "dispellable": 0,
-  "max_level": 4,
+  "max_level": 1,
   "cast_ranges": [
     0
   ],
@@ -43,7 +43,65 @@
   ],
   "gold_costs": [],
   "health_costs": [],
-  "special_values": [],
+  "special_values": [
+    {
+      "name": "bonus_magical_armor",
+      "values_float": [
+        10,
+        12,
+        14,
+        16
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAGIC RESISTANCE HEROES:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "bonus_magical_armor_creeps",
+      "values_float": [
+        20,
+        24,
+        28,
+        32
+      ],
+      "is_percentage": true,
+      "heading_loc": "MAGIC RESISTANCE CREEPS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    },
+    {
+      "name": "radius",
+      "values_float": [
+        1200
+      ],
+      "is_percentage": false,
+      "heading_loc": "AURA RADIUS:",
+      "bonuses": [],
+      "values_shard": [],
+      "values_scepter": [],
+      "facet_bonus": {
+        "name": "",
+        "values": [],
+        "operation": 0
+      },
+      "required_facet": ""
+    }
+  ],
   "is_item": false,
   "ability_has_scepter": false,
   "ability_has_shard": false,
